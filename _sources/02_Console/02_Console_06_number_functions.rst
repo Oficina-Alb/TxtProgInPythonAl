@@ -1,0 +1,149 @@
+Funksionet matematikore
+==============
+
+Ne përdorim funksione në programim gjatë gjithë kohës. Për shembull, *print ()*, *input ()*, *int ()*, *float ()* dhe *str ()* janë funksione të gjuhës Python që kemi përdorur deri më tani. Ka shumë funksione të tjera në Python, dhe shumë prej tyre përdoren në matematikë. Do të shohim disa nga funksionet më të thjeshta të matematikës më poshtë.
+
+Funksionet *abs ()*, *min ()* dhe *max ()*
+--------------------------------------
+
+Funksionet *abs ()*, *min ()* dhe *max ()* shpesh përdoren në detyra llogaritëse. Ju ndoshta i keni përdorur tashmë diku, kështu që le t'i shpjegojmë shkurtimisht:
+
+- funksioni *abs ()* kthen vlerën absolute të një shprehje numerike, e cila i kalohet asaj si argument (vlera absolute e një numri merret duke injoruar shenjën e numrit, shiko shembullin më poshtë);
+- funksioni *min ()* mund të ketë dy ose më shumë argumente numerikë dhe kthen vlerën e më të vogël të tyre;
+- funksioni *max ()* mund të ketë dy ose më shumë argumente numerikë dhe kthen vlerën më të madhe prej tyre;
+
+Ja se si t'i përdorni këto funksione në një program:
+
+.. activecode:: console__numberfunc_absminmax_example
+
+    print("abs(3) =", abs(3))
+    print("abs(-7) =", abs(-7))
+    print("abs(-5 - -2) =", abs(-5 - -2))
+    print("min(5, 2, 7, 3) =", min(5, 2, 7, 3))
+    print("max(5, 2, 7, 3) =", max(5, 2, 7, 3))
+
+Funksionet *abs()*, *min()* dhe *max()* - pyetje
+--------------------------------------------------
+
+Kontrolloni njohuritë tuaja për njohuritë e mesipëme:
+
+.. mchoice:: console__numberfunc_min
+   :answer_a: 10
+   :answer_b: 20
+   :answer_c: 30
+   :correct: a
+   :feedback_a: Saktë!
+   :feedback_b: Funksioni min kthehet më të voglat e vlerave të kaluara në të si argumente.
+   :feedback_c: Funksioni min kthehet më të voglat e vlerave të kaluara në të si argumente.
+		
+   Cila është vlera e shprehjes ``min(10, 20, 30)``?
+
+.. mchoice:: console__numberfunc_max
+   :answer_a: 10
+   :answer_b: 20
+   :answer_c: 30
+   :correct: c
+   :feedback_a: Funksioni maksimal i kthen vlerat më të mëdha të kaluara në të si argumente.
+   :feedback_b: Funksioni maksimal i kthen vlerat më të mëdha të kaluara në të si argumente.
+   :feedback_c: Saktë!
+		
+  Cila është vlera e shprehjes ``max(10, 20, 30)``?
+
+.. dragndrop:: console__numberfunc_max_0x100
+    :feedback: Provo përsëri!
+    :match_1: the value of the expression is 0 ||| if x is less than zero
+    :match_2: the value of the expression is x ||| if x is between 0 and 100
+    :match_3: the value of the expression is 100 ||| if x is greater than 100
+    
+    Lidh vlerat e shprehjes ``min(100, max(0, x))`` me kushtet për x.
+
+.. dragndrop:: console__numberfunc_max_0x
+    :feedback: Provo përsëri!
+    :match_1: abs(x)||| x if x is positive, and the opposite number otherwise
+    :match_2: max(0, x)||| x if x is positive and zero otherwise
+    :match_3: min(0, x)||| x if x is negative and zero otherwise
+    :match_4: min(0, abs(x))||| always zero
+		
+    Lidh shprehjet me vlerat.
+
+Funksionet e rrumbullakimit të vlerës
+------------------------
+
+Rrumbullakimi i vlerës së vërtetë në një numër të plotë është një operacion që gjithashtu shpesh na duhet. Tashmë kemi parë që duke shndërruar një numër real në një numër të tërë, e rrumbullakosim atë drejt zeros. Ekzistojnë edhe disa funksione që mund t'i përdorim në Python për të rrumbullakuar një numër real në mënyra të ndryshme:
+
+- funksioni *round )* kthen numrin e plotë më të afërt me argumentin (lloji i rezultatit është int);
+- funksioni *floor()* kthen numrin më të afërt më të vogël se ose të barabartë me vlerën e argumentit (lloji i rezultatit është float);
+- funksioni *ceil()* kthen numrin më të afërt më të madh se ose të barabartë me vlerën e argumentit (lloji i rezultatit është float);
+
+Drejtoni programin e mëposhtëm për të parë se si funksionojnë këto funksione dhe për t'i krahasuar ato.
+
+.. activecode:: console__numberfunc_rounding_example
+
+    import math
+    
+    print("round(56.234) =", round(56.234))
+    print("round(56.789) =", round(56.789))
+
+    print("math.floor(56.234) =", math.floor(56.234))
+    print("math.floor(56.789) =", math.floor(56.789))
+
+    print("math.ceil(56.234) =", math.ceil(56.234))
+    print("math.ceil(56.789) =", math.ceil(56.789))
+
+
+Vini re se funksionet *floor* dhe *ceil* janë disi të ndryshme nga funksioni *round* dhe të gjitha funksionet e mëparshme - thotë ``math`` përpara emrit të tyre në program. Kjo për shkak se këto funksione përcaktohen në një modul të quajtur *math*. Modulet janë njësi programore që përmbajnë funksione të ndryshme, konstante dhe pjesë të tjera të kodit që mund t'i përdorim në programet tona. Moduli *math* përmban shumë funksione të tjera përveç funksioneve *floor* dhe *ceil*. Për shembull, pi konstante e njohur mund të përdoret si *math.py*, dhe funksioni rrënjë katrore si *math.sqrt* (ne nuk do t'i përdorim ato këtu).
+
+Për të përdorur funksionet e modulit *math*, duhet ta bashkëngjitni këtë modul në programin tonë. Ne e bëmë këtë duke shkruar ``import math`` në fillim të programit. Kjo, sigurisht, na mundëson të përdorim të gjitha funksionet e tjera matematikore dhe gjithçka tjetër të përcaktuar në këtë modul gjithashtu.
+
+Asnjë modul i veçantë nuk kërkohet për funksionin *round* dhe të gjitha funksionet e mëparshme, pasi që këto funksione janë ndërtuar në vetë Python, kështu që ato janë gjithmonë në dispozicion direkt për ne.
+
+Funksionet e rrumbullakimit të vlerës - pyetje
+------------------------------------
+
+Kontrolloni të kuptuarit tuaj për funksionet e shpjeguara në këtë mësim:
+
+.. mchoice:: console__numberfunc_abs_round
+   :answer_a: -2
+   :answer_b: 2
+   :answer_c: -3
+   :answer_d: 3
+   :correct: d
+   :feedback_a: Lexoni përsëri shpjegimet për funksionet abs dhe të rrumbullakëta.
+   :feedback_b: Funksioni i rrumbullakët kthen numrin e plotë më të afërt.
+   :feedback_c: Funksioni abs kthen vlerën absolute të një numri, i cili është gjithmonë më i madh se ose i barabartë me zero.
+   :feedback_d: Saktë!
+		
+   Cila është vlera e shprehjes  ``abs(round(-2.7))``?
+   
+.. mchoice:: console__numberfunc_max_abs
+   :answer_a: max(x, round(x))
+   :answer_b: max(x)
+   :answer_c: round(x)
+   :answer_d: abs(x)
+   :correct: a
+   :feedback_a: Saktë!
+   :feedback_b: Funksioni maksimal duhet të ketë të paktën dy argumente.
+   :feedback_c: Në këtë mënyrë, sasia gjithashtu mund të zvogëlohet.
+   :feedback_d: Shuma tashmë është pozitive, asgjë nuk arrihet këtu me funksionin abs.
+		
+   Një arkëtar e rrumbullakon faturën në numrin e plotë më të afërt vetëm nëse shuma është rritur me rrumbullakim, përndryshe raporton shumën ashtu siç është. Çfarë formule aplikon ky arkëtar (x është vlera fillestare e faturës)?
+
+.. dragndrop:: console__numberfunc_rounding
+    :feedback: Provo përsëri!
+    :match_1: towards zero|||int()
+    :match_2: to a closer whole number|||round()
+    :match_3: to a smaller whole number|||floor()
+    :match_4: to a greater whole number|||ceil()
+
+    Bashkoni funksionet e rrumbullakimit me mënyrën e rrumbullakimit.
+
+.. questionnote::
+
+    **Detyrë për kuriozët** - funksioni *round*
+    
+     Funksioni *round* gjithashtu mund të quhet me dy argumente (ne nuk do ta përdorim atë në atë mënyrë), ku argumenti i dytë është zakonisht një numër i plotë i vogël. Kontrolloni për shembull vlerat e :math: `round (123.23456, 2)`, :math:`round (123.23456, 3)` dhe :math:`round (123.23456, -1)`. Ju mund të përdorni hapësirën më poshtë për të provuar gjërat shpejt.
+    
+     Provoni të shpjegoni se çfarë është argumenti i dytë i *round* kur një funksion quhet me dy argumente.
+    
+.. activecode:: console__givenfunc_round
+
