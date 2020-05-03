@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Drawing from reference - additional examples &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Vizatimi nga referenca - shembuj shtesë &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Moving the drawing" href="03_PyGame_14_Drawing_Movable.html" />
-    <link rel="prev" title="Drawing from reference" href="03_PyGame_12a_Drawing_Given_Examples.html" />
+    <link rel="next" title="Lëvizja e vizatimit" href="03_PyGame_14_Drawing_Movable.html" />
+    <link rel="prev" title="Vizatimi nga referenca" href="03_PyGame_12a_Drawing_Given_Examples.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,15 +205,15 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="drawing-from-reference-additional-examples">
-<h1>Drawing from reference - additional examples<a class="headerlink" href="#drawing-from-reference-additional-examples" title="Permalink to this headline">¶</a></h1>
-<p>We assume that you have already acquired some skill in reading coordinates and calling functions for drawing basic shapes. Therefore, in the following tasks there will be some new challenges.</p>
-<p>Many drawings have some regularity, like axial symmetry or a part of the drawing repeating itself. If you want to make such a drawing yourself, in order for it to look good you cannot select all points completely freely. Instead, some points should be chosen and some points should be calculated.</p>
-<p>In order to get closer to creating images that we design ourselves, the way of specifying drawings has been slightly modified. Drawings are still specified with an example program that draws an image (there is a saying that one image is worth 1000 words). What is new is that it will not be possible to read one or both of the coordinates in some parts of the image, but instead you will need to calculate those coordinates based on known coordinates.</p>
-<p>In addition to needing a bit of calculation, the drawings in the following tasks also have more details, so it takes a little longer to make them.</p>
-<div class="section" id="fence">
-<h2>Fence<a class="headerlink" href="#fence" title="Permalink to this headline">¶</a></h2>
-<p>In this task, reading the <span class="math notranslate nohighlight">\(x\)</span> coordinate is limited to the first picket of the fence and the first space. All other needed coordinates can be calculated.</p>
+  <div class="section" id="vizatimi-nga-referenca-shembuj-shtese">
+<h1>Vizatimi nga referenca - shembuj shtesë<a class="headerlink" href="#vizatimi-nga-referenca-shembuj-shtese" title="Permalink to this headline">¶</a></h1>
+<p>Supozojmë se tashmë keni fituar një aftësi në leximin e koordinatave dhe thirrjen e funksioneve për vizatimin e formave themelore. Prandaj, në detyrat e mëposhtme do të ketë disa sfida të reja.</p>
+<p>Shumë vizatime kanë një rregullsi, si simetri boshtore ose një pjesë të vizatimit që përsëritet vetë. Nëse dëshironi të bëni një vizatim të tillë vetë, në mënyrë që të duket mirë, nuk mund të zgjidhni të gjitha pikat plotësisht lirshëm. Në vend të kësaj, duhet të zgjidhen disa pika dhe të llogariten disa pika.</p>
+<p>Në mënyrë që të afrohemi në krijimin e imazheve që ne hartojmë vetë, mënyra e specifikimit të vizatimeve është modifikuar pak. Vizatimet ende specifikohen me një program shembulli që vizaton një imazh (ekziston një thënie se një imazh vlen 1000 fjalë). Ajo që është e re është se nuk do të jetë e mundur të lexoni njërën ose të dy koordinatat në disa pjesë të figurës, por përkundrazi do t’ju duhet të llogaritni ato koordinata bazuar në koordinatat e njohura.</p>
+<p>Përveç që kanë nevojë për pak llogaritje, vizatimet në detyrat e mëposhtme kanë edhe më shumë detaje, kështu që duhet pak më shumë për t’i bërë ato.</p>
+<div class="section" id="gardh">
+<h2>Gardh<a class="headerlink" href="#gardh" title="Permalink to this headline">¶</a></h2>
+<p>Në këtë detyrë, leximi i koordinatës <span class="math notranslate nohighlight">\(x\)</span> është i kufizuar në seleksionin e parë të gardhit dhe hapësirën e parë. Të gjitha koordinatat e tjera të nevojshme mund të llogariten.</p>
 
 <div data-childcomponent="PyGame__drawing_fence" class="course-box course-box-problem course-content">
 
@@ -341,9 +340,9 @@ pygamebg.wait_loop()
 
     </div>
     </div>
-<div class="section" id="building">
-<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
-<p>All windows of the building are the same size, the spaces between the floors are equal, and the left and right sides of the building are symmetrical (except that symmetrical windows are not necessarily the same color). Use this information to calculate the coordinates that you cannot read.</p>
+<div class="section" id="ndertesa">
+<h2>Ndërtesa<a class="headerlink" href="#ndertesa" title="Permalink to this headline">¶</a></h2>
+<p>Të gjitha dritaret e ndërtesës janë të njëjtën madhësi, hapësirat midis dyshemeteve janë të barabarta, dhe faqet e majta dhe të djathta të ndërtesës janë simetrike (përveç që dritaret simetrik nuk janë domosdoshmërisht të njëjtën ngjyrë). Përdorni këtë informacion për të llogaritur koordinatat që nuk mund t’i lexoni.</p>
 
 <div data-childcomponent="PyGame__drawing_building" class="course-box course-box-problem course-content">
 
@@ -437,8 +436,8 @@ pygamebg.wait_loop()
 </div>
 <div class="section" id="stickman">
 <h2>Stickman<a class="headerlink" href="#stickman" title="Permalink to this headline">¶</a></h2>
-<p>In this example, the coordinates of the points on the right leg cannot be read, but it is symmetrical to the left leg. Since the width of the image is known (see the beginning of the program), the coordinates of the two unknown points on the right can be calculated using the known symmetric points on the left.</p>
-<p><strong>Hint:</strong> Let <span class="math notranslate nohighlight">\(A\)</span> be a point on the left side of the image, and <span class="math notranslate nohighlight">\(B\)</span> a point on the right side of the image, symmetrical to the point <span class="math notranslate nohighlight">\(A\)</span>. The two points then have the same <span class="math notranslate nohighlight">\(y\)</span> coordinate, and the sum of the <span class="math notranslate nohighlight">\(x\)</span> coordinates of the points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> equals the width of the image.</p>
+<p>Në këtë shembull, koordinatat e pikave në këmbën e djathtë nuk mund të lexohen, por është simetrike me këmbën e majtë. Meqenëse gjerësia e figurës është e njohur (shiko fillimin e programit), koordinatat e dy pikave të panjohura në të djathtë mund të llogariten duke përdorur pikat simetrike të njohura në të majtë.</p>
+<p><strong>Ndihmë</strong> Le të jetë <span class="math notranslate nohighlight">\(A\)</span> një pikë në anën e majtë të figurës, dhe :math:` B` një pikë në anën e djathtë të figurës, simetrike me pikën <span class="math notranslate nohighlight">\(A \)</span> koordinatë, dhe shuma e koordinatave të :math:` x` të pikave <span class="math notranslate nohighlight">\(A\)</span> dhe :math:` B` është e barabartë me gjerësinë e figurës.</p>
 
 <div data-childcomponent="PyGame__drawing_stickman" class="course-box course-box-problem course-content">
 
@@ -539,17 +538,16 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-</div>
-<div class="section" id="cat">
-<h2>Cat<a class="headerlink" href="#cat" title="Permalink to this headline">¶</a></h2>
-<p>The ears of this cat can be depicted as filled triangles. As the ears are attached to the head, two vertices of each triangle can be chosen with more freedom (it is enough to place them somewhere inside the head circle). In addition to the two triangles representing the ears, we also have:</p>
+<p>Mace
+‘’’</p>
+<p>Veshët e kësaj mace mund të përshkruhen si trekëndësha të mbushur. Ndërsa veshët janë ngjitur në kokë, dy vertikale të secilit trekëndësh mund të zgjidhen me më shumë liri (mjafton t’i vendosni ato diku brenda rrethit të kokës). Përveç dy trekëndëshave që përfaqësojnë veshët, kemi gjithashtu:</p>
 <ul class="simple">
-<li>two circles (head and tip of the snout)</li>
-<li>six ellipses (eyes, pupils and parts of the snout)</li>
-<li>six lines (whiskers)</li>
+<li><p>dy rrathë (koka dhe maja e gocës)</p></li>
+<li><p>gjashtë elips (sy, nxënës dhe pjesë të gërhitës)</p></li>
+<li><p>gjashtë rreshta (mustaqe)</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(x\)</span> coordinates on the right side of the image cannot be read, but they can be calculated using symmetry (and the known width of the image - see the beginning of the program).</p>
-<p><strong>Note:</strong> The procedure for determining ellipse parameters on the right side is slightly different from the one used for circles or line segments. Note that the top <strong>left</strong> vertex of the rectangle circumscribed about the ellipse sought is in fact a mirror image of the top <strong>right</strong> vertex of the rectangle circumscribed about the ellipse known. This means that when we find the parameters <em>(x, y, w, h)</em> of the ellipse on the left side, the parameters of its symmetrical ellipse on the right are <em>(width - x - w, y, w, h)</em>, where <em>width</em> is the width of the window, <em>x</em>, <em>y</em> are the coordinates of the top left vertex of the rectangle around the ellipse on the left, and <em>w</em> and <em>h</em> are the width and height of the ellipses.</p>
+<p><span class="math notranslate nohighlight">\(x\)</span> koordinatat në anën e djathtë të figurës nuk mund të lexohen, por ato mund të llogariten duke përdorur simetri (dhe gjerësia e njohur e figurës - shiko fillimin e programit).</p>
+<p><strong>Shënim:</strong> Procedura për përcaktimin e parametrave të elipsit në anën e djathtë është paksa e ndryshme nga ajo e përdorur për rrathët ose segmentet e linjës. Vini re se kulmi i sipërm <strong>majtas</strong> i drejtkëndëshit të rrethuar në lidhje me elipsën e kërkuar është në të vërtetë një imazh pasqyrë i kulmës së sipërme <strong>të djathtë</strong> të drejtkëndëshit të rrethuar në lidhje me elipsën e njohur. Kjo do të thotë që kur gjejmë parametrat <em>(x, y, w, h)</em> të elipsit në anën e majtë, parametrat e elipsit të tij simetrik në të djathtë janë <em>(gjerësia - x - w, y, w, h )</em>, ku <em>gjerësia</em> është gjerësia e dritares, <em>x</em>, <em>y</em> janë koordinatat e kulmës së sipërme të majtë të drejtkëndëshit rreth elipsit në të majtë, dhe * w * dhe * h * janë gjerësia dhe lartësia e elipsave.</p>
 
 <div data-childcomponent="PyGame__drawing_cat" class="course-box course-box-problem course-content">
 
@@ -693,17 +691,17 @@ pygamebg.wait_loop()
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing from reference' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatimi nga referenca' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Moving the drawing' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Lëvizja e vizatimit' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing from reference' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatimi nga referenca' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Moving the drawing' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Lëvizja e vizatimit' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

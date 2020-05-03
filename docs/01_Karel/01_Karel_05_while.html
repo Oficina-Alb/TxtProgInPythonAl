@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Solve multiple tasks at once &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Zgjidhen detyra të shumta menjëherë &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Combining loops" href="01_Karel_06_nested_loops_mix.html" />
-    <link rel="prev" title="For statement - practicing" href="01_Karel_04_for_practice.html" />
+    <link rel="next" title="Kombinimi i loops" href="01_Karel_06_nested_loops_mix.html" />
+    <link rel="prev" title="For praktikë" href="01_Karel_04_for_practice.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,25 +205,25 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="solve-multiple-tasks-at-once">
-<h1>Solve multiple tasks at once<a class="headerlink" href="#solve-multiple-tasks-at-once" title="Permalink to this headline">¶</a></h1>
-<p>Judging by the programs we have seen so far, one might think that a special program should be written for each, even a slightly different task. If that were the case, programming would be a very, very tedious job.</p>
-<p>In order to apply one program to a group of similar tasks, we need that program to behave differently in different situations. This means that we need a way for the program to figure out the current situation and then choose which commands will be executed, depending on the situation. By the situation, we mean the number of balls on a square or with Karel, the position of the walls around Karel and so on. A program that could get answers to the questions concerning Karel and its surroundings could also solve several similar tasks, or (in other words) a general task.</p>
-<div class="section" id="questions-about-karel">
-<h2>Questions about Karel<a class="headerlink" href="#questions-about-karel" title="Permalink to this headline">¶</a></h2>
-<p>At the beginning of the introductory chapter, we saw commands for Karel, by which we instruct him to perform some actions (going forward, turning left and right, taking and dropping balls). We mentioned then that there are five other functions related to Karel. These five functions are different from the previous ones, since, by using these functions, we ask some questions and get the answers about Karel or the square he is located on. Here are these functions:</p>
+  <div class="section" id="zgjidhen-detyra-te-shumta-menjehere">
+<h1>Zgjidhen detyra të shumta menjëherë<a class="headerlink" href="#zgjidhen-detyra-te-shumta-menjehere" title="Permalink to this headline">¶</a></h1>
+<p>Duke gjykuar nga programet që kemi parë deri më tani, mund të mendohet se duhet të shkruhet një program special për secilin, madje edhe një detyrë paksa e ndryshme. Nëse do të ishte kështu, programimi do të ishte një punë shumë e lodhshme.</p>
+<p>Për të zbatuar një program në një grup detyrash të ngjashme, na duhet që ai program të sillet ndryshe në situata të ndryshme. Kjo do të thotë që ne kemi nevojë për një mënyrë që programi të kuptojë situatën aktuale dhe pastaj të zgjedhim cilat komanda do të ekzekutohen, në varësi të situatës. Për nga situata, nënkuptojmë numrin e topave në një kuti ose me Karelin, pozicionin e mureve rreth Karelit etj. Një program që mund të marrë përgjigje në pyetjet në lidhje me Karel dhe rrethinat e tij gjithashtu mund të zgjidhë disa detyra të ngjashme, ose (me fjalë të tjera) një detyrë të përgjithshme.</p>
+<div class="section" id="pyetje-rreth-karelit">
+<h2>Pyetje rreth Karelit<a class="headerlink" href="#pyetje-rreth-karelit" title="Permalink to this headline">¶</a></h2>
+<p>Në fillim të kapitullit hyrës, ne pamë komanda për Karelin, me anë të të cilave ne e udhëzojmë atë të kryejë disa veprime (duke ecur përpara, duke u kthyer majtas dhe djathtas, duke marrë dhe hedhur topa). Përmendëm atëherë se ekzistojnë pesë funksione të tjera që lidhen me Karelin. Këto pesë funksione janë të ndryshme nga ato të mëparshmet, pasi që, duke përdorur këto funksione, bëjmë disa pyetje dhe marrim përgjigjet rreth Karelit ose kutisë në të cilin ndodhet. Këtu janë këto funksione:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code> - we ask if Karel can go forward (are there walls in front of him). We get the answer “yes” or “no”.</li>
-<li><code class="docutils literal notranslate"><span class="pre">num_balls_on_square()</span></code> - we ask how many balls are there on the square Karel is on. We get the number of balls on the square.</li>
-<li><code class="docutils literal notranslate"><span class="pre">is_ball_on_square()</span></code> - we ask if there is at least one ball on the Karel’s square. We get the answer “yes” or “no”.</li>
-<li><code class="docutils literal notranslate"><span class="pre">num_balls_with_karel()</span></code> - we ask how many balls Karel currently has with him. We get the number of balls that Karel holds.</li>
-<li><code class="docutils literal notranslate"><span class="pre">any_balls_with_karel()</span></code> - we ask if Karel has at least one ball with him. We get the answer “yes” or “no”.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">front_is_clear</span> <span class="pre">()</span></code> - ne pyesim nëse Kareli mund të shkojë përpara (a ka mure para tij). Ne marrim përgjigjen “po” ose “jo”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_balls_on_square</span> <span class="pre">()</span></code> - ne pyesim se sa topa ka në kutinë Karel është i ndezur. Ne marrim numrin e topave në kuti.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">is_ball_on_square</span> <span class="pre">()</span></code> - ne pyesim nëse ka të paktën një top në kutinë e Karelit. Ne marrim përgjigjen “po” ose “jo”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_balls_with_karel()</span></code> - ne pyesim sa topa ka aktualisht Karel me të. Ne marrim numrin e topave që mban Karel.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">any_balls_with_karel()</span></code> - ne pyesim nëse Karel ka të paktën një top me të. Ne arrim përgjigjen “po” ose “jo”.</p></li>
 </ul>
-<p>We cannot write these answer-giving functions as separate statements, as we have done so far. Instead, we write these functions as a part of some Python statements. Let’s take a look at the examples.</p>
+<p>Ne nuk mund t’i shkruajmë këto funksione që japin përgjigje si deklarime të veçanta, siç kemi bërë deri më tani. Në vend të kësaj, ne i shkruajmë këto funksione si pjesë e disa deklaratave të Python. Le t’i hedhim një vështrim në shembujt.</p>
 </div>
-<div class="section" id="as-long-as-needed-while-statement">
-<h2>As long as needed (<em>while</em> statement)<a class="headerlink" href="#as-long-as-needed-while-statement" title="Permalink to this headline">¶</a></h2>
-<p>One way to use the functions that give the answer is to write them in <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. The <em>while</em> statement exists in almost all programming languages and it is written very similarly in different languages. In Python it looks like this:</p>
+<div class="section" id="per-sa-kohe-qe-eshte-e-nevojshme-while">
+<h2>Për sa kohë që është e nevojshme (<em>while</em>)<a class="headerlink" href="#per-sa-kohe-qe-eshte-e-nevojshme-while" title="Permalink to this headline">¶</a></h2>
+<p>Një mënyrë për të përdorur funksionet që japin përgjigje është t’i shkruani ato në deklarimn <code class="docutils literal notranslate"><span class="pre">while</span></code>. Deklarimi <em>while</em> ekziston pothuajse në të gjitha gjuhët e programimit dhe është e shkruar shumë në mënyrë të ngjashme në gjuhë të ndryshme. Në Python duket kështu:</p>
 
 <div data-childcomponent="while_syntax" class="course-box course-box-problem course-content">
 
@@ -243,11 +242,11 @@ while condition:
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>The meaning of <code class="docutils literal notranslate"><span class="pre">while</span></code> statement is: as long as the <code class="docutils literal notranslate"><span class="pre">condition</span></code> is fulfilled, execute the statement or statements that are written indented below. Word <code class="docutils literal notranslate"><span class="pre">condition</span></code> above stands for anything that is correctly written in Python, and comes down to <strong>yes</strong> or <strong>no</strong> (technical term for that “anything” is a <strong>logical expression</strong>).</p>
-<p>The rules of writing <em>while</em> statement require writting colon character <code class="docutils literal notranslate"><span class="pre">:</span></code> after the condition. After the condition (and colon), we write statements that we want to repeat as long as the condition is met, that is, while the answer to the question inside the condition is <strong>yes</strong> (or <strong>True</strong>). These repeating statements make the body of the while statement, and are written indented in the following lines (the same number of spaces are added before each of the repeated statements).</p>
+<p>Kuptimi i <code class="docutils literal notranslate"><span class="pre">while</span></code> është: për sa kohë që “kushti” është përmbushur, ekzekutoni thënien ose deklarimet që shkruhen në pah poshtë. Fjala <cite>kusht`</cite> më lart nënkupton çdo gjë që është shkruar saktë në Python, dhe zbret në <strong>po</strong> ose <strong>jo</strong> (termi teknik për atë “asgjë “është një shprehje logjike**).</p>
 
     </p></div></div>
-<p>The condition is examined before each execution of the statements in the body of the <em>while</em> statement. The first time the condition is not met, <em>while</em> statement’s execution (together with the statements in its body) is completed, and next statement to be executed is the one listed below the body of <em>while</em> statement. For example, if we execute:</p>
+<p>    Rregullat e shkrimit <em>while</em> deklarim kërkojnë shkrimin e karakterit <code class="docutils literal notranslate"><span class="pre">:</span></code> pas kushtit. Pas kësaj, ne shkruajmë deklarim që duam të përsërisim për sa kohë që kushti plotësohet, d.m.th., ndërsa përgjigja e pyetjes brenda gjendjes është <strong>po</strong> (ose <strong>e vërtetë</strong>) . Këto thënie përsëritëse bëjnë trupin e deklarims ndërsa, dhe shkruhen në mënyrë të theksuar në rreshtat vijues (numri i njëjtë i hapësirave shtohet para secilës prej deklaratave të përsëritura).</p>
+<p>Gjendja shqyrtohet para çdo ekzekutimi të deklaratave në trupin e deklarims <em>while</em>. Herën e parë kur kushti nuk plotësohet, <em>while</em> ekzekutimi i deklarims (së bashku me deklarimet në trupin e tij) është i plotë, dhe deklarim tjetër që duhet ekzekutuar është ajo e shënuar nën trupin e <em>while</em>. Për shembull, nëse ekzekutojmë:</p>
 
 <div data-childcomponent="while_example" class="course-box course-box-problem course-content">
 
@@ -261,11 +260,11 @@ while front_is_clear():
 pick_ball()
 </textarea>
 </div>
-<p>Karel will move forward as far as he can, that is, until we get the answer “no” to the question front_is_clear(), which means that Karel has encountered a wall. When he finishes moving, Karel will take the ball. In case that Karel is already in front of the wall, the command move() will not be executed at all and Karel will immediately take the ball.</p>
+<p>Kareli do të ecë përpara aq sa mundet, domethënë, derisa të marrim përgjigjen “jo” për pyetjen front_is_clear (), që do të thotë se Kareli ka hasur në një mur. Kur ai përfundon lëvizjen, Karel do të marrë topin. Në rast se Karel është tashmë para murit, lëvizja e komandës () nuk do të ekzekutohet fare dhe Karel menjëherë do të marrë topin.</p>
 <hr class="docutils" />
-<p>Each of the following examples and tasks is a general one. This means that, for each task, at different program launches, the task will look similar, but slightly different. The program should be written to solve the task in each of these similar cases.</p>
-<div class="section" id="go-forward-as-far-as-you-can-and-pick-up-the-ball">
-<h3>Go forward as far as you can and pick up the ball<a class="headerlink" href="#go-forward-as-far-as-you-can-and-pick-up-the-ball" title="Permalink to this headline">¶</a></h3>
+<p>Secili nga shembujt dhe detyrat e mëposhtme është një i përgjithshëm. Kjo do të thotë që, për secilën detyrë, në nisjet e programeve të ndryshme, detyra do të duket e ngjashme, por pak më ndryshe. Programi duhet të shkruhet për të zgjidhur detyrën në secilën nga këto raste të ngjashme.</p>
+<div class="section" id="shkoni-para-sa-te-mundeni-dhe-kapni-topin">
+<h3>Shkoni para sa të mundeni dhe kapni topin<a class="headerlink" href="#shkoni-para-sa-te-mundeni-dhe-kapni-topin" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -273,12 +272,14 @@ pick_ball()
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>There is one or more squares in front of Karel, and on the last square there is one ball. Write a program that will make Karel pick up the ball from the last square.</p>
-<p><strong>The program should run multiple times</strong>, because at different launches, Karel’s world will have different number of squares. Here are some examples of how the task may look:</p>
-<a class="reference internal image-reference" href="../_images/While_01.jpg"><img alt="../_images/While_01.jpg" class="align-center" src="../_images/While_01.jpg" style="width: 600px;" /></a>
+<p>Ka një ose më shumë kuti para Karelit, dhe në kutinë e fundit ka një top. Shkruaj një program që do të bëjë që Karel të marrë topin nga kutia e fundit.</p>
 
     </p></div></div>
-<p>We’ll use while statement to move Karel, and after that, tell him to pick up the ball.</p>
+<p>    <strong>Programi duhet të zhvillohet shumë herë</strong>, sepse në lançime të ndryshme, bota e Karel do të ketë numër të ndryshëm të kutive. Këtu janë disa shembuj se si mund të duket detyra:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/While_01.jpg"><img alt="../_images/While_01.jpg" class="align-center" src="../_images/While_01.jpg" style="width: 600px;" /></a>
+</div></blockquote>
+<p>Ne do të përdorim while për të lëvizur karwl, dhe pastaj do ti themi të marrëë topin.</p>
 
 <div data-childcomponent="Karel_while__many_squares_and_ball_at_the_end" class="karel_section course-box course-box-problem">
     <div class="course-content">
@@ -336,14 +337,15 @@ pick_ball()
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-It may happen that a program often produces a good result, occasionally giving a bad result or being interrupted due to an error. <strong>Such a program should be considered buggy (defective)</strong>. The correct program should always give the correct result.
+<p>Mund të ndodhë që një program shpesh prodhon një rezultat të mirë, herë pas here duke dhënë një rezultat të keq ose duke u ndërprerë për shkak të një gabimi. <strong>Një program i tillë duhet të konsiderohet i gabuar (i dëmtuar)</strong>. Programi i saktë gjithmonë duhet të japë rezultatin e saktë.</p>
+
     </p></div></div>
 </div>
 </div>
-<div class="section" id="tasks-for-exercise">
-<h2>Tasks for exercise<a class="headerlink" href="#tasks-for-exercise" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="go-one-square-forward-and-pick-up-all-the-balls">
-<h3>Go one square forward and pick up all the balls<a class="headerlink" href="#go-one-square-forward-and-pick-up-all-the-balls" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtime">
+<h2>Ushtime<a class="headerlink" href="#ushtime" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shkoni-nje-katror-perpara-dhe-kapni-te-gjitha-topat">
+<h3>Shkoni një katror përpara dhe kapni të gjitha topat<a class="headerlink" href="#shkoni-nje-katror-perpara-dhe-kapni-te-gjitha-topat" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -351,9 +353,10 @@ It may happen that a program often produces a good result, occasionally giving a
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-There is exactly one square In front of Karel, and on it there are any number of balls. Karl needs to pick them up.
+
     </p></div></div>
-<p>Following the instructions in the program below, Karel will try to repeat the command <code class="docutils literal notranslate"><span class="pre">pick_ball()</span></code> infinitely. However, when Karel takes all the balls from that square, we will receive an error message because we told Karel to take a ball from the empty square (feel free to try this and see what the error message looks like). Try to fix the program so that Karel takes the balls only while there are some on the square.</p>
+<p>   Ekziston saktësisht një kuti përpara Karelit, dhe mbi të ka ndonjë numër topash. Karl duhet t’i marrë ato.</p>
+<p>Pas udhëzimeve në programin e mëposhtëm, Karel do të përpiqet të përsërisë pafundësisht komandën <code class="docutils literal notranslate"><span class="pre">pick_ball</span> <span class="pre">()</span></code>. Sidoqoftë, kur Karel merr të gjitha topat nga kutia, ne do të marrim një mesazh gabimi sepse i thamëm Karelit të marrë një top nga kuti e zbrazët (mos ngurroni ta provoni këtë dhe të shihni se si duket mesazhi i gabimit). Mundohuni të rregulloni programin në mënyrë që Karel të marrë topat vetëm ndërsa ka disa në kuti.</p>
 
 <div data-childcomponent="Karel_while__one_square_many_balls" class="karel_section course-box course-box-problem">
     <div class="course-content">
@@ -415,8 +418,8 @@ There is exactly one square In front of Karel, and on it there are any number of
 </p></div></div>
 
 </div>
-<div class="section" id="go-as-long-as-you-can-taking-one-ball-at-each-square">
-<h3>Go as long as you can, taking one ball at each square<a class="headerlink" href="#go-as-long-as-you-can-taking-one-ball-at-each-square" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shko-sa-larg-te-mundesh-merr-top-ne-cdo-kuti">
+<h3>Shko sa larg të mundesh, merr top ne çdo kuti<a class="headerlink" href="#shko-sa-larg-te-mundesh-merr-top-ne-cdo-kuti" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -424,11 +427,11 @@ There is exactly one square In front of Karel, and on it there are any number of
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>There are one or more squares in front of Karel, and on each square there is one ball. Write a program that makes Karel collect the balls from all squares.</p>
-<p><strong>Run this program multiple times as well</strong> to make sure that it solves the task regardless of the length of the Karel’s path.</p>
+<p>Ka një ose më shumë kuti përpara Karelit, dhe në secilin kuti ka një top. Shkruaj një program që e bën Karel të mbledhë topat nga të gjitha sheshet.</p>
 
     </p></div></div>
-<p>One <em>while</em> statement should be used for both moving Karel and taking the balls.</p>
+<p>    <strong>Drejtojeni këtë program disa herë,</strong> për t’u siguruar që ajo zgjidh detyrën, pavarësisht nga gjatësia e rrugës së Karel.</p>
+<p>Një deklarim <em>while</em> duhet të përdoret si për lëvizjen e Karelit ashtu edhe për marrjen e topave.</p>
 
 <div data-childcomponent="Karel_while__many_squares_and_ball_at_each" class="karel_section course-box course-box-problem">
     <div class="course-content">
@@ -483,8 +486,8 @@ There is exactly one square In front of Karel, and on it there are any number of
 </p></div></div>
 
 </div>
-<div class="section" id="move-all-the-balls-from-the-last-to-the-first-square">
-<h3>Move all the balls from the last to the first square<a class="headerlink" href="#move-all-the-balls-from-the-last-to-the-first-square" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="leviz-te-gjitha-topat-nga-kutia-e-fundit-ne-te-paren">
+<h3>Lëviz të gjitha topat nga kutia e fundit në të parën<a class="headerlink" href="#leviz-te-gjitha-topat-nga-kutia-e-fundit-ne-te-paren" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -492,18 +495,18 @@ There is exactly one square In front of Karel, and on it there are any number of
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>There are one or more squares in front of Karel, and there are several balls on the last square. Karel should take all the balls from the last square and leave them on the first square.</p>
-<p>(Run the program multiple times.)</p>
+<p>Ka një ose më shumë kuti para Karelit, dhe ka disa topa në kutinë e fundit. Kareli duhet të marrë të gjitha topat nga kutia e fundit dhe t’i lërë ata në kutinë e parë.</p>
 
     </p></div></div>
-<p>In this task, four loops are needed one after another (not one inside another):</p>
+<p>    (Drejtoni programin disa herë.)</p>
+<p>Në këtë detyrë, katër loops janë të nevojshme njëra pas tjetrës (jo njëra brenda tjetrës):</p>
 <ul class="simple">
-<li>In the first loop, Karel arrives to the last square</li>
-<li>In the second loop, Karel takes the balls</li>
-<li>In the third loop, Karel returns to the starting square</li>
-<li>In the last loop, Karl leaves all the balls he has with him</li>
+<li><p>Në loop e parë, Kareli arrin në kutinë e fundit</p></li>
+<li><p>Në loop e dytë, Karel merr topat</p></li>
+<li><p>Në loop e tretë, Kareli kthehet në kutinë fillestare</p></li>
+<li><p>Në loop e fundit, Karl lë të gjitha topat që ka me vete</p></li>
 </ul>
-<p>Of course, after the first or the second loop, Karel should turn towards the starting square (twice to the left or twice to the right).</p>
+<p>Sigurisht, pas loops të parë ose të dytë, Karel duhet të kthehet në loops fillestar (dy herë në të majtë ose dy herë në të djathtë).</p>
 
 <div data-childcomponent="Karel_while__bring_balls_to_front_square" class="karel_section course-box course-box-problem">
     <div class="course-content">
@@ -570,8 +573,8 @@ There is exactly one square In front of Karel, and on it there are any number of
 </p></div></div>
 
 </div>
-<div class="section" id="put-the-balls-in-the-top-row">
-<h3>Put the balls in the top row<a class="headerlink" href="#put-the-balls-in-the-top-row" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="vendos-topin-ne-rreshtin-e-pare">
+<h3>Vendos topin në rreshtin e parë<a class="headerlink" href="#vendos-topin-ne-rreshtin-e-pare" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -579,8 +582,8 @@ There is exactly one square In front of Karel, and on it there are any number of
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Karel’s world this time consists of two rows of the same, but unknown length. Karel is in the lower left corner, facing east. All squares of the upper row are empty, and each square of the first row contains one ball, <strong>including the square where Karel is</strong>. Karel’s task is to put a single ball onto the each square of the top row.</p>
-<p>(Run the program multiple times.)</p>
+<p>Bota e Karel kësaj here përbëhet nga dy rreshta me gjatësi të njëjtë, por të panjohur. Kareli është në këndin e poshtëm të majtë, përballë lindjes. Të gjitha kutinë e rreshtit të sipërm janë bosh, dhe çdo katror i rreshtit të parë përmban një top, <strong>duke përfshirë kutinë ku Karel është</strong>. Detyra e Karel është të vendosë një top të vetëm në secilin katror të rreshtit të lartë.</p>
+<p>(Lanëo programin disa herë.)</p>
 
     </p></div></div>
 
@@ -648,7 +651,7 @@ There is exactly one square In front of Karel, and on it there are any number of
 
 
     <div data-component="reveal" id="Karel_while__put_balls_in_upper_row_reveal"   data-showtitle="Hint" data-hidetitle="Hide hint">
-    <p>We give instructions that resemble the program:</p>
+    <p>Ne japim intruksione që ndërtojnë programin:</p>
 
 <div data-childcomponent="Karel_while__put_balls_in_upper_row_solution" class="course-box course-box-problem course-content">
 
@@ -680,17 +683,17 @@ while you can go forward:
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - <em>For</em> statement - practicing' data-toggle="tooltip"><a href="01_Karel_04_for_practice.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - <em>For</em> praktikë' data-toggle="tooltip"><a href="01_Karel_04_for_practice.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Combining loops' data-toggle="tooltip"><a href="01_Karel_06_nested_loops_mix.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Kombinimi i loops' data-toggle="tooltip"><a href="01_Karel_06_nested_loops_mix.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - <em>For</em> statement - practicing' data-toggle="tooltip"><a href="01_Karel_04_for_practice.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - <em>For</em> praktikë' data-toggle="tooltip"><a href="01_Karel_04_for_practice.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Combining loops' data-toggle="tooltip"><a href="01_Karel_06_nested_loops_mix.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Kombinimi i loops' data-toggle="tooltip"><a href="01_Karel_06_nested_loops_mix.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

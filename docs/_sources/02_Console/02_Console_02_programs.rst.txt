@@ -1,12 +1,12 @@
-Python programs
+Programet Python
 ===============
 
-As we saw in the chapter on Karel, programs consist of stetments. Let's look at some of the basic Python stetments we will use to write the first programs.
+Siç pamë në kapitullin për Karelin, programet përbëhen nga elemente. Le të shohim disa nga deklarimet themelore të Python që do të përdorim për të shkruar programet e para.
 
-Assigning a value to a variable
+Caktimi i një vlere në një variabël
 -------------------------------
 
-Variable is a named space in the memory of a computer, in which we can store values of any kind (number, text, logical value, or something else). Intermediate results are often placed in variables when calculating. When we run a Python shell, we can assign a value to a variable with one command, and then use the value of that variable in the following commands. For example:
+Variabël është një hapësirë e quajtur në kujtesën e një kompjuteri, në të cilin mund të ruajmë vlera të çfarëdo lloji (numri, teksti, vlera logjike ose diçka tjetër). Rezultatet e ndërmjetme shpesh vendosen në variabël gjatë llogaritjes. Kur drejtojmë një shell Python, ne mund të caktojmë një vlerë në një variabël me një komandë, dhe pastaj të përdorim vlerën e atij variabli në komandat e mëposhtme. Për shembull:
 
 .. code::
 
@@ -20,31 +20,31 @@ Variable is a named space in the memory of a computer, in which we can store val
 
 .. infonote::
 
-    **Value assignment statement**
+    **Deklarimi i vendosjes së vlerës **
 
-    The value assignment statement is written by writing the name of a variable, followed by the equals sign ``=``, and then the expression whose value we assign to the variable. We also consider integers and real numbers to be expressions (these are the simplest possible expressions).
-    
-.. infonote::
+    Deklarimi i vendosjes së vlerës shkruhet duke shkruar emrin e një variabli, e ndjekur nga shenja e barabartë `` = ``, dhe pastaj shprehja vlerën e së cilës ia caktojmë variablës. Ne gjithashtu konsiderojmë numrat e plotë dhe numrat realë si shprehje (këto janë shprehjet më të thjeshta të mundshme).
+    
+.. infonote ::
 
-    **Names of variables**
-    
-    Variable names (as well as other names in programs we write) can consist of uppercase and lowercase letters, digits and underscore, but they cannot begin with a digit.
-    
-    Python distinguishes between uppercase and lowercase letters. *N* and *n* are different names and if we use them both, they would represent two different variables.
-    
-    The variable name can be as long as we need it.
-    
-    When writing programs (or individual statements), we try to give the variables meaningful names so that the commands and programs are as clear as possible.
+    **Emrat e variablave **
+    
+    Emrat e ndryshueshëm (si dhe emrat e tjerë në programet që shkruajmë) mund të përbëhen nga shkronja të mëdha dhe të vogla, shifra dhe nënvizime, por ato nuk mund të fillojnë me një shifër.
+    
+    Python bën dallimin midis shkronjave të mëdha dhe të vogla. *N* dhe *n* janë emra të ndryshëm dhe nëse i përdorim të dy, ato do të përfaqësonin dy ndryshore të ndryshme.
+    
+    Emri i ndryshueshëm mund të jetë për aq kohë sa na duhet.
+    
+    Kur shkruajmë programe (ose deklarata individuale), ne përpiqemi t'u japim variablave emra kuptimplotë në mënyrë që komandat dhe programet të jenë sa më të qarta.
 
-In Python, it is a common style that capital letters are not used (though allowed), and when a name is made up of more than one word, those words are separated by an uderscore, for example, *price_of_one_piece*. Numbers are used in names when it makes sense (which is not often).
+Në Python, është një stil i zakonshëm që shkronjat kapitale nuk përdoren (megjithëse lejohen), dhe kur një emër përbëhet nga më shumë se një fjalë, ato fjalë ndahen nga një underscore, për shembull, *price_of_one_piece*. Numrat përdoren në emra kur ka kuptim (i cili nuk është shpesh).
 
-**Variable names - check your understanding:**
+**Emrat e ndryshueshëm - kontrolloni mirë njohuritë tuaja: **
 
 .. dragndrop:: console__basics_quiz_variable_names
-    :feedback: Try again!
-    :match_1: 2_date ||| incorrect, starts with an illegal character
-    :match_2: pet_no_2 ||| correct name
-    :match_3: state_at_23:59 ||| incorrect, contains an illegal character
+    :feedback: Provo përsëri!
+    :match_1: 2_date ||| gabim, fillon me karakter të gabuar
+    :match_2: pet_no_2 ||| Emër i saktë
+    :match_3: state_at_23:59 ||| Gabim, përmban karakter të gabuar
 
     Match the proposed variable names with the answers.
 
@@ -56,17 +56,17 @@ In Python, it is a common style that capital letters are not used (though allowe
    :answer_c: 2D_graphics
    :answer_d: _3D_graphics
    :answer_e: pet-no-2
-   :correct: a, b, d
+   :Correct: a, b, d
 
-   Which of these can be the name of a variable?
+   Cili nga këta mund të jetë emër variabli?
 
 
-Print values from a program
+Printoni vlerat nga një program
 ---------------------------
 
-In interactive work, it is enough to enter an expression to see its value, but we cannot use that in programs. To print something from a program, we use the *print()* function. For now, we will use only the simplest form of this function.
+Në punën interaktive, mjafton të futemi në një shprehje për të parë vlerën e saj, por ne nuk mund ta përdorim atë në programe. Për të shtypur diçka nga një program, ne përdorim funksionin *print ()*. Tani për tani, ne do të përdorim vetëm formën më të thjeshtë të këtij funksioni.
 
-The expression whose value we want to print is put between brackets, for example:
+Shprehja, vlera e së cilës duam të shtypim vihet midis kllapave, për shembull:
 
 .. code::
 
@@ -74,7 +74,7 @@ The expression whose value we want to print is put between brackets, for example
     4
     >>> 
 
-With a single call of function *print()* we can print multiple values. Expressions whose values we want to print are listed between brackets and separated by commas, for example:
+Me një thirrje të vetme të funksionit *print ()* ne mund të shtypim vlera të shumta. Shprehjet, vlerat e të cilave ne duam të shtypim renditen në mes kllapave dhe ndahen me presje, për shembull:
 
 .. code::
 
@@ -89,15 +89,15 @@ With a single call of function *print()* we can print multiple values. Expressio
 
 .. infonote::
 
-    We have already encountered the functions in the chapters on Karel, we recognize them by the parentheses behind the name. Recall, we call the data that we specify between parentheses **parameters** or **arguments**. We'll talk more about functions soon.
-    
+   Tashmë kemi hasur në funksionet në kapitujt mbi Karel, i njohim ato me kllapa pas emrit. Kujtojmë, ne i quajmë të dhënat që specifikojmë midis kllapave **parametrat** ose **argumentet**. Ne do të flasim së shpejti më shumë rreth funksioneve.
+    
 
-Starting a program
+Fillimi i një programi
 ------------------
 
-**Running programs in browser**
+**Drejtimin e programeve në shfletuesin **
 
-To help you get started, we used the **ActiveCode** component of the `Runestone Interactive <http://runestoneinteractive.org/>`__ project and enabled you to run Python programs in the web pages of this course. For example, below are the statements we previously entered interactively, but this time written as a program. You can start the program by clicking the "Run" button.
+Për t'ju ndihmuar të filloni, ne përdorëm përbërësin **ActiveCode** të projektit `Runestone Interactive <http://runestoneinteractive.org/>` __ dhe ju mundësuam të drejtoni programet Python në faqet e internetit të këtij kursi. Për shembull, më poshtë janë deklaratat që kemi hyrë më parë në mënyrë interaktive, por kësaj radhe të shkruara si program. Ju mund ta filloni programin duke klikuar butonin "Run".
 
 .. activecode:: console__program_first
 
@@ -107,70 +107,70 @@ To help you get started, we used the **ActiveCode** component of the `Runestone 
     area = a*b
     print(circumference, area)
     
-**Running programs from the IDLE environment**
+** Drejtimin e programeve nga mjedisi IDLE **
 
-It is recommended that you, in addition to writing programs on these web pages, run programs at least occasionally in the *IDLE* environment. Getting used to the *IDLE* environment is important for you to become more independent in programming.
+Rekomandohet që përveç shkrimit të programeve në këto faqe në internet, të drejtoni programe të paktën herë pas here në mjedisin *IDLE*. Të mësoheni me mjedisin *IDLE* është e rëndësishme që ju të bëheni më të pavarur në programim.
 
-When you run *IDLE* on your computer, open the integrated text editor (File / New File menu) and type in the previous (or any other) program.
+Kur ekzekutoni *IDLE* në kompjuterin tuaj, hapni redaktorin e tekstit të integruar (menuja File / New File) dhe shkruani programin e mëparshëm (ose ndonjë tjetër).
 
-When you finish the program, save it (menu File / Save) and then run it (menu Run / Run Module).
+Kur mbaroni programin, ruajeni atë (menuja File / Save) dhe më pas ekzekutoni atë (menuja Run / Run Module).
 
 .. image:: ../../_images/Console/console_run_from_idle.png
   :width: 350px
   :align: center
 
-You will see the result in the interactive shell window.
+Do ta shihni rezultatin në dritaren interaktive të shell.
 
 
-**Running programs from an online environment**
+**Drejtimi i programeve nga një mjedis në internet**
 
-Another way to run your Python program is to use one of the online programming environments. One such environment is https://repl.it/.
+Një mënyrë tjetër për të drejtuar programin tuaj të Python është të përdorni një nga mjediset e programimit në internet. Një mjedis i tillë është https://repl.it/.
 
 .. image:: ../../_images/Console/console_repl.it_start.png
   :width: 500px
   :align: center
 
-Click on the ``+ new repl`` button, select the Python language and click ``Create repl``. Your web browser will open a page where you can type a program and run it.
+Klikoni në butonin ``+ reja repl``, zgjidhni gjuhën e Python dhe klikoni ``Create repl``. Shfletuesi juaj i internetit do të hapë një faqe ku mund të shkruani një program dhe ta ekzekutoni atë.
 
 .. image:: ../../_images/Console/console_repl.it_run.png
   :width: 500px
   :align: center
 
 
-Program errors
+Gabimet e programit
 --------------
 
-Sometimes, you may not type a statement in the program exactly as required by the Python rules. In such case, the Python interpreter cannot understand the statement and you receive an error message. Each runtime environment reports an error in a slightly different way, but each of them tells in which line of the program the error occurred and what type of error it is.
+Ndonjëherë, mund të mos shkruani një deklaratë në program saktësisht siç kërkohet nga rregullat e Python. Në këtë rast, interpretuesi i Python nuk mund ta kuptojë deklaratën dhe ju merrni një mesazh gabimi. Çdo mjedis i ekzekutimit raporton një gabim në një mënyrë paksa të ndryshme, por secila prej tyre tregon se në cilën linjë të programit ka ndodhur gabimi dhe çfarë lloji i gabimit është.
 
-The occurrence of errors (also known as bugs) should not worry you as it is a common thing and happens to experienced developers as well. Look at the message carefully, make sure you understand what is wrong, then correct it and run the program again. Understanding error messages is an integral part of programming and can be practiced like many other skills.
+Ndodhja e gabimeve (e njohur edhe si gabime) nuk duhet t'ju shqetësojë pasi është një gjë e zakonshme dhe ndodh me zhvilluesit me përvojë gjithashtu. Shikoni mesazhin me kujdes, sigurohuni që të kuptoni se çfarë është e gabuar, pastaj korrigjoni atë dhe drejtojeni programin përsëri. Të kuptuarit e mesazheve të gabimit është një pjesë integrale e programimit dhe mund të praktikohet si shumë aftësi të tjera.
 
-To help you understand the error messages you will be getting (and to become less anxious about errors), we recommend that you now try to deliberately make some small mistakes that might anyway happen to you when writing a program.
+Për t'ju ndihmuar të kuptoni mesazhet e gabimit që do të merrni (dhe të bëheni më pak të shqetësuar për gabimet), ju rekomandojmë që tani të përpiqeni të bëni me qëllim disa gabime të vogla që sidoqoftë mund t'ju ndodhin kur shkruani një program.
 
-When you make a few intentional errors, you will gain some experience how error messages look like and it will be easier for you to understand the same messages latter, when they occur unintentionally. 
+Kur bëni disa gabime të qëllimshme, do të fitoni përvojë se si duken mesazhet e gabimit dhe do të jetë më e lehtë për ju të kuptoni të njëjtat mesazhe më vonë, kur ato ndodhin pa qëllim.
 
-You can try some errors here:
+Mund të provoni disa gabime këtu:
 
 .. activecode:: console__program_make_err
 
     # add statement(s)
     
 
-We have also prepared a few programs with intentionally made mistakes, which we then explain. Programs are short to make errors more noticeable, but in longer programs, debugging is almost the same. Since the error message contains the program line number in which the error occured, in longer programs you just need to first find the program line mentioned and look at that (and possibly the previous) line.
+Ne kemi përgatitur gjithashtu disa programe me gabime, të cilat pastaj i shpjegojmë. Programet janë të shkurtër për të bërë gabime më të dukshme, por në programe më të gjata, korrigjimi i gabimeve është gati i njëjtë. Meqenëse mesazhi i gabimit përmban numrin e linjës së programit në të cilin ka ndodhur gabimi, në programe më të gjata duhet të gjeni së pari rreshtin e programit të përmendur dhe të shikoni atë (dhe ndoshta linjën e mëparshme).
 
-Run each of the following programs, then see the error message and explanation.
+Drejtoni secilin nga programet e mëposhtëm, pastaj shikoni mesazhin dhe shpjegimin e gabimit.
 
 .. activecode:: console__program_err1
 
     prit(2+2)
     
-The message says that it is an error of type *NameError*. This means that some of the names in the specified line are unknown to the Python interpreter (name is not defined). Note that the name of the *print* function is not spelled correctly (and the function *prit* does not exist). By inserting the letter *n* the error is corrected and the program works.
+Mesazhi thotë që është një gabim i tipit *NameError*. Kjo do të thotë që disa nga emrat në rreshtin e specifikuar janë të panjohur për interpretuesin e Python (emri nuk përcaktohet). Vini re se emri i funksionit *print* nuk është shkruar saktë (dhe funksioni *wait* nuk ekziston). Me futjen e shkronjës *n* gabimi korrigjohet dhe programi funksionon.
 
 .. activecode:: console__program_err2
 
     result = 2 + 2
     print(resultt)
     
-The error is of the same type, only this time it refers to the name *resultt*. By removing the superfluous letter *t*, the program becomes correct.
+Gabimi është i të njëjtit lloj, vetëm këtë herë i referohet emrit *resultt*. Duke hequr shkronjën e tepërt *t*, programi bëhet i saktë.
 
 .. activecode:: console__program_err3
 
@@ -178,7 +178,7 @@ The error is of the same type, only this time it refers to the name *resultt*. B
     b = 2
     print(a b)
     
-The error is of type *SyntaxError*, which means that Python statement construction rules are not followed. In this case, a comma between *a* and *b* is missing.
+Gabimi është i tipit *SyntaxError*, që do të thotë se nuk respektohen rregullat e ndërtimit të deklaratës Python. Në këtë rast, një presje midis *a* dhe *b* mungon.
 
 .. activecode:: console__program_err4
 
@@ -186,7 +186,7 @@ The error is of type *SyntaxError*, which means that Python statement constructi
     b = 2
     print a, b
 
-Another syntax error. Again, the rules of statement construction were not followed, and this time the brackets are missing.
+Një tjetër gabim sintaksor. Përsëri, rregullat e ndërtimit të deklaratave nuk u ndoqën, dhe këtë herë kllapat mungojnë.
 
 .. activecode:: console__program_err5
 
@@ -194,16 +194,16 @@ Another syntax error. Again, the rules of statement construction were not follow
     b = 0
     print(a / b)
 
-The error is of type *ZeroDivisionError*. This error is different from the previous ones, because the statement was written correctly and was successfully interpreted. However, the execution of this command resulted in zero division, which is not a permitted operation. The program should be written in such a way that it does not attempt a zero division. The correction in this case depends on what we want our program to do in this situation. One possibility is to check that the divisor is not zero before dividing.
+Gabimi është i tipit *ZeroDivisionErrors*. Ky gabim është i ndryshëm nga ai i mëparshmi, sepse deklarata ishte shkruar në mënyrë korrekte dhe u interpretua me sukses. Sidoqoftë, ekzekutimi i kësaj komande rezultoi në ndarje zero, i cili nuk është një operacion i lejuar. Programi duhet të shkruhet në atë mënyrë që të mos tentojë një ndarje zero. Korrigjimi në këtë rast varet nga ajo që duam të bëjmë programi ynë në këtë situatë. Një mundësi është të kontrolloni që pjesëtuesi nuk është zero para se të ndahet.
 
 ~~~~
 
-Make sure you understand these three types of error by answering the question.
+Sigurohuni t’i kuptoni këto tre lloje gabimesh duke iu përgjigjur pyetjes.
 
 .. dragndrop:: console__program_quiz_errors
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: SyntaxError|||print(3*(2+2)
     :match_2: NameError|||а=3</br>print(a / b)
     :match_3: ZeroDivisionError|||b=3//6</br>print(3 // b)
 
-    Match the error type with the program.
+    Bashko llojin e gabimit me programin.

@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Drawing from reference &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Vizatimi nga referenca &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawing from reference - additional examples" href="03_PyGame_12b_Drawing_Given_Examples_opt.html" />
-    <link rel="prev" title="Drawing straight lines and polygons" href="03_PyGame_11b_Drawing_LinePolygon.html" />
+    <link rel="next" title="Vizatimi nga referenca - shembuj shtesë" href="03_PyGame_12b_Drawing_Given_Examples_opt.html" />
+    <link rel="prev" title="Vizatimi i linjave dhe poligoneve të drejta" href="03_PyGame_11b_Drawing_LinePolygon.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,16 +205,16 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="drawing-from-reference">
-<h1>Drawing from reference<a class="headerlink" href="#drawing-from-reference" title="Permalink to this headline">¶</a></h1>
-<p>We have just learned how to draw some basic shapes in the PyGame environment using drawing functions. As it was mentioned before, all such images consist of pixels. These are so-called raster, or bitmap, images. We have seen that, in order to draw basic shapes, we need to know the coordinates of pixels that determine each such shape. However, in a more realistic situation these coordinates are not given directly and we need to determine them ourselves.</p>
-<p>If we want to programmatically generate an image using an existing bitmap as a reference, we can determine the coordinates of the points from the given image. We can magnify the image in one of the image viewing programs to get each pixel to look like a square. That can look like this:</p>
+  <div class="section" id="vizatimi-nga-referenca">
+<h1>Vizatimi nga referenca<a class="headerlink" href="#vizatimi-nga-referenca" title="Permalink to this headline">¶</a></h1>
+<p>Sapo kemi mësuar se si të vizatojmë disa forma themelore në mjedisin PyGame duke përdorur funksionet e vizatimit. Siç u përmend më parë, të gjitha imazhet e tilla përbëhen nga piksele. Këto janë të ashtuquajturat imazhe raster, ose bitmap. Ne kemi parë që, për të vizatuar forma themelore, duhet të dimë koordinatat e pikselave që përcaktojnë secilën formë të tillë. Sidoqoftë, në një situatë më realiste këto koordinata nuk jepen direkt dhe ne duhet t’i përcaktojmë vetë ato.</p>
+<p>Nëse duam të gjenerojmë me programe një imazh duke përdorur një bitmap ekzistues si referencë, mund të përcaktojmë koordinatat e pikave nga imazhi i dhënë. Ne mund ta zmadhojmë figurën në një nga programet e shikimit të imazhit për të marrë çdo piksel të duket si një katror. Kjo mund të duket si kjo:</p>
 <a class="reference internal image-reference" href="../_images/ladder_grid.png"><img alt="../_images/ladder_grid.png" class="align-center" src="../_images/ladder_grid.png" style="width: 300px;" /></a>
-<p>We can see that this image was generated by drawing 4 horizontal and 2 vertical lines, an also that all 6 lines are black and 1 pixel wide. Since we know that <em>x</em> coordinate is counted from left to right and <em>y</em> from top to bottom, as well as that counting starts from zero, we can determine the coordinates of the start and end points of all six lines simply by counting.</p>
-<div class="section" id="ladder">
-<h2>Ladder<a class="headerlink" href="#ladder" title="Permalink to this headline">¶</a></h2>
-<p>Read the coordinates from the enlarged image above and write a program that draws ladders like those.</p>
-<p><strong>Hint:</strong> by counting (from zero) we can find that the coordinates of the end points of the left vertical line are (5, 3) and (5, 36). The coordinates of the end points of the other 5 lines are to be determined in the same way.</p>
+<p>Ne mund të shohim që kjo imazh u krijua duke vizatuar 4 linja horizontale dhe 2 vertikale, gjithashtu që të gjitha 6 linjat janë të zeza dhe të gjera 1 pixel. Meqenëse e dimë se koordinata <em>x</em> llogaritet nga e majta në të djathtë dhe <em>y</em> nga lart poshtë, si dhe që numërimi fillon nga zero, mund të përcaktojmë koordinatat e pikave fillestare dhe fundore të të gjashtë rreshtave thjesht duke numëruar .</p>
+<div class="section" id="shkalle">
+<h2>Shkallë<a class="headerlink" href="#shkalle" title="Permalink to this headline">¶</a></h2>
+<p>Lexoni koordinatat nga imazhi i zmadhuar më lart dhe shkruani një program që vizaton shkallët si ato.</p>
+<p><strong>Ndihmë:</strong> duke numëruar (nga zero) mund të zbulojmë se koordinatat e pikave fundore të vijës vertikale të majtë janë (5, 3) dhe (5, 36). Koordinatat e pikave përfundimtare të 5 linjave të tjera do të përcaktohen në të njëjtën mënyrë.</p>
 
 <div data-childcomponent="PyGame__drawing_ladder_assist" class="course-box course-box-problem course-content">
 
@@ -252,23 +251,23 @@ pg.draw.line(canvas, pg.Color("black"), (???, ???), (???, ???), 1) # step
 pg.draw.line(canvas, pg.Color("black"), (???, ???), (???, ???), 1) # step
 </textarea>
 </div>
-<p>The real size image is very small, only 20 pixels wide and 40 pixels high. We could also determine the coordinates of the points for larger images by counting, but that would be tedious and prone to errors (that’s why we chose such a small image in this example). The good news is that image viewing and editing programs typically show the coordinates of the pixel on which the mouse cursor currently is. The cursor coordinates are usually written somewhere in the status bar at the bottom of the window in which the program is running, often in the lower left corner.</p>
-<p>For example, in the <em>Paint</em> drawing program, when an image is magnified 8 times and the grid that emphasizes individual pixels is shown, we can easily position the cursor on any pixel and read its coordinates. In this picture, the mouse cursor was on the red pixel, which, as we said earlier, has the coordinates (5, 36).</p>
+<p>Imazhi i madhësisë reale është shumë i vogël, vetëm 20 pixel i gjerë dhe 40 pixel i lartë. Ne gjithashtu mund të përcaktonim koordinatat e pikave për imazhe më të mëdha duke numëruar, por kjo do të ishte e lodhshme dhe e prirur ndaj gabimeve (kjo është arsyeja pse ne zgjodhëm një imazh kaq të vogël në këtë shembull). Lajmi i mirë është që programet e shikimit dhe redaktimit të figurave zakonisht tregojnë koordinatat e pikselit në të cilin aktualisht është kursori i mouse. Koordinatat e kursorit zakonisht shkruhen diku në shiritin e statusit në fund të dritares në të cilën po zhvillon programi, shpesh në këndin e poshtëm të majtë.</p>
+<p>Për shembull, në programin e vizatimit <em>Paint</em>, kur një imazh zmadhohet 8 herë dhe shfaqet rrjeti që thekson piksele individuale, ne mund të pozicionojmë lehtësisht kursorin në çdo piksel dhe të lexojmë koordinatat e tij. Në këtë foto, kursori i mouse ishte në pikselin e kuq, i cili, siç thamë edhe më herët, ka koordinatat (5, 36).</p>
 <a class="reference internal image-reference" href="../_images/read_xy.png"><img alt="../_images/read_xy.png" class="align-center" src="../_images/read_xy.png" style="width: 600px;" /></a>
 <hr class="docutils" />
-<p>In the following tasks you need to write a program that draws a drawing as similar as possible to the given one. You can see the drawings you need to draw when you click the “Play task” button.</p>
-<p>To help you determine the coordinates of important points in a drawing, the program you start by clicking the “Play task” button will, beside the drawing, show the coordinates of the point where the mouse cursor is. To make the reading easier, in all examples the coordinates of all significant points are rounded to 5 pixels (coordinates end with zero or five).</p>
-<p>If you want to solve these tasks outside of the web browser, in your programming environment, you can download the images that your programs need to draw, open them in an image viewer, and read the coordinates of the important points there.</p>
+<p>Në detyrat e mëposhtme ju duhet të shkruani një program që vizaton një vizatim sa më të ngjashëm të jetë e mundur me atë të dhënë. Ju mund të shihni vizatimet që duhet të vizatoni kur klikoni në butonin “Luaj lojën”.</p>
+<p>Për t’ju ndihmuar të përcaktoni koordinatat e pikave të rëndësishme në një vizatim, programi që ju filloni duke klikuar butonin “Luaj lojën” do, krahas vizatimit, të tregojë koordinatat e pikës ku është kursori i mouse. Për ta bërë leximin më të lehtë, në të gjithë shembujt koordinatat e të gjitha pikave të rëndësishme janë të rrumbullakosura në 5 piksele (koordinatat përfundojnë me zero ose pesë).</p>
+<p>Nëse doni të zgjidhni këto detyra jashtë shfletuesit të internetit, në mjedisin tuaj të programimit, mund të shkarkoni imazhet që programet tuaja duhet të vizatojnë, t’i hapni ato në një shikues imazhi dhe të lexoni koordinatat e pikave të rëndësishme atje.</p>
 <a class="reference internal image-reference" href="../_images/drawing_grid_antenna.png"><img alt="../_images/drawing_grid_antenna.png" src="../_images/drawing_grid_antenna.png" style="width: 120px;" /></a>
 <a class="reference internal image-reference" href="../_images/drawing_grid_balance.png"><img alt="../_images/drawing_grid_balance.png" src="../_images/drawing_grid_balance.png" style="width: 120px;" /></a>
 <a class="reference internal image-reference" href="../_images/drawing_grid_house.png"><img alt="../_images/drawing_grid_house.png" src="../_images/drawing_grid_house.png" style="width: 120px;" /></a>
 <a class="reference internal image-reference" href="../_images/drawing_grid_smiley.png"><img alt="../_images/drawing_grid_smiley.png" src="../_images/drawing_grid_smiley.png" style="width: 120px;" /></a>
 <a class="reference internal image-reference" href="../_images/drawing_grid_trees.png"><img alt="../_images/drawing_grid_trees.png" src="../_images/drawing_grid_trees.png" style="width: 120px;" /></a>
 </div>
-<div class="section" id="id1">
-<h2>Антена<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Before cable television, television signals were received by antennas that were usually placed on the roofs of people’s homes and buildings. In this task one such antenna is to be drawn.</p>
-<p>As you can see when you run the example, the drawing consists of seven lines. The width of the vertical line is 4 pixels, the top two horizontal ones 1, the middle two 2, and the bottom two 3 pixels. The color of the background is “skyblue”.</p>
+<div class="section" id="antena">
+<h2>Antena<a class="headerlink" href="#antena" title="Permalink to this headline">¶</a></h2>
+<p>Para televizionit kabllor, sinjalet televizive merreshin nga antenat që zakonisht vendoseshin në çatitë e shtëpive dhe ndërtesave të njerëzve. Në këtë detyrë duhet të tërhiqet një antenë e tillë.</p>
+<p>Siç mund ta shihni kur drejtoni shembullin, vizatimi përbëhet nga shtatë rreshta. Gjerësia e vijës vertikale është 4 piksele, dy kryesorët horizontale 1, dy të mesmet 2 dhe dy fundorët 3 piksele. Ngjyra e sfondit është “blueblue”.</p>
 
 <div data-childcomponent="PyGame__drawing_antenna_simple_assist" class="course-box course-box-problem course-content">
 
@@ -359,7 +358,7 @@ pg.draw.line(canvas, ???
 </div>
 
     <div data-component="reveal" id="PyGame__drawing_antenna_simple_reveal"   data-showtitle="Show solution" data-hidetitle="Hide solution">
-    <p>The complete program is provided, you can try it here as well.</p>
+    <p>Programi e plote mund ta provoni dhe këtu.</p>
 
 <div data-childcomponent="PyGame__drawing_antenna_simple_solution" class="course-box course-box-problem course-content">
 
@@ -394,7 +393,7 @@ pygamebg.wait_loop()
     </div>
 <div class="section" id="balance-scale">
 <h2>Balance scale<a class="headerlink" href="#balance-scale" title="Permalink to this headline">¶</a></h2>
-<p>This drawing consists of a line (whose width is 2) and three triangles. The middle triangle, which represents the support of the balance, is filled with color, so when drawing it the width parameter should be omitted, while for the other two triangles width 2 should be specified.</p>
+<p>Ky vizatim përbëhet nga një rresht (gjerësia e të cilit është 2) dhe tre trekëndësha. Trekëndëshi i mesëm, i cili paraqet mbështetjen e ekuilibrit, është i mbushur me ngjyra, kështu që kur vizatoni atë duhet të lihet parametri i gjerësisë, ndërsa për dy trekëndëshat e tjerë duhet të përcaktohet gjerësia 2.</p>
 
 <div data-childcomponent="PyGame__drawing_balance" class="course-box course-box-problem course-content">
 
@@ -487,12 +486,12 @@ pg.draw.polygon(canvas, pg.Color("brown"), [(???, ???), ...
 </div>
 <div class="section" id="smiley">
 <h2>Smiley<a class="headerlink" href="#smiley" title="Permalink to this headline">¶</a></h2>
-<p>In this task, the work to be done is a bit more complex. Since the drawing is composed of circles and ellipses, we cannot accurately read all the coordinates and measurements we need directly. What we can do is to read for each ellipse the <span class="math notranslate nohighlight">\(x\)</span> coordinate of its leftmost and rightmost point ((<span class="math notranslate nohighlight">\(X_L\)</span> and <span class="math notranslate nohighlight">\(X_R\)</span>), as well as the <span class="math notranslate nohighlight">\(y\)</span> coordinate of the highest and lowest point (<span class="math notranslate nohighlight">\(Y_T\)</span> and <span class="math notranslate nohighlight">\(Y_B\)</span>). After that, the width and height of the ellipse can be calculated as the differences of the corresponding <span class="math notranslate nohighlight">\(x\)</span> (for width), and <span class="math notranslate nohighlight">\(y\)</span> coordinates (for height).</p>
-<p>As for the circle, we have various options:</p>
+<p>Në këtë detyrë, puna që duhet të bëhet është pak më e ndërlikuar. Meqenëse vizatimi është i përbërë nga rrathë dhe elips, nuk mund të lexojmë me saktësi të gjitha koordinatat dhe matjet që na duhen drejtpërdrejt. Ajo që mund të bëjmë është të lexojmë për secilën elips: math: <cite>x</cite> të koordinatës së pikës së saj të majtë dhe të djathtë (( :math:` X_L` dhe <span class="math notranslate nohighlight">\(X_R\)</span>), si dhe <span class="math notranslate nohighlight">\(y\)</span> dhe: matematikë: <cite>Y_B</cite>) Pas kësaj, gjerësia dhe lartësia e elipsit mund të llogariten si diferencat e përkatëse :math:` x` ( për gjerësi), dhe <span class="math notranslate nohighlight">\(y\)</span> koordinatat (për lartësi).</p>
+<p>Sa i përket rrethit, ne kemi mundësi të ndryshme:</p>
 <ul class="simple">
-<li>we can draw the circle as an ellipse inscribed in a square (using the <em>pg.draw.ellipse</em> function)</li>
-<li>we can approximate the coordinates of the center of the circle</li>
-<li>if we want to determine the coordinates of the circle center more accurately, we can first find the points <span class="math notranslate nohighlight">\(X_L\)</span>, <span class="math notranslate nohighlight">\(X_R\)</span>, <span class="math notranslate nohighlight">\(Y_T\)</span>, and <span class="math notranslate nohighlight">\(Y_B\)</span> as we did for ellipses, and then calculate the coordinates of the center using formulas <span class="math notranslate nohighlight">\(X_c = {{X_R + X_L} \over 2}\)</span> and <span class="math notranslate nohighlight">\(Y_c = {{Y_T + Y_B} \over 2}\)</span></li>
+<li><p>ne mund të vizatojmë rrethin si një elipse të gdhendur në një katror (duke përdorur funksionin <em>pg. pull.ellipse</em>)</p></li>
+<li><p>ne mund të përafrojmë koordinatat e qendrës së rrethit</p></li>
+<li><p>nëse duam të përcaktojmë koordinatat e qendrës së rrethit sa më saktë, duhet fillimisht të gjejmë pikat <span class="math notranslate nohighlight">\(X_L\)</span>, <span class="math notranslate nohighlight">\(X_R\)</span>, <span class="math notranslate nohighlight">\(Y_T\)</span>, and <span class="math notranslate nohighlight">\(Y_B\)</span> siç bëmë pçr elipsin, dhe pastaj llogarit koordinatat e qendrës me formulat <span class="math notranslate nohighlight">\(X_c = {{X_R + X_L} \over 2}\)</span> dhe <span class="math notranslate nohighlight">\(Y_c = {{Y_T + Y_B} \over 2}\)</span></p></li>
 </ul>
 
 <div data-childcomponent="PyGame__drawing_smiley" class="course-box course-box-problem course-content">
@@ -580,18 +579,20 @@ pg.draw.ellipse(canvas, ???, (???, ???, ???, ???), thickness?) # mouth edge
 </textarea>
 </div>
 </div>
-<div class="section" id="house">
-<h2>House<a class="headerlink" href="#house" title="Permalink to this headline">¶</a></h2>
-<p>The drawing of a house consists of a brown rectangle and a red triangle. We can draw the triangle as a polygon with three vertices. The sun is depicted as an orange circle and the grass as a green rectangle. Mind the order of drawing for the grass and the sun.</p>
-<p>It is enough to read the coordinates of the center of the circle representing the Sun approximately. For those who want a little mathematical challenge, note that the coordinates of the center can be more accurately determined similar to the previous task, although the lowest point is not visible and the coordinate <span class="math notranslate nohighlight">\(Y_B\)</span> cannot be read.</p>
-<p>If you want to see how you can determine the coordinates of the center with more accurate reading and calculating, click on the “Determining the center” button.</p>
+<div class="section" id="shtepi">
+<h2>Shtëpi<a class="headerlink" href="#shtepi" title="Permalink to this headline">¶</a></h2>
+<p>Vizatimi i një shtëpie përbëhet nga një drejtkëndësh kafe dhe një trekëndësh i kuq. Mund ta vizatojmë trekëndëshin si shumëkëndësh me tre vertikale. Dielli përshkruhet si një rreth portokalli dhe bari si një drejtkëndësh i gjelbër. Kini parasysh rendin e vizatimit për barin dhe diellin.</p>
+<p>Është e mjaftueshme për të lexuar koordinatat e qendrës së rrethit që përfaqësojnë Diellin përafërsisht. Për ata që duan një sfidë të vogël matematikore, vini re se koordinatat e qendrës mund të përcaktohen më saktë të ngjashme me detyrën e mëparshme, megjithëse pika më e ulët nuk është e dukshme dhe koordinata <span class="math notranslate nohighlight">\(Y_B\)</span> nuk mund të lexohet.</p>
+<p>Nëse doni të shihni se si mund të përcaktoni koordinatat e qendrës me lexim dhe llogaritje më të saktë, klikoni në butonin “Përcaktimi i qendrës”.</p>
 
     <div data-component="reveal" id="PyGame__drawing_house_circle_center_reveal"   data-showtitle="Determining the center" data-hidetitle="Hide determining the center">
     <blockquote>
-<div><p>As in the previous task, let <span class="math notranslate nohighlight">\(X_L\)</span> and <span class="math notranslate nohighlight">\(X_R\)</span> denote the <span class="math notranslate nohighlight">\(x\)</span> coordinates of the leftmost and rightmost point of the circle that represents the Sun, and <span class="math notranslate nohighlight">\(Y_T\)</span>, <span class="math notranslate nohighlight">\(Y_B\)</span> the <span class="math notranslate nohighlight">\(y\)</span> coordinates of the highest and lowest point of that circle.</p>
-<p>We can determine the <span class="math notranslate nohighlight">\(x\)</span> coordinate of the center as we did in the previous example, <span class="math notranslate nohighlight">\(X_C = {{X_R + X_L} \over 2}\)</span>.</p>
-<p>Since the lowest point of the circle is not visible, we cannot read the value <span class="math notranslate nohighlight">\(Y_B\)</span>, but we can determine the radius <span class="math notranslate nohighlight">\(r\)</span> using <span class="math notranslate nohighlight">\(r = X_C - X_L\)</span> or <span class="math notranslate nohighlight">\(r = X_R - X_C\)</span>. Now the <span class="math notranslate nohighlight">\(y\)</span> coordinate of the center is easily obtained: <span class="math notranslate nohighlight">\(Y_C = Y_T + r\)</span>, so we didn’t even need <span class="math notranslate nohighlight">\(Y_B\)</span>.</p>
+<div><p>Si në detyrën e mëparshme, lër <span class="math notranslate nohighlight">\(X_L\)</span> dhe <span class="math notranslate nohighlight">\(X_R\)</span> tregon koordinatat <span class="math notranslate nohighlight">\(x\)</span> në pikën më të majtë dhe më të djathte të rrethit që përfaqëson Diellin dhe kooridnatat <span class="math notranslate nohighlight">\(Y_T\)</span>, <span class="math notranslate nohighlight">\(Y_B\)</span> <span class="math notranslate nohighlight">\(y\)</span> më të larta dhe më të ulëta të atij rrethi.</p>
+<blockquote>
+<div><p>Ne mund të pëcakrojmë koordinatat e qendrës <span class="math notranslate nohighlight">\(x\)</span> siç bëmë në shembullin më përpara <span class="math notranslate nohighlight">\(X_C = {{X_R + X_L} \over 2}\)</span>.</p>
 </div></blockquote>
+</div></blockquote>
+<p>Meqë pika më e ulët e rrethit nuk është e dukshme, ne nuk e lexojme dot vlerën <span class="math notranslate nohighlight">\(Y_B\)</span>,por mund të përcaktojmë rrezen <span class="math notranslate nohighlight">\(r\)</span> duke përdorur <span class="math notranslate nohighlight">\(r = X_C - X_L\)</span> ose <span class="math notranslate nohighlight">\(r = X_R - X_C\)</span>. Tani koordinata <span class="math notranslate nohighlight">\(y\)</span> gjendet lehtesisht <span class="math notranslate nohighlight">\(Y_C = Y_T + r\)</span>, kështu nuk kemi nevojë për <span class="math notranslate nohighlight">\(Y_B\)</span>.</p>
 
     </div>
     
@@ -677,10 +678,10 @@ pg.draw.polygon(canvas, color???, [(x1???, y1???), (x2???, y2???), (x3???, y3???
 </textarea>
 </div>
 </div>
-<div class="section" id="trees">
-<h2>Trees<a class="headerlink" href="#trees" title="Permalink to this headline">¶</a></h2>
-<p>Three exact same trees are to be drawn, so that each subsequent tree is obtained by moving the previous one to the right. Obviously, this task could have been given by simply describing the first tree and specifying the distance between two adjacent trees. The program that draws the image is given nevertheless, because using an image to specify a task is clearer and simpler.</p>
-<p>To make the task a bit more like a real situation (in which there is no image), in this example reading the <span class="math notranslate nohighlight">\(x\)</span> coordinate is intentionally disabled for the right side of the image. All the required coordinates that you cannot read can be calculated.</p>
+<div class="section" id="peme">
+<h2>Pemë<a class="headerlink" href="#peme" title="Permalink to this headline">¶</a></h2>
+<p>Tri pemë të njëjta duhen vizatuar, në mënyrë që secila pemë pasuese të merret duke lëvizur një të mëparshme në të djathtë. Natyrisht, kjo detyrë mund të ishte dhënë duke përshkruar thjesht pemën e parë dhe duke specifikuar distancën midis dy pemëve ngjitur. Programi që vizaton imazhin jepet megjithatë, sepse përdorimi i një imazhi për të specifikuar një detyrë është më i qartë dhe më i thjeshtë.</p>
+<p>Për ta bërë detyrën pak më shumë si një situatë reale (në të cilën nuk ka imazh), në këtë shembull duke lexuar: matematikë: <cite>x</cite> koordinata është me aftësi të kufizuara qëllimisht për anën e djathtë të figurës. Të gjitha koordinatat e kërkuara që nuk mund t’i lexoni mund të llogariten.</p>
 
 <div data-childcomponent="PyGame__drawing_trees" class="course-box course-box-problem course-content">
 
@@ -770,17 +771,17 @@ pygamebg.wait_loop()
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing straight lines and polygons' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatimi i linjave dhe poligoneve të drejta' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawing from reference - additional examples' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vizatimi nga referenca - shembuj shtesë' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing straight lines and polygons' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatimi i linjave dhe poligoneve të drejta' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawing from reference - additional examples' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vizatimi nga referenca - shembuj shtesë' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

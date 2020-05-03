@@ -1,15 +1,15 @@
-Math Functions - Exercise
+Funksione matematike - Ushtrime
 =========================
 
-Let's practice using the mathematical functions we have learned.
+Le të praktikojmë duke përdorur funksionet matematikore që kemi mësuar.
 
 .. questionnote::
     
-    **Task - advertising:** 
-    
-    Thomas distributes advertising packages containing one calendar, a keychain and a pen. Write a program that loads how many calendars, keychains, and pens Thomas has and then prints how many advertising packages he can make.
+    **Detyrë - reklama: **
+    
+     Thomas shpërndan paketa reklamash që përmbajnë një kalendar, një keychain dhe një stilolaps. Shkruaj një program që ngarkon sa kalendarë, keychain dhe stilolapsa Thomas ka dhe më pas shtyp shumë pako reklame që ai mund të bëjë.
 
-To finish the program insert one of the mathematical functions you have learned.
+Për të përfunduar programin futni një nga funksionet matematikore që keni mësuar.
 
 .. activecode:: console__mathfunc_promo_material
 
@@ -22,18 +22,18 @@ To finish the program insert one of the mathematical functions you have learned.
 
 .. questionnote::
 
-    **Task - lemonade:** 
-    
-    A group of people set out on a journey and Zoe made lemonade for everyone. Write a program that loads how many liters of lemonade Zoe has made (as a real number), then writes how many half-liter bottles can be filled with that lemonade and how many bottles it takes for all the lemonade (the two numbers can vary by one at most).
+    **Detyrë - limonada:**
+    
+     Një grup njerëzish u nisën për një udhëtim dhe Zoe bëri limonadë për të gjithë. Shkruaj një program që ngarkon sa litra limonadë Zoe ka bërë (si një numër i vërtetë), pastaj shkruaj se sa shishe gjysmë litri mund të mbushen me atë limonadë dhe sa shishe merr për të gjithë limonadën (dy numrat mund të ndryshojnë nga një në maksimum).
     
   
 .. activecode:: console__mathfunc_lemonade
 
 .. reveal:: console__mathfunc_lemonade_reveal
-   :showtitle: Help
-   :hidetitle: Hide help
+   :showtitle: Ndihmë
+   :hidetitle: Fshih Ndihmën
    
-   To complete the following program, use some of the rounding functions.
+   Për të përfunduar programin e mëposhtëm, përdorni disa nga funksionet e rrumbullakimit.
    
    .. activecode:: console__mathfunc_lemonade_solution
    
@@ -46,17 +46,17 @@ To finish the program insert one of the mathematical functions you have learned.
     
 .. questionnote::
 
-    **Task - the game:**
-    
-    The six friends agreed to get on the playground at a certain time and play a game. Write a program that loads the delay time of each player in minutes (as whole numbers) and prints with how many minutes of delay the match could have started.
+    **Detyrë - loja:**
+    
+     Gjashtë shokët ranë dakord të futeshin në sheshin e lojërave në një kohë të caktuar dhe të luanin një lojë. Shkruani një program që ngarkon kohën e vonesës së secilit lojtar në minuta (si numra të plotë) dhe shtyp me sa minuta vonesë ndeshja mund të kishte filluar.
     
 .. activecode:: console__mathfunc_late_game
 
 .. reveal:: console__mathfunc_late_game_reveal
-   :showtitle: Help
-   :hidetitle: Hide help
+   :showtitle: Ndhmë
+   :hidetitle: Fshih Ndihmën
    
-   One possible solution is partially written below. Try to complete it.
+   Një zgjidhje e mundshme është shkruar pjesërisht më poshtë. Mundohuni ta plotësoni.
    
    .. activecode:: console__mathfunc_late_game_help
 
@@ -82,9 +82,9 @@ To finish the program insert one of the mathematical functions you have learned.
 
 .. questionnote::
 
-    **Task - two buses:** 
-    
-    Maya and Lola travel on the same highway in two different buses and talk on the phone. One of them has just noticed the milestone *x* and the other *y*. Write a program that loads integers: *x* and *y* and prints how many miles Maya and Lola are away from each other.
+   **Detyrë - dy autobusë:**
+    
+     Maya dhe Lola udhëtojnë në të njëjtën autostradë në dy autobusë të ndryshëm dhe flasin në telefon. Njëri prej tyre sapo ka vërejtur piketimin *x* dhe tjetrin *y*. Shkruaj një program që ngarkon me numër të plotë: *x* dhe *y* dhe shtyp se sa milje Maya dhe Lola janë larg nga njëra-tjetra.
     
 .. activecode:: console__mathfunc_buses
 
@@ -107,8 +107,8 @@ To finish the program insert one of the mathematical functions you have learned.
 
 .. questionnote::
 
-    **Task - Video lessons**
+    **Detyrë - Mësime në video**
 
-    The course consists of several video lessons that all last equally. You have decided to devote 90 minutes to this course every day and you want to know how many days it will take for the whole course. Write a program that loads the number of lessons and the duration of one lesson in minutes, and prints the required number of days, rounded to the nearest integer.
+     Kursi përbëhet nga disa mësime video që të gjitha zgjasin në mënyrë të barabartë. Ju keni vendosur t'i kushtoni 90 minuta këtij kursi çdo ditë dhe dëshironi të dini se sa ditë do të zgjasë për të gjithë kursin. Shkruaj një program që ngarkon numrin e mësimeve dhe kohëzgjatjen e një mësimi në minuta, dhe shtyp numrin e kërkuar të ditëve, të rrumbullakosura në numrin e plotë më të afërt ..
     
 .. activecode:: console__mathfunc_videolessons

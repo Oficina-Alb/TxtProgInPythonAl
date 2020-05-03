@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Changing the drawing size &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Ndryshimi i madhësisë së vizatimit &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawing with the help of loops" href="03_PyGame_16a_Drawing_Using_Loops1.html" />
-    <link rel="prev" title="Moving the drawing" href="03_PyGame_14_Drawing_Movable.html" />
+    <link rel="next" title="Vizatimi me ndihmën e loops" href="03_PyGame_16a_Drawing_Using_Loops1.html" />
+    <link rel="prev" title="Lëvizja e vizatimit" href="03_PyGame_14_Drawing_Movable.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,11 +205,11 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="changing-the-drawing-size">
-<h1>Changing the drawing size<a class="headerlink" href="#changing-the-drawing-size" title="Permalink to this headline">¶</a></h1>
-<p>When we talked about moving a drawing, we mentioned that it is better to do all the calculations in the program, because it is easier that way to move the drawing, or to draw it in several places when needed. The situation is similar when we want to draw the same drawing in different size, possibly in several places (each could be in different size). Instead of calculating all the coordinates from scratch, it may be enough to change one single number in our program to get a drawing of another size.</p>
-<p>To learn how to make drawings that can be resized easily, let’s first see what needs to be changed in a drawing program so that the drawing gets a different size. For example, if we drew a cloud using these statements:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shade</span><span class="p">):</span>
+  <div class="section" id="ndryshimi-i-madhesise-se-vizatimit">
+<h1>Ndryshimi i madhësisë së vizatimit<a class="headerlink" href="#ndryshimi-i-madhesise-se-vizatimit" title="Permalink to this headline">¶</a></h1>
+<p>Kur folëm për lëvizjen e një vizatimi, përmendëm se është më mirë të bëjmë të gjitha llogaritjet në program, sepse është më e lehtë në atë mënyrë që të lëvizësh vizatimin, ose ta vizatosh në disa vende kur të jetë e nevojshme. Situata është e ngjashme kur ne duam të vizatojmë të njëjtën vizatim në madhësi të ndryshme, ndoshta në disa vende (secila mund të jetë në madhësi të ndryshme). Në vend që të llogaritni të gjitha koordinatat nga e para, mund të jetë e mjaftueshme për të ndryshuar një numër të vetëm në programin tonë për të marrë një vizatim të një madhësie tjetër.</p>
+<p>Për të mësuar se si të bëj vizatime që mund të ndryshohen në madhësi të lehtë, le të shohim së pari se çfarë duhet të ndryshohet në një program vizatimi, në mënyrë që vizatimi të marrë një madhësi të ndryshme. Për shembull, nëse kemi vizatuar një re duke përdorur këto deklarime:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shade</span><span class="p">):</span>
     <span class="c1"># draw a cloud of three circles</span>
     <span class="n">gray</span> <span class="o">=</span> <span class="p">(</span><span class="n">shade</span><span class="p">,</span> <span class="n">shade</span><span class="p">,</span> <span class="n">shade</span><span class="p">)</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">gray</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span>      <span class="n">y</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
@@ -220,8 +219,8 @@
 <span class="n">cloud</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>and now we want the cloud to be twice as small and its midpoint to be still at point (200, 200), then we would change the function given above to:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shade</span><span class="p">):</span>
+<p>dhe tani duam që reja të jetë dy herë më e vogël dhe në mes të saj të jetë akoma në pikën (200, 200), atëherë do ta ndryshonim funksionin e dhënë më lart në:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shade</span><span class="p">):</span>
     <span class="c1"># draw a cloud of three circles</span>
     <span class="n">gray</span> <span class="o">=</span> <span class="p">(</span><span class="n">shade</span><span class="p">,</span> <span class="n">shade</span><span class="p">,</span> <span class="n">shade</span><span class="p">)</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">gray</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span>      <span class="n">y</span><span class="p">),</span> <span class="mi">25</span><span class="p">)</span>
@@ -229,9 +228,9 @@
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">gray</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">25</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="mi">15</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The radii of all three circles should be cut to half the previous size (25 pixels instead of 50 and 15 instead of 30), but that is not enough. If the centers of the small circles remained where they were, we would get three separate circles (try it). In order for the drawing to still look like a cloud, we also need to bring the circles closer together. More specifically, the distances of the centers of the smaller circles from the center of the large circle should also be twice less than before, that is, 25 instead of 50 pixels.</p>
-<p>In general, we do not always want a cloud that is twice as small, but that the clouds can be of different sizes. In addition, we do not want to create a separate function for each cloud size, but to have one function that can draw a cloud of a given size. IUt would be the most comfortable if we could set the size of the cloud with only one number and change the size of the cloud by changing that one number. To do this, we need to express all the sizes that change with the change of cloud size (which is the distances between the centers of the circles and the radii of those circles) using one selected size. For example, for that selected size we can take the radius of the middle circle, which we will denote by <span class="math notranslate nohighlight">\(r\)</span>. The distances of the centers of the smaller circles to the center of the larger circle are exactly <span class="math notranslate nohighlight">\(r\)</span>, and the radius of the smaller circles is equal <span class="math notranslate nohighlight">\({3 \over 5} r\)</span> regardless of the size of the cloud. When we use all these relations we have noticed, the function looks like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">shade</span><span class="p">):</span>
+<p>Rrezet e të tre rrathëve duhet të shkurtohen në gjysmën e madhësisë së mëparshme (25 piksele në vend të 50 dhe 15 në vend të 30), por kjo nuk është e mjaftueshme. Nëse qendrat e rrathëve të vogla do të mbeten aty ku ishin, do të merrnim tre rrathë të ndara (provoni). Në mënyrë që vizatimi të duket ende si një re, duhet gjithashtu t’i afrojmë rrathët më pranë. Më saktësisht, distancat e qendrave të rrathëve më të vogla nga qendra e rrethit të madh duhet gjithashtu të jenë dy herë më pak se më parë, domethënë 25 në vend të 50 pikselave.</p>
+<p>Në përgjithësi, ne jo gjithmonë duam një re që është dy herë më e vogël, por që retë mund të jenë të madhësive të ndryshme. Përveç kësaj, ne nuk duam të krijojmë një funksion të veçantë për secilën madhësi të reve, por të kemi një funksion që mund të tërheqë një re të një madhësie të caktuar. Do të ishte më e rehatshme nëse mund të vendosnim madhësinë e cloud me vetëm një numër dhe të ndryshonim madhësinë e cloud duke ndryshuar atë një numër. Për ta bërë këtë, duhet të shprehim të gjitha madhësitë që ndryshojnë me ndryshimin e madhësisë së cloud (që është distanca midis qendrave të rrathëve dhe rrezet e atyre rrathëve) duke përdorur një madhësi të zgjedhur. Për shembull, për atë madhësi të zgjedhur mund të marrim rrezen e rrethit të mesëm, të cilin do ta tregojmë me anë të <span class="math notranslate nohighlight">\(r\)</span>. Distancat e qendrave të rrathëve më të vogla deri në qendrën e rrethit më të madh janë saktësisht <span class="math notranslate nohighlight">\(r\)</span>, dhe rrezja e rrathëve më të vogla është e barabartë :math:` {3 over 5} r` pavarësisht nga madhësia e re. Kur përdorim të gjitha këto marrëdhënie që kemi vërejtur, funksioni duket si ky:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">shade</span><span class="p">):</span>
     <span class="c1"># draw a cloud of three circles</span>
     <span class="n">gray</span> <span class="o">=</span> <span class="p">(</span><span class="n">shade</span><span class="p">,</span> <span class="n">shade</span><span class="p">,</span> <span class="n">shade</span><span class="p">)</span>
     <span class="n">r_small</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">r</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span>
@@ -283,16 +282,16 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Now, let’s list the steps for a general procedure to remake any movable drawing so that it can be resized as well:</p>
+<p>Tani, le të rendisim hapat për një procedurë të përgjithshme për të rimarrë çdo vizatim të lëvizshëm, në mënyrë që të mund të ndryshohet në madhësi:</p>
 <ul class="simple">
-<li>We need to determine one length in the drawing, which will be set directly. We can call this selected length <strong>basic length</strong> or <strong>unit of measure</strong>. In the example of clouds, the basic length is the radius of the middle circle.</li>
-<li>All radii of the circles of which the drawing consists are expressed in proportion to the basic length. This means that if our base length is denoted by <span class="math notranslate nohighlight">\(a\)</span>, all other lengths in the program will be multiples of <span class="math notranslate nohighlight">\(a\)</span>, for example <span class="math notranslate nohighlight">\(2a\)</span> or <span class="math notranslate nohighlight">\(5a\)</span>. We determine the number <span class="math notranslate nohighlight">\(a\)</span> from the ratio of the required length and the selected basic length in the initial drawing (this ratio remains the same when the size of the drawing changes). In the example with the cloud, the radius of the small circle is always <span class="math notranslate nohighlight">\({3 \over 5}\)</span> of the selected basic length <span class="math notranslate nohighlight">\(r\)</span>. If rectangles or ellipses appear in the drawing, the heights and widths of those rectangles and ellipses should also be expressed in proportion to the basic length, in the same way as the radii of the circles.</li>
-<li>We determine the coordinates of all points with respect to the main point, by adding or subtracting a certain number of basic lengths to coordinates of the main point. The required number of basic lengths is determined again from the relation in the initial drawing. In the example with the cloud, to obtain <span class="math notranslate nohighlight">\(x\)</span> coordinate of the center of the left circle, we subtract <strong>one</strong> basic length from <span class="math notranslate nohighlight">\(x\)</span> coordinate of the main point (center of the middle circle). We do so because the ratio of the difference of <span class="math notranslate nohighlight">\(x\)</span> coordinates and basic length equals to one. The same procedure applies in principle to <span class="math notranslate nohighlight">\(y\)</span> coordinates, though in this case it is particularly simple. Since <span class="math notranslate nohighlight">\(y\)</span> coordinates of the centers of the circles are the same, the ratio of the difference of the <span class="math notranslate nohighlight">\(y\)</span> coordinates and the basic length is zero, so zero basic lengths should be added to <span class="math notranslate nohighlight">\(y\)</span> coordinate of the anchor to get <span class="math notranslate nohighlight">\(y\)</span> coordinate of the center of a smaller circle.</li>
+<li><p>Duhet të përcaktojmë një gjatësi në vizatim, i cili do të vendoset direkt. Mund ta quajmë këtë gjatësi të zgjedhur <strong>gjatësi themelore</strong> ose njësi matëse. Në shembullin e reve, gjatësia themelore është rrezja e rrethit të mesëm.</p></li>
+<li><p>Të gjitha rrezet e rrathëve të të cilave përbëhet vizatimi shprehen në përpjesëtim me gjatësinë themelore. Kjo do të thotë që nëse gjatësia jonë bazë shënohet nga <span class="math notranslate nohighlight">\(a\)</span>, të gjitha gjatësitë e tjera në program do të jenë shumëfish <span class="math notranslate nohighlight">\(a\)</span>, për shembull <span class="math notranslate nohighlight">\(2a\)</span> ose :math:` 5a`. Ne përcaktojmë numrin <span class="math notranslate nohighlight">\(a\)</span> nga raporti i gjatësisë së kërkuar dhe gjatësisë themelore të zgjedhur në vizatimin fillestar (ky raport mbetet i njëjtë kur ndryshon madhësia e vizatimit). Në shembullin me re, rrezja e rrethit të vogël është gjithmonë <span class="math notranslate nohighlight">\({3 \ over 5}\)</span> e gjatësisë themelore të zgjedhur <span class="math notranslate nohighlight">\(r\)</span>. Nëse drejtkëndëshat ose elipsat paraqiten në vizatim, lartësitë dhe gjerësia e atyre drejtkëndëshave dhe elipsave gjithashtu duhet të shprehen në përpjesëtim me gjatësinë themelore, në të njëjtën mënyrë si rrezet e rrathëve.</p></li>
+<li><p>Ne përcaktojmë koordinatat e të gjitha pikave në lidhje me pikën kryesore, duke shtuar ose zbritur një numër të caktuar gjatesish themelore në koordinatat e pikës kryesore. Numri i kërkuar i gjatësive themelore përcaktohet përsëri nga relacioni në vizatimin fillestare. Në shembullin me re, për të përftuar <span class="math notranslate nohighlight">\(x\)</span> koordinata e qendrës së rrethit të majtë, ne zbritim <a href="#id1"><span class="problematic" id="id2">**</span></a>një ** gjatësi themelore nga <span class="math notranslate nohighlight">\(x\)</span> koordinata e pikës kryesore (qendra e mesit rrethi). Ne e bëjmë këtë sepse raporti i ndryshimit të <span class="math notranslate nohighlight">\(x\)</span> koordinatat dhe gjatësia themelore është e barabartë me një. E njëjta procedurë zbatohet në parim përkoordinatat <span class="math notranslate nohighlight">\(y\)</span>, megjithëse në këtë rast është veçanërisht e thjeshtë. Meqenëse  koordinatat e qendrave të rrathëve <span class="math notranslate nohighlight">\(y\)</span> y` dhe gjatësia themelore është zero, kështu që duhet të shtohen gjatësi zero themelore në: matematikë: koordinata <cite>y</cite> e spirancës për të marrë :math:` y` koordinatë e qendrës së një rrethi më të vogël.</p></li>
 </ul>
-<p>To better understand the process of resizing a drawing, we will also apply it to the example of a teddy bear.</p>
-<div class="section" id="teddy-size">
-<h2>Teddy - size<a class="headerlink" href="#teddy-size" title="Permalink to this headline">¶</a></h2>
-<p>The following program is presented, which shows the teddy bear’s head so that it can be easily moved:</p>
+<p>Për të kuptuar më mirë procesin e ndryshimit të madhësisë së një vizatimi, ne do ta përdorim atë edhe në shembullin e një ariu pelushi.</p>
+<div class="section" id="ariu-madhesia">
+<h2>Ariu - madhësia<a class="headerlink" href="#ariu-madhesia" title="Permalink to this headline">¶</a></h2>
+<p>Programi i mëposhtëm tregon kokën e ariut në mënyrë që të mund të zhvendoset lehtësisht:</p>
 
 <div data-childcomponent="PyGame__drawing_bear_movable" class="course-box course-box-problem course-content">
 
@@ -330,8 +329,8 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>In order to resize the drawing, we introduce a basic length, for example <span class="math notranslate nohighlight">\(a = 5\)</span>. Now we can express all radii using <span class="math notranslate nohighlight">\(a\)</span> like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">framed_circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;yellow&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">cx</span> <span class="o">-</span> <span class="mi">60</span><span class="p">,</span>  <span class="n">cy</span> <span class="o">-</span> <span class="mi">70</span><span class="p">),</span>  <span class="mi">9</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1"># left ear</span>
+<p>Për të përmasuar madhësinë e vizatimit, ne prezantojmë një gjatësi themelore, për shembull :math <cite>a = 5</cite>. Tani mund t’i shprehim të gjitha rrezet duke përdorur <span class="math notranslate nohighlight">\(a\)</span> si kjo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">framed_circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;yellow&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">cx</span> <span class="o">-</span> <span class="mi">60</span><span class="p">,</span>  <span class="n">cy</span> <span class="o">-</span> <span class="mi">70</span><span class="p">),</span>  <span class="mi">9</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1"># left ear</span>
 <span class="n">framed_circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;yellow&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">cx</span> <span class="o">+</span> <span class="mi">60</span><span class="p">,</span>  <span class="n">cy</span> <span class="o">-</span> <span class="mi">70</span><span class="p">),</span>  <span class="mi">9</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1"># right ear</span>
 <span class="n">framed_circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;yellow&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">cx</span><span class="p">,</span>       <span class="n">cy</span><span class="p">)</span>     <span class="p">,</span> <span class="mi">20</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1"># head</span>
 <span class="n">framed_circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;yellow&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">cx</span><span class="p">,</span>       <span class="n">cy</span> <span class="o">+</span> <span class="mi">50</span><span class="p">),</span> <span class="mi">10</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1"># snout</span>
@@ -340,9 +339,9 @@ pygamebg.wait_loop()
 <span class="n">framed_circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span>  <span class="p">(</span><span class="n">cx</span><span class="p">,</span>       <span class="n">cy</span> <span class="o">+</span> <span class="mi">20</span><span class="p">),</span>  <span class="mi">3</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1"># snout top</span>
 </pre></div>
 </div>
-<p>Any number can be chosen as the base length, and by choosing a base length of 5 pixels, we have no need to use real numbers - all radii are integer multiples of <span class="math notranslate nohighlight">\(a\)</span> and we can easily calculate them by heart. For example, we express the radius of 45 pixels as <span class="math notranslate nohighlight">\(45 = 9 \cdot 5 = 9 \cdot a\)</span>, and so on.</p>
-<p>Now we need to express the coordinates of the centers of all other circles starting from the main point <span class="math notranslate nohighlight">\((cx, cy)\)</span> and moving by the required number of lengths <span class="math notranslate nohighlight">\(a\)</span> in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> axis direction. Take the bear’s right ear as an example.</p>
-<p><span class="math notranslate nohighlight">\(x\)</span> coordinate of the center of the right ear is <span class="math notranslate nohighlight">\(cx + 60 = cx + 12 a\)</span>, while <span class="math notranslate nohighlight">\(y\)</span> coordinate is <span class="math notranslate nohighlight">\(cy - 70 = cy - 14 a\)</span>. When we do this for all the centers of the circles, we come to the following form of the program:</p>
+<p>Çdo numër mund të zgjidhet si gjatësi bazë, dhe duke zgjedhur një gjatësi bazë prej 5 pikselë, ne nuk kemi nevojë të përdorim numra të vërtetë - të gjitha rrezet janë shumëfishë të plotë të <span class="math notranslate nohighlight">\(a\)</span> dhe ne mund t’i llogaritim lehtësisht. Për shembull, ne shprehim rrezen prej 45 pikselësh si <span class="math notranslate nohighlight">\(45 = 9 \ cdot 5 = 9 \ cdot a\)</span>, etj.</p>
+<p>Tani duhet të shprehim koordinatat e qendrave të të gjitha rrathëve të tjera duke filluar nga pika kryesore <span class="math notranslate nohighlight">\((cx, cy)\)</span> dhe duke lëvizur me numrin e kërkuar të gjatësive <span class="math notranslate nohighlight">\(a\)</span> në :math:` x <cite>dhe :math:</cite> y` drejtimi i boshtit. Merrni si shembull veshin e djathtë të ariut.</p>
+<p><span class="math notranslate nohighlight">\(x\)</span> koordinata e qendrës së veshit të djathtë është :math:` cx + 60 = cx + 12 a`, ndërsa <span class="math notranslate nohighlight">\(y\)</span> koordinata është <span class="math notranslate nohighlight">\(cy - 70 = cy - 14 a\)</span>. Kur e bëjmë këtë për të gjitha qendrat e rrathëve, ne vijmë në formën e mëposhtme të programit:</p>
 
 <div data-childcomponent="PyGame__drawing_bear_tmp2" class="course-box course-box-problem course-content">
 
@@ -380,24 +379,24 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Now we can not only move or copy a teddy bear across the screen, but also display it in various sizes. To confirm that resizing really works, the function call</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<p>Tani ne jo vetëm që mund të lëvizim ose kopjojmë një ari në ekran, por edhe ta shfaqim atë në madhësi të ndryshme. Për të konfirmuar se me të vërtetë funksionon ndryshimi, thërrasim funksionin</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>which draws a bear with the center point in the center of the window, can be replaced with the following five:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<p>e cila vizaton një ari me pikën qendrore në qendër të dritares, mund të zëvendësohet me pesë rreshtat në vijim:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="n">draw_teddy</span><span class="p">(</span><span class="mi">235</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="n">draw_teddy</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">draw_teddy</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">draw_teddy</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Copy or retype these five lines of code into the program and try it out! Consider how much work it would be to have these five bears displayed without computing in the program.</p>
-<p>Now try to complete one started example.</p>
+<p>Kopjoni ose rivendosni këto pesë rreshta kodi në program dhe provojeni! Konsideroni sa punë do të ishte që këto pesë arinj të shfaqen pa u llogaritur në program.</p>
+<p>Tani përpiquni të plotësoni një shembull të nisur.</p>
 </div>
-<div class="section" id="task-house-size">
-<h2>Task - house size<a class="headerlink" href="#task-house-size" title="Permalink to this headline">¶</a></h2>
-<p>We will start with a program that draws four houses in the given positions on the screen:</p>
+<div class="section" id="ushtrim-madhesia-e-shtepise">
+<h2>Ushtrim - madhësia e shtëpisë<a class="headerlink" href="#ushtrim-madhesia-e-shtepise" title="Permalink to this headline">¶</a></h2>
+<p>Do të fillojmë me një program që vizaton katër shtëpi në pozicionet e dhëna në ekran:</p>
 
 <div data-childcomponent="PyGame__drawing_house_detailed1" class="course-box course-box-problem course-content">
 
@@ -431,8 +430,8 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Complete the program remodel in the box below so that the houses can be easily resized. For example, you can take 10 pixels for the basic size, because in that case, expressing all lengths using basic length is very easy. When you confirm that the program after the remake displays the same image as the starting program above, replace the given <em>house</em> function calls with the following 4 and confirm that the resizing of the house is working properly (you should get the image as if you clicked on the button “Play task”):</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">house</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span>  <span class="mi">90</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">))</span>
+<p>Plotësoni rimodelimin e programit në kutinë më poshtë në mënyrë që shtëpitë të mund të ridimensionohen lehtësisht. Për shembull, ju mund të merrni 10 piksele për madhësinë themelore, sepse në atë rast, shprehja e të gjitha gjatësive duke përdorur gjatësinë themelore është shumë e lehtë. Kur konfirmoni që programi pas te luhet shfaq të njëjtën imazh si programi fillestar më lart, zëvendësoni thirrjet e funksionit të dhënë <em>house</em> me 4 në vijim dhe konfirmoni që madhësia e shtëpisë po funksionon si duhet (ju duhet të merrni imazhin siç keni klikuar në butonin “Luaj detyrën”):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">house</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span>  <span class="mi">90</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">))</span>
 <span class="n">house</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">))</span>
 <span class="n">house</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">150</span><span class="p">))</span>
 <span class="n">house</span><span class="p">(</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;khaki&quot;</span><span class="p">))</span>
@@ -481,8 +480,8 @@ house(350, 160, 10, (255, 255, 150))
 house( 50, 150, 10, pg.Color("khaki"))
 </textarea>
 </div>
-<p>After successfully changing the <em>house</em> function, try different layouts, colors and sizes of houses, such as the one below, or some other you choose yourself:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">house</span><span class="p">(</span><span class="mi">278</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">211</span><span class="p">,</span> <span class="mi">207</span><span class="p">,</span> <span class="mi">169</span><span class="p">))</span>
+<p>Pasi të keni ndryshuar me sukses funksionin <em>house</em>, provoni paraqitjet e ndryshme, ngjyrat dhe madhësitë e shtëpive, siç është ajo më poshtë, ose ndonjë tjetër që ju zgjidhni vetë:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">house</span><span class="p">(</span><span class="mi">278</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">211</span><span class="p">,</span> <span class="mi">207</span><span class="p">,</span> <span class="mi">169</span><span class="p">))</span>
 <span class="n">house</span><span class="p">(</span><span class="mi">231</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">217</span><span class="p">,</span> <span class="mi">211</span><span class="p">,</span> <span class="mi">164</span><span class="p">))</span>
 <span class="n">house</span><span class="p">(</span><span class="mi">174</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">(</span><span class="mi">228</span><span class="p">,</span> <span class="mi">221</span><span class="p">,</span> <span class="mi">152</span><span class="p">))</span>
 <span class="n">house</span><span class="p">(</span><span class="mi">112</span><span class="p">,</span> <span class="mi">142</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="p">(</span><span class="mi">231</span><span class="p">,</span> <span class="mi">222</span><span class="p">,</span> <span class="mi">150</span><span class="p">))</span>
@@ -496,17 +495,17 @@ house( 50, 150, 10, pg.Color("khaki"))
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Moving the drawing' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Lëvizja e vizatimit' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawing with the help of loops' data-toggle="tooltip"><a href="03_PyGame_16a_Drawing_Using_Loops1.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vizatimi me ndihmën e loops' data-toggle="tooltip"><a href="03_PyGame_16a_Drawing_Using_Loops1.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Moving the drawing' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Lëvizja e vizatimit' data-toggle="tooltip"><a href="03_PyGame_14_Drawing_Movable.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawing with the help of loops' data-toggle="tooltip"><a href="03_PyGame_16a_Drawing_Using_Loops1.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vizatimi me ndihmën e loops' data-toggle="tooltip"><a href="03_PyGame_16a_Drawing_Using_Loops1.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

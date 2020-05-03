@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Reading keyboard &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Leximi i tastierës &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Events" href="03_PyGame_34_Interaction_Events.html" />
-    <link rel="prev" title="Reading mouse buttons" href="03_PyGame_32_Interaction_ReadMouseKey.html" />
+    <link rel="next" title="Ngjarje" href="03_PyGame_34_Interaction_Events.html" />
+    <link rel="prev" title="Leximi i butonave të mouse" href="03_PyGame_32_Interaction_ReadMouseKey.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,10 +205,10 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="reading-keyboard">
-<h1>Reading keyboard<a class="headerlink" href="#reading-keyboard" title="Permalink to this headline">¶</a></h1>
-<p>Acquiring information about keystrokes on a keyboard is very similar to reading the mouse buttons. Function <code class="docutils literal notranslate"><span class="pre">pg.key.get_pressed()</span></code> returns a tuple whose elements are used as logical values, showing for each key on the keyboard whether it is currently being pressed or not.</p>
-<p>Because the keyboard has many more keys than the mouse, using indices 0, 1, 2, etc. for certain keys would be impractical. In order not to have to know which index in the tuple corresponds to which key, the PyGame library contains named constants that we use as indices. For example, constants <code class="docutils literal notranslate"><span class="pre">pg.K_LEFT</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_RIGHT</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_UP</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_DOWN</span></code> correspond to the frequently used arrow keys. For the space key the corresponding constant is <code class="docutils literal notranslate"><span class="pre">pg.K_SPACE</span></code>, while for the letter keys, for example <em>a</em>, <em>b</em>, <em>c</em> the corresponding constants would be <code class="docutils literal notranslate"><span class="pre">pg.K_a</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_b</span></code>, <code class="docutils literal notranslate"><span class="pre">pg</span> <span class="pre">.K_c</span></code> etc. The complete list of these constants can be seen <a class="reference external" href="https://www.pygame.org/docs/ref/key.html">here</a> .</p>
+  <div class="section" id="leximi-i-tastieres">
+<h1>Leximi i tastierës<a class="headerlink" href="#leximi-i-tastieres" title="Permalink to this headline">¶</a></h1>
+<p>Përvetësimi i informacionit rreth tasteve në tastierë është shumë i ngjashëm me leximin e butonave të mouse. Funksioni <code class="docutils literal notranslate"><span class="pre">pg.key.get_pressed()</span></code> kthen një tuple, elementët e të cilit përdoren si vlera logjike, duke treguar për secilin tast në tastierë nëse aktualisht është duke u shtypur apo jo.</p>
+<p>Për shkak se tastiera ka shumë më shumë çelësa se mouse, përdorimi i indekseve 0, 1, 2, etj për disa çelësa do të ishte jopraktik. Për të mos ditur se cili indeks në tuple korrespondon me cilin çelës, libraria e PyGame përmban konstanta të emërtuara që ne përdorim si indeks. Për shembull, konstantet <code class="docutils literal notranslate"><span class="pre">pg.K_LEFT</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_RIGHT</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_UP</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_DOWN</span></code> lidhen me shigjetat e përdorura shpesh. Për butonin e hapësirës është <code class="docutils literal notranslate"><span class="pre">pg.K_SPACE</span></code>, ndërsa shkronjat, për shembull <em>a</em>, <em>b</em>, <em>c</em> kanë konstantet korrespondente <code class="docutils literal notranslate"><span class="pre">pg.K_a</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_b</span></code>, <code class="docutils literal notranslate"><span class="pre">pg</span> <span class="pre">.K_c</span></code> etj. Listën e plotë e gjeni këtu <a class="reference external" href="https://www.pygame.org/docs/ref/key.html">here</a> .</p>
 <div class="section" id="examples-and-tasks">
 <h2>Examples and tasks<a class="headerlink" href="#examples-and-tasks" title="Permalink to this headline">¶</a></h2>
 
@@ -219,10 +218,11 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Example - Spaceship:</strong> In this example, we have an image of a spaceship, which we move left and right in accordance with the pressed arrow keys. In addition, we can fire from the ship by pressing the space bar key.
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Shembull - Anije kozmike: ** Në këtë shembull, ne kemi një imazh të një anije kozmike, të cilën e lëvizim majtas dhe djathtas në përputhje me tastet e shigjetës së shtypur. Përveç kësaj, ne mund të zjarrmë nga anija duke shtypur tastin e shiritit hapësinor.</p>
+
     </p></div></div>
-<p>First, pay attention to the highlighted part of the code with a lighter background (lines 23-37). That part is new here, and it is also commented in more detail in the code itself.</p>
-<p>The rest of the program is just animating multiple objects, a technique known from before.</p>
+<p>Së pari, kushtojini vëmendje pjesës së theksuar të kodit me një sfond më të lehtë (linjat 23-37). Kjo pjesë është e re këtu, dhe gjithashtu është komentuar më hollësisht në vetë kodin.</p>
+<p>Pjesa tjetër e programit është thjesht gjallërim i objekteve të shumta, një teknikë e njohur që nga më parë.</p>
 <a class="reference internal image-reference" href="../_images/spaceship.png"><img alt="../_images/spaceship.png" src="../_images/spaceship.png" style="width: 50px;" /></a>
 
 <div data-childcomponent="PyGame__interact_spaceship_arrow_keys" class="course-box course-box-problem course-content">
@@ -284,7 +284,7 @@ pygamebg.frame_loop(30, new_frame)
 
 </textarea>
 </div>
-<p>So, after reading the status of all the keys and placing it in the tuple <em>pressed</em>, we can simply check the status of the keys we are interested in using <em>if</em> statement.</p>
+<p>Pra, pasi të lexojmë statusin e të gjithë çelësave dhe ta vendosim në tuple <em>të shtypur</em>, ne thjesht mund të kontrollojmë statusin e çelësave që ne jemi të interesuar të përdorim deklaratën <em>if</em>.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -292,10 +292,10 @@ pygamebg.frame_loop(30, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - navigation:</strong></p>
-<p>Complete the following program so that the 4 arrow keys control the yellow circle, like in the example. The circle should not move if no arrows are pressed and move one pixel in the direction of the arrows that are pressed (opposite arrows cancel each other out).</p>
+<p><strong>Detyra - lundrimi:</strong></p>
 
     </p></div></div>
+<p>     Plotësoni programin e mëposhtëm në mënyrë që 4 çelësat e shigjetave të kontrollojnë rrethin e verdhë, si në shembull. Rrethi nuk duhet të lëvizë nëse nuk shtypen shigjeta dhe lëvizin një piksel në drejtim të shigjetave që shtypen (shigjetat e kundërta anulojnë njëra-tjetrën jashtë).</p>
 
 <div data-childcomponent="PyGame__interact_navigtate1" class="course-box course-box-problem course-content">
 
@@ -344,21 +344,22 @@ pygamebg.frame_loop(50, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - snake:</strong></p>
-<p>Complete the following program so that the arrows can control a ‘snake’ consisting of several squares, like in the example.</p>
-<p>Variables <em>d_row</em> and <em>d_col</em> indicate the direction of movement of the snake. While no arrows are pressed, the value of these variables does not change and the snake continues to move in the same direction. Your task is to add commands for reading the status of the keyboard and calculating new values for <em>(d_row, d_col)</em> based on the arrows pressed, so that the movement continues in the chosen direction.</p>
+<p><strong>Detyrë - gjarpri:</strong></p>
+<p>Plotësoni programin e mëposhtëm në mënyrë që shigjetat të mund të kontrollojnë një ‘gjarpër’ të përbërë nga disa sheshe, si në shembull.</p>
 
     </p></div></div>
-<p><strong>Hint:</strong> if the snake’s head was in the square <em>(row, col)</em>, in the new frame it will be in the square <em>(row + d_row, col + d_col)</em>. Check if you understood how you should assign values to the variables <em>d_red</em>, <em>d_kol</em> for each direction:</p>
+<p>     Variablat <em>d_row</em> dhe <em>d_col</em> tregojnë drejtimin e lëvizjes së gjarprit. Ndërsa nuk shtypen shigjeta, vlera e këtyre ndryshoreve nuk ndryshon dhe gjarpri vazhdon të lëvizë në të njëjtin drejtim. Detyra juaj është të shtoni komanda për leximin e statusit të tastierës dhe llogaritjen e vlerave të reja për <em>(d_row, d_col)</em> bazuar në shigjetat e shtypura, në mënyrë që lëvizja të vazhdojë në drejtimin e zgjedhur.</p>
+<p><strong>Ndihme:</strong> nëse koka e gjarprit ishte në katror <em>(row, col)</em>, në kornizën e re do të jetë në katror <em>(rresht + d_row, col + d_col)</em>. Kontrolloni nëse keni kuptuar se si duhet të caktoni vlera ndaj variablave <em>d_row</em>, <em>d_col</em> për secilin drejtim:</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__interact_quiz_direction">
-            Q-74: If variables (d_row, d_col) are assigned values (0, -1), in which direction does the movement continue?
+            <p>Q-74: Nëse variablat (d_row, d_col) janë lidhur me clerat (0, -1), në cilin drejtim vazhdon lëvizja?</p>
+
             <li data-component="answer"  id="pygame__interact_quiz_direction_opt_a">Up</li><li data-component="feedback" id="pygame__interact_quiz_direction_opt_a">No, values for up are (d_row, d_col) = (-1, 0)</li>
             
             <li data-component="answer"  id="pygame__interact_quiz_direction_opt_b">Down</li><li data-component="feedback" id="pygame__interact_quiz_direction_opt_b">No, values for down are (d_row, d_col) = (1, 0)</li>
             
-            <li data-component="answer" data-correct id="pygame__interact_quiz_direction_opt_c">Left</li><li data-component="feedback" id="pygame__interact_quiz_direction_opt_c">Correct</li>
+            <li data-component="answer" data-correct id="pygame__interact_quiz_direction_opt_c">Left</li><li data-component="feedback" id="pygame__interact_quiz_direction_opt_c">Saktë</li>
             
             <li data-component="answer"  id="pygame__interact_quiz_direction_opt_d">Right</li><li data-component="feedback" id="pygame__interact_quiz_direction_opt_d">No, values for right are (d_row, d_col) = (0, 1)</li>
             
@@ -429,16 +430,16 @@ pygamebg.frame_loop(10, new_frame)
 </textarea>
 </div>
 </div>
-<div class="section" id="questions">
-<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
-<p>As you answer the questions, go back to the “snake” program as needed and look up the parts you need to answer.</p>
+<div class="section" id="pyetje">
+<h2>Pyetje<a class="headerlink" href="#pyetje" title="Permalink to this headline">¶</a></h2>
+<p>Ndërsa ju përgjigjeni pyetjeve, kthehuni tek programi “gjarpri” sipas nevojës dhe kërkoni pjesët që duhet t’i përgjigjeni.</p>
 
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="pygame__interact_quiz_snake_tablesize">
             <p>How many rows does the board have?</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [40, 40], "feedback": "Correct!"}, {"regex": "^ *[0-9]+ *$", "regexFlags": "", "feedback": "Look at the beginning of the program more carefully."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "The answer should be written in digits."}]]
+            [[{"number": [40, 40], "feedback": "<p>Sakt\u00eb!</p>\n"}, {"regex": "^ *[0-9]+ *$", "regexFlags": "", "feedback": "<p>Look at the beginning of the program more carefully.</p>\n"}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "<p>The answer should be written in digits.</p>\n"}]]
         </script>
 
         </div>
@@ -446,14 +447,15 @@ pygamebg.frame_loop(10, new_frame)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__interact_quiz_snake_rowcol_to_xy">
-            Q-75: What are the coordinates of the top left corner of the square <em>(row, col)</em>?
-            <li data-component="answer"  id="pygame__interact_quiz_snake_rowcol_to_xy_opt_a">x = row*a + a, y = col*a + a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_a">Try again</li>
+            <p>Q-75: Cilat janë koordinatat e këndit të sipërm të majtë të katrorit <em>(row, col)</em>?</p>
+
+            <li data-component="answer"  id="pygame__interact_quiz_snake_rowcol_to_xy_opt_a">x = row*a + a, y = col*a + a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__interact_quiz_snake_rowcol_to_xy_opt_b">x = col*a + a, y = row*a + a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__interact_quiz_snake_rowcol_to_xy_opt_b">x = col*a + a, y = row*a + a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__interact_quiz_snake_rowcol_to_xy_opt_c">x = row*a, y = col*a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__interact_quiz_snake_rowcol_to_xy_opt_c">x = row*a, y = col*a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_c">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__interact_quiz_snake_rowcol_to_xy_opt_d">x = col*a, y = row*a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_d">Correct</li>
+            <li data-component="answer" data-correct id="pygame__interact_quiz_snake_rowcol_to_xy_opt_d">x = col*a, y = row*a</li><li data-component="feedback" id="pygame__interact_quiz_snake_rowcol_to_xy_opt_d">Saktë</li>
             
 
             </ul>
@@ -461,12 +463,13 @@ pygamebg.frame_loop(10, new_frame)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pygame__interact_quiz_snake_head">
-            Q-76: Which sentences are true?
-            <li data-component="answer"  id="pygame__interact_quiz_snake_head_opt_a">In each frame list 'snake' is extended by a new element representing the new position of the snake's head.</li><li data-component="feedback" id="pygame__interact_quiz_snake_head_opt_a">There is no such command in the program</li>
+            <p>Q-76: Cilat fjali janë të vërteta?</p>
+
+            <li data-component="answer"  id="pygame__interact_quiz_snake_head_opt_a">Në secilën listë kornizë 'gjarpri' shtrihet nga një element i ri që përfaqëson pozicionin e ri të kokës së gjarprit.</li><li data-component="feedback" id="pygame__interact_quiz_snake_head_opt_a">Nuk ezkiston kjo komandë në program</li>
             
-            <li data-component="answer" data-correct id="pygame__interact_quiz_snake_head_opt_b">List 'snake' has the same number of elements throughout the program.</li><li data-component="feedback" id="pygame__interact_quiz_snake_head_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="pygame__interact_quiz_snake_head_opt_b">Lista 'gjarpri' ka të njjtin numër elementësh në program.</li><li data-component="feedback" id="pygame__interact_quiz_snake_head_opt_b">Saktë</li>
             
-            <li data-component="answer"  id="pygame__interact_quiz_snake_head_opt_c">One element which represents the end of the snake's tail is removed from list 'snake' in each frame.</li><li data-component="feedback" id="pygame__interact_quiz_snake_head_opt_c">There is no such command in the program</li>
+            <li data-component="answer"  id="pygame__interact_quiz_snake_head_opt_c">Një element që përfaqëson fundin e bishtit të gjarprit është hequr nga lista 'gjarpër' në secilën kornizë.</li><li data-component="feedback" id="pygame__interact_quiz_snake_head_opt_c">Nuk ezkiston kjo komandë në program</li>
             
 
             </ul>
@@ -478,17 +481,17 @@ pygamebg.frame_loop(10, new_frame)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Reading mouse buttons' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Leximi i butonave të mouse' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Events' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Ngjarje' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Reading mouse buttons' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Leximi i butonave të mouse' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Events' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Ngjarje' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

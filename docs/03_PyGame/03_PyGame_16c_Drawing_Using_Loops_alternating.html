@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Making more complex drawings using loops &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Bërja e vizatimeve më komplekse duke përdorur loops &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Displaying ready-made images" href="03_PyGame_17a_Drawing_Pictures1.html" />
-    <link rel="prev" title="Drawing polygons with loops" href="03_PyGame_16b_Drawing_Using_Loops2.html" />
+    <link rel="next" title="Paraqitni imazhe të gatshme" href="03_PyGame_17a_Drawing_Pictures1.html" />
+    <link rel="prev" title="Vizatimi i poligoneve me sythe" href="03_PyGame_16b_Drawing_Using_Loops2.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,16 +205,16 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="making-more-complex-drawings-using-loops">
-<h1>Making more complex drawings using loops<a class="headerlink" href="#making-more-complex-drawings-using-loops" title="Permalink to this headline">¶</a></h1>
-<p>The regularity we want to use in the drawings can be more complex, compred to previous problems. Here are some examples:</p>
+  <div class="section" id="berja-e-vizatimeve-me-komplekse-duke-perdorur-loops">
+<h1>Bërja e vizatimeve më komplekse duke përdorur loops<a class="headerlink" href="#berja-e-vizatimeve-me-komplekse-duke-perdorur-loops" title="Permalink to this headline">¶</a></h1>
+<p>Rregullsia që duam të përdorim në vizatime mund të jetë më komplekse, e krahasuar me problemet e mëparshme. Ketu jane disa shembuj:</p>
 <a class="reference internal image-reference" href="../_images/repeat_alternating.png"><img alt="../_images/repeat_alternating.png" class="align-center" src="../_images/repeat_alternating.png" style="width: 800px;" /></a>
-<p>In all these cases, regularity still exists and can be used when writing programs. We can also observe that the examples in the picture all have something in common, which is that two rules appear alternately. For example, in a brick drawing, the first row of bricks begins with the whole brick, the second with the half brick, the third again with the whole brick, and so on. Similarly, illuminated and tinted windows appear alternately in the building drawing.</p>
-<p>Due to the alternation of the two rules in all the drawings, the programs drawing them will also have some similarities. Let’s look at code examples.</p>
-<div class="section" id="example-zipper">
-<h2>Example - zipper<a class="headerlink" href="#example-zipper" title="Permalink to this headline">¶</a></h2>
-<p>To draw such a zipper, we will certainly draw the lines in a loop. The drawing shows that each subsequent line is the same number of pixels lower than the previous one, so there should be no problem with computing the <em>y</em> coordinate. The situation with <em>x</em> coordinates is somewhat more difficult because they change according to a slightly more complex rule.</p>
-<p>We can solve this problem by using the <em>if</em> statement in the loop. After drawing one line, we check which of the two possible values <span class="math notranslate nohighlight">\(x\)</span> coordinate of the beginning of the line has. If it has the first value - we assign it the second and vice versa. Here’s what it looks like in the program:</p>
+<p>Në të gjitha këto raste, rregullsia ende ekziston dhe mund të përdoret kur shkruani programe. Mund të vërejmë gjithashtu se shembujt në figurë të gjithë kanë diçka të përbashkët, që është se dy rregulla shfaqen në mënyrë alternative. Për shembull, në një vizatim me tulla, rreshti i parë i tullave fillon me tërë tullën, e dyta me gjysmë tullë, e treta përsëri me tërë tullën, etj. Në mënyrë të ngjashme, dritaret e ndriçuara dhe të lyera shfaqen në mënyrë alternative në vizatimin e ndërtesës.</p>
+<p>Për shkak të alternimit të dy rregullave në të gjitha vizatimet, programet që vizatojnë ato do të kenë gjithashtu disa ngjashmëri. Le të shohim shembuj kodesh.</p>
+<div class="section" id="shembull-zinxhir">
+<h2>Shembull - zinxhir<a class="headerlink" href="#shembull-zinxhir" title="Permalink to this headline">¶</a></h2>
+<p>Për të vizatuar një zinxhir të tillë, sigurisht që do t’i vizatojmë linjat në një loop. Vizatimi tregon se çdo rresht pasues është i njëjti numër pikselësh më i ulët se ai i mëparshmi, kështu që nuk duhet të ketë asnjë problem me llogaritjen e koordinatës <em>y</em>. Situata me koordinatat <em>x</em> është disi më e vështirë sepse ato ndryshojnë sipas një rregulli pak më të ndërlikuar.</p>
+<p>Ne mund ta zgjidhim këtë problem duke përdorur deklaratën <em>if</em> në loop. Pas vizatimit të një rreshti, ne kontrollojmë se cila nga dy vlerat e mundshme <span class="math notranslate nohighlight">\(x\)</span> koordinata e fillimit të rreshtit ka. Nëse ka vlerën e parë - ia caktojmë asaj të dytën dhe anasjelltas. Ja si duket në program:</p>
 
 <div data-childcomponent="PyGame_drawing_loops_zipper1" class="course-box course-box-problem course-content">
 
@@ -262,7 +261,7 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Another possibility to solve the problem with <em>x</em> coordinates is to draw two lines in one loop, for example:</p>
+<p>Një mundësi tjetër për të zgjidhur problemin me koordinatat <em>x</em> është të vizatoni dy rreshta në një loop, për shembull:</p>
 
 <div data-childcomponent="PyGame_drawing_loops_zipper2" class="course-box course-box-problem course-content">
 
@@ -304,12 +303,12 @@ pygamebg.wait_loop()
 </textarea>
 </div>
 </div>
-<div class="section" id="example-bricks">
-<h2>Example - Bricks<a class="headerlink" href="#example-bricks" title="Permalink to this headline">¶</a></h2>
-<p>We have already mentioned that the rows of bricks alternately start with the whole brick and half of the brick. That is why when drawing bricks we can use any of the same two ideas as in the previous example.</p>
-<p>Let the length of the brick be denoted by: math:<cite>a</cite> and its height by <span class="math notranslate nohighlight">\(h\)</span>. We get the whole brick at the beginning of the row by drawing a rectangle at a given height, with <span class="math notranslate nohighlight">\(x\)</span> coordinate equal to zero. Half of a brick at the beginning of a row can be obtained by drawing an entire brick displaced by <span class="math notranslate nohighlight">\(a \over 2\)</span> to the left, that is, by drawing a rectangle with <span class="math notranslate nohighlight">\(x\)</span> coordinate equal to <code class="code docutils literal notranslate"><span class="pre">-a</span> <span class="pre">//</span> <span class="pre">2</span></code>. Thus, only the right half of the brick is visible. It remains to be solved when we draw a displaced brick and when a regular one.</p>
-<p>One solution is to store the beginning of the row of bricks in a variable, call it <em>x_start</em>. After each line is drawn, we check that the variable <em>x_start</em> has a value of zero or <code class="code docutils literal notranslate"><span class="pre">-a</span> <span class="pre">//</span> <span class="pre">2</span></code>. As in the previous example, whichever of the two values we have, we will assign the other value to the variable, so that in the next row the drawing of the bricks will start differently.</p>
-<p>Complete unfinished statements for setting the x_start variable</p>
+<div class="section" id="shembull-tulla">
+<h2>Shembull - Tulla<a class="headerlink" href="#shembull-tulla" title="Permalink to this headline">¶</a></h2>
+<p>Ne kemi përmendur tashmë se rreshtat e tullave fillojnë në mënyrë alternative me tërë tullën dhe gjysmën e tullave. Kjo është arsyeja pse gjatë vizatimit të tullave mund të përdorim cilindo nga të njëjtat dy ide si në shembullin e mëparshëm.</p>
+<p>Le të shënohet gjatësia e tullave nga <span class="math notranslate nohighlight">\(a\)</span> dhe lartësia e saj nga <span class="math notranslate nohighlight">\(h\)</span>. Ne e marrim tërë tullën në fillim të rreshtit duke vizatuar një drejtkëndësh në një lartësi të caktuar, me <span class="math notranslate nohighlight">\(x\)</span> koordinatë e barabartë me zero. Gjysma e një tullë në fillim të një rreshti mund të merret duke vizatuar një tullë të tërë të zhvendosur nga <span class="math notranslate nohighlight">\(a \ over 2\)</span> në të majtë, domethënë duke vizatuar një drejtkëndësh me :math:` x` koordinatë e barabartë me <code class="code docutils literal notranslate"><span class="pre">-a</span> <span class="pre">//</span> <span class="pre">2</span></code>. Kështu, vetëm gjysma e djathtë e tullave është e dukshme. Mbetet për tu zgjidhur kur vizatojmë një tullë të zhvendosur dhe kur një të rregullt.</p>
+<p>Një zgjidhje është që të ruani fillimin e rreshtit të tullave në një variabël, ta quajmë <em>x_start *. Pasi të tërhiqet secila rresht, kontrollojmë se ndryshorja *x_start</em> ka një vlerë zero ose :code: <cite>-a // 2</cite>. Ashtu si në shembullin e mëparshëm, cilindo prej dy vlerave që kemi, ne do t’i caktojmë vlerën tjetër në variabël, në mënyrë që në rreshtin tjetër vizatimi i tullave të fillojë ndryshe.</p>
+<p>Kompletoni deklarimet e papërfunduara për vendosjen e variablës x_start</p>
 
 <div data-childcomponent="PyGame_drawing_loops_bricks1" class="course-box course-box-problem course-content">
 
@@ -352,8 +351,8 @@ for y0 in range(0, height, brick_h): # For each row of bricks
         x_start = x_start # fix the line
 </textarea>
 </div>
-<p>The second idea is to draw two bricks in each pass through the double loop: the one which we drew in the first solution, and the brick below and half-left of it. Notice that in this case the loop by <em>y0</em> has twice the step, because the inner loop draws two rows of bricks.</p>
-<p>Complete unfinished statements for drawing rectangles</p>
+<p>Ideja e dytë është që të vizatojmë dy tulla në secilën kalim nëpër loop-in e dyfishtë: atë që kemi vizatuar në zgjidhjen e parë, dhe tullën poshtë dhe gjysmës së majtë të saj. Vini re se në këtë rast lak nga <em>y0</em> ka dy herë hapin, sepse loop i brendshëm vizaton dy rreshta tullash.</p>
+<p>Deklarime të plota të papërfunduara për vizatimin e drejtkëndëshe</p>
 
 <div data-childcomponent="PyGame_drawing_loops_bricks2" class="course-box course-box-problem course-content">
 
@@ -394,8 +393,8 @@ for y0 in range(0, height, 2 * brick_height):
 </textarea>
 </div>
 </div>
-<div class="section" id="tasks-for-exercise">
-<h2>Tasks for exercise<a class="headerlink" href="#tasks-for-exercise" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ushtrime">
+<h2>Ushtrime<a class="headerlink" href="#ushtrime" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -403,11 +402,11 @@ for y0 in range(0, height, 2 * brick_height):
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - chessboard</strong></p>
-<p>Draw a chessboard across the entire window (the board squares should be 50x50 pixels). The lower left square should be dark.</p>
+<p><strong>Detyra - tabela e shahut</strong></p>
 
     </p></div></div>
-<p>Most of the program is written, try to finish it.</p>
+<p>     Vizatoni një tabelë shahu në të gjithë dritaren (sheshet e bordit duhet të jenë 50x50 pixel). Sheshi i poshtëm i majtë duhet të jetë i errët.</p>
+<p>Pjesa më e madhe e programit është e shkruar, përpiquni ta mbaroni.</p>
 
 <div data-childcomponent="PyGame_drawing_loops_chessboard" class="course-box course-box-problem course-content">
 
@@ -460,12 +459,12 @@ for i in range(num_squares):
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - Building</strong></p>
-<p>Modify the program below so that the windows are drawn in a double loop.</p>
+<p><strong>Detyra - Ndërtesa</strong></p>
 
     </p></div></div>
-<p>The part that needs to be changed, after the change, can start like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>     <span class="c1"># floor</span>
+<p>     Modifikoni programin më poshtë në mënyrë që dritaret të vizatohen në një lak të dyfishtë.</p>
+<p>Pjesa që duhet të ndryshohet, pas ndryshimit, mund të fillojë si kjo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>     <span class="c1"># floor</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># side of the building (0 - left, 1 - right)</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="n">color</span> <span class="o">=</span> <span class="o">...</span>
@@ -519,7 +518,7 @@ pg.draw.rect(canvas, pg.Color("black"),  (140, 160, 20, 30))   # door
 </textarea>
 </div>
 <hr class="docutils" />
-<p>If you haven’t had any major problems with all these tasks, try to solve one more difficult task as well.</p>
+<p>Nëse nuk keni pasur ndonjë problem të madh me të gjitha këto detyra, përpiquni të zgjidhni edhe një detyrë më të vështirë.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -527,12 +526,12 @@ pg.draw.rect(canvas, pg.Color("black"),  (140, 160, 20, 30))   # door
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - challenge: parquet</strong></p>
-<p>Write a program that shows the parquet (you can see the parquet picture when you click the “Play task” button, and the picture is the same as at the beginning of this page, right). The goal, of course, is to draw the floorboards in a multiple loop. The board dimensions are 10x60 and the colors are goldenrod and brown.</p>
+<p><strong>Detyra - sfidë: parket</strong></p>
 
     </p></div></div>
-<p>The skeleton of the program roughly looks like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">row</span> <span class="o">...</span>
+<p>     Shkruani një program që tregon parketin (ju mund të shihni foton me parket kur klikoni në butonin “Luaj lojën”, dhe fotografia është e njëjtë si në fillim të kësaj faqe, apo jo). Qëllimi, natyrisht, është të vizatoni dërrasat e dyshemesë në një loop të shumëfishtë. Dimensionet e bordit janë 10x60 dhe ngjyrat janë të arta dhe kafe.</p>
+<p>Skeleti i programit përafërsisht duket si ky:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">row</span> <span class="o">...</span>
     <span class="k">for</span> <span class="n">column</span> <span class="o">...</span>
         <span class="k">if</span> <span class="o">...</span>
             <span class="k">for</span> <span class="n">floorboard</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
@@ -584,17 +583,17 @@ pygamebg.wait_loop()
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing polygons with loops' data-toggle="tooltip"><a href="03_PyGame_16b_Drawing_Using_Loops2.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatimi i poligoneve me sythe' data-toggle="tooltip"><a href="03_PyGame_16b_Drawing_Using_Loops2.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Displaying ready-made images' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Paraqitni imazhe të gatshme' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing polygons with loops' data-toggle="tooltip"><a href="03_PyGame_16b_Drawing_Using_Loops2.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatimi i poligoneve me sythe' data-toggle="tooltip"><a href="03_PyGame_16b_Drawing_Using_Loops2.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Displaying ready-made images' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Paraqitni imazhe të gatshme' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

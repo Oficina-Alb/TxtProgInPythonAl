@@ -1,14 +1,14 @@
-Displaying ready-made images - tasks
+Afishimi i imazheve të gatshme - detyra
 ------------------------------------
 
-We learned how to display a ready-made image so that its upper left corner is at a given position on the screen. In some situations, the position of the upper left corner of the image will not be known to us, but will need to be calculated. In such cases, it may be necessary to know the width and height of the image. In Python's PyGame library for the image ``im``, the width and height of this image are given as ``im.get_width()`` and ``im.get_height()`` respectively.
+Mësuam si të shfaqim një imazh të gatshëm në mënyrë që këndi i sipërm i saj i majtë të jetë në një pozicion të caktuar në ekran. Në disa situata, pozicioni i këndit të sipërm të majtë të figurës nuk do të jetë i njohur për ne, por do të duhet të llogaritet. Në raste të tilla, mund të jetë e nevojshme të njihni gjerësinë dhe lartësinë e figurës. Në librarinë e PyGame për figurën ``im``, gjerësia dhe lartësia e kësaj figure jepen përkatësisht ``im.get_width ()`` dhe ``im.get_height ()``.
 
-Baskets
+Shporta
 '''''''
 
-Complete the following program to get the picture as in the example. The positions of the trees are given, and a basket should be drawn next to each tree so that the lower right corners of the basket and tree images overlap.
+Përfundoni programin e mëposhtëm për të marrë figurën si në shembull. Pozicionet e pemëve janë dhënë, dhe një shportë duhet të vizatohet pranë çdo peme në mënyrë që qoshet e poshtme të djathtë të shportës dhe imazhet e pemëve të mbivendosen.
 
-To complete this task, you need to calculate for each drawn basket the position of its top left corner, which can be done starting from the coordinates of the top left corner of the tree, using the widths and heights of both images.
+Për të përfunduar këtë detyrë, duhet të llogaritni për secilën shportë të vizatuar pozicionin e këndit të tij të sipërm të majtë, i cili mund të bëhet duke filluar nga koordinatat e këndit të sipërm të majtë të pemës, duke përdorur gjerësitë dhe lartësitë e të dy imazheve.
 
 .. image:: ../../_images/tree.png
    :width: 50px
@@ -31,10 +31,10 @@ To complete this task, you need to calculate for each drawn basket the position 
     tree_positions = ((200, 70), (120, 150), (240, 290), (550, 170), (400, 200))
 
 
-Picking apples
+Kap mollët
 ''''''''''''''
 
-Complete the following program to get the picture as in the example. The solution to this task is obtained by appending the previous program - copy it and add apples to the trees and to the baskets.
+Përfundoni programin e mëposhtëm për të marrë figurën si në shembull. Zgjidhja për këtë detyrë merret duke bashkangjitur programin e mëparshëm - kopjoni atë dhe shtoni mollë në pemë dhe shporta.
 
 .. activecode:: PyGame__pictures_baskets_apples
     :nocodelens:
@@ -52,27 +52,27 @@ Complete the following program to get the picture as in the example. The solutio
 
 
 
-Boxes
+Kuti
 '''''
 
 .. questionnote:: 
 
-    Write programs that use the image of one box shown below,
+    Shkruaj programet që përdorin imazhin e një kutie të treguar më poshtë,
 
     .. image:: ../../_images/PyGame/box.png
         :width: 200px
         :align: center 
 
-    and form images as in examples (use the "Play task" button in each task).
-      
-    The coordinates of the image, that is, its upper left corner for the leftmost box are (60, 400) and for the highest box are (420, 115).
+    dhe formoni imazhe si në shembuj (përdorni butonin "Luaj detyrën" në secilën detyrë).
+      
+     Koordinatat e figurës, domethënë, këndi i sipërm i saj i majtë për kutinë e majtë janë (60, 400) dhe për kutinë më të lartë janë (420, 115)
 
-From the given data and images it is possible to determine the series *x* and *y* of the image coordinates of each box in each example. The order of displaying of the box pictures should also be taken into account here.
+Nga të dhënat dhe imazhet e dhëna është e mundur të përcaktohen seritë *x* dhe *y* të koordinatave të figurës së secilës kuti në secilin shembull. Rendi i shfaqjes së fotove të kutisë gjithashtu duhet të merret parasysh këtu.
 
-To better understand how the same series of numbers (for example, 10, 15, 20, 25, 30) can be obtained in two different orders, and what else to look for, answer the supporting question.
+Për të kuptuar më mirë sesi mund të merren të njëjtën seri numrash (për shembull, 10, 15, 20, 25, 30) në dy rende të ndryshme, dhe çfarë tjetër për të kërkuar, përgjigjuni pyetjes mbështetëse.
 
 .. dragndrop:: console__pictures_quiz_series_negative_step
-    :feedback: Try again.
+    :feedback: Provo përsëri.
     :match_1: 10, 15, 20, 25, 30 ||| for x in range(10, 35, 5)
     :match_2: 30, 25, 20, 15, 10 ||| for x in range(30, 5, -5)
     :match_3: empty series ||| for x in range(30, 10, 5)

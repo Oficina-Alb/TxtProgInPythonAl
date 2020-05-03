@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Drawings movement &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Lëvizja e vizatimeve &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Animation by stages" href="03_PyGame_23_Animation_Stages.html" />
-    <link rel="prev" title="How to make an animation" href="03_PyGame_21_Animation_Basics.html" />
+    <link rel="next" title="Animacion sipas fazave" href="03_PyGame_23_Animation_Stages.html" />
+    <link rel="prev" title="Si të bëni një animacion" href="03_PyGame_21_Animation_Basics.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,10 +205,10 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="drawings-movement">
-<h1>Drawings movement<a class="headerlink" href="#drawings-movement" title="Permalink to this headline">¶</a></h1>
-<p>The animations we have seen so far are based on showing a different image we prepared in advance in each frame. Now we are also going to move the images that are shown, so that the same image appears in different places in the window, that is, it moves.</p>
-<p>Let’s look at an example first:</p>
+  <div class="section" id="levizja-e-vizatimeve">
+<h1>Lëvizja e vizatimeve<a class="headerlink" href="#levizja-e-vizatimeve" title="Permalink to this headline">¶</a></h1>
+<p>Animacionet që kemi parë deri më tani bazohen në shfaqjen e një imazhi të ndryshëm që përgatitëm paraprakisht në secilën kornizë. Tani do të lëvizim edhe imazhet që janë treguar, në mënyrë që e njëjta imazh të shfaqet në vende të ndryshme në dritare, domethënë lëviz.</p>
+<p>Le të shohim një shembull:</p>
 <a class="reference internal image-reference" href="../_images/car.png"><img alt="../_images/car.png" src="../_images/car.png" style="width: 50px;" /></a>
 
 <div data-childcomponent="PyGame__anim_car_oneway" class="course-box course-box-problem course-content">
@@ -245,10 +244,10 @@ pygamebg.frame_loop(fps, new_frame)
 
 </textarea>
 </div>
-<p>As before, we have a <em>new_frame</em> function that shows an image in each frame. What is new in this example is that the position of that image changes from frame to frame.</p>
-<p>The image is shown so that its upper left corner appears at the point (<em>car_x</em>, <em>car_y</em>). In order for the car to move to the right, in each frame we increase the <em>x</em> coordinate of the image. We only keep in mind that when the car goes too far to the right, we return the car so that its right end aligns with the left edge of the window. In this way, the car begins to gradually reappear on the left.</p>
+<p>Si më parë, ne kemi një funksion <em>new_frame</em> që tregon një imazh në secilën kornizë. Ajo që është e re në këtë shembull është se pozicioni i asaj imazhi ndryshon nga korniza në kornizë.</p>
+<p>Imazhi tregohet në mënyrë që këndi i sipërm i saj i majtë të shfaqet në pikën (<em>car_x</em>, <em>car_y</em>). Në mënyrë që makina të lëvizë në të djathtë, në secilën kornizë rrisim koordinatën <em>x</em> të figurës. Vetëm kemi parasysh se kur makina shkon shumë larg në të djathtë, ne e kthejmë makinën në mënyrë që skaji i saj i djathtë të rreshtohet me skajin e majtë të dritares. Në këtë mënyrë, makina fillon të rishfaqet gradualisht në të majtë.</p>
 <hr class="docutils" />
-<p>Similarly, we can also move drawings we draw ourselves (not just ready-made images). In doing so, we can move the image or drawing in any direction. Here is one example:</p>
+<p>Në mënyrë të ngjashme, ne gjithashtu ne mund të lëvizim vizatimet të vizatojnë veten (jo vetëm imazhe të gatshme). Duke vepruar kështu, ne mund të lëvizim imazhin ose vizatimin në çdo drejtim. Këtu është një shembull:</p>
 
 <div data-childcomponent="PyGame__anim_billiards" class="course-box course-box-problem course-content">
 
@@ -285,17 +284,17 @@ pygamebg.frame_loop(100, new_frame)
 
 </textarea>
 </div>
-<p>Notice how we check if the ball touches the edge of the screen. The far right of the ball has an <em>x</em> coordinate equal to <span class="math notranslate nohighlight">\(cx+r\)</span>. If this value were equal to the width of the window, it would mean that the ball touches the right edge of the window, and if <span class="math notranslate nohighlight">\(cx + r &gt; width\)</span>, it means that the ball has already partially passed the right edge of the window. In this case, with the <span class="math notranslate nohighlight">\(dx = -dx\)</span> command, starting from the next frame a value opposite to the one so far will be added to the <em>x</em> coordinate of the ball, that is, the ball will henceforward be moving 3 pixels to the left. This will look like the ball bounced off the right edge of the window.</p>
-<p>Notice another detail: instead of <span class="math notranslate nohighlight">\(cx + r &gt; width\)</span> we could have also used <span class="math notranslate nohighlight">\(cx + r &gt;= width\)</span> and the program would work almost the same. However, since the ball <strong>does not move by one pixel</strong>, it would not be valid if we used the condition <span class="math notranslate nohighlight">\(cx + r == width\)</span>, because then the ball could skip the position we are checking and go through the edge of the window.</p>
-<p>We thoroughly analyzed the case of the right edge of the window, and the same reasoning was applied to other edges when the program was being written. The overall effect of the two <em>if</em> commands is that the ball bounces off each edge of the window.</p>
-<p>Check if you understand this by answering the following questions.</p>
-<div class="section" id="drawings-movement-questions">
-<h2>Drawings movement - questions<a class="headerlink" href="#drawings-movement-questions" title="Permalink to this headline">¶</a></h2>
+<p>Vini re se si kontrollojmë nëse topi prek buzë ekranit. E djathta e djathtë e topit ka një koordinatë <em>x</em> të barabartë me <span class="math notranslate nohighlight">\(cx + r\)</span>. Nëse kjo vlerë do të ishte e barabartë me gjerësinë e dritares, do të nënkuptonte që topi prek skajin e djathtë të dritares, dhe nëse <span class="math notranslate nohighlight">\(cx + r&gt; width\)</span>, do të thotë që topi tashmë ka kaluar pjesërisht në të djathtë buzë dritares. Në këtë rast, me komandën <span class="math notranslate nohighlight">\(dx = -dx\)</span>, duke filluar nga korniza tjetër një vlerë e kundërt me atë të deritanishme do t’i shtohet koordinatës <em>x</em> të topit, d.m.th., topi do të vijojë tutje duke lëvizur 3 pixel në të majtë. Kjo do të duket si topi i kërrusur në skajin e djathtë të dritares.</p>
+<p>Vini re një detaj tjetër: në vend të <span class="math notranslate nohighlight">\(cx + r&gt; width\)</span> ne mund të kishim përdorur gjithashtu <span class="math notranslate nohighlight">\(cx + r&gt; = width\)</span> dhe programi do të funksiononte pothuajse i njëjtë. Sidoqoftë, meqenëse topi <strong>nuk lëviz me një piksel</strong>, nuk do të ishte e vlefshme nëse do të përdorim kushtin :math: <cite>cx + r == width</cite>, sepse atëherë topi mund të kalonte pozicionin që po kontrollojmë dhe do kalojmë nëpër buzë të dritares.</p>
+<p>Ne e analizuam plotësisht rastin e skajit të djathtë të dritares dhe i njëjti arsyetim u aplikua në skajet e tjera kur programi ishte duke u shkruar. Efekti i përgjithshëm i dy komandave <em>if</em> është që topi të lëshohet në çdo cep të dritares.</p>
+<p>Kontrolloni nëse e kuptoni këtë duke iu përgjigjur pyetjeve të mëposhtme.</p>
+<div class="section" id="levizja-e-vizatimeve-pyetje">
+<h2>Lëvizja e vizatimeve - pyetje<a class="headerlink" href="#levizja-e-vizatimeve-pyetje" title="Permalink to this headline">¶</a></h2>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__anim_quiz_bounce1">
-    <span data-component="question">Q-69: Match the check that the ball from the previous example has passed a certain edge to the appropriate *if* command.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-69: Krahasoni kontrollin që topi nga shembulli i mëparshëm ka kaluar një skaj të caktuar në komandën *if*  të duhur.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__anim_quiz_bounce1_drag1">for left edge </li>
     <li data-component="dropzone" for="pygame__anim_quiz_bounce1_drag1"> if cx - r < 0</li>
@@ -311,14 +310,15 @@ pygamebg.frame_loop(100, new_frame)
 </ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__anim_quiz_bounce2">
-            Q-70: To what side does an image move by adding a negative value to its <em>x</em> coordinate?
-            <li data-component="answer"  id="pygame__anim_quiz_bounce2_opt_a">right</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_a">Try again</li>
+            <p>Q-70: Në cilën anë lëviz një imazh duke shtuar një vlerë negative në koordinatën e tij <em>x</em>?</p>
+
+            <li data-component="answer"  id="pygame__anim_quiz_bounce2_opt_a">djathtas</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce2_opt_b">up</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce2_opt_b">lart</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_b">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__anim_quiz_bounce2_opt_c">left</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_c">Correct!</li>
+            <li data-component="answer" data-correct id="pygame__anim_quiz_bounce2_opt_c">majtas</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_c">Saktë!</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce2_opt_d">down</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce2_opt_d">poshtë</li><li data-component="feedback" id="pygame__anim_quiz_bounce2_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -326,14 +326,15 @@ pygamebg.frame_loop(100, new_frame)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__anim_quiz_bounce3">
-            Q-71: Let the dimensions of a given image be <em>im_width</em> and <em>im_height</em>, and its upper left corner (<em>x</em>, <em>y</em>). How do we check if the image has completely gone through the top edge of the window and no part of it is visible?
-            <li data-component="answer"  id="pygame__anim_quiz_bounce3_opt_a">if x + im_width < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_a">Try again</li>
+            <p>Q-71: Le të jetë ‘width’ e gjerësisë së dritares, ‘im_width’ gjerësia e figurës dhe (x, y) këndi i sipërm i majtë i figurës. Përputhni kushtet logjike me kuptimin e tyre</p>
+
+            <li data-component="answer"  id="pygame__anim_quiz_bounce3_opt_a">if x + im_width < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_a">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__anim_quiz_bounce3_opt_b">if y + im_height < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_b">Correct!</li>
+            <li data-component="answer" data-correct id="pygame__anim_quiz_bounce3_opt_b">if y + im_height < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_b">Saktë!</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce3_opt_c">if x < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce3_opt_c">if x < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce3_opt_d">if y < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce3_opt_d">if y < 0:</li><li data-component="feedback" id="pygame__anim_quiz_bounce3_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -341,39 +342,41 @@ pygamebg.frame_loop(100, new_frame)
             
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__anim_quiz_bounce4">
-    <span data-component="question">Q-72: Let 'width' be the width of the window, 'im_width' the width of the image and (x, y) the upper left corner of the image. Match logical conditions to their meaning.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">
+</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
-    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag1">the image came out through the left edge of the window </li>
-    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag1"> x + im_width < 0</li>
+    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag1">imazhi doli përmes skajit të majtë të dritares </li>
+    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag1"> x + im_width <0</li>
+</ul></div><p>    :match_2: imazhi filloi të dalë përmes skajit të majtë të dritares ||| x &lt;0
+    :match_3: imazhi doli përmes skajit të djathtë të dritares ||| x&gt; gjerësi</p>
+<blockquote>
+<div><p>Le të jetë ‘width’ e gjerësisë së dritares, ‘im_width’ gjerësia e figurës dhe (x, y) këndi i sipërm i majtë i figurës. Përputhni kushtet logjike me kuptimin e tyre</p>
+</div></blockquote>
 
-    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag2">the image began to come out through the left edge of the window </li>
-    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag2"> x < 0</li>
-
-    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag3">the image came out through the right edge of the window </li>
-    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag3"> x > width</li>
-
-    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag4">the image began to come out through the right edge of the window </li>
-    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag4"> x + im_width > width</li>
-</ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__anim_quiz_bounce5">
-            Q-73: Let <em>width</em> be the width of the window, <em>im_width</em> the width of the image, (<em>x</em>, <em>y</em>) the upper left corner of the image and <em>dx</em> the value by which the <em>x</em> coordinate of the image will be changed later. What commands will cause the image to begin to appear entering the window through the right edge?
-            <li data-component="answer" data-correct id="pygame__anim_quiz_bounce5_opt_a">x = width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_a">Correct!</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_b">x = width + im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_b">No, that is too far from the right edge.</li>
+            <li data-component="answer" data-correct id="pygame__anim_quiz_bounce5_opt_a">x = width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_a">Saktë!</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_c">x = width - im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_c">No, that way the whole image is already in the window.</li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_b">x = width + im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_b">Jo, kjo është shumë larg nga skaji i duhur.</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_d">x = width + im_width; dx = 10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_d">No, the image is too far away and will keep getting farther.</li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_c">x = width - im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_c"></li>
+            
+            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_d">x = width + im_width; dx = 10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_d"></li>
             
 
             </ul>
             </div>
-            </div>
-<div class="section" id="task-a-car-going-left-right">
-<h2>Task - a car going left-right<a class="headerlink" href="#task-a-car-going-left-right" title="Permalink to this headline">¶</a></h2>
-<p>Try reworking the first program so that the car moves alternately to one side and to the other, as in the example (“Play Task” button). The program already contains commands to form a tuple of two images. The image of the car facing right is loaded, while the image of the car facing the other side is obtained using the <em>pg.transform.flip</em> function, which transforms the given image into one symmetrical to it.</p>
+            <p>    :feedback_c: Jo, në këtë mënyrë e gjithë imazhi është tashmë në dritare.
+    :feedback_d: Jo, imazhi është shumë larg dhe do të vazhdojë të bëhet më larg.</p>
+<blockquote>
+<div><p>Le  të jetë <em>width</em> gjerësia e dritares, <em>im_width</em> gjerësia e figurës, (<em>x</em>, <em>y</em>) këndi i sipërm i majtë i figurës dhe <em>dx</em> vlera me të cilën koordinata <em>x</em> e imazhi do të ndryshohet më vonë. Cilat komanda do të bëjnë që imazhi të fillojë të shfaqet duke hyrë në dritare përmes skajit të djathtë?</p>
+</div></blockquote>
+</div>
+<div class="section" id="detyre-nje-makine-qe-shkon-majtas-djathtas">
+<h2>Detyrë - një makinë që shkon majtas djathtas<a class="headerlink" href="#detyre-nje-makine-qe-shkon-majtas-djathtas" title="Permalink to this headline">¶</a></h2>
+<p>Provoni të ripërpunoni programin e parë në mënyrë që makina të lëvizë në mënyrë alternative në njërën anë dhe në anën tjetër, si në shembullin (butoni “Luaj detyrën”). Programi tashmë përmban komanda për të formuar një bashkim të dy imazheve. Imazhi i makinës që përballet drejt, është i ngarkuar, ndërsa imazhi i makinës përballë palës tjetër merret duke përdorur funksionin <em>pg.transform.flip</em>, i cili shndërron imazhin e dhënë në një simetrik me të.</p>
 
 <div data-childcomponent="PyGame__anim_car_right_left" class="course-box course-box-problem course-content">
 
@@ -435,17 +438,17 @@ pygamebg.frame_loop(fps, new_frame)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - How to make an animation' data-toggle="tooltip"><a href="03_PyGame_21_Animation_Basics.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Si të bëni një animacion' data-toggle="tooltip"><a href="03_PyGame_21_Animation_Basics.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Animation by stages' data-toggle="tooltip"><a href="03_PyGame_23_Animation_Stages.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Animacion sipas fazave' data-toggle="tooltip"><a href="03_PyGame_23_Animation_Stages.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - How to make an animation' data-toggle="tooltip"><a href="03_PyGame_21_Animation_Basics.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Si të bëni një animacion' data-toggle="tooltip"><a href="03_PyGame_21_Animation_Basics.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Animation by stages' data-toggle="tooltip"><a href="03_PyGame_23_Animation_Stages.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Animacion sipas fazave' data-toggle="tooltip"><a href="03_PyGame_23_Animation_Stages.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

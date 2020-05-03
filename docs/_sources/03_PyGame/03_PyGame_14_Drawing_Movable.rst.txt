@@ -1,13 +1,13 @@
-Moving the drawing
+Lëvizja e vizatimit
 ------------------
 
-In the previous examples, we made several drawings composed of basic shapes. In doing so, it was necessary to determine the correct position for each of these shapes to fit all the pieces together. For some drawings, it was possible (and in some tasks required) that the coordinates of individual points be calculated based on the known coordinates of other points. This computation could have been done outside the program and then the calculated coordinates could just have been entered into the program. However, it is better to perform such calculations in the program itself, for several reasons:
+Në shembujt e mëparshëm, kemi bërë disa vizatime të përbëra nga forma themelore. Duke vepruar kështu, ishte e nevojshme të përcaktohej pozicioni i saktë për secilën nga këto forma që të bashkohen të gjitha pjesët së bashku. Për disa vizatime, ishte e mundur (dhe në disa detyra të kërkuara) që koordinatat e pikave individuale të llogariten bazuar në koordinatat e njohura të pikave të tjera. Ky llogaritje mund të ishte bërë jashtë programit dhe pastaj koordinatat e llogaritura thjesht mund të ishin futur në program. Sidoqoftë, është më mirë të kryhen llogaritjet e tilla në vetë programin, për disa arsye:
 
-- We may not calculate the coordinates correctly in the first attempt. In such a situation, it is easier to modify the calculation instructions (i.e. the program) than to calculate everything manually from start.
-- When we create the drawing ourselves, it may be that after the first version of the program we may want to add something, for example on the left side of the drawing, but that we do not have enough space. In this case, the whole drawing should be moved to the right, so that the *x* coordinates of all points are increased by the same value. If we manually calculated the coordinates of the points, we need to calculate them all again. In a well-organized drawing program, it is sufficient to change one number to move entire drawing to the right. This process may need to be repeated several times until we are happy with the position of the drawn part, so trying it out is a lot easier when the program does the calculation instead of us.
-- If we want to draw the same drawing in multiple places in the window, the benefits of computing inside the program come to light again.
+- Ne mund të mos i llogaritim saktë koordinatat në përpjekjen e parë. Në një situatë të tillë, është më e lehtë të modifikohen udhëzimet e llogaritjes (d.m.th. programi) sesa të llogaritni gjithçka manualisht që nga fillimi.
+- Kur krijojmë vizatimin vetë, mund të jetë që pas versionit të parë të programit mund të dëshirojmë të shtojmë diçka, për shembull në anën e majtë të vizatimit, por që nuk kemi hapësirë ​​të mjaftueshme. Në këtë rast, e gjithë vizatimi duhet të zhvendoset në të djathtë, në mënyrë që koordinatat *x* të të gjitha pikave të rriten me të njëjtën vlerë. Nëse llogaritim me dorë koordinatat e pikave, duhet t'i llogaritim përsëri të gjitha. Në një program vizatimi të organizuar mirë, është e mjaftueshme të ndryshoni një numër për të lëvizur tërë vizatimin në të djathtë. Ky proces mund të ketë nevojë të përsëritet disa herë derisa të jemi të kënaqur me pozicionin e pjesës së vizatuar, kështu që provimi i tij është shumë më i lehtë kur programi bën llogaritjen në vend të nesh.
+- Nëse duam të vizatojmë të njëjtën vizatim në shumë vende në dritare, përfitimet e llogaritjes brenda programit vijnë përsëri në dritë.
 
-We will now systematise the coordinate computation a bit more and use it to move the drawn objects more easily. Before we get started, it would be a good idea to check the background and answer these questions:
+Tani do ta sistemojmë pak më shumë llogaritjen e koordinatave dhe do ta përdorim për të lëvizur më lehtë objektet e vizatuara. Para se të fillojmë, do të ishte një ide e mirë për të kontrolluar sfondin dhe t'u përgjigjemi këtyre pyetjeve:
 
 .. mchoice:: PyGame__drawing_quiz_point_left
    :answer_a: (50, 60)
@@ -16,13 +16,13 @@ We will now systematise the coordinate computation a bit more and use it to move
    :answer_d: (60, 70)
    :answer_e: (40, 60)
    :correct: c
-   :feedback_a: Try again.
-   :feedback_b: Try again.
-   :feedback_c: Correct!
-   :feedback_d: Try again.
-   :feedback_e: Try again.
+   :feedback_a: Provo përsëri.
+   :feedback_b: Provo përsëri.
+   :feedback_c: Saktë!
+   :feedback_d: Provo përsëri.
+   :feedback_e: Provo përsëri.
 
-   What are the coordinates of a point 10 pixels to the left of the point (50, 70)?
+   Cilat janë koordinatat e pikës 10 piksele në të majtë të pikës (50, 70)?
 
 .. mchoice:: PyGame__drawing_quiz_point_down
    :answer_a: (50, 60)
@@ -31,13 +31,13 @@ We will now systematise the coordinate computation a bit more and use it to move
    :answer_d: (60, 70)
    :answer_e: (40, 60)
    :correct: b
-   :feedback_a: Try again.
-   :feedback_b: Correct!
-   :feedback_c: Try again.
-   :feedback_d: Try again.
-   :feedback_e: Try again.
+   :feedback_a: Provo përsëri.
+   :feedback_b: Saktë!
+   :feedback_c: Provo përsëri.
+   :feedback_d: Provo përsëri.
+   :feedback_e: Provo përsëri.
 
-   What are the coordinates of a point 10 pixels below the point (50, 70)?
+   Cilat janë koordinatat e pikës 10 piksel nën pikën (50, 70)?
 
 .. mchoice:: PyGame__drawing_quiz_rect_up_left
    :answer_a: pg.draw.rect(canvas, color, (70, 120, 50, 60))
@@ -46,14 +46,14 @@ We will now systematise the coordinate computation a bit more and use it to move
    :answer_d: pg.draw.rect(canvas, color, (70, 120, 80, 90))
    :answer_e: pg.draw.rect(canvas, color, (70, 180, 80, 90))
    :correct: d
-   :feedback_a: Try again.
-   :feedback_b: Try again.
-   :feedback_c: Try again.
-   :feedback_d: Correct!
-   :feedback_e: Try again.
+   :feedback_a: Provo përsëri.
+   :feedback_b: Provo përsëri.
+   :feedback_c: Provo përsëri.
+   :feedback_d: Saktë!
+   :feedback_e: Provo përsëri.
 
-   The rectangle is drawn using ``pg.draw.rect(canvas, color, (100, 150, 80, 90))``. How can one draw a rectangle of the same size, located 30 pixels to the left and 30 pixels above this rectangle?
-   
+   Drejtkënëshi është vizatuar duke përdorur``pg.draw.rect(canvas, color, (100, 150, 80, 90))``. Si mund të vizatoni një drejtkëndësh me të njëjtën madhësi, të vendosur 30 pixel në të majtë dhe 30 piksele mbi këtë drejtkëndësh?
+
 .. mchoice:: PyGame__drawing_quiz_circle_above
    :answer_a: pg.draw.circle(canvas, color, (100, 120), 40)
    :answer_b: pg.draw.circle(canvas, color, (100, 160), 40)
@@ -61,19 +61,19 @@ We will now systematise the coordinate computation a bit more and use it to move
    :answer_d: pg.draw.circle(canvas, color, (160, 100), 40)
    :answer_e: pg.draw.circle(canvas, color, (20, 120), 40)
    :correct: a
-   :feedback_a: Correct!
-   :feedback_b: Try again.
-   :feedback_c: Try again.
-   :feedback_d: Try again.
-   :feedback_e: Try again.
+   :feedback_a: Saktë!
+   :feedback_b: Provo përsëri.
+   :feedback_c: Provo përsëri.
+   :feedback_d: Provo përsëri.
+   :feedback_e: Provo përsëri.
 
-   The circle is drawn using ``pg.draw.circle(canvas, color, (100, 200), 40)``. How can one draw a circle of the same size above this circle and touching it?
+   Rrethi ëeshtë vizatuar duke përdorur ``pg.draw.circle(canvas, color, (100, 200), 40)``. Si mund të vizatohet një rreth me të njëjtën madhësi mbi këtë rreth dhe ta prekë atë?
 
 
-Changes to make a drawing easily movable
+Ndryshime për të bërë një vizatim lehtësht të lëvizshëm
 ''''''''''''''''''''''''''''''''''''''''
 
-Let's see how a cloud is drawn in the following example:
+Le të shohim se si një re është vizatuar në shembullin e mëposhtëm:
 
 .. activecode:: PyGame__drawing_cloud_fixed
     :nocodelens:
@@ -81,7 +81,7 @@ Let's see how a cloud is drawn in the following example:
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\5_Movable\cloud_fixed.py
 
-We presented the cloud with three circles, one larger in the middle and two smaller ones around it:
+Ne prezantuam renë me tre rrathë, një më të madh në mes dhe dy më të vegjël rreth tij:
 
 .. code::
 
@@ -89,7 +89,7 @@ We presented the cloud with three circles, one larger in the middle and two smal
     pg.draw.circle(canvas, pg.Color("white"), (150, 200), 30)
     pg.draw.circle(canvas, pg.Color("white"), (250, 200), 30)
 
-If we wanted to draw that cloud at different heights, we could repeat these three commands, each time with some new value for :math:`y` coordinate of the centers of these three circles instead of 200, as it is in the first drawing. For example:
+Nëse do të donim ta vizatonim atë re në lartësi të ndryshme, mund të përsërisnim këto tre komanda, çdo herë me disa vlera të reja për :math:`y` koordinata e qendrave të këtyre tre rrathëve në vend të 200, siç është në vizatimin e parë . Për shembull:
 
 .. code::
 
@@ -109,9 +109,9 @@ If we wanted to draw that cloud at different heights, we could repeat these thre
     :width: 400px
     :align: center
 
-In this way, not only does the program grow faster than it has to, we also need to make every change in three places (for example, if we want to try 330 instead of 320, that change should be made in three places). Three changes are not many, but if we adopt this way of doing things, we would have more and more problems in more complex drawings, or in complex programs in general.
+Në këtë mënyrë, jo vetëm që programi rritet më shpejt se sa duhet, ne gjithashtu duhet të bëjmë çdo ndryshim në tre vende (për shembull, nëse duam të provojmë 330 në vend të 320, ai ndryshim duhet të bëhet në tre vende). Tre ndryshime nuk janë të shumta, por nëse e pranojmë këtë mënyrë të të bërit të gjërave, do të kishim gjithnjë e më shumë probleme në vizatime më komplekse, ose në programe komplekse në përgjithësi.
 
-Instead, it is better to create a function and pass :math:`y` coordinate of the centers as a parameter:
+Në vend të kësaj, është më mirë të krijoni një funksion dhe të kaloni :math:`y` koordinata e qendrave si parametër:
 
 .. code::
 
@@ -124,13 +124,13 @@ Instead, it is better to create a function and pass :math:`y` coordinate of the 
     cloud(80)
     cloud(320)
 
-The new program is easier to read and modify further. For more clouds, or more complex clouds, the advantage of this approach would be even greater.
+Programi i ri është më i lehtë për tu lexuar dhe modifikuar më tej. Për më shumë re, ose re më komplekse, avantazhi i kësaj qasje do të ishte edhe më i madh.
 
 ~~~~
 
-Now let's consider how we should move the cloud to the left or to the right. We should increase or decrease the :math:`x` coordinates of all circles (200, 150, 250) by the same value. For example, if we typed 260, 210, 310 as :math:`x` coordinates, the entire cloud would be moved 60 pixels to the right.
+Tani le të shqyrtojmë se si duhet ta lëvizim renë në të majtë ose në të djathtë. Ne duhet të rrisim ose ulim koordinatat :math:`x` të të gjitha rrathëve (200, 150, 250) me të njëjtën vlerë. Për shembull, nëse do të shtypnim koordinatat 260, 210, 310 si :math:`x`, e gjithë reja do të lëvizet 60 pixel në të djathtë.
 
-It would be good if we could only use a single number to specify the horizontal position of the cloud. To achieve this, we note that the centers of the smaller circles are 50 pixels away from the center of the middle circle to the left and right. These distances do not change as the cloud moves. This means that if we denote :math:`x` coordinate of the center of the middle circle with :math:`X_c`, then the centers of the smaller circles have :math:`x` coordinates :math:`X_c - 50` and :math:`X_c + 50`. Thanks to this relation (which does not depend on the position of the cloud), we can now also introduce the parameter :math:`x` to the function that draws the cloud:
+Do të ishte mirë nëse do të mund të përdorim vetëm një numër të vetëm për të specifikuar pozicionin horizontal të reve. Për ta arritur këtë, vërejmë se qendrat e rrathëve më të vegjël janë 50 pixel larg nga qendra e rrethit të mesëm në të majtë dhe të djathtë. Këto distanca nuk ndryshojnë kur lëviz reja. Kjo do të thotë që nëse tregojmë :math:`x` koordinata e qendrës së rrethit të mesëm me:math:` X_c`, atëherë qendrat e rrathëve më të vogla kanë :math:`x` koordinatat :math:` X_c - 50 `dhe:math:` X_c + 50`. Falë kësaj lidhjeje (e cila nuk varet nga pozicioni i resë), tani mund të prezantojmë edhe parametrin :math:`x` në funksionin që vizaton renë:
 
 .. code::
 
@@ -143,9 +143,9 @@ It would be good if we could only use a single number to specify the horizontal 
     cloud(200, 80)
     cloud(200, 320)
 
-Either of these three clouds could now be easily moved, for example, 60 pixels to the right, by typing 260 as the first parameter instead of 200 in the function calls. It is equally easy to make a drawing with several clouds. Color, or shade of gray, can also be a function parameter. This way, some clouds can be darker and some brighter.
+Secila prej këtyre tre reve tani mund të zhvendoset lehtësisht, për shembull, 60 pixel në të djathtë, duke shtypur 260 si parametrin e parë në vend të 200 në thirrjet e funksionit. Është po aq e thjeshtë për të bërë një vizatim me disa re. Ngjyra, ose hija e gri, gjithashtu mund të jetë një parametër i funksionit. Në këtë mënyrë, disa reve mund të jenë më të errëta dhe disa më të ndritshme.
 
-When we use all of the above, we can create a program that draws several clouds of different shades, for example:
+Kur përdorim të gjitha sa më sipër, mund të krijojmë një program që vizaton disa re me hije të ndryshme, për shembull:
 
 .. activecode:: PyGame__drawing_cloud_movable
     :nocodelens:
@@ -153,22 +153,22 @@ When we use all of the above, we can create a program that draws several clouds 
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\5_Movable\clouds_movable.py
 
-Let's summarize, with small generalizations, what needs to be done in order to be able to show one drawing in various places:
+Le të përmbledhim, me përgjithësime të vogla, çfarë duhet të bëhet për të qenë në gjendje të tregojmë një vizatim në vende të ndryshme:
 
-- We need to select one point whose coordinates are set directly. We call this selected point **the main point**, (sometimes this point is also called **anchor**). In the example of clouds, the main point is the center of the middle circle.
-- After selecting the main point, the coordinates of all other significant points are determined in relation to it by adding or subtracting a certain displacement to the coordinates of the main point. In the example with the cloud, to get :math:`x` coordinate of the center of the left circle, from :math:`x` coordinate of the main point (center of the middle circle) we subtract 50 pixels, and for the right circle we add 50 pixels.
+- Duhet të zgjedhim një pikë, koordinatat e së cilës vendosen direkt. Ne e quajmë këtë pikë të zgjedhur **pikën kryesore**, (nganjëherë kjo pikë quhet edhe **anchor**). Në shembullin e reve, pika kryesore është qendra e rrethit të mesëm.
+- Pas zgjedhjes së pikës kryesore, koordinatat e të gjitha pikave të tjera të rëndësishme përcaktohen në lidhje me të duke shtuar ose zbritur një zhvendosje të caktuar në koordinatat e pikës kryesore. Në shembullin me re, për të marrë :math:`x` koordinata e qendrës së rrethit të majtë, nga :math:` x` koordinata e pikës kryesore (qendra e rrethit të mesëm) ne zbritim 50 pixel, dhe për rrethi i duhur shtojmë 50 pixel.
 
-In the general case, there may be shapes other than circles in the drawing. The significant points that determine the positions of these shapes are:
+Në rastin e përgjithshëm, në vizatim mund të ketë forma të ndryshme nga rrathët. Pikat e rëndësishme që përcaktojnë pozicionet e këtyre formave janë:
 
-- for a line: its ends
-- for a polygon: its points
-- for a circle: its center
-- for a rectangle: its upper left corner
-- for an ellipse: the upper left corner of the rectangle in which that ellipse is inscribed
+- për një vizë: skajet e saj
+- për një shumëkëndësh: pikat e saj
+- për një rreth: qendra e saj
+- për një drejtkëndësh: këndi i sipërm i saj i majtë
+- për një elips: këndi i sipërm i majtë i drejtkëndëshit në të cilin është gdhendur ajo elips
 
-All of these points should be given with respect to the main point, that is, their coordinates should be expressed as coordinates of the main point, increased or decreased by some value.
+Të gjitha këto pika duhet të jepen në lidhje me pikën kryesore, domethënë, koordinatat e tyre duhet të shprehen si koordinata të pikës kryesore, të rritura ose të zvogëluara për ndonjë vlerë.
 
-Check your understanding of the previous explanations and answer the questions.
+Kontrolloni të kuptuarit tuaj për shpjegimet e mëparshme dhe përgjigjuni pyetjeve.
 
 .. mchoice:: PyGame__drawing_quiz_anchor_introduction1 
    :answer_a: pg.draw.circle(canvas, pg.Color("red"), (x, y), 50, 1)
@@ -176,19 +176,19 @@ Check your understanding of the previous explanations and answer the questions.
    :answer_c: pg.draw.circle(canvas, pg.Color("red"), (x+20, y-10), 50, 1)
    :answer_d: pg.draw.circle(canvas, pg.Color("red"), (x-20, y+10), 50, 1)
    :correct: c
-   :feedback_a: Try again.
-   :feedback_b: Try again.
-   :feedback_c: Correct!
-   :feedback_d: Try again.
+   :feedback_a: Provo përsëri.
+   :feedback_b: Provo përsëri.
+   :feedback_c: Saktë!
+   :feedback_d: Provo përsëri.
 
-   We want to customize a drawing consisting of several shapes so that everything is drawn relative to the anchor with the coordinates `x = 100`, `y = 100`. One of the statements that form a drawing is
+   Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
                 
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code1
       :passivecode: true
                     
       pg.draw.circle(canvas, pg.Color("red"), (120, 90), 50, 1)
 
-   What statement should replace the given one?
+   Cila fjali e zëvendëson këtë?
       
 .. mchoice:: PyGame__drawing_quiz_anchor_introduction2
    :answer_a: pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (150, 150))
@@ -196,19 +196,19 @@ Check your understanding of the previous explanations and answer the questions.
    :answer_c: pg.draw.line(canvas, pg.Color("red"), (x-50, x+50), (y-50, y+50))
    :answer_d: pg.draw.line(canvas, pg.Color("red"), (x+50, y+50), (x+150, y+150))
    :correct: b
-   :feedback_a: Try again.
-   :feedback_b: Correct!
-   :feedback_c: Try again.
-   :feedback_d: Try again.
+   :feedback_a: Provo përsëri.
+   :feedback_b: Saktë!
+   :feedback_c: Provo përsëri.
+   :feedback_d: Provo përsëri.
 
-   We want to customize a drawing consisting of several shapes so that everything is drawn relative to the anchor with the coordinates `x = 100`, `y = 100`. One of the statements that form a drawing is
+   Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
                 
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code2
       :passivecode: true
                     
       pg.draw.line(canvas, pg.Color("red"), (50, 50), (150, 150))
 
-   What statement should replace the given one?
+    Cila fjali e zëvendëson këtë?
       
 .. mchoice:: PyGame__drawing_quiz_anchor_introduction3
    :answer_a: pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, x, y))
@@ -216,19 +216,19 @@ Check your understanding of the previous explanations and answer the questions.
    :answer_c: pg.draw.rect(canvas, pg.Color("red"), (x+50, y+50, 100, 100))
    :answer_d: pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, 100, 100))
    :correct: d
-   :feedback_a: Try again.
-   :feedback_b: Try again.
-   :feedback_c: Try again.
-   :feedback_d: Correct!
+   :feedback_a: Provo përsëri.
+   :feedback_b: Provo përsëri.
+   :feedback_c: Provo përsëri.
+   :feedback_d: Saktë!
 
-   We want to customize a drawing consisting of several shapes so that everything is drawn relative to the anchor with the coordinates `x = 100`, `y = 100`. One of the statements that form a drawing is
+   Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
                 
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code3
       :passivecode: true
                     
       pg.draw.rect(canvas, pg.Color("red"), (50, 50, 100, 100))
 
-   What statement should replace the given one?
+    Cila fjali e zëvendëson këtë?
       
 .. mchoice:: PyGame__drawing_quiz_move_to_the_right
    :multiple_answers:
@@ -238,20 +238,20 @@ Check your understanding of the previous explanations and answer the questions.
    :answer_d: Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.rect(canvas, color, (x+100, y, w, h), d).
    :answer_e: Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.rect(canvas, color, (x-100, y, w, h), d).
    :correct: a, d
-   :feedback_a: Correct!
-   :feedback_b: Try again.
-   :feedback_c: Try again.
-   :feedback_d: Correct!
-   :feedback_e: Try again.
+   :feedback_a: Saktë!
+   :feedback_b: Provo përsëri.
+   :feedback_c: Provo përsëri.
+   :feedback_d: Saktë!
+   :feedback_e: Provo përsëri.
 
-   We want to move a drawing consisting of several shapes to the right by 100 pixels. Mark the correct claims.
+   Ne duam të lëvizim një vizatim të përbërë nga disa forma në të djathtë nga 100 piksele. Shënoni pretendimet e sakta.
 
-The following are some examples of converting a fixed drawing to a movable one.
+Shembujt e mëposhtëm trgojnë konvertimin e në vizatimi statik në një të lëvizshëm.
 
-Teddy bear - position
+Ariu -  pozicioni
 '''''''''''''''''''''
 
-The following program, which shows the toy bear's head, is given:
+Programi i mëposhtëm, i cili tregon kokën e ariut të lodrave, është dhënë:
 
 .. activecode:: PyGame__drawing_bear_fixed
     :nocodelens:
@@ -263,14 +263,14 @@ The following program, which shows the toy bear's head, is given:
 
 
 
-The program calls the *framed_circle* function seven times, which draws the given circle with black border (though it could have been avoided for the three small black circles). To be able to change the position of the drawing, let's select the main point (anchor). Make it the center of a large circle, that is, the heads of the bear. The coordinates of this point are (250, 150). Now we need to express the coordinates of the centers of all other circles relative to the main point. Take the bear's right ear as an example.
+Programi e quan funksionin *framed_circle* shtatë herë, i cili vizaton rrethin e dhënë me kufi të zi (megjithëse mund të ishte shmangur për tre rrathët e vegjël të zi). Për të qenë në gjendje të ndryshojmë pozicionin e vizatimit, le të zgjedhim pikën kryesore (anchor). Bëni atë qendër të një rrethi të madh, domethënë kokat e ariut. Koordinatat e kësaj pike janë (250, 150). Tani duhet të shprehim koordinatat e qendrave të të gjitha rrathëve të tjera në lidhje me pikën kryesore. Merrni si shembull veshin e djathtë të ariut.
 
-:math:`x` coordinate of the center of the right ear is :math:`310 = 250 + 60`, while :math:`y` coordinate is :math:`80 = 150 - 70`. From here we can see that the coordinates of the center of the right ear can be written in the program as `(cx + 60, cy - 70)`, where `(cx, cy)` are the coordinates of the main point. 
+:math:`x` koordinata e qendrës së veshit të djathtë është :math:` 310 = 250 + 60`, ndërsa :math:`y` koordinata është :math:` 80 = 150 - 70`. Nga këtu mund të shohim që koordinatat e qendrës së veshit të djathtë mund të shkruhen në program si `(cx + 60, cy - 70)`, ku `(cx, cy)` janë koordinatat e pikës kryesore.
 
-Follow the same procedure for the other circles and complete the *draw_teddy* function.
+Ndiqni të njëjtën procedurë për rrathët e tjera dhe plotësoni funksionin *Draw_teddy*.
 
 .. activecode:: PyGame__drawing_bear_movable1
-    :nocodelens:
+    :nocodelens
     :enablecopy:
     :modaloutput:
     :playtask:
@@ -290,25 +290,25 @@ Follow the same procedure for the other circles and complete the *draw_teddy* fu
     draw_teddy(width // 2, height // 2)
 
     
-This program allows us to easily display teddy bears in various places on the screen. For example, the function call
+Ky program na lejon të shfaqim me lehtësi arinj në vende të ndryshme të ekranit. Për shembull, thirrja e funksionit
 
 .. code::
 
     draw_teddy(width // 2, height // 2)
     
-which draws a bear with the main point in the center of the window (as it was), can be replaced with the following two:
+e cila vizaton një arush me pikën kryesore në qendër të dritares (ashtu siç ishte), mund të zëvendësohet me dy vija: e cila vizaton një ari me pikën kryesore në qendër të dritares (ashtu siç ishte), mund të jetë zëvendësuar me dy në vija:
 
 .. code::
 
     draw_teddy(width // 2 - 120, height // 2)
     draw_teddy(width // 2 + 120, height // 2)
 
-Try this! It would have been much more difficult to draw another bear if we had not adapted the initial program for this use.
+Provoni këtë! Do të ishte shumë më e vështirë të vizatonim një arush tjetër nëse nuk do të kishim përshtatur programin fillestar për këtë përdorim.
 
-House - position
+Shtëpia - pozicioni
 ''''''''''''''''
 
-Let's say you wrote this program, and your goal is to remake the program so that the house can be easily moved:
+Le të themi që e keni shkruar këtë program, dhe qëllimi juaj është të shkruani programin në mënyrë që shtëpia të zhvendoset lehtësisht:
 
 .. activecode:: PyGame__drawing_house_detailed_fixed
     :nocodelens:
@@ -316,7 +316,7 @@ Let's say you wrote this program, and your goal is to remake the program so that
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\5_Movable\house2D_detailed_fixed.py
 
-Let the main point be: code: `(x, y) = (50, 150)`. Complete the started remodeling of the program in the box below, where the drawing is done in the function :code:`draw_house(x, y, wall_color)`. After making sure that the drawings in the two programs look the same (except that they draw in windows of different sizes), replace the call :code:`draw_house(50, 150, pg.Color (" khaki "))` with the next 4, to get the picture as when clicking the "Play task" button:
+Le të jetë pika kryesore :code:`(x, y) = (50, 150)`. Përfundoni rimodelimin e nisur të programit në kutinë më poshtë, ku vizatimi është bërë në funksionin :code:`Draw_house (x, y, wall_color)`. Pasi të siguroheni që vizatimet në të dy programet duken njësoj (përveç që ato vizatohen në dritare me madhësi të ndryshme), zëvendësoni kodin :code:`Draw_house (50, 150, pg.Color (" khaki "))" 4 tjetër, për të marrë figurën si kur klikoni në butonin "Luaj lojën":
 
 .. code::
 

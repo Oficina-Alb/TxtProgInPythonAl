@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Events &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Ngjarje &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Mouse events" href="03_PyGame_35_Interaction_EventMouse.html" />
-    <link rel="prev" title="Reading keyboard" href="03_PyGame_33_Interaction_ReadKeyboard.html" />
+    <link rel="next" title="Ngjarjet e mouse" href="03_PyGame_35_Interaction_EventMouse.html" />
+    <link rel="prev" title="Leximi i tastierës" href="03_PyGame_33_Interaction_ReadKeyboard.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,15 +205,15 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="events">
-<h1>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="when-reading-state-is-not-enough">
-<h2>When reading state is not enough<a class="headerlink" href="#when-reading-state-is-not-enough" title="Permalink to this headline">¶</a></h2>
-<p>At the beginning of the section about interaction we mentioned that there are two basic ways for a program to get information about user actions. The first way is to read the state of the mouse and the keyboard, and we are familiar with that way by now.</p>
-<p>Reading the states of mouse and keyboard is easy and sufficient for many applications. However, in some situations it is not the most convenient way of doing things. For example, if we wanted to know when the user clicks the mouse:</p>
+  <div class="section" id="ngjarje">
+<h1>Ngjarje<a class="headerlink" href="#ngjarje" title="Permalink to this headline">¶</a></h1>
+<p>Kur lexoni gjendje nuk është e mjaftueshme
+‘’’’’’’’’’’’’’’’’’ ‘’ ‘’ ‘’ ‘’ ‘’ ‘’ ‘’</p>
+<p>Në fillim të seksionit për ndërveprimin përmendëm se ekzistojnë dy mënyra themelore që një program të marrë informacione rreth veprimeve të përdoruesit. Mënyra e parë është të lexojmë gjendjen e mouse dhe tastierës, dhe ne jemi njohur me atë mënyrë deri tani.</p>
+<p>Leximi i gjendjeve të mouse dhe tastierës është i lehtë dhe i mjaftueshëm për shumë aplikime. Sidoqoftë, në disa situata nuk është mënyra më e përshtatshme për të bërë gjërat. Për shembull, nëse do të donim të dinim kur përdoruesi klikon mouse:</p>
 <ul class="simple">
-<li>frequently reading the state of the mouse may result in multiple consecutive readings indicating that a mouse button is down, but we do not know if it is all the same click or there were more clicks.</li>
-<li>infrequently reading the state of the mouse may result in that the user presses and releases a button after one reading and before the next one. In this case, the program will not receive information about that click.</li>
+<li><p>shpesh leximi i gjendjes së mouse mund të rezultojë në lexime të shumta radhazi që tregojnë se një buton i mouse është poshtë, por ne nuk e dimë nëse është i njëjti klikim ose ka pasur më shumë klikime.</p></li>
+<li><p>leximi i rrallë i gjendjes së mouse mund të rezultojë në atë që përdoruesi shtyp dhe lëshon një buton pas një leximi dhe para tjetrës. Në këtë rast, programi nuk do të marrë informacione rreth këtij klikimi.</p></li>
 </ul>
 <p>Let us look at the following example.</p>
 
@@ -224,12 +223,12 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - broken switch:</strong></p>
-<p>The following program draws an image of a wiring diagram for each frame, and then over it images of a switch and a bulb. The idea is to “turn the light on and off” by clicking on the switch.</p>
+<p><strong>Shembull - ndërprerës i prishur:</strong></p>
 
     </p></div></div>
-<p>When solving the task by reading the state of the mouse, various unwanted behaviors may come about due to the shortcomings described above, such as not reacting to a click (reading the state too infrequently) or flickering of the light (reading the state too frequently). Even if your speed of clicking is just right, so you can avoid these unwanted effects and normally turn the light on or off, someone who clicks faster or slower could feel the problem.</p>
-<p>Try the program out with clicking at different speeds.</p>
+<p>     Programi i mëposhtëm tërheq një imazh të një diagrami instalimesh për secilën kornizë, dhe pastaj mbi të imazhe të një ndërprerësi dhe një llambë. Ideja është që “të ndizni dhe fikni dritën” duke klikuar në çelës.</p>
+<p>Gjatë zgjidhjes së detyrës duke lexuar gjendjen e mouse, sjellje të ndryshme të padëshiruara mund të vijnë për shkak të mangësive të përshkruara më lart, të tilla si mos reagimi ndaj një klikimi (leximi i gjendjes shumë rrallë) ose ndezja e dritës (leximi i gjendjes shumë shpesh). Edhe nëse shpejtësia juaj e klikimit është e saktë, ju mund të shmangni këto efekte të padëshiruara dhe të ndizni ose fikni dritën normalisht, pasi dikush që klikon më shpejt ose më ngadalë mund të ndjejë problemin.</p>
+<p>Provoni programin duke klikuar në shpejtësi të ndryshme.</p>
 <a class="reference internal image-reference" href="../_images/Shema1_Off.png"><img alt="../_images/Shema1_Off.png" src="../_images/Shema1_Off.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/Shema1_On.png"><img alt="../_images/Shema1_On.png" src="../_images/Shema1_On.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/SwitchOff.png"><img alt="../_images/SwitchOff.png" src="../_images/SwitchOff.png" style="width: 50px;" /></a>
@@ -282,20 +281,19 @@ pygamebg.frame_loop(fps, new_frame)
 
 </textarea>
 </div>
+<div class="section" id="informacion-rreth-ndryshimit-te-gjendjes">
+<h2>Informacion rreth ndryshimit të gjendjes<a class="headerlink" href="#informacion-rreth-ndryshimit-te-gjendjes" title="Permalink to this headline">¶</a></h2>
+<p>Siç e përmendëm në hyrje të këtij kapitulli, ne gjithashtu mund të ndjekim veprimet e përdoruesit në një mënyrë tjetër, që është përdorimi i ngjarjeve të sistemit. Ngjarjet me të cilat merremi këtu mund të kuptohen si <strong>ndryshime në gjendjen e mouse ose tastierës</strong> (megjithëse ka ngjarje të tjera, siç janë ato të krijuara nga ora e sistemit). Për shembull, kur një çelës në tastierë ose një buton të mouse zbret, sistemi operativ i kompjuterit merr një sinjal nga pajisja hyrëse dhe e regjistron atë si një ngjarje. E njëjta gjë ndodh në momentin e lëshimit të çelësave (butonave), ndryshimit të pozicionit të mouse, etj.</p>
+<p>Të gjitha ngjarjet regjistrohen dhe mbahen mend, kështu që nuk mund të ndodhë që të humbasim veprimin e një përdoruesi, si kur lexojmë vetëm statusin.</p>
+<p>Libraria e PyGame na lejon të marrim një objekt për secilën ngjarje me informacione rreth asaj ngjarje, të ekzaminojmë se çfarë lloj ngjarje është, dhe t’i përgjigjet me programim ngjarjes sipas nevojës.</p>
 </div>
-<div class="section" id="information-about-state-changes">
-<h2>Information about state changes<a class="headerlink" href="#information-about-state-changes" title="Permalink to this headline">¶</a></h2>
-<p>As we mentioned in the introduction to this chapter, we can also track user actions in another way, which is to use system events. The events we deal with here can be understood as <strong>changes in the state of the mouse or keyboard</strong> (though there are other events, such as those generated by the system clock). For example, when a key on the keyboard or a mouse button goes down, the computer’s operating system receives a signal from the input device and registers it as an event. The same happens at the moment of releasing the keys (buttons), changing the position of the mouse, etc.</p>
-<p>All events are logged and remembered, so it cannot happen that we miss a user’s action, like when we only read the status.</p>
-<p>The PyGame library allows us to get one object for each event with information about that event, to examine what sort of event it is, and to programmatically respond to the event as needed.</p>
-</div>
-<div class="section" id="using-events-in-programs">
-<h2>Using events in programs<a class="headerlink" href="#using-events-in-programs" title="Permalink to this headline">¶</a></h2>
-<p>In programs that use events, we will write a special function <code class="docutils literal notranslate"><span class="pre">handle_event(event)</span></code> (you can give it a different name). This function gets a PyGame object <em>event</em> as an argument, which contains all the necessary event information. We add the name of our event processing function as the third argument in the <em>pygamebg.frame_loop</em> function call. This enables our <em>handle_event</em> function to be called for each event that occurs while the program is running.</p>
-<p>Now let’s look at how exactly we handle the event.</p>
-<p>In the <em>handle_event</em> function, we check if this event is of the type “a mouse button going down”. We do this by comparing the event type, stored in the <code class="docutils literal notranslate"><span class="pre">event.type</span></code> field, with the PyGame constant <code class="docutils literal notranslate"><span class="pre">pg.MOUSEBUTTONDOWN</span></code>, which has the described meaning.</p>
-<p>If the event is of the type we are interested in (moving a mouse button down, that is, start of a click), using the command  <code class="docutils literal notranslate"><span class="pre">mouse_point</span> <span class="pre">=</span> <span class="pre">event.pos</span></code> we place the coordinates of the point where the mouse was at the time the event occurred in the variable <em>mouse_point</em>, because we want to know what the user clicked on.</p>
-<p>The following commands check if the user clicked on the switch, and if so, change the value of the logical variable <em>switch_on</em>, which shows the state of the switch.</p>
+<div class="section" id="perdorimi-i-eventeve-ne-programe">
+<h2>Përdorimi i eventeve në programe<a class="headerlink" href="#perdorimi-i-eventeve-ne-programe" title="Permalink to this headline">¶</a></h2>
+<p>Në programet që përdorin ngjarje, ne do të shkruajmë një funksion të veçantë <code class="docutils literal notranslate"><span class="pre">hand_event</span> <span class="pre">(event)</span></code> (mund t’i jepni një emër tjetër). Ky funksion merr një ngjarje <em>event</em> PyGame si një argument, i cili përmban të gjitha informacionet e nevojshme për ngjarjen. Ne shtojmë emrin e funksionit tonë të përpunimit të ngjarjes si argumenti i tretë në thirrjen e funksionit <em>pygamebg.frame_loop</em>. Kjo mundëson që  funksioni ynë të quhet <em>hand_event</em> për secilën ngjarje që ndodh ndërsa programi po funksionon.</p>
+<p>Tani le të shohim se si e trajtojmë saktësisht ngjarjen.</p>
+<p>Në funksionin <em>hand_event</em>, kontrollojmë nëse kjo ngjarje është e tipit “një buton i mouse që bie poshtë”. Ne e bëjmë këtë duke krahasuar llojin e ngjarjes, të ruajtur në fushën <code class="docutils literal notranslate"><span class="pre">event.type</span></code>, me konstanten PyGame <code class="docutils literal notranslate"><span class="pre">pg.MOUSEBUTTONDOWN</span></code>, e cila ka kuptimin e përshkruar.</p>
+<p>Nëse ngjarja është e llojit që na intereson (zhvendosja e një butoni të mouse poshtë, d.m.th. fillimi i një klikimi), duke përdorur komandën <code class="docutils literal notranslate"><span class="pre">mouse_point</span> <span class="pre">=</span> <span class="pre">event.pos</span></code> vendosim koordinatat e pikës ku ishte mouse në kohën kur ngjarja ka ndodhur në ndryshoren <em>mouse-point</em>, sepse ne duam të dimë se çfarë klikoi përdoruesi.</p>
+<p>Komandat e mëposhtme kontrollojnë nëse përdoruesi ka klikuar në ndërprerës, dhe nëse po, ndryshoni vlerën e ndryshores logjike <em>switch_on</em>, e cila tregon gjendjen e ndërprerës.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -303,8 +301,8 @@ pygamebg.frame_loop(fps, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - switch:</strong></p>
-<p>This program does the same thing as the previous one, but uses the mouse down event so there are no unwanted effects.</p>
+<p><strong>Shembull - switch:</strong></p>
+<p>Ky program bën të njëjtën gjë si ai i mëparshmi, por përdor ngjarjen e mouse poshtë, në mënyrë që të mos ketë efekte të padëshiruara.</p>
 
     </p></div></div>
 
@@ -359,17 +357,17 @@ pygamebg.frame_loop(10, new_frame, handle_event)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Reading keyboard' data-toggle="tooltip"><a href="03_PyGame_33_Interaction_ReadKeyboard.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Leximi i tastierës' data-toggle="tooltip"><a href="03_PyGame_33_Interaction_ReadKeyboard.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Mouse events' data-toggle="tooltip"><a href="03_PyGame_35_Interaction_EventMouse.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Ngjarjet e mouse' data-toggle="tooltip"><a href="03_PyGame_35_Interaction_EventMouse.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Reading keyboard' data-toggle="tooltip"><a href="03_PyGame_33_Interaction_ReadKeyboard.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Leximi i tastierës' data-toggle="tooltip"><a href="03_PyGame_33_Interaction_ReadKeyboard.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Mouse events' data-toggle="tooltip"><a href="03_PyGame_35_Interaction_EventMouse.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Ngjarjet e mouse' data-toggle="tooltip"><a href="03_PyGame_35_Interaction_EventMouse.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Drawing straight lines and polygons &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Vizatimi i linjave dhe poligoneve të drejta &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawing from reference" href="03_PyGame_12a_Drawing_Given_Examples.html" />
-    <link rel="prev" title="Drawing rectangles, ellipses, and circles" href="03_PyGame_11a_Drawing_CircleRectEllipse.html" />
+    <link rel="next" title="Vizatimi nga referenca" href="03_PyGame_12a_Drawing_Given_Examples.html" />
+    <link rel="prev" title="Vizatimi i drejtkëndëshave, eklipse dhe rrathëve" href="03_PyGame_11a_Drawing_CircleRectEllipse.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,10 +205,10 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="drawing-straight-lines-and-polygons">
-<h1>Drawing straight lines and polygons<a class="headerlink" href="#drawing-straight-lines-and-polygons" title="Permalink to this headline">¶</a></h1>
-<p>The functions for drawing straight lines and polygons are similar to the functions for drawing rectangles, ellipses, and circles, which we have already learned. The parameters <em>canvas</em>, <em>color</em> and <em>thickness</em> are used here as well, with the same meaning as before. We will explain new parameters as we come across them.</p>
-<p>We will repeat the “empty” program here, which only handles the PyGame library and the drawing window (and does not draw anything by itself), in case you want to try something out quickly.</p>
+  <div class="section" id="vizatimi-i-linjave-dhe-poligoneve-te-drejta">
+<h1>Vizatimi i linjave dhe poligoneve të drejta<a class="headerlink" href="#vizatimi-i-linjave-dhe-poligoneve-te-drejta" title="Permalink to this headline">¶</a></h1>
+<p>Funksionet për vizatimin e linjave të drejta dhe poligoneve janë të ngjashme me funksionet për vizatimin e drejtkëndëshave, elipsave dhe rrathëve, të cilat ne kemi mësuar tashmë. Parametrat <em>canvas</em>, <em>color</em> dhe <em>thickness</em> përdoren gjithashtu këtu, me të njëjtin kuptim si më parë. Ne do t’i shpjegojmë parametrat e rinj ndërsa hasim në to.</p>
+<p>Ne do ta përsërisim programin “bosh” këtu, i cili merret vetëm me bibliotekën PyGame dhe dritaren e vizatimit (dhe nuk vizaton asgjë nga vetja), në rast se dëshiron të provosh diçka shpejt.</p>
 
 <div data-childcomponent="pygame__drawing_primirives_def_copy" class="course-box course-box-problem course-content">
 
@@ -230,18 +229,18 @@ canvas.fill(pg.Color("gray"))
 pygamebg.wait_loop()
 </textarea>
 </div>
-<div class="section" id="drawing-a-line">
-<h2>Drawing a line<a class="headerlink" href="#drawing-a-line" title="Permalink to this headline">¶</a></h2>
-<p>To draw a line we use the function <code class="docutils literal notranslate"><span class="pre">pg.draw.line</span></code>, with or without the thickness parameter.</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+<div class="section" id="vizatimi-i-nje-vize">
+<h2>Vizatimi i një vize<a class="headerlink" href="#vizatimi-i-nje-vize" title="Permalink to this headline">¶</a></h2>
+<p>Për të vizatuar një vizë përdoret funksioni <code class="docutils literal notranslate"><span class="pre">pg.draw.line</span></code>, me ose pa parametrin e trashësisë.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">)</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>The parameters <em>point1</em>, <em>point2</em> are points on the screen that represent the end points of the line segment. Again, a point is specified as a tuple or a list of 2 elements. The elements of this tuple or list are the coordinates of the point in the window in which we draw.</li>
-<li>With this function, omission of thickness has a different meaning than in other functions, which is to use the default line thickness of 1 pixel.</li>
+<li><p>Parametrat <em>point1</em>, <em>point2</em> janë pika në ekran që paraqesin pikat fundore të segmentit të linjës. Përsëri, një pikë specifikohet si një tuple ose një listë me 2 elementë. Elementet e kësaj tuple ose liste janë koordinatat e pikës në dritaren në të cilën vizatojmë.</p></li>
+<li><p>Me këtë funksion, lëshimi i trashësisë ka një kuptim të ndryshëm sesa në funksionet e tjera, që është përdorimi i trashësisë së vijës së paracaktuar të 1 pikselit.</p></li>
 </ul>
-<p>For example, the command:</p>
+<p>Për shembull, komanda:</p>
 
 <div data-childcomponent="pygame__drawing_line_def" class="course-box course-box-problem course-content">
 
@@ -253,21 +252,21 @@ pygamebg.wait_loop()
 pg.draw.line(canvas, pg.Color("blue"), (20, 10), (40, 30), 2)
 </textarea>
 </div>
-<p>draws a blue line 2 pixels wide from point <span class="math notranslate nohighlight">\((20, 10)\)</span> to point <span class="math notranslate nohighlight">\((40, 30)\)</span>.</p>
+<p>vizaton një vijë blu 2 pixel të gjerë nga pika <span class="math notranslate nohighlight">\((20, 10)\)</span> to point <span class="math notranslate nohighlight">\((40, 30)\)</span>.</p>
 <a class="reference internal image-reference" href="../_images/drawing_line.png"><img alt="../_images/drawing_line.png" class="align-center" src="../_images/drawing_line.png" style="width: 200px;" /></a>
 </div>
-<div class="section" id="drawing-a-polygon">
-<h2>Drawing a polygon<a class="headerlink" href="#drawing-a-polygon" title="Permalink to this headline">¶</a></h2>
-<p>To draw a polygon we use the function <code class="docutils literal notranslate"><span class="pre">pg.draw.polygon</span></code>, which also has two forms:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">point_list</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+<div class="section" id="vizatimi-i-poligonit">
+<h2>Vizatimi i poligonit<a class="headerlink" href="#vizatimi-i-poligonit" title="Permalink to this headline">¶</a></h2>
+<p>Për të vizatuar poligonin përdorim funksionin <code class="docutils literal notranslate"><span class="pre">pg.draw.polygon</span></code>, që ka 2 forma:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">point_list</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">point_list</span><span class="p">)</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>The parameter <em>point_list</em> represents a list of vertices of the polygon we are drawing. For example [(50, 250), (150, 150), (250, 250)] is a list of 3 points.</li>
-<li>Here again, we use the form without the <em>thickness</em> parameter when we want the polygon to be the filled with the specified color (if we specify a width, a polygonal line of that width will be drawn).</li>
+<li><p>Parametri <em>point_list</em> paraqet një listë të vertikteve të poligonit që po vizatojmë. Për shembull [(50, 250), (150, 150), (250, 250)] është një listë me 3 pikë.</p></li>
+<li><p>Këtu përsëri, ne përdorim formën pa parametrin <em>thickness</em> kur duam që poligoni të mbushet me ngjyrën e specifikuar (nëse përcaktojmë një gjerësi, do të vizatohet një vijë poligonale e asaj gjerësi).</p></li>
 </ul>
-<p>For example, the following statement draws a triangle colored with <span class="math notranslate nohighlight">\((0, 100, 36)\)</span> color. The vertices of the triangle are <span class="math notranslate nohighlight">\((50, 100)\)</span>, <span class="math notranslate nohighlight">\((150, 150)\)</span> and <span class="math notranslate nohighlight">\((150, 50)\)</span>.</p>
+<p>Për shembull, fjalia e mëposhtme vizaton një trekëndësh me ngjyrë <span class="math notranslate nohighlight">\((0, 100, 36)\)</span>. Kulmët e trekëndëshit janë: matematikë: <cite>(50, 100)</cite>,:math:<cite>(150, 150)</cite> dhe <span class="math notranslate nohighlight">\((150, 50)\)</span>.</p>
 
 <div data-childcomponent="pygame__drawing_polygon_def" class="course-box course-box-problem course-content">
 
@@ -280,15 +279,18 @@ pg.draw.polygon(canvas, (0, 100, 36), [(50, 100), (150, 150), (150, 50)])
 </textarea>
 </div>
 <a class="reference internal image-reference" href="../_images/drawing_polygon.png"><img alt="../_images/drawing_polygon.png" class="align-center" src="../_images/drawing_polygon.png" style="width: 200px;" /></a>
-<p>In addition to these listed and described functions, there are other drawing functions in the <code class="docutils literal notranslate"><span class="pre">pg.draw</span></code> module, but we will not deal with them here. If you are interested in learning more about these functions, you can find more complete information for example at <a class="reference external" href="https://www.pygame.org/docs/ref/draw.html">https://www.pygame.org/docs/ref/draw.html</a></p>
+<dl class="simple">
+<dt>Përveç këtyre funksioneve të listuara dhe të përshkruara, ka edhe funksione të tjera vizatimi në modulin <code class="docutils literal notranslate"><span class="pre">pg.</span> <span class="pre">pull</span></code>, por ne nuk do të merremi me to këtu. Nëse jeni të interesuar të mësoni më shumë rreth këtyre funksioneve, mund të gjeni informacion më të plotë për shembull në</dt><dd><p><a class="reference external" href="https://www.pygame.org/docs/ref/draw.html">https://www.pygame.org/docs/ref/draw.html</a></p>
+</dd>
+</dl>
 </div>
-<div class="section" id="drawing-functions-questions">
-<h2>Drawing functions - questions<a class="headerlink" href="#drawing-functions-questions" title="Permalink to this headline">¶</a></h2>
-<p>Check your knowledge about drawing functions:</p>
+<div class="section" id="funksionet-e-vizatimit-pyetje">
+<h2>Funksionet e vizatimit - pyetje<a class="headerlink" href="#funksionet-e-vizatimit-pyetje" title="Permalink to this headline">¶</a></h2>
+<p>Kontrolloni njohuritë:</p>
 
         <div class="course-box course-box-problem course-content" style="max-width: none;">
         <pre data-component="parsons" id="pygame__drawing_quiz_arg_order"      >
-        <span data-question> Q-48: In what order are these arguments given in a call of the `pg.draw.line` function</span>canvas
+        <span data-question> Q-48: Në çfarë radhe thirren këto argumente në funksionin `pg.draw.line`</span>canvas
 color
 first point coordinates
 second point coordinates
@@ -298,14 +300,15 @@ thickness
     
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_polygon_args1">
-            Q-49: We want to draw a triangle. In what form can point coordinates be specified?
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_polygon_args1_opt_a">pg.draw.polygon(canvas, color, [(0, 0), (50, 100), (100, 0)])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_a">Correct</li>
+            <p>Q-49: Ne duam të vizatojmë një trekëndësh. Në çfarë forme mund të specifikohen koordinatat e pikave?</p>
+
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_polygon_args1_opt_a">pg.draw.polygon(canvas, color, [(0, 0), (50, 100), (100, 0)])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_a">Saktë</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args1_opt_b">pg.draw.polygon(canvas, color, (0, 0), (50, 100), (100, 0))</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args1_opt_b">pg.draw.polygon(canvas, color, (0, 0), (50, 100), (100, 0))</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args1_opt_c">pg.draw.polygon(canvas, color, (0, 0, 50, 100, 100, 0))</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args1_opt_c">pg.draw.polygon(canvas, color, (0, 0, 50, 100, 100, 0))</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args1_opt_d">pg.draw.polygon(canvas, color, [0, 0, 50, 100, 100, 0])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args1_opt_d">pg.draw.polygon(canvas, color, [0, 0, 50, 100, 100, 0])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args1_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -313,14 +316,15 @@ thickness
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pygame__drawing_quiz_polygon_args2">
-            Q-50: Which of the following polygons cannot be drawn with multiple calls of the <code class="docutils literal notranslate"><span class="pre">pg.draw.line</span></code> function?
-            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args2_opt_a">pg.draw.polygon(canvas, color, [(0, 0), (50, 100), (100, 0)], 7)</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_a">Correct</li>
+            <p>Q-50: Cila prej poligoneve të mëposhtëm nuk mund të tërhiqet me thirrje të shumëfishta të funksionit <code class="docutils literal notranslate"><span class="pre">pg.</span> <span class="pre">pull.line</span></code>?</p>
+
+            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args2_opt_a">pg.draw.polygon(canvas, color, [(0, 0), (50, 100), (100, 0)], 7)</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_a">Saktë</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_polygon_args2_opt_b">pg.draw.polygon(canvas, color, [(0, 0), (0, 50), (50, 50), (50,  0)])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_b">Try again</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_polygon_args2_opt_b">pg.draw.polygon(canvas, color, [(0, 0), (0, 50), (50, 50), (50,  0)])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_b">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_polygon_args2_opt_c">pg.draw.polygon(canvas, color, [(0, 0), (50, 100), (100, 0)])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_c">Try again</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_polygon_args2_opt_c">pg.draw.polygon(canvas, color, [(0, 0), (50, 100), (100, 0)])</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args2_opt_d">pg.draw.polygon(canvas, color, [(0, 0), (0, 50), (50, 50), (50,  0)], 4)</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_d">Correct</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_polygon_args2_opt_d">pg.draw.polygon(canvas, color, [(0, 0), (0, 50), (50, 50), (50,  0)], 4)</li><li data-component="feedback" id="pygame__drawing_quiz_polygon_args2_opt_d">Saktë</li>
             
 
             </ul>
@@ -328,8 +332,8 @@ thickness
             
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__drawing_quiz_function_names">
-    <span data-component="question">Q-51: Pair the drawing statements and the shapes that they draw.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-51: Bashkoni fjalitë e vizatimit dhe format që ato vizatojnë.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__drawing_quiz_function_names_drag1">Line segment</li>
     <li data-component="dropzone" for="pygame__drawing_quiz_function_names_drag1">pg.draw.line</li>
@@ -345,32 +349,15 @@ thickness
 </ul></div>
         <div class="course-box course-box-problem course-content" style="max-width: none;">
         <pre data-component="parsons" id="pygame__drawing_quiz_general_arg_order"      >
-        <span data-question> Q-52: Sort according to the typical order of arguments in the drawing functions:</span>canvas
+        <span data-question> Q-52: Rendit sipas rendit tipik të argumenteve në funksionin e vizatimit:</span>canvas
 color
 coordinates
 thickness
         </pre>
         </div>
-    
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_point_list">
-            Q-53: When drawing which of the following shapes are the coordinates given in the form of a list of ordered pairs?
-            <li data-component="answer"  id="pygame__drawing_quiz_point_list_opt_a">Circle</li><li data-component="feedback" id="pygame__drawing_quiz_point_list_opt_a">Try again</li>
-            
-            <li data-component="answer"  id="pygame__drawing_quiz_point_list_opt_b">Ellipse</li><li data-component="feedback" id="pygame__drawing_quiz_point_list_opt_b">Try again</li>
-            
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_point_list_opt_c">Polygon</li><li data-component="feedback" id="pygame__drawing_quiz_point_list_opt_c">Correct</li>
-            
-            <li data-component="answer"  id="pygame__drawing_quiz_point_list_opt_d">Line segment</li><li data-component="feedback" id="pygame__drawing_quiz_point_list_opt_d">Try again</li>
-            
-            <li data-component="answer"  id="pygame__drawing_quiz_point_list_opt_e">Square</li><li data-component="feedback" id="pygame__drawing_quiz_point_list_opt_e">Try again</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="drawing-by-instructions">
-<h2>Drawing by instructions<a class="headerlink" href="#drawing-by-instructions" title="Permalink to this headline">¶</a></h2>
+    </div>
+<div class="section" id="vizatimi-sipas-instruksioneve">
+<h2>Vizatimi sipas instruksioneve<a class="headerlink" href="#vizatimi-sipas-instruksioneve" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -378,16 +365,16 @@ thickness
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Scarecrow:</strong> Draw a scarecrow on a white background. It consists of the following parts:</p>
+<p><strong>Rrëmbyesi:</strong> Vizatoni një frikë në një sfond të bardhë. Përbëhet nga pjesët e mëposhtme:</p>
 <ul class="simple">
-<li>head: a black circle, 6 pixels wide, centered at point (150, 70), of radius 50</li>
-<li>body: a straight black line, 6 pixels wide, from point (150, 120) to point (150, 300)</li>
-<li>arms: a straight black line, 6 pixels wide, from point (80, 170) to point (220, 170)</li>
-<li>left leg: a straight black line, 6 pixels wide, from point (150, 300) to point (90, 480)</li>
-<li>right leg: a straight black line, 6 pixels wide, from point (150, 300) to point (210, 480)</li>
+<li><p>koka: një rreth i zi, 6 pixel i gjerë, i përqendruar në pikën (150, 70), me rreze 50</p></li>
 </ul>
 
     </p></div></div>
+<p>     - trup: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (150, 120) deri në pikën (150, 300)
+     - krahët: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (80, 170) deri në pikën (220, 170)
+     - këmbën e majtë: një vijë të zezë të drejtë, 6 pixel të gjerë, nga pika (150, 300) deri në pikën (90, 480)
+     - këmbën e djathtë: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (150, 300) deri në pikën (210, 480)</p>
 
 <div data-childcomponent="pygame__drawing_scarecrow" class="course-box course-box-problem course-content">
 
@@ -422,15 +409,17 @@ pygamebg.wait_loop()
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Tree:</strong> Draw a tree on a white background. It consists of the following parts:</p>
+<blockquote>
+<div><p><strong>Pema:</strong> Vizato një pemë në dërrasën e bardhë. Ka këto pjesë:</p>
+</div></blockquote>
 <ul class="simple">
-<li>trunk: a rectangle filled with color (97, 26, 9), size 40 x 50, with top left vertex at point (130, 250)</li>
-<li>upper part of the treetop: a triangle filled with color (0, 100, 36), with vertices (50, 250), (150, 150) and (250, 250)</li>
-<li>middle part of the treetop: a triangle filled with color (0, 100, 36), with vertices (75, 200), (150, 100) и (225, 200)</li>
-<li>bottom part of the treetop: a triangle filled with color (0, 100, 36), with vertices (100, 150), (150, 50) и (200, 150)</li>
+<li><p>bagazhi: një drejtkëndësh i mbushur me ngjyra (97, 26, 9), madhësia 40 x 50, me kulm të majtë të sipërm në pikën (130, 250)</p></li>
 </ul>
 
     </p></div></div>
+<p>     - pjesa e sipërme: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (50, 250), (150, 150) dhe (250, 250)
+     - pjesa e mesme e pemes: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (75, 200), (150, 100) и (225, 200)
+     - pjesa e poshtme e pemes: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (100, 150), (150, 50) и (200, 150)</p>
 
 <div data-childcomponent="pygame__drawing_tree" class="course-box course-box-problem course-content">
 
@@ -464,8 +453,8 @@ pygamebg.wait_loop()
 </textarea>
 </div>
 </div>
-<div class="section" id="surprise-drawings">
-<h2>Surprise drawings<a class="headerlink" href="#surprise-drawings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="vizatimi-surprize">
+<h2>vizatimi surprizë<a class="headerlink" href="#vizatimi-surprize" title="Permalink to this headline">¶</a></h2>
 <p>To see the drawing in the tasks that follow, you need to write the right statements and run your program.</p>
 
     <div class="course-box course-box-special">
@@ -474,7 +463,8 @@ pygamebg.wait_loop()
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>surprise 1 - connect the dots:</strong> The vertices of a polygon are given. Draw that polygon filled with “khaki” color on a “darkgreen” background.
+<p><strong>surpriza 1 - lidh pikat:</strong> Jepen vertikalet e një poligoni. Vizatoni atë shumëkëndësh të mbushur me ngjyrën “kaki” në një sfond “të errët”.</p>
+
     </p></div></div>
 
 <div data-childcomponent="pygame__drawing_giraffe" class="course-box course-box-problem course-content">
@@ -513,22 +503,18 @@ pygamebg.wait_loop()
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>surprise 2:</strong></p>
-<p>Using “limegreen” color, draw:</p>
-<ul class="simple">
-<li>A filled ellipse inscribed in a rectangle whose top left vertex is at (75, 100), its width is 150, and its height is 180;</li>
-<li>A line of width 6, from point (130, 110) to point (120, 20);</li>
-<li>Another line of width 6, from point (170, 110) to point (180, 20);</li>
-<li>A filled circle of radius 10 pixels, centered at point (120, 20);</li>
-<li>A filled circle of radius 10 pixels, centered at point (180, 20);</li>
-</ul>
-<p>Using black color draw two more filled ellipses:</p>
-<ul class="simple">
-<li>one inscribed in a rectangle whose top left vertex is at point (110, 140), its width is 30, and its height is 50;</li>
-<li>and one inscribed in a rectangle whose top left vertex is at point (160, 140), its width is 30, and its height is 50;</li>
-</ul>
+<p><strong>surpriza 2:</strong></p>
+<p>Duke përdorur ngjyrën “jeshile”, vizatoni:</p>
 
     </p></div></div>
+<p>     - Një elips i mbushur i gdhendur në një drejtkëndësh, kulmi i majtë i të cilit është në (75, 100), gjerësia e tij është 150, dhe lartësia e tij është 180;
+     - Një rresht me gjerësi 6, nga pika (130, 110) deri në pikën (120, 20);
+     - Një rresht tjetër i gjerësisë 6, nga pika (170, 110) deri në pikën (180, 20);
+     - Një rreth i mbushur me rreze 10 pixel, i përqendruar në pikën (120, 20);
+     - Një rreth i mbushur me rreze 10 pixel, i përqendruar në pikën (180, 20);</p>
+<p>     Duke përdorur ngjyrën e zezë, vizatoni edhe dy elips të mbushur:</p>
+<p>     - një i gdhendur në një drejtkëndësh, kulmi i sipërm i majtë i të cilit është në pikën (110, 140), gjerësia e tij është 30, dhe lartësia e tij është 50;
+     - dhe një i gdhendur në një drejtkëndësh, kulmi i sipërm i majtë i të cilit është në pikën (160, 140), gjerësia e tij është 30, dhe lartësia e tij është 50;</p>
 
 <div data-childcomponent="pygame__drawing_ant" class="course-box course-box-problem course-content">
 
@@ -565,17 +551,17 @@ pygamebg.wait_loop()
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing rectangles, ellipses, and circles' data-toggle="tooltip"><a href="03_PyGame_11a_Drawing_CircleRectEllipse.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatimi i drejtkëndëshave, eklipse dhe rrathëve' data-toggle="tooltip"><a href="03_PyGame_11a_Drawing_CircleRectEllipse.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawing from reference' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vizatimi nga referenca' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing rectangles, ellipses, and circles' data-toggle="tooltip"><a href="03_PyGame_11a_Drawing_CircleRectEllipse.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatimi i drejtkëndëshave, eklipse dhe rrathëve' data-toggle="tooltip"><a href="03_PyGame_11a_Drawing_CircleRectEllipse.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawing from reference' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vizatimi nga referenca' data-toggle="tooltip"><a href="03_PyGame_12a_Drawing_Given_Examples.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

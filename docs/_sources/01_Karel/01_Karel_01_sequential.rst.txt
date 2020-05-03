@@ -1,35 +1,34 @@
-Managing Karel
+Menaxhimi i Karel
 ==============
 
-To see what programming looks like, we will introduce you to Karel. Karel is an animated robot that moves along a maze-like table by following our instructions in the form of a program. Through managing Karel, we will adopt a logic that is very important for writing any program, and we can also have some fun along the way.
+Për të parë se si duket programimi, ne do t'ju prezantojmë me Karel. Karel është një robot i animuar që lëviz përgjatë një tryeze si labirint duke ndjekur udhëzimet tona në formën e një programi. Përmes administrimit të Karelit, ne do të adoptojmë një logjikë që është shumë e rëndësishme për të shkruar një program, dhe gjithashtu mund të argëtohemi gjatë rrugës.
 
 .. infonote::
 
-    The idea of learning programming through controlling a robot dates back to the 1970s, when Richard E. Pattis, as a graduate student at Stanford University, created the first such environment with a programming language specially designed for this purpose. The language, like the robot, was named Karel, after Karel Čapek, the Czech writer who first started using the word robot. Patis's book *Karel The Robot: A Gentle Introduction to the Art of Programming* was published in 1981 and quickly became the best-selling introductory book in programming courses.
-    
-To manage Karel we can use these functions:
+    Ideja e të mësuarit të programimit përmes kontrollit të një roboti daton që nga vitet 1970, kur Richard E. Pattis, si student i diplomuar në Universitetin Stanford, krijoi mjedisin e parë të tillë me një gjuhë programimi të krijuar posaçërisht për këtë qëllim. Gjuha, si roboti, u quajt Karel, pas Karel Čapek, shkrimtarit çek që filloi së pari përdorimin e fjalës robot. Libri i Patis *Karel Robot: Një Prezantim në Artin e Programimit* u botua në vitin 1981 dhe u bë shpejt libri më i shitur në kurset e programimit.T
+Do të përdorim këto funksione për të menaxhuar Karel:
 
-- ``move()`` - move one square forward,
-- ``turn_left()`` - turn 90 degrees to the left (counterclockwise),
-- ``turn_right()`` - turn 90 degrees to the right (clockwise),
-- ``pick_ball()`` - pick up a ball from the square you are located on,
-- ``drop_ball()`` - drop a ball on the square you are located on.
+- ``move()`` - lëviz nje kuti përpara,
+- ``turn_left()`` - kthehet 90 gradë në të majtë,
+- ``turn_right()`` - kthehet 90 gradë në të djathtë,
+- ``pick_ball()`` - zgjedh një top në kutinë ku jeni vendosur,
+- ``drop_ball()`` - lëshon një top në kutinë ku jeni vendosur.
 
-By using these five functions, we state what we want Karel to do, so we will call them "commands for Karel", or "statements". Karel understands five more different functions, which we will see soon. In addition to these commands directly addressed to Karel, we can also use all the commands of the Python programming language, which we will learn during the course.
+Duke përdorur këto pesë funksione, ne deklarojmë atë që duam të bëjmë Karel, kështu që do t'i quajmë "komanda për Karel", ose "deklarim". Kareli kupton edhe pesë funksione të ndryshme, të cilat do t’i shohim së shpejti. Përveç këtyre komandave drejtuar drejtpërdrejtë në Karel, ne gjithashtu mund të përdorim të gjitha komandat e gjuhës programuese Python, të cilat do t'i mësojmë gjatë kursit.
 
-Let's look at the examples of how the above-mentioned commands can be used to guide Karel through his world:
+Le të shikojmë shembujt dhe si komandat e sipëer pëmendura mund të përdoren të udhezojmë Karel në botën e tij:
 
-Examples
+Shembuj
 --------
 
-Move one square forward and take the ball
+Lëviz 1 kuti përpara dhe merr topin
 '''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-    Write a program to move Karel to the field (2, 1) and make him pick up the ball.
+    Shkruaj nje program qe leviz Karel në fushë (2, 1) dhe bëje atë të marrë topin.
 
-This program consists of only two commands. The first one tells Karel to move one field forward, and the other one to take the ball.
+Ky program konsistion në dy komanda, E para i tregon Karel të lëvizë një fushë përpara, dhe tjetra të marrë topin.
    
 .. karel:: Karel_intro_two_squares_one_ball
    :blockly:
@@ -55,25 +54,25 @@ This program consists of only two commands. The first one tells Karel to move on
         },
    }
 
-**Including** *karel* **library**
+**Përfshirja e librarisë** *karel* 
 '''''''''''''''''''''''''''''''''
 
 .. infonote::
 
-    The functions we use to manage Karel are defined in the library *karel*. Therefore, at the beginning of each program, we should tell the computer (more precisely, the program that executes our program) to first attach the definitions of these functions for managing Karel. This is achieved by the first line of the program: ``from karel import *``. Every program dealing with Karel that we write should start this way.
-   
-    Keep in mind that *karel* library can only be used in this environment for now. You can run your other programs in other ways, but we will remind you of that when the time is right.
+    Funksionet që ne përdorim për të menaxhuar Karel janë përcaktuar në bibliotekë *karel*. Prandaj, në fillim të secilit program, duhet t'i tregojmë kompjuterit (më saktë, programit që ekzekuton programin tonë) që së pari të bashkëngjitni përkufizimet e këtyre funksioneve për menaxhimin e Karelit. Kjo arrihet me rreshtin e parë të programit: ``from karel import``. Programo program që merret me Karel që ne shkruajmë duhet të fillojë në këtë mënyrë.
 
-There may be more than one ball on one square, and our task may be to tell Karel to take several, or all of them.
+     Mbani në mend se biblioteka *karel* mund të përdoret vetëm në këtë mjedis tani për tani. Ju mund të drejtoni programet tuaja të tjera në mënyra të tjera, por ne do t'ju kujtojmë atë kur koha është e duhur.
 
-Move one square forward and take three balls
+Mund të ketë më shumë se një top në një katror, dhe detyra jonë mund të jetë t'i themi Karelit të marrë disa, ose të gjithë ata.
+
+Zhvendosuni një katror përpara dhe merrni tre topa
 ''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-    Write a program that tells Karel to move to the square (2, 1) and pick up three of the five balls that are there.
-    
-In this program, after the command ``move()``, the command ``pick_ball()`` should be written three times, since we need Karel to pick up three balls. Pay attention to the number that appears on the ball. It shows how many balls there are on that square. In addition to that, the number to the left of Karel's head (which you might have noticed in the previous example as well) tells how many balls Karel has with him.
+    Shkruaj një program që i thotë Karelit të zhvendoset në kuti (2, 1) dhe të marr tre nga pesë topat që janë atje.
+    
+Në këtë program, pas komandës ``move ()``, komanda ``pick_ball ()``duhet të shkruhet tre herë, pasi ne kemi nevojë për Karel që të marr tre topa. Kushtojini vëmendje numrit që shfaqet në top. Ajo tregon se sa topa ka në atë shesh. Përveç kësaj, numri në të majtë të kokës së Karelit (gjë që mund të keni vërejtur edhe në shembullin e mëparshëm) tregon se sa topa ka Kareli me të.
    
 .. karel:: Karel_intro_two_squares_five_balls
    :blockly:
@@ -102,16 +101,16 @@ In this program, after the command ``move()``, the command ``pick_ball()`` shoul
    }
    
 
-Next task is similar, but somewhat more difficult.
+Detyra tjeter [sht[ e ngjashme. por më e nderlikuar.
    
-Get to the ball and take it
+Shko te topi dhe merre
 '''''''''''''''''''''''''''
 
 .. questionnote::
 
-   Write a program that tells Karel to come to the field (4, 1) and pick up the ball.
+   Shkruaj një program që i thotë Karelit të dalë në fushë (4, 1) dhe të marr topin.
 
-The task does not essentially differ from the previous one. It is still necessary to bring Karel to the target square and tell him to take the ball. The difference is that now the path to the target square is longer, and so is our program:
+Detyra nuk ndryshon në thelb nga ajo e mëparshmja. Ende është e domosdoshme për ta sjellë Karelin në kutinë e synuar dhe t’i thoni që të marrë topin. Dallimi është se tani rruga për në kutinë e synuar është më e gjatë, dhe po kështu është edhe programi ynë:
 
 .. karel:: Karel_intro_take_ball_on_square_4_1
    :blockly:
@@ -156,29 +155,29 @@ The task does not essentially differ from the previous one. It is still necessar
         },
    }
 
-Reading this program, it's becoming hard to follow which command brings Karel to which square. This is not the case just with beginners, it's difficult for anyone because every ``move()`` statement looks the same. To help both ourselves and yourself, after each command we have added the # sign and some text that helps us to follow where we have brought Karel.
+Duke lexuar këtë program, është duke u bërë e vështirë të ndiqeni se cila komandë e sjell Karelin në cilin shesh. Ky nuk është rasti vetëm për fillestarët, është e vështirë për këdo sepse çdo deklarim ``veprim ()`` duket e njëjtë. Për të ndihmuar vetveten dhe veten, pas çdo komande kemi shtuar shenjën # dhe disa tekst që na ndihmon të ndjekim atje ku kemi sjellë Karelin.
 
-**Comments**
+**Komentet**
 ''''''''''''
 
 .. infonote::
 
-    Part of any Python program from the ``#`` character to the end of the line is called a ``comment``. Comments do not affect the execution of the program, the program does the same thing with or without them. Comments are intended only for people who read and write programs, to help them better understand these programs and to handle them more easily.
-    
-    When thinking about writing comments in our programs, we should write them for both ourselves and other people who will read our programs. On the other hand, the comments that other people write in their programs will help us understand their programs.
-    
-    There are no precise rules for writing comments. In your comments, you should write down whatever you believe helps others (and yourself) better understand your program.
+    Pjesë e çdo programi Python nga karakteri ``#`` deri në fund të rreshtit quhet një ``koment``. Komentet nuk ndikojnë në ekzekutimin e programit, programi bën të njëjtën gjë me ose pa ato. Komentet kanë për qëllim vetëm njerëzit që lexojnë dhe shkruajnë programe, për t'i ndihmuar ata t'i kuptojnë më mirë këto programe dhe t'i trajtojnë më lehtë.
+    
+     Kur mendojmë të shkruajmë komente në programet tona, duhet t'i shkruajmë ato si për veten tonë ashtu edhe për njerëzit e tjerë që do të lexojnë programet tona. Nga ana tjetër, komentet që njerëzit e tjerë shkruajnë në programet e tyre do të na ndihmojnë të kuptojmë programet e tyre.
+    
+     Nuk ka rregulla të sakta për të shkruar komente. Në komentet tuaja, duhet të shkruani gjithçka që besoni se ndihmon të tjerët (dhe veten tuaj) ta kuptojnë më mirë programin tuaj.
    
-Pick up all the balls
+Mblidh të gjithë topat
 '''''''''''''''''''''
 
-In this example, the balls are on different squares and we need to bring Karel to each of these balls.
+Në këtë shembull, topat janë në kuti të ndryshme dhe ne kemi nevojë ta sjellim Karelin në secilën prej këtyre topave.
 
 .. questionnote::
 
-   Write a program to tell Karel to pick up all four balls.
+   Shkruaj një program për t’i thënë Karelit të marrë të katër topat.
 
-We can choose the path for Karel in many ways, but the shorter the path we choose, the shorter (and faster) our program will be. So, for instance, we could first take the ball at square (5, 2), then the two balls at (5, 5) and finally the ball at (4, 4).
+Ne mund të zgjedhim shtegun për Karelin në shumë mënyra, por sa më e shkurtër të jetë rruga që ne zgjedhim, programi ynë më i shkurtër (dhe më i shpejtë). Kështu, për shembull, së pari mund ta merrnim topin në katrorin (5, 2), pastaj të dy topat në (5, 5) dhe në fund topin në (4, 4).
 
 .. karel:: Karel_intro_collect_three_balls
    :blockly:
@@ -221,14 +220,14 @@ We can choose the path for Karel in many ways, but the shorter the path we choos
         },
    }
 
-**Grouping commands**
+**Grupimi i komandave**
 '''''''''''''''''''''
 
-Since this program is even longer than the previous one, in order to make it easier to navigate in the program and track the Karel's position, we made groups of commands that make up one stage of the journey and put each group into one line of the program. At the end of each line, there is a comment that explains the group of commands in that line.
+Meqenëse ky program është edhe më i gjatë se ai i mëparshmi, për ta bërë më të lehtë lundrimin në program dhe për të ndjekur pozicionin e Karel, ne kemi bërë grupe komandash që përbëjnë një fazë të udhëtimit dhe vendosëm secilin grup në një rresht të program. Në fund të secilës rresht, ka një koment që shpjegon grupin e komandave në atë rresht.
 
-Note that, when writing a program this way, the ``;`` character must be written between the commands (after the last command in line, semicolon is not needed).
+Vini re se, kur shkruani një program në këtë mënyrë, karakteri ``;`` duhet të shkruhet ndërmjet komandave (pas urdhrit të fundit në rresht, pikëpresja nuk është e nevojshme).
 
-Commands can be grouped differently, for example by separating a group of commands (written one below the other) from the next group with an empty line. This way of grouping is used much more commonly, since commands are usually not as short as these for managing Karel. Here's how it would look:
+Komandat mund të grupohen ndryshe, për shembull duke ndarë një grup komandash (shkruar një poshtë tjetrit) nga grupi tjetër me një linjë boshe. Kjo mënyrë e grupimit përdoret shumë më shpesh, pasi komandat zakonisht nuk janë aq të shkurtra sa ato për menaxhimin e Karelit. Ja se si do të dukej:
 
 .. code::
 
@@ -277,14 +276,14 @@ Commands can be grouped differently, for example by separating a group of comman
     
 ~~~~
 
-Karel can also drop balls at squares. Here's how he does it.
+Karel mund te hedhi topin ne kuti. Ja si:
 
-Move the ball
+Lëviz topin
 '''''''''''''
 
 .. questionnote::
 
-   Write a program which makes Karel move the ball to the square (2, 2) (note that at the beginning Karel **is not** oriented properly).
+   Shkruani një program i cili e bën Karel të lëviz topin në kutinë (2, 2) (vini re se në fillim Karel **nuk është i orientuar** siç duhet).
    
 
 .. karel:: Karel_intro_move_ball_in_2x2
@@ -315,28 +314,28 @@ Move the ball
         },
    }
 
-**Errors in execution**
+**Gabime në ekzekutim**
 '''''''''''''''''''''''
 
 .. infonote::
 
-    Please note that **Karel can not execute any command at any time**. More specifically, Karel can not go forward if he is in front of a wall, he can not take a ball where there isn't one, and he can not drop a ball if he has no balls with him.
-    
-    Try deleting the first command ``turn_left()`` in the previous program, and then run the program to see what happens.
-    
-    When the program executing our program comes to a command that can not be executed, the execution of our program is interrupted and we receive an error message. Such messages are normal and we will see them whenever Karel is unable to do what we told him, or when our statement is unclear (more precisely, when it is not written properly). In such situations, we should try to understand what the problem is, to fix the program and restart it.
-    
-Below are some tasks for independent work. With each task, a solution is offered, which you can see by clicking on the "solution" button. You can copy the displayed solution to the area for your work and try it by running the program. Note that your solution may differ from ours and still be quite ok.
+    Ju lutemi vini re se **Karel nuk mund të ekzekutojë asnjë komandë në çdo kohë**. Më konkretisht, Karel nuk mund të shkojë përpara nëse është përpara një muri, ai nuk mund të marrë një top ku nuk ka një, dhe ai nuk mund të lëshojë një top nëse nuk ka topa me të.
+    
+    Provoni të fshini komandën e parë ``turn_left ()`` në programin e kaluar, dhe pastaj drejtojeni programin për të parë se çfarë ndodh.
+    
+    Kur programi që ekzekuton programin tonë vjen në një komandë që nuk mund të ekzekutohet, ekzekutimi i programit tonë ndërpritet dhe marrim një mesazh gabimi. Mesazhe të tilla janë normale dhe ne do t'i shohim ato sa herë që Karel nuk është në gjendje të bëjë atë që ne i thamë atij, ose kur deklarim jonë është e paqartë (më saktë, kur nuk është shkruar siç duhet). Në situata të tilla, ne duhet të përpiqemi të kuptojmë se cili është problemi, për të rregulluar programin dhe rifillimin e tij.
+    
+Më poshtë janë disa detyra për punë të pavarur. Me secilën detyrë, ofrohet një zgjidhje, të cilën mund ta shihni duke klikuar në butonin "Solution". Ju mund të kopjoni zgjidhjen e shfaqur në zonë për punën tuaj dhe ta provoni duke ekzekutuar programin. Vini re se zgjidhja juaj mund të ndryshojë nga e jona dhe të jetë akoma në rregull.
 
-Tasks for exercise
+Ushtrime
 ------------------
 
-Come to square (3, 3)
+Afrohu te kutia (3, 3)
 '''''''''''''''''''''
 
 .. questionnote::
 
-   In this task there are no balls, you only need to bring Karel to the square (3, 3).
+   Në këtë detyrë nuk ka top, duhet të afroni Karel te kutia (3, 3).
    
 .. karel:: Karel_intro_task_go_to_3_3
    :blockly:
@@ -377,12 +376,12 @@ Come to square (3, 3)
       turn_left(); move()          # to square (3, 1)
       turn_left(); move(); move()  # to square (3, 3)
 
-Pick up the balls
+Kapni topat
 '''''''''''''''''
 
 .. questionnote::
 
-   Write a program based on which Karel will pick up the balls.
+   Shkruani nje program në Karel që kap topat.
    
 .. karel:: Karel_intro_task_collect_balls_in_2x2
    :blockly:
@@ -429,7 +428,7 @@ Zig-zag
 
 .. questionnote::
 
-  Karel should reach the square (5, 1).
+  Karel duhet të jetë në kutinë (5, 1).
 
 .. karel:: Karel_intro_task_stairs_fixed
    :blockly:
@@ -489,12 +488,12 @@ Zig-zag
       turn_left(); move()     # to (5, 1)
 
 
-Forward, then left, then again
+P, majtas, përsërit
 ''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  Karel should get to the square (2, 3).
+  Karel duhet të jetë në kutinë (2, 3).
    
 
 .. karel:: Karel_intro_task_spiral_left_fixed

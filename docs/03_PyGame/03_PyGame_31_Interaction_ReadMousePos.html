@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Reading mouse position &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Leximi i pozicionit të mouse &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reading mouse buttons" href="03_PyGame_32_Interaction_ReadMouseKey.html" />
-    <link rel="prev" title="Interaction" href="03_PyGame_30_Interaction.html" />
+    <link rel="next" title="Leximi i butonave të mouse" href="03_PyGame_32_Interaction_ReadMouseKey.html" />
+    <link rel="prev" title="Ndërveprimi" href="03_PyGame_30_Interaction.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,13 +205,13 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="reading-mouse-position">
-<h1>Reading mouse position<a class="headerlink" href="#reading-mouse-position" title="Permalink to this headline">¶</a></h1>
-<p>In PyGame, there is an easy way to to read the current state of the mouse. The data we are usually most interested in are mouse position and buttons being pressed. In this lesson we will use mouse position reading, and in the next mouse buttons. Aside from the position and the button presses, there is other information about the mouse that we can get, but we won’t do that here. Those interested can find more details for example <a class="reference external" href="https://www.pygame.org/docs/ref/mouse.html">here</a> .</p>
-<p>We can get the mouse position by calling the function <code class="docutils literal notranslate"><span class="pre">pg.mouse.get_pos()</span></code>, which returns an ordered pair of coordinates of the point where the mouse cursor is currently located.</p>
-<p>As we will see in the examples and tasks that follow, the use of this function is very simple, and we can further use the read position of the mouse in various ways.</p>
-<div class="section" id="examples-and-tasks">
-<h2>Examples and tasks<a class="headerlink" href="#examples-and-tasks" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="leximi-i-pozicionit-te-mouse">
+<h1>Leximi i pozicionit të mouse<a class="headerlink" href="#leximi-i-pozicionit-te-mouse" title="Permalink to this headline">¶</a></h1>
+<p>Në PyGame, ekziston një mënyrë e thjeshtë për të lexuar gjendjen aktuale të mouse. Të dhënat për të cilat ne zakonisht interesohen më shumë janë pozicioni i mouse dhe butonat që shtypen. Në këtë mësim do të përdorim leximin e pozicionit të mouse, dhe në butonat e mouse tjetër. Përveç pozicionit dhe shtyp butonin, ka informacione të tjera rreth mouse që mund të marrim, por ne nuk do ta bëjmë atë këtu. Të interesuarit mund të gjejnë më shumë detaje për shembull <cite>këtu &lt;https://www.pygame.org/docs/ref/mouse.html&gt;</cite> __.</p>
+<p>Ne mund të marrim pozicionin e mouse duke thirrur funksionin <code class="docutils literal notranslate"><span class="pre">pg.mouse.get_pos</span> <span class="pre">()</span></code>, i cili kthen një palë të koordinatave të porositura të pikës në të cilën ndodhet kursori i mouse.</p>
+<p>Siç do ta shohim në shembujt dhe detyrat që vijojnë, përdorimi i këtij funksioni është shumë i thjeshtë, dhe ne mund të përdorim më tej pozicionin e leximit të mouse në mënyra të ndryshme.</p>
+<div class="section" id="shembuj-dhe-detyra">
+<h2>Shembuj dhe detyra<a class="headerlink" href="#shembuj-dhe-detyra" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -220,8 +219,8 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - a butterfly follows the mouse:</strong></p>
-<p>In this example, we load two butterfly images and display them alternately, as we did in the animations. What is new is that where we show the butterfly is determined by the mouse position we have obtained from the <em>pg.mouse.get_pos()</em> function.</p>
+<p><strong>Shembull - Një flutur ndjek mouse:</strong></p>
+<p>Në këtë shembull, ne ngarkojmë dy imazhe fluturash dhe i shfaqim ato në mënyrë alternative, siç bëmë në animacione. Ajo që është e re është se aty ku tregojmë flutur përcaktohet nga pozicioni i mouse që kemi marrë nga funksioni <em>pg.mouse.get_pos()</em>.</p>
 
     </p></div></div>
 <a class="reference internal image-reference" href="../_images/butterfly1.png"><img alt="../_images/butterfly1.png" src="../_images/butterfly1.png" style="width: 50px;" /></a>
@@ -256,8 +255,8 @@ pygamebg.frame_loop(5, new_frame)
 
 </textarea>
 </div>
-<p>You have probably noticed that when you move the mouse faster, the butterfly lags a little. This happens because only 5 frames are displayed per second, so the delay can be up to 0.2 seconds.</p>
-<p>This delay is easily eliminated by increasing the frame rate (showing more frames per second), but then the images are switched too often and the butterfly flaps its wings too fast. The solution is to increase the frame rate, while displaying each image during multiple frames.</p>
+<p>Me siguri keni vërejtur që kur lëvizni mouse më shpejt, flutura mbetet pak mbrapa. Kjo ndodh sepse vetëm 5 korniza shfaqen në sekondë, kështu që vonesa mund të jetë deri në 0.2 sekonda.</p>
+<p>Kjo vonesë eliminohet lehtësisht duke rritur shkallën e kornizës (duke treguar më shumë korniza në sekondë), por më pas imazhet ndizen shumë shpesh dhe flutura i rrah krahët shumë shpejt. Zgjidhja është të rritet niveli i kornizës, ndërsa shfaqni secilin imazh gjatë kornizave të shumta.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -265,11 +264,11 @@ pygamebg.frame_loop(5, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - move fast, flap slowly:</strong></p>
-<p>Copy the previous program here, then modify it so that the butterfly does not lag behind the mouse while the flapping speed remains the same.</p>
+<p><strong>Detyrë - lëviz shpejt, përplas ngadalë:</strong></p>
 
     </p></div></div>
-<p><strong>Hint:</strong> in order for the butterfly not to lag, we certainly need more frames per second, for example <em>n</em> times more. This means that the <em>new_frame</em> function is called <em>n</em> times more often than before. In order to maintain the same flapping speed, each image needs to be displayed <em>n</em> times longer, that is, during <em>n</em> consecutive frames.</p>
+<p>     Kopjoni programin e mëparshëm këtu, pastaj modifikoni atë në mënyrë që flutura të mos mbetet prapa mouse ndërsa shpejtësia e fluturimit mbetet e njëjtë.</p>
+<p><strong>Këshillë:</strong> në mënyrë që flutura të mos mbetet, sigurisht që kemi nevojë për më shumë korniza për sekondë, për shembull <em>n</em> herë më shumë. Kjo do të thotë që funksioni <em>new_frame</em> quhet <em>n</em> herë më shpesh se më parë. Për të ruajtur të njëjtën shpejtësi të goditjes, çdo imazh duhet të shfaqet <em>n</em> herë më gjatë, domethënë gjatë <em>n</em> kornizave të njëpasnjëshme.</p>
 
 <div data-childcomponent="PyGame__interact_butterfly2" class="course-box course-box-problem course-content">
 
@@ -310,9 +309,10 @@ pygamebg.frame_loop(5 * num_frames_per_image, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Task - towards mouse:</strong> Write a program in which a green ball is moving towards the mouse, like in the example (“Play task” button).
+<p><strong>Detyrë - drejt mouse:</strong> Shkruaj një program në të cilin një top i gjelbër po lëviz drejt mouse, si në shembullin (butoni “Luaj lojën”).</p>
+
     </p></div></div>
-<p><strong>Hint:</strong> In this task the key point is how the coordinates <span class="math notranslate nohighlight">\((x, y)\)</span> of the center of the ball change. In a situation like the one in the picture, we want to increase <em>x</em> by <em>dx</em> and <em>y</em> by <em>dy</em>. Depending on how we want the ball to move, values <em>dx</em>, <em>dy</em> can be calculated in different ways. One easy way is to choose <span class="math notranslate nohighlight">\(dx = {1 \over 10} (xm - x), dy = {1 \over 10} (ym - y)\)</span>.</p>
+<p><strong>Ndihmë:</strong> Në këtë detyrë pika kryesore është se si ndryshojnë koordinatat <span class="math notranslate nohighlight">\((x, y)\)</span> e qendrës së topit. Në një situatë si ajo në figurë, ne duam të rrisim <em>x</em> me <em>dx</em> dhe <em>y</em> nga <em>dy</em>. Në varësi të mënyrës sesi duam që topi të lëvizë, vlerat <em>dx</em>, <em>dy</em> mund të llogariten në mënyra të ndryshme. Një mënyrë e thjeshtë është të zgjidhni <span class="math notranslate nohighlight">\(dx = {1 \over 10} (xm - x), dy = {1 \over 10} (ym - y)\)</span>.</p>
 <a class="reference internal image-reference" href="../_images/towards_mouse.png"><img alt="../_images/towards_mouse.png" class="align-center" src="../_images/towards_mouse.png" style="width: 300px;" /></a>
 
 <div data-childcomponent="PyGame__interact_towards_mouse" class="course-box course-box-problem course-content">
@@ -351,13 +351,14 @@ pygamebg.frame_loop(50, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Task - towards mouse with trace:</strong> Copy the previous program and then modify it so that the ball leaves a gray trace, like in the example (“Play task” button).
+<p><strong>Detyrë - drejt miut me gjurmë:</strong> Kopjoni programin e mëparshëm dhe modifikojeni në mënyrë që topi të lëshojë një gjurmë gri, si në shembullin (butoni “Luaj lojën”).</p>
+
     </p></div></div>
-<p><strong>Hint:</strong> The motion of the ball is same as in the previous example. To make a trace, we need to store a list of several (we used 20) previous positions of the ball.</p>
-<p>When calculating a new state, we add the most recent position to the list, and if the list has become too long, we delete the oldest position.</p>
-<p>When drawing a trace, for each circle we use color <em>(shade, shade, shade)</em>, where shade equals 255 (white) before the loop, and in the loop it decreases by a certain value, so that in the last pass through the loop it becomes zero (black), or as close to zero as possible.</p>
-<p>So, for example, if the list is called <em>trace</em>, these or similar statements should appear in your program:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trace</span> <span class="o">=</span> <span class="p">[]</span>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Ndihmë: ** Lëvizja e topit është e njëjtë si në shembullin e mëparshëm. Për të bërë një gjurmë, duhet të ruajmë një listë të disa pozicioneve të mëparshme (kemi përdorur 20) të topit.</p>
+<p>Kur llogaritim një gjendje të re, ne shtojmë pozicionin më të fundit në listë, dhe nëse lista është bërë shumë e gjatë, ne fshijmë pozicionin më të vjetër.</p>
+<p>Kur vizatojmë një gjurmë, për secilin rreth përdorim ngjyrën <em>(shade, shade, shade)</em>, ku hija është e barabartë me 255 (e bardhë) para lakut, dhe në lak ajo zvogëlohet për një vlerë të caktuar, në mënyrë që në kalimin e fundit lak ajo bëhet zero (black), ose sa më afër zeros sa të jetë e mundur.</p>
+<p>Kështu, për shembull, nëse lista quhet <em>trace</em>, këto ose deklarime të ngjashme duhet të shfaqen në programin tuaj:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trace</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="o">...</span>
 
 <span class="k">def</span> <span class="nf">new_frame</span><span class="p">():</span>
@@ -408,8 +409,8 @@ pygamebg.frame_loop(50, new_frame)
 </textarea>
 </div>
 <hr class="docutils" />
-<p>Finally, you can try out the following two programs and play around with them.</p>
-<p>In order to make programs like these, in addition to the programming techniques shown here, one needs some knowledge of physics (elastic force, Newton’s second law) and mathematics (Pythagorean theorem). Take a look at the programs without having to fully understand them. If you like, try modifying some constants a bit, so you can see how this affects the program’s behavior.</p>
+<p>Më në fund, mund të provoni dy programet e mëposhtme dhe të luani me ta.</p>
+<p>Për të bërë programe si këto, përveç teknikave të programimit të paraqitura këtu, duhet një njohuri e fizikës (forca elastike, ligji i dytë i Njutonit) dhe matematika (teorema e Pitagorës). Shikoni programet pa pasur nevojë t’i kuptoni plotësisht ato. Nëse ju pëlqen, provoni të modifikoni pak disa konstante, kështu që mund të shihni se si kjo ndikon në sjelljen e programit.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -417,7 +418,8 @@ pygamebg.frame_loop(50, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Example: Yо-yо</strong>
+<p><strong>Shembull: Yо-yо</strong></p>
+
     </p></div></div>
 
 <div data-childcomponent="PyGame__interact_yoyo" class="course-box course-box-problem course-content">
@@ -472,9 +474,10 @@ pygamebg.frame_loop(40, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Example: Eyes</strong>
+<p><strong>Shembull: Sytë</strong></p>
+
     </p></div></div>
-<p>This program also requires a little more knowledge of mathematics, so we will not go into detail. If you are interested in how this program works and you аrе good at math, try to understand the details with some help.</p>
+<p>Ky program kërkon gjithashtu pak më shumë njohuri për matematikën, kështu që ne nuk do të hyjmë në detaje. Nëse jeni të interesuar se si funksionon ky program dhe jeni mirë në matematikë, përpiquni të kuptoni detajet me ndonjë ndihmë.</p>
 
 <div data-childcomponent="PyGame__interact_eyes" class="course-box course-box-problem course-content">
 
@@ -527,17 +530,17 @@ pygamebg.frame_loop(50, new_frame)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Interaction' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Ndërveprimi' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Reading mouse buttons' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Leximi i butonave të mouse' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Interaction' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Ndërveprimi' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Reading mouse buttons' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Leximi i butonave të mouse' data-toggle="tooltip"><a href="03_PyGame_32_Interaction_ReadMouseKey.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

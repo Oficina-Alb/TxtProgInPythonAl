@@ -1,9 +1,9 @@
-Reading mouse buttons
+Leximi i butonave të mouse
 ---------------------
 
-Information about the currently pressed mouse buttons is provided by the ``pg.mouse.get_pressed()`` function. This function returns a tuple of three elements (an ordered triple), which are used as logical values. The tuple elements correspond to the left, middle and right mouse buttons respectively. A value of *True* indicates that a button is currently pressed, and *False* that it is not.
+Informacioni në lidhje me butonat e mouse të shtypur aktualisht sigurohet nga funksioni ``pg.mouse.get_pressed ()``. Ky funksion kthen një tufë prej tre elementësh (një treshe e porositur), të cilat përdoren si vlera logjike. Elementet tuple korrespondojnë me butonat e mouse, të mesëm dhe të djathtë përkatësisht. Një vlerë *True* tregon që një buton është shtypur aktualisht, dhe *False* se nuk është.
 
-The example below shows how to read which mouse buttons are pressed. This is the part of the program where that happens:
+Shembulli më poshtë tregon se si të lexoni cilat butona të mouse shtypen. Kjo është pjesa e programit ku ndodh:
 
 .. activecode:: PyGame__interact_put_ball_into_box_part
     :passivecode: true
@@ -20,18 +20,18 @@ The example below shows how to read which mouse buttons are pressed. This is the
         x = x - 0.5 * (xm - x)
         y = y - 0.5 * (ym - y)
 
-The *pressed_mouse_button* tuple gets three values returned by the *pg.mouse.get_pressed()* function. We then typically use these values in *if* statements. For example, *if pressed_mouse_button[2]* means "if right button is pressed" (0 for left, 1 for middle, and 2 for right).
+Tuple *pressed_mouse_button* merr 3 vlera nga funksioni *pg.mouse.get_pressed()*.Ne i përdorim këto në deklarimet *if*. Për shembull *if pressed_mouse_button[2]* do të thotë "nëse butoni i djathtë është shtypur" (0 për majtas, 1 në mes, and 2 për djathtas).
 
-Examples and tasks
+Shembuj dhe detyra
 ''''''''''''''''''
 
 .. questionnote::
-
-    **Example - put the ball into the box:** 
     
-    While the left mouse button is held pressed, the ball moves away from the cursor. The goal is to put the ball into the red box by moving the mouse and pressing the left button. Pressing the right button returns the game to the beginning.
-    
-First, study the *new_frame()* function carefully, and then have a look at the other parts of the code as well. Try the program out and see if it works as you expected after reading the description.
+    **Shembull - vendosni topin në kuti:**
+    
+     Ndërsa butoni i majtë i mouse mbahet i shtypur, topi largohet nga kursori. Qëllimi është të vendosni topin në kutinë e kuqe duke lëvizur mouse dhe duke shtypur butonin e majtë. Shtypja e butonit të djathtë e kthen lojën në fillim.
+    
+Së pari, studioni me kujdes funksionin *new_frame ()* dhe më pas hidhini një sy pjesëve të tjera të kodit. Provoni programin dhe shihni nëse funksionon ashtu siç e prisnit pasi të keni lexuar përshkrimin.
     
 .. activecode:: PyGame__interact_put_ball_into_box
     :nocodelens:
@@ -43,12 +43,12 @@ First, study the *new_frame()* function carefully, and then have a look at the o
 
 .. questionnote::
 
-    **Task - to and from the mouse:** 
-    
-    Complete the program so that it works as shown in the example ("Play task" button).
-    
-    - When the left mouse button is pressed, the ball should move away from the mouse, as in the "put the ball into the box" example above, but not by half distance, but only by a tenth of the distance to the mouse.
-    - When the left mouse button is not pressed, the ball should move closer by one tenth of the distance to the mouse (as in the "towards mouse" task in the previous lesson).
+    **Detyrë - tek dhe nga mouse: **
+    
+     Përfundoni programin në mënyrë që të funksionojë siç tregohet në shembullin (butoni "Luaj detyrën").
+    
+     - Kur shtypet butoni i majtë i mouse, topi duhet të lëvizë larg mouse, si në shembullin "vendos topin në kutinë" më lart, por jo nga gjysma e distancës, por vetëm nga një e dhjeta e distancës me miun.
+     - Kur butoni i majtë i mouse nuk shtypet, topi duhet të lëvizë më afër me një të dhjetën e distancës me mouse (si në detyrën "drejt mouse" në mësimin e kaluar).
     
 .. activecode:: PyGame__interact_to_and_from_mouse
     :nocodelens:
@@ -76,11 +76,11 @@ First, study the *new_frame()* function carefully, and then have a look at the o
 
 .. questionnote::
 
-    **Task - laser:** 
+    **Detyrë - laser:** 
     
-    Complete the program so that it works as shown in the example ("Play task" button).
-    
-    While the left mouse button is held pressed, the "laser" is on, otherwise it is off. While the laser is on, its energy decreases by 1 (but not below 0), and when it's off the energy increases by 2 (but not over 100).
+    Përfundoni programin në mënyrë që të funksionojë siç tregohet në shembullin (butoni "Luaj detyrën").
+    
+     Ndërsa butoni i majtë i mouse është i shtypur, "lazeri" është i ndezur, përndryshe është i fikur. Ndërsa lazeri është i ndezur, energjia e tij zvogëlohet për 1 (por jo nën 0), dhe kur është jashtë energjisë rritet me 2 (por jo më shumë se 100).
     
 
 .. activecode:: PyGame__interact_laser

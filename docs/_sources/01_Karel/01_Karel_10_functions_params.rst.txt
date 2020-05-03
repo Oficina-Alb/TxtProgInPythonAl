@@ -1,15 +1,16 @@
-Additional instructions to a function
+Instruksione shtesë për funksionet
 =====================================
 
-We mentioned that there are several ways to write functions in Python, and that the functions we have written and used so far have the simplest form. Such functions are, for example, *move()*, *turn_left()*, *turn_right()*, *pick_ball()* and *drop_ball()* from the Karel Library, as well as the functions *back()*, *take_at_neighboring_square()* and *go_to_neighboring_nonempty_square()*, which we wrote ourselves. All these functions perform a specific job, always in the same way.
+Ne përmendëm se ekzistojnë disa mënyra për të shkruar funksione në Python, dhe se funksionet që kemi shkruar dhe përdorur deri më tani kanë formën më të thjeshtë. Funksione të tilla janë, për shembull, *move ()*, *turn_left ()*, *turn_right ()*, *pick_ball ()* dhe *drop_ball ()* nga Biblioteka Karel, si dhe funksionet *back ()*, *take_at_in сосеuese_square ()* dhe *go_to_neighboriz_nonempty_square ()*, të cilat i kemi shkruar vetë. Të gjitha këto funksione kryejnë një punë specifike, gjithmonë në të njëjtën mënyrë.
 
-Functions can be written so that in different executions they do not always do the exact same thing, but they perform a little more general task. When we call such functions, we tell them exactly how we want them to do their task. For example, a function that would move Karel for a certain number of squares forward or backward could often be very useful. For this function, we want to specify the request when calling it - how many squares Karel should move and on which side.
+Funksionet mund të shkruhen në mënyrë që në ekzekutime të ndryshme ata jo gjithmonë të bëjnë të njëjtën gjë saktësisht, por ata kryejnë një detyrë pak më të përgjithshme. Kur i quajmë funksione të tilla, u themi atyre saktësisht se si duam që ata të kryejnë detyrën e tyre. Për shembull, një funksion që do të lëvizte Karel për një numër të caktuar të kutive përpara ose prapa mund të jetë shpesh i dobishëm. Për këtë funksion, ne duam të specifikojmë kërkesën kur e thërrasim atë - sa kuti Karel duhet të lëvizë dhe në cilën anë.
 
-Functions with parameters
+Funksionet me parametra
 -------------------------
 
 .. infonote::
-    Additional information that we give to a function is written between the brackets after the function name in the first row of its definition. Between brackets we can specify one value, or multiple values separated by commas. These values are called **arguments** or **parameters** to a function. The words "arguments" and "parameters" are synonyms in programming and we will use them equally.
+
+    Informacioni shtesë që ne i japim një funksioni shkruhet midis kllapave pas emrit të funksionit në rreshtin e parë të përkufizimit të tij. Midis kllapave mund të specifikojmë një vlerë, ose vlera të shumta të ndara me presje. Këto vlera quhen **arguments** ose **parameters** në një funksion. Fjalët "argumente" dhe "parametra" janë sinonime në programim dhe ne do t'i përdorim ato në mënyrë të barabartë.
     
 .. activecode:: Karel_functions__function_with_args_def
     :passivecode: true
@@ -19,7 +20,7 @@ Functions with parameters
         ...
         statement_k
 
-The function that moves Karel certain number of squares forward or backward, could be named *go* and it could have one integer parameter. If this parameter is positive, Karel would move that many squares forward, and if it is negative, Karel would go a corresponding (opposite) number of squares back. For example, the call *go(5)* would mean "go 5 squares forward", while *go(-2)* would mean "go 2 squares back". Here's how we can write such a function:
+Funksioni që lëviz Karel numër të caktuar të shesheve përpara ose prapa, mund të emërtohet *go* dhe ai mund të ketë një parametër të plotë. Nëse ky parametër është pozitiv, Karel do të lëvizë atë shumë sheshe përpara, dhe nëse është negativ, Karel do të kthejë një numër korrespondues (të kundërt) të shesheve përsëri. Për shembull, thirrja *go (5)* do të thoshte "shkoni 5 sheshe përpara", ndërsa *go (-2)* do të thoshte "shkoni 2 sheshe mbrapa". Ja se si mund të shkruajmë një funksion të tillë:
 
 .. activecode:: Karel_functions__function_go_def
     :passivecode: true
@@ -34,21 +35,21 @@ The function that moves Karel certain number of squares forward or backward, cou
                 move()
             turn_left();turn_left()
  
-This function can simplify many programs that are supposed to tell Karel to move several times along one path in both directions. Here is an example.
+Ky funksion mund te thjeshtojë shumë programe që supozohet ti tregojnë të lëvizë disa herë një rrugë në disa drejtime. Shembull:
 
-Perform specified displacements
+Performoni lëvizje të specifikuara
 '''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-    Karel is located on the starting square of a path of a sufficient length, and should carry out the following displacements of balls:
+    Karel ndodhet në kutinë fillestare të një shtegu me një gjatësi të mjaftueshme, dhe duhet të kryejë zhvendosjet e mëposhtme të topave:
 
-    - 3 balls from the square 3 to the square 4
-    - 4 balls from the square 5 to the square 1
+     - 3 topa nga sheshi 3 tek sheshi 4
+     - 4 topa nga sheshi 5 në sheshin 1
 
-In solving this task we will use the described function *go*. In order to further simplify the solution, we can also introduce the *displace* function, which displaces the specified number of balls for a specified number of squares forward or backward. This description shows that the *displace* function should have two arguments.
+Në zgjidhjen e kësaj detyre ne do të përdorim funksionin e përshkruar *go*. Për të thjeshtuar më tej zgjidhjen, mund të prezantojmë edhe funksionin *displace*, i cili zhvendos numrin e specifikuar të topave për një numër të caktuar të shesheve përpara ose prapa. Ky përshkrim tregon se funksioni *displace* duhet të ketë dy argumente.
 
-In order to make the purpose of each parameter clearer, we will give them names that describe their role:
+Për ta bërë më të qartë qëllimin e secilit parametër, do t'u japim atyre emra që përshkruajnë rolin e tyre:
 
 .. activecode:: Karel_functions__function_displace_def
     :passivecode: true
@@ -60,9 +61,9 @@ In order to make the purpose of each parameter clearer, we will give them names 
         for i in range(num_balls):
             drop_ball()
 
-The *displace* function uses the previously written function *go*. Calling a function from another function like this can go in depth as far as we need. It is only important that each function is defined before it is called for execution.
+Funksioni *displace* përdor funksionin e shkruar më parë *go*. Thirrja e një funksioni nga një funksion tjetër si kjo mund të shkojë në thellësi aq sa kemi nevojë. Importantshtë vetëm e rëndësishme që çdo funksion të përcaktohet përpara se të thirret për ekzekutim.
 
-Now that we have these two functions available, solving the starting task is very easy:
+Tani që kemi këto dy funksione në dispozicion, zgjidhja e detyrës fillestare është shumë e lehtë:
 
 .. karel:: Karel_functions__displace_balls
     :blockly:
@@ -144,16 +145,16 @@ Now that we have these two functions available, solving the starting task is ver
         }
     }
 
-Tasks for exercise
+Deytura pëer tu ushtruar
 ------------------
 
-Take a given number of balls
+Jepet një numër topash
 ''''''''''''''''''''''''''''
 
 .. questionnote::
-    Write the function *take_up_to(n)*, which tells Karel to take the maximum of *n* balls from the square which he stands on. More precisely, if there are *n* or more balls at the square, Karel takes *n* of them, and if there are fewer balls, Karel takes as many as he can.
-    
-    Karel, who is on the first square, should take up to 4 balls from the second square, then up to 2 balls from the third square, and up to 3 balls from the fourth square, and then bring all the collected balls to the first square. Of course, the *take_up_to(n)* function, written in the first part of the task, should be used for this purpose.
+   Shkruani funksionin *take_up_to (n)*, i cili i thotë Karelit të marrë maksimumin e *n* topave nga kutia në të cilin qëndron. Më saktësisht, nëse ka *n* ose më shumë topa në kuti, Karel merr *n* prej tyre, dhe nëse ka më pak topa, Karel merr aq sa mundet.
+    
+     Karel, i cili është në kutinë e parë, duhet të marrë deri në 4 topa nga kutia e dytë, pastaj deri në 2 topa nga kutia e tretë, dhe deri në 3 topa nga sheshi i katërt, dhe pastaj të sjellë të gjitha topat e mbledhur në kutinë e parë. Sigurisht, funksioni *take_up_to (n)*, i shkruar në pjesën e parë të detyrës, duhet të përdoret për këtë qëllim.
 
 .. karel:: Karel_functions__take_balls_up_to
     :blockly:
@@ -251,14 +252,14 @@ Driving according to instructions
 '''''''''''''''''''''''''''''''''
 
 .. questionnote::
-    The functions *face_left_at_intersection()* and *go_left(n)* are given.
-    
-    - Function *face_left_at_intersection()* positions Karel to face the first street he comes across on the left side. In the execution of this function, Karel goes forward until he encounters a square where he can go left, but he does not actually go left, he remains on the crossroad instead, turned to the left. If Karel can go left before the function call, he will not move from its square during the execution of this function, but will only turn to the left;
-    - The function *go_left(n)* moves Karel one square to the *n*-th street on the left. If Karel is already in the crossroads, the street to the left of him is counted as the first;
-        
-    Write similar functions *face_left_at_intersection()* and *go_right(n)* using given functions as a model.
-    
-    Write a program that (using given and written functions) leads Karel to the third street to the left, then the second to the right, and at the end, the second to the left. Karel should reach the end of that street and take the only ball on the table.
+    Jepen funksionet *face_left_at_intersection ()* dhe *go_left (n)*.
+    
+    - Funksioni *face_left_at_intersection ()* pozicionet Karel për t'u përballur me rrugën e parë që ai haset në anën e majtë. Në ekzekutimin e këtij funksioni, Kareli shkon përpara derisa të hasë në një kuti ku mund të shkojë majtas, por në të vërtetë ai nuk shkon majtas, ai mbetet në kryqëzim në vend të kësaj, kthehet në të majtë. Nëse Karel mund të shkojë majtas para thirrjes së funksionit, ai nuk do të lëvizë nga kutia e tij gjatë ekzekutimit të këtij funksioni, por do të kthehet vetëm në të majtë;
+    - Funksioni *go_left (n)* zhvendos Karel një kuti në rrugën *n* në të majtë. Nëse Karel tashmë është në udhëkryq, rruga në të majtë të tij llogaritet si e para;
+        
+    Shkruaj funksione të ngjashme *face_left_at_intersection ()* dhe *go_right (n)* duke përdorur funksione të dhëna si model.
+    
+    Shkruaj një program që (duke përdorur funksionet e dhëna dhe të shkruara) e çon Karelin në rrugën e tretë në të majtë, pastaj të dytin në të djathtë dhe në fund, të dytin në të majtë. Kareli duhet të arrijë në fundin e asaj rruge dhe të marrë topin e vetëm në tryezë.
 
 .. karel:: Karel_functions__travel_instructions_1
    :blockly:

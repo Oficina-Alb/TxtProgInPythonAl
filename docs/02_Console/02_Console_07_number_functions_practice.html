@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Math Functions - Exercise &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Funksione matematike - Ushtrime &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Branching statements" href="02_Console_08_if.html" />
-    <link rel="prev" title="Math functions" href="02_Console_06_number_functions.html" />
+    <link rel="next" title="Deklarimet degëzuese" href="02_Console_08_if.html" />
+    <link rel="prev" title="Funksionet matematikore" href="02_Console_06_number_functions.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,9 +205,9 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="math-functions-exercise">
-<h1>Math Functions - Exercise<a class="headerlink" href="#math-functions-exercise" title="Permalink to this headline">¶</a></h1>
-<p>Let’s practice using the mathematical functions we have learned.</p>
+  <div class="section" id="funksione-matematike-ushtrime">
+<h1>Funksione matematike - Ushtrime<a class="headerlink" href="#funksione-matematike-ushtrime" title="Permalink to this headline">¶</a></h1>
+<p>Le të praktikojmë duke përdorur funksionet matematikore që kemi mësuar.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -216,11 +215,11 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - advertising:</strong></p>
-<p>Thomas distributes advertising packages containing one calendar, a keychain and a pen. Write a program that loads how many calendars, keychains, and pens Thomas has and then prints how many advertising packages he can make.</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Detyrë - reklama: **</p>
 
     </p></div></div>
-<p>To finish the program insert one of the mathematical functions you have learned.</p>
+<p>     Thomas shpërndan paketa reklamash që përmbajnë një kalendar, një keychain dhe një stilolaps. Shkruaj një program që ngarkon sa kalendarë, keychain dhe stilolapsa Thomas ka dhe më pas shtyp shumë pako reklame që ai mund të bëjë.</p>
+<p>Për të përfunduar programin futni një nga funksionet matematikore që keni mësuar.</p>
 
 <div data-childcomponent="console__mathfunc_promo_material" class="course-box course-box-problem course-content">
 
@@ -243,10 +242,10 @@ print(num_packages, "packages can be made.")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - lemonade:</strong></p>
-<p>A group of people set out on a journey and Zoe made lemonade for everyone. Write a program that loads how many liters of lemonade Zoe has made (as a real number), then writes how many half-liter bottles can be filled with that lemonade and how many bottles it takes for all the lemonade (the two numbers can vary by one at most).</p>
+<p><strong>Detyrë - limonada:</strong></p>
 
     </p></div></div>
+<p>     Një grup njerëzish u nisën për një udhëtim dhe Zoe bëri limonadë për të gjithë. Shkruaj një program që ngarkon sa litra limonadë Zoe ka bërë (si një numër i vërtetë), pastaj shkruaj se sa shishe gjysmë litri mund të mbushen me atë limonadë dhe sa shishe merr për të gjithë limonadën (dy numrat mund të ndryshojnë nga një në maksimum).</p>
 
 <div data-childcomponent="console__mathfunc_lemonade" class="course-box course-box-problem course-content">
 
@@ -260,8 +259,8 @@ print(num_packages, "packages can be made.")
 </textarea>
 </div>
 
-    <div data-component="reveal" id="console__mathfunc_lemonade_reveal"   data-showtitle="Help" data-hidetitle="Hide help">
-    <p>To complete the following program, use some of the rounding functions.</p>
+    <div data-component="reveal" id="console__mathfunc_lemonade_reveal"   data-showtitle="Ndihmë" data-hidetitle="Fshih Ndihmën">
+    <p>Për të përfunduar programin e mëposhtëm, përdorni disa nga funksionet e rrumbullakimit.</p>
 
 <div data-childcomponent="console__mathfunc_lemonade_solution" class="course-box course-box-problem course-content">
 
@@ -286,10 +285,10 @@ print("A total of", total_bottles, "bottles are required.")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - the game:</strong></p>
-<p>The six friends agreed to get on the playground at a certain time and play a game. Write a program that loads the delay time of each player in minutes (as whole numbers) and prints with how many minutes of delay the match could have started.</p>
+<p><strong>Detyrë - loja:</strong></p>
 
     </p></div></div>
+<p>     Gjashtë shokët ranë dakord të futeshin në sheshin e lojërave në një kohë të caktuar dhe të luanin një lojë. Shkruani një program që ngarkon kohën e vonesës së secilit lojtar në minuta (si numra të plotë) dhe shtyp me sa minuta vonesë ndeshja mund të kishte filluar.</p>
 
 <div data-childcomponent="console__mathfunc_late_game" class="course-box course-box-problem course-content">
 
@@ -303,8 +302,8 @@ print("A total of", total_bottles, "bottles are required.")
 </textarea>
 </div>
 
-    <div data-component="reveal" id="console__mathfunc_late_game_reveal"   data-showtitle="Help" data-hidetitle="Hide help">
-    <p>One possible solution is partially written below. Try to complete it.</p>
+    <div data-component="reveal" id="console__mathfunc_late_game_reveal"   data-showtitle="Ndhmë" data-hidetitle="Fshih Ndihmën">
+    <p>Një zgjidhje e mundshme është shkruar pjesërisht më poshtë. Mundohuni ta plotësoni.</p>
 
 <div data-childcomponent="console__mathfunc_late_game_help" class="course-box course-box-problem course-content">
 
@@ -328,10 +327,10 @@ print("The match could have started with a", game_delay, "minute delay.")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - two buses:</strong></p>
-<p>Maya and Lola travel on the same highway in two different buses and talk on the phone. One of them has just noticed the milestone <em>x</em> and the other <em>y</em>. Write a program that loads integers: <em>x</em> and <em>y</em> and prints how many miles Maya and Lola are away from each other.</p>
+<p><strong>Detyrë - dy autobusë:</strong></p>
 
     </p></div></div>
+<p>     Maya dhe Lola udhëtojnë në të njëjtën autostradë në dy autobusë të ndryshëm dhe flasin në telefon. Njëri prej tyre sapo ka vërejtur piketimin <em>x</em> dhe tjetrin <em>y</em>. Shkruaj një program që ngarkon me numër të plotë: <em>x</em> dhe <em>y</em> dhe shtyp se sa milje Maya dhe Lola janë larg nga njëra-tjetra.</p>
 
 <div data-childcomponent="console__mathfunc_buses" class="course-box course-box-problem course-content">
 
@@ -351,10 +350,10 @@ print("The match could have started with a", game_delay, "minute delay.")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - Video lessons</strong></p>
-<p>The course consists of several video lessons that all last equally. You have decided to devote 90 minutes to this course every day and you want to know how many days it will take for the whole course. Write a program that loads the number of lessons and the duration of one lesson in minutes, and prints the required number of days, rounded to the nearest integer.</p>
+<p><strong>Detyrë - Mësime në video</strong></p>
 
     </p></div></div>
+<p>     Kursi përbëhet nga disa mësime video që të gjitha zgjasin në mënyrë të barabartë. Ju keni vendosur t’i kushtoni 90 minuta këtij kursi çdo ditë dhe dëshironi të dini se sa ditë do të zgjasë për të gjithë kursin. Shkruaj një program që ngarkon numrin e mësimeve dhe kohëzgjatjen e një mësimi në minuta, dhe shtyp numrin e kërkuar të ditëve, të rrumbullakosura në numrin e plotë më të afërt ..</p>
 
 <div data-childcomponent="console__mathfunc_videolessons" class="course-box course-box-problem course-content">
 
@@ -373,17 +372,17 @@ print("The match could have started with a", game_delay, "minute delay.")
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Math functions' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Funksionet matematikore' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Branching statements' data-toggle="tooltip"><a href="02_Console_08_if.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Deklarimet degëzuese' data-toggle="tooltip"><a href="02_Console_08_if.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Math functions' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Funksionet matematikore' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Branching statements' data-toggle="tooltip"><a href="02_Console_08_if.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Deklarimet degëzuese' data-toggle="tooltip"><a href="02_Console_08_if.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

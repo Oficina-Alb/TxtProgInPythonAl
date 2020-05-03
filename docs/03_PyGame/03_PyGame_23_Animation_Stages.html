@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Animation by stages &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Animacion sipas fazave &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawing text" href="03_PyGame_24_Animation_Text.html" />
-    <link rel="prev" title="Drawings movement" href="03_PyGame_22_Animation_Motion.html" />
+    <link rel="next" title="Vizatimi i tekstit" href="03_PyGame_24_Animation_Text.html" />
+    <link rel="prev" title="Lëvizja e vizatimeve" href="03_PyGame_22_Animation_Motion.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,15 +205,15 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="animation-by-stages">
-<h1>Animation by stages<a class="headerlink" href="#animation-by-stages" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="traffic-light">
-<h2>Traffic light<a class="headerlink" href="#traffic-light" title="Permalink to this headline">¶</a></h2>
-<p>One of the best known examples of a device that works by stages is a traffic light. In the example of the traffic light we will explain working by stages and how we can animate events that take place in stages on a computer.</p>
-<p>There are several states in which a traffic light can be. For example, it can display red light, flashing yellow light, be turned off, etc. We shall call a period during which the traffic light does not change its state a stage. In normal operation of the traffic light, the stages alternate cyclically and each stage has its own duration. For example, take a traffic light for which the following four stages alternate: 1 - red light, 2 - red and yellow light, 3 - green light, and 4 - yellow light.</p>
-<p>To make the animation simpler, we will express the duration of each stage in the number of frames (instead of seconds). Let the durations of the said stages be <span class="math notranslate nohighlight">\(n_1\)</span>, <span class="math notranslate nohighlight">\(n_2\)</span>, <span class="math notranslate nohighlight">\(n_3\)</span> and <span class="math notranslate nohighlight">\(n_4\)</span> frames respectively. Then the whole cycle lasts <span class="math notranslate nohighlight">\(N = n_1 + n_2 + n_3 + n_4\)</span> frames. Of these <span class="math notranslate nohighlight">\(N\)</span> frames, the first <span class="math notranslate nohighlight">\(n_1\)</span> belong to the first stage, the next <span class="math notranslate nohighlight">\(n_2\)</span> to the second stage etc.</p>
-<p>To know which stage the current frame belongs to, we can introduce a global variable that will count the frames. Since the whole cycle lasts <span class="math notranslate nohighlight">\(N\)</span> frames, it is enough to count by modulus <span class="math notranslate nohighlight">\(N\)</span>. This means that when the frame counter reaches the value <span class="math notranslate nohighlight">\(N-1\)</span>, the next value is zero (we only count within one cycle). In this case, for values from 0 to <span class="math notranslate nohighlight">\(n_1 - 1\)</span>, the frame belongs to the first stage, for values from <span class="math notranslate nohighlight">\(n_1\)</span> to <span class="math notranslate nohighlight">\(n_1 + n_2 - 1\)</span> to the second stage, for values from <span class="math notranslate nohighlight">\(n_1 + n_2\)</span> to <span class="math notranslate nohighlight">\(n_1 + n_2 + n_3 - 1\)</span> to the third stage, and for values from <span class="math notranslate nohighlight">\(n_1 + n_2 + n_3\)</span> to <span class="math notranslate nohighlight">\(N-1\)</span> to the fourth stage.</p>
-<p>Here’s what a program based on this logic might look like:</p>
+  <div class="section" id="animacion-sipas-fazave">
+<h1>Animacion sipas fazave<a class="headerlink" href="#animacion-sipas-fazave" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="drita-e-trafikut">
+<h2>Drita e trafikut<a class="headerlink" href="#drita-e-trafikut" title="Permalink to this headline">¶</a></h2>
+<p>Një nga shembujt më të njohur të një pajisjeje që funksionon në shkallë është një semafor. Në shembullin e semaforit ne do të shpjegojmë duke punuar sipas fazave dhe si mund të animojmë ngjarjet që ndodhin në faza në një kompjuter.</p>
+<p>Semafori mund të jetë në disa gjëndje. Për shembull, ai mund të shfaq dritën e kuqe, dritën e verdhë të ndezur, të fiket, etj. Ne do të thërrasim një periudhë gjatë së cilës semafori nuk e ndryshon gjendjen e tij në një fazë. Në funksionimin normal të semaforit, fazat alternative në mënyrë ciklike dhe secila fazë ka kohëzgjatjen e vet. Për shembull, merrni një semafor për të cilin alternojnë katër fazat e mëposhtme: 1 - drita e kuqe, 2 - drita e kuqe dhe e verdha, 3 - drita jeshile dhe 4 - drita e verdhë.</p>
+<p>Për ta bërë animacionin më të thjeshtë, ne do të shprehim kohëzgjatjen e secilës fazë në numrin e kornizave (në vend të sekondave). Lejoni kohëzgjatjet e fazave të përmendura të jenë :math: <cite>n_1</cite>,:math:<cite>n_2</cite>, <span class="math notranslate nohighlight">\(n_3\)</span> dhe <span class="math notranslate nohighlight">\(n_4\)</span> përkatësisht. Atëherë i gjithë cikli i kornizave zgjat <span class="math notranslate nohighlight">\(N = n_1 + n_2 + n_3 + n_4\)</span>. Nga këto korniza <span class="math notranslate nohighlight">\(N\)</span>, e para <span class="math notranslate nohighlight">\(n_1\)</span> i përkasin fazës së parë, tjetra <span class="math notranslate nohighlight">\(n_2\)</span> në fazën e dytë etj.</p>
+<p>Për të ditur në cilën fazë i përket kornizës aktuale, mund të prezantojmë një variabël global që do të numërojë kornizat. Meqenëse i gjithë cikli zgjat <span class="math notranslate nohighlight">\(N\)</span>, mjafton të llogaritet sipas modulit <span class="math notranslate nohighlight">\(N\)</span>. Kjo do të thotë që kur numëruesi i kornizës arrin vlerën :math: <cite>N-1</cite>, vlera tjetër është zero (llogarisim vetëm brenda një cikli). Në këtë rast, për vlerat nga 0 në <span class="math notranslate nohighlight">\(n_1 - 1\)</span>, korniza i përket fazës së parë, për vlerat nga <span class="math notranslate nohighlight">\(n_1\)</span> në: matematikë:<cite>n_1 + n_2 - 1</cite> deri në fazën e dytë, për vlerat nga <span class="math notranslate nohighlight">\(n_1 + n_2\)</span> në <span class="math notranslate nohighlight">\(n_1 + n_2 + n_3 - 1\)</span> në fazën e tretë, dhe për vlerat nga :math: <cite>n_1 + n_2 + n_3</cite> në :math:` N -1` në fazën e katërt.</p>
+<p>Ja se si mund të duket një program i bazuar në këtë logjikë:</p>
 
 <div data-childcomponent="PyGame__anim_stages_traffic_lights1" class="course-box course-box-problem course-content">
 
@@ -274,8 +273,8 @@ pygamebg.frame_loop(fps, new_frame)
 </textarea>
 </div>
 </div>
-<div class="section" id="tasks">
-<h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="detyra">
+<h2>Detyra<a class="headerlink" href="#detyra" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -283,10 +282,11 @@ pygamebg.frame_loop(fps, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Stage Five:</strong> Copy the previous program, then insert a stage for flashing green light, after the green light and before the yellow light (as shown in the example - “Play Task” button).
+<p><strong>Faza e Pestë:</strong> Kopjoni programin e mëparshëm, pastaj vendosni një fazë për ndezjen e dritës jeshile, pas dritës jeshile dhe para dritës së verdhë (siç tregohet në shembull - butoni “Luaj detyrën”).</p>
+
     </p></div></div>
-<p><strong>Hint:</strong> In the fifth phase, we will not have a single call to the <em>draw_trafficlights</em> function, but rather a piece of code that looks something like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">i_frame</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<p><strong>Këshillë:</strong> Në fazën e pestë, ne nuk do të kemi një thirrje të vetme në funksionin <em>Draw_trafficlights</em>, por përkundrazi një kod që duket diçka si kjo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">i_frame</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="n">draw_trafficlights</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">draw_trafficlights</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
@@ -362,10 +362,10 @@ pygamebg.frame_loop(fps, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Plane:</strong> Write a program that works as shown in the example (“Play Task” button).</p>
-<p>Movement description: the plane starts from the center of the left edge of the window. First it moves for 20 frames 2 pixels right and up, then 20 frames 2 pixels right and down. When it comes out through the right edge of the window, it appears at the same height on the left edge. Frame rate is 50 frames per second.</p>
+<p><strong>Avioni:</strong> Shkruani një program që funksionon siç tregohet në shembullin (butoni “Luaj detyrën”).</p>
 
     </p></div></div>
+<p>     Përshkrimi i lëvizjes: avioni fillon nga qendra e skajit të majtë të dritares. Së pari lëviz për 20 korniza 2 piksele drejt dhe lart, pastaj për 20 korniza 2 pixel drejt e poshtë. Kur del përmes skajit të djathtë të dritares, ai shfaqet në të njëjtën lartësi në skajin e majtë. Shkalla e kornizës është 50 korniza për sekondë.</p>
 <a class="reference internal image-reference" href="../_images/airplane.png"><img alt="../_images/airplane.png" src="../_images/airplane.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/sun.png"><img alt="../_images/sun.png" src="../_images/sun.png" style="width: 50px;" /></a>
 
@@ -432,17 +432,22 @@ plane_height = plane_image.get_height()     # plane image height
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Mole:</strong> Write a program that works as shown in the example (“Play Task” button).</p>
-<p>10 images are loaded with the mole coming out of the hole a bit more in each image. The cycle has four stages lasting 28 frames in total.</p>
-<ul class="simple">
-<li>Stage one lasts 10 frames and during this stage the mole is coming out of the hole (the images are shown in order, from first to tenth).</li>
-<li>Stage two lasts 5 frames during which the mole is in the highest position (the tenth image is shown).</li>
-<li>Stage three lasts 10 frames and during this stage the mole is coming into the hole (the images are shown from tenth to first).</li>
-<li>Stage four lasts 3 frames and during it the mole is in the hole (the first image is shown).</li>
-</ul>
+<p><strong>Pyetje:</strong> Shkruaj një program që funksionon siç tregohet në shembullin (butoni “Luaj detyrën”).</p>
 
     </p></div></div>
-<a class="reference internal image-reference" href="../_images/mole1.png"><img alt="../_images/mole1.png" src="../_images/mole1.png" style="width: 50px;" /></a>
+<p>     10 imazhe janë të ngarkuara me molin që del nga vrima pak më shumë në secilën imazh. Cikli ka katër faza që zgjasin gjithsej 28 korniza.</p>
+<p>     - Skena një zgjat 10 korniza dhe gjatë kësaj faze moli po del nga vrima (imazhet tregohen në rregull, nga e para në të dhjetën).
+     - Skena dy zgjat 5 korniza, gjatë së cilës moli është në pozitën më të lartë (tregohet imazhi i dhjetë).
+     - Skena tre zgjat 10 korniza dhe gjatë kësaj faze moli po hyn në vrimë (pamjet tregohen nga e dhjeta në e parë).
+     - Skena katër zgjat 3 korniza dhe gjatë saj moli është në vrimë (tregohet imazhi i parë).
+.. image:: ../../_images/mole1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width</dt>
+<dd class="field-odd"><p>50px</p>
+</dd>
+</dl>
+</div></blockquote>
 <a class="reference internal image-reference" href="../_images/mole2.png"><img alt="../_images/mole2.png" src="../_images/mole2.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/mole3.png"><img alt="../_images/mole3.png" src="../_images/mole3.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/mole4.png"><img alt="../_images/mole4.png" src="../_images/mole4.png" style="width: 50px;" /></a>
@@ -523,17 +528,17 @@ pygamebg.frame_loop(10, new_frame)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawings movement' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Lëvizja e vizatimeve' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawing text' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vizatimi i tekstit' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawings movement' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Lëvizja e vizatimeve' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawing text' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vizatimi i tekstit' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

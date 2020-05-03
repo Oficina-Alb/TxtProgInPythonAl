@@ -1,17 +1,17 @@
-*if* statement - practice
+*if*  - Praktikë
 ===========================
 
-In this section we will only practice using the *if* statement and combining it with loops.
+Në këtët seksion do të praktikojmë vëtëm përdorimin e deklarims *if* dhe kombinimin me loops.
 
-Tasks for exercise
+Ushtrime
 ------------------
 
-Go to the end of a path and take only one ball
+Shko në fund të rrugës dhe merr vetëm një top
 ''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-   Karel should arrive at the end of the corridor, and only take the first ball on the way. The starting square never has a ball on it, and Karel initially does not carry any balls.
+   Kareli duhet të arrijë në fund të korridorit, dhe të marrë vetëm topin e parë në rrugë. Kutia fillestarenuk ka asnjë top mbi të, dhe Karel fillimisht nuk mban topa.
    
 .. karel:: Karel_if__take_first_ball_only
    :blockly:
@@ -81,15 +81,14 @@ Go to the end of a path and take only one ball
     :showtitle: Hint
     :hidetitle: Hide hint
     
-    We have started one solution here. You are expected to complete the *if* statements with appropriate conditions.
-    
-    Karel should take the ball only if two conditions are met:
-    
-    - the first condition is the one that we check whenever Karel tries to take the ball (without this condition the program could be terminated due to an undoable operation).
-    - the second condition is imposed by the requirements of this task, which is that Karel takes the ball only if he has not already taken one before.
-    
-    The order of checking these two conditions is not important, since both of them should be fulfilled in order to take the ball anyway.
-    
+    Ne kemi filluar një zgjidhje këtu. Ju pritet të plotësoni deklarimet *if* me kushte të përshtatshme.
+    
+     Karel duhet të marrë topin vetëm nëse plotësohen dy kushte:
+    
+     - kushti i parë është ai që ne kontrollojmë sa herë që Karel përpiqet të marrë topin (pa këtë kusht programi mund të përfundojë për shkak të një operacioni të pakalueshëm).
+     - kushti i dytë është i imponuar nga kërkesat e kësaj detyre, që është se Karel merr topin vetëm nëse ai nuk e ka marrë një më parë.
+    
+     Rendi i kontrollit të këtyre dy kushteve nuk është i rëndësishëm, pasi që të dy duhet të përmbushen në mënyrë që të marrin topin sidoqoftë.
     .. activecode:: Karel_if__take_first_ball_only_solution
         :passivecode: true
       
@@ -100,24 +99,24 @@ Go to the end of a path and take only one ball
                 if ???
                     pick_ball()
 
-Take the ball on the neighboring square
+Dërgo topin në kutinë ngjitur
 '''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-   There is only one ball on the board. Karel and the ball are located on two adjacent squares with no wall between them (Karel is only one step appart from the ball, if he turns to the ball first). There may or may not be a wall between other squares. Karel should take the ball and he can finish on any square in the end.
+   Ka vetëm një top në tabelë. Karel dhe topi janë të vendosura në dy shekutishe ngjitur pa mur ndërmjet tyre (Karel është vetëm një hap hap nga topi, nëse ai kthehet në top para). Mund të jetë ose nuk mund të ketë një mur midis kutive të tjera. Kareli duhet të marrë topin dhe ai mund të përfundojë në çdo kuti në fund.
 
-   As usual, run the program several times to test it on various examples.
+   Si zakonisht, drejtojeni programin disa herë për ta provuar atë në shembuj të ndryshëm.
 
-One possible idea is that in each of the four directions, we try to make Karel go one step forward and pick up the ball. Various scenarios can occur in each of the four attempts:
+Një ide e mundshme është që në secilën nga katër drejtimet, ne përpiqemi ta bëjmë Karel të shkojë një hap përpara dhe të marr topin. Skenarë të ndryshëm mund të ndodhin në secilën nga katër përpjekjet:
 
-- it is possible that there are no squares in front of Karel in that direction
-- it is possible that there is a square in front of Karel, but there are no balls on it
-- it is possible that there is a square and that there is a ball on it
+- është e mundur që nuk ka kuti para Karel në atë drejtim
+- është e mundur që të ketë një kuti para Karelit, por nuk ka topa mbi të
+- është e mundur që ka një kuti dhe se ka një top në të
 
 
-When trying the next direction, it is much simpler if we don't have to take into consideration whether Karel has found a square without a ball in the previous direction he tried, or did not find a square at all. To simplify the next attempt, it is convenient for us that Karel finishes the previous attempt when he was on an empty square in the same state as when there was no square. When there is no square in the attempted direction, Karel will remain on the starting square, facing the attempted direction. To facilitate the continuation of the search, we can leave Karel on the same square facing the same direction when he returns from an empty adjacent square. In fact, it won't do any harm if we do it also when Karel takes the ball (it is possible that Karel needlessly continues to search, but that will not cause any errors).
-Because we've brought Karel to the same state (position and orientation) after any of the three cases above, we know our new starting state exactly, for each subsequent attempt. After each attempted direction, we just need to turn Karel towards the next direction we will try to find the ball in (either to the left or to the right).
+Kur provoni drejtimin tjetër, është shumë më e thjeshtë nëse nuk duhet të marrim parasysh nëse Karel ka gjetur një kuti pa top në drejtimin e mëparshëm që ai provoi, ose nuk e gjeti fare një kuti. Për të thjeshtuar përpjekjen tjetër, është e përshtatshme për ne që Karel të përfundojë përpjekjen e mëparshme kur ai ishte në një kuti të zbrazët në të njëjtin gjëndje si kur nuk kishte kuti. Kur nuk ka kuti në drejtim të përpjekjes, Karel do të mbetet në kutinë fillestare, përballë drejtimit të tentuar. Për të lehtësuar vazhdimin e kërkimit, ne mund të lëmë Karel në të njëjt[n kuti përballë të njëjtit drejtim kur ai të kthehet nga një kuti e zbrazët ngjitur. Në fakt, nuk do të dëmtojë nëse e bëjmë edhe kur Karel merr topin (është e mundur që Karel pa nevojë të vazhdojë të kërkojë, por kjo nuk do të shkaktojë gabime).
+Për shkak se e kemi sjellë Karelin në të njëjtin gjëndje (pozicion dhe orientim) pas secilit prej tre rasteve më lart, ne e dimë saktësisht gjendjen tonë fillestare, për secilën përpjekje pasuese. Pas secilit drejtim të përpjekjes, ne vetëm duhet ta kthejmë Karel drejt drejtimit tjetër, ne do të përpiqemi të gjejmë topin në (ose në të majtë ose në të djathtë).
 
 .. karel:: Karel_if__take_neighboring_ball
    :blockly:
@@ -223,12 +222,12 @@ Because we've brought Karel to the same state (position and orientation) after a
                    turn_left()
                turn_left()                 # next direction
 
-Follow the path
+Ndiq rrugën
 '''''''''''''''
 
 .. questionnote::
 
-  There is only one ball on the table, and Karel should take it. The way to the ball is not straight, but there are no intersections (there is always only one way to continue moving, even from the starting square).
+  Ka vetëm një top në tryezë, dhe Karel duhet ta marrë atë. Rruga për në top nuk është e drejtë, por nuk ka kryqëzime (gjithmonë ekziston vetëm një mënyrë për të vazhduar lëvizjen, edhe nga kutia fillestare).
   
 .. karel:: Karel_if__take_ball_no_branches
    :blockly:
@@ -320,10 +319,10 @@ Follow the path
    }
 
 .. reveal:: Karel_if__take_ball_no_branches_reveal
-    :showtitle: Hint
-    :hidetitle: Hide hint
+    :showtitle: Ndihma
+    :hidetitle: Fshih ndihmën
     
-    We give a program-like instructions for one possible solution:
+    Ne japim intruksione për një zgjidhje të mundshme:
 
     .. activecode:: Karel_if__take_ball_no_branches_solution
         :passivecode: true
@@ -368,12 +367,12 @@ Follow the path
            if is_ball_on_square():
                pick_ball()
 
-Sidetrack
+Devijim
 '''''''''
 
 .. questionnote::
 
-  There is only one ball on the table and Karel should take it. To get to the ball, Karel should go straight only when he can't turn left or right (there will be no ambiguous crossroads where there is a path to both left and right).
+  Ka vetëm një top në tryezë dhe Karel duhet ta marrë atë. Për të arritur në top, Kareli duhet të shkojë drejt, vetëm kur ai nuk mund të kthehet majtas ose djathtas (nuk do të ketë një udhëkryq të paqartë ku ka një shteg në të majtë dhe të djathtë).
   
 .. karel:: Karel_if__p1_left_p2_right_p3_forward
    :blockly:
@@ -467,10 +466,10 @@ Sidetrack
    }
    
 .. reveal:: Karel_if__p1_left_p2_right_p3_forward_reveal
-    :showtitle: Hint
-    :hidetitle: Hide hint
+    :showtitle: Ndihma
+    :hidetitle: FSHIH NDIHMËN
 
-    Instructions for one possible solution:
+    Instruksione për një zgjidhje të mundshme:
     
     .. activecode:: Karel_if__p1_left_p2_right_p3_forward_solution
         :passivecode: true
@@ -510,12 +509,12 @@ Sidetrack
             
             pick_ball()
 
-Go left wherever you can
+Shko majtas sa herë të mundesh
 ''''''''''''''''''''''''
 
 .. questionnote::
 
-  There is only one ball on the table and Karel should take it. Karel will always reach the ball by turning left whenever he can, and going straight when he can't go left (when he cannot go either left or straight, that means he has arrived). Karel is initially turned the way he should, and his first step is always straight forward.
+  Ka vetëm një top në tryezë dhe Karel duhet ta marrë atë. Karel do ta arrijë gjithmonë topin duke u kthyer majtas kur të mundet, dhe të shkojë drejt, kur ai nuk mund të shkojë majtas (kur ai nuk mund të shkojë ose majtas ose drejt, kjo do të thotë se ai ka arritur). Karel fillimisht është kthyer ashtu siç duhet, dhe hapi i tij i parë është gjithmonë drejt përpara.
 
 .. karel:: Karel_if_p1_left_p2_forward
    :blockly:
@@ -611,10 +610,10 @@ Go left wherever you can
    }
 
 .. reveal:: Karel_if_p1_left_p2_forward_reveal
-    :showtitle: Hint
-    :hidetitle: Hide hint
+    :showtitle: Ndihma
+    :hidetitle: Fshih ndihmën
 
-    Instructions for one possible solution:
+     Instruksione për nje zgjidhje të mundshme:
     
     .. activecode:: Karel_if_p1_left_p2_forward_solution
         :passivecode: true

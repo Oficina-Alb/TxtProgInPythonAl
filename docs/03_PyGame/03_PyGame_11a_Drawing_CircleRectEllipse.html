@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Drawing rectangles, ellipses, and circles &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Vizatimi i drejtkëndëshave, eklipse dhe rrathëve &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawing straight lines and polygons" href="03_PyGame_11b_Drawing_LinePolygon.html" />
-    <link rel="prev" title="Drawing" href="03_PyGame_10_Drawing.html" />
+    <link rel="next" title="Vizatimi i linjave dhe poligoneve të drejta" href="03_PyGame_11b_Drawing_LinePolygon.html" />
+    <link rel="prev" title="Vizatim" href="03_PyGame_10_Drawing.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,17 +205,17 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="drawing-rectangles-ellipses-and-circles">
-<h1>Drawing rectangles, ellipses, and circles<a class="headerlink" href="#drawing-rectangles-ellipses-and-circles" title="Permalink to this headline">¶</a></h1>
-<p>All drawing functions in the PyGame library begin with <code class="docutils literal notranslate"><span class="pre">pg.draw</span></code>. Depending on what shape we want to draw, we call different functions. In the explanations that follow, the meaning of the parameters is:</p>
+  <div class="section" id="vizatimi-i-drejtkendeshave-eklipse-dhe-rratheve">
+<h1>Vizatimi i drejtkëndëshave, eklipse dhe rrathëve<a class="headerlink" href="#vizatimi-i-drejtkendeshave-eklipse-dhe-rratheve" title="Permalink to this headline">¶</a></h1>
+<p>Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me <a href="#id1"><span class="problematic" id="id2">``</span></a>pg.pull`. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:</p>
 <ul class="simple">
-<li>The <em>canvas</em> parameter is the area in which we draw. In this guide, programs will already have a formed variable (more specifically object) <em>canvas</em>, obtained as the result from a call of the <code class="docutils literal notranslate"><span class="pre">pygamebg.open_window</span></code> function.</li>
-<li>The <em>color</em> parameter is the color we use to draw. As it was said earlier, a color can be specified by its name (for example <code class="code docutils literal notranslate"><span class="pre">pg.Color(&quot;black&quot;)</span></code>), or as a tuple or a list of 3 elements (for example <code class="code docutils literal notranslate"><span class="pre">[255,</span> <span class="pre">0,</span> <span class="pre">0]</span></code> for red).</li>
-<li>The <em>rectangle</em> parameter is a tuple or a list of four elements <span class="math notranslate nohighlight">\((x, y, w, h)\)</span> or <span class="math notranslate nohighlight">\([x, y, w, h]\)</span>, that describes a rectangle, as explained earlier (coordinates of the top-left vertex, rectangle width and height).</li>
-<li>The <em>center</em> parameter represents a point. As mentioned earlier, a point can be specified as a tuple (or list) of 2 elements, which represent the coordinates of the point in the window in which we draw.</li>
-<li>The <em>thickness</em> parameter is thickness of the lines we use to draw. In the functions we explain here, this parameter is optional and can be omitted.</li>
+<li><p>Parametri <em>canvas</em> është zona në të cilën vizatojmë. Në këtë udhëzues, programet do të kenë tashmë një variabël të formuar (më saktësisht objekt) <em>canvas</em>, e marrë si rezultat i një thirrje të funksionit <code class="docutils literal notranslate"><span class="pre">pygamebg.open_window</span></code>.</p></li>
+<li><p>Parametri <em>color</em> është ngjyra që ne përdorim për të vizatuar. Siç u tha më herët, një ngjyrë mund të specifikohet me emrin e saj (për shembull: kodi: <cite>pg.Color (“black”)</cite>), ose si një tuple ose një listë e 3 elementeve (për shembull: kodi: <a href="#id3"><span class="problematic" id="id4">`</span></a>[ 255, 0, 0] <a href="#id5"><span class="problematic" id="id6">`</span></a>për të kuqe).</p></li>
+<li><p>Parametri <em>drejtkëndësh</em> është një tupë ose një listë me katër elementë: matematikë: <cite>(x, y, w, h)</cite> ose: matematikë: <cite>[x, y, w, h]</cite>, që përshkruan një drejtkëndësh, siç u shpjegua më herët (koordinatat e kulmës së sipërme të majtë, gjerësia dhe lartësia e drejtkëndëshit).</p></li>
+<li><p>Parametri <em>center</em> paraqet një pikë. Siç u përmend më herët, një pikë mund të specifikohet si një tuple (ose listë) e 2 elementeve, të cilat përfaqësojnë koordinatat e pikës në dritaren në të cilën ne vizatojmë.</p></li>
+<li><p>Parametri <em>thickness</em> është trashësia e linjave që përdorim për të vizatuar. Në funksionet që shpjegojmë këtu, ky parametër është opsional dhe mund të harrohet.</p></li>
 </ul>
-<p>We will now see more detailed descriptions of the functions for drawing rectangles, ellipses, and circles. A brief example of one or two lines of code is given after each function description. You can run each of these examples by copying it to the program below (which doesn’t draw anything for now). The pictures that follow the examples are obtained in that same way.</p>
+<p>Tani do të shohim përshkrime më të hollësishme të funksioneve për të vizatuar drejtkëndësha, eklipse dhe rrathët. Një shembull i shkurtër i një ose dy rreshtave të kodit jepet pas secilit përshkrim të funksionit. Ju mund të ekzekutoni secilën nga këto shembuj duke e kopjuar atë në programin më poshtë (i cili tani nuk vizaton asgjë). Fotografitë që pasojnë shembujt janë marrë në të njëjtën mënyrë.</p>
 
 <div data-childcomponent="pygame__drawing_primirives_def" class="course-box course-box-problem course-content">
 
@@ -233,29 +232,29 @@ canvas.fill(pg.Color("gray"))
 pygamebg.wait_loop()
 </textarea>
 </div>
-<div class="section" id="drawing-a-rectangle">
-<h2>Drawing a rectangle<a class="headerlink" href="#drawing-a-rectangle" title="Permalink to this headline">¶</a></h2>
-<p>To draw a rectangle we use the function <code class="docutils literal notranslate"><span class="pre">pg.draw.rect</span></code>, which has two forms:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+<div class="section" id="vizato-nje-drejtkendesh">
+<h2>Vizato një drejtkëndësh<a class="headerlink" href="#vizato-nje-drejtkendesh" title="Permalink to this headline">¶</a></h2>
+<p>Për të vizatuar një drejtkëndësh ne përdorim funksionin <code class="docutils literal notranslate"><span class="pre">pg.draw.rect</span></code>, i cili ka dy forma:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We use the form without the <em>thickness</em> parameter when we want the rectangle’s interior to be filled with the indicated color as well.</p>
-<p>For example, the first of the following two statements means:</p>
+<p>Ne përdorim formularin pa parametrin <em>thickness</em> kur duam që brendësia e drejtkëndëshit të mbushet edhe me ngjyrën e treguar.</p>
+<p>Për shembull, e para nga dy deklarimet e mëposhtme do të thotë:</p>
 <ul class="simple">
-<li>draw a rectangle (function <em>rect</em>)</li>
-<li>paint it black (parameter (0, 0, 0) specifies black color)</li>
-<li>The top-left vertex of the rectangle has coordinates (40, 80)</li>
-<li>the width of the rectangle is 50 and the height is 30 pixels</li>
-<li>only frame of the rectangle is to be drawn and the lines should be 3 pixels thick</li>
+<li><p>vizatoni një drejtkëndësh (funksioni <em>rect</em>)</p></li>
+<li><p>pikturojeni të zezë (parametri (0, 0, 0) specifikon ngjyrën e zezë)</p></li>
+<li><p>Kulmi i majës së sipërme të drejtkëndëshit ka koordinata (40, 80)</p></li>
+<li><p>gjerësia e drejtkëndëshit është 50 dhe lartësia 30 piksele</p></li>
+<li><p>vetëm korniza e drejtkëndëshit duhet të vizatohet dhe linjat duhet të jenë të trasha 3 pixel</p></li>
 </ul>
-<p>The second statement means:</p>
+<p>Deklarimi e dytë do të thotë:</p>
 <ul class="simple">
-<li>draw a rectangle (function <em>rect</em>)</li>
-<li>paint it black (parameter pg.Color(“black”) also specifies black color)</li>
-<li>The top-left vertex of the rectangle has coordinates (140, 80)</li>
-<li>the rectangle is to be 20 pixels both wide and high, so it will actually be a square</li>
-<li>The square will be filled with color since there is no thickness parameter</li>
+<li><p>vizatoni një drejtkëndësh (funksioni <em>rect</em>)</p></li>
+<li><p>pikturojeni atë të zezë (parametri pg.Color (“black” gjithashtu specifikon ngjyrën e zezë)</p></li>
+<li><p>Kulmi i majës së sipërme të drejtkëndëshit ka koordinata (140, 80)</p></li>
+<li><p>drejtkëndëshi do të jetë 20 piksel i gjerë dhe i lartë, kështu që në të vërtetë do të jetë një katror</p></li>
+<li><p>Sheshi do të mbushet me ngjyra pasi që nuk ka asnjë parametër të trashësisë</p></li>
 </ul>
 
 <div data-childcomponent="pygame__drawing_rectangles_def" class="course-box course-box-problem course-content">
@@ -271,14 +270,14 @@ pg.draw.rect(canvas, pg.Color("black"), (140, 80, 20, 20))
 </div>
 <a class="reference internal image-reference" href="../_images/drawing_rectangles.png"><img alt="../_images/drawing_rectangles.png" class="align-center" src="../_images/drawing_rectangles.png" style="width: 200px;" /></a>
 </div>
-<div class="section" id="drawing-an-ellipse">
-<h2>Drawing an ellipse<a class="headerlink" href="#drawing-an-ellipse" title="Permalink to this headline">¶</a></h2>
-<p>To draw an ellipse, we use the function <code class="docutils literal notranslate"><span class="pre">pg.draw.ellipse</span></code>, with or without the thickness parameter:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+<div class="section" id="vizatimi-i-nje-elipsi">
+<h2>Vizatimi i një elipsi<a class="headerlink" href="#vizatimi-i-nje-elipsi" title="Permalink to this headline">¶</a></h2>
+<p>Për të vizatuar një elips, p[rdorni funksionin``pg.draw.ellipse``, me apo pa parametrin e trashesisë:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <em>rectangle</em> parameter represents the rectangle the ellipse is inscribed in, and the other parameters have the same meaning as before. If we need it, we can calculate the center and major and minor semi-axes of the ellipse using the tuple <span class="math notranslate nohighlight">\((x, y, w, h)\)</span> or list <span class="math notranslate nohighlight">\([x, y, w, h]\)</span> that defines the rectangle. The coordinates of the center of the rectangle, which is also the center of the ellipse, are <span class="math notranslate nohighlight">\((x + w/2, y + h/2)\)</span>, and the major and minor semi-axes of the ellipse are <span class="math notranslate nohighlight">\(w/2\)</span> and <span class="math notranslate nohighlight">\(h/2\)</span>. So, for example, statement</p>
+<p>Parametri <em>retrangle</em> përfaqëson drejtkëndëshin në të cilin është shkruar elipsi, dhe parametrat e tjerë kanë të njëjtin kuptim si më parë. Nëse kemi nevojë për të, ne mund të llogarisim qendrën dhe gjysëm boshtet kryesore dhe të vogla të elipsës duke përdorur tuple: matematikë: <cite>(x, y, w, h)</cite> ose listën <span class="math notranslate nohighlight">\([x, y, w, h] \)</span>, dhe gjysmë-boshtet kryesore dhe të vogla të elipsit janë <span class="math notranslate nohighlight">\(w / 2\)</span> dhe: matematikë:` h / 2`. Kështu, për shembull, deklarimi:</p>
 
 <div data-childcomponent="pygame__drawing_ellipse_def" class="course-box course-box-problem course-content">
 
@@ -290,17 +289,17 @@ pg.draw.rect(canvas, pg.Color("black"), (140, 80, 20, 20))
 pg.draw.ellipse(canvas, pg.Color("yellow"), (100, 160, 60, 40))
 </textarea>
 </div>
-<p>draws a yellow filled ellipse. The center of the ellipse is the center of the specified rectangle, which is at point (130, 180). The horizontal semi-axis of the ellipse is 30 pixels long, and the vertical 20.</p>
+<p>vizaton një elips të verdhë të mbushur. Qendra e elipsit është qendra e drejtkëndëshit të specifikuar, e cila është në pikën (130, 180). Gjendja gjysmë-boshtore horizontale e elipsit është e gjatë 30 piksele, dhe 20 vertikale.</p>
 <a class="reference internal image-reference" href="../_images/drawing_ellipse.png"><img alt="../_images/drawing_ellipse.png" class="align-center" src="../_images/drawing_ellipse.png" style="width: 200px;" /></a>
 </div>
-<div class="section" id="drawing-a-circle">
-<h2>Drawing a circle<a class="headerlink" href="#drawing-a-circle" title="Permalink to this headline">¶</a></h2>
-<p>To draw a circle, we use the function <code class="docutils literal notranslate"><span class="pre">pg.draw.circle</span></code>, with or without the thickness parameter:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+<div class="section" id="viato-nje-rreth">
+<h2>Viato një rreth<a class="headerlink" href="#viato-nje-rreth" title="Permalink to this headline">¶</a></h2>
+<p>Përdor funksionin <code class="docutils literal notranslate"><span class="pre">pg.draw.circle</span></code> për të vizatuar një rreth, me ose pa parameter trashësie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <em>center</em> parameter is a point representing the center of the circle, and the <em>radius</em> parameter is a number representing the radius of the circle in pixels. For example, the following statement draws a red circle, 3 pixels thick, of radius 50 pixels, whose center is at point (100, 100):</p>
+<p>Parametri <em>center</em> është një pikë që përfaqëson qendrën e rrethit, dhe parametri <em>raduis</em> është një numër që përfaqëson rrezen e rrethit në pixel. Për shembull, thënia e mëposhtme vizaton një rreth të kuq, 3 pixel të trashë, me rreze 50 pixel, qendra e të cilit është në pikën (100, 100):</p>
 
 <div data-childcomponent="pygame__drawing_circle_def" class="course-box course-box-problem course-content">
 
@@ -313,24 +312,25 @@ pg.draw.circle(canvas, pg.Color("red"), (100, 100), 50, 3)
 </textarea>
 </div>
 <a class="reference internal image-reference" href="../_images/drawing_circle.png"><img alt="../_images/drawing_circle.png" class="align-center" src="../_images/drawing_circle.png" style="width: 200px;" /></a>
-<p>If the last parameter (stroke width 3) had been omitted, the interior of the circle would have been red as well.</p>
+<p>Nëse parametri i fundit (gjerësia e goditjes 3) do të ishte zhdukur, brendësia e rrethit do të ishte gjithashtu e kuqe.</p>
 </div>
-<div class="section" id="drawing-rectangles-ellipses-and-circles-questions">
-<h2>Drawing rectangles, ellipses and circles - questions<a class="headerlink" href="#drawing-rectangles-ellipses-and-circles-questions" title="Permalink to this headline">¶</a></h2>
-<p>Check how much you understand and remember about these drawing functions:</p>
+<div class="section" id="vizatimi-i-drejtkendeshave-elipsave-dhe-rratheve-pyetje">
+<h2>Vizatimi i drejtkëndëshave, elipsave dhe rrathëve - pyetje<a class="headerlink" href="#vizatimi-i-drejtkendeshave-elipsave-dhe-rratheve-pyetje" title="Permalink to this headline">¶</a></h2>
+<p>Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pygame__drawing_quiz_circle_arglist">
-            Q-42: What needs to be specified when drawing a circle?
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_arglist_opt_a">Top-left vertex coordinates</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_a">Top-left vertex coordinates are specified when drawing an ellipse or a rectangle</li>
+            <p>Q-42: Çfarë duhet të specifikohet kur vizatoni një rreth?</p>
+
+            <li data-component="answer"  id="pygame__drawing_quiz_circle_arglist_opt_a">Koordinatat e kulm-majës së sipërme</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_a">Koordinatat e kulmit të sipërm të majtë specifikohen kur vizatoni një elips ose një drejtkëndësh</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_arglist_opt_b">Radius</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_arglist_opt_b">Rrezja</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_b">Saktë</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_arglist_opt_c">Center coordinates</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_c">Correct</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_arglist_opt_c">Koordinatat e qendrës</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_c">Saktë</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_arglist_opt_d">Width and height</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_d">Width and height are specified when drawing an ellipse or a rectangle</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_circle_arglist_opt_d">GJerësia dhe gjtësia</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_d">Koordinatat e kulmit të sipërm të majtë specifikohen kur vizatoni një elips ose një drejtkëndësh...</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_arglist_opt_e">Color</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_e">Correct</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_arglist_opt_e">Ngjyra</li><li data-component="feedback" id="pygame__drawing_quiz_circle_arglist_opt_e">Saktë</li>
             
 
             </ul>
@@ -338,46 +338,56 @@ pg.draw.circle(canvas, pg.Color("red"), (100, 100), 50, 3)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_circle_right_args">
-            Q-43: To draw a circle centered at point <span class="math notranslate nohighlight">\((100, 100)\)</span>, whose radius is <span class="math notranslate nohighlight">\(30\)</span> pixels, using line <span class="math notranslate nohighlight">\(5\)</span> pixel wide, which function call needs to be made?
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_right_args_opt_a">pg.draw.circle(canvas, color, 100, 100, 30, 5)</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_a">Try again</li>
+            <p>Q-43: Për të vizatuar një rreth me qendër në pikën <span class="math notranslate nohighlight">\((100, 100)\)</span>, rrezja e së cilës është <span class="math notranslate nohighlight">\(30\)</span> piksele, duke përdorur linjën :math:` 5` pixel të gjerë, cili funksion i thirrjes duhet të bëhet?</p>
+
+            <li data-component="answer"  id="pygame__drawing_quiz_circle_right_args_opt_a">pg.draw.circle(canvas, color, 100, 100, 30, 5)</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_a">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_right_args_opt_b">pg.draw.circle(canvas, color, (100, 100), 30, 5)</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_right_args_opt_b">pg.draw.circle(canvas, color, (100, 100), 30, 5)</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_b">Saktë</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_right_args_opt_c">pg.draw.circle(canvas, color, (100, 100, 30, 5))</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_circle_right_args_opt_c">pg.draw.circle(canvas, color, (100, 100, 30, 5))</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_right_args_opt_d">pg.draw.circle(canvas, color, (100, 100), (30, 5))</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_circle_right_args_opt_d">pg.draw.circle(canvas, color, (100, 100), (30, 5))</li><li data-component="feedback" id="pygame__drawing_quiz_circle_right_args_opt_d">Provo përsëri</li>
             
 
             </ul>
             </div>
-            
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_circle_opt_arg">
-            Q-44: The difference between <cite>pg.draw.circle(canvas, color, (cx, cy), r)</cite> and <cite>pg.draw.circle(canvas, color, (cx, cy), r, 1)</cite> is that:
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_opt_arg_opt_a">the latter draws an ellipse whose semi-major and semi-minor axes equal r and 1.</li><li data-component="feedback" id="pygame__drawing_quiz_circle_opt_arg_opt_a">Try again</li>
-            
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_opt_arg_opt_b">the latter fills the circle interior with color.</li><li data-component="feedback" id="pygame__drawing_quiz_circle_opt_arg_opt_b">Try again</li>
-            
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_circle_opt_arg_opt_c">the former draws a disk (filled circle), and the latter a circular line.</li><li data-component="feedback" id="pygame__drawing_quiz_circle_opt_arg_opt_c">Correct</li>
-            
-            <li data-component="answer"  id="pygame__drawing_quiz_circle_opt_arg_opt_d">the former draws a circular line, and the latter a disk (filled circle).</li><li data-component="feedback" id="pygame__drawing_quiz_circle_opt_arg_opt_d">Try again</li>
-            
+            <p>   :answer_b: kjo e fundit mbush brendësinë e rrethit me ngjyra.
+   :answer_c: i pari vizaton një disk (rrethi të mbushur), dhe i dyti një vijë rrethore.
+   :answer_d: i pari vizaton një vijë rrethore, ndërsa i dyti një disk (rrethi i mbushur).</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">correct</dt>
+<dd class="field-odd"><p>c</p>
+</dd>
+<dt class="field-even">feedback_a</dt>
+<dd class="field-even"><p>Provo përsëri</p>
+</dd>
+<dt class="field-odd">feedback_b</dt>
+<dd class="field-odd"><p>Provo përsëri</p>
+</dd>
+<dt class="field-even">feedback_c</dt>
+<dd class="field-even"><p>Saktë</p>
+</dd>
+<dt class="field-odd">feedback_d</dt>
+<dd class="field-odd"><p>Provo përsëri</p>
+</dd>
+</dl>
+<p>Dallimi midis <cite>pg. pull.circle (canvas, color, (cx, cy), r)</cite> dhe <a href="#id7"><span class="problematic" id="id8">`</span></a>pg. pull.circle (canvas, color, (cx, cy), r, 1)” është se:</p>
+</div></blockquote>
 
-            </ul>
-            </div>
-            
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_rect_args_1">
-            Q-45: What is NOT specified when drawing a rectangle?
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_a">Top-left vertex coordinates</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_a">Try again</li>
+            <p>Q-45: Cfarë nuk specifikohet kur vizatoni një drejtkëndësh?</p>
+
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_a">Koordinatat vertikale majtas</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_b">Stroke width</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_b">Gjerësia e goditjes</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_c">Width</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_c">Gjerësi</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_d">Height</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_1_opt_d">Gjatësi</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_d">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_rect_args_1_opt_e">Center coordinates</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_e">Correct</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_rect_args_1_opt_e">Koordinatat e qendrës</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_1_opt_e">Saktë</li>
             
 
             </ul>
@@ -385,42 +395,44 @@ pg.draw.circle(canvas, pg.Color("red"), (100, 100), 50, 3)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_rect_args_2">
-            Q-46: To draw a rectangle whose top-left vertex is at point
-:math: <cite>(100, 100)</cite>, <span class="math notranslate nohighlight">\(30\)</span> pixels wide and <span class="math notranslate nohighlight">\(50\)</span>
-pixels high, which function call needs to be made?
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_2_opt_a">pg.draw.rect(canvas, color, 100, 100, 30, 50)</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_a">Try again</li>
+            <p>Q-46: Për të vizatuar një drejtkëndësh, kulmi i majtë i të cilit është në pikë</p>
+
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_2_opt_a">pg.draw.rect(canvas, color, 100, 100, 30, 50)</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_2_opt_b">pg.draw.rect(canvas, color, (100, 100), (30, 50))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_2_opt_b">pg.draw.rect(canvas, color, (100, 100), (30, 50))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_2_opt_c">pg.draw.rect(canvas, color, (100, 100), 30, 50)</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_2_opt_c">pg.draw.rect(canvas, color, (100, 100), 30, 50)</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_c">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_rect_args_2_opt_d">pg.draw.rect(canvas, color, (100, 100, 30, 50))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_d">Correct</li>
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_rect_args_2_opt_d">pg.draw.rect(canvas, color, (100, 100, 30, 50))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_2_opt_d">Saktë</li>
             
 
             </ul>
             </div>
-            
+            <p>    <span class="math notranslate nohighlight">\((100, 100)\)</span>, math: <cite>30</cite> pixel i gjerë dhe :math:` 50`
+    pixel të lartë, cili thirrje funksion duhet të bëhet?</p>
+
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_rect_args_3">
-            Q-47: To draw a rectangle whose top-left vertex is at point
-<span class="math notranslate nohighlight">\((80, 80)\)</span>, and bottom-right vertex at point
-<span class="math notranslate nohighlight">\((130, 160)\)</span>, which function call needs to be made:
-            <li data-component="answer" data-correct id="pygame__drawing_quiz_rect_args_3_opt_a">pg.draw.rect(canvas, color, (80, 80, 50, 80))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_a">Correct</li>
+            <p>Q-47: Për të vizatuar një drejtkëndësh, kulmi i majtë i të cilit është në pikë
+<span class="math notranslate nohighlight">\((80, 80)\)</span>, dhe kulmi i djathte poshtë
+<span class="math notranslate nohighlight">\((130, 160)\)</span>, cilin thirrje funksioni duhet të bëhet:</p>
+
+            <li data-component="answer" data-correct id="pygame__drawing_quiz_rect_args_3_opt_a">pg.draw.rect(canvas, color, (80, 80, 50, 80))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_a">Saktë</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_3_opt_b">pg.draw.rect(canvas, color, (80, 80), (130, 160))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_3_opt_b">pg.draw.rect(canvas, color, (80, 80), (130, 160))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_3_opt_c">pg.draw.rect(canvas, color, (80, 80, 130, 160))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_3_opt_c">pg.draw.rect(canvas, color, (80, 80, 130, 160))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_3_opt_d">pg.draw.rect(canvas, color, (80, 80), (50, 80))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__drawing_quiz_rect_args_3_opt_d">pg.draw.rect(canvas, color, (80, 80), (50, 80))</li><li data-component="feedback" id="pygame__drawing_quiz_rect_args_3_opt_d">Provo përsëri</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="drawing-by-instructions">
-<h2>Drawing by instructions<a class="headerlink" href="#drawing-by-instructions" title="Permalink to this headline">¶</a></h2>
-<p>In the following tasks, you can see what your program should draw by clicking the “Play task” button. To provide you necessary information to write the statements you need, detailed instructions with descriptions of the parameters are also given.</p>
-<p>Keep in mind that before drawing you should paint the background with the appropriate color, for which you use the statement <code class="docutils literal notranslate"><span class="pre">canvas.fill(pg.Color(...))</span></code> (instead of the dots specify a color).</p>
+<div class="section" id="vizatimi-sipas-udhezimeve">
+<h2>Vizatimi sipas udhëzimeve<a class="headerlink" href="#vizatimi-sipas-udhezimeve" title="Permalink to this headline">¶</a></h2>
+<p>Në detyrat e mëposhtme, mund të shihni se çfarë programi juaj duhet të vizatojë duke klikuar butonin “Luaj detyrën”. Për t’ju siguruar informacionin e nevojshëm për të shkruar deklarimet që ju nevojiten, jepen gjithashtu udhëzime të hollësishme me përshkrime të parametrave.</p>
+<p>Mbani në mend se para se të vizatoni duhet të pikturoni sfondin me ngjyrën e duhur, për të cilën përdorni thënien <code class="docutils literal notranslate"><span class="pre">canvas.fill</span> <span class="pre">(pg.Color</span> <span class="pre">(...))</span></code> (në vend të pikave specifikoni një ngjyrë).</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -428,11 +440,11 @@ pixels high, which function call needs to be made?
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - target:</strong></p>
-<p>Draw a target on a white background using three filled circles. The centers of all three circles should be at the center of the window and all circles should be filled with color. First, draw a red circle of radius 100, then a blue one of radius 75, and then a green circle of radius 50 pixels.</p>
+<p><strong>Detyrë - objektiv:</strong></p>
+<p>Vizatoni një objektiv në një sfond të bardhë duke përdorur tre rrathë të mbushura. Qendrat e të tre rrathëve duhet të jenë në qendër të dritares dhe të gjitha rrathët duhet të jenë të mbushura me ngjyra. Së pari, vizatoni një rreth të kuq me rreze 100, pastaj një blu me rreze 75, dhe më pas një rreth jeshil me rreze 50 pixel.</p>
 
     </p></div></div>
-<p>What do you think, could these circles be drawn in a different order? If you are not sure what would happen if the order changed, give it a try.</p>
+<p>Cfarë mendoni, a mund të tërhiqen këto rrathë në një renditje tjetër? Nëse nuk jeni të sigurt se çfarë do të ndodhte nëse detyra do ndryshonte, provojeni.</p>
 
 <div data-childcomponent="PyGame__drawing_target" class="course-box course-box-problem course-content">
 
@@ -466,20 +478,18 @@ pygamebg.wait_loop()
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - duckling:</strong></p>
-<p>On a green background, draw a duckling as a cartoon character. The drawing consists of the following parts:</p>
-<ul class="simple">
-<li>Head: a yellow filled ellipse, inscribed in a 320 x 300 pixel rectangle, with the top left vertex at point (40, 50)</li>
-<li>Head border: a black ellipse framing the previous ellipse with a line of width 1</li>
-<li>Left eye: a black filled ellipse, inscribed in a 40 x 40 pixel rectangle with the top left vertex at point (130, 130)</li>
-<li>Right eye: a black filled ellipse, inscribed in a 40 x 40 pixel rectangle, with the top left vertex at point (280, 120)</li>
-<li>Mouth (beak): a red filled ellipse, inscribed in a 120 x 140 pixel rectangle, with the top left vertex at point (200, 170)</li>
-<li>Mouth border: a black ellipse framing the previous ellipse with a line of width 1</li>
-</ul>
+<p><strong>Detyrë - rosa:</strong></p>
+<p>Në një sfond të gjelbër, vizatoni një rosë si një karakter vizatimor. Vizatimi përbëhet nga pjesët e mëposhtme:</p>
 
     </p></div></div>
-<p>Here we have more freedom with the drawing order, but we still need to follow some order. Try to explain which parts of the image need to be drawn exactly in this order, and which need not.</p>
-<p>Note that the eyes are inscribed in rectangles that are actually squares. How (thanks to this) can we draw the same eyes in a different way?</p>
+<p>    - Koka: një elitë e verdhë e mbushur, e gdhendur në një drejtkëndësh 320 x 300 pixel, me kulm të sipërm të majtë në pikën (40, 50)
+    - Kufiri i kokës: një elitë e zezë që kornizon elipsën e mëparshme me një vijë gjerësi 1
+    - Syri i majtë: një elips i mbushur me të zezë, i gdhendur në një drejtkëndësh me pixel 40 x 40 me kulm të sipërm të majtë në pikën (130, 130)
+    - Syri i djathtë: një elips i mbushur me të zezë, i gdhendur në një drejtkëndësh me pixel 40 x 40, me kulm të sipërm të majtë në pikën (280, 120)
+    - Goja (sqepi): një elips i mbushur me të kuqe, të gdhendur në një drejtkëndësh me pixel 120 x 140, me kulm të sipërm të majtë në pikën (200, 170)
+    - Kufiri i gojës: një elitë e zezë që kornizon elipsën e mëparshme me një vijë gjerësi 1</p>
+<p>Këtu kemi më shumë liri me rendin e vizatimit, por prapë na duhet të ndjekim njëfarë rendi. Mundohuni të shpjegoni se cilat pjesë të figurës duhet të vizatohen saktësisht në këtë renditje, dhe cilat nuk duhet.</p>
+<p>Vini re se sytë janë të gdhendur në drejtkëndësha që janë në të vërtetë katrorë. Si (falë kësaj) mund t’i vizatojmë të njëjtat sy në një mënyrë tjetër?</p>
 
 <div data-childcomponent="PyGame__drawing_duckling" class="course-box course-box-problem course-content">
 
@@ -519,17 +529,17 @@ pygamebg.wait_loop()
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatim' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawing straight lines and polygons' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vizatimi i linjave dhe poligoneve të drejta' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatim' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawing straight lines and polygons' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vizatimi i linjave dhe poligoneve të drejta' data-toggle="tooltip"><a href="03_PyGame_11b_Drawing_LinePolygon.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

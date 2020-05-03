@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Branching statements &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Deklarimet degëzuese &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Complex branching" href="02_Console_09_elif.html" />
-    <link rel="prev" title="Math Functions - Exercise" href="02_Console_07_number_functions_practice.html" />
+    <link rel="next" title="Degëzimi kompleks" href="02_Console_09_elif.html" />
+    <link rel="prev" title="Funksione matematike - Ushtrime" href="02_Console_07_number_functions_practice.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,55 +205,55 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="branching-statements">
-<h1>Branching statements<a class="headerlink" href="#branching-statements" title="Permalink to this headline">¶</a></h1>
-<p>In the Karel lessons, every time we wanted Karel to move forward, we needed to check first if Karel could go ahead. These checks were necessary because if we tried to move the robot forward when the square in front of it did not exist, the program would report an error and stop working. For the same reason, we had been checking if there was a ball on a square before taking it, and we had been checking if Karel had a ball with him before dropping the ball.</p>
-<p>Similarly, in programs with numbers we often need to compare two values, that is, to determine whether they are equal, whether one is smaller than the other, different from the other, and the like. Depending on the outcome of the comparison, the program may continue to execute in different ways.</p>
-<p>Some of the symbols used for comparison are the same as in mathematics (for example <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>) and some are not. The following table gives the notation of all standard comparisons used in mathematics and in Python (and also in many other programming languages).</p>
-<table border="1" class="docutils">
+  <div class="section" id="deklarimet-degezuese">
+<h1>Deklarimet degëzuese<a class="headerlink" href="#deklarimet-degezuese" title="Permalink to this headline">¶</a></h1>
+<p>Në mësimet e Karelit, sa herë që donim që Karel të shkonte përpara, duhej të kontrollonim së pari nëse Kareli mund të shkonte përpara. Këto kontrolle ishin të domosdoshme sepse nëse do të përpiqeshim ta lëviznim robotin përpara kur sheshi përpara tij të mos ekzistonte, programi do të raportonte një gabim dhe do të ndalonte së punuari. Për të njëjtën arsye, ne ishim duke kontrolluar nëse kishte ndonjë top në një shesh kuti se ta merrte, dhe ne ishim duke kontrolluar nëse Karel kishte një top me të para se të binte topi.</p>
+<p>Në mënyrë të ngjashme, në programet me numra shpesh duhet të krahasojmë dy vlera, d.m.th., për të përcaktuar nëse ato janë të barabarta, nëse njëra është më e vogël se tjetra, e ndryshme nga tjetra dhe të ngjashme. Në varësi të rezultatit të krahasimit, programi mund të vazhdojë të ekzekutohet në mënyra të ndryshme.</p>
+<p>Disa nga simbolet e përdorura për krahasim janë të njëjta si në matematikë (për shembull <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> dhe <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>) dhe disa jo. Tabela e mëposhtme jep shënimin e të gjitha krahasimeve standarde të përdorura në matematikë dhe në Python (dhe gjithashtu në shumë gjuhë të tjera të programimit).</p>
+<table class="docutils align-default">
 <colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="50%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Math</th>
-<th class="head">Python</th>
-<th class="head">Meaning</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Math</p></th>
+<th class="head"><p>Python</p></th>
+<th class="head"><p>Meaning</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(а &lt; b\)</span></td>
-<td>a &lt; b</td>
-<td>a is less than b</td>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(а &lt; b\)</span></p></td>
+<td><p>a &lt; b</p></td>
+<td><p>a is less than b</p></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(a \leq b\)</span></td>
-<td>a &lt;= b</td>
-<td>a is less than or equal to b</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(a \leq b\)</span></p></td>
+<td><p>a &lt;= b</p></td>
+<td><p>a is less than or equal to b</p></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(a &gt; b\)</span></td>
-<td>a &gt; b</td>
-<td>a is greater than b</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(a &gt; b\)</span></p></td>
+<td><p>a &gt; b</p></td>
+<td><p>a is greater than b</p></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(a \geq b\)</span></td>
-<td>a &gt;= b</td>
-<td>a is greater than or equal to b</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(a \geq b\)</span></p></td>
+<td><p>a &gt;= b</p></td>
+<td><p>a is greater than or equal to b</p></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(a = b\)</span></td>
-<td>a == b</td>
-<td>a is equal to b</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(a = b\)</span></p></td>
+<td><p>a == b</p></td>
+<td><p>a is equal to b</p></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(a \neq b\)</span></td>
-<td>a != b</td>
-<td>a is not equal to b</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(a \neq b\)</span></p></td>
+<td><p>a != b</p></td>
+<td><p>a is not equal to b</p></td>
 </tr>
 </tbody>
 </table>
-<p>Notation <span class="math notranslate nohighlight">\(a&lt;b\)</span> can be understood as an expression whose value is true or false in each case. These values are written in Python as <em>True</em> and <em>False</em> and they are <strong>logical constants</strong>, that is, constants of the type <code class="docutils literal notranslate"><span class="pre">bool</span></code> which we call the logical type. Expressions whose value is true or false (logical type) are called <strong>logical expressions</strong>. All the expressions in the table above are logical expressions (we will see more logical expressions later).</p>
-<div class="section" id="if-statement">
-<h2>if statement<a class="headerlink" href="#if-statement" title="Permalink to this headline">¶</a></h2>
-<p>The <em>if</em> statement was already introduced in the Karel lessons, let’s remind ourselves:</p>
-<p>The <em>if</em> statement is used to decide which of the two groups of statements to execute. In Python it is written as follows:</p>
+<p>Shënimi <span class="math notranslate nohighlight">\(a &lt;b\)</span> mund të kuptohet si një shprehje, vlera e së cilës është e vërtetë ose e rremë në secilin rast. Këto vlera janë shkruar në Python si <em>True</em> dhe <em>False</em> dhe ato janë <strong>konstante logjike</strong>, d.m.th., konstante të tipit <code class="docutils literal notranslate"><span class="pre">bool</span></code> të cilin ne i quajmë lloj logjik. Shprehjet, vlera e të cilave është e vërtetë ose e rremë (lloji logjik) quhen <strong>shprehje logjike</strong>. Të gjitha shprehjet në tabelën e mësipërme janë shprehje logjike (do të shohim më shumë shprehje logjike më vonë).</p>
+<div class="section" id="deklarimi-if">
+<h2>Deklarimi if<a class="headerlink" href="#deklarimi-if" title="Permalink to this headline">¶</a></h2>
+<p>Deklarimi <em>if</em> ishte futur tashmë në mësimet e Karelit, le të kujtojmë:</p>
+<p>Deklarimi <em>if</em> përdoret për të vendosur se cili nga dy grupet e deklaratave për të ekzekutuar. Në Python shkruhet si më poshtë:</p>
 
 <div data-childcomponent="console__if_else_syntax" class="course-box course-box-problem course-content">
 
@@ -277,19 +276,17 @@ else:
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>Meaning (semantics) of the if statement:</strong></p>
-<p>The statement written above means: if the condition is fulfilled, execute <em>statement_a1</em>, … <em>statement_ak</em>, otherwise execute <em>statement_b1</em>, … <em>statement_bm</em>.</p>
-<p><strong>Writing rules (syntax) of the</strong> if <strong>statement</strong></p>
-<ul class="simple">
-<li>After the word <code class="docutils literal notranslate"><span class="pre">if</span></code>, a logical expression is written and at the end of the line the character <code class="docutils literal notranslate"><span class="pre">:</span></code> (a colon) is required.</li>
-<li>In the following lines, indented for the same number of spaces (usually 4), the statements that should be executed if the logical expression evaluates to <em>True</em> are written. There may be one or more of these statements.</li>
-<li>After the commands that are executed if the condition is fulfilled, the word <code class="docutils literal notranslate"><span class="pre">else</span></code> is written and again the character <code class="docutils literal notranslate"><span class="pre">:</span></code> (colon). The word <code class="docutils literal notranslate"><span class="pre">else</span></code> is written at the same level of indentation as the word <code class="docutils literal notranslate"><span class="pre">if</span></code>.</li>
-<li>In the following lines, indented for the same number of spaces, write the commands that are to be executed if the logical expression evaluates to <em>False</em>. There may be one or more of these statements as well.</li>
-</ul>
-<p>The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is also called the <em>branching statement</em> because the program execution flow for this statement branches: the next statement to execute depends on the value of the logical expression in the condition. Groups of statements after the word <em>if</em> or <em>else</em> are therefore also called branches of the <em>if</em> statement.</p>
+<p><strong>Kuptimi (semantika) e deklarimit if:</strong></p>
 
     </p></div></div>
-<p>In case the program does not need to do anything when the condition of the <em>if</em> statement is not fulfilled, that is, when we do not need <em>else</em> branch of the <em>if</em> statement, we can omit it:</p>
+<p>    Deklarimi shkruar më lart do të thotë: nëse kushti është përmbushur, ekzekutoni <em>statement_a1</em>, … <em>statement_ak</em>, përndryshe ekzekutoni <em>statement_b1</em>, … <em>statement_bm</em>.</p>
+<p>    <strong>Rregullat e të shkruarit (sintaksë) të deklarimit if</strong></p>
+<p>    - Pas fjalës <code class="docutils literal notranslate"><span class="pre">if</span></code>, është shkruar një shprehje logjike dhe në fund të rreshtit kërkohet karakteri <code class="docutils literal notranslate"><span class="pre">:</span></code>.
+    - Në rreshtat e mëposhtëm, të theksuar për të njëjtin numër hapësirash (zakonisht 4), janë shkruar deklarimet që duhet të ekzekutohen nëse shprehja logjike rezulton <em>True</em>. Mund të ketë një ose më shumë me këto deklarime.
+    - Pas urdhrave që janë ekzekutuar nëse plotësohet kushti, shkruhet fjala <code class="docutils literal notranslate"><span class="pre">else</span></code> dhe përsëri karakteri <code class="docutils literal notranslate"><span class="pre">:</span></code>. Fjala <code class="docutils literal notranslate"><span class="pre">else</span></code> shkruhet në të njëjtin nivel si fjala <code class="docutils literal notranslate"><span class="pre">if</span></code>.
+    - Në rreshtat e mëposhtëm, të indentifikuar për të njëjtin numër hapësirash, shkruajini komandat që duhet të ekzekutohen nëse shprehja logjike rezulton në <em>False</em>. Gjithashtu Mund të ketë një ose më shumë nga këto deklarime.</p>
+<p>    Deklarimi <code class="docutils literal notranslate"><span class="pre">if</span></code> quhet edhe <em>thënie degëzuese</em> sepse rrjedhja e ekzekutimit të programit për këtë deklarim degëzon deklarimin tjetër për tu ekzekutuar dhe varet nga vlera e shprehjes logjike aktuale. Prandaj grupet e deklarimeve pas fjalës <em>if</em> ose <em>else</em> quhen edhe degë të deklarimit <em>if</em>.</p>
+<p>Në rast se programi nuk ka nevojë të bëjë asgjë kur nuk plotësohet kushti i deklarimit <em>if</em>, d.m.th., kur nuk kemi nevojë për <em>if</em> degë të deklaratës <em>if</em>, mund ta heqim atë:</p>
 
 <div data-childcomponent="console__if_syntax" class="course-box course-box-problem course-content">
 
@@ -304,9 +301,9 @@ if condition:
     statement_ak
 </textarea>
 </div>
-<p>We will use this short form of the <em>if</em> statement later.</p>
-<div class="section" id="if-statement-examples-and-tasks">
-<h3>If statement - examples and tasks<a class="headerlink" href="#if-statement-examples-and-tasks" title="Permalink to this headline">¶</a></h3>
+<p>Ne do ta përdorim këtë formë të shkurtër të deklarimit <em>if</em> më vonë.</p>
+<div class="section" id="deklarimi-if-shembuj-dhe-ushtrime">
+<h3>Deklarimi if - shembuj dhe ushtrime<a class="headerlink" href="#deklarimi-if-shembuj-dhe-ushtrime" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -314,10 +311,10 @@ if condition:
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - who is younger:</strong></p>
-<p>Peter and Mark want to play a game of pool. They agreed that the younger player plays first. Write a program that reads the age of Peter and Mark (that are not equal) and prints who will make the first move.</p>
+<p><strong>Shembull - kush është më i ri:</strong></p>
 
     </p></div></div>
+<p>     Peter dhe Marku duan të luajnë një lojë në pishinë. Ata ranë dakord që lojtari më i ri të luajë i pari. Shkruani një program që lexon moshën e Pjetrit dhe Markut (që nuk janë të barabartë) dhe cili që do të bëjnë lëvizjen e parë.</p>
 
 <div data-childcomponent="console__branching_younger" class="course-box course-box-problem course-content">
 
@@ -326,12 +323,12 @@ if condition:
     data-audio=''   
                data-hidehistory=true
        >
-peter = int(input("How old is Peter: "))
-mark = int(input("How old is Mark: "))
+peter = int(input("Sa vjeç është Peter: "))
+mark = int(input("Sa vjeç është Mark: "))
 if peter < mark:
-    print('Peter plays first.')
+    print('Peter luan i pari.')
 else:
-    print('Mark plays first.')
+    print('Mark luan i pari.')
 </textarea>
 </div>
 
@@ -341,11 +338,11 @@ else:
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - packing:</strong></p>
-<p>The eggs on the farm are packed in 10-pack boxes and full boxes are sent to the store. Write a program that takes the number of eggs ready for packing and prints whether all the eggs can be packed and shipped to the store, or whether a few eggs will be left unpacked temporarily.</p>
+<p><strong>Shembull - paketim:</strong></p>
 
     </p></div></div>
-<p>Here we need to check that the number of eggs is divisible by 10. For this reason, we use the operator <code class="docutils literal notranslate"><span class="pre">%</span></code>, which gives the remainder after division. If the remainder after dividing the number of eggs by 10 is equal to zero, all the eggs can be packed and sent.</p>
+<p>     Vezët në fermë janë paketuar në kuti me 10 pako dhe kutitë e plota dërgohen në dyqan. Shkruani një program që merr numrin e vezëve gati për paketim dhe shtypni nëse të gjitha vezët mund të paketohen dhe dërgohen në dyqan, ose nëse disa vezë do të lihen të paketuara përkohësisht.</p>
+<p>Këtu duhet të kontrollojmë që numri i vezëve është i ndashëm me 10. Për këtë arsye, ne përdorim operatorin <code class="docutils literal notranslate"><span class="pre">%</span></code>, i cili jep pjesën e mbetur pas ndarjes. Nëse pjesa tjetër pasi të keni ndarë numrin e vezëve me 10 është e barabartë me zero, të gjitha vezët mund të paketohen dhe dërgohen.</p>
 
 <div data-childcomponent="console__branching_eggs" class="course-box course-box-problem course-content">
 
@@ -354,11 +351,11 @@ else:
     data-audio=''   
                data-hidehistory=true
        >
-num_eggs = int(input("How many eggs: "))
+num_eggs = int(input("Sa vezë janë: "))
 if num_eggs % 10 == 0:
-    print('All eggs can be sent.')
+    print('Të gjitha vetët mund të dërgohen.')
 else:
-    print('Some eggs will remain.')
+    print('Disa vezë do të mbesin.')
 </textarea>
 </div>
 
@@ -368,11 +365,11 @@ else:
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - Street side:</strong></p>
-<p>Even house numbers are on the right side of the street and odd house numbers on the left. Write a program that takes a house number and prints which side of the street the number is on.</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Detyrë - Ana e rrugës: **</p>
 
     </p></div></div>
-<p>Here it is needed to examine if the given number is divisible by 2. The task is similar to the previous one - if the remainder of dividing the given house number by 2 is equal to zero, the number is on the right side of the street, otherwise it is on the left side.</p>
+<p>     Numrat e shtëpive janë në anën e djathtë të rrugës dhe numrat e shtëpive të çuditshme në të majtë. Shkruaj një program që merr një numër shtëpie dhe shtyp në cilën anë të rrugës numri është ndezur.</p>
+<p>Këtu është e nevojshme të ekzaminohet nëse numri i dhënë është i ndashëm me 2. Detyra është e ngjashme me atë të mëparshme - nëse pjesa tjetër e ndarjes së numrit të shtëpisë së dhënë me 2 është e barabartë me zero, numri është në anën e djathtë të rrugës, përndryshe është në anën e majtë.</p>
 
 <div data-childcomponent="console__branching_home_number" class="course-box course-box-problem course-content">
 
@@ -381,7 +378,7 @@ else:
     data-audio=''   
                data-hidehistory=true
        >
-number = int(input("What is the house number: "))
+number = int(input("Cili është numri i shtëpisë: "))
 # finish the program
 </textarea>
 </div>
@@ -392,10 +389,10 @@ number = int(input("What is the house number: "))
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - cinema:</strong></p>
-<p>You have 10 euros with you. Write a program that takes the movie ticket price and popcorn price, then prints out if you have enough money for both the ticket and popcorn.</p>
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Detyrë - kinema: **</p>
 
     </p></div></div>
+<p>     Ju keni 10 euro me vete. Shkruani një program që merr çmimin e biletave të filmit dhe çmimin e kokoshkave, atëherë shtypni nëse keni para të mjaftueshme si për biletën ashtu edhe për kokoshka.</p>
 
 <div data-childcomponent="console__branching_cinema" class="course-box course-box-problem course-content">
 
@@ -404,24 +401,24 @@ number = int(input("What is the house number: "))
     data-audio=''   
                data-hidehistory=true
        >
-ticket_price = int(input("How much for the ticket: "))
-popcorn_price = int(input("How much for the popcorn: "))
+ticket_price = int(input("Sa kushtona bileta: "))
+popcorn_price = int(input("Sa kushtojne kokoshkat: "))
 # finish the program
 </textarea>
 </div>
 </div>
 </div>
-<div class="section" id="logical-expressions">
-<h2>Logical expressions<a class="headerlink" href="#logical-expressions" title="Permalink to this headline">¶</a></h2>
-<p>In some tasks we need to express conditions that are more complex than simply comparing two values. The words <strong>and</strong>, <strong>or</strong> and <strong>not</strong> are used to connect the simpler terms, and Python uses exactly the same words for that. Here is how to evaluate such complex contidions. If <em>a</em> and <em>b</em> are any conditions, then:</p>
+<div class="section" id="shprehjet-logjike">
+<h2>Shprehjet logjike<a class="headerlink" href="#shprehjet-logjike" title="Permalink to this headline">¶</a></h2>
+<p>Në disa detyra duhet të shprehim kushte më komplekse sesa thjesht të krahasojmë dy vlera. Fjalët <strong>and</strong>, <strong>or</strong> dhe <strong>no</strong> përdoren për të lidhur termat më të thjeshtë, dhe Python përdor pikërisht të njëjtat fjalë për këtë. Ja se si të vlerësohen pohime të tilla komplekse. Nëse <em>a</em> dhe <em>b</em> janë kushte, atëherë:</p>
 <ul class="simple">
-<li>condition <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">and</span> <span class="pre">b</span></code> will be fulfilled if both conditions <em>a</em> and <em>b</em> are fulfilled;</li>
-<li>condition <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">or</span> <span class="pre">b</span></code> will be fulfilled if at least one of conditions <em>a</em> and <em>b</em> is fulfilled;</li>
-<li>condition <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">a</span></code> will be fulfilled if condition <em>a</em> is not fulfilled (which we have already mentioned in the lessons on Karel);</li>
+<li><p>kushti <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">and</span> <span class="pre">b</span></code> do përmbushen nëse të dyja kushtet <em>a</em> dhe <em>b</em> janë përmbushur;</p></li>
+<li><p>condition <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">or</span> <span class="pre">b</span></code> çdo përmbushen nëse të paktën njëri kusht <em>a</em> dhe <em>b</em> është i përmbushur;</p></li>
+<li><p>condition <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">a</span></code> do të përmbushet nëse kushti <em>a</em> nuk përmbushet (gjë që kemi përmendur tashmë në mësimet për Karelin);</p></li>
 </ul>
-<p>These conditions can be further combined into even more complex ones according to the needs of the task. In complex conditions, we can use parentheses to influence the order in which the conditions are calculated (also when we are not sure which is the default order), and to make the program clearer to other people reading it. If there are no parentheses in the complex condition, <em>not</em> is applied first, then <em>and</em>, and finally <em>or</em>.</p>
-<div class="section" id="logical-expressions-examples">
-<h3>Logical expressions - examples<a class="headerlink" href="#logical-expressions-examples" title="Permalink to this headline">¶</a></h3>
+<p>Këto kushte mund të kombinohen më tej në kushte edhe më komplekse sipas nevojave të detyrës. Në kushte komplekse, ne mund të përdorim kllapa për të ndikuar në rendin në të cilin llogariten kushtet (gjithashtu kur nuk jemi të sigurt se cili është urdhri i paracaktuar), dhe ta bëjmë programin më të qartë për njerëzit e tjerë që e lexojnë atë. Nëse nuk ka kllapa në gjendje komplekse, <em>no</em> aplikohet së pari, atëherë <em>and</em>, dhe në fund <em>or</em>.</p>
+<div class="section" id="shprehje-logjike-shembuj">
+<h3>Shprehje logjike - shembuj<a class="headerlink" href="#shprehje-logjike-shembuj" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -429,17 +426,15 @@ popcorn_price = int(input("How much for the popcorn: "))
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - leap year:</strong></p>
-<p>Write a program that prints whether a given year (between the 1800 and the 2200, including borders) is leaп or simple.</p>
-<p>According to the Gregorian calendar, the following rules are used to determine whether a year is simple or leap:</p>
-<ul class="simple">
-<li>years that are not divisible by 4 (e.g., 1923, 1070, 2017) are simple;</li>
-<li>years that are divisible by 100 and not by 400 (e.g. 1700, 1800, 1900, 2100, 2200) are also simple;</li>
-<li>all other years (eg 1984, 2000, 2012) are leap. These are years that are divisible by 4 and not by 100, or are divisible by 400.</li>
-</ul>
+<p><strong>Shembull - vit i brishtë:</strong></p>
 
     </p></div></div>
-<p>Writing down these rules in the form of logical conditions, we get:</p>
+<p>     Shkruaj një program që shtyp nëse një vit i caktuar (midis 1800 dhe 2200, përfshirë kufijtë) është i thjeshtë ose i thjeshtë.</p>
+<p>     Sipas kalendarit Gregorian, rregullat e mëposhtme përdoren për të përcaktuar nëse një vit është i thjeshtë apo i brishtë:</p>
+<p>     - vitet që nuk janë të ndara me 4 (p.sh., 1923, 1070, 2017) janë të thjeshta;
+     - vitet që janë të ndara me 100 dhe jo me 400 (p.sh. 1700, 1800, 1900, 2100, 2200) janë gjithashtu të thjeshta;
+     - të gjitha vitet e tjera (p.sh. 1984, 2000, 2012) janë kërcime. Këto janë vite që janë të ndara me 4 dhe jo nga 100, ose janë të ndara me 400.</p>
+<p>Duke shkruar këto rregulla në formën e kushteve logjike, marrim:</p>
 
 <div data-childcomponent="console__branching_leap_year1" class="course-box course-box-problem course-content">
 
@@ -455,7 +450,7 @@ else:
     print("Year", year, "is leap.")
 </textarea>
 </div>
-<p>We get an equally good solution if we use the description for leap years given in rule 3 (verify by thinking through it and by trying both programs that we get the same result):</p>
+<p>Ne marrim një zgjidhje po aq të mirë nëse përdorim përshkrimin për vitet e brishtë të dhënë në rregullin 3 (verifikoni duke menduar përmes tij dhe duke provuar të dy programet që kemi marrë të njëjtin rezultat):</p>
 
 <div data-childcomponent="console__branching_leap_year2" class="course-box course-box-problem course-content">
 
@@ -478,10 +473,10 @@ else:
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - office hours:</strong></p>
-<p>The opening hours of one souvenir shop are from 7 to 11 in the morning and from 17 to 22 in the evening (to be considered that it works at 7:00 and at 17:00 sharp and does not work at 11:00 and at 22:00). Peter came across the store at <em>H</em> hours and <em>M</em> minutes. Write a program that takes the number <em>H</em> (from 0 to 23) and answers whether Peter came across the store during office hours.</p>
+<p><strong>Shembull - orët e zyrës:</strong></p>
 
     </p></div></div>
+<p>     Orët e hapjes së një dyqani me suvenire janë nga 7 në 11 në mëngjes dhe nga 17 në 22 në mbrëmje (të konsiderohet se funksionon në 7:00 dhe në 17:00  dhe nuk funksionon në orën 11:00 dhe në 22:00). Peter erdhi nëpër dyqan në orën <em>H</em> orë dhe <em>M</em> minuta. Shkruani një program që merr numrin <em>H</em> (nga 0 në 23) dhe përgjigjet nëse Peter erdhi nëpër dyqan gjatë orarit të punës.</p>
 
 <div data-childcomponent="console__branching_working_hours1" class="course-box course-box-problem course-content">
 
@@ -492,12 +487,12 @@ else:
        >
 h = int(input())
 if (7 <= h and h < 11) or (17 <= h and h < 22):
-    print("Peter came across during office hours.")
+    print("Peter erdhi gjatë orarit të punës.")
 else:
-    print("Peter came across out of business hours.")
+    print("Peter erdhi jashtë orarit të punës.")
 </textarea>
 </div>
-<p>We can also come to a solution by gradually computing logical values, using logical variables:</p>
+<p>Ne gjithashtu mund të arrijmë në një zgjidhje duke llogaritur gradualisht vlerat logjike, duke përdorur variabla logjike:</p>
 
 <div data-childcomponent="console__branching_working_hours2" class="course-box course-box-problem course-content">
 
@@ -511,20 +506,20 @@ at_morning_office_hours  = 7 <= h and h < 11
 at_evening_office_hours = 17 <= h and h < 22
 at_office_hours = at_morning_office_hours or at_evening_office_hours
 if at_office_hours:
-    print("Peter came across during office hours.")
+    print("Peter erdhi gjatë orarit të punës.")
 else:
-    print("Peter came across out of business hours.")
+    print("Peter erdhi jashtë orarit të punës.")
 </textarea>
 </div>
-<p>In this solution, only <em>h</em> is an integer variable, and all others (<em>at_morning_office_hours</em>, <em>at_evening_office_hours</em>, <em>at_office_hours</em>) are logical, which means that they will get values <em>True</em> or <em>False</em> when executing the program.</p>
+<p>Në këtë zgjidhje, vetëm <em>h</em> është variabel integer, dhe të tjerat (<em>at_morning_office_hours</em>, <em>at_evening_office_hours</em>, <em>at_office_hours</em>) janë logjike, që do të thotë që marrin vlera <em>True</em> ose <em>False</em> kur programi ekzekutohet.</p>
 </div>
-<div class="section" id="logical-expressions-questions">
-<h3>Logical expressions - questions<a class="headerlink" href="#logical-expressions-questions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shprehej-logjike-pyetje">
+<h3>Shprehej logjike - pyetje<a class="headerlink" href="#shprehej-logjike-pyetje" title="Permalink to this headline">¶</a></h3>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="console__branching_quiz_compare">
-    <span data-component="question">Q-24: Match the equivalent expressions</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-24: Lidh shprehjet ekuivalente</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="console__branching_quiz_compare_drag1">a <= b </li>
     <li data-component="dropzone" for="console__branching_quiz_compare_drag1"> a < b or a == b</li>
@@ -540,14 +535,15 @@ else:
 </ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="console__branching_quiz_interval">
-            Q-25: What are all conditions equal to <strong>not (7 &lt;= h and h &lt;11)</strong>?
-            <li data-component="answer"  id="console__branching_quiz_interval_opt_a">h < 7 and 11 <= h</li><li data-component="feedback" id="console__branching_quiz_interval_opt_a">No, this condition is not fulfilled for any h.</li>
+            <p>Q-25: A janë të gjitha kushtet e barabarta me <strong>not (7 &lt;= h and h &lt;11)</strong>?</p>
+
+            <li data-component="answer"  id="console__branching_quiz_interval_opt_a">h < 7 and 11 <= h</li><li data-component="feedback" id="console__branching_quiz_interval_opt_a">Jo, kjo gjendje nuk përmbushet për asnjë h.</li>
             
-            <li data-component="answer" data-correct id="console__branching_quiz_interval_opt_b">h < 7 or 11 <= h</li><li data-component="feedback" id="console__branching_quiz_interval_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="console__branching_quiz_interval_opt_b">h < 7 or 11 <= h</li><li data-component="feedback" id="console__branching_quiz_interval_opt_b">Saktë.</li>
             
-            <li data-component="answer" data-correct id="console__branching_quiz_interval_opt_c">not(7 <= h) or not(h < 11)</li><li data-component="feedback" id="console__branching_quiz_interval_opt_c">Correct.</li>
+            <li data-component="answer" data-correct id="console__branching_quiz_interval_opt_c">not(7 <= h) or not(h < 11)</li><li data-component="feedback" id="console__branching_quiz_interval_opt_c">Saktë.</li>
             
-            <li data-component="answer"  id="console__branching_quiz_interval_opt_d">h <= 7 or 11 < h</li><li data-component="feedback" id="console__branching_quiz_interval_opt_d">No, the value of the conditions differs if h is exactly 7 or 11.</li>
+            <li data-component="answer"  id="console__branching_quiz_interval_opt_d">h <= 7 or 11 < h</li><li data-component="feedback" id="console__branching_quiz_interval_opt_d">Jo, vlera e kushteve ndryshon nëse h është saktësisht 7 ose 1</li>
             
 
             </ul>
@@ -555,8 +551,8 @@ else:
             
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="console__branching_quiz_abc_sign">
-    <span data-component="question">Q-26: Match conditions and descriptions</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-26: Lidh kushtet me përshkrimin</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="console__branching_quiz_abc_sign_drag1">At least one of a, b, c is positive </li>
     <li data-component="dropzone" for="console__branching_quiz_abc_sign_drag1"> a > 0 or b > 0 or c > 0</li>
@@ -572,21 +568,22 @@ else:
 </ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="console__branching_quiz_sport_center">
-            Q-27: The state government is offering assistance to build a sports center. Settlements with up to 10,000 residents are eligible to apply, as well as settlements with more than 10,000 residents and an average income of up to 2000. Which of the conditions correctly checks whether a settlement  can apply?
-            <li data-component="answer" data-correct id="console__branching_quiz_sport_center_opt_a">(population <= 10000) or (population > 10000 and income <= 2000)</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_a">Correct.</li>
+            <p>Q-27: Qeveria e shtetit po ofron ndihmë për ndërtimin e një qendre sportive. Vendbanimet me deri në 10,000 banorë kanë të drejtë të aplikojnë, si dhe vendbanime me më shumë se 10,000 banorë dhe të ardhura mesatare deri në 2000. Cila nga kushtet kontrollon saktë nëse mund të aplikojë një zgjidhje?</p>
+
+            <li data-component="answer" data-correct id="console__branching_quiz_sport_center_opt_a">(population <= 10000) or (population > 10000 and income <= 2000)</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_a">Saktë.</li>
             
-            <li data-component="answer" data-correct id="console__branching_quiz_sport_center_opt_b">population <= 10000 or income <= 2000</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_b">Correct.</li>
+            <li data-component="answer" data-correct id="console__branching_quiz_sport_center_opt_b">population <= 10000 or income <= 2000</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_b">Saktë.</li>
             
-            <li data-component="answer"  id="console__branching_quiz_sport_center_opt_c">population <= 10000 and income <= 2000</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_c">Wrong.</li>
+            <li data-component="answer"  id="console__branching_quiz_sport_center_opt_c">population <= 10000 and income <= 2000</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_c">Gabim.</li>
             
-            <li data-component="answer" data-correct id="console__branching_quiz_sport_center_opt_d">(income <= 2000) or (income > 2000 and population <= 10000)</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_d">Correct.</li>
+            <li data-component="answer" data-correct id="console__branching_quiz_sport_center_opt_d">(income <= 2000) or (income > 2000 and population <= 10000)</li><li data-component="feedback" id="console__branching_quiz_sport_center_opt_d">Saktë.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="logical-expression-tasks">
-<h3>Logical expression - tasks<a class="headerlink" href="#logical-expression-tasks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shprehje-logjike-detyra">
+<h3>Shprehje logjike - detyra<a class="headerlink" href="#shprehje-logjike-detyra" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -594,10 +591,10 @@ else:
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - numbers in order:</strong></p>
-<p>Write a program that takes integers <em>a</em>, <em>b</em>, <em>c</em> and answers the question whether these numbers are given in order from smallest to largest.</p>
+<p><a href="#id5"><span class="problematic" id="id6">**</span></a>Detyrë - numra sipas radhës: **</p>
 
     </p></div></div>
+<p>     Shkruaj një program që merr numrat e plotë <em>a</em>, <em>b</em>, <em>c</em> dhe i përgjigjet pyetjes nëse këta numra janë dhënë në mënyrë që nga më i vogli te më i madhi.</p>
 
 <div data-childcomponent="console__branching_increasing3" class="course-box course-box-problem course-content">
 
@@ -619,8 +616,8 @@ c = int(input("c = "))
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - middle number:</strong></p>
-<p>Write a program that takes integers <em>a</em>, <em>b</em>, <em>c</em> and answers the question whether <em>b</em> is medium in size.</p>
+<p><strong>Detyrë - Numri mesatar:</strong></p>
+<p>Shkruaj një program që merr numrat e plotë <em>a</em>, <em>b</em>, <em>c</em> dhe i përgjigjet pyetjes nëse <em>b</em> është me madhësi mesatare.</p>
 
     </p></div></div>
 
@@ -644,12 +641,14 @@ c = int(input("c = "))
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - watching the dog:</strong></p>
-<p>Anna and Mark live together and have a dog named Bobby. The two are scheduled to travel the same month, Anna from day <em>a1</em> to <em>a2</em>, and Mark from day <em>m1</em> to <em>m2</em>. They both leave in the morning and return in the evening. Since they don’t want to leave Bobby alone, they wonder if their trips overlap.</p>
-<p>Write a program that takes integers <em>a1</em>, <em>a2</em>, <em>m1</em> and <em>m2</em>, and answers the question of whether Anna’s and Mark’s travels overlap.</p>
+<blockquote>
+<div><p><strong>Task - vëzhgo qenin:</strong></p>
+</div></blockquote>
+<p>Anna dhe Marku jetojnë së bashku dhe kanë një qen të quajtur Bobby. Të dy janë planifikuar të udhëtojnë në të njëjtin muaj, Anna nga dita <em>a1</em> në <em>a2</em>, dhe Marku nga dita <em>m1</em> në <em>m2</em>. Të dy largohen në mëngjes dhe kthehen në mbrëmje. Meqenëse nuk duan ta lënë Bobby-in vetëm, ata pyesin nëse udhëtimet e tyre mbivendosen.</p>
 
     </p></div></div>
-<p><strong>Hint:</strong> trips overlap if Marko leaves before Ana returns (the day of Mark’s departure is less than or equal to the day of Ana’s return) or vice versa - if Ana leaves before Marko returns.</p>
+<p>     Shkruani një program që merr numrat e plotë <em>a1</em>, <em>a2</em>, <em>m1</em> dhe <em>m2</em> dhe përgjigjet në pyetjen nëse udhëtimet e Anës dhe Markut mbivendosen.</p>
+<p><strong>Ndihmë:</strong> udhëtimet mbivendosen nëse Marko largohet para se Ana të kthehet (dita e nisjes së Markut është më pak se ose e barabartë me ditën e kthimit të Anas) ose anasjelltas - nëse Ana largohet para se të kthehet Marko.</p>
 
 <div data-childcomponent="console__branching_intervals" class="course-box course-box-problem course-content">
 
@@ -673,17 +672,17 @@ m2 = int(input("m2 = "))
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Math Functions - Exercise' data-toggle="tooltip"><a href="02_Console_07_number_functions_practice.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Funksione matematike - Ushtrime' data-toggle="tooltip"><a href="02_Console_07_number_functions_practice.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Complex branching' data-toggle="tooltip"><a href="02_Console_09_elif.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Degëzimi kompleks' data-toggle="tooltip"><a href="02_Console_09_elif.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Math Functions - Exercise' data-toggle="tooltip"><a href="02_Console_07_number_functions_practice.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Funksione matematike - Ushtrime' data-toggle="tooltip"><a href="02_Console_07_number_functions_practice.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Complex branching' data-toggle="tooltip"><a href="02_Console_09_elif.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Degëzimi kompleks' data-toggle="tooltip"><a href="02_Console_09_elif.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

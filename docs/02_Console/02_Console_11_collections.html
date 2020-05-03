@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Data collections &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>koleksione ata &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Counting and summing" href="02_Console_12_algo_count_accumulate.html" />
-    <link rel="prev" title="Scripts and for loop" href="02_Console_10_scripting.html" />
+    <link rel="next" title="Numërimi dhe shuma" href="02_Console_12_algo_count_accumulate.html" />
+    <link rel="prev" title="Skripte dhe cikli for" href="02_Console_10_scripting.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,17 +205,17 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="data-collections">
-<h1>Data collections<a class="headerlink" href="#data-collections" title="Permalink to this headline">¶</a></h1>
-<p>In the previous lesson, we used a tuple to perform some commands (computing and printing) over each value from the tuple using the <em>for</em> loop.</p>
-<p>Tuples are also a type of data in Python, such as numbers, strings, or logical values. The types <em>int</em> (integer), <em>float</em> (real number), <em>str</em> (string) and <em>bool</em> (logical value) are <strong>basic types</strong>. The difference between tuples and basic types is that the value of a tuple consists of multiple values of a simpler type.</p>
-<p>Each value that consists of multiple values of a simpler type will be called a <strong>collection</strong>. The data the collection consists of are called <strong>collection elements</strong>.</p>
-<p>The only collections we have seen so far are tuples, which we will now get to know in more detail. We will see some more types of collections very soon.</p>
-<div class="section" id="tuple-and-its-elements">
-<h2>Tuple and its elements<a class="headerlink" href="#tuple-and-its-elements" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="packing-and-unpacking-tuples">
-<h3>Packing and unpacking tuples<a class="headerlink" href="#packing-and-unpacking-tuples" title="Permalink to this headline">¶</a></h3>
-<p>We can fit the whole tuple into a variable, as we do with values of a simpler type. In the following example, the <em>temperatures</em> variable contains the entire tuple as its value.</p>
+  <div class="section" id="koleksione-ata">
+<h1>koleksione ata<a class="headerlink" href="#koleksione-ata" title="Permalink to this headline">¶</a></h1>
+<p>Në mësimin e mëparshëm, ne kemi përdorur një tuple për të kryer disa komanda (llogaritjen dhe shtypjen) mbi secilën vlerë nga tuple duke përdorur loop <em>for</em>.</p>
+<p>Tuples janë gjithashtu një lloj i të dhënave në Python, të tilla si numrat, vargjet ose vlerat logjike. Llojet <em>int</em> (numër i plotë), <em>float</em> (numri real), <em>str</em> (vargu) dhe <em>bool</em> (vlera logjike) janë <strong>llojet themelore</strong>. Dallimi midis tuples dhe llojeve themelore është se vlera e një tuple përbëhet nga vlera të shumta të një lloji më të thjeshtë.</p>
+<p>Secila vlerë që përbëhet nga vlera të shumta të një lloji më të thjeshtë do të quhet një <strong>koleksion</strong>. Të dhënat që koleksioni përbëhet quhen <strong>elementë të mbledhjes</strong>.</p>
+<p>Koleksionet e vetme që kemi parë deri më tani janë tuples, të cilat tani do t’i njohim më në detaje. Do të shohim edhe disa lloje të tjera koleksionesh shumë shpejt.</p>
+<div class="section" id="tuple-dhe-elementet-e-saj">
+<h2>Tuple dhe elementet e saj<a class="headerlink" href="#tuple-dhe-elementet-e-saj" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="paketimi-dhe-paketimi-i-paketave">
+<h3>Paketimi dhe paketimi i paketave<a class="headerlink" href="#paketimi-dhe-paketimi-i-paketave" title="Permalink to this headline">¶</a></h3>
+<p>Ne mund ta vendosim tërë tufën në një ndryshore, ashtu siç veprojmë me vlerat e një lloji më të thjeshtë. Në shembullin e mëposhtëm, variabli <em>temperatura</em> përmban tërë vlerësimin si vlerë të saj.</p>
 
 <div data-childcomponent="console__collections_tuple1" class="course-box course-box-problem course-content">
 
@@ -230,7 +229,7 @@ for t in temperatures:
     print(t)
 </textarea>
 </div>
-<p>This kind of value assignment (as in the first line of the program) is known as tuple packing. The reverse assignment is also possible: when we know how many elements are there in a tuple, we can assign the tuple elements to the corresponding number of variables:</p>
+<p>Ky lloj i caktimit të vlerës (si në rreshtin e parë të programit) njihet si paketim tuple. Caktimi i kundërt është gjithashtu i mundur: kur e dimë se sa elementë ka në një tufë, ne mund t’i caktojmë elementët tuple në numrin përkatës të ndryshoreve:</p>
 
 <div data-childcomponent="console__collections_tuple2" class="course-box course-box-problem course-content">
 
@@ -246,16 +245,17 @@ print(middle_name)
 print(last_name)
 </textarea>
 </div>
-<p>Statements like <code class="docutils literal notranslate"><span class="pre">first_name,</span> <span class="pre">middle_name,</span> <span class="pre">last_name</span> <span class="pre">=</span> <span class="pre">full</span> <span class="pre">name</span></code> are called tuple unpacking.</p>
-<p>The same effect is achieved by a related statement</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">first_name</span><span class="p">,</span> <span class="n">middle_name</span><span class="p">,</span> <span class="n">last_name</span> <span class="o">=</span> <span class="s2">&quot;Arthur&quot;</span><span class="p">,</span> <span class="s2">&quot;Conan&quot;</span><span class="p">,</span> <span class="s2">&quot;Doyle&quot;</span>
+<p>Deklaratat si <code class="docutils literal notranslate"><span class="pre">first_name,</span> <span class="pre">middle_name,</span> <span class="pre">last_name</span> <span class="pre">=</span> <span class="pre">emri</span> <span class="pre">i</span> <span class="pre">plotë</span></code> quhen paketim tuple.</p>
+<p>I njëjti efekt arrihet nga një deklaratë e lidhur</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">first_name</span><span class="p">,</span> <span class="n">middle_name</span><span class="p">,</span> <span class="n">last_name</span> <span class="o">=</span> <span class="s2">&quot;Arthur&quot;</span><span class="p">,</span> <span class="s2">&quot;Conan&quot;</span><span class="p">,</span> <span class="s2">&quot;Doyle&quot;</span>
 </pre></div>
 </div>
 <p>Tuples do not appear in this statement, which is called multiple value assignment.</p>
+<p>Tuples nuk paraqiten në këtë deklaratë, e cila quhet detyrë me shumë vlera.</p>
 </div>
-<div class="section" id="tuple-elements-and-indices">
-<h3>Tuple elements and indices<a class="headerlink" href="#tuple-elements-and-indices" title="Permalink to this headline">¶</a></h3>
-<p>We can also get the elements of a tuple by writing the name of the tuple, and behind it in square brackets the sequence number of the element we want. It should be noted here that counting the elements of any collection starts from zero. For example:</p>
+<div class="section" id="elementet-dhe-indekset">
+<h3>Elementet dhe indekset<a class="headerlink" href="#elementet-dhe-indekset" title="Permalink to this headline">¶</a></h3>
+<p>Ne gjithashtu mund të marrim elementet e një tuple duke shkruar emrin e tuples, dhe pas saj në kllapa katror numrin rendor të elementit që duam. Këtu duhet të theksohet se numërimi i elementeve të çdo koleksioni fillon nga zero. Për shembull:</p>
 
 <div data-childcomponent="console__collections_index" class="course-box course-box-problem course-content">
 
@@ -272,9 +272,9 @@ print(basic_colors[2])
 </div>
 <p>The sequence number of an element is also called the <strong>index</strong> of the element. if the tuple has <em>n</em> elements, we can use the numbers 0, 1, 2, … <em>n-1</em> as indices. In the example above, <em>n</em> = 3, so indices 0, 1, and 2 are allowed. Trying to use an index outside these bounds causes an error (try it).</p>
 </div>
-<div class="section" id="tuple-length">
-<h3>Tuple length<a class="headerlink" href="#tuple-length" title="Permalink to this headline">¶</a></h3>
-<p>The number of elements of a tuple can be obtained by using the <em>len</em> function.</p>
+<div class="section" id="gjatesia-e-tuple">
+<h3>Gjatesia e Tuple<a class="headerlink" href="#gjatesia-e-tuple" title="Permalink to this headline">¶</a></h3>
+<p>Numri i elementeve të një tuple mund të merret duke përdorur funksionin <em>len</em>.</p>
 
 <div data-childcomponent="console__collections_len1" class="course-box course-box-problem course-content">
 
@@ -288,7 +288,7 @@ n = len(basic_colors)
 print(n)
 </textarea>
 </div>
-<p>or shorter:</p>
+<p>ose më shkurt:</p>
 
 <div data-childcomponent="console__collections_len2" class="course-box course-box-problem course-content">
 
@@ -300,9 +300,9 @@ print(n)
 print(len(("Red", "Green", "Blue")))
 </textarea>
 </div>
-<p>Note the double brackets (one for function and the other for tuple).</p>
-<p>Through these examples we have seen that tuple elements can be numbers or strings. In fact, the tuple elements can be of any type, basic or complex.</p>
-<p>For example, it is possible to create a tuple of tuples:</p>
+<p>Vini re kllapat e dyfishta (njëra për funksionin dhe tjetra për tufën).</p>
+<p>Përmes këtyre shembujve kemi parë që elementët tuple mund të jenë numra ose vargje. Në fakt, elementët tuple mund të jenë të çdo lloji, themelor ose kompleks.</p>
+<p>Për shembull, është e mundur të krijoni një tufë prej tuples:</p>
 
 <div data-childcomponent="console__collections_len3" class="course-box course-box-problem course-content">
 
@@ -315,17 +315,17 @@ t = ((11, 12, 13), (21, 22, 23))
 print(len(t))
 </textarea>
 </div>
-<p>Tuple <em>t</em> contains two simpler tuples, therefore the number of its elements is 2.</p>
-<p>In Python, the elements of a tuple can be of different types, and we will see such examples latter.</p>
+<p>Tuple <em>t</em> përmban dy tupla më të thjeshta, prandaj numri i elementëve të tij është 2.</p>
+<p>Në Python, elementët e një tuple mund të jenë të llojeve të ndryshme, dhe shembuj të tillë do t’i shohim më vonë.</p>
 </div>
 </div>
-<div class="section" id="range">
-<h2>Range<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h2>
-<p>Range is another type of collection. Unlike tuple, the elements of this collection are always integers.</p>
-<p>Range can be defined in several ways.</p>
-<div class="section" id="range-with-one-argument">
-<h3>Range with one argument<a class="headerlink" href="#range-with-one-argument" title="Permalink to this headline">¶</a></h3>
-<p>The simplest form of specifying a range is <em>range(n)</em>, where <em>n</em> is a positive integer. The <em>range(n)</em> range contains integers from 0 to <em>n</em>, not including <em>n</em>. For example, <em>range(5)</em> contains values 0, 1, 2, 3, 4.</p>
+<div class="section" id="vargu">
+<h2>Vargu<a class="headerlink" href="#vargu" title="Permalink to this headline">¶</a></h2>
+<p>Gama është një lloj tjetër i koleksionit. Për dallim nga tuple, elementët e kësaj koleksioni janë gjithmonë numër të plotë.</p>
+<p>Gama mund të përcaktohet në disa mënyra.</p>
+<div class="section" id="varg-me-1-argument">
+<h3>Varg me 1 argument<a class="headerlink" href="#varg-me-1-argument" title="Permalink to this headline">¶</a></h3>
+<p>Forma më e thjeshtë për të specifikuar një gamë është <em>varg (n)</em>, ku <em>n</em> është një numër i plotë pozitiv. Varg <em>(n)</em> Varg * përmban numër të plotë nga 0 në <em>n</em>, duke mos përfshirë <em>n</em>. Për shembull, <em>diapazoni (5)</em> përmban vlerat 0, 1, 2, 3, 4.</p>
 
 <div data-childcomponent="console__collections_range_n_i" class="course-box course-box-problem course-content">
 
@@ -338,8 +338,8 @@ for i in range(5):
     print(i)
 </textarea>
 </div>
-<p>We see that in the <em>for</em> statement, we can use range in the same way as the tuple. In fact, any collection may be in place of the tuple or range.</p>
-<p>Since the <em>range(n)</em> range contains a total of <em>n</em> values, this range is often used when a command only needs to be repeated <em>n</em> times in the same way:</p>
+<p>Ne shohim që në deklarimin <em>for</em>, ne mund të përdorim gamën në të njëjtën mënyrë si tuple. Në fakt, çdo koleksion mund të jetë në vend të tufës ose diapazonit.</p>
+<p>Meqenëse diapazoni <em>varg (n)</em> përmban gjithsej vlera <em>n</em>, ky diapazon përdoret shpesh kur vetëm një komandë duhet të përsëritet <em>n</em> herë në të njëjtën mënyrë:</p>
 
 <div data-childcomponent="console__collections_range_n" class="course-box course-box-problem course-content">
 
@@ -352,8 +352,8 @@ for i in range(5):
     print("Hello!")
 </textarea>
 </div>
-<p>The <em>print</em> function was executed for each value <em>i</em> of sequence 0, 1, 2, 3, 4, but in this example, those values are not used in the loop body. Thus, we achieved that the <em>print</em> function was executed 5 times in exactly the same way, that is, it was repeated 5 times.</p>
-<p>Another common use of this type of range is to get through all the elements of a tuple. In such case, the loop variable serves as an index. This way of going through the values of the tuple is suitable when besides these tuple values in the loop we also need their sequence numbers (this way of going through the collection is more common in other programming languages than Python).</p>
+<p>Funksioni <em>print</em> u ekzekutua për secilën vlerë <em>i</em> të sekuencës 0, 1, 2, 3, 4, por në këtë shembull, ato vlera nuk përdoren në trupin e lakut. Kështu, kemi arritur që funksioni <em>print</em> të ishte ekzekutuar 5 herë në të njëjtën mënyrë, d.m.th., është përsëritur 5 herë.</p>
+<p>Një tjetër përdorim i zakonshëm i këtij lloji të gamës është të kapni të gjithë elementët e një tuple. Në këtë rast, variabli i loop shërben si një indeks. Kjo mënyrë për të kaluar vlerat e tuple është e përshtatshme kur përveç këtyre vlerave tuple në lak na duhen edhe numrat e sekuencave të tyre (kjo mënyrë për të kaluar nëpër koleksion është më e zakonshme në gjuhët e tjera të programimit sesa Python).</p>
 
 <div data-childcomponent="console__collections_for_range_len" class="course-box course-box-problem course-content">
 
@@ -369,9 +369,9 @@ for i in range(n):
 </textarea>
 </div>
 </div>
-<div class="section" id="range-with-two-arguments">
-<h3>Range with two arguments<a class="headerlink" href="#range-with-two-arguments" title="Permalink to this headline">¶</a></h3>
-<p>When we need a sequence of consecutive integers that does not start at zero, we set the range as <em>range(a, b)</em>, where <em>a</em> and <em>b</em> are integers such that <span class="math notranslate nohighlight">\(a&lt;b\)</span>. Then the sequence is made up of integers from <em>a</em> to <em>b</em>, not including <em>b</em>. For example, the range <em>range(1, 6)</em> gives the sequence of numbers 1, 2, 3, 4, 5:</p>
+<div class="section" id="varg-me-2-argumente">
+<h3>Varg me 2 argumente<a class="headerlink" href="#varg-me-2-argumente" title="Permalink to this headline">¶</a></h3>
+<p>Kur kemi nevojë për një sekuencë të numrave të plotë të njëpasnjëshëm që nuk fillojnë në zero, ne e vendosim rangun si <em>string (a, b)</em>, ku <em>a</em> dhe <em>b</em> janë numra të plotë të tillë që <span class="math notranslate nohighlight">\(a &lt;b\)</span>. Atëherë sekuenca përbëhet nga numra të plotë nga <em>a</em> në <em>b</em>, duke mos përfshirë <em>b</em>. Për shembull, vargu <em>(1, 6)</em> jep rendin e numrave 1, 2, 3, 4, 5:</p>
 
 <div data-childcomponent="console__collections_range_a_b" class="course-box course-box-problem course-content">
 
@@ -385,9 +385,9 @@ for i in range(1, 6):
 </textarea>
 </div>
 </div>
-<div class="section" id="range-with-three-arguments">
-<h3>Range with three arguments<a class="headerlink" href="#range-with-three-arguments" title="Permalink to this headline">¶</a></h3>
-<p>The third form of specifying a range has three arguments:</p>
+<div class="section" id="varg-me-tre-argumente">
+<h3>Varg me tre argumente<a class="headerlink" href="#varg-me-tre-argumente" title="Permalink to this headline">¶</a></h3>
+<p>Forma e tretë e specifikimit të një game ka tre argumente:</p>
 
 <div data-childcomponent="console__collections_range_a_b_c" class="course-box course-box-problem course-content">
 
@@ -400,7 +400,7 @@ for i in range(2, 12, 2):
     print(i)
 </textarea>
 </div>
-<p>The range values given by <em>range(a, b, c)</em> go from <em>a</em> to <em>b</em> (not including <em>b</em>) with the step <em>c</em>, i.e. values change by <em>c</em>. Step <em>c</em> can also be negative:</p>
+<p>Vlerat e diapazonit të dhënë nga <em>diapazoni (a, b, c)</em> shkojnë nga <em>a</em> në <em>b</em> (duke mos përfshirë <em>b</em>) me hapin <em>c</em>, vlerat d.m.th ndryshojnë me <em>c</em>. Hapi <em>c</em> gjithashtu mund të jetë negativ:</p>
 
 <div data-childcomponent="console__collections_range_a_b_cneg" class="course-box course-box-problem course-content">
 
@@ -413,7 +413,7 @@ for i in range(12, 2, -2):
     print(i)
 </textarea>
 </div>
-<p>We can convert a range into a tuple (the opposite is not possible, nor is it ever needed):</p>
+<p>Ne mund ta shndërrojmë një varg në një tufë (e kundërta nuk është e mundur, as nuk është e nevojshme ndonjëherë):</p>
 
 <div data-childcomponent="console__collections_range_to_tuple" class="course-box course-box-problem course-content">
 
@@ -428,9 +428,9 @@ print(len(a))
 </div>
 </div>
 </div>
-<div class="section" id="string-as-a-collection">
-<h2>String as a collection<a class="headerlink" href="#string-as-a-collection" title="Permalink to this headline">¶</a></h2>
-<p>We have used strings as the basic type so far, but strings can also be used as collections of individual characters. We can traverse string characters using a loop and retrieve individual characters using indices:</p>
+<div class="section" id="vargu-si-koleksion">
+<h2>Vargu si koleksion<a class="headerlink" href="#vargu-si-koleksion" title="Permalink to this headline">¶</a></h2>
+<p>Ne kemi përdorur vargje si lloji themelor deri më tani, por vargjet mund të përdoren gjithashtu si koleksione të karaktereve individuale. Ne mund të përshkojmë karakteret e vargjeve duke përdorur një lak dhe të marrim karaktere individuale duke përdorur indekset:</p>
 
 <div data-childcomponent="console__collections_str_as_collection" class="course-box course-box-problem course-content">
 
@@ -446,13 +446,13 @@ for c in s:
 </textarea>
 </div>
 </div>
-<div class="section" id="functions-on-collections">
-<h2>Functions on collections<a class="headerlink" href="#functions-on-collections" title="Permalink to this headline">¶</a></h2>
-<p>There are many functions in Python that accept a collection as an argument. One of them is the <em>len</em> function, which we have already met. Some other commonly used functions that apply to collections are:</p>
+<div class="section" id="funksionet-ne-koleksione">
+<h2>Funksionet në koleksione<a class="headerlink" href="#funksionet-ne-koleksione" title="Permalink to this headline">¶</a></h2>
+<p>Ka shumë funksione në Python që pranojnë një koleksion si një argument. Një prej tyre është funksioni <em>len</em>, të cilin ne kemi përmbushur tashmë. Disa funksione të tjera që përdoren zakonisht për koleksionet janë:</p>
 <ul class="simple">
-<li><em>min</em>, a function that gives the smallest element of a collection</li>
-<li><em>max</em>, a function that gives the largest element of a collection</li>
-<li><em>sum</em>, a function that gives the sum of the elements of a collection</li>
+<li><p><em>min</em>, një funksion që jep elementin më të vogël të një koleksioni</p></li>
+<li><p><em>max</em>, një funksion që jep elementin më të madh të një koleksioni</p></li>
+<li><p><em>sum</em>, një funksion që jep shumën e elementeve të një koleksioni</p></li>
 </ul>
 
 <div data-childcomponent="console__collections_aggregation" class="course-box course-box-problem course-content">
@@ -485,26 +485,26 @@ print('max(s) =', max(s))
 # print('sum(s) =', sum(s))
 </textarea>
 </div>
-<p>The values of the functions <em>len</em>, <em>sum</em>, <em>min</em>, <em>max</em> for the range can also be determined from the parameters of the range. Also, <em>min</em> and <em>max</em> are not commonly applied to a string (they return character with smallest and biggest code respectively). Here, we are just pointing out that all these functions accept various kinds of collections as their argument (including range and string).</p>
-<div class="section" id="questions">
-<h3>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h3>
+<p>Vlerat e funksioneve <em>len</em>, <em>sum</em>, <em>min</em>, <em>max</em> për diapazonin gjithashtu mund të përcaktohen nga parametrat e diapazonit. Gjithashtu, <em>min</em> dhe <em>max</em> nuk zbatohen zakonisht në një varg (ata kthehen karakter me përkatësisht kodin më të vogël dhe më të madh). Këtu, ne thjesht po theksojmë se të gjitha këto funksione pranojnë lloje të ndryshme koleksionesh si argumentin e tyre (përfshirë gamën dhe vargun).</p>
+<div class="section" id="pyetj">
+<h3>Pyetj<a class="headerlink" href="#pyetj" title="Permalink to this headline">¶</a></h3>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="console__collections_quiz_tuple_unpack">
-            <p>Q-28: What does the following program print?</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
+            <p>Q-28: Çfare printon programi i mëposhtëm?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="n">t</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="console__collections_quiz_tuple_unpack_opt_a">a program error occurs</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_a">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_tuple_unpack_opt_a">a program error occurs</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="console__collections_quiz_tuple_unpack_opt_b">2</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_b">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_tuple_unpack_opt_b">2</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_b">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="console__collections_quiz_tuple_unpack_opt_c">20</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_c">Correct</li>
+            <li data-component="answer" data-correct id="console__collections_quiz_tuple_unpack_opt_c">20</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_c">Saktë</li>
             
-            <li data-component="answer"  id="console__collections_quiz_tuple_unpack_opt_d">3</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_d">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_tuple_unpack_opt_d">3</li><li data-component="feedback" id="console__collections_quiz_tuple_unpack_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -512,19 +512,19 @@ print('max(s) =', max(s))
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="console__collections_quiz_tuple_index">
-            <p>Q-29: What does the following program print?</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+            <p>Q-29: Çfare printon programi i mëposhtëm?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="console__collections_quiz_tuple_index_opt_a">1</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_a">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_tuple_index_opt_a">1</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_a">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="console__collections_quiz_tuple_index_opt_b">2</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="console__collections_quiz_tuple_index_opt_b">2</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_b">Saktë</li>
             
-            <li data-component="answer"  id="console__collections_quiz_tuple_index_opt_c">a program error occurs</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_c">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_tuple_index_opt_c">a program error occurs</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="console__collections_quiz_tuple_index_opt_d">3</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_d">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_tuple_index_opt_d">3</li><li data-component="feedback" id="console__collections_quiz_tuple_index_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -532,14 +532,15 @@ print('max(s) =', max(s))
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="console__collections_quiz_range1">
-            Q-30: Which range contains just values 1, 2, 3?
-            <li data-component="answer"  id="console__collections_quiz_range1_opt_a">range(4)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_a">Try again</li>
+            <p>Q-30: Cili varg përmban vlerat 1, 2, 3?</p>
+
+            <li data-component="answer"  id="console__collections_quiz_range1_opt_a">range(4)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_a">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="console__collections_quiz_range1_opt_b">range(1, 4)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="console__collections_quiz_range1_opt_b">range(1, 4)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_b">Saktë</li>
             
-            <li data-component="answer"  id="console__collections_quiz_range1_opt_c">range(3)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_c">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_range1_opt_c">range(3)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="console__collections_quiz_range1_opt_d">range(1, 3)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_d">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_range1_opt_d">range(1, 3)</li><li data-component="feedback" id="console__collections_quiz_range1_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -547,14 +548,15 @@ print('max(s) =', max(s))
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="console__collections_quiz_range2">
-            Q-31: How many values does range(1, 10, 2) contain?
-            <li data-component="answer" data-correct id="console__collections_quiz_range2_opt_a">5</li><li data-component="feedback" id="console__collections_quiz_range2_opt_a">Correct</li>
+            <p>Q-31: Sa vlera përmban vargu(1, 10, 2)?</p>
+
+            <li data-component="answer" data-correct id="console__collections_quiz_range2_opt_a">5</li><li data-component="feedback" id="console__collections_quiz_range2_opt_a">Saktë</li>
             
-            <li data-component="answer"  id="console__collections_quiz_range2_opt_b">6</li><li data-component="feedback" id="console__collections_quiz_range2_opt_b">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_range2_opt_b">6</li><li data-component="feedback" id="console__collections_quiz_range2_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="console__collections_quiz_range2_opt_c">9</li><li data-component="feedback" id="console__collections_quiz_range2_opt_c">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_range2_opt_c">9</li><li data-component="feedback" id="console__collections_quiz_range2_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="console__collections_quiz_range2_opt_d">10</li><li data-component="feedback" id="console__collections_quiz_range2_opt_d">Try again</li>
+            <li data-component="answer"  id="console__collections_quiz_range2_opt_d">10</li><li data-component="feedback" id="console__collections_quiz_range2_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -562,8 +564,8 @@ print('max(s) =', max(s))
             
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="console__collections_quiz_range_len">
-    <span data-component="question">Q-32: Pair ranges with the number of elements.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-32: Lidh vargun me numrin e elementëve.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="console__collections_quiz_range_len_drag1">5</li>
     <li data-component="dropzone" for="console__collections_quiz_range_len_drag1">range(5)</li>
@@ -579,8 +581,8 @@ print('max(s) =', max(s))
 </ul></div>
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="console__collections_quiz_range_values">
-    <span data-component="question">Q-33: Pair ranges with values.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-33: Lidh vargun me vlerat.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="console__collections_quiz_range_values_drag1">3, 4, 5</li>
     <li data-component="dropzone" for="console__collections_quiz_range_values_drag1">range(3, 6)</li>
@@ -604,17 +606,17 @@ print('max(s) =', max(s))
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Scripts and <em>for</em> loop' data-toggle="tooltip"><a href="02_Console_10_scripting.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Skripte dhe cikli <em>for</em>' data-toggle="tooltip"><a href="02_Console_10_scripting.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Counting and summing' data-toggle="tooltip"><a href="02_Console_12_algo_count_accumulate.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Numërimi dhe shuma' data-toggle="tooltip"><a href="02_Console_12_algo_count_accumulate.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Scripts and <em>for</em> loop' data-toggle="tooltip"><a href="02_Console_10_scripting.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Skripte dhe cikli <em>for</em>' data-toggle="tooltip"><a href="02_Console_10_scripting.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Counting and summing' data-toggle="tooltip"><a href="02_Console_12_algo_count_accumulate.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Numërimi dhe shuma' data-toggle="tooltip"><a href="02_Console_12_algo_count_accumulate.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

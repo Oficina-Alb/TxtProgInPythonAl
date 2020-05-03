@@ -1,18 +1,18 @@
-Drawing from reference - additional examples
+Vizatimi nga referenca - shembuj shtesë
 --------------------------------------------
 
-We assume that you have already acquired some skill in reading coordinates and calling functions for drawing basic shapes. Therefore, in the following tasks there will be some new challenges. 
+Supozojmë se tashmë keni fituar një aftësi në leximin e koordinatave dhe thirrjen e funksioneve për vizatimin e formave themelore. Prandaj, në detyrat e mëposhtme do të ketë disa sfida të reja.
 
-Many drawings have some regularity, like axial symmetry or a part of the drawing repeating itself. If you want to make such a drawing yourself, in order for it to look good you cannot select all points completely freely. Instead, some points should be chosen and some points should be calculated. 
+Shumë vizatime kanë një rregullsi, si simetri boshtore ose një pjesë të vizatimit që përsëritet vetë. Nëse dëshironi të bëni një vizatim të tillë vetë, në mënyrë që të duket mirë, nuk mund të zgjidhni të gjitha pikat plotësisht lirshëm. Në vend të kësaj, duhet të zgjidhen disa pika dhe të llogariten disa pika.
 
-In order to get closer to creating images that we design ourselves, the way of specifying drawings has been slightly modified. Drawings are still specified with an example program that draws an image (there is a saying that one image is worth 1000 words). What is new is that it will not be possible to read one or both of the coordinates in some parts of the image, but instead you will need to calculate those coordinates based on known coordinates.
+Në mënyrë që të afrohemi në krijimin e imazheve që ne hartojmë vetë, mënyra e specifikimit të vizatimeve është modifikuar pak. Vizatimet ende specifikohen me një program shembulli që vizaton një imazh (ekziston një thënie se një imazh vlen 1000 fjalë). Ajo që është e re është se nuk do të jetë e mundur të lexoni njërën ose të dy koordinatat në disa pjesë të figurës, por përkundrazi do t'ju duhet të llogaritni ato koordinata bazuar në koordinatat e njohura.
 
-In addition to needing a bit of calculation, the drawings in the following tasks also have more details, so it takes a little longer to make them.
+Përveç që kanë nevojë për pak llogaritje, vizatimet në detyrat e mëposhtme kanë edhe më shumë detaje, kështu që duhet pak më shumë për t’i bërë ato.
 
-Fence
+Gardh
 '''''
 
-In this task, reading the :math:`x` coordinate is limited to the first picket of the fence and the first space. All other needed coordinates can be calculated.
+Në këtë detyrë, leximi i koordinatës :math:`x` është i kufizuar në seleksionin e parë të gardhit dhe hapësirën e parë. Të gjitha koordinatat e tjera të nevojshme mund të llogariten.
 
 .. activecode:: PyGame__drawing_fence
    :nocodelens:
@@ -33,10 +33,10 @@ In this task, reading the :math:`x` coordinate is limited to the first picket of
       :modaloutput:
       :includesrc: src\PyGame\1_Drawing\4_ByGrid_Additional\fence.py
 
-Building
+Ndërtesa
 ''''''''
 
-All windows of the building are the same size, the spaces between the floors are equal, and the left and right sides of the building are symmetrical (except that symmetrical windows are not necessarily the same color). Use this information to calculate the coordinates that you cannot read.
+Të gjitha dritaret e ndërtesës janë të njëjtën madhësi, hapësirat midis dyshemeteve janë të barabarta, dhe faqet e majta dhe të djathta të ndërtesës janë simetrike (përveç që dritaret simetrik nuk janë domosdoshmërisht të njëjtën ngjyrë). Përdorni këtë informacion për të llogaritur koordinatat që nuk mund t'i lexoni.
 
 .. activecode:: PyGame__drawing_building
    :nocodelens:
@@ -62,9 +62,9 @@ All windows of the building are the same size, the spaces between the floors are
 Stickman
 ''''''''
 
-In this example, the coordinates of the points on the right leg cannot be read, but it is symmetrical to the left leg. Since the width of the image is known (see the beginning of the program), the coordinates of the two unknown points on the right can be calculated using the known symmetric points on the left.
+Në këtë shembull, koordinatat e pikave në këmbën e djathtë nuk mund të lexohen, por është simetrike me këmbën e majtë. Meqenëse gjerësia e figurës është e njohur (shiko fillimin e programit), koordinatat e dy pikave të panjohura në të djathtë mund të llogariten duke përdorur pikat simetrike të njohura në të majtë.
 
-**Hint:** Let :math:`A` be a point on the left side of the image, and :math:`B` a point on the right side of the image, symmetrical to the point :math:`A`. The two points then have the same :math:`y` coordinate, and the sum of the :math:`x` coordinates of the points :math:`A` and :math:`B` equals the width of the image.
+**Ndihmë** Le të jetë :math:`A` një pikë në anën e majtë të figurës, dhe :math:` B` një pikë në anën e djathtë të figurës, simetrike me pikën :math:`A `. Dy pikat më pas kanë të njëjtat :math:`y` koordinatë, dhe shuma e koordinatave të :math:` x` të pikave :math:`A` dhe :math:` B` është e barabartë me gjerësinë e figurës.
 
 .. activecode:: PyGame__drawing_stickman
    :nocodelens:
@@ -87,18 +87,18 @@ In this example, the coordinates of the points on the right leg cannot be read, 
           :modaloutput:
           :includesrc: src\PyGame\1_Drawing\4_ByGrid_Additional\stickman.py
 
-Cat
+Mace
 '''
 
-The ears of this cat can be depicted as filled triangles. As the ears are attached to the head, two vertices of each triangle can be chosen with more freedom (it is enough to place them somewhere inside the head circle). In addition to the two triangles representing the ears, we also have:
+Veshët e kësaj mace mund të përshkruhen si trekëndësha të mbushur. Ndërsa veshët janë ngjitur në kokë, dy vertikale të secilit trekëndësh mund të zgjidhen me më shumë liri (mjafton t'i vendosni ato diku brenda rrethit të kokës). Përveç dy trekëndëshave që përfaqësojnë veshët, kemi gjithashtu:
 
-- two circles (head and tip of the snout)
-- six ellipses (eyes, pupils and parts of the snout)
-- six lines (whiskers)
+- dy rrathë (koka dhe maja e gocës)
+- gjashtë elips (sy, nxënës dhe pjesë të gërhitës)
+- gjashtë rreshta (mustaqe)
 
-:math:`x` coordinates on the right side of the image cannot be read, but they can be calculated using symmetry (and the known width of the image - see the beginning of the program). 
+:math:`x` koordinatat në anën e djathtë të figurës nuk mund të lexohen, por ato mund të llogariten duke përdorur simetri (dhe gjerësia e njohur e figurës - shiko fillimin e programit).
 
-**Note:** The procedure for determining ellipse parameters on the right side is slightly different from the one used for circles or line segments. Note that the top **left** vertex of the rectangle circumscribed about the ellipse sought is in fact a mirror image of the top **right** vertex of the rectangle circumscribed about the ellipse known. This means that when we find the parameters *(x, y, w, h)* of the ellipse on the left side, the parameters of its symmetrical ellipse on the right are *(width - x - w, y, w, h)*, where *width* is the width of the window, *x*, *y* are the coordinates of the top left vertex of the rectangle around the ellipse on the left, and *w* and *h* are the width and height of the ellipses.
+**Shënim:** Procedura për përcaktimin e parametrave të elipsit në anën e djathtë është paksa e ndryshme nga ajo e përdorur për rrathët ose segmentet e linjës. Vini re se kulmi i sipërm **majtas** i drejtkëndëshit të rrethuar në lidhje me elipsën e kërkuar është në të vërtetë një imazh pasqyrë i kulmës së sipërme **të djathtë** të drejtkëndëshit të rrethuar në lidhje me elipsën e njohur. Kjo do të thotë që kur gjejmë parametrat *(x, y, w, h)* të elipsit në anën e majtë, parametrat e elipsit të tij simetrik në të djathtë janë *(gjerësia - x - w, y, w, h )*, ku *gjerësia* është gjerësia e dritares, *x*, *y* janë koordinatat e kulmës së sipërme të majtë të drejtkëndëshit rreth elipsit në të majtë, dhe * w * dhe * h * janë gjerësia dhe lartësia e elipsave.
 
 .. activecode:: PyGame__drawing_cat
    :nocodelens:

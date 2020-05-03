@@ -1,11 +1,11 @@
-Branching statements
+Deklarimet degëzuese
 ====================
 
-In the Karel lessons, every time we wanted Karel to move forward, we needed to check first if Karel could go ahead. These checks were necessary because if we tried to move the robot forward when the square in front of it did not exist, the program would report an error and stop working. For the same reason, we had been checking if there was a ball on a square before taking it, and we had been checking if Karel had a ball with him before dropping the ball.
+Në mësimet e Karelit, sa herë që donim që Karel të shkonte përpara, duhej të kontrollonim së pari nëse Kareli mund të shkonte përpara. Këto kontrolle ishin të domosdoshme sepse nëse do të përpiqeshim ta lëviznim robotin përpara kur sheshi përpara tij të mos ekzistonte, programi do të raportonte një gabim dhe do të ndalonte së punuari. Për të njëjtën arsye, ne ishim duke kontrolluar nëse kishte ndonjë top në një shesh kuti se ta merrte, dhe ne ishim duke kontrolluar nëse Karel kishte një top me të para se të binte topi.
 
-Similarly, in programs with numbers we often need to compare two values, that is, to determine whether they are equal, whether one is smaller than the other, different from the other, and the like. Depending on the outcome of the comparison, the program may continue to execute in different ways.
+Në mënyrë të ngjashme, në programet me numra shpesh duhet të krahasojmë dy vlera, d.m.th., për të përcaktuar nëse ato janë të barabarta, nëse njëra është më e vogël se tjetra, e ndryshme nga tjetra dhe të ngjashme. Në varësi të rezultatit të krahasimit, programi mund të vazhdojë të ekzekutohet në mënyra të ndryshme.
 
-Some of the symbols used for comparison are the same as in mathematics (for example ``<`` and ``>``) and some are not. The following table gives the notation of all standard comparisons used in mathematics and in Python (and also in many other programming languages).
+Disa nga simbolet e përdorura për krahasim janë të njëjta si në matematikë (për shembull ``<`` dhe ``>``) dhe disa jo. Tabela e mëposhtme jep shënimin e të gjitha krahasimeve standarde të përdorura në matematikë dhe në Python (dhe gjithashtu në shumë gjuhë të tjera të programimit).
 
 ====================   ==================== ========================================
 Math                   Python               Meaning
@@ -18,14 +18,14 @@ Math                   Python               Meaning
 :math:`a \neq b`       a != b               a is not equal to b
 ====================   ==================== ========================================
 
-Notation :math:`a<b` can be understood as an expression whose value is true or false in each case. These values are written in Python as *True* and *False* and they are **logical constants**, that is, constants of the type ``bool`` which we call the logical type. Expressions whose value is true or false (logical type) are called **logical expressions**. All the expressions in the table above are logical expressions (we will see more logical expressions later).
+Shënimi :math:`a <b` mund të kuptohet si një shprehje, vlera e së cilës është e vërtetë ose e rremë në secilin rast. Këto vlera janë shkruar në Python si *True* dhe *False* dhe ato janë **konstante logjike**, d.m.th., konstante të tipit ``bool`` të cilin ne i quajmë lloj logjik. Shprehjet, vlera e të cilave është e vërtetë ose e rremë (lloji logjik) quhen **shprehje logjike**. Të gjitha shprehjet në tabelën e mësipërme janë shprehje logjike (do të shohim më shumë shprehje logjike më vonë).
 
-if statement
+Deklarimi if
 ------------
 
-The *if* statement was already introduced in the Karel lessons, let's remind ourselves:
+Deklarimi *if* ishte futur tashmë në mësimet e Karelit, le të kujtojmë:
 
-The *if* statement is used to decide which of the two groups of statements to execute. In Python it is written as follows:
+Deklarimi *if* përdoret për të vendosur se cili nga dy grupet e deklaratave për të ekzekutuar. Në Python shkruhet si më poshtë:
 
 .. activecode:: console__if_else_syntax
    :passivecode: true
@@ -41,20 +41,20 @@ The *if* statement is used to decide which of the two groups of statements to ex
 
 .. infonote::
 
-    **Meaning (semantics) of the if statement:**
-    
-    The statement written above means: if the condition is fulfilled, execute *statement_a1*, ... *statement_ak*, otherwise execute *statement_b1*, ... *statement_bm*.
-    
-    **Writing rules (syntax) of the** if **statement**
-    
-    - After the word ``if``, a logical expression is written and at the end of the line the character ``:`` (a colon) is required.
-    - In the following lines, indented for the same number of spaces (usually 4), the statements that should be executed if the logical expression evaluates to *True* are written. There may be one or more of these statements.
-    - After the commands that are executed if the condition is fulfilled, the word ``else`` is written and again the character ``:`` (colon). The word ``else`` is written at the same level of indentation as the word ``if``.
-    - In the following lines, indented for the same number of spaces, write the commands that are to be executed if the logical expression evaluates to *False*. There may be one or more of these statements as well.
-    
-    The ``if`` statement is also called the *branching statement* because the program execution flow for this statement branches: the next statement to execute depends on the value of the logical expression in the condition. Groups of statements after the word *if* or *else* are therefore also called branches of the *if* statement.
+    **Kuptimi (semantika) e deklarimit if:**
+    
+    Deklarimi shkruar më lart do të thotë: nëse kushti është përmbushur, ekzekutoni *statement_a1*, ... *statement_ak*, përndryshe ekzekutoni *statement_b1*, ... *statement_bm*.
+    
+    **Rregullat e të shkruarit (sintaksë) të deklarimit if**
+    
+    - Pas fjalës ``if``, është shkruar një shprehje logjike dhe në fund të rreshtit kërkohet karakteri ``:``.
+    - Në rreshtat e mëposhtëm, të theksuar për të njëjtin numër hapësirash (zakonisht 4), janë shkruar deklarimet që duhet të ekzekutohen nëse shprehja logjike rezulton *True*. Mund të ketë një ose më shumë me këto deklarime.
+    - Pas urdhrave që janë ekzekutuar nëse plotësohet kushti, shkruhet fjala ``else`` dhe përsëri karakteri ``:``. Fjala ``else`` shkruhet në të njëjtin nivel si fjala ``if``.
+    - Në rreshtat e mëposhtëm, të indentifikuar për të njëjtin numër hapësirash, shkruajini komandat që duhet të ekzekutohen nëse shprehja logjike rezulton në *False*. Gjithashtu Mund të ketë një ose më shumë nga këto deklarime.
+    
+    Deklarimi ``if`` quhet edhe *thënie degëzuese* sepse rrjedhja e ekzekutimit të programit për këtë deklarim degëzon deklarimin tjetër për tu ekzekutuar dhe varet nga vlera e shprehjes logjike aktuale. Prandaj grupet e deklarimeve pas fjalës *if* ose *else* quhen edhe degë të deklarimit *if*.
 
-In case the program does not need to do anything when the condition of the *if* statement is not fulfilled, that is, when we do not need *else* branch of the *if* statement, we can omit it:
+Në rast se programi nuk ka nevojë të bëjë asgjë kur nuk plotësohet kushti i deklarimit *if*, d.m.th., kur nuk kemi nevojë për *if* degë të deklaratës *if*, mund ta heqim atë:
 
 .. activecode:: console__if_syntax
    :passivecode: true
@@ -64,25 +64,25 @@ In case the program does not need to do anything when the condition of the *if* 
        ...
        statement_ak
 
-We will use this short form of the *if* statement later.
+Ne do ta përdorim këtë formë të shkurtër të deklarimit *if* më vonë.
 
-If statement - examples and tasks
+Deklarimi if - shembuj dhe ushtrime
 '''''''''''''''''''''''''''''''''
 
 .. questionnote::
     
-    **Example - who is younger:** 
-    
-    Peter and Mark want to play a game of pool. They agreed that the younger player plays first. Write a program that reads the age of Peter and Mark (that are not equal) and prints who will make the first move.
+    **Shembull - kush është më i ri:**
+    
+     Peter dhe Marku duan të luajnë një lojë në pishinë. Ata ranë dakord që lojtari më i ri të luajë i pari. Shkruani një program që lexon moshën e Pjetrit dhe Markut (që nuk janë të barabartë) dhe cili që do të bëjnë lëvizjen e parë.
     
 .. activecode:: console__branching_younger
 
-    peter = int(input("How old is Peter: "))
-    mark = int(input("How old is Mark: "))
+    peter = int(input("Sa vjeç është Peter: "))
+    mark = int(input("Sa vjeç është Mark: "))
     if peter < mark:
-        print('Peter plays first.')
+        print('Peter luan i pari.')
     else:
-        print('Mark plays first.')
+        print('Mark luan i pari.')
 
 
 
@@ -90,19 +90,19 @@ If statement - examples and tasks
 
 .. questionnote::
     
-    **Example - packing:** 
-    
-    The eggs on the farm are packed in 10-pack boxes and full boxes are sent to the store. Write a program that takes the number of eggs ready for packing and prints whether all the eggs can be packed and shipped to the store, or whether a few eggs will be left unpacked temporarily.
-    
-Here we need to check that the number of eggs is divisible by 10. For this reason, we use the operator ``%``, which gives the remainder after division. If the remainder after dividing the number of eggs by 10 is equal to zero, all the eggs can be packed and sent.
+     **Shembull - paketim:**
+    
+     Vezët në fermë janë paketuar në kuti me 10 pako dhe kutitë e plota dërgohen në dyqan. Shkruani një program që merr numrin e vezëve gati për paketim dhe shtypni nëse të gjitha vezët mund të paketohen dhe dërgohen në dyqan, ose nëse disa vezë do të lihen të paketuara përkohësisht.
+    
+Këtu duhet të kontrollojmë që numri i vezëve është i ndashëm me 10. Për këtë arsye, ne përdorim operatorin ``%``, i cili jep pjesën e mbetur pas ndarjes. Nëse pjesa tjetër pasi të keni ndarë numrin e vezëve me 10 është e barabartë me zero, të gjitha vezët mund të paketohen dhe dërgohen.
 
 .. activecode:: console__branching_eggs
 
-    num_eggs = int(input("How many eggs: "))
+    num_eggs = int(input("Sa vezë janë: "))
     if num_eggs % 10 == 0:
-        print('All eggs can be sent.')
+        print('Të gjitha vetët mund të dërgohen.')
     else:
-        print('Some eggs will remain.')
+        print('Disa vezë do të mbesin.')
 
 
 
@@ -110,16 +110,16 @@ Here we need to check that the number of eggs is divisible by 10. For this reaso
 
 .. questionnote::
     
-    **Task - Street side:** 
-    
-    Even house numbers are on the right side of the street and odd house numbers on the left. Write a program that takes a house number and prints which side of the street the number is on.
+    **Detyrë - Ana e rrugës: **
+    
+     Numrat e shtëpive janë në anën e djathtë të rrugës dhe numrat e shtëpive të çuditshme në të majtë. Shkruaj një program që merr një numër shtëpie dhe shtyp në cilën anë të rrugës numri është ndezur.
 
 
-Here it is needed to examine if the given number is divisible by 2. The task is similar to the previous one - if the remainder of dividing the given house number by 2 is equal to zero, the number is on the right side of the street, otherwise it is on the left side.
+Këtu është e nevojshme të ekzaminohet nëse numri i dhënë është i ndashëm me 2. Detyra është e ngjashme me atë të mëparshme - nëse pjesa tjetër e ndarjes së numrit të shtëpisë së dhënë me 2 është e barabartë me zero, numri është në anën e djathtë të rrugës, përndryshe është në anën e majtë.
 
 .. activecode:: console__branching_home_number
 
-    number = int(input("What is the house number: "))
+    number = int(input("Cili është numri i shtëpisë: "))
     # finish the program
 
 
@@ -127,46 +127,46 @@ Here it is needed to examine if the given number is divisible by 2. The task is 
 
 .. questionnote::
     
-    **Task - cinema:** 
-    
-    You have 10 euros with you. Write a program that takes the movie ticket price and popcorn price, then prints out if you have enough money for both the ticket and popcorn.
-    
+    **Detyrë - kinema: **
+    
+     Ju keni 10 euro me vete. Shkruani një program që merr çmimin e biletave të filmit dhe çmimin e kokoshkave, atëherë shtypni nëse keni para të mjaftueshme si për biletën ashtu edhe për kokoshka.
     
 
 .. activecode:: console__branching_cinema
 
-    ticket_price = int(input("How much for the ticket: "))
-    popcorn_price = int(input("How much for the popcorn: "))
+    ticket_price = int(input("Sa kushtona bileta: "))
+    popcorn_price = int(input("Sa kushtojne kokoshkat: "))
     # finish the program
 
 
-Logical expressions
+Shprehjet logjike
 -------------------
 
-In some tasks we need to express conditions that are more complex than simply comparing two values. The words **and**, **or** and **not** are used to connect the simpler terms, and Python uses exactly the same words for that. Here is how to evaluate such complex contidions. If *a* and *b* are any conditions, then:
+Në disa detyra duhet të shprehim kushte më komplekse sesa thjesht të krahasojmë dy vlera. Fjalët **and**, **or** dhe **no** përdoren për të lidhur termat më të thjeshtë, dhe Python përdor pikërisht të njëjtat fjalë për këtë. Ja se si të vlerësohen pohime të tilla komplekse. Nëse *a* dhe *b* janë kushte, atëherë:
 
-- condition ``a and b`` will be fulfilled if both conditions *a* and *b* are fulfilled;
-- condition ``a or b`` will be fulfilled if at least one of conditions *a* and *b* is fulfilled;
-- condition ``not a`` will be fulfilled if condition *a* is not fulfilled (which we have already mentioned in the lessons on Karel);
+- kushti ``a and b`` do përmbushen nëse të dyja kushtet *a* dhe *b* janë përmbushur;
+- condition ``a or b`` çdo përmbushen nëse të paktën njëri kusht *a* dhe *b* është i përmbushur;
+- condition ``not a`` do të përmbushet nëse kushti *a* nuk përmbushet (gjë që kemi përmendur tashmë në mësimet për Karelin);
 
-These conditions can be further combined into even more complex ones according to the needs of the task. In complex conditions, we can use parentheses to influence the order in which the conditions are calculated (also when we are not sure which is the default order), and to make the program clearer to other people reading it. If there are no parentheses in the complex condition, *not* is applied first, then *and*, and finally *or*.
+Këto kushte mund të kombinohen më tej në kushte edhe më komplekse sipas nevojave të detyrës. Në kushte komplekse, ne mund të përdorim kllapa për të ndikuar në rendin në të cilin llogariten kushtet (gjithashtu kur nuk jemi të sigurt se cili është urdhri i paracaktuar), dhe ta bëjmë programin më të qartë për njerëzit e tjerë që e lexojnë atë. Nëse nuk ka kllapa në gjendje komplekse, *no* aplikohet së pari, atëherë *and*, dhe në fund *or*.
 
-Logical expressions - examples
+Shprehje logjike - shembuj
 ''''''''''''''''''''''''''''''
 
 .. questionnote::
     
-    **Example - leap year:**
+   **Shembull - vit i brishtë:**
 
-    Write a program that prints whether a given year (between the 1800 and the 2200, including borders) is leaп or simple.
-    
-    According to the Gregorian calendar, the following rules are used to determine whether a year is simple or leap:
-    
-    - years that are not divisible by 4 (e.g., 1923, 1070, 2017) are simple;
-    - years that are divisible by 100 and not by 400 (e.g. 1700, 1800, 1900, 2100, 2200) are also simple;
-    - all other years (eg 1984, 2000, 2012) are leap. These are years that are divisible by 4 and not by 100, or are divisible by 400.
+     Shkruaj një program që shtyp nëse një vit i caktuar (midis 1800 dhe 2200, përfshirë kufijtë) është i thjeshtë ose i thjeshtë.
+    
+     Sipas kalendarit Gregorian, rregullat e mëposhtme përdoren për të përcaktuar nëse një vit është i thjeshtë apo i brishtë:
+    
+     - vitet që nuk janë të ndara me 4 (p.sh., 1923, 1070, 2017) janë të thjeshta;
+     - vitet që janë të ndara me 100 dhe jo me 400 (p.sh. 1700, 1800, 1900, 2100, 2200) janë gjithashtu të thjeshta;
+     - të gjitha vitet e tjera (p.sh. 1984, 2000, 2012) janë kërcime. Këto janë vite që janë të ndara me 4 dhe jo nga 100, ose janë të ndara me 400.
 
-Writing down these rules in the form of logical conditions, we get:
+Duke shkruar këto rregulla në formën e kushteve logjike, marrim:
+
     
 .. activecode:: console__branching_leap_year1
 
@@ -176,7 +176,7 @@ Writing down these rules in the form of logical conditions, we get:
     else:
         print("Year", year, "is leap.")
 
-We get an equally good solution if we use the description for leap years given in rule 3 (verify by thinking through it and by trying both programs that we get the same result):
+Ne marrim një zgjidhje po aq të mirë nëse përdorim përshkrimin për vitet e brishtë të dhënë në rregullin 3 (verifikoni duke menduar përmes tij dhe duke provuar të dy programet që kemi marrë të njëjtin rezultat):
     
 .. activecode:: console__branching_leap_year2
 
@@ -189,19 +189,19 @@ We get an equally good solution if we use the description for leap years given i
 
 .. questionnote::
 
-    **Example - office hours:** 
-    
-    The opening hours of one souvenir shop are from 7 to 11 in the morning and from 17 to 22 in the evening (to be considered that it works at 7:00 and at 17:00 sharp and does not work at 11:00 and at 22:00). Peter came across the store at *H* hours and *M* minutes. Write a program that takes the number *H* (from 0 to 23) and answers whether Peter came across the store during office hours.
+    **Shembull - orët e zyrës:**
+    
+     Orët e hapjes së një dyqani me suvenire janë nga 7 në 11 në mëngjes dhe nga 17 në 22 në mbrëmje (të konsiderohet se funksionon në 7:00 dhe në 17:00  dhe nuk funksionon në orën 11:00 dhe në 22:00). Peter erdhi nëpër dyqan në orën *H* orë dhe *M* minuta. Shkruani një program që merr numrin *H* (nga 0 në 23) dhe përgjigjet nëse Peter erdhi nëpër dyqan gjatë orarit të punës.
     
 .. activecode:: console__branching_working_hours1
 
     h = int(input())
     if (7 <= h and h < 11) or (17 <= h and h < 22):
-        print("Peter came across during office hours.")
+        print("Peter erdhi gjatë orarit të punës.")
     else:
-        print("Peter came across out of business hours.")
+        print("Peter erdhi jashtë orarit të punës.")
     
-We can also come to a solution by gradually computing logical values, using logical variables:
+Ne gjithashtu mund të arrijmë në një zgjidhje duke llogaritur gradualisht vlerat logjike, duke përdorur variabla logjike:
 
 .. activecode:: console__branching_working_hours2
 
@@ -210,23 +210,23 @@ We can also come to a solution by gradually computing logical values, using logi
     at_evening_office_hours = 17 <= h and h < 22
     at_office_hours = at_morning_office_hours or at_evening_office_hours
     if at_office_hours:
-        print("Peter came across during office hours.")
+        print("Peter erdhi gjatë orarit të punës.")
     else:
-        print("Peter came across out of business hours.")
+        print("Peter erdhi jashtë orarit të punës.")
 
-In this solution, only *h* is an integer variable, and all others (*at_morning_office_hours*, *at_evening_office_hours*, *at_office_hours*) are logical, which means that they will get values *True* or *False* when executing the program.
+Në këtë zgjidhje, vetëm *h* është variabel integer, dhe të tjerat (*at_morning_office_hours*, *at_evening_office_hours*, *at_office_hours*) janë logjike, që do të thotë që marrin vlera *True* ose *False* kur programi ekzekutohet.
 
-Logical expressions - questions
+Shprehej logjike - pyetje
 '''''''''''''''''''''''''''''''
 
 .. dragndrop:: console__branching_quiz_compare
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: a <= b ||| a < b or a == b
     :match_2: a >= b ||| b <= a
     :match_3: not (a == b) ||| a < b or a > b
     :match_4: not (a != b) ||| a == b
 
-    Match the equivalent expressions
+    Lidh shprehjet ekuivalente
 
 .. mchoice:: console__branching_quiz_interval
    :multiple_answers:
@@ -235,22 +235,22 @@ Logical expressions - questions
    :answer_c: not(7 <= h) or not(h < 11)
    :answer_d: h <= 7 or 11 < h
    :correct: b, c
-   :feedback_a: No, this condition is not fulfilled for any h.
-   :feedback_b: Correct.
-   :feedback_c: Correct.
-   :feedback_d: No, the value of the conditions differs if h is exactly 7 or 11.
+   :feedback_a: Jo, kjo gjendje nuk përmbushet për asnjë h.
+   :feedback_b: Saktë.
+   :feedback_c: Saktë.
+   :feedback_d: Jo, vlera e kushteve ndryshon nëse h është saktësisht 7 ose 1
 
-   What are all conditions equal to **not (7 <= h and h <11)**?
+   A janë të gjitha kushtet e barabarta me **not (7 <= h and h <11)**?
 
 
 .. dragndrop:: console__branching_quiz_abc_sign
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: At least one of a, b, c is positive ||| a > 0 or b > 0 or c > 0
     :match_2: None of a, b, c is positive ||| a <= 0 and b <= 0 and c <= 0
     :match_3: a, b and c are not all positive ||| a <= 0 or b <= 0 or c <= 0
     :match_4: a, b and c are all positive ||| a > 0 and b > 0 and c > 0
 
-    Match conditions and descriptions
+    Lidh kushtet me përshkrimin
 
 .. mchoice:: console__branching_quiz_sport_center
    :multiple_answers:
@@ -259,21 +259,21 @@ Logical expressions - questions
    :answer_c: population <= 10000 and income <= 2000
    :answer_d: (income <= 2000) or (income > 2000 and population <= 10000)
    :correct: a, b, d
-   :feedback_a: Correct.
-   :feedback_b: Correct.
-   :feedback_c: Wrong.
-   :feedback_d: Correct.
+   :feedback_a: Saktë.
+   :feedback_b: Saktë.
+   :feedback_c: Gabim.
+   :feedback_d: Saktë.
 
-   The state government is offering assistance to build a sports center. Settlements with up to 10,000 residents are eligible to apply, as well as settlements with more than 10,000 residents and an average income of up to 2000. Which of the conditions correctly checks whether a settlement  can apply?
+   Qeveria e shtetit po ofron ndihmë për ndërtimin e një qendre sportive. Vendbanimet me deri në 10,000 banorë kanë të drejtë të aplikojnë, si dhe vendbanime me më shumë se 10,000 banorë dhe të ardhura mesatare deri në 2000. Cila nga kushtet kontrollon saktë nëse mund të aplikojë një zgjidhje?
 
-Logical expression - tasks
+Shprehje logjike - detyra
 ''''''''''''''''''''''''''
 
 .. questionnote::
 
-    **Task - numbers in order:** 
-    
-    Write a program that takes integers *a*, *b*, *c* and answers the question whether these numbers are given in order from smallest to largest.
+    **Detyrë - numra sipas radhës: **
+    
+     Shkruaj një program që merr numrat e plotë *a*, *b*, *c* dhe i përgjigjet pyetjes nëse këta numra janë dhënë në mënyrë që nga më i vogli te më i madhi.
 
     
 .. activecode:: console__branching_increasing3
@@ -288,9 +288,9 @@ Logical expression - tasks
 
 .. questionnote::
 
-    **Task - middle number:** 
+    **Detyrë - Numri mesatar:** 
     
-    Write a program that takes integers *a*, *b*, *c* and answers the question whether *b* is medium in size. 
+    Shkruaj një program që merr numrat e plotë *a*, *b*, *c* dhe i përgjigjet pyetjes nëse *b* është me madhësi mesatare. 
 
     
 .. activecode:: console__branching_middlenum
@@ -303,13 +303,13 @@ Logical expression - tasks
     
 .. questionnote::
 
-    **Task - watching the dog:** 
+    **Task - vëzhgo qenin:** 
     
-    Anna and Mark live together and have a dog named Bobby. The two are scheduled to travel the same month, Anna from day *a1* to *a2*, and Mark from day *m1* to *m2*. They both leave in the morning and return in the evening. Since they don't want to leave Bobby alone, they wonder if their trips overlap.
-    
-    Write a program that takes integers *a1*, *a2*, *m1* and *m2*, and answers the question of whether Anna's and Mark's travels overlap.
-    
-**Hint:** trips overlap if Marko leaves before Ana returns (the day of Mark's departure is less than or equal to the day of Ana's return) or vice versa - if Ana leaves before Marko returns.
+   Anna dhe Marku jetojnë së bashku dhe kanë një qen të quajtur Bobby. Të dy janë planifikuar të udhëtojnë në të njëjtin muaj, Anna nga dita *a1* në *a2*, dhe Marku nga dita *m1* në *m2*. Të dy largohen në mëngjes dhe kthehen në mbrëmje. Meqenëse nuk duan ta lënë Bobby-in vetëm, ata pyesin nëse udhëtimet e tyre mbivendosen.
+    
+     Shkruani një program që merr numrat e plotë *a1*, *a2*, *m1* dhe *m2* dhe përgjigjet në pyetjen nëse udhëtimet e Anës dhe Markut mbivendosen.
+    
+**Ndihmë:** udhëtimet mbivendosen nëse Marko largohet para se Ana të kthehet (dita e nisjes së Markut është më pak se ose e barabartë me ditën e kthimit të Anas) ose anasjelltas - nëse Ana largohet para se të kthehet Marko.
 
 .. activecode:: console__branching_intervals
 

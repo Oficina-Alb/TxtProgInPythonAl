@@ -1,36 +1,37 @@
-Keyboard events
+Eventet e tastierës
 ---------------
 
-Of the keyboard-generated events, the most important is the key pressing event, so we will focus on that one the most. When pressing keys on the keyboard, in the *event* object that represents an event in our programs, the value of *event.type* will be ``pg.KEYDOWN``.
+Nga eventet e krijuara në tastierë, më e rëndësishmja është ngjarja kryesore e shtypjes, kështu që ne do të përqendrohemi më shumë në atë. Kur shtypni tastet në tastierë, në objektin *event* që përfaqëson një ngjarje në programet tona, vlera e *events.type* do të jetë ``pg.KEYDOWN`.
 
-When pressing a keyboard key is registered, we almost always want to know which key it is. This we can find out by testing the value of ``event.key``. As we already mentioned in the lesson on reading the keyboard state, that there is a constant for each key corresponding to that key. Let us recall the names of these constants for some frequently tested keys (you can see a complete list of these constants `here <https://www.pygame.org/docs/ref/key.html>`__ ):
+Kur shtypnja e një çelësi në tastierë është regjistruar, ne pothuajse gjithmonë dëshirojmë të dimë se cili çelës është. Këtë mund ta zbulojmë duke testuar vlerën e ``event.key``. Siç kemi përmendur tashmë në mësimin për të lexuar gjendjen e tastierës, ekziston një konstantë për secilën çelës që korrespondon me atë çelës. Le të rikujtojmë emrat e këtyre konstantave për disa çelësa të testuar shpesh (mund të shihni një listë të plotë të këtyre konstanteve
+ `këtu <https://www.pygame.org/docs/ref/key.html>`__ ):
 
 ============ ==============
-constant     key
+Celësi       konstant
 ============ ==============
-pg.K_LEFT    left arrow
-pg.K_RIGHT   right arrow
-pg.K_UP      up arrow
-pg.K_DOWN    down arrow
+pg.K_LEFT    shigjeta majtas
+pg.K_RIGHT   shigjeta djathtas
+pg.K_UP      shigjeta lart
+pg.K_DOWN    shigjeta poshtë
 pg.K_SPACE   space bar
-pg.K_a       *a* key
-pg.K_b       *b* key
-pg.K_c       *c* key
+pg.K_a       çelësi *a*
+pg.K_b       çelësi *b* 
+pg.K_c       çelësi *c* 
 ============ ==============
 
-The value of the *event.key* field tells us which physical key is pressed, and this value is suitable for keys such as arrow keys, *Ctrl*, *Shift*, *Alt*, *Home*, *End* and the like. When it comes to text, it may be more convenient to use the value of the ``event.unicode`` field, which contains the character that was just typed (as a single character string).
+Vlera e *event.key* na tregon se cili çelës fizik shtypet, dhe kjo vlerë është e përshtatshme për çelësat siç janë çelësat shigjetë, *Ctrl*, *Shift*, *Alt*, *Home*, *End* dhe të ngjashme Kur bëhet fjalë për tekstin, mund të jetë më i përshtatshëm të përdoret vlera e fushës ``event.unicode``, e cila përmban karakterin që sapo ishte shtypur (si një varg i vetëm karakteresh).
 
-The following example illustrates testing a keystroke, or a *pg.KEYDOWN* event.
+Shembulli i mëposhtëm ilustron testimin e një goditjeje kryesore ose një ngjarje *pg.KEYDOWN*.
 
 .. questionnote::
 
-    **Example - crossword** 
+    **Shembull - fjalëkryq** 
     
-    In this example, the user can use the arrow keys on the keyboard to move the frame and enter letters into boxes.
-    
-Note the *handle_event* function in which the event type check occurs, and then, if it is a key press, additional event information, stored in the *event.key* and *event.unicode* fields, is checked.
+    Në këtë shembull, përdoruesi mund të përdorë tastet e shigjetave në tastierë për të lëvizur kornizën dhe për të futur shkronja në kuti.
+    
+Vini re funksionin *hand_event* në të cilin ndodh kontrolli i llojit të ngjarjes, dhe pastaj, nëse është një shtypje kryesore, kontrollohen informacione shtesë për ngjarjen, të ruajtura në fushat *event.key* dhe *event.unicode*.
 
-Additionally, you can try to put together some interesting crosswords.
+Për më tepër, mund të provoni të bashkoni disa fjalëkryq interesantë.
 
 .. activecode:: PyGame__interact_crossword
     :nocodelens:
@@ -38,25 +39,26 @@ Additionally, you can try to put together some interesting crosswords.
     :modaloutput:
     :includesrc: src/PyGame/3_Interaction/3e_Keyboard_events/crossword.py
     
-Let's compare this program to the "Navigation" program from the keyboard status reading lesson:
+Le ta krahasojmë këtë program me programin "Navigimi" nga mësimi i leximit të statusit të tastierës:
 
 =========================================================== =============================================================
-In the "Navigation" program                                 In the "Crossword" program
+Në programin "Navigimi"                                     Në programin "Fjalëkryq"
 =========================================================== =============================================================
-the yellow circle was moving by one pixel - it was gliding  the frame moves by one field - it jumps
-we had no precise control of where the circle would stop    we can precisely control where the frame will stop
-it didn't matter where exactly the circle would stop        it matters where exactly the frame will stop
-we were reading the status of the keybard keys (down or up) we are using an event (pressing a key)
+rrethi i verdhë po lëvizte me një pixel                     po rrëshqiste lëvizjet e kornizës nga një fushë - kërcen
+nuk kemi pasur kontroll të saktë se ku do të ndalet rrethi  ne mund të kontrollojmë saktësisht se ku do të ndalet korniza
+nuk kishte rëndësi se ku do të ndalonte saktësisht rrethi   ka rëndësi se ku do të ndalet saktësisht korniza
+ne po lexonim statusin e çelësave të tastierësne            jemi duke përdorur një ngjarje (duke shtypur një çelës)
+ (poshtë ose lart) 
 =========================================================== =============================================================
 
 
 .. questionnote::
 
-    **Task - navigation through fields** 
+    **Detyrë - navigo rreth fushave** 
     
-    Write a program that works as shown in the example("Play task" button). 
-    
-    The user can use the arrow keys on the keyboard to guide the character represented with a yellow circle. The character moves around the fields with white dots.
+    Shkruaj një program që funksionon siç tregohet në shembullin (butoni "Luaj detyrën").
+    
+     Përdoruesi mund të përdorë tastet e shigjetave në tastierë për të udhëhequr personazhin e përfaqësuar me një rreth të verdhë. Karakteri lëviz nëpër fusha me pika të bardha.
     
 
 .. activecode:: PyGame__interact_pacman1
@@ -94,16 +96,18 @@ we were reading the status of the keybard keys (down or up) we are using an even
 
 .. questionnote::
 
-    **Task - making a maze** 
+    **Detyrë - bëj një labirint** 
     
-    Write a program that makes a maze. The red frame should be controlled using the arrows, and pressing the space bar should change the color of a square (from black to white and vice versa).
-    
-When you complete the task, try the following:
+    Shkruaj një program që bën një labirint. Korniza e kuqe duhet të kontrollohet duke përdorur shigjetat, dhe shtypja e spacebar duhet të ndryshojë ngjyrën e një kutie (nga e zeza në e bardhë dhe anasjelltas).
+    
+Kur të kryeni detyrën, provoni si më poshtë:
 
-- click on the "Play task" button (this time the example program does more than what we asked of you)
-- make the maze the way you want
-- press *S* for start and watch
-- press *P* to turn pause mode on and off, that is to stop or resume searching
+- klikoni në butonin "Luaj detyrën" (këtë herë programi i shembullit bën më shumë nga sa kërkuam prej jush)
+- bëni labirint ashtu siç dëshironi
+- shtypni *S* për fillimin dhe shikimin
+- shtypni *P* për të aktivizuar dhe fikur modalitetin e pauzës, domethënë për të ndaluar ose rifilluar kërkimin
+
+labirint
     
 .. commented out
 
@@ -148,22 +152,22 @@ When you complete the task, try the following:
     pygamebg.frame_loop(10, new_frame, handle_event)
             
 
-Bonus - a typing practice program
+Bonus - një praktikë programi shkrimi
 '''''''''''''''''''''''''''''''''
 
-The program below is intended for typing practice. The program is long, but you should be able to understand a big part of it.
+Programi më poshtë ka për qëllim praktikën e shkrimit. Programi është i gjatë, por duhet të jeni në gjendje të kuptoni një pjesë të madhe të tij.
 
-You might want (without obligation) to tailor the program to your needs, especially at the beginning. For example:
+Ju mund të dëshironi (pa detyrim) ta përshtatni programin me nevojat tuaja, veçanërisht në fillim. Për shembull:
 
-- to slow down (or later accelerate) the falling of the letters
-- not to lose points when you make a mistake
-- when you master the letters that fall the first, to remove them from the list of letters to practice
-- to change the set of falling characters to numbers and operation signs only (if you want to practice typing only on the numeric keypad on the right side)
-- to have pressing the spacebar delete the lowest letter (with somewhat reducing the score) 
+- për të ngadalësuar (ose më vonë përshpejtimin) rënien e shkronjave
+- të mos humbasësh pikë kur gabon
+- kur zotëroni shkronjat që bien të parat, për t'i hequr ato nga lista e letrave për të praktikuar
+- për të ndryshuar grupin e karaktereve në rënie në numra dhe vetëm shenjat e funksionimit (nëse doni të praktikoni të shtypni vetëm në tastierën numerike në anën e djathtë)
+- të mbani shtypur spacebar dhe të fshini shkronjën më të ulët (me paksa zvogëlimin e rezultatit)
 
-or anything else you can think of.
-    
-When you have time, you are encouraged to also try to get as high a score as you can (without cheating).
+ose gjithçka tjetër që mund të mendoni.
+    
+Kur të keni kohë, ju inkurajmë të përpiqeni të merrni sa më shumë rezultate (pa bërë hile)..
 
 .. activecode:: PyGame__interact_typing_tutor
     :nocodelens:

@@ -1,22 +1,22 @@
-*For* statement - practicing
+*For* praktikë
 ============================
 
-In this section we will only practice the use of *for* statement.
+Në këtë seksion do të praktikojmë përdorimin e *for*
 
-Tasks for exercise
+Ushtrime
 ------------------
 
-Three times up and down
+Tre herë lart dhe poshtë
 '''''''''''''''''''''''
 
 .. questionnote::
 
-  Karel is on a rectangular board of 5 rows and 7 columns and needs to reach the right bottom square.
+  Karel është në një bord drejtkëndor prej 5 rreshtave dhe 7 kolonave dhe duhet të arrijë në kutinë e poshtme të djathtë.
 
 
-Karel should repeat one complex action three times, that is, to go to the next column to the right, go to the top of the column, go to another column to the right, go down to the first row, and finally turn towards the last column to prepare for the next iteration.
+Kareli duhet të përsërisë një veprim kompleks tre herë, domethënë të shkojë në kolonën tjetër në të djathtë, të shkojë në krye të kolonës, të shkojë në një kolonë tjetër në të djathtë, të zbresë në rreshtin e parë dhe në fund të kthehet drejt kolona e fundit për t’u përgatitur për përsëritjen tjetër.
 
-Complete the program, taking into consideration that the counter in *for* statements you write should not be named ``i`` (this name is already used in the outer loop).
+Përfundoni programin, duke marrë parasysh që sporteli në *for* deklarimet që shkruani nuk duhet të emërohet ``i`` (ky emër tashmë përdoret në loop/in e jashtëm).
 
 .. karel:: Karel_for_up_col_down_col_constant
    :blockly:
@@ -80,16 +80,16 @@ Complete the program, taking into consideration that the counter in *for* statem
 
           turn_left()              # turn east
 
-Bring all the balls from all the squares
+Sill të gjithë topat nga të gjithë fushat
 ''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  Karel should bring all 12 balls to the starting square.
+  Kareli duhet të sjellë të gjitha 12 topat në kutinë fillestare.
 
-Karеl needs to repeat "step into the next column and empty it" four times and eventually come back to the starting square and drop all the balls. Karel can empty each column by repeating "move one step forward and take the ball" three times, and then returning to the bottom of the column, facing the next column.
+Karél duhet të përsërisë "hapin në kolonën tjetër dhe ta zbrazë" katër herë dhe përfundimisht të kthehet në kutinë fillestare dhe t’i hedhë të gjitha topat. Kareli mund ta zbrazë secilën kolonë duke përsëritur "lëviz një hap përpara dhe ta marr topin" tre herë, dhe pastaj të kthehet në fund të kolonës, përballë kolonës tjetër.
 
-Complete the program.
+Plotëso programin.
 
 .. karel:: Karel_for_fetch_from_matrix
    :blockly:
@@ -174,14 +174,14 @@ Complete the program.
           drop_ball()
 
 
-Triple loop
+ Loop tresh
 '''''''''''
 
 .. questionnote::
 
-  Now, there are 4 balls on each of the 6 squares, similar to the the previous task. Karel should bring all 24 balls to the starting square.
+  Tani, ka 4 topa në secilën nga 6 sheshet, të ngjashme me detyrën e mëparshme. Kareli duhet të sjellë të gjitha 24 topat në sheshin fillestar.
 
-The only difference (compared to the previous task) is that now *pick_ball()* statement should be in an additional loop, the third in depth. Also, the number of balls that Karel drops on the starting square (at the end of the program) is different. Therefore, a bit easier way to solve the task is to copy the previous program and modify it.
+Dallimi i vetëm (krahasuar me detyrën e mëparshme) është se deklarim tani *pick_ball ()* duhet të jetë në një loop shtesë, e treta në thellësi. Gjithashtu, numri i topave që Karel lëshon në kutinë fillestare (në fund të programit) është i ndryshëm. Prandaj, një mënyrë pak më e lehtë për të zgjidhur detyrën është kopjimi i programit të mëparshëm dhe modifikimi i tij.
 
 .. karel:: Karel_for_fetch_24_from_matrix
    :blockly:
@@ -251,14 +251,14 @@ The only difference (compared to the previous task) is that now *pick_ball()* st
           drop_ball()
 
 
-Ascend and descend
+Ngjitje dhe zbritje
 ''''''''''''''''''
 
 .. questionnote::
 
-  Karel should climb up the first set of stairs, then go down the other ones, and end up in the lower right corner.
+  Kareli duhet të ngjitet në grupin e parë të shkallëve, pastaj të zbresë ato të tjera dhe të përfundojë në këndin e poshtëm të djathtë.
 
-Now we need two loops one after the other (not nested). In the first loop, Karel should climb to the first staircase, and come down the second staircase in the second loop. In each loop, Karel has to perform 4 actions that represent one step up or down the stairs.
+Tani kemi nevojë për dy sythe njëra pas tjetrës (jo të loops). Në lakin e parë, Kareli duhet të ngjitet në shkallën e parë dhe të zbresë shkallën e dytë në loop e dytë. Në secilën loop, Kareli duhet të kryejë 4 veprime që përfaqësojnë një hap lart ose poshtë shkallëve.
 
 .. karel:: Karel_for_stairs_constant
    :blockly:
@@ -325,14 +325,14 @@ Now we need two loops one after the other (not nested). In the first loop, Karel
           move(); turn_left()        # go one stair down
           move(); turn_right() 
 
-Collect the balls on the stairs
+Merr topin në shkallë
 '''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  Karel should finish again in the lower right corner, and along the way he should take all the balls.
+  Kareli duhet të përfundojë përsëri në këndin e poshtëm të djathtë, dhe gjatë rrugës ai duhet të marrë të gjitha topat.
 
-A good way to solve this task is to start from the solution of the previous task. Hint: copy the solution of the previous task here, and then insert the loops for taking the balls.
+Një mënyrë e mirë për të zgjidhur këtë detyrë është të filloni nga zgjidhja e detyrës së mëparshme. Këshillë: kopjoni zgjidhjen e detyrës së mëparshme këtu, dhe pastaj futni sythe për marrjen e topave.
 
 .. karel:: Karel_for_stairs_and_balls_constant
    :blockly:

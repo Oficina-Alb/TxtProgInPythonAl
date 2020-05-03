@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Scripts and for loop &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Skripte dhe cikli for &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data collections" href="02_Console_11_collections.html" />
-    <link rel="prev" title="Complex branching" href="02_Console_09_elif.html" />
+    <link rel="next" title="koleksione ata" href="02_Console_11_collections.html" />
+    <link rel="prev" title="Degëzimi kompleks" href="02_Console_09_elif.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,11 +205,11 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="scripts-and-for-loop">
-<h1>Scripts and <em>for</em> loop<a class="headerlink" href="#scripts-and-for-loop" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="scripts">
-<h2>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">¶</a></h2>
-<p>People often write short programs In Python and use them by themselves to calculate or automate something. Such programs are also known as <strong>scripts.</strong> It is not unusual for scripts to have some or all of the input data contained within the script itself instead of being loaded. For example, the following script calculates a 20 percent discount:</p>
+  <div class="section" id="skripte-dhe-cikli-for">
+<h1>Skripte dhe cikli <em>for</em><a class="headerlink" href="#skripte-dhe-cikli-for" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="skriptet">
+<h2>Skriptet<a class="headerlink" href="#skriptet" title="Permalink to this headline">¶</a></h2>
+<p>Njerëzit shpesh shkruajnë programe të shkurtra në Python dhe i përdorin ato vetë për të llogaritur ose automatizuar diçka. Programet e tilla njihen gjithashtu si <strong>skriptet</strong>. Nuk është e pazakontë që skriptet të kenë disa ose të gjitha të dhënat hyrëse të përfshira në vetë skenarin, në vend që të ngarkohen. Për shembull, skripti i mëposhtëm llogarit një zbritje prej 20 përqind:</p>
 
 <div data-childcomponent="console__scripting_fixed" class="course-box course-box-problem course-content">
 
@@ -225,16 +224,16 @@ discounted_price = regular_price * (1 - discount / 100)
 print(regular_price, discounted_price)
 </textarea>
 </div>
-<p>Instructions for using this script could be: “In the first two lines of the script, set the values you want and then run the script.”</p>
-<p>You won’t see a similar instruction for programs you install on your computer or mobile phone. We call such programs <strong>applications</strong>, and they are written so that users do not need to know (and most often they cannot know) what the statemets of that program look like.</p>
-<p>With scripts, there is no strict division between users and developers as with applications. Scripts are often written for personal use or for a user who uses or understands programming. All the programs in this guide are actually more scripts than applications.</p>
-<p>We have already emphasized that this manual is not intended only for future professionals in programming. If you do not program applications, you can still benefit from programming. You may write a script or customize an existing one, as expected in the presumed instruction of the previous example.</p>
+<p>Udhëzimet për përdorimin e këtij skenari mund të jenë: “Në dy rreshtat e parë të skenarit, vendosni vlerat që dëshironi dhe më pas drejtoni skenarin.”</p>
+<p>Ju nuk do të shihni një udhëzim të ngjashëm për programet që instaloni në kompjuterin tuaj ose në celular. Ne i quajmë programe të tilla <strong>aplikacione</strong>, dhe ato janë shkruar në mënyrë që përdoruesit të mos kenë nevojë të dinë (dhe më shpesh ata nuk mund të dinë) si duken statistikat e këtij programi.</p>
+<p>Me skriptet, nuk ka një ndarje të rreptë midis përdoruesve dhe zhvilluesve si me aplikacionet. Shkrimet shpesh shkruhen për përdorim personal ose për një përdorues që përdor ose kupton programimin. Të gjitha programet në këtë udhëzues janë në të vërtetë më shumë skenare sesa aplikacione.</p>
+<p>Tashmë kemi theksuar që ky manual nuk është i destinuar vetëm për profesionistët e ardhshëm në programim. Nëse nuk programoni aplikime, prapë mund të përfitoni nga programimi. Ju mund të shkruani një skenar ose të rregulloni një ekzistues, siç pritet në udhëzimin e supozuar të shembullit të mëparshëm.</p>
 </div>
-<div class="section" id="repeating-computation-for-multiple-data">
-<h2>Repeating computation for multiple data<a class="headerlink" href="#repeating-computation-for-multiple-data" title="Permalink to this headline">¶</a></h2>
-<p>Let’s make the previous example more general. Suppose that in one store we are entitled to a 20 percent discount over the regular prices. We are interested in discounted prices of various products, whose regular prices we know.</p>
-<p><strong>Restarting program that loads data</strong></p>
-<p>The solution we already know how to write is to load the regular price of the product and then calculate and print the reduced price. This program can look like this:</p>
+<div class="section" id="perseritja-e-llogaritjes-per-te-dhena-te-shumta">
+<h2>Përsëritja e llogaritjes për të dhëna të shumta<a class="headerlink" href="#perseritja-e-llogaritjes-per-te-dhena-te-shumta" title="Permalink to this headline">¶</a></h2>
+<p>Le ta bëjmë shembullin e mëparshëm më të përgjithshëm. Supozoni se në një dyqan ne kemi të drejtë për një zbritje 20 përqind mbi çmimet e rregullta. Ne jemi të interesuar në çmimet me zbritje të produkteve të ndryshme, çmimet e rregullta të të cilave i njohim.</p>
+<p><strong>Rinisja e programit që ngarkon të dhënat</strong></p>
+<p>Zgjidhja që ne tashmë dimë se si të shkruajmë është të ngarkojmë çmimin e rregullt të produktit dhe pastaj të llogarisim dhe shtypim çmimin e ulur. Ky program mund të duket si ky:</p>
 
 <div data-childcomponent="console__scripting_input" class="course-box course-box-problem course-content">
 
@@ -249,14 +248,14 @@ discounted_price = regular_price * (1 - discount / 100)
 print(regular_price, discounted_price)
 </textarea>
 </div>
-<p>We can run the program multiple times, setting each time a regular price for one of the products we are interested in.</p>
-<p><strong>Multiple inputs in the program itself</strong></p>
-<p>In the case where we know in advance all the regular prices of products that interest us, multiple program launches and entering one price at a time is not the most comfortable way to get all the discounted prices. Instead, it would be more convenient to enter all regular prices directly into the program and to repeat calculation and printing the results for each of these data.</p>
+<p>Ne mund ta drejtojmë programin disa herë, duke vendosur çdo herë një çmim të rregullt për një nga produktet për të cilat jemi të interesuar.</p>
+<p><strong>Të dhëna të shumta në vetë programin</strong></p>
+<p>Në rastin kur ne i dimë paraprakisht të gjitha çmimet e rregullta të produkteve që na interesojnë, lëshimi i shumëfishtë i programit dhe futja e një çmimi në një kohë nuk është mënyra më e rehatshme për të marrë të gjitha çmimet me zbritje. Përkundrazi, do të ishte më e përshtatshme që të vendosni të gjitha çmimet e rregullta direkt në program dhe të përsërisni llogaritjen dhe shtypjen e rezultateve për secilën nga këto të dhëna.</p>
 </div>
-<div class="section" id="for-statement">
-<h2><em>for</em> statement<a class="headerlink" href="#for-statement" title="Permalink to this headline">¶</a></h2>
-<p>In order to be able to repeat some part of the program for each piece of multiple data, we need the <strong>for</strong> statement, which allows other statements to be repeated. Now we are going to see one way to use <em>for</em> statement, and we will see some other forms of <em>for</em> statement in the following lessons.</p>
-<p>Let’s return to the discounted price example. Let’s say that the regular prices of the products we are interested in are 250, 120, and 310 and we want to calculate the discounted prices for those products with a single execution. Here is how we can do it:</p>
+<div class="section" id="deklarimi-for">
+<h2>deklarimi <em>for</em><a class="headerlink" href="#deklarimi-for" title="Permalink to this headline">¶</a></h2>
+<p>Për të qenë në gjendje të përsërisim një pjesë të programit për secilën pjesë të të dhënave të shumta, na duhet deklarimin <strong>for</strong>, e cila lejon që deklarimin e tjera të përsëriten. Tani ne do të shohim një mënyrë për të përdorur deklarimin <em>for</em>, dhe ne do të shohim disa forma të tjera të deklarimit <em>for</em> në mësimet e mëposhtme.</p>
+<p>Le të kthehemi në shembullin e çmimit të zbritur. Le të themi se çmimet e rregullta të produkteve për të cilat na interesojnë janë 250, 120 dhe 310 dhe dëshirojmë të llogaritim çmimet e zbritura për ato produkte me një ekzekutim të vetëm. Ja se si mund ta bëjmë:</p>
 
 <div data-childcomponent="console__scripting_for" class="course-box course-box-problem course-content">
 
@@ -271,25 +270,25 @@ for regular_price in (250, 120, 310):
     print(regular_price, discounted_price)
 </textarea>
 </div>
-<p>Note: notation (250, 120, 310) is called a <strong>tuple</strong>.</p>
-<p>Running the program we see that it prints:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">250</span> <span class="mf">200.0</span>
+<p>Shënim: notimi (250, 120, 310) është i quajtur <strong>tuple</strong>.</p>
+<p>Drejtimin e programit shohim që ai shtyp:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">250</span> <span class="mf">200.0</span>
 <span class="mi">120</span> <span class="mf">96.0</span>
 <span class="mi">310</span> <span class="mf">248.0</span>
 </pre></div>
 </div>
-<p>We notice that the last two lines of the program were executed three times, with the variable <em>regular_price</em> receiving the values 250, 120, 310 in that order. We achieved this with the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement. The parts of the program that are repeated are called loops, so we can say that in the previous example we used a <strong>for loop</strong>.</p>
-<p>The following figure shows the main elements of the <em>for</em> loop:</p>
+<p>Vëmë re se dy rreshtat e fundit të programit u ekzekutuan tre herë, me ndryshoren <em>të rregullt_price</em> duke marrë vlerat 250, 120, 310 në atë rend. Këtë e arritëm me deklarimin <code class="docutils literal notranslate"><span class="pre">for</span></code>. Pjesët e programit që përsëriten quhen sythe, kështu që mund të themi se në shembullin e mëparshëm kemi përdorur një <strong>for loop</strong>.</p>
+<p>Figura e mëposhtme tregon elementet kryesore të for loop:</p>
 <a class="reference internal image-reference" href="../_images/console_loop_tuple.png"><img alt="../_images/console_loop_tuple.png" class="align-center" src="../_images/console_loop_tuple.png" style="width: 400px;" /></a>
 <ul class="simple">
-<li>Required elements are written in red (the words <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">in</span></code> and the colon character <code class="docutils literal notranslate"><span class="pre">:</span></code> in the first line). These elements are written in the same way in each <em>for</em> statement.</li>
-<li>The <strong>loop variable</strong> is written in blue. At that place we write the name of the variable that will take the values specified in the tuple. In our example, the loop variable is <em>regular_price</em>.</li>
-<li>A tuple of values is written in green. At that place we write comma-separated values in parentheses. These are the values that loop variable will take in turn. In our example, the tuple is (250, 120, 310).</li>
-<li><strong>The body of the loop</strong> is written in black. These are commands that are executed once for each value of the loop variable. Loop variables may or may not be used in statements of the loop body.</li>
+<li><p>Elementet e kërkuar shkruhen me të kuqe (fjalët <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">in</span></code> dhe karakteri <code class="docutils literal notranslate"><span class="pre">:</span></code> në rreshtin e parë). Këto elemente shkruhen në të njëjtën mënyrë në secilën deklaratë <em>for</em>.</p></li>
+<li><p>Variabli <strong>loop</strong> është shkruar me ngjyrë blu. Në atë vend ne shkruajmë emrin e ndryshores që do të marrë vlerat e specifikuara në tuple. Në shembullin tonë, ndryshorja e lakut është <em>regular_price</em>.</p></li>
+<li><p>Një tufë vlerash shkruhet me gjelbër. Në atë vend ne shkruajmë vlera të ndara me presje në kllapa. Këto janë vlerat që do të marrin nga ana e variablit loop. Në shembullin tonë, tufa është (250, 120, 310).</p></li>
+<li><p><strong>Trupi i loop</strong> është shkruar me të zeza. Këto janë komanda që ekzekutohen një herë për secilën vlerë të ndryshores loop. Variablat e lakut mund ose nuk mund të përdoren në deklaratat e trupit të loop.</p></li>
 </ul>
-<p>Statements of the loop body are written indented with respect to the first line of the <em>for</em> statement. It is common to use 4 indentation spaces and we will stick to that recommendation.</p>
-<div class="section" id="examples-and-tasks">
-<h3>Examples and tasks<a class="headerlink" href="#examples-and-tasks" title="Permalink to this headline">¶</a></h3>
+<p>Deklaratat e trupit loop shkruhen në mënyrë të theksuar në lidhje me rreshtin e parë të deklaratës <em>for</em>. Është e zakonshme të përdorim 4 hapësira të pikave dhe do t’i përmbahemi këtij rekomandimi.</p>
+<div class="section" id="shembuj-dhe-ushtrime">
+<h3>Shembuj dhe ushtrime<a class="headerlink" href="#shembuj-dhe-ushtrime" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -297,11 +296,11 @@ for regular_price in (250, 120, 310):
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - when to depart</strong></p>
-<p>Ronnie should arrive at destination no later than 5:00 pm. Depending on the way of travel he chooses, Ronnie may need 55, 70, 85, or 95 minutes. Write a program that prints for each way of travel when Ronnie needs to leave at the latest to arrive on time.</p>
+<p><strong>Shembull - kur do të niset</strong></p>
 
     </p></div></div>
-<p>A program that solves this task could look like this:</p>
+<p>     Ronnie duhet të arrijë në destinacion jo më vonë se ora 5:00. Në varësi të mënyrës së udhëtimit që ai zgjedh, Ronnie mund të ketë nevojë për 55, 70, 85 ose 95 minuta. Shkruani një program që shtyp për secilën mënyrë të udhëtimit kur Ronnie duhet të largohet më së voni për të arritur në kohë.</p>
+<p>Një program që zgjidh këtë detyrë mund të duket si ky:</p>
 
 <div data-childcomponent="console__scripting_start_travel" class="course-box course-box-problem course-content">
 
@@ -325,10 +324,10 @@ for travel_duration in (55, 70, 85, 95):
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - trip duration</strong></p>
-<p>George intends to start a 600-kilometer car trip at 9 a.m. and is interested in arriving time if he was traveling at an average speed of 90, 100, 120 or 130 kilometers per hour. Finish the program to list the time of arrival at the destination for each of the aforementioned average speeds.</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Detyrë - kohëzgjatja e udhëtimit **</p>
 
     </p></div></div>
+<p>     George synon të fillojë një udhëtim me makinë 600 kilometra në 9 të mëngjesit në mëngjes dhe është i interesuar të arrijë kohën nëse ai po udhëtonte me një shpejtësi mesatare prej 90, 100, 120 ose 130 kilometra në orë. Përfundoni programin për të renditur kohën e mbërritjes në destinacion për secilën nga shpejtësitë mesatare të lartpërmendura.</p>
 
 <div data-childcomponent="console__scripting_speed" class="course-box course-box-problem course-content">
 
@@ -354,10 +353,10 @@ for a in ():  # fix
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - final grade</strong></p>
-<p>The sum of 5 Katie’s grades so far is 23. Katie expects another grade from the final control task. Finish the program below so that for each possible final grade (1, 2, 3, 4, or 5) it prints what the average grade would be in that case.</p>
+<p><strong>Detyrë - shkalla e fundit</strong></p>
 
     </p></div></div>
+<p>     Shuma e 5 notave të Katie deri më tani është 23. Katie pret një notë tjetër nga detyra e kontrollit përfundimtar. Përfundoni programin më poshtë në mënyrë që për secilën klasë të mundshme përfundimtare (1, 2, 3, 4, ose 5) të shtyp atë që do të ishte nota mesatare në atë rast.</p>
 
 <div data-childcomponent="console__scripting_final_mark" class="course-box course-box-problem course-content">
 
@@ -380,10 +379,10 @@ for # complete the statement
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - allowance</strong></p>
-<p>Theo makes a plan for spending his pocket money over a 14-day vacation. Write a program that, for an average daily spend of 5, 10, or 20 euro, lists how much money in total Theo would need in each case.</p>
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Detyrë - shtesa **</p>
 
     </p></div></div>
+<p>     Theo bën një plan për të shpenzuar paratë e xhepit për një pushim 14-ditor. Shkruaj një program që, për një shpenzim mesatar ditor prej 5, 10, ose 20 euro, rendit sa para do të duheshin në total në Theo për secilin rast.</p>
 
 <div data-childcomponent="console__scripting_allowance" class="course-box course-box-problem course-content">
 
@@ -404,17 +403,17 @@ num_days = 14
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Complex branching' data-toggle="tooltip"><a href="02_Console_09_elif.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Degëzimi kompleks' data-toggle="tooltip"><a href="02_Console_09_elif.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Data collections' data-toggle="tooltip"><a href="02_Console_11_collections.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - koleksione ata' data-toggle="tooltip"><a href="02_Console_11_collections.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Complex branching' data-toggle="tooltip"><a href="02_Console_09_elif.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Degëzimi kompleks' data-toggle="tooltip"><a href="02_Console_09_elif.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Data collections' data-toggle="tooltip"><a href="02_Console_11_collections.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - koleksione ata' data-toggle="tooltip"><a href="02_Console_11_collections.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

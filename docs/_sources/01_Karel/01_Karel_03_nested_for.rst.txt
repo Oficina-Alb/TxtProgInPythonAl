@@ -1,13 +1,13 @@
-Even shorter programs
+Programe të shkurtra
 =====================
 
-Let's get back to the last program of the previous lesson. We needed Karel to take five balls from each of the three squares in fornt of him.
+Le të kthehemi në programin e fundit të mësimit të mëparshëm. Ne kishim nevojë për Karel që të merrnim pesë topa nga secila nga tre sheshet në para të tij.
 
 .. image:: ../../_images/Karel/nested_for_3x5.png
     :width: 300px
     :align: center
 
-The program that solves the task could look like this:
+Programi që zgjidh detyrën mund të duket si ky:
 
 .. activecode:: Karel_nested_for__intro_1
    :passivecode: true
@@ -23,7 +23,7 @@ The program that solves the task could look like this:
     for i in range(5):
         pick_ball()
         
-We see that, in this program, the following group of statements repeats three times:
+Ne shohim që, në këtë program, grupi i mëposhtëm i deklaratave përsëritet tri herë:
 
 .. activecode:: Karel_nested_for__intro_2
    :passivecode: true
@@ -32,24 +32,24 @@ We see that, in this program, the following group of statements repeats three ti
     for i in range(5):
         pick_ball()
 
-This allows us to shorten the program further. In explaining the *for* statement, we mentioned that other loops can be found in the loop body. Now we have the opportunity to use it.
+Kjo na lejon të shkurtojmë programin më tej. Në shpjegimin e thënies *for*, ne përmendëm se sythe të tjerë mund të gjenden në trupin e lakut. Tani kemi mundësinë që ta përdorim.
  
-Nested *for* loops
+Sythe fole *for* 
 ------------------
 
-When there is a second loop in the body of one loop, then the first loop is called an outer loop and the other one is called an inner loop. Together we call them nested or inserted loops. In the following example, we'll see how nested *for* loops are written.
+Kur ka një loop të dytë në trupin e njërit loop, atëherë lak i parë quhet një lak i jashtëm dhe tjetri quhet një loop i brendshëm. Së bashku ne i quajmë ata sythe të loop ose të futur. Në shembullin vijues, do të shohim sesi shkruhen sythe *for*.
 
-Pick up five balls three times
+Kap 5 topa tre herë
 ''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  There are three squares in front of Karel, and there are 5 balls on each of them. Karel needs to pick up all the balls.
+  Ka tre sheshe përpara Karelit, dhe ka secila prej tyre 5 topa. Karel duhet të marr të gjitha topat.
 
-The task is repeated, but now we will solve it in a different way.
+Detyra përsëritet, por tani ne do ta zgjidhim atë në një mënyrë tjetër.
 
 .. infonote::
-    We mentioned that ``i`` in the previous examples of *for* statements is a name for the repetition counter. Now, for the first time we need to count other things (balls) during the counting of one thing (squares). This means, for example, that we will need to exactly know when we are on the third square, taking the second ball. Therefore, we can not use the same name for both counters, so we have introduced new names for counters instead of the previous ``i``. In the following program, we call the square counter ``i_square``, and the name for the ball counter is ``i_ball``.
+    Ne përmendëm se ``i`` në shembujt e mëparshëm të deklaratave *for* është një emër për banakun e përsëritjes. Tani, për herë të parë duhet të numërojmë gjëra të tjera (topa) gjatë llogaritjes së një gjëje (kutie). Kjo do të thotë, për shembull, që do të na duhet ta dimë saktësisht kur jemi në kutinë e tretë, duke marrë topin e dytë. Prandaj, ne nuk mund të përdorim të njëjtin emër për të dy sportelet, kështu që kemi futur emra të rinj për sportelet në vend të `` i`` të mëparshëm. Në programin vijues, ne e quajmë banak katror ``i_square``, dhe emri për banakun e topit është ``i_ball``.
    
 .. karel:: Karel_for_TakeMxN
    :blockly:
@@ -82,22 +82,22 @@ The task is repeated, but now we will solve it in a different way.
         },
    }
 
-In the given solution, the statement *pick_ball()* is additionally indented, because it is executed ones for each ``i_ball`` from the range [0, 1, 2, 3, 4]. In addition, the whole statement ``for i_ball in range(5):`` (together with its body and the statement *move()* above it), repeats 3 times, ones for each ``i_square`` from the range [ 0, 1, 2]. This means that the command *pick_ball()* executes a total of 3 x 5 = 15 times (on each of the three squares five times).
+Në zgjidhjen e dhënë, thënia *pick_ball ()* është e theksuar gjithashtu, sepse ekzekutohet ato për secilin ``i_ball`` nga diapazoni [0, 1, 2, 3, 4]. Për më tepër, e gjithë deklarim ``për i_ball në varg (5):`` (së bashku me trupin e saj dhe thënia *move()* mbi të), përsëritet 3 herë, ato për secilin ``i_square`` nga diapazoni [0, 1, 2]. Kjo do të thotë që komanda *pick_ball()* ekzekuton gjithsej 3 x 5 = 15 herë (në secilën nga tre sheshet pesë herë).
 
-.. infonote::
-   With nested loops, it is necessary to pay extra attention to the correct indentation of the statements, because it becomes somewhat more complicated. Incorrect indentation of some commands can lead to the wrong result, or to a program that does not work at all.
+.. infonote ::
+    Me sythe të loops, është e nevojshme t'i kushtohet vëmendje shtesë theksit të saktë të deklaratave, sepse bëhet disi më e ndërlikuar. Shënimi i gabuar i disa komandave mund të çojë në rezultatin e gabuar, ose në një program që nuk funksionon fare.
    
-Tasks for exercise
+Ushtrime
 ------------------
 
-Skip
+Evito
 ''''
 
 .. questionnote::
 
-  In front of Karel, there is one ball on every third square, and Karel should pick them up both.
-  
-Karl should repeat a group of actions "Move three times, and then take the ball" 2 times.
+  Përpara Karelit, ka një top në çdo kuti të tretë, dhe Kareli duhet t'i marrë të dy.
+  
+Karl duhet të përsërisë një grup veprimesh "Leviz tre herë, dhe pastaj të marrë topin" 2 herë.
 
 .. karel:: Karel_for_every_nth_square
     :blockly:
@@ -146,14 +146,14 @@ Karl should repeat a group of actions "Move three times, and then take the ball"
                    move()
                pick_ball()            # take the ball
 
-5 balls on every third square
+5 topa në çdo kuti të tretë
 '''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  There are five balls on every third square in front of Karel, and he should collect them all.
-  
-The task is similar to the previous, you just need to repeat picking up the ball. Make sure the loop for taking the balls is underneath the loop for moving forward, not in it.
+  Ka pesë topa në çdo shesh të tretë përballë Karelit, dhe ai duhet t'i mbledhë të gjitha.
+  
+Detyra është e ngjashme me të mëparshmën, thjesht duhet të përsërisësh marrjen e topit. Sigurohuni që loop për të marrë topa është nën loop për të ecur përpara, jo në të.
 
 
 .. karel:: Karel_for_every_nth_square_5
@@ -205,17 +205,17 @@ The task is similar to the previous, you just need to repeat picking up the ball
                    pick_ball()
 
 
-Go about
+Dil
 ''''''''
 
 .. questionnote::
 
-  Karl once more needs to pick up all the balls.
-  
-The outer loop should be executed 3 times, and in it Karel should do the following:
+  Kap edhe një herë duhet të marr të gjitha topat.
+  
+Loop i jashtëm duhet të ekzekutohet 3 herë, dhe në të Karel duhet të bëjë si më poshtë:
 
-- Repeat twice the two actions: "move forward" and "take the ball"
-- Turn left
+- Përsëritni dy herë dy veprimet: "lëviz përpara" dhe "merr topin"
+- Kthehu majtas
 
 .. karel:: Karel_for_ring
     :blockly:
@@ -272,7 +272,7 @@ The outer loop should be executed 3 times, and in it Karel should do the followi
     :showtitle: Hint
     :hidetitle: Hide hint
 
-    We've made verbal instructions a little more similar to the program, try converting them into statements. If you still want to see the program itself, click the "Solution" button.
+    Ne kemi bërë udhëzime verbale pak më të ngjashme me programin, provoni t'i ktheni ato në deklarim. Nëse ende dëshironi të shihni vetë programin, klikoni në butonin "Solution".
     
     .. activecode:: Karel_for_ring_solution_1
         :passivecode: true
@@ -299,14 +299,14 @@ The outer loop should be executed 3 times, and in it Karel should do the followi
 
 
 
-Go about and pick 3 balls each time
+Dil dhe kap 3 topa çdo herë
 '''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  Write a program by which Karel will pick up all 18 balls.
-  
-This task differs from the previous one in just one thing: now picking up the balls should be in an additional loop. This means that we will have three nesting loops: one that counts sides of the maze, one that counts the squares along one side, and the third one that counts the balls on one square.
+  Shkruaj një program me të cilin Karel do të marr të gjitha 18 topat.
+  
+Kjo detyrë ndryshon nga ajo e mëparshmja në vetëm një gjë: tani marrja e topave duhet të jetë në një loop shtesë. Kjo do të thotë se do të kemi tre sythe loops: një që numëron anët e labirint, një që numëron sheshet përgjatë njërës anë, dhe të tretën që numëron topat në një katror.
 
 .. karel:: Karel_for_ring_3
     :blockly:

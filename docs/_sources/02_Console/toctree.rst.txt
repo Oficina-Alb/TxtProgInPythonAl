@@ -1,9 +1,9 @@
-Basics of programming in Python
+Bazat e programimit në Python
 :::::::::::::::::::::::::::::::
 
-In the previous chapter, you had the opportunity to see and try writing a program to manage Karel, an animated robot. These programs allowed you to get a sense of what programming is and what writing programs in Python is like.
+Në kapitullin e mëparshëm, keni pasur mundësinë të shihni dhe të provoni të shkruani një program për të menaxhuar Karel, një robot i animuar. Këto programe ju lejuan të merrni një kuptim se çfarë është programimi dhe çfarë është si programet e shkrimit në Python.
 
-Now, we will more systematically go through the basics of the Python programming language and programming in it. This new pass will include what we have seen before, but also some basic concepts that were not exposed in the chapter on Karel.
+Tani, ne do të kalojmë në mënyrë më sistematike bazat e gjuhës programuese të Python dhe programimit në të. Ky pasazh i ri do të përfshijë atë që kemi parë më parë, por edhe disa koncepte themelore që nuk ishin të ekspozuara në kapitullin për Karelin.
 
 
    .. toctree::

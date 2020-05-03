@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Programs with Computation - Exercise &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Programet me llogaritjen - Ushtrime &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Math functions" href="02_Console_06_number_functions.html" />
-    <link rel="prev" title="Reading data" href="02_Console_04_reading.html" />
+    <link rel="next" title="Funksionet matematikore" href="02_Console_06_number_functions.html" />
+    <link rel="prev" title="Leximi i të dhënave" href="02_Console_04_reading.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,13 +205,13 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="programs-with-computation-exercise">
-<h1>Programs with Computation - Exercise<a class="headerlink" href="#programs-with-computation-exercise" title="Permalink to this headline">¶</a></h1>
-<p>So far, we have learned how to load numbers in programs, how to perform computational operations on them, and how to print results. We can now practice these things with a few simple math tasks.</p>
-<div class="section" id="tasks-without-loading-data">
-<h2>Tasks without loading data<a class="headerlink" href="#tasks-without-loading-data" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="programet-me-llogaritjen-ushtrime">
+<h1>Programet me llogaritjen - Ushtrime<a class="headerlink" href="#programet-me-llogaritjen-ushtrime" title="Permalink to this headline">¶</a></h1>
+<p>Deri më tani, ne kemi mësuar se si të ngarkojmë numrat në programe, si të kryejmë operacione llogaritëse mbi to dhe si të printojmë rezultatet. Tani mund t’i praktikojmë këto gjëra me disa detyra të thjeshta matematikore.</p>
+<div class="section" id="detyrat-pa-ngarkuar-te-dhenat">
+<h2>Detyrat pa ngarkuar të dhënat<a class="headerlink" href="#detyrat-pa-ngarkuar-te-dhenat" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shembull">
+<h3>Shembull<a class="headerlink" href="#shembull" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -220,12 +219,12 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - Celebration</strong></p>
-<p>Jessica and Oscar are organizing a celebration. The rented space accommodates 100 people, Jessica has so far invited 43, and Oscar 28.</p>
-<p>Write a program that calculates and prints how much more space is available.</p>
+<p><strong>Shembull - Festa</strong></p>
 
     </p></div></div>
-<p>The problem can be solved as follows:</p>
+<p>     Xhesika dhe Oscar po organizojnë një festë. Hapësira me qira strehon 100 persona, Xhesika deri më tani ka ftuar 43, dhe Oscar 28.</p>
+<p>     Shkruani një program që llogarit dhe printon sa më shumë hapësirë është në dispozicion.</p>
+<p>Problemi mund të zgjidhet si më poshtë:</p>
 
 <div data-childcomponent="console__computing_party1" class="course-box course-box-problem course-content">
 
@@ -237,7 +236,7 @@
 print(100-43-28)
 </textarea>
 </div>
-<p>or like this:</p>
+<p>ose kështu:</p>
 
 <div data-childcomponent="console__computing_party2" class="course-box course-box-problem course-content">
 
@@ -257,13 +256,13 @@ print(places_left)
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>While this may seem unnecessary here, the solution with variables is worth practicing. Programs that use variables can do much more than those without variables. For example, if we load values into a program, variables are necessary. Also, more complex calculations would be very incomprehensible if they could not be broken down into simpler steps, and for intermediate values we again need variables.</p>
-<p>We mentioned earlier that we should try to give meaningful names to the variables. It doesn’t matter to the computer (it works equally well with any names), but when we calculate something that matters to us, using variables with meaningful names will help us understand that program after a long time. Also, such a program will be easier to understand by other people who read it.</p>
+<p>Ndërsa kjo mund të duket e panevojshme këtu, zgjidhja me variabla vlen të praktikohet. Programet që përdorin ndrysvariablahore mund të bëjnë shumë më tepër sesa ato pa variabla. Për shembull, nëse ngarkojmë vlerat në një program, variablat janë të nevojshme. Gjithashtu, llogaritjet më komplekse do të ishin shumë të pakuptueshme nëse nuk mund të ndahen në hapa më të thjeshtë, dhe për vlerat e ndërmjetme përsëri kemi nevojë për variabla.</p>
 
     </p></div></div>
+<p>     Përmendëm më herët se duhet të përpiqemi t’u japim emrave domethënës variablave. Nuk ka rëndësi për kompjuterin (funksionon në mënyrë të barabartë me ndonjë emër), por kur llogaritim diçka që është e rëndësishme për ne, përdorimi i variablave me emra kuptimplotë do të na ndihmojë të kuptojmë atë program pas një kohe të gjatë. Gjithashtu, një program i tillë do të jetë më i lehtë për tu kuptuar nga njerëzit e tjerë që e lexojnë atë.</p>
 </div>
-<div class="section" id="tasks-for-exercise">
-<h3>Tasks for exercise<a class="headerlink" href="#tasks-for-exercise" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrime">
+<h3>Ushtrime<a class="headerlink" href="#ushtrime" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -271,11 +270,11 @@ print(places_left)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - buying for all the money</strong></p>
-<p>How many items for 76 euros can be bought for 500 euros? How much money will remain if the largest possible number of items is bought?</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Detyrë - blerje për të gjitha paratë **</p>
 
     </p></div></div>
-<p>The shorter (and less clear) version of the solution is</p>
+<p>     Sa sende për 76 euro mund të blihen për 500 euro? Sa para do të mbesin nëse blihet numri më i madh i mundshëm i artikujve?</p>
+<p>Versioni më i shkurtër (dhe më pak i qartë) i zgjidhjes është</p>
 <blockquote>
 <div>
 <div data-childcomponent="console__computing_divmod_sol1" class="course-box course-box-problem course-content">
@@ -289,7 +288,7 @@ print(500 // 76, 500 % 76)
 </textarea>
 </div>
 </div></blockquote>
-<p>Write a clearer solution using variables.</p>
+<p>Shkruani një zgjidhje më të qartë duke përdoruar variabla.</p>
 
 <div data-childcomponent="console__computing_divmod" class="course-box course-box-problem course-content">
 
@@ -309,13 +308,13 @@ print(500 // 76, 500 % 76)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - datum</strong></p>
-<p>If today is the 15th of the month and the month is 31 days, how many days are there until the 11th of the next month (at the same time)?</p>
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Detyra - datum **</p>
 
     </p></div></div>
-<p>Your job is to write a solution in which the starting and calculated values are assigned to variables. By clicking on the “short solution” button you can see a short solution as a hint.</p>
+<p>     Nëse sot është 15 i muajit dhe muaji është 31 ditë, sa ditë ka deri në 11 të muajit tjetër (në të njëjtën kohë)?</p>
+<p>Detyra juaj është të shkruani një zgjidhje në të cilën vlerat fillestare dhe të llogaritura u janë caktuar variablave. Duke klikuar në butonin “zgjidhje e shkurtër” mund të shihni një zgjidhje të shkurtër si aluzion.</p>
 
-    <div data-component="reveal" id="console__computing_divmod_reveal"   data-showtitle="Short solution" data-hidetitle="Hide short solution">
+    <div data-component="reveal" id="console__computing_divmod_reveal"   data-showtitle="Zgjidhje e shkurtër" data-hidetitle="Fshih zgjidhjen e shkurtër">
     
 <div data-childcomponent="console__computing_buying3_simple_sol1" class="course-box course-box-problem course-content">
 
@@ -348,11 +347,11 @@ print(11+31-15)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - purchase of 3 pieces</strong></p>
-<p>Ben has 20 euros and wants to buy 3 bicycle lamps for 1.58 euros each. How much money will he have left?</p>
+<p><a href="#id5"><span class="problematic" id="id6">**</span></a>Detyra - blerja e 3 pjesëve **</p>
 
     </p></div></div>
-<p>Write a program that uses variables for the starting and calculated values.</p>
+<p>     Ben ka 20 euro dhe dëshiron të blejë 3 llampa biçikletash për 1,58 euro secila. Sa para do të ketë lënë ai?</p>
+<p>Shkruaj një program që përdor variabla për vlerat fillestare dhe të llogaritura.</p>
 
 <div data-childcomponent="console__computing_buying3_simple" class="course-box course-box-problem course-content">
 
@@ -367,10 +366,10 @@ print(11+31-15)
 </div>
 </div>
 </div>
-<div class="section" id="tasks-with-loading-data">
-<h2>Tasks with loading data<a class="headerlink" href="#tasks-with-loading-data" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembuj-me-te-dhena-ne-vazhdimesi">
+<h2>Shembuj më të dhëna në vazhdimësi<a class="headerlink" href="#shembuj-me-te-dhena-ne-vazhdimesi" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shembuj">
+<h3>Shembuj<a class="headerlink" href="#shembuj" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -378,11 +377,11 @@ print(11+31-15)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - paintwork</strong></p>
-<p>Philip prepares to paint the ceiling in one room. In order to know how much paint to buy, he needs to know the dimensions of the room and how many square meters covers one kilogram of paint. Write a program that loads the length of the room, the width of the room, an area that covers one kilogram of paint, and prints the required number of kilograms of paint.</p>
+<p><a href="#id7"><span class="problematic" id="id8">**</span></a>Shembull - pikturë **</p>
 
     </p></div></div>
-<p>Solution:</p>
+<p>     Philip përgatitet të pikturojë tavanin në një dhomë. Për të ditur se sa bojë për të blerë, ai duhet të dijë dimensionet e dhomës dhe sa metra katrorë mbulon një kilogram bojë. Shkruani një program që ngarkon gjatësinë e dhomës, gjerësinë e dhomës, një zonë që mbulon një kilogram të bojës dhe shtypni numrin e kërkuar të kilogramëve të bojës.</p>
+<p>zgjidhja:</p>
 
 <div data-childcomponent="console__computing_painting" class="course-box course-box-problem course-content">
 
@@ -391,16 +390,16 @@ print(11+31-15)
     data-audio=''   
                data-hidehistory=true
        >
-length = float(input("Enter the length of the room: "))
-width = float(input("Enter the width of the room: "))
-area_per_kg = float(input("Enter the area covered by 1 kg of paint: "))
+length = float(input("Fusni gjatësinë e dhomës: "))
+width = float(input("Fusni lartësinë e dhomës: "))
+area_per_kg = float(input("Fusn hapësirën e mbuluar nga 1 kg bojë: "))
 needed_kg = length * width / area_per_kg
-print(needed_kg, "kg of paint is required.")
+print(needed_kg, "kg bojë nevojitet.")
 </textarea>
 </div>
 </div>
-<div class="section" id="id2">
-<h3>Tasks for exercise<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Ushtrime<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -408,10 +407,10 @@ print(needed_kg, "kg of paint is required.")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - rabits</strong></p>
-<p>The rabbit population on one island is doubling every year. Write a program that loads the current number of rabbits on the island and the number of years, and prints how many rabbits would be on the island in a given number of years if they continue to reproduce at the same pace.</p>
+<p><a href="#id10"><span class="problematic" id="id11">**</span></a>Detyrë - zogj **</p>
 
     </p></div></div>
+<p>     Popullsia e lepujve në një ishull po dyfishohet çdo vit. Shkruaj një program që ngarkon numrin aktual të lepujve në ishull dhe numrin e viteve, dhe shtyp sa lepuj do të ishin në ishull në një numër të caktuar vitesh nëse vazhdojnë të riprodhojnë me të njëjtin ritëm.</p>
 
 <div data-childcomponent="console__computing_rabbits" class="course-box course-box-problem course-content">
 
@@ -431,10 +430,10 @@ print(needed_kg, "kg of paint is required.")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - Buying a car</strong></p>
-<p>John buys the car in installments. Write a program that sequentially loads the contract price, the amount of one installment and the number of installments, and prints how much more John will pay in total over the price stated in contract.</p>
+<p><strong>Detyrë - Blerja e një makine</strong></p>
 
     </p></div></div>
+<p>     Gjoni blen makinën me këste. Shkruaj një program që ngarkon në mënyrë sekuenciale çmimin e kontratës, shumën e një kësti dhe numrin e kësteve, dhe shtyp se sa më shumë John do të paguajë në total mbi çmimin e deklaruar në kontratë.</p>
 
 <div data-childcomponent="console__computing_buying_car" class="course-box course-box-problem course-content">
 
@@ -455,17 +454,17 @@ print(needed_kg, "kg of paint is required.")
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Reading data' data-toggle="tooltip"><a href="02_Console_04_reading.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Leximi i të dhënave' data-toggle="tooltip"><a href="02_Console_04_reading.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Math functions' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Funksionet matematikore' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Reading data' data-toggle="tooltip"><a href="02_Console_04_reading.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Leximi i të dhënave' data-toggle="tooltip"><a href="02_Console_04_reading.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Math functions' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Funksionet matematikore' data-toggle="tooltip"><a href="02_Console_06_number_functions.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

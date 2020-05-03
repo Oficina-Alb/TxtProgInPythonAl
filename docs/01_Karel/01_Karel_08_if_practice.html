@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>if statement - practice &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>if - Praktikë &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Create a batch of statements" href="01_Karel_09_functions.html" />
-    <link rel="prev" title="Check out and decide" href="01_Karel_07_if.html" />
+    <link rel="next" title="Krijo një grup deklaratash" href="01_Karel_09_functions.html" />
+    <link rel="prev" title="Kontrolloni dhe vendosni" href="01_Karel_07_if.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,13 +205,13 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="if-statement-practice">
-<h1><em>if</em> statement - practice<a class="headerlink" href="#if-statement-practice" title="Permalink to this headline">¶</a></h1>
-<p>In this section we will only practice using the <em>if</em> statement and combining it with loops.</p>
-<div class="section" id="tasks-for-exercise">
-<h2>Tasks for exercise<a class="headerlink" href="#tasks-for-exercise" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="go-to-the-end-of-a-path-and-take-only-one-ball">
-<h3>Go to the end of a path and take only one ball<a class="headerlink" href="#go-to-the-end-of-a-path-and-take-only-one-ball" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="if-praktike">
+<h1><em>if</em>  - Praktikë<a class="headerlink" href="#if-praktike" title="Permalink to this headline">¶</a></h1>
+<p>Në këtët seksion do të praktikojmë vëtëm përdorimin e deklarims <em>if</em> dhe kombinimin me loops.</p>
+<div class="section" id="ushtrime">
+<h2>Ushtrime<a class="headerlink" href="#ushtrime" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shko-ne-fund-te-rruges-dhe-merr-vetem-nje-top">
+<h3>Shko në fund të rrugës dhe merr vetëm një top<a class="headerlink" href="#shko-ne-fund-te-rruges-dhe-merr-vetem-nje-top" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -220,7 +219,8 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-Karel should arrive at the end of the corridor, and only take the first ball on the way. The starting square never has a ball on it, and Karel initially does not carry any balls.
+<p>Kareli duhet të arrijë në fund të korridorit, dhe të marrë vetëm topin e parë në rrugë. Kutia fillestarenuk ka asnjë top mbi të, dhe Karel fillimisht nuk mban topa.</p>
+
     </p></div></div>
 
 <div data-childcomponent="Karel_if__take_first_ball_only" class="karel_section course-box course-box-problem">
@@ -311,14 +311,14 @@ Karel should arrive at the end of the corridor, and only take the first ball on 
 
 
     <div data-component="reveal" id="Karel_if__take_first_ball_only_reveal"   data-showtitle="Hint" data-hidetitle="Hide hint">
-    <p>We have started one solution here. You are expected to complete the <em>if</em> statements with appropriate conditions.</p>
-<p>Karel should take the ball only if two conditions are met:</p>
-<ul class="simple">
-<li>the first condition is the one that we check whenever Karel tries to take the ball (without this condition the program could be terminated due to an undoable operation).</li>
-<li>the second condition is imposed by the requirements of this task, which is that Karel takes the ball only if he has not already taken one before.</li>
-</ul>
-<p>The order of checking these two conditions is not important, since both of them should be fulfilled in order to take the ball anyway.</p>
+    <p>Ne kemi filluar një zgjidhje këtu. Ju pritet të plotësoni deklarimet <em>if</em> me kushte të përshtatshme.</p>
 
+    </div>
+    <p>     Karel duhet të marrë topin vetëm nëse plotësohen dy kushte:</p>
+<p>     - kushti i parë është ai që ne kontrollojmë sa herë që Karel përpiqet të marrë topin (pa këtë kusht programi mund të përfundojë për shkak të një operacioni të pakalueshëm).
+     - kushti i dytë është i imponuar nga kërkesat e kësaj detyre, që është se Karel merr topin vetëm nëse ai nuk e ka marrë një më parë.</p>
+<dl>
+<dt>     Rendi i kontrollit të këtyre dy kushteve nuk është i rëndësishëm, pasi që të dy duhet të përmbushen në mënyrë që të marrin topin sidoqoftë.</dt><dd>
 <div data-childcomponent="Karel_if__take_first_ball_only_solution" class="course-box course-box-problem course-content">
 
 <textarea data-component="activecode" id=Karel_if__take_first_ball_only_solution data-lang="python" 
@@ -334,11 +334,11 @@ while front_is_clear():  # while there are squares in front of Karel
             pick_ball()
 </textarea>
 </div>
-
-    </div>
-    </div>
-<div class="section" id="take-the-ball-on-the-neighboring-square">
-<h3>Take the ball on the neighboring square<a class="headerlink" href="#take-the-ball-on-the-neighboring-square" title="Permalink to this headline">¶</a></h3>
+</dd>
+</dl>
+</div>
+<div class="section" id="dergo-topin-ne-kutine-ngjitur">
+<h3>Dërgo topin në kutinë ngjitur<a class="headerlink" href="#dergo-topin-ne-kutine-ngjitur" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -346,18 +346,18 @@ while front_is_clear():  # while there are squares in front of Karel
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>There is only one ball on the board. Karel and the ball are located on two adjacent squares with no wall between them (Karel is only one step appart from the ball, if he turns to the ball first). There may or may not be a wall between other squares. Karel should take the ball and he can finish on any square in the end.</p>
-<p>As usual, run the program several times to test it on various examples.</p>
+<p>Ka vetëm një top në tabelë. Karel dhe topi janë të vendosura në dy shekutishe ngjitur pa mur ndërmjet tyre (Karel është vetëm një hap hap nga topi, nëse ai kthehet në top para). Mund të jetë ose nuk mund të ketë një mur midis kutive të tjera. Kareli duhet të marrë topin dhe ai mund të përfundojë në çdo kuti në fund.</p>
 
     </p></div></div>
-<p>One possible idea is that in each of the four directions, we try to make Karel go one step forward and pick up the ball. Various scenarios can occur in each of the four attempts:</p>
+<p>   Si zakonisht, drejtojeni programin disa herë për ta provuar atë në shembuj të ndryshëm.</p>
+<p>Një ide e mundshme është që në secilën nga katër drejtimet, ne përpiqemi ta bëjmë Karel të shkojë një hap përpara dhe të marr topin. Skenarë të ndryshëm mund të ndodhin në secilën nga katër përpjekjet:</p>
 <ul class="simple">
-<li>it is possible that there are no squares in front of Karel in that direction</li>
-<li>it is possible that there is a square in front of Karel, but there are no balls on it</li>
-<li>it is possible that there is a square and that there is a ball on it</li>
+<li><p>është e mundur që nuk ka kuti para Karel në atë drejtim</p></li>
+<li><p>është e mundur që të ketë një kuti para Karelit, por nuk ka topa mbi të</p></li>
+<li><p>është e mundur që ka një kuti dhe se ka një top në të</p></li>
 </ul>
-<p>When trying the next direction, it is much simpler if we don’t have to take into consideration whether Karel has found a square without a ball in the previous direction he tried, or did not find a square at all. To simplify the next attempt, it is convenient for us that Karel finishes the previous attempt when he was on an empty square in the same state as when there was no square. When there is no square in the attempted direction, Karel will remain on the starting square, facing the attempted direction. To facilitate the continuation of the search, we can leave Karel on the same square facing the same direction when he returns from an empty adjacent square. In fact, it won’t do any harm if we do it also when Karel takes the ball (it is possible that Karel needlessly continues to search, but that will not cause any errors).
-Because we’ve brought Karel to the same state (position and orientation) after any of the three cases above, we know our new starting state exactly, for each subsequent attempt. After each attempted direction, we just need to turn Karel towards the next direction we will try to find the ball in (either to the left or to the right).</p>
+<p>Kur provoni drejtimin tjetër, është shumë më e thjeshtë nëse nuk duhet të marrim parasysh nëse Karel ka gjetur një kuti pa top në drejtimin e mëparshëm që ai provoi, ose nuk e gjeti fare një kuti. Për të thjeshtuar përpjekjen tjetër, është e përshtatshme për ne që Karel të përfundojë përpjekjen e mëparshme kur ai ishte në një kuti të zbrazët në të njëjtin gjëndje si kur nuk kishte kuti. Kur nuk ka kuti në drejtim të përpjekjes, Karel do të mbetet në kutinë fillestare, përballë drejtimit të tentuar. Për të lehtësuar vazhdimin e kërkimit, ne mund të lëmë Karel në të njëjt[n kuti përballë të njëjtit drejtim kur ai të kthehet nga një kuti e zbrazët ngjitur. Në fakt, nuk do të dëmtojë nëse e bëjmë edhe kur Karel merr topin (është e mundur që Karel pa nevojë të vazhdojë të kërkojë, por kjo nuk do të shkaktojë gabime).
+Për shkak se e kemi sjellë Karelin në të njëjtin gjëndje (pozicion dhe orientim) pas secilit prej tre rasteve më lart, ne e dimë saktësisht gjendjen tonë fillestare, për secilën përpjekje pasuese. Pas secilit drejtim të përpjekjes, ne vetëm duhet ta kthejmë Karel drejt drejtimit tjetër, ne do të përpiqemi të gjejmë topin në (ose në të majtë ose në të djathtë).</p>
 
 <div data-childcomponent="Karel_if__take_neighboring_ball" class="karel_section course-box course-box-problem">
     <div class="course-content">
@@ -463,8 +463,8 @@ Because we’ve brought Karel to the same state (position and orientation) after
 </p></div></div>
 
 </div>
-<div class="section" id="follow-the-path">
-<h3>Follow the path<a class="headerlink" href="#follow-the-path" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ndiq-rrugen">
+<h3>Ndiq rrugën<a class="headerlink" href="#ndiq-rrugen" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -472,7 +472,8 @@ Because we’ve brought Karel to the same state (position and orientation) after
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-There is only one ball on the table, and Karel should take it. The way to the ball is not straight, but there are no intersections (there is always only one way to continue moving, even from the starting square).
+<p>Ka vetëm një top në tryezë, dhe Karel duhet ta marrë atë. Rruga për në top nuk është e drejtë, por nuk ka kryqëzime (gjithmonë ekziston vetëm një mënyrë për të vazhduar lëvizjen, edhe nga kutia fillestare).</p>
+
     </p></div></div>
 
 <div data-childcomponent="Karel_if__take_ball_no_branches" class="karel_section course-box course-box-problem">
@@ -587,8 +588,8 @@ There is only one ball on the table, and Karel should take it. The way to the ba
 </p></div></div>
 
 
-    <div data-component="reveal" id="Karel_if__take_ball_no_branches_reveal"   data-showtitle="Hint" data-hidetitle="Hide hint">
-    <p>We give a program-like instructions for one possible solution:</p>
+    <div data-component="reveal" id="Karel_if__take_ball_no_branches_reveal"   data-showtitle="Ndihma" data-hidetitle="Fshih ndihmën">
+    <p>Ne japim intruksione për një zgjidhje të mundshme:</p>
 
 <div data-childcomponent="Karel_if__take_ball_no_branches_solution" class="course-box course-box-problem course-content">
 
@@ -615,8 +616,8 @@ take the ball
 
     </div>
     </div>
-<div class="section" id="sidetrack">
-<h3>Sidetrack<a class="headerlink" href="#sidetrack" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="devijim">
+<h3>Devijim<a class="headerlink" href="#devijim" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -624,7 +625,8 @@ take the ball
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-There is only one ball on the table and Karel should take it. To get to the ball, Karel should go straight only when he can’t turn left or right (there will be no ambiguous crossroads where there is a path to both left and right).
+<p>Ka vetëm një top në tryezë dhe Karel duhet ta marrë atë. Për të arritur në top, Kareli duhet të shkojë drejt, vetëm kur ai nuk mund të kthehet majtas ose djathtas (nuk do të ketë një udhëkryq të paqartë ku ka një shteg në të majtë dhe të djathtë).</p>
+
     </p></div></div>
 
 <div data-childcomponent="Karel_if__p1_left_p2_right_p3_forward" class="karel_section course-box course-box-problem">
@@ -741,8 +743,8 @@ There is only one ball on the table and Karel should take it. To get to the ball
 </p></div></div>
 
 
-    <div data-component="reveal" id="Karel_if__p1_left_p2_right_p3_forward_reveal"   data-showtitle="Hint" data-hidetitle="Hide hint">
-    <p>Instructions for one possible solution:</p>
+    <div data-component="reveal" id="Karel_if__p1_left_p2_right_p3_forward_reveal"   data-showtitle="Ndihma" data-hidetitle="FSHIH NDIHMËN">
+    <p>Instruksione për një zgjidhje të mundshme:</p>
 
 <div data-childcomponent="Karel_if__p1_left_p2_right_p3_forward_solution" class="course-box course-box-problem course-content">
 
@@ -767,8 +769,8 @@ take the ball
 
     </div>
     </div>
-<div class="section" id="go-left-wherever-you-can">
-<h3>Go left wherever you can<a class="headerlink" href="#go-left-wherever-you-can" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shko-majtas-sa-here-te-mundesh">
+<h3>Shko majtas sa herë të mundesh<a class="headerlink" href="#shko-majtas-sa-here-te-mundesh" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -776,7 +778,8 @@ take the ball
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-There is only one ball on the table and Karel should take it. Karel will always reach the ball by turning left whenever he can, and going straight when he can’t go left (when he cannot go either left or straight, that means he has arrived). Karel is initially turned the way he should, and his first step is always straight forward.
+<p>Ka vetëm një top në tryezë dhe Karel duhet ta marrë atë. Karel do ta arrijë gjithmonë topin duke u kthyer majtas kur të mundet, dhe të shkojë drejt, kur ai nuk mund të shkojë majtas (kur ai nuk mund të shkojë ose majtas ose drejt, kjo do të thotë se ai ka arritur). Karel fillimisht është kthyer ashtu siç duhet, dhe hapi i tij i parë është gjithmonë drejt përpara.</p>
+
     </p></div></div>
 
 <div data-childcomponent="Karel_if_p1_left_p2_forward" class="karel_section course-box course-box-problem">
@@ -895,8 +898,10 @@ There is only one ball on the table and Karel should take it. Karel will always 
 </p></div></div>
 
 
-    <div data-component="reveal" id="Karel_if_p1_left_p2_forward_reveal"   data-showtitle="Hint" data-hidetitle="Hide hint">
-    <p>Instructions for one possible solution:</p>
+    <div data-component="reveal" id="Karel_if_p1_left_p2_forward_reveal"   data-showtitle="Ndihma" data-hidetitle="Fshih ndihmën">
+    <blockquote>
+<div><p>Instruksione për nje zgjidhje të mundshme:</p>
+</div></blockquote>
 
 <div data-childcomponent="Karel_if_p1_left_p2_forward_solution" class="course-box course-box-problem course-content">
 
@@ -923,17 +928,17 @@ take the ball
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Check out and decide' data-toggle="tooltip"><a href="01_Karel_07_if.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Kontrolloni dhe vendosni' data-toggle="tooltip"><a href="01_Karel_07_if.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Create a batch of statements' data-toggle="tooltip"><a href="01_Karel_09_functions.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Krijo një grup deklaratash' data-toggle="tooltip"><a href="01_Karel_09_functions.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Check out and decide' data-toggle="tooltip"><a href="01_Karel_07_if.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Kontrolloni dhe vendosni' data-toggle="tooltip"><a href="01_Karel_07_if.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Create a batch of statements' data-toggle="tooltip"><a href="01_Karel_09_functions.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Krijo një grup deklaratash' data-toggle="tooltip"><a href="01_Karel_09_functions.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

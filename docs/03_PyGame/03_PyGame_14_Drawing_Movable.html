@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Moving the drawing &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Lëvizja e vizatimit &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Changing the drawing size" href="03_PyGame_15_Drawing_Scalable_opt.html" />
-    <link rel="prev" title="Drawing from reference - additional examples" href="03_PyGame_12b_Drawing_Given_Examples_opt.html" />
+    <link rel="next" title="Ndryshimi i madhësisë së vizatimit" href="03_PyGame_15_Drawing_Scalable_opt.html" />
+    <link rel="prev" title="Vizatimi nga referenca - shembuj shtesë" href="03_PyGame_12b_Drawing_Given_Examples_opt.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,28 +205,29 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="moving-the-drawing">
-<h1>Moving the drawing<a class="headerlink" href="#moving-the-drawing" title="Permalink to this headline">¶</a></h1>
-<p>In the previous examples, we made several drawings composed of basic shapes. In doing so, it was necessary to determine the correct position for each of these shapes to fit all the pieces together. For some drawings, it was possible (and in some tasks required) that the coordinates of individual points be calculated based on the known coordinates of other points. This computation could have been done outside the program and then the calculated coordinates could just have been entered into the program. However, it is better to perform such calculations in the program itself, for several reasons:</p>
+  <div class="section" id="levizja-e-vizatimit">
+<h1>Lëvizja e vizatimit<a class="headerlink" href="#levizja-e-vizatimit" title="Permalink to this headline">¶</a></h1>
+<p>Në shembujt e mëparshëm, kemi bërë disa vizatime të përbëra nga forma themelore. Duke vepruar kështu, ishte e nevojshme të përcaktohej pozicioni i saktë për secilën nga këto forma që të bashkohen të gjitha pjesët së bashku. Për disa vizatime, ishte e mundur (dhe në disa detyra të kërkuara) që koordinatat e pikave individuale të llogariten bazuar në koordinatat e njohura të pikave të tjera. Ky llogaritje mund të ishte bërë jashtë programit dhe pastaj koordinatat e llogaritura thjesht mund të ishin futur në program. Sidoqoftë, është më mirë të kryhen llogaritjet e tilla në vetë programin, për disa arsye:</p>
 <ul class="simple">
-<li>We may not calculate the coordinates correctly in the first attempt. In such a situation, it is easier to modify the calculation instructions (i.e. the program) than to calculate everything manually from start.</li>
-<li>When we create the drawing ourselves, it may be that after the first version of the program we may want to add something, for example on the left side of the drawing, but that we do not have enough space. In this case, the whole drawing should be moved to the right, so that the <em>x</em> coordinates of all points are increased by the same value. If we manually calculated the coordinates of the points, we need to calculate them all again. In a well-organized drawing program, it is sufficient to change one number to move entire drawing to the right. This process may need to be repeated several times until we are happy with the position of the drawn part, so trying it out is a lot easier when the program does the calculation instead of us.</li>
-<li>If we want to draw the same drawing in multiple places in the window, the benefits of computing inside the program come to light again.</li>
+<li><p>Ne mund të mos i llogaritim saktë koordinatat në përpjekjen e parë. Në një situatë të tillë, është më e lehtë të modifikohen udhëzimet e llogaritjes (d.m.th. programi) sesa të llogaritni gjithçka manualisht që nga fillimi.</p></li>
+<li><p>Kur krijojmë vizatimin vetë, mund të jetë që pas versionit të parë të programit mund të dëshirojmë të shtojmë diçka, për shembull në anën e majtë të vizatimit, por që nuk kemi hapësirë ​​të mjaftueshme. Në këtë rast, e gjithë vizatimi duhet të zhvendoset në të djathtë, në mënyrë që koordinatat <em>x</em> të të gjitha pikave të rriten me të njëjtën vlerë. Nëse llogaritim me dorë koordinatat e pikave, duhet t’i llogaritim përsëri të gjitha. Në një program vizatimi të organizuar mirë, është e mjaftueshme të ndryshoni një numër për të lëvizur tërë vizatimin në të djathtë. Ky proces mund të ketë nevojë të përsëritet disa herë derisa të jemi të kënaqur me pozicionin e pjesës së vizatuar, kështu që provimi i tij është shumë më i lehtë kur programi bën llogaritjen në vend të nesh.</p></li>
+<li><p>Nëse duam të vizatojmë të njëjtën vizatim në shumë vende në dritare, përfitimet e llogaritjes brenda programit vijnë përsëri në dritë.</p></li>
 </ul>
-<p>We will now systematise the coordinate computation a bit more and use it to move the drawn objects more easily. Before we get started, it would be a good idea to check the background and answer these questions:</p>
+<p>Tani do ta sistemojmë pak më shumë llogaritjen e koordinatave dhe do ta përdorim për të lëvizur më lehtë objektet e vizatuara. Para se të fillojmë, do të ishte një ide e mirë për të kontrolluar sfondin dhe t’u përgjigjemi këtyre pyetjeve:</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_point_left">
-            Q-54: What are the coordinates of a point 10 pixels to the left of the point (50, 70)?
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_a">(50, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_a">Try again.</li>
+            <p>Q-54: Cilat janë koordinatat e pikës 10 piksele në të majtë të pikës (50, 70)?</p>
+
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_a">(50, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_a">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_b">(50, 80)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_b">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_b">(50, 80)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_b">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_point_left_opt_c">(40, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_c">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_point_left_opt_c">(40, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_c">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_d">(60, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_d">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_d">(60, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_d">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_e">(40, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_e">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_left_opt_e">(40, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_left_opt_e">Provo përsëri.</li>
             
 
             </ul>
@@ -235,16 +235,17 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_point_down">
-            Q-55: What are the coordinates of a point 10 pixels below the point (50, 70)?
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_a">(50, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_a">Try again.</li>
+            <p>Q-55: Cilat janë koordinatat e pikës 10 piksel nën pikën (50, 70)?</p>
+
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_a">(50, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_a">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_point_down_opt_b">(50, 80)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_b">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_point_down_opt_b">(50, 80)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_b">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_c">(40, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_c">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_c">(40, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_c">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_d">(60, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_d">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_d">(60, 70)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_d">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_e">(40, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_e">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_point_down_opt_e">(40, 60)</li><li data-component="feedback" id="PyGame__drawing_quiz_point_down_opt_e">Provo përsëri.</li>
             
 
             </ul>
@@ -252,16 +253,17 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_rect_up_left">
-            Q-56: The rectangle is drawn using <code class="docutils literal notranslate"><span class="pre">pg.draw.rect(canvas,</span> <span class="pre">color,</span> <span class="pre">(100,</span> <span class="pre">150,</span> <span class="pre">80,</span> <span class="pre">90))</span></code>. How can one draw a rectangle of the same size, located 30 pixels to the left and 30 pixels above this rectangle?
-            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_a">pg.draw.rect(canvas, color, (70, 120, 50, 60))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_a">Try again.</li>
+            <p>Q-56: Drejtkënëshi është vizatuar duke përdorur``pg.draw.rect(canvas, color, (100, 150, 80, 90))``. Si mund të vizatoni një drejtkëndësh me të njëjtën madhësi, të vendosur 30 pixel në të majtë dhe 30 piksele mbi këtë drejtkëndësh?</p>
+
+            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_a">pg.draw.rect(canvas, color, (70, 120, 50, 60))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_a">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_b">pg.draw.rect(canvas, color, (100, 150, 110, 120))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_b">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_b">pg.draw.rect(canvas, color, (100, 150, 110, 120))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_b">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_c">pg.draw.rect(canvas, color, (100, 150, 50, 60))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_c">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_c">pg.draw.rect(canvas, color, (100, 150, 50, 60))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_c">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_rect_up_left_opt_d">pg.draw.rect(canvas, color, (70, 120, 80, 90))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_d">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_rect_up_left_opt_d">pg.draw.rect(canvas, color, (70, 120, 80, 90))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_d">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_e">pg.draw.rect(canvas, color, (70, 180, 80, 90))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_e">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_rect_up_left_opt_e">pg.draw.rect(canvas, color, (70, 180, 80, 90))</li><li data-component="feedback" id="PyGame__drawing_quiz_rect_up_left_opt_e">Provo përsëri.</li>
             
 
             </ul>
@@ -269,23 +271,24 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_circle_above">
-            Q-57: The circle is drawn using <code class="docutils literal notranslate"><span class="pre">pg.draw.circle(canvas,</span> <span class="pre">color,</span> <span class="pre">(100,</span> <span class="pre">200),</span> <span class="pre">40)</span></code>. How can one draw a circle of the same size above this circle and touching it?
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_circle_above_opt_a">pg.draw.circle(canvas, color, (100, 120), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_a">Correct!</li>
+            <p>Q-57: Rrethi ëeshtë vizatuar duke përdorur <code class="docutils literal notranslate"><span class="pre">pg.draw.circle(canvas,</span> <span class="pre">color,</span> <span class="pre">(100,</span> <span class="pre">200),</span> <span class="pre">40)</span></code>. Si mund të vizatohet një rreth me të njëjtën madhësi mbi këtë rreth dhe ta prekë atë?</p>
+
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_circle_above_opt_a">pg.draw.circle(canvas, color, (100, 120), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_a">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_b">pg.draw.circle(canvas, color, (100, 160), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_b">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_b">pg.draw.circle(canvas, color, (100, 160), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_b">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_c">pg.draw.circle(canvas, color, (120, 100), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_c">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_c">pg.draw.circle(canvas, color, (120, 100), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_c">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_d">pg.draw.circle(canvas, color, (160, 100), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_d">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_d">pg.draw.circle(canvas, color, (160, 100), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_d">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_e">pg.draw.circle(canvas, color, (20, 120), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_e">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_circle_above_opt_e">pg.draw.circle(canvas, color, (20, 120), 40)</li><li data-component="feedback" id="PyGame__drawing_quiz_circle_above_opt_e">Provo përsëri.</li>
             
 
             </ul>
             </div>
-            <div class="section" id="changes-to-make-a-drawing-easily-movable">
-<h2>Changes to make a drawing easily movable<a class="headerlink" href="#changes-to-make-a-drawing-easily-movable" title="Permalink to this headline">¶</a></h2>
-<p>Let’s see how a cloud is drawn in the following example:</p>
+            <div class="section" id="ndryshime-per-te-bere-nje-vizatim-lehtesht-te-levizshem">
+<h2>Ndryshime për të bërë një vizatim lehtësht të lëvizshëm<a class="headerlink" href="#ndryshime-per-te-bere-nje-vizatim-lehtesht-te-levizshem" title="Permalink to this headline">¶</a></h2>
+<p>Le të shohim se si një re është vizatuar në shembullin e mëposhtëm:</p>
 
 <div data-childcomponent="PyGame__drawing_cloud_fixed" class="course-box course-box-problem course-content">
 
@@ -316,14 +319,14 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>We presented the cloud with three circles, one larger in the middle and two smaller ones around it:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
+<p>Ne prezantuam renë me tre rrathë, një më të madh në mes dhe dy më të vegjël rreth tij:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>If we wanted to draw that cloud at different heights, we could repeat these three commands, each time with some new value for <span class="math notranslate nohighlight">\(y\)</span> coordinate of the centers of these three circles instead of 200, as it is in the first drawing. For example:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
+<p>Nëse do të donim ta vizatonim atë re në lartësi të ndryshme, mund të përsërisnim këto tre komanda, çdo herë me disa vlera të reja për <span class="math notranslate nohighlight">\(y\)</span> koordinata e qendrave të këtyre tre rrathëve në vend të 200, siç është në vizatimin e parë . Për shembull:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
 <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
 
@@ -337,9 +340,9 @@ pygamebg.wait_loop()
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/clouds.png"><img alt="../_images/clouds.png" class="align-center" src="../_images/clouds.png" style="width: 400px;" /></a>
-<p>In this way, not only does the program grow faster than it has to, we also need to make every change in three places (for example, if we want to try 330 instead of 320, that change should be made in three places). Three changes are not many, but if we adopt this way of doing things, we would have more and more problems in more complex drawings, or in complex programs in general.</p>
-<p>Instead, it is better to create a function and pass <span class="math notranslate nohighlight">\(y\)</span> coordinate of the centers as a parameter:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">yc</span><span class="p">):</span>
+<p>Në këtë mënyrë, jo vetëm që programi rritet më shpejt se sa duhet, ne gjithashtu duhet të bëjmë çdo ndryshim në tre vende (për shembull, nëse duam të provojmë 330 në vend të 320, ai ndryshim duhet të bëhet në tre vende). Tre ndryshime nuk janë të shumta, por nëse e pranojmë këtë mënyrë të të bërit të gjërave, do të kishim gjithnjë e më shumë probleme në vizatime më komplekse, ose në programe komplekse në përgjithësi.</p>
+<p>Në vend të kësaj, është më mirë të krijoni një funksion dhe të kaloni <span class="math notranslate nohighlight">\(y\)</span> koordinata e qendrave si parametër:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">yc</span><span class="p">):</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="n">yc</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="n">yc</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="n">yc</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
@@ -349,11 +352,11 @@ pygamebg.wait_loop()
 <span class="n">cloud</span><span class="p">(</span><span class="mi">320</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The new program is easier to read and modify further. For more clouds, or more complex clouds, the advantage of this approach would be even greater.</p>
+<p>Programi i ri është më i lehtë për tu lexuar dhe modifikuar më tej. Për më shumë re, ose re më komplekse, avantazhi i kësaj qasje do të ishte edhe më i madh.</p>
 <hr class="docutils" />
-<p>Now let’s consider how we should move the cloud to the left or to the right. We should increase or decrease the <span class="math notranslate nohighlight">\(x\)</span> coordinates of all circles (200, 150, 250) by the same value. For example, if we typed 260, 210, 310 as <span class="math notranslate nohighlight">\(x\)</span> coordinates, the entire cloud would be moved 60 pixels to the right.</p>
-<p>It would be good if we could only use a single number to specify the horizontal position of the cloud. To achieve this, we note that the centers of the smaller circles are 50 pixels away from the center of the middle circle to the left and right. These distances do not change as the cloud moves. This means that if we denote <span class="math notranslate nohighlight">\(x\)</span> coordinate of the center of the middle circle with <span class="math notranslate nohighlight">\(X_c\)</span>, then the centers of the smaller circles have <span class="math notranslate nohighlight">\(x\)</span> coordinates <span class="math notranslate nohighlight">\(X_c - 50\)</span> and <span class="math notranslate nohighlight">\(X_c + 50\)</span>. Thanks to this relation (which does not depend on the position of the cloud), we can now also introduce the parameter <span class="math notranslate nohighlight">\(x\)</span> to the function that draws the cloud:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">):</span>
+<p>Tani le të shqyrtojmë se si duhet ta lëvizim renë në të majtë ose në të djathtë. Ne duhet të rrisim ose ulim koordinatat <span class="math notranslate nohighlight">\(x\)</span> të të gjitha rrathëve (200, 150, 250) me të njëjtën vlerë. Për shembull, nëse do të shtypnim koordinatat 260, 210, 310 si <span class="math notranslate nohighlight">\(x\)</span>, e gjithë reja do të lëvizet 60 pixel në të djathtë.</p>
+<p>Do të ishte mirë nëse do të mund të përdorim vetëm një numër të vetëm për të specifikuar pozicionin horizontal të reve. Për ta arritur këtë, vërejmë se qendrat e rrathëve më të vegjël janë 50 pixel larg nga qendra e rrethit të mesëm në të majtë dhe të djathtë. Këto distanca nuk ndryshojnë kur lëviz reja. Kjo do të thotë që nëse tregojmë <span class="math notranslate nohighlight">\(x\)</span> koordinata e qendrës së rrethit të mesëm me:math:` X_c`, atëherë qendrat e rrathëve më të vogla kanë <span class="math notranslate nohighlight">\(x\)</span> koordinatat :math:` X_c - 50 <cite>dhe:math:</cite> X_c + 50`. Falë kësaj lidhjeje (e cila nuk varet nga pozicioni i resë), tani mund të prezantojmë edhe parametrin <span class="math notranslate nohighlight">\(x\)</span> në funksionin që vizaton renë:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cloud</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">):</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">),</span> <span class="mi">50</span><span class="p">)</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">xc</span> <span class="o">-</span> <span class="mi">50</span><span class="p">,</span> <span class="n">yc</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
     <span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">canvas</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">xc</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="n">yc</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
@@ -363,8 +366,8 @@ pygamebg.wait_loop()
 <span class="n">cloud</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">320</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Either of these three clouds could now be easily moved, for example, 60 pixels to the right, by typing 260 as the first parameter instead of 200 in the function calls. It is equally easy to make a drawing with several clouds. Color, or shade of gray, can also be a function parameter. This way, some clouds can be darker and some brighter.</p>
-<p>When we use all of the above, we can create a program that draws several clouds of different shades, for example:</p>
+<p>Secila prej këtyre tre reve tani mund të zhvendoset lehtësisht, për shembull, 60 pixel në të djathtë, duke shtypur 260 si parametrin e parë në vend të 200 në thirrjet e funksionit. Është po aq e thjeshtë për të bërë një vizatim me disa re. Ngjyra, ose hija e gri, gjithashtu mund të jetë një parametër i funksionit. Në këtë mënyrë, disa reve mund të jenë më të errëta dhe disa më të ndritshme.</p>
+<p>Kur përdorim të gjitha sa më sipër, mund të krijojmë një program që vizaton disa re me hije të ndryshme, për shembull:</p>
 
 <div data-childcomponent="PyGame__drawing_cloud_movable" class="course-box course-box-problem course-content">
 
@@ -404,25 +407,25 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Let’s summarize, with small generalizations, what needs to be done in order to be able to show one drawing in various places:</p>
+<p>Le të përmbledhim, me përgjithësime të vogla, çfarë duhet të bëhet për të qenë në gjendje të tregojmë një vizatim në vende të ndryshme:</p>
 <ul class="simple">
-<li>We need to select one point whose coordinates are set directly. We call this selected point <strong>the main point</strong>, (sometimes this point is also called <strong>anchor</strong>). In the example of clouds, the main point is the center of the middle circle.</li>
-<li>After selecting the main point, the coordinates of all other significant points are determined in relation to it by adding or subtracting a certain displacement to the coordinates of the main point. In the example with the cloud, to get <span class="math notranslate nohighlight">\(x\)</span> coordinate of the center of the left circle, from <span class="math notranslate nohighlight">\(x\)</span> coordinate of the main point (center of the middle circle) we subtract 50 pixels, and for the right circle we add 50 pixels.</li>
+<li><p>Duhet të zgjedhim një pikë, koordinatat e së cilës vendosen direkt. Ne e quajmë këtë pikë të zgjedhur <strong>pikën kryesore</strong>, (nganjëherë kjo pikë quhet edhe <strong>anchor</strong>). Në shembullin e reve, pika kryesore është qendra e rrethit të mesëm.</p></li>
+<li><p>Pas zgjedhjes së pikës kryesore, koordinatat e të gjitha pikave të tjera të rëndësishme përcaktohen në lidhje me të duke shtuar ose zbritur një zhvendosje të caktuar në koordinatat e pikës kryesore. Në shembullin me re, për të marrë <span class="math notranslate nohighlight">\(x\)</span> koordinata e qendrës së rrethit të majtë, nga :math:` x` koordinata e pikës kryesore (qendra e rrethit të mesëm) ne zbritim 50 pixel, dhe për rrethi i duhur shtojmë 50 pixel.</p></li>
 </ul>
-<p>In the general case, there may be shapes other than circles in the drawing. The significant points that determine the positions of these shapes are:</p>
+<p>Në rastin e përgjithshëm, në vizatim mund të ketë forma të ndryshme nga rrathët. Pikat e rëndësishme që përcaktojnë pozicionet e këtyre formave janë:</p>
 <ul class="simple">
-<li>for a line: its ends</li>
-<li>for a polygon: its points</li>
-<li>for a circle: its center</li>
-<li>for a rectangle: its upper left corner</li>
-<li>for an ellipse: the upper left corner of the rectangle in which that ellipse is inscribed</li>
+<li><p>për një vizë: skajet e saj</p></li>
+<li><p>për një shumëkëndësh: pikat e saj</p></li>
+<li><p>për një rreth: qendra e saj</p></li>
+<li><p>për një drejtkëndësh: këndi i sipërm i saj i majtë</p></li>
+<li><p>për një elips: këndi i sipërm i majtë i drejtkëndëshit në të cilin është gdhendur ajo elips</p></li>
 </ul>
-<p>All of these points should be given with respect to the main point, that is, their coordinates should be expressed as coordinates of the main point, increased or decreased by some value.</p>
-<p>Check your understanding of the previous explanations and answer the questions.</p>
+<p>Të gjitha këto pika duhet të jepen në lidhje me pikën kryesore, domethënë, koordinatat e tyre duhet të shprehen si koordinata të pikës kryesore, të rritura ose të zvogëluara për ndonjë vlerë.</p>
+<p>Kontrolloni të kuptuarit tuaj për shpjegimet e mëparshme dhe përgjigjuni pyetjeve.</p>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_anchor_introduction1">
-            <p>Q-58: We want to customize a drawing consisting of several shapes so that everything is drawn relative to the anchor with the coordinates <cite>x = 100</cite>, <cite>y = 100</cite>. One of the statements that form a drawing is</p>
+            <p>Q-58: Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat <cite>x = 100</cite>,` y = 100`. Një nga pohimet që formojnë një vizatim është</p>
 
 <div data-childcomponent="PyGame__drawing_quiz_anchor_introduction_code1" class="course-box course-box-problem course-content">
 
@@ -434,15 +437,15 @@ pygamebg.wait_loop()
 pg.draw.circle(canvas, pg.Color("red"), (120, 90), 50, 1)
 </textarea>
 </div>
-<p>What statement should replace the given one?</p>
+<p>Cila fjali e zëvendëson këtë?</p>
 
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction1_opt_a">pg.draw.circle(canvas, pg.Color("red"), (x, y), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_a">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction1_opt_a">pg.draw.circle(canvas, pg.Color("red"), (x, y), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_a">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction1_opt_b">pg.draw.circle(canvas, pg.Color("red"), (x+120, y+90), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_b">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction1_opt_b">pg.draw.circle(canvas, pg.Color("red"), (x+120, y+90), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_b">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction1_opt_c">pg.draw.circle(canvas, pg.Color("red"), (x+20, y-10), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_c">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction1_opt_c">pg.draw.circle(canvas, pg.Color("red"), (x+20, y-10), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_c">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction1_opt_d">pg.draw.circle(canvas, pg.Color("red"), (x-20, y+10), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_d">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction1_opt_d">pg.draw.circle(canvas, pg.Color("red"), (x-20, y+10), 50, 1)</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction1_opt_d">Provo përsëri.</li>
             
 
             </ul>
@@ -450,27 +453,15 @@ pg.draw.circle(canvas, pg.Color("red"), (120, 90), 50, 1)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_anchor_introduction2">
-            <p>Q-59: We want to customize a drawing consisting of several shapes so that everything is drawn relative to the anchor with the coordinates <cite>x = 100</cite>, <cite>y = 100</cite>. One of the statements that form a drawing is</p>
+            <p>Q-59: Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat <cite>x = 100</cite>,` y = 100`. Një nga pohimet që formojnë një vizatim është</p>
 
-<div data-childcomponent="PyGame__drawing_quiz_anchor_introduction_code2" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=PyGame__drawing_quiz_anchor_introduction_code2 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-             data-passivecode="true"  data-hidehistory=true
-       >
-pg.draw.line(canvas, pg.Color("red"), (50, 50), (150, 150))
-</textarea>
-</div>
-<p>What statement should replace the given one?</p>
-
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_a">pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (150, 150))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_a">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_a">pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (150, 150))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_a">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction2_opt_b">pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (x+50, y+50))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_b">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction2_opt_b">pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (x+50, y+50))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_b">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_c">pg.draw.line(canvas, pg.Color("red"), (x-50, x+50), (y-50, y+50))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_c">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_c">pg.draw.line(canvas, pg.Color("red"), (x-50, x+50), (y-50, y+50))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_c">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_d">pg.draw.line(canvas, pg.Color("red"), (x+50, y+50), (x+150, y+150))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_d">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_d">pg.draw.line(canvas, pg.Color("red"), (x+50, y+50), (x+150, y+150))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_d">Provo përsëri.</li>
             
 
             </ul>
@@ -478,27 +469,15 @@ pg.draw.line(canvas, pg.Color("red"), (50, 50), (150, 150))
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_anchor_introduction3">
-            <p>Q-60: We want to customize a drawing consisting of several shapes so that everything is drawn relative to the anchor with the coordinates <cite>x = 100</cite>, <cite>y = 100</cite>. One of the statements that form a drawing is</p>
+            <p>Q-60: Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat <cite>x = 100</cite>,` y = 100`. Një nga pohimet që formojnë një vizatim është</p>
 
-<div data-childcomponent="PyGame__drawing_quiz_anchor_introduction_code3" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=PyGame__drawing_quiz_anchor_introduction_code3 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-             data-passivecode="true"  data-hidehistory=true
-       >
-pg.draw.rect(canvas, pg.Color("red"), (50, 50, 100, 100))
-</textarea>
-</div>
-<p>What statement should replace the given one?</p>
-
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_a">pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, x, y))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_a">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_a">pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, x, y))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_a">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_b">pg.draw.rect(canvas, pg.Color("red"), (x, y, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_b">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_b">pg.draw.rect(canvas, pg.Color("red"), (x, y, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_b">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_c">pg.draw.rect(canvas, pg.Color("red"), (x+50, y+50, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_c">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_c">pg.draw.rect(canvas, pg.Color("red"), (x+50, y+50, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_c">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction3_opt_d">pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_d">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction3_opt_d">pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_d">Saktë!</li>
             
 
             </ul>
@@ -506,25 +485,26 @@ pg.draw.rect(canvas, pg.Color("red"), (50, 50, 100, 100))
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="PyGame__drawing_quiz_move_to_the_right">
-            Q-61: We want to move a drawing consisting of several shapes to the right by 100 pixels. Mark the correct claims.
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_move_to_the_right_opt_a">Instead of pg.draw.circle(canvas, color, (x, y), r, d) we call pg.draw.circle(canvas, color, (x+100, y), r, d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_a">Correct!</li>
+            <p>Q-61: Ne duam të lëvizim një vizatim të përbërë nga disa forma në të djathtë nga 100 piksele. Shënoni pretendimet e sakta.</p>
+
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_move_to_the_right_opt_a">Instead of pg.draw.circle(canvas, color, (x, y), r, d) we call pg.draw.circle(canvas, color, (x+100, y), r, d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_a">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_move_to_the_right_opt_b">Instead of pg.draw.circle(canvas, color, (x, y), r, d) we call pg.draw.circle(canvas, color, (x-100, y-100), r, d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_b">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_move_to_the_right_opt_b">Instead of pg.draw.circle(canvas, color, (x, y), r, d) we call pg.draw.circle(canvas, color, (x-100, y-100), r, d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_b">Provo përsëri.</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_move_to_the_right_opt_c">Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.circle(canvas, color, (x+100, y, w+100, h), d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_c">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_move_to_the_right_opt_c">Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.circle(canvas, color, (x+100, y, w+100, h), d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_c">Provo përsëri.</li>
             
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_move_to_the_right_opt_d">Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.rect(canvas, color, (x+100, y, w, h), d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_d">Correct!</li>
+            <li data-component="answer" data-correct id="PyGame__drawing_quiz_move_to_the_right_opt_d">Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.rect(canvas, color, (x+100, y, w, h), d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_d">Saktë!</li>
             
-            <li data-component="answer"  id="PyGame__drawing_quiz_move_to_the_right_opt_e">Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.rect(canvas, color, (x-100, y, w, h), d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_e">Try again.</li>
+            <li data-component="answer"  id="PyGame__drawing_quiz_move_to_the_right_opt_e">Instead of pg.draw.rect(canvas, color, (x, y, w, h), d) we call pg.draw.rect(canvas, color, (x-100, y, w, h), d).</li><li data-component="feedback" id="PyGame__drawing_quiz_move_to_the_right_opt_e">Provo përsëri.</li>
             
 
             </ul>
             </div>
-            <p>The following are some examples of converting a fixed drawing to a movable one.</p>
+            <p>Shembujt e mëposhtëm trgojnë konvertimin e në vizatimi statik në një të lëvizshëm.</p>
 </div>
-<div class="section" id="teddy-bear-position">
-<h2>Teddy bear - position<a class="headerlink" href="#teddy-bear-position" title="Permalink to this headline">¶</a></h2>
-<p>The following program, which shows the toy bear’s head, is given:</p>
+<div class="section" id="ariu-pozicioni">
+<h2>Ariu -  pozicioni<a class="headerlink" href="#ariu-pozicioni" title="Permalink to this headline">¶</a></h2>
+<p>Programi i mëposhtëm, i cili tregon kokën e ariut të lodrave, është dhënë:</p>
 
 <div data-childcomponent="PyGame__drawing_bear_fixed" class="course-box course-box-problem course-content">
 
@@ -558,14 +538,14 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>The program calls the <em>framed_circle</em> function seven times, which draws the given circle with black border (though it could have been avoided for the three small black circles). To be able to change the position of the drawing, let’s select the main point (anchor). Make it the center of a large circle, that is, the heads of the bear. The coordinates of this point are (250, 150). Now we need to express the coordinates of the centers of all other circles relative to the main point. Take the bear’s right ear as an example.</p>
-<p><span class="math notranslate nohighlight">\(x\)</span> coordinate of the center of the right ear is <span class="math notranslate nohighlight">\(310 = 250 + 60\)</span>, while <span class="math notranslate nohighlight">\(y\)</span> coordinate is <span class="math notranslate nohighlight">\(80 = 150 - 70\)</span>. From here we can see that the coordinates of the center of the right ear can be written in the program as <cite>(cx + 60, cy - 70)</cite>, where <cite>(cx, cy)</cite> are the coordinates of the main point.</p>
-<p>Follow the same procedure for the other circles and complete the <em>draw_teddy</em> function.</p>
+<p>Programi e quan funksionin <em>framed_circle</em> shtatë herë, i cili vizaton rrethin e dhënë me kufi të zi (megjithëse mund të ishte shmangur për tre rrathët e vegjël të zi). Për të qenë në gjendje të ndryshojmë pozicionin e vizatimit, le të zgjedhim pikën kryesore (anchor). Bëni atë qendër të një rrethi të madh, domethënë kokat e ariut. Koordinatat e kësaj pike janë (250, 150). Tani duhet të shprehim koordinatat e qendrave të të gjitha rrathëve të tjera në lidhje me pikën kryesore. Merrni si shembull veshin e djathtë të ariut.</p>
+<p><span class="math notranslate nohighlight">\(x\)</span> koordinata e qendrës së veshit të djathtë është :math:` 310 = 250 + 60`, ndërsa <span class="math notranslate nohighlight">\(y\)</span> koordinata është :math:` 80 = 150 - 70`. Nga këtu mund të shohim që koordinatat e qendrës së veshit të djathtë mund të shkruhen në program si <cite>(cx + 60, cy - 70)</cite>, ku <cite>(cx, cy)</cite> janë koordinatat e pikës kryesore.</p>
+<p>Ndiqni të njëjtën procedurë për rrathët e tjera dhe plotësoni funksionin <em>Draw_teddy</em>.</p>
 
 <div data-childcomponent="PyGame__drawing_bear_movable1" class="course-box course-box-problem course-content">
 
 <textarea data-component="activecode" id=PyGame__drawing_bear_movable1 data-lang="python" 
-      data-timelimit=25000    
+      data-timelimit=25000  data-codelens="true"  
     data-audio=''   
            data-playtask="true"   data-modaloutput="true" data-hidehistory=true
       data-includexsrc="# -*- acsection: general-init -*-
@@ -610,20 +590,20 @@ def draw_teddy(cx, cy):
 draw_teddy(width // 2, height // 2)
 </textarea>
 </div>
-<p>This program allows us to easily display teddy bears in various places on the screen. For example, the function call</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+<p>Ky program na lejon të shfaqim me lehtësi arinj në vende të ndryshme të ekranit. Për shembull, thirrja e funksionit</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>which draws a bear with the main point in the center of the window (as it was), can be replaced with the following two:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">120</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+<p>e cila vizaton një arush me pikën kryesore në qendër të dritares (ashtu siç ishte), mund të zëvendësohet me dy vija: e cila vizaton një ari me pikën kryesore në qendër të dritares (ashtu siç ishte), mund të jetë zëvendësuar me dy në vija:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">120</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">draw_teddy</span><span class="p">(</span><span class="n">width</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">120</span><span class="p">,</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Try this! It would have been much more difficult to draw another bear if we had not adapted the initial program for this use.</p>
+<p>Provoni këtë! Do të ishte shumë më e vështirë të vizatonim një arush tjetër nëse nuk do të kishim përshtatur programin fillestar për këtë përdorim.</p>
 </div>
-<div class="section" id="house-position">
-<h2>House - position<a class="headerlink" href="#house-position" title="Permalink to this headline">¶</a></h2>
-<p>Let’s say you wrote this program, and your goal is to remake the program so that the house can be easily moved:</p>
+<div class="section" id="shtepia-pozicioni">
+<h2>Shtëpia - pozicioni<a class="headerlink" href="#shtepia-pozicioni" title="Permalink to this headline">¶</a></h2>
+<p>Le të themi që e keni shkruar këtë program, dhe qëllimi juaj është të shkruani programin në mënyrë që shtëpia të zhvendoset lehtësisht:</p>
 
 <div data-childcomponent="PyGame__drawing_house_detailed_fixed" class="course-box course-box-problem course-content">
 
@@ -651,8 +631,8 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Let the main point be: code: <cite>(x, y) = (50, 150)</cite>. Complete the started remodeling of the program in the box below, where the drawing is done in the function <code class="code docutils literal notranslate"><span class="pre">draw_house(x,</span> <span class="pre">y,</span> <span class="pre">wall_color)</span></code>. After making sure that the drawings in the two programs look the same (except that they draw in windows of different sizes), replace the call <code class="code docutils literal notranslate"><span class="pre">draw_house(50,</span> <span class="pre">150,</span> <span class="pre">pg.Color</span> <span class="pre">(&quot;</span> <span class="pre">khaki</span> <span class="pre">&quot;))</span></code> with the next 4, to get the picture as when clicking the “Play task” button:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_house</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span>  <span class="mi">90</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">))</span>
+<p>Le të jetë pika kryesore <code class="code docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span> <span class="pre">=</span> <span class="pre">(50,</span> <span class="pre">150)</span></code>. Përfundoni rimodelimin e nisur të programit në kutinë më poshtë, ku vizatimi është bërë në funksionin <code class="code docutils literal notranslate"><span class="pre">Draw_house</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">wall_color)</span></code>. Pasi të siguroheni që vizatimet në të dy programet duken njësoj (përveç që ato vizatohen në dritare me madhësi të ndryshme), zëvendësoni kodin :code:<a href="#id1"><span class="problematic" id="id2">`</span></a>Draw_house (50, 150, pg.Color (” khaki “))” 4 tjetër, për të marrë figurën si kur klikoni në butonin “Luaj lojën”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_house</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span>  <span class="mi">90</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">))</span>
 <span class="n">draw_house</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">))</span>
 <span class="n">draw_house</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">150</span><span class="p">))</span>
 <span class="n">draw_house</span><span class="p">(</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;khaki&quot;</span><span class="p">))</span>
@@ -706,17 +686,17 @@ draw_house( 50, 150, pg.Color("khaki"))
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing from reference - additional examples' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatimi nga referenca - shembuj shtesë' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Changing the drawing size' data-toggle="tooltip"><a href="03_PyGame_15_Drawing_Scalable_opt.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Ndryshimi i madhësisë së vizatimit' data-toggle="tooltip"><a href="03_PyGame_15_Drawing_Scalable_opt.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing from reference - additional examples' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatimi nga referenca - shembuj shtesë' data-toggle="tooltip"><a href="03_PyGame_12b_Drawing_Given_Examples_opt.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Changing the drawing size' data-toggle="tooltip"><a href="03_PyGame_15_Drawing_Scalable_opt.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Ndryshimi i madhësisë së vizatimit' data-toggle="tooltip"><a href="03_PyGame_15_Drawing_Scalable_opt.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

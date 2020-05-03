@@ -1,9 +1,9 @@
-Animation
+Animim
 =========
 
-It is known that videos consist of a large number of images, which are displayed fast enough one after the other, with successive images differing only slightly. Creating videos in this way is essentially possible because a person (human being), at a sufficiently high speed of rendering images, is not able to see individual images, but rather they blend together and create an impression of movement.
+Dihet që videot përbëhen nga një numër i madh i imazheve, të cilat shfaqen mjaft shpejt njëra pas tjetrës, me imazhe të njëpasnjëshme që ndryshojnë vetëm pak. Krijimi i videove në këtë mënyrë është në thelb i mundur sepse një person (qenie njerëzore), me një shpejtësi mjaft të lartë për të dhënë imazhe, nuk është në gjendje të shohë imazhe individuale, por përkundrazi ato përzihen së bashku dhe krijojnë përshtypjen e lëvizjes.
 
-Creating a motion impression with still images is called animation. For example, from the following eight pictures of a character in different positions:
+Krijimi i një përshtypje lëvizjeje me imazhe të qetë quhet animacion. Për shembull, nga tetë fotografitë e mëposhtme të një personazhi në pozicione të ndryshme:
 
 .. image:: ../../_images/PyGame/pganim_running1.png
    :width: 120px
@@ -23,12 +23,12 @@ Creating a motion impression with still images is called animation. For example,
    :width: 120px
 
 
-the following animation of running is created:
+krijohet animacioni i mëposhtëm:
            
 .. image:: ../../_images/PyGame/pganim_running.gif
    :width: 120px
            
-Each of the images that appear in an animation is called a *frame*. The programs we have been working on so far were drawing only one drawing (frame) and the image was not changed after that. In programs that use animation one image must be drawn for each frame. In the following lessons we will see how we can do that.
+Secila prej pamjeve që shfaqen në një animacion quhet një *kornizë*. Programet për të cilët ne kemi punuar deri tani ishin duke vizatuar vetëm një vizatim (kornizë) dhe imazhi nuk u ndryshua pas kësaj. Në programet që përdorin animacion duhet të vizatohet një imazh për secilën kornizë. Në mësimet e mëposhtme do të shohim se si mund ta bëjmë atë.
 
    .. toctree::
       :maxdepth: 1

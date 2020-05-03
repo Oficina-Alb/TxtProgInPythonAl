@@ -1,9 +1,9 @@
-Changing the drawing size
+Ndryshimi i madhësisë së vizatimit
 -------------------------
 
-When we talked about moving a drawing, we mentioned that it is better to do all the calculations in the program, because it is easier that way to move the drawing, or to draw it in several places when needed. The situation is similar when we want to draw the same drawing in different size, possibly in several places (each could be in different size). Instead of calculating all the coordinates from scratch, it may be enough to change one single number in our program to get a drawing of another size.
+Kur folëm për lëvizjen e një vizatimi, përmendëm se është më mirë të bëjmë të gjitha llogaritjet në program, sepse është më e lehtë në atë mënyrë që të lëvizësh vizatimin, ose ta vizatosh në disa vende kur të jetë e nevojshme. Situata është e ngjashme kur ne duam të vizatojmë të njëjtën vizatim në madhësi të ndryshme, ndoshta në disa vende (secila mund të jetë në madhësi të ndryshme). Në vend që të llogaritni të gjitha koordinatat nga e para, mund të jetë e mjaftueshme për të ndryshuar një numër të vetëm në programin tonë për të marrë një vizatim të një madhësie tjetër.
 
-To learn how to make drawings that can be resized easily, let's first see what needs to be changed in a drawing program so that the drawing gets a different size. For example, if we drew a cloud using these statements:
+Për të mësuar se si të bëj vizatime që mund të ndryshohen në madhësi të lehtë, le të shohim së pari se çfarë duhet të ndryshohet në një program vizatimi, në mënyrë që vizatimi të marrë një madhësi të ndryshme. Për shembull, nëse kemi vizatuar një re duke përdorur këto deklarime:
 
 .. code::
 
@@ -16,7 +16,7 @@ To learn how to make drawings that can be resized easily, let's first see what n
 
     cloud(200, 200, 180)
 
-and now we want the cloud to be twice as small and its midpoint to be still at point (200, 200), then we would change the function given above to:
+dhe tani duam që reja të jetë dy herë më e vogël dhe në mes të saj të jetë akoma në pikën (200, 200), atëherë do ta ndryshonim funksionin e dhënë më lart në:
 
 .. code::
 
@@ -27,9 +27,9 @@ and now we want the cloud to be twice as small and its midpoint to be still at p
         pg.draw.circle(canvas, gray, (x - 25, y), 15)
         pg.draw.circle(canvas, gray, (x + 25, y), 15)
     
-The radii of all three circles should be cut to half the previous size (25 pixels instead of 50 and 15 instead of 30), but that is not enough. If the centers of the small circles remained where they were, we would get three separate circles (try it). In order for the drawing to still look like a cloud, we also need to bring the circles closer together. More specifically, the distances of the centers of the smaller circles from the center of the large circle should also be twice less than before, that is, 25 instead of 50 pixels.
+Rrezet e të tre rrathëve duhet të shkurtohen në gjysmën e madhësisë së mëparshme (25 piksele në vend të 50 dhe 15 në vend të 30), por kjo nuk është e mjaftueshme. Nëse qendrat e rrathëve të vogla do të mbeten aty ku ishin, do të merrnim tre rrathë të ndara (provoni). Në mënyrë që vizatimi të duket ende si një re, duhet gjithashtu t'i afrojmë rrathët më pranë. Më saktësisht, distancat e qendrave të rrathëve më të vogla nga qendra e rrethit të madh duhet gjithashtu të jenë dy herë më pak se më parë, domethënë 25 në vend të 50 pikselave.
 
-In general, we do not always want a cloud that is twice as small, but that the clouds can be of different sizes. In addition, we do not want to create a separate function for each cloud size, but to have one function that can draw a cloud of a given size. IUt would be the most comfortable if we could set the size of the cloud with only one number and change the size of the cloud by changing that one number. To do this, we need to express all the sizes that change with the change of cloud size (which is the distances between the centers of the circles and the radii of those circles) using one selected size. For example, for that selected size we can take the radius of the middle circle, which we will denote by :math:`r`. The distances of the centers of the smaller circles to the center of the larger circle are exactly :math:`r`, and the radius of the smaller circles is equal :math:`{3 \over 5} r` regardless of the size of the cloud. When we use all these relations we have noticed, the function looks like this:
+Në përgjithësi, ne jo gjithmonë duam një re që është dy herë më e vogël, por që retë mund të jenë të madhësive të ndryshme. Përveç kësaj, ne nuk duam të krijojmë një funksion të veçantë për secilën madhësi të reve, por të kemi një funksion që mund të tërheqë një re të një madhësie të caktuar. Do të ishte më e rehatshme nëse mund të vendosnim madhësinë e cloud me vetëm një numër dhe të ndryshonim madhësinë e cloud duke ndryshuar atë një numër. Për ta bërë këtë, duhet të shprehim të gjitha madhësitë që ndryshojnë me ndryshimin e madhësisë së cloud (që është distanca midis qendrave të rrathëve dhe rrezet e atyre rrathëve) duke përdorur një madhësi të zgjedhur. Për shembull, për atë madhësi të zgjedhur mund të marrim rrezen e rrethit të mesëm, të cilin do ta tregojmë me anë të :math:`r`. Distancat e qendrave të rrathëve më të vogla deri në qendrën e rrethit më të madh janë saktësisht :math:`r`, dhe rrezja e rrathëve më të vogla është e barabartë :math:` {3 \ over 5} r` pavarësisht nga madhësia e re. Kur përdorim të gjitha këto marrëdhënie që kemi vërejtur, funksioni duket si ky:
 
 .. code::
 
@@ -49,18 +49,18 @@ The function has one parameter more - besides the position and the shade of gray
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\6_Scalable\clouds_scalable.py
 
-Now, let's list the steps for a general procedure to remake any movable drawing so that it can be resized as well:
+Tani, le të rendisim hapat për një procedurë të përgjithshme për të rimarrë çdo vizatim të lëvizshëm, në mënyrë që të mund të ndryshohet në madhësi:
 
-- We need to determine one length in the drawing, which will be set directly. We can call this selected length **basic length** or **unit of measure**. In the example of clouds, the basic length is the radius of the middle circle.
-- All radii of the circles of which the drawing consists are expressed in proportion to the basic length. This means that if our base length is denoted by :math:`a`, all other lengths in the program will be multiples of :math:`a`, for example :math:`2a` or :math:`5a`. We determine the number :math:`a` from the ratio of the required length and the selected basic length in the initial drawing (this ratio remains the same when the size of the drawing changes). In the example with the cloud, the radius of the small circle is always :math:`{3 \over 5}` of the selected basic length :math:`r`. If rectangles or ellipses appear in the drawing, the heights and widths of those rectangles and ellipses should also be expressed in proportion to the basic length, in the same way as the radii of the circles.
-- We determine the coordinates of all points with respect to the main point, by adding or subtracting a certain number of basic lengths to coordinates of the main point. The required number of basic lengths is determined again from the relation in the initial drawing. In the example with the cloud, to obtain :math:`x` coordinate of the center of the left circle, we subtract **one** basic length from :math:`x` coordinate of the main point (center of the middle circle). We do so because the ratio of the difference of :math:`x` coordinates and basic length equals to one. The same procedure applies in principle to :math:`y` coordinates, though in this case it is particularly simple. Since :math:`y` coordinates of the centers of the circles are the same, the ratio of the difference of the :math:`y` coordinates and the basic length is zero, so zero basic lengths should be added to :math:`y` coordinate of the anchor to get :math:`y` coordinate of the center of a smaller circle.
+- Duhet të përcaktojmë një gjatësi në vizatim, i cili do të vendoset direkt. Mund ta quajmë këtë gjatësi të zgjedhur **gjatësi themelore** ose njësi matëse. Në shembullin e reve, gjatësia themelore është rrezja e rrethit të mesëm.
+- Të gjitha rrezet e rrathëve të të cilave përbëhet vizatimi shprehen në përpjesëtim me gjatësinë themelore. Kjo do të thotë që nëse gjatësia jonë bazë shënohet nga :math:`a`, të gjitha gjatësitë e tjera në program do të jenë shumëfish :math:`a`, për shembull :math:`2a` ose :math:` 5a`. Ne përcaktojmë numrin :math:`a` nga raporti i gjatësisë së kërkuar dhe gjatësisë themelore të zgjedhur në vizatimin fillestar (ky raport mbetet i njëjtë kur ndryshon madhësia e vizatimit). Në shembullin me re, rrezja e rrethit të vogël është gjithmonë :math:`{3 \ over 5}` e gjatësisë themelore të zgjedhur :math:`r`. Nëse drejtkëndëshat ose elipsat paraqiten në vizatim, lartësitë dhe gjerësia e atyre drejtkëndëshave dhe elipsave gjithashtu duhet të shprehen në përpjesëtim me gjatësinë themelore, në të njëjtën mënyrë si rrezet e rrathëve.
+- Ne përcaktojmë koordinatat e të gjitha pikave në lidhje me pikën kryesore, duke shtuar ose zbritur një numër të caktuar gjatesish themelore në koordinatat e pikës kryesore. Numri i kërkuar i gjatësive themelore përcaktohet përsëri nga relacioni në vizatimin fillestare. Në shembullin me re, për të përftuar :math:`x` koordinata e qendrës së rrethit të majtë, ne zbritim **një ** gjatësi themelore nga :math:`x` koordinata e pikës kryesore (qendra e mesit rrethi). Ne e bëjmë këtë sepse raporti i ndryshimit të :math:`x` koordinatat dhe gjatësia themelore është e barabartë me një. E njëjta procedurë zbatohet në parim përkoordinatat :math:`y`, megjithëse në këtë rast është veçanërisht e thjeshtë. Meqenëse  koordinatat e qendrave të rrathëve :math:`y`janë të njëjta, raporti i ndryshimit të koordinatave :math:` y` dhe gjatësia themelore është zero, kështu që duhet të shtohen gjatësi zero themelore në: matematikë: koordinata `y` e spirancës për të marrë :math:` y` koordinatë e qendrës së një rrethi më të vogël.
 
-To better understand the process of resizing a drawing, we will also apply it to the example of a teddy bear.
+Për të kuptuar më mirë procesin e ndryshimit të madhësisë së një vizatimi, ne do ta përdorim atë edhe në shembullin e një ariu pelushi.
 
-Teddy - size
+Ariu - madhësia
 ''''''''''''
 
-The following program is presented, which shows the teddy bear's head so that it can be easily moved:
+Programi i mëposhtëm tregon kokën e ariut në mënyrë që të mund të zhvendoset lehtësisht:
 
 .. activecode:: PyGame__drawing_bear_movable
     :nocodelens:
@@ -68,7 +68,7 @@ The following program is presented, which shows the teddy bear's head so that it
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\5_Movable\teddy-bear_movable1a.py
 
-In order to resize the drawing, we introduce a basic length, for example :math:`a = 5`. Now we can express all radii using :math:`a` like this:
+Për të përmasuar madhësinë e vizatimit, ne prezantojmë një gjatësi themelore, për shembull :math `a = 5`. Tani mund t'i shprehim të gjitha rrezet duke përdorur :math:`a` si kjo:
 
 .. code::
 
@@ -80,11 +80,11 @@ In order to resize the drawing, we introduce a basic length, for example :math:`
     framed_circle(canvas, pg.Color("black"),  (cx + 50,  cy - 30),  3*a) # right eye
     framed_circle(canvas, pg.Color("black"),  (cx,       cy + 20),  3*a) # snout top
     
-Any number can be chosen as the base length, and by choosing a base length of 5 pixels, we have no need to use real numbers - all radii are integer multiples of :math:`a` and we can easily calculate them by heart. For example, we express the radius of 45 pixels as :math:`45 = 9 \cdot 5 = 9 \cdot a`, and so on.
+Çdo numër mund të zgjidhet si gjatësi bazë, dhe duke zgjedhur një gjatësi bazë prej 5 pikselë, ne nuk kemi nevojë të përdorim numra të vërtetë - të gjitha rrezet janë shumëfishë të plotë të :math:`a` dhe ne mund t'i llogaritim lehtësisht. Për shembull, ne shprehim rrezen prej 45 pikselësh si :math:`45 = 9 \ cdot 5 = 9 \ cdot a`, etj.
 
-Now we need to express the coordinates of the centers of all other circles starting from the main point :math:`(cx, cy)` and moving by the required number of lengths :math:`a` in the :math:`x` and :math:`y` axis direction. Take the bear's right ear as an example.
+Tani duhet të shprehim koordinatat e qendrave të të gjitha rrathëve të tjera duke filluar nga pika kryesore :math:`(cx, cy)` dhe duke lëvizur me numrin e kërkuar të gjatësive :math:`a` në :math:` x `dhe :math:` y` drejtimi i boshtit. Merrni si shembull veshin e djathtë të ariut.
 
-:math:`x` coordinate of the center of the right ear is :math:`cx + 60 = cx + 12 a`, while :math:`y` coordinate is :math:`cy - 70 = cy - 14 a`. When we do this for all the centers of the circles, we come to the following form of the program:
+:math:`x` koordinata e qendrës së veshit të djathtë është :math:` cx + 60 = cx + 12 a`, ndërsa :math:`y` koordinata është :math:`cy - 70 = cy - 14 a`. Kur e bëjmë këtë për të gjitha qendrat e rrathëve, ne vijmë në formën e mëposhtme të programit:
 
 .. activecode:: PyGame__drawing_bear_tmp2
     :nocodelens:
@@ -92,13 +92,13 @@ Now we need to express the coordinates of the centers of all other circles start
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\6_Scalable\teddy-bear_scalable1a.py
     
-Now we can not only move or copy a teddy bear across the screen, but also display it in various sizes. To confirm that resizing really works, the function call
+Tani ne jo vetëm që mund të lëvizim ose kopjojmë një ari në ekran, por edhe ta shfaqim atë në madhësi të ndryshme. Për të konfirmuar se me të vërtetë funksionon ndryshimi, thërrasim funksionin
 
 .. code::
 
     draw_teddy(width // 2, height // 2, 6)
     
-which draws a bear with the center point in the center of the window, can be replaced with the following five:
+e cila vizaton një ari me pikën qendrore në qendër të dritares, mund të zëvendësohet me pesë rreshtat në vijim:
 
 .. code::
 
@@ -108,14 +108,14 @@ which draws a bear with the center point in the center of the window, can be rep
     draw_teddy(150, 250, 2)
     draw_teddy(250, 250, 2)
 
-Copy or retype these five lines of code into the program and try it out! Consider how much work it would be to have these five bears displayed without computing in the program.
+Kopjoni ose rivendosni këto pesë rreshta kodi në program dhe provojeni! Konsideroni sa punë do të ishte që këto pesë arinj të shfaqen pa u llogaritur në program.
 
-Now try to complete one started example.
+Tani përpiquni të plotësoni një shembull të nisur.
 
-Task - house size
+Ushtrim - madhësia e shtëpisë
 '''''''''''''''''
 
-We will start with a program that draws four houses in the given positions on the screen:
+Do të fillojmë me një program që vizaton katër shtëpi në pozicionet e dhëna në ekran:
 
 .. activecode:: PyGame__drawing_house_detailed1
     :nocodelens:
@@ -123,7 +123,7 @@ We will start with a program that draws four houses in the given positions on th
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\5_Movable\house2D_detailed_movable.py
 
-Complete the program remodel in the box below so that the houses can be easily resized. For example, you can take 10 pixels for the basic size, because in that case, expressing all lengths using basic length is very easy. When you confirm that the program after the remake displays the same image as the starting program above, replace the given *house* function calls with the following 4 and confirm that the resizing of the house is working properly (you should get the image as if you clicked on the button "Play task"):
+Plotësoni rimodelimin e programit në kutinë më poshtë në mënyrë që shtëpitë të mund të ridimensionohen lehtësisht. Për shembull, ju mund të merrni 10 piksele për madhësinë themelore, sepse në atë rast, shprehja e të gjitha gjatësive duke përdorur gjatësinë themelore është shumë e lehtë. Kur konfirmoni që programi pas te luhet shfaq të njëjtën imazh si programi fillestar më lart, zëvendësoni thirrjet e funksionit të dhënë *house* me 4 në vijim dhe konfirmoni që madhësia e shtëpisë po funksionon si duhet (ju duhet të merrni imazhin siç keni klikuar në butonin "Luaj detyrën"):
 
 .. code::
 
@@ -153,7 +153,7 @@ Complete the program remodel in the box below so that the houses can be easily r
     house(350, 160, 10, (255, 255, 150))
     house( 50, 150, 10, pg.Color("khaki"))
 
-After successfully changing the *house* function, try different layouts, colors and sizes of houses, such as the one below, or some other you choose yourself:
+Pasi të keni ndryshuar me sukses funksionin *house*, provoni paraqitjet e ndryshme, ngjyrat dhe madhësitë e shtëpive, siç është ajo më poshtë, ose ndonjë tjetër që ju zgjidhni vetë:
 
 .. code::
 

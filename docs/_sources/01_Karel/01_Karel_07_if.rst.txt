@@ -1,20 +1,21 @@
-Check out and decide
+Kontrolloni dhe vendosni
 ====================
 
-The *while* statement proved very useful, because by using it we were able to solve more diversified tasks. However, the following example shows that there are simple tasks that we can not solve with what we have learned so far.
+Deklarimi *while* doli shumë e dobishme, sepse duke e përdorur atë ne ishim në gjendje të zgjidhnim detyra më të larmishme. Sidoqoftë, shembulli i mëposhtëm tregon se ka detyra të thjeshta që nuk mund t'i zgjidhim me ato që kemi mësuar deri më tani.
 
-Let's say that in some situation you need to move Karel only for one square if possible (if not possible, Karel should remain where he is).
+Le të themi se në disa situata ju duhet të lëvizni Karel vetëm për një katror nëse është e mundur (nëse nuk është e mundur, Kareli duhet të mbetet aty ku është).
 
-- If we only write the *move()* command, we are risking an error message in case that Karel is in front of the wall.
-- If we place the *move()* command below the *while front_is_clear():* statement, we risk Karel going further than we wanted.
-- If we do not use the command *move()*, we risk not moving even if it is possible (and necessary).
+- Nëse shkruajmë vetëm komandën *move ()*, ne po rrezikojmë një mesazh gabimi në rast se Karel është para murit.
+- Nëse vendosim komandën *move ()* nën deklarimn *while front_is_clear ():*, rrezikojmë që Karel të shkojë më tej sesa donim.
+- Nëse nuk e përdorim komandën *move ()*, rrezikojmë të mos lëvizim edhe nëse është e mundur (dhe e domosdoshme).
 
-Obviously, we need a new statement, which will tell Karel "if you can go forward, move one place".
+Natyrisht, ne kemi nevojë për një deklarim të re, e cila do t'i tregojë Karelit "nëse mund të shkoni përpara, lëvizni një vend".
 
-*If* statement
+*If*
 --------------
 
-The statement we need in the described case is the ``if`` statement, which also exists in almost all programming languages. In Python, it (in its simpler form) is written like this:
+Deklarimi që na nevojitet në rastin e përshkruar është pohimi ``if``, i cili gjithashtu ekziston në pothuajse të gjitha gjuhët e programimit. Në Python, ajo (në formën e saj më të thjeshtë) është shkruar si kjo:
+--------------
 
 .. activecode:: Karel_if__syntax
    :passivecode: true
@@ -27,11 +28,11 @@ The statement we need in the described case is the ``if`` statement, which also 
 
 .. infonote::
 
-   We see that writing the ``if`` statement is very similar to writing a *while* statement. Under the ``if`` statement we can also place one or more other statements, which constitute the **body of the if statement**. Same rules apply for writing a colon ``:`` after the condition and for indenting statements that are executed if the condition is met. The difference is that the statements in the body of an *if* statement will not be repeated - if the condition is fulfilled, they will only be done once.
+   Ne shohim që shkrimi i deklarims ``if`` është shumë i ngjashëm me shkrimin e një deklarate *while*. Nën deklarimn ``if`` mund të vendosim edhe një ose më shumë deklarime të tjera, të cilat përbëjnë trupin **e deklarims if**. Të njëjtat rregulla vlejnë për shkrimin e ``:`` pas kushtit dhe për deklarimet e indentifikimit që ekzekutohen nëse plotësohet kushti. Dallimi është se deklarimet në trupin e një deklarate *if* nuk do të përsëriten - nëse plotësohet kushti, ato do të bëhen vetëm një herë.
 
-   The ``if`` statement is sometimes called the *branching statement* because the program execution flow branches at this stement: the next statement to be executed depends on the answer to the question from the condition.
+    Deklarimi ``if`` nganjëherë quhet deklarim *branching statement* sepse rrjedhja e ekzekutimit të programit degëzohet në këtë stendë: deklarim tjetër që duhet të ekzekutohet varet nga përgjigja e pyetjes nga gjendja.
 
-In the above example, we should write:
+Në shembullin e mësipërm, duhet të shkruajmë:
 
 .. activecode:: Karel_if__example
    :passivecode: true
@@ -40,18 +41,18 @@ In the above example, we should write:
        move()
 
 
-Let's see some tasks in which (besides already known statements) the ``if`` statement is used.
+Le të shohim disa detyra në të cilat (përveç deklaratave tashmë të njohura) përdoret deklarim ``if``.
 
-Take one ball, if there are any
+Merr një top, nëse ka
 '''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-   There is one square in front of Karel, with zero or more balls. Write a program that tells Karel to move onto that square, and then take exactly one ball if there is at least one ball in the field.
-   
-   Run the program several times to test it on different examples.
+   Ka një kuti përpara Karelit, me zero ose më shumë topa. Shkruaj një program që i thotë Karelit të lëvizë në atë kuti, dhe pastaj të marrësh saktësisht një top nëse ka të paktën një top në fushë.
+   
+    Drejtoni programin disa herë për ta provuar atë në shembuj të ndryshëm.
 
-In our case, the condition will be ``is_ball_on_square()``, and the command that is conditionally executed is ``pick_ball()``.
+Në rastin tonë, kushti do të jetë ``is_ball_on_square ()``, dhe komanda që ekzekutohet me kusht është ``pick_ball ()``.
 
 .. karel:: Karel_if__take_one_if_any
    :blockly:
@@ -98,16 +99,16 @@ In our case, the condition will be ``is_ball_on_square()``, and the command that
                pick_ball()
 
 
-Go to the end of path and pick one ball where possible
+Shko në fund te rrugës dhe merr një top nëse është e mundur
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-  There is at least one square in front of Karel, and there can be any number of them. Each square has zero or more balls. Karel should pick up exactly one ball from each square on which there is a ball.
-  
-  Run the program several times to test it on different examples.
+  Ka të paktën një shesh para Karelit, dhe mund të ketë ndonjë numër prej tyre. Çdo katror ka zero ose më shumë topa. Kareli duhet të marr saktësisht një top nga secili katror në të cilin ka një top.
+  
+   Drejtoni programin disa herë për ta provuar atë në shembuj të ndryshëm.
 
-Here it is necessary to use *while* statement for advancing forward, and in the body of the *while* loop, after every step forward, an *if* statement should be used to check whether Karel stands on a square with a ball on it or not.
+Këtu është e nevojshme të përdorni deklarimn *while* për avancimin përpara, dhe në trupin e loop *wile*, pas çdo hapi përpara, duhet të përdoret një deklarim *if* për të kontrolluar nëse Karel qëndron në një kuti me një top në ajo apo jo.
 
 .. karel:: Karel_if__many_squares_take_one_if_any
    :blockly:
@@ -167,10 +168,10 @@ Here it is necessary to use *while* statement for advancing forward, and in the 
                    pick_ball()
 
 
-If you don't do that, do this (if-else)
+Nëse nuk bën këtë, bëj atë (if-else)
 ---------------------------------------
 
-In some tasks, one thing needs to be done if a certain condition is met, and some other thing if it is not met. In such case, we can use the extended form of an *if* statement, which looks like this:
+Në disa detyra, një gjë duhet të bëhet nëse plotësohet një kusht i caktuar, dhe diçka tjetër nëse nuk përmbushet. Në këtë rast, ne mund të përdorim formën e zgjeruar të një deklarate *if*, e cila duket si kjo:
 
 .. activecode:: Karel_if__else_syntax
     :passivecode: true
@@ -187,16 +188,16 @@ In some tasks, one thing needs to be done if a certain condition is met, and som
 
 .. infonote::
 
-   In the extended form of the ``if`` statement, the first part (up to the word `else`) has the same look and meaning as before. Below that part, the word ``else`` is written, equally indented as the word `if``, followed by a colon ``:``. In the following lines we write one or more other statements, which constitute the **body of else branch**. This second group of statements is indented one level deaper than the word *else* above, and is executed if the condition specified in the `` if`` statement is not met.
+   Në formën e zgjeruar të fjalisë ``if``, pjesa e parë (deri tek fjala `else`) ka të njëjtën pamje dhe kuptim si më parë. Nën atë pjesë, është shkruar fjala ``else``, në mënyrë të barabartë si fjala ``if``, e ndjekur nga një ``:``. Në rreshtat e mëposhtëm shkruajmë një ose më shumë deklarime të tjera, të cilat përbëjnë trupin **të degës tjetër**. Ky grup i dytë i deklaratave është i theksuar në një nivel më të dobët se fjala *else* më lart, dhe ekzekutohet nëse nuk përmbushet kushti i specifikuar në fjalinë "if".
 
-Example - taking and dropping balls
+Shembull - marrja dhe hedhja e topave
 '''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-   There are 3 squares in front of Karel, and on each of them there can be either one ball or no balls. Karel should take balls from the squares that have balls on them and place one ball on each square that was initially empty. Karel has enough balls with him at start.
+    Ka 3 kuti para Karelit, dhe në secilën prej tyre mund të ketë ose një top ose pa topa. Kareli duhet të marrë topa nga kutitë që kanë topa mbi ta dhe të vendosë një top në secilin katror që fillimisht ishte i zbrazët. Karel ka topa të mjaftueshëm me të në fillim.
 
-Using the new, expanded form of the ``if`` statement, we can tell Karel: "If there is a ball on the square, then take that ball, otherwise drop one ball", so that the task can be easily solved:
+Duke përdorur formën e re, të zgjeruar të fjalisë ``if``, ne mund t'i themi Karelit: "Nëse ka një top në kuti, atëherë merr atë top, përndryshe hedh një top", në mënyrë që detyra të zgjidhet lehtë:
 
 .. karel:: Karel_if__take_else_put
     :blockly:
@@ -236,13 +237,13 @@ Using the new, expanded form of the ``if`` statement, we can tell Karel: "If the
     }
 
 
-Pick up the balls that you can reach
+Kapni topat që mund të arrini
 ''''''''''''''''''''''''''''''''''''
 
 
 .. questionnote::
 
-   A labyrinth consists of two rows. Karel is in the upper row, which is completely empty and passable. In the lower row there may be obstacles, or squares with one ball. Karel's task is to pick up all the balls.
+   Një labirint përbëhet nga dy rreshta. Karel është në rreshtin e sipërm, i cili është plotësisht i zbrazët dhe i kalueshëm. Në rreshtin e poshtëm mund të ketë pengesa, ose sheshe me një top. Detyra e Karel është të marr të gjitha topat.
    
 .. karel:: Karel_if__take_all_from_lower_row
     :blockly:
@@ -328,12 +329,12 @@ Pick up the balls that you can reach
                    turn_left() # just turn back east
 
 
-Act only when something is not met
+Vepro vetëm kur diçka nuk përmbushet
 ----------------------------------
 
-Let's say that Karel needs to turn left if he **can not** go forward (if he can go forward, he should not do anything).
+Le të themi që Kareli duhet të kthehet majtas nëse ai **nuk mund** të ecë përpara (nëse ai mund të shkojë përpara, ai nuk duhet të bëjë asgjë).
 
-According to the rules of writing an *if* statement, after the condition (in the body of the first branch) there must be at least one statement, and according to the logic of the task, we do not need any statements at that place. In such situations we can write:
+Sipas rregullave të shkrimit të një deklarimi *if*, pas kushtit (në trupin e degës së parë) duhet të ketë të paktën një deklaratë, dhe sipas logjikës së detyrës, ne nuk kemi nevojë për deklarata në atë vend. Në situata të tilla mund të shkruajmë:
 
 .. activecode:: Karel_if__else_only
     :passivecode: true
@@ -351,19 +352,19 @@ or
     if not front_is_clear():
         turn_left()
 
-In the first case, we use special ``pass`` statement that does nothing. By doing so, we both satisfy the syntax (writing rules), and we get a program that works the way we want.
+Në rastin e parë, ne përdorim deklarim të veçantë ``pass`` që nuk bën asgjë. Duke vepruar kështu, ne kënaqim sintaksën (rregullat e shkrimit) dhe marrim një program që funksionon ashtu siç dëshirojmë.
 
-In the second case, by using the word ``not``, we make the opposite condition, which means that the condition of the *if* statement is satisfied when Karel can not go forward. In this case, branches change roles, so the *else* branch becomes the one that is no longer needed.
+Në rastin e dytë, duke përdorur fjalën ``not``, bëjmë gjendjen e kundërt, që do të thotë se gjendja e deklarims *if* është e kënaqur kur Karel nuk mund të shkojë përpara. Në këtë rast, degët ndryshojnë role, kështu që dega *if* bëhet ajo që nuk është më e nevojshme.
 
-In the few upcoming tasks, there is something to be done only when the condition is not met.
+Në disa detyra të ardhshme, ka diçka për të bërë vetëm kur kushti nuk plotësohet.
 
-Turn to an empty field
+Shko ne një kuti bosh
 '''''''''''''''''''''''
 
 
 .. questionnote::
 
-   Initially, Karel can face either side, but he can start moving only in one direction. Karel needs to turn to the free square and make one step.
+   Fillimisht, Kareli mund të përballet me secilën palë, por ai mund të fillojë të lëvizë vetëm në një drejtim. Kareli duhet të kthehet në sheshin e lirë dhe të bëjë një hap.
    
 .. karel:: Karel_if__turn_to_free_square
    :blockly:
@@ -517,10 +518,10 @@ Turn to an empty field
    }
 
 .. reveal:: Karel_if__turn_to_free_square_reveal
-    :showtitle: Solution
-    :hidetitle: Hide solution
+    :showtitle: Zgjidhja
+    :hidetitle: Fshih zgjidhjen
 
-    We offer you two short solutions:
+    Ne ofrojmë 2 zgjidhje të shkurtra:
    
     .. activecode:: Karel_if__turn_to_free_square_solution1
         :passivecode: true
@@ -539,12 +540,12 @@ Turn to an empty field
                 turn_left()
         move()
                 
-Where there are no balls, add them
+Vendosni topa aty ku nuk ka
 ''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-   There is an unknown number of squares in front of Karel, and, each of them can contain one ball or no balls. Karel has enough balls with him, and he needs to put one ball on an each emtpy sqare.
+   Ekziston një numër i panjohur i kutive përpara Karelit, dhe, secila prej tyre mund të përmbajë një top ose asnjë top. Karel ka mjaft topa, dhe ai duhet të vendosë një top në çdo kuti të zbrazët.
    
 .. karel:: Karel_if__fill_the_empty_squares
     :blockly:

@@ -1,29 +1,29 @@
-Programs with Computation - Exercise
+Programet me llogaritjen - Ushtrime
 ====================================
 
-So far, we have learned how to load numbers in programs, how to perform computational operations on them, and how to print results. We can now practice these things with a few simple math tasks. 
+Deri më tani, ne kemi mësuar se si të ngarkojmë numrat në programe, si të kryejmë operacione llogaritëse mbi to dhe si të printojmë rezultatet. Tani mund t'i praktikojmë këto gjëra me disa detyra të thjeshta matematikore.
 
-Tasks without loading data
+Detyrat pa ngarkuar të dhënat
 --------------------------
 
-Example
+Shembull
 '''''''
 
 .. questionnote::
 
-    **Example - Celebration**
+    **Shembull - Festa**
 
-    Jessica and Oscar are organizing a celebration. The rented space accommodates 100 people, Jessica has so far invited 43, and Oscar 28.
-    
-    Write a program that calculates and prints how much more space is available.
+     Xhesika dhe Oscar po organizojnë një festë. Hapësira me qira strehon 100 persona, Xhesika deri më tani ka ftuar 43, dhe Oscar 28.
 
-The problem can be solved as follows:
+     Shkruani një program që llogarit dhe printon sa më shumë hapësirë është në dispozicion.
+
+Problemi mund të zgjidhet si më poshtë:
 
 .. activecode:: console__computing_party1
     
     print(100-43-28)
 
-or like this:
+ose kështu:
 
 .. activecode:: console__computing_party2
 
@@ -36,28 +36,28 @@ or like this:
 
 .. infonote::
 
-    While this may seem unnecessary here, the solution with variables is worth practicing. Programs that use variables can do much more than those without variables. For example, if we load values into a program, variables are necessary. Also, more complex calculations would be very incomprehensible if they could not be broken down into simpler steps, and for intermediate values we again need variables.
-    
-    We mentioned earlier that we should try to give meaningful names to the variables. It doesn't matter to the computer (it works equally well with any names), but when we calculate something that matters to us, using variables with meaningful names will help us understand that program after a long time. Also, such a program will be easier to understand by other people who read it.
+     Ndërsa kjo mund të duket e panevojshme këtu, zgjidhja me variabla vlen të praktikohet. Programet që përdorin ndrysvariablahore mund të bëjnë shumë më tepër sesa ato pa variabla. Për shembull, nëse ngarkojmë vlerat në një program, variablat janë të nevojshme. Gjithashtu, llogaritjet më komplekse do të ishin shumë të pakuptueshme nëse nuk mund të ndahen në hapa më të thjeshtë, dhe për vlerat e ndërmjetme përsëri kemi nevojë për variabla.
+    
+     Përmendëm më herët se duhet të përpiqemi t'u japim emrave domethënës variablave. Nuk ka rëndësi për kompjuterin (funksionon në mënyrë të barabartë me ndonjë emër), por kur llogaritim diçka që është e rëndësishme për ne, përdorimi i variablave me emra kuptimplotë do të na ndihmojë të kuptojmë atë program pas një kohe të gjatë. Gjithashtu, një program i tillë do të jetë më i lehtë për tu kuptuar nga njerëzit e tjerë që e lexojnë atë.
     
 
-Tasks for exercise 
+Ushtrime
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Task - buying for all the money**
-    
-    How many items for 76 euros can be bought for 500 euros? How much money will remain if the largest possible number of items is bought?
+    **Detyrë - blerje për të gjitha paratë **
+    
+     Sa sende për 76 euro mund të blihen për 500 euro? Sa para do të mbesin nëse blihet numri më i madh i mundshëm i artikujve?
 
-The shorter (and less clear) version of the solution is
+Versioni më i shkurtër (dhe më pak i qartë) i zgjidhjes është
 
     .. activecode:: console__computing_divmod_sol1
         :passivecode: true
         
         print(500 // 76, 500 % 76)
 
-Write a clearer solution using variables.
+Shkruani një zgjidhje më të qartë duke përdoruar variabla.
 
 .. activecode:: console__computing_divmod
 
@@ -67,15 +67,15 @@ Write a clearer solution using variables.
 
 .. questionnote::
 
-    **Task - datum**
+    **Detyra - datum **
 
-    If today is the 15th of the month and the month is 31 days, how many days are there until the 11th of the next month (at the same time)?
+     Nëse sot është 15 i muajit dhe muaji është 31 ditë, sa ditë ka deri në 11 të muajit tjetër (në të njëjtën kohë)?
 
-Your job is to write a solution in which the starting and calculated values are assigned to variables. By clicking on the "short solution" button you can see a short solution as a hint.
+Detyra juaj është të shkruani një zgjidhje në të cilën vlerat fillestare dhe të llogaritura u janë caktuar variablave. Duke klikuar në butonin "zgjidhje e shkurtër" mund të shihni një zgjidhje të shkurtër si aluzion.
 
 .. reveal:: console__computing_divmod_reveal
-    :showtitle: Short solution
-    :hidetitle: Hide short solution
+    :showtitle: Zgjidhje e shkurtër
+    :hidetitle: Fshih zgjidhjen e shkurtër
 
     .. activecode:: console__computing_buying3_simple_sol1
         :passivecode: true
@@ -88,47 +88,47 @@ Your job is to write a solution in which the starting and calculated values are 
 
 .. questionnote::
 
-    **Task - purchase of 3 pieces**
+    **Detyra - blerja e 3 pjesëve **
 
-    Ben has 20 euros and wants to buy 3 bicycle lamps for 1.58 euros each. How much money will he have left?
-    
-Write a program that uses variables for the starting and calculated values.
+     Ben ka 20 euro dhe dëshiron të blejë 3 llampa biçikletash për 1,58 euro secila. Sa para do të ketë lënë ai?
+    
+Shkruaj një program që përdor variabla për vlerat fillestare dhe të llogaritura.
 
 .. activecode:: console__computing_buying3_simple
 
 
             
-Tasks with loading data
+Shembuj më të dhëna në vazhdimësi
 -----------------------
 
-Example
+Shembuj
 '''''''
 
 .. questionnote::
 
-    **Example - paintwork** 
-    
-    Philip prepares to paint the ceiling in one room. In order to know how much paint to buy, he needs to know the dimensions of the room and how many square meters covers one kilogram of paint. Write a program that loads the length of the room, the width of the room, an area that covers one kilogram of paint, and prints the required number of kilograms of paint.
-    
-Solution:
+    **Shembull - pikturë **
+    
+     Philip përgatitet të pikturojë tavanin në një dhomë. Për të ditur se sa bojë për të blerë, ai duhet të dijë dimensionet e dhomës dhe sa metra katrorë mbulon një kilogram bojë. Shkruani një program që ngarkon gjatësinë e dhomës, gjerësinë e dhomës, një zonë që mbulon një kilogram të bojës dhe shtypni numrin e kërkuar të kilogramëve të bojës.
+    
+zgjidhja:
 
 .. activecode:: console__computing_painting
 
-    length = float(input("Enter the length of the room: "))
-    width = float(input("Enter the width of the room: "))
-    area_per_kg = float(input("Enter the area covered by 1 kg of paint: "))
+    length = float(input("Fusni gjatësinë e dhomës: "))
+    width = float(input("Fusni lartësinë e dhomës: "))
+    area_per_kg = float(input("Fusn hapësirën e mbuluar nga 1 kg bojë: "))
     needed_kg = length * width / area_per_kg
-    print(needed_kg, "kg of paint is required.")
+    print(needed_kg, "kg bojë nevojitet.")
 
 
-Tasks for exercise
+Ushtrime
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Task - rabits** 
-    
-    The rabbit population on one island is doubling every year. Write a program that loads the current number of rabbits on the island and the number of years, and prints how many rabbits would be on the island in a given number of years if they continue to reproduce at the same pace.
+    **Detyrë - zogj **
+    
+     Popullsia e lepujve në një ishull po dyfishohet çdo vit. Shkruaj një program që ngarkon numrin aktual të lepujve në ishull dhe numrin e viteve, dhe shtyp sa lepuj do të ishin në ishull në një numër të caktuar vitesh nëse vazhdojnë të riprodhojnë me të njëjtin ritëm.
 
 .. activecode:: console__computing_rabbits
 
@@ -136,8 +136,8 @@ Tasks for exercise
 
 .. questionnote::
 
-    **Task - Buying a car**
+    **Detyrë - Blerja e një makine**
 
-    John buys the car in installments. Write a program that sequentially loads the contract price, the amount of one installment and the number of installments, and prints how much more John will pay in total over the price stated in contract.
+     Gjoni blen makinën me këste. Shkruaj një program që ngarkon në mënyrë sekuenciale çmimin e kontratës, shumën e një kësti dhe numrin e kësteve, dhe shtyp se sa më shumë John do të paguajë në total mbi çmimin e deklaruar në kontratë.
         
 .. activecode:: console__computing_buying_car

@@ -1,10 +1,10 @@
-Complex branching
+Degëzimi kompleks
 =================
 
-Successive conditions
+Kushtet e njëpasnjëshme
 ---------------------
 
-There are tasks in which, when one condition is not fulfilled, another one should be checked, and if that condition is not valid either then a third one is checked and so on. To avoid writting
+Ekzistojnë detyra në të cilat, kur nuk plotësohet një kusht, një tjetër duhet të kontrollohet, dhe nëse ajo gjendje nuk është e vlefshme as atëherë kontrollohet një e treta etj. Për të shmangur shkrimet
 
 .. activecode:: console__more_branching_elif1
     :passivecode: true
@@ -23,7 +23,7 @@ There are tasks in which, when one condition is not fulfilled, another one shoul
                 else:
                     statement5
 
-in Python we use the special word ``elif``, which stands for *else:* and the indented *if* in the following line. So we get a more readable code:
+në Python ne përdorim fjalën e veçantë ``elif``, e cila qëndron për *else* dhe dhe vazdhon me *if* në rreshtin vijues. Pra, ne kemi një kod më të lexueshëm:
 
 .. activecode:: console__more_branching_elif2
     :passivecode: true
@@ -39,9 +39,9 @@ in Python we use the special word ``elif``, which stands for *else:* and the ind
     else:
         statement5
 
-Note 1: Any number of consecutive *elif* statements can be used this way. 
+Shënim 1: Çdo numër i deklaratave të njëpasnjëshme *elif* mund të përdoret në këtë mënyrë.
 
-Note 2: The part
+Shënim 2: Pjesa
 
 .. activecode:: console__more_branching_elif3
     :passivecode: true
@@ -49,104 +49,105 @@ Note 2: The part
     else:
         statement5
 
-is optional and can be omitted if not needed.
+është opsionale dhe mund të lihet nëse nuk është e nevojshme.
 
 
-Examples and tasks
+Shembuj dhe detyra
 ''''''''''''''''''
 
 .. questionnote::
     
-    **Example - body mass index:** 
+    **Shembull - body mass index:** 
     
-    Body mass index (abbreviated bmi) is used for quick orientation regarding the degree of obesity or weight loss. The formula for calculating body mass index is :math:`bmi = {m \over {h \times h}}`, where *m* is the mass in kilograms and *h* is the height in meters. The *bmi* values are interpreted as follows:
-    
-    - up to 18.5: malnourished person
-    - from 18.5 to 25: person of normal body weight
-    - from 25 to 30: overweight
-    - over 30: obese person
-    
-    Write a program that takes a person's weight and height and then writes to which category that person belongs (limit values belong to a lower category).
+   Indeksi i masës trupore (i shkurtuar bmi) përdoret për orientim të shpejtë në lidhje me shkallën e mbipeshes ose humbjes së peshës. Formula për llogaritjen e indeksit të masës së trupit është :math: `bmi = {m \ mbi {h \ shumëzim h herë}`, ku *m* është masa në kilogram dhe *h* është lartësia në metra. Vlerat *bmi* interpretohen si më poshtë:
+    
+     - deri në 18.5: person i kequshqyer
+     - nga 18.5 në 25: person me peshë normale të trupit
+     - nga 25 në 30: mbipesha
+     - mbi 30: person i trashë
+    
+     Shkruaj një program që merr peshën dhe lartësinë e një personi dhe pastaj shkruaj se cilës kategori ai person i përket (vlerat kufi i përkasin një kategorie më të ulët).
 
-One possible solution is given below. Consider why it is not necessary to use complex logical conditions (built with words *and*, *or*, *not*) in this solution.
+Një zgjidhje e mundshme është dhënë më poshtë. Konsideroni pse nuk është e nevojshme të përdorni kushte logjike komplekse (të ndërtuara me fjalë *ose*, *ose*, *jo*) në këtë zgjidhje.
 
 .. activecode:: console__more_branching_bmi
 
-    m = float(input('Body mass: '))
-    h = float(input('Body height: '))
+    m = float(input('Masa trupore: '))
+    h = float(input('Gjatësia e trupizt: '))
     bmi = m / (h*h)
     if bmi <= 18.5:
-        print('Malnourished.')
+        print('I kequshqyer.')
     elif bmi <= 25:
-        print('Normal body weight.')
+        print('Peshë normale trupore.')
     elif bmi <= 30:
-        print('Overweight.')
+        print('Mbipeshë.')
     else:
-        print('Obese.')
+        print('Obez.')
 
 
 
 .. questionnote::
     
-    **Task - age categories of players:** 
-    
-    Young basketball players register at the beginning of the basketball season in one of the age categories, according to how many years they turn in the calendar year in which the season begins. The registration rules are as follows:
-    
-    - 10 and under - no category
-    - 11 or 12 years - younger pioneers
-    - 13 or 14 years old - pioneers
-    - 15 or 16 - Cadets
-    - 17 or 18 - juniors
-    - 19 years and older - seniors
-    
-    Write a program that takes the age of a basketball player in the year they register and pritnts their age category.
+    **Detyrë - kategoritë e moshave të lojtarëve:**
+    
+     Basketbollistët e rinj regjistrohen në fillim të sezonit të basketbollit në njërën nga kategoritë e moshave, në bazë të sa viteve ato kthehen në vitin kalendarik në të cilin fillon sezoni. Rregullat e regjistrimit janë si më poshtë:
+    
+     - 10 dhe nën - asnjë kategori
+     - 11 ose 12 vjet - pionierë më të rinj
+     - 13 ose 14 vjeç - pionierë
+     - 15 ose 16 - kadetë
+     - 17 ose 18 - juniors
+     - 19 vjeç e më të vjetër - të moshuar
+    
+     Shkruani një program që merr moshën e një basketbollisti në vitin kur regjistrohen dhe heqin kategorinë e tyre të moshës.
 
 .. activecode:: console__more_branching_categories
 
-    g = int(input("How old is player: "))
+    g = int(input("Sa vjeç është lojtari: "))
     # finish the program
 
 
         
 .. questionnote::
     
-    **Task - ordinal number:** 
-    
-    Write a program that loads an integer from 1 to 6 (including borders) and prints the appropriate ordinal number in letters. For example, if number 6 is loaded, the "sixth" (without quotation marks) should be printed.
+    **Detyrë - numri rendor:**
+    
+     Shkruaj një program që ngarkon një numër të plotë nga 1 në 6 (përfshirë kufijtë) dhe shtyp numrin e duhur rendor me shkronja. Për shembull, nëse numri i 6 është i ngarkuar, "6" (pa thonjëza) duhet të shtypet.
     
 .. activecode:: console__more_branching_ordinal
 
     n = int(input("Enter a number from 1 to 6: "))
     # finish the program
 
-Nested branching
+
+Degëzimi  fole
 ----------------
 
-Nested branches are *if* statements in the branches of other *if* statements. Nested *if* statements can be found in one or the other, or in both branches of a larger *if* statement. This way of setting *if* statements can go to any depth, but it should be borne in mind that that way programs can become difficult to understand exactly and hard to maintain.
+Degët e foleve janë deklarimet *if* në degët e deklarimeve të tjera *if*. Deklarimet e vendosura *if* mund të gjenden në njërën ose tjetrën, ose në të dy degët e një deklarimi më të madhe *if*. Kjo mënyrë e përcaktimit të deklarimit *if* mund të shkoj në në çdo thellësi, por duhet të kihet parasysh se programet mund të bëhen të vështira për t'u kuptuar saktësisht dhe vështirë për tu mbajtur.
 
-In the first example, we intentionally provide a program with three levels of nesting *if* statements, to help you imagine what a program with even more deeply nested and longer *if* statements might look like. In other examples and tasks, we will limit ourselves to one level of inserting *if* statements.
+Në shembullin e parë, ne sigurojmë me qëllim një program me tre nivele të deklarimeve të vendosjes në gjumë *if*, për t'ju ndihmuar të imagjinoni se si një program me deklarime edhe më të thella dhe më të gjata *if* mund të duken. Në shembuj dhe detyra të tjera, ne do të kufizohemi në një nivel të futjes së deklarimeve *if*.
 
-Examples and tasks
+Shembuj dhe ushtrime
 ''''''''''''''''''
 
 
 .. questionnote::
     
-    **Example - guess who**
-    
-    There are eight children in the neighborhood who are often together. Their names are: Alice, Ben, Charlotte, Daniel, Emily, Frankie, Gabriella and Harry. Alice, Ben, Charlotte and Daniel go to the programming section, and Alice, Ben, Emily and Frankie to the sports section. The school cook wanted to praise one of the children for some deed, but did not know the name of that child.
-    
-    Write a program that asks three questions, accepts the answers to those questions (the letter 'y' for yes, and every other answer for no) and prints out the name of the child in question. The questions the program asks are:
+   **Shembull - gjeje kush **
+    
+     Janë tetë fëmijë në lagje që janë shpesh bashkë. Emrat e tyre janë: Alice, Ben, Charlotte, Daniel, Emily, Frankie, Gabriella dhe Harry. Alice, Ben, Charlotte dhe Daniel shkojnë në seksionin e programimit, dhe Alice, Ben, Emily dhe Frankie në seksionin e sporteve. Drejtoresha e shkollës dëshironte të lavdëronte një prej fëmijëve për disa vepra, por nuk e dinte emrin e asaj fëmije.
+    
+     Shkruani një program që shtron tre pyetje, pranon përgjigjet e atyre pyetjeve (shkronja 'y' për po, dhe çdo përgjigje tjetër jo) dhe shtypni emrin e fëmijës në fjalë. Pyetjet që shtron programi janë:
 
-    - Is it a girl?
-    - Does he or she go to the sports section?
-    - Does he or she go to the programming section?
+     - A është vajzë?
+     - A shkon në seksionin e sportit?
+     - A shkon në seksionin e programimit?
     
 .. activecode:: console__more_branching_guess_who1
 
-    girl = input("Is it a girl? ") == 'y'
-    sportsperson = input("Does he or she go to the sports section? ") == 'y'
-    programmer = input("Does he or she go to the programming section? ") == 'y'
+    girl = input("A është vajzë? ") == 'y'
+    sportsperson = input("A shkon në seksionin e sportit?") == 'y'
+    programmer = input("A shkon në seksionin e programimit? ") == 'y'
     if programmer:
         if sportsperson:
             if girl:
@@ -170,7 +171,7 @@ Examples and tasks
             else:
                 print("Harry")
 
-Note that programs with nested branches can be modified to use only consecutive conditions and form with *elif*, without inserting *if* statements in depth. In doing so, we use complex conditions, which we build using logical operations *and*, *or* and *not*.
+Vini re se programet me degë me fole mund të modifikohen për të përdorur vetëm kushte të njëpasnjëshme dhe formuar me *elif*, pa u futur në thellësi të *if*. Duke vepruar kështu, ne përdorim kushte komplekse, të cilat i ndërtojmë duke përdorur operacione logjike *and*, *ose* dhe *jo*.
    
 .. activecode:: console__more_branching_guess_who2
 
@@ -197,18 +198,18 @@ Note that programs with nested branches can be modified to use only consecutive 
 
 .. questionnote::
     
-    **Task - crossroads:** 
-    
-    There is an intersection of A and B streets. The even house numbers in Street A are on the right and odd ones are on the left. On the even (right) side, the numbers up to the intersection are from 2 to 200, and after the intersection are those greater than 200. On the odd (left) side, the numbers up to the intersection are from 1 to 177, and after the intersection they are those from 179 onwards.
-    
-    Write a program that loads one house number on street A and answers whether that number is before or after the intersection and which side of street A it is on. For example:
-    
-    - for number 128, print "on the right side, before the intersection"
-    - for number 284 print "on the right side, after the intersection"
-    - for number 177, enter "on the left side, before the intersection"
-    - for number 219 write "on the left side, after the intersection"
+    **Detyrë - udhëkryq:**
+    
+    Ka një kryqëzim të rrugëve A dhe B. Edhe numrat e shtëpive në Rrugën A janë në të djathtë dhe ato të çuditshme janë në të majtë. Në anën e barabartë (të djathtë), numrat deri në kryqëzim janë nga 2 në 200, dhe pas kryqëzimit janë ato më të mëdha se 200. Në anën e çuditshme (të majtë), numrat deri në kryqëzim janë nga 1 në 177, dhe pas kryqëzimit ato janë ato nga 179 e tutje.
+    
+    Shkruaj një program që ngarkon një numër shtëpie në rrugën A dhe përgjigjet nëse ai numër është para ose pas kryqëzimit dhe në cilën anë të rrugës A është në të. Për shembull:
+    
+    - për numrin 128, shtypni "në anën e djathtë, përpara kryqëzimit"
+    - për numrin 284 të shtypura "në anën e djathtë, pas kryqëzimit"
+    - për numrin 177, shkruani "në anën e majtë, përpara kryqëzimit"
+    - për numrin 219 shkruaj "në anën e majtë, pas kryqëzimit"
 
-**Hint:** After loading, you should first check if *n* is even, that is, if :math:`n \% 2 == 0`.
+**Ndihmë:** Pas ngarkimit, së pari duhet të kontrolloni nëse *n* është i njëtrajtshëm, d.m.th. nëse: matematika: `n \% 2 == 0`.
 
 .. activecode:: console__more_branching_quart
 
@@ -220,16 +221,16 @@ Note that programs with nested branches can be modified to use only consecutive 
 
 .. questionnote::
     
-    **Task - studying:** 
-    
-    John's parents told John that if he received fours or fives in maths and English, he could go to an afternoon football tournament, otherwise he had to learn the subject or subjects from which he received grade(s) less than 4 (grades are from 1 to 5, 1 being the worst, 5 being the best).
-    
-    Write a program that first loads John's math grade and then English grade and prints a message for John. For example:
-    
-    - for grades 2, 3 print "learn math and English"
-    - for grades 3, 4 print "learn math"
-    - for grades 4, 2 print "learn English"
-    - for grades 5, 4 print "go to the tournament"
+    **Detyrë - studimi:**
+    
+     Prindërit e John i thanë atij se nëse ai merrte katër ose pesë në matematikë dhe anglisht, ai mund të shkonte në një turne pasdite në futboll, përndryshe ai duhej të mësonte lëndën ose lëndët nga të cilat merrte notë (a) më pak se 4 (notat janë nga 1 në 5, 1 është më e keqja, 5 më e mira).
+    
+     Shkruani një program që ngarkon së pari klasën e matematikës së Gjonit dhe më pas klasën angleze dhe shtyp një mesazh për Gjonin. Për shembull:
+    
+     - për klasat 2, 3 shtypni "mësoni matematikë dhe anglisht"
+     - për klasat 3, 4 shtypni "mëso matematikën"
+     - për klasat 4, 2 shtypni "mësoni anglisht"
+     - për notat 5, 4 shtypni "shkoni në turne"
     
 
 .. activecode:: console__more_branching_grades
@@ -241,15 +242,15 @@ Note that programs with nested branches can be modified to use only consecutive 
 
 .. questionnote::
     
-    **Task - dressing up:** 
-    
-    Ian is writing a program that reads the current temperature (in degrees Celsius) and the chance of rain (from 0 to 100) from the weather website, and based on that information, it writes a recommendation whether to bring a jacket (which has a hood) or an umbrella, or none of these two. Ian chose this rule:
+    **Detyrë - veshja:**
+    
+     Ian është duke shkruar një program që lexon temperaturën aktuale (në gradë Celsius) dhe mundësinë e shiut (nga 0 në 100) nga faqja e internetit e motit, dhe bazuar në atë informacion, ajo shkruan një rekomandim nëse do të sillni një xhaketë (e cila ka kapuç) ose një ombrellë, ose asnjë nga këto dy. Ian zgjodhi këtë rregull:
 
-    - when the temperature is below 21, the advice should be: "wear the jacket"
-    - when the temperature is 21 or higher and the chance of rain is over 50, the recommendation is: "bring an umbrella"
-    - when the temperature is 21 or higher and the chance of rain is up to 50, the advice should be "you can go in a T-shirt"
-    
-    The task for you is to write a program that loads the temperature first, then the chance of rain, and then prints a recommendation.
+     - kur temperatura është nën 21, këshilla duhet të jetë: "vish xhaketën"
+     - kur temperatura është 21 ose më e lartë dhe mundësia e shiut është mbi 50, rekomandimi është: "sillni një ombrellë"
+     - kur temperatura është 21 ose më e lartë dhe mundësia e shiut është deri në 50, këshilla duhet të jetë "ju mund të shkoni në një T-shirt"
+    
+     Detyra për ju është të shkruani një program që ngarkon më parë temperaturën, pastaj mundësinë e shiut, dhe më pas shtyp një rekomandim.
     
 .. activecode:: console__more_branching_weather
 

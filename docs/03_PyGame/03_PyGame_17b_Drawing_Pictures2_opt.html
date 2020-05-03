@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Displaying ready-made images - tasks &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Afishimi i imazheve të gatshme - detyra &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Animation" href="03_PyGame_20_Animation.html" />
-    <link rel="prev" title="Displaying ready-made images" href="03_PyGame_17a_Drawing_Pictures1.html" />
+    <link rel="next" title="Animim" href="03_PyGame_20_Animation.html" />
+    <link rel="prev" title="Paraqitni imazhe të gatshme" href="03_PyGame_17a_Drawing_Pictures1.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,13 +205,13 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="displaying-ready-made-images-tasks">
-<h1>Displaying ready-made images - tasks<a class="headerlink" href="#displaying-ready-made-images-tasks" title="Permalink to this headline">¶</a></h1>
-<p>We learned how to display a ready-made image so that its upper left corner is at a given position on the screen. In some situations, the position of the upper left corner of the image will not be known to us, but will need to be calculated. In such cases, it may be necessary to know the width and height of the image. In Python’s PyGame library for the image <code class="docutils literal notranslate"><span class="pre">im</span></code>, the width and height of this image are given as <code class="docutils literal notranslate"><span class="pre">im.get_width()</span></code> and <code class="docutils literal notranslate"><span class="pre">im.get_height()</span></code> respectively.</p>
-<div class="section" id="baskets">
-<h2>Baskets<a class="headerlink" href="#baskets" title="Permalink to this headline">¶</a></h2>
-<p>Complete the following program to get the picture as in the example. The positions of the trees are given, and a basket should be drawn next to each tree so that the lower right corners of the basket and tree images overlap.</p>
-<p>To complete this task, you need to calculate for each drawn basket the position of its top left corner, which can be done starting from the coordinates of the top left corner of the tree, using the widths and heights of both images.</p>
+  <div class="section" id="afishimi-i-imazheve-te-gatshme-detyra">
+<h1>Afishimi i imazheve të gatshme - detyra<a class="headerlink" href="#afishimi-i-imazheve-te-gatshme-detyra" title="Permalink to this headline">¶</a></h1>
+<p>Mësuam si të shfaqim një imazh të gatshëm në mënyrë që këndi i sipërm i saj i majtë të jetë në një pozicion të caktuar në ekran. Në disa situata, pozicioni i këndit të sipërm të majtë të figurës nuk do të jetë i njohur për ne, por do të duhet të llogaritet. Në raste të tilla, mund të jetë e nevojshme të njihni gjerësinë dhe lartësinë e figurës. Në librarinë e PyGame për figurën <code class="docutils literal notranslate"><span class="pre">im</span></code>, gjerësia dhe lartësia e kësaj figure jepen përkatësisht <code class="docutils literal notranslate"><span class="pre">im.get_width</span> <span class="pre">()</span></code> dhe <code class="docutils literal notranslate"><span class="pre">im.get_height</span> <span class="pre">()</span></code>.</p>
+<div class="section" id="shporta">
+<h2>Shporta<a class="headerlink" href="#shporta" title="Permalink to this headline">¶</a></h2>
+<p>Përfundoni programin e mëposhtëm për të marrë figurën si në shembull. Pozicionet e pemëve janë dhënë, dhe një shportë duhet të vizatohet pranë çdo peme në mënyrë që qoshet e poshtme të djathtë të shportës dhe imazhet e pemëve të mbivendosen.</p>
+<p>Për të përfunduar këtë detyrë, duhet të llogaritni për secilën shportë të vizatuar pozicionin e këndit të tij të sipërm të majtë, i cili mund të bëhet duke filluar nga koordinatat e këndit të sipërm të majtë të pemës, duke përdorur gjerësitë dhe lartësitë e të dy imazheve.</p>
 <a class="reference internal image-reference" href="../_images/tree.png"><img alt="../_images/tree.png" src="../_images/tree.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/apple_small.png"><img alt="../_images/apple_small.png" src="../_images/apple_small.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/basket.png"><img alt="../_images/basket.png" src="../_images/basket.png" style="width: 50px;" /></a>
@@ -249,9 +248,9 @@ tree_positions = ((200, 70), (120, 150), (240, 290), (550, 170), (400, 200))
 </textarea>
 </div>
 </div>
-<div class="section" id="picking-apples">
-<h2>Picking apples<a class="headerlink" href="#picking-apples" title="Permalink to this headline">¶</a></h2>
-<p>Complete the following program to get the picture as in the example. The solution to this task is obtained by appending the previous program - copy it and add apples to the trees and to the baskets.</p>
+<div class="section" id="kap-mollet">
+<h2>Kap mollët<a class="headerlink" href="#kap-mollet" title="Permalink to this headline">¶</a></h2>
+<p>Përfundoni programin e mëposhtëm për të marrë figurën si në shembull. Zgjidhja për këtë detyrë merret duke bashkangjitur programin e mëparshëm - kopjoni atë dhe shtoni mollë në pemë dhe shporta.</p>
 
 <div data-childcomponent="PyGame__pictures_baskets_apples" class="course-box course-box-problem course-content">
 
@@ -297,8 +296,8 @@ tree_positions = ((200, 70), (120, 150), (240, 290), (550, 170), (400, 200))
 </textarea>
 </div>
 </div>
-<div class="section" id="boxes">
-<h2>Boxes<a class="headerlink" href="#boxes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="kuti">
+<h2>Kuti<a class="headerlink" href="#kuti" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -306,19 +305,19 @@ tree_positions = ((200, 70), (120, 150), (240, 290), (550, 170), (400, 200))
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Write programs that use the image of one box shown below,</p>
+<p>Shkruaj programet që përdorin imazhin e një kutie të treguar më poshtë,</p>
 <a class="reference internal image-reference" href="../_images/box.png"><img alt="../_images/box.png" class="align-center" src="../_images/box.png" style="width: 200px;" /></a>
-<p>and form images as in examples (use the “Play task” button in each task).</p>
-<p>The coordinates of the image, that is, its upper left corner for the leftmost box are (60, 400) and for the highest box are (420, 115).</p>
+<p>dhe formoni imazhe si në shembuj (përdorni butonin “Luaj detyrën” në secilën detyrë).</p>
 
     </p></div></div>
-<p>From the given data and images it is possible to determine the series <em>x</em> and <em>y</em> of the image coordinates of each box in each example. The order of displaying of the box pictures should also be taken into account here.</p>
-<p>To better understand how the same series of numbers (for example, 10, 15, 20, 25, 30) can be obtained in two different orders, and what else to look for, answer the supporting question.</p>
+<p>     Koordinatat e figurës, domethënë, këndi i sipërm i saj i majtë për kutinë e majtë janë (60, 400) dhe për kutinë më të lartë janë (420, 115)</p>
+<p>Nga të dhënat dhe imazhet e dhëna është e mundur të përcaktohen seritë <em>x</em> dhe <em>y</em> të koordinatave të figurës së secilës kuti në secilin shembull. Rendi i shfaqjes së fotove të kutisë gjithashtu duhet të merret parasysh këtu.</p>
+<p>Për të kuptuar më mirë sesi mund të merren të njëjtën seri numrash (për shembull, 10, 15, 20, 25, 30) në dy rende të ndryshme, dhe çfarë tjetër për të kërkuar, përgjigjuni pyetjes mbështetëse.</p>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="console__pictures_quiz_series_negative_step">
     <span data-component="question">Q-66: Match a series of numbers with the statements that generate them.</span>
-	<span data-component=feedback>Try again.</span>
+	<span data-component=feedback>Provo përsëri.</span>
 
     <li data-component="draggable" id="console__pictures_quiz_series_negative_step_drag1">10, 15, 20, 25, 30 </li>
     <li data-component="dropzone" for="console__pictures_quiz_series_negative_step_drag1"> for x in range(10, 35, 5)</li>
@@ -417,17 +416,17 @@ pygamebg.wait_loop()
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Displaying ready-made images' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Paraqitni imazhe të gatshme' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Animation' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Animim' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Displaying ready-made images' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Paraqitni imazhe të gatshme' data-toggle="tooltip"><a href="03_PyGame_17a_Drawing_Pictures1.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Animation' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Animim' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

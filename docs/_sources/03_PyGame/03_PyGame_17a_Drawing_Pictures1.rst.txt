@@ -1,7 +1,7 @@
-Displaying ready-made images
+Paraqitni imazhe të gatshme
 ----------------------------
 
-Drawing basic shapes can be fun and sometimes challenging. Still, it would be even more fun to be able to combine our drawing with ready-made pictures or photos. In PyGame environment this is very simple. Let's look at the following example:
+Vizatimi i formave themelore mund të jetë argëtuese dhe nganjëherë sfiduese. Sidoqoftë, do të ishte edhe më argëtuese të jesh në gjendje të ndërthurim vizatimin tonë me fotografi ose foto të gatshme. Në mjedisin PyGame kjo është shumë e thjeshtë. Le të shohim shembullin e mëposhtëm:
 
 .. image:: ../../_images/tree.png
    :width: 50px
@@ -19,32 +19,32 @@ Drawing basic shapes can be fun and sometimes challenging. Still, it would be ev
    :modaloutput:
    :includesrc: src\PyGame\1_Drawing\9_UsingImages\trees_and_apples1.py
 
-We have two new PyGame functions in this program:
+Ne kemi dy funksione të reja PyGame në këtë program:
 
-- Function :code:`pg.image.load` loads the image from the disk. We pass the name of the file containing the image to this function (path to the file may be included), and as a result it returns the image in a format suitable for program. We should save that result in some variable (in the example it is the variable *tree_image*);
+- Funksioni :code:`pg.image.load` ngarkon imazhin nga disku. Ne kalojmë emrin e skedarit që përmban figurën në këtë funksion (rruga drejt skedarit mund të përfshihet), dhe si rezultat ajo kthen imazhin në një format të përshtatshëm për programin. Ne duhet ta ruajmë atë rezultat në disa variabla (në shembullin është variabli *tree_image*);
 
-- Function :code:`blit` displays an image in a given window. Arguments of this function are a variable containing the image (result of function *pg.image.load*) and position :math:`(x, y)` in the window where we want the image to appear. At the position we set, the upper left corner of the image will appear. In the example, we set the position :math:`(0, 0)`, so the upper left corner of the image appears in the upper left corner of the window.
+- Funksioni :code:`blit` shfaq një imazh në një dritare të caktuar. Argumentet e këtij funksioni janë një variabël që përmban figurën (rezultatin e funksionit *pg.image.load*) dhe pozicionin :math:`(x, y)` në dritaren ku duam të shfaqet imazhi. Në pozicionin që vendosëm, këndi i sipërm i majtë i figurës do të shfaqet. Në shembull, vendosëm pozicionin :math:`(0, 0)`, kështu që këndi i sipërm i majtë i figurës shfaqet në këndin e sipërm të majtë të dritares.
 
-Try typing different coordinate values instead of :math:`(0, 0)` to get a better understanding of how the *blit* function works. We can observe that displaying ready-made images is similar to displaying movable drawings using an anchor.
+Provoni të shtypni vlera të ndryshme të koordinatave në vend të :math:`(0, 0)` për të kuptuar më mirë se si funksionon funksioni *blit*. Mund të vërejmë se shfaqja e pamjeve të gatshme është e ngjashme me shfaqjen e vizatimeve të luajtshme duke përdorur një anchor.
 
-You can also try displaying one image in multiple places on the screen, as we did with basic shapes. Just call the *blit* function multiple times, with different values for the display location.
+Ju gjithashtu mund të provoni të shfaqni një imazh në vende të shumta në ekran, siç kemi bërë me format themelore. Thjesht telefononi funksionin *blit* disa herë, me vlera të ndryshme për vendndodhjen e ekranit.
 
-When displaying an image in multiple places, the images may overlap. Therefore, care must be taken of the order of displaying. In our case, we should first show the tree we imagine as further, and then the tree we imagine as closer. Otherwise the final scene may seem wrong, as the following picture shows.
+Kur shfaqni një imazh në vende të shumta, imazhet mund të mbivendosen. Prandaj, duhet pasur kujdes për rendin e shfaqjes. Në rastin tonë, së pari duhet të tregojmë pemën që imagjinojmë më tej, dhe pastaj pemën që imagjinojmë si më afër. Përndryshe skena përfundimtare mund të duket e gabuar, siç tregon fotografia e mëposhtme.
 
 .. image:: ../../_images/PyGame/trees_and_apples_bad.png
    :width: 600px
    :align: center 
       
-The objects we perceive as further are usually in the upper part of the image, which means that they have a smaller :math:`y` coordinate, though this may not always be true. In this and similar examples it will be enough to stick to this simple rule: **it is better to first display objects with smaller** :math:`y` **coordinate**.
+Objektet që ne i perceptojmë më tej janë zakonisht në pjesën e sipërme të figurës, që do të thotë se ata kanë një koordinatë më të vogël :math:`y`, megjithëse kjo jo gjithmonë mund të jetë e vërtetë. Në këtë dhe shembuj të ngjashëm do të jetë e mjaftueshme t'i përmbahemi këtij rregulli të thjeshtë: **është më mirë të shfaqim në fillim objektet me koordinatë më të vogël** :math:`y`.
 
-Tasks for exercise
+Ushtrime
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Task - trees**
+    **Ushtrim - mollë**
 
-    In the following program, correct the order of tree positions in the list, and then add a statement to draw a tree at position (*x*, *y*) in the loop.
+    Në programin vijues, korrigjoni renditjen e pozicioneve të pemëve në listë, dhe pastaj shtoni një thënie për të vizatuar një pemë në pozicion (*x*, *y*) në loop.
 
 .. activecode:: PyGame__images_trees3
     :nocodelens:
@@ -64,9 +64,9 @@ Tasks for exercise
 
 .. questionnote::
 
-    **Task - Apples**
+    **Ushtrim - mollë**
 
-    Finish the program by drawing the tree with the apples (as in the example).
+    Përfundoni programin duke vizatuar pemën me mollët (si në shembull).
 
 .. activecode:: PyGame__images_trees2
     :nocodelens:
@@ -82,13 +82,13 @@ Tasks for exercise
     # complete: paint the background in dark green, draw a tree and apples on it
    
 
-After you finish the program, you can also try modifying the program to display an apple tree 100 pixels to the right and 50 pixels lower.
+Pasi të mbaroni programin, mund të provoni gjithashtu të modifikoni programin për të shfaqur një pemë molle 100 piksele në të djathtë dhe 50 piksele më të ulët.
     
 .. questionnote::
 
-    **Task - Checkmate**
+    **Ushtrim - Shah**
 
-    Write a program that draws a chess position, as in the example. The filenames for the empty chessboard, white king, white rook and black king image files are respectively "chess_table.png", "white_king.png", "white_rook.png", "black_king.png".
+    Shkruani një program që vizaton një pozicion shahu, si në shembull. Emrat e kutive të zbrazëta të shahut, mbreti i bardhë, pelerina e bardhë dhe skedarët e imazheve të mbretit të zi janë përkatësisht "chess_table.png", "white_king.png", "white_rook.png", "black_king.png".
     
 .. image:: ../../_images/chess_table.png
    :width: 50px
@@ -113,11 +113,11 @@ After you finish the program, you can also try modifying the program to display 
 
 .. questionnote::
 
-    **Task - Orchard**
-    
-    In the next task the drawing of the orchard has been started. If we run the program, we will notice some inconsistencies. One problem is that apples are only found on the first tree, and they should be located on each tree, arranged in the same way. In addition, the second tree on the left (correctly) overlaps the leftmost tree but does not overlap its apples. We need to display the tree we show earlier along with its apples before moving on to the next tree.
-    
-Correct the program so that it displays the image obtained by clicking the "Play task" button.
+    **Detyra - Pemishte**
+    
+     Në detyrën tjetër vizatimi i pemishteve ka filluar. Nëse e kuajmë programin, do të vërejmë disa mospërputhje. Një problem është se mollët gjenden vetëm në pemën e parë, dhe ato duhet të vendosen në secilën pemë, të rregulluara në të njëjtën mënyrë. Për më tepër, pema e dytë në të majtë mbivendoset, por nuk mbivendosen mollët e saj. Duhet të shfaqim pemën që tregojmë më herët së bashku me mollët e saj përpara se të kalojmë te pema tjetër.
+    
+Korrigjoni programin në mënyrë që të shfaq imazhin e marrë duke klikuar butonin "Luaj lojë".
 
 .. activecode:: PyGame__images_trees_and_apples4
     :nocodelens:

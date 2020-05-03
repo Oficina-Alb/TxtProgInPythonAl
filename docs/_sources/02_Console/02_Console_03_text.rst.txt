@@ -1,44 +1,44 @@
-Text values
+Vlerat tekst
 ===========
 
-In addition to integers and real numbers, one of the basic types of data in programming is text. The text data is called a **string**. In addition to letters, they can contain all other characters used in the text: punctuation, parentheses, numbers, mathematical operators, various special characters such as ``%``, ``$``, ``^``. ``&`` etc.
+Përveç numrave të plotë dhe numrave realë, një nga llojet themelore të të dhënave në programim është teksti. Të dhënat e tekstit quhen një varg **. Përveç shkronjave, ato mund të përmbajnë të gjitha karakteret e tjera të përdorura në tekst: shenjat e pikësimit, kllapat, numrat, operatorët matematikorë, karakteret e ndryshme speciale siç janë ``%``, ``$``, `` ^``. ``&`` etj.
 
-Text values are written between quotation marks. We call the text under quotation marks a **text constant** or a **literal**. Single ``'...'`` and double ``"..."`` quotes can equally be used in Python (it is only important that quotes are of the same type at the beginning and end of the string). For example:
+Vlerat e tekstit shkruhen midis thonjëzave. Ne e quajmë tekstin nën citate shënon një tekst **konstante** ose **fjalë për fjalë **. Citimet e vetme ``'...' ` dhe dyshet ``"..."`` mund të përdoren në mënyrë të barabartë në Python (është vetëm e rëndësishme që citimi të jenë i të njëjtit lloj në fillim dhe në fund të vargut). Për shembull:
 
 .. code::
 
     s1 = 'One text'
     s2 = "Another text"
 
-We will use the word string for the textual data type, as well as for any expression whose value is that type. The most important examples of string expressions are text constants (literals) and variables that contain text.
+Ne do të përdorim vargun e fjalës për llojin e të dhënave tekstuale, si dhe për çdo shprehje, vlera e të cilit është ai lloj. Shembujt më të rëndësishëm të shprehjeve të vargjeve janë konstantet e tekstit (literalet) dhe ndryshoret që përmbajnë tekst.
 
-Printing text
+Printimi i tekstit
 -------------
 
-The strings are printed in the same way as the numeric data. The string we want to print is simply specified as a *print()* function argument.
+Vargjet printohen në të njëjtën mënyrë si të dhënat numerike. Vargu që duam të shtypim është specifikuar thjesht si një argument funksioni *print()* 
 
 .. activecode:: console__text_hello
 
     print("Hello world!")
 
-When the *print()* function has multiple arguments, these arguments can be of different types:
+Kur funksioni *print()* ka argumente të shumta, këto argumente mund të jenë të llojeve të ndryshme:
 
 .. activecode:: console__text_compute
 
     print('2+2 =', 2+2)
 
-When we use multiple arguments, we write them separated by commas (as with any function). The values of all the arguments specified will be printed in the same order, and will be separated by one space.
+Kur përdorim argumente të shumta, i shkruajmë ato të ndara me presje (si me çdo funksion). Vlerat e të gjitha argumenteve të përcaktuara do të shtypen në të njëjtin rend, dhe do të ndahen nga një hapësirë.
 
-More about printing numbers
+Më shumë rreth shtypjes së numrave
 ---------------------------
 
-Sometimes the printed result looks illegible:
+Ndonjëherë rezultati i printuar duket i paligjshëm:
 
 .. activecode:: console__text_format1a
 
     print(5/3)
 
-Most often we don't need all these digits. Real numbers can look more readable if we use the *format* function. With this function (among other things) we can specify how many digits after the decimal point we want to display:
+Më shpesh nuk na duhen të gjitha këto shifra. Numrat realë mund të duken më të lexueshëm nëse përdorim funksionin *format*. Me këtë funksion (ndër të tjera) mund të specifikojmë sa shifra pas pikës dhjetore që duam të shfaqim:
 
 .. activecode:: console__text_format1b
 
@@ -46,11 +46,11 @@ Most often we don't need all these digits. Real numbers can look more readable i
     s = format(x, '.2f')
     print(s)
     
-To specify the number of decimal places to display, we called the *format* function like this: the first argument of the function is the value we print, and the second argument is the description of the printing format. In this description, the part '.2' means that we want two decimal places, and the part 'f', abbreviated from *float*, means that we give a description for a real number (the type of real numbers is called *float*). The function returns a string in which the number *x* is written as specified.
+Për të specifikuar numrin e vendeve dhjetore për t’u shfaqur, ne e quajtëm funksionin *format* si ky: argumenti i parë i funksionit është vlera që shtypim, dhe argumenti i dytë është përshkrimi i formatit të shtypjes. Në këtë përshkrim, pjesa '.2' do të thotë që duam dy vende dhjetore, dhe pjesa 'f', e shkurtuar nga *float*, do të thotë që japim një përshkrim për një numër real (lloji i numrave realë quhet *float*). Funksioni kthen një varg në të cilin shkruhet numri *x* siç përcaktohet.
 
-Note that this formatted printing does not change the value of the variable *x*.
+Vini re se kjo shtypje e formatuar nuk e ndryshon vlerën e ndryshores *x*.
 
-We've broken the example down into steps to make it clearer, though it could also be written in one line of code. For example, to print with 4 decimal places:
+Ne e kemi shembur shembullin në hapa për ta bërë atë më të qartë, megjithëse ai gjithashtu mund të shkruhet në një rresht kodesh. Për shembull, për të shtypur me 4 vende dhjetore:
 
 .. activecode:: console__text_format1c
 
@@ -58,7 +58,7 @@ We've broken the example down into steps to make it clearer, though it could als
     
 ~~~~
 
-When displaying multiple real numbers one below the other, we can make them more readable by aligning the decimal points. For example, this way of printing is not easily comprehensible:
+Kur shfaqim numra të shumtë realë njërin poshtë tjetrit, ne mund t'i bëjmë ato më të lexueshme duke rreshtuar pikat dhjetore. Për shembull, kjo mënyrë e shtypjes nuk është lehtësisht e kuptueshme:
 
 .. activecode:: console__text_format2a
 
@@ -66,7 +66,7 @@ When displaying multiple real numbers one below the other, we can make them more
     print(7251.7)
     print(84.15)
 
-To get a more readable look, we can use the *format* function like this:
+Për të marrë një vështrim më të lexueshëm, mund të përdorim funksionin  format* si ky:
 
 .. activecode:: console__text_format2b
 
@@ -74,28 +74,28 @@ To get a more readable look, we can use the *format* function like this:
     print(format(7251.7, '8.2f'))
     print(format(84.15, '8.2f'))
 
-In the description '8.2f' the number 8 means that the textual version of the given number should be left-padded with spaces (if needed) to take up total of 8 places. These 8 places include the digits, the decimal point, possible sign of the number and spaces in front of the number. 
+Në përshkrimin '8.2f' numri 8 do të thotë që versioni tekstual i numrit të dhënë duhet të jetë i mbushur me hapësira (nëse është e nevojshme) për të zënë gjithsej 8 vende. Këto 8 vende përfshijnë shifrat, pikën dhjetore, shenjën e mundshme të numrit dhe hapësirat përpara numrit.
 
-Other parts of the description ('.2f') have the same meaning as before.
-
-
-The *format* function has many other features, but we will not use them here.
+Pjesët e tjera të përshkrimit ('.2f') kanë të njëjtin kuptim si më parë.
 
 
-String operations
+Funksioni *format* ka shumë karakteristika të tjera, por ne nuk do t'i përdorim ato këtu.
+
+
+Operacionet e vargut
 -----------------
 
-Joining strings
+Bashkimi i strings
 '''''''''''''''
 
-Strings can be joined together with a **string concatenation** operation. This operation is denoted by the sign ``+``, just like the operation of summation, so in programming concatenation is often informally called string addition.
+Vargjet mund të bashkohen së bashku me një operacion **string concatenation** . Ky operacion shënohet me shenjën ``+``, ashtu si operacioni i mbledhjes, kështu që në programimin bashkimi shpesh quhet joformalisht shtesë.
 
 .. activecode:: console__text_concat1
 
     s = 'continu' + 'ation'
     print(s)
 
-Sometimes, we may have an integer or a real number wiitten in a string, so it is important to understand when the sign ``+`` refers to the addition of numbers, and when concatenation of strings. For example, in the following program, the first *a + b* is the addition of numbers, and the second is the addition of strings. Accordingly, the printed results also differ (try it out).
+Ndonjëherë, ne mund të kemi një numër të plotë ose një numër të vërtetë të pangopur në një varg, kështu që është e rëndësishme të kuptojmë kur shenja ``+`` i referohet shtimit të numrave, dhe kur bashkimit të vargjeve. Për shembull, në programin vijues, e para *a + b* është shtimi i numrave, dhe e dyta është shtimi i vargjeve. Prandaj, rezultatet e shtypura gjithashtu ndryshojnë (provojeni).
 
 .. activecode:: console__text_concat2
 
@@ -107,20 +107,20 @@ Sometimes, we may have an integer or a real number wiitten in a string, so it is
     b = '1'
     print(a + b)
 
-It is likely that occasionally you may be confused by the result when executing a program. The result may be different than expected for many reasons, and one possibility is that you unintentionally added up strings instead of numbers.
+Ka të ngjarë që herë pas here të ngatërroheni nga rezultati kur ekzekutoni një program. Rezultati mund të jetë i ndryshëm nga sa pritej për shumë arsye, dhe një mundësi është që ju të shtoni pa dashje vargje në vend të numrave.
 
-The ``+`` character can stand between two numeric expressions or between two strings, but not between a string and a number (in any order). Such combinations result in a *TypeError* (try it).
+Karakteri ``+`` mund të qëndrojë midis dy shprehjeve numerike ose midis dy vargjeve, por jo midis një vargu dhe një numri (në çdo mënyrë). Kombinime të tilla rezultojnë në një *TypeError* (provojeni).
 
 .. activecode:: console__text_concat3
 
     print('2' + 2)
 
-String multiplication
+Shumëzimi i vargut
 '''''''''''''''''''''
 
-Strings can also be multiplied. This means that it is allowed to multiply a string by an integer (either from left or right), and the result is a new string, which is obtained by repeating a given string a given number of times.
+Vargjet gjithashtu mund të shumëzohen. Kjo do të thotë që lejohet të shumëzoni një varg me një numër të plotë (qoftë nga e majta apo e djathta), dhe rezultati është një varg i ri, i cili fitohet duke përsëritur një varg të caktuar një numër të caktuar herë.
 
-In the following example we underline the numbers with a line, and that line is obtained as a result of multiplying the string '-' by 12.
+Në shembullin e mëposhtëm nënvizojmë numrat me një rresht, dhe kjo linjë merret si rezultat i shumëzimit të vargut '-' me 12.
 
 .. activecode:: console__text_str_mult
 
@@ -135,29 +135,29 @@ In the following example we underline the numbers with a line, and that line is 
     print(format(total, '12.2f'))
 
     
-Questions and Tasks
+Pyetje dhe detyra
 -------------------
 
 .. dragndrop:: console__text_quiz_format
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: '12.34'|||format(12.34, '.2f')
     :match_2: '__12.34'|||format(12.34, '7.2f')
     :match_3: '_12.34'|||format(12.34, '6.2f')
     :match_4: '__12.3'|||format(12.34, '6.1f')
     :match_5: '12.3'|||format(12.34, '.1f')
 
-    Match the *format* function calls with the results. The spaces are represented by '_' as they would not otherwise be visible.
+    Përputhni thirrjet e funksionit *format* me rezultatet. Hapësirat përfaqësohen nga '_' pasi ato nuk do të ishin të dukshme.
 
 .. mchoice:: console__text_quiz_quotes
     :answer_a: s = 'a' + "b"
     :answer_b: s = 'ab"
     :answer_c: s = 'ab'
     :correct: b
-    :feedback_a: Try again
-    :feedback_b: Correct!
-    :feedback_c: Try again
+    :feedback_a: Provo përsëri
+    :feedback_b: Saktë!
+    :feedback_c: Provo përsëri
     
-    Which of the statements is faulty?
+    Cili deklarim është gabim?
 
 .. mchoice:: console__text_quiz_tralala
    :multiple_answers:
@@ -168,10 +168,10 @@ Questions and Tasks
    :answer_e: print('tra-la-' + '-la')
    :correct: a, c, d
 
-   Which statement prints `` tra-la-la ''? (Mark all correct answers)
+   Cili deklarim printon `` tra-la-la ''? (Kliko të gjitha përgjigjet e sakta)
        
 .. dragndrop:: console__text_quiz_nanana
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: 'NA' * 3 ||| 'NANANA'
     :match_2: 'N' + 3 * 'A' ||| 'NAAA'
     :match_3: 'N' * 3 + 'A' ||| 'NNNA'
@@ -183,15 +183,15 @@ Questions and Tasks
 
     What the statement **print(('N' + 'A') * 2)** prints?
     
-    - :NANA: Correct!
-      :NNAA: First, calculate the part in brackets (as with numbers)
-      :.*: Try again.
+    - :NANA: Saktë!
+      :NNAA: Fillimisht, llogarit pjesën në kllapa (njësoj si numrat)
+      :.*: Provo përsëri.
 
 .. questionnote::
 
-    **Task - Profit Sharing**
+    * Detyrë - Ndarja e Fitimit **
 
-    The three friends agreed to divide the profits from the joint venture so that the first would get 2/7 of the earnings, the second 1/3, and the third the remaining sum. The total profit was 40000. Complete the program, which will print, in two decimal places, the earnings of each of the three friends.
+     Të tre miqtë ranë dakord të ndajnë fitimet nga ndërmarrja e përbashkët, në mënyrë që i pari të merrte 2/7 të fitimeve, i dyti 1/3, dhe i treti shumën e mbetur. Fitimi i përgjithshëm ishte 40000. Plotësoni programin, i cili do të shtypë, në dy numra dhjetor, të ardhurat e secilit prej tre miqve.
     
 .. activecode:: console__computing_earnings
 

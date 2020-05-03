@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Mouse events &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Ngjarjet e mouse &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Keyboard events" href="03_PyGame_36_Interaction_EventKeyboard.html" />
-    <link rel="prev" title="Events" href="03_PyGame_34_Interaction_Events.html" />
+    <link rel="next" title="Eventet e tastierës" href="03_PyGame_36_Interaction_EventKeyboard.html" />
+    <link rel="prev" title="Ngjarje" href="03_PyGame_34_Interaction_Events.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,29 +205,29 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="mouse-events">
-<h1>Mouse events<a class="headerlink" href="#mouse-events" title="Permalink to this headline">¶</a></h1>
-<p>In the “switch” example we have shown how we can react in a program when the user presses a mouse button. Although for the user a click seems like a single action, we have seen that for the computer it is a sequence of events that starts with an event of the type <em>pg.MOUSEBUTTONDOWN</em>.</p>
-<p>In the following examples and tasks, we will use three types of mouse-generated events:</p>
+  <div class="section" id="ngjarjet-e-mouse">
+<h1>Ngjarjet e mouse<a class="headerlink" href="#ngjarjet-e-mouse" title="Permalink to this headline">¶</a></h1>
+<p>Në shembullin “ndërprerës” kemi treguar se si mund të reagojmë në një program kur përdoruesi shtyp një buton të mouse. Edhe pse për përdoruesit një klik duket si një veprim i vetëm, kemi parë që për kompjuter është një sekuencë ngjarjesh që fillon me një ngjarje të tipit <em>pg.MOUSEBUTTONDOWN</em>.</p>
+<p>Në shembujt dhe detyrat e mëposhtme, ne do të përdorim tre lloje të ngjarjeve të krijuara nga mouse:</p>
 <ul class="simple">
-<li>Pressing any mouse button (like in the example with the switch), in which case <em>event.type</em> has a value of <em>pg.MOUSEBUTTONDOWN</em></li>
-<li>Releasing a mouse button, in which case <em>event.type</em> has a value of <em>pg.MOUSEBUTTONUP</em></li>
-<li>Moving the mouse, in which case <em>event.type</em> has a value of <em>pg.MOUSEMOTION</em>. In fact, when moving the mouse multiple such events are generated (each of them describing a small mouse movement in a very short time interval, so each event of this kind usually describes a movement of only a few pixels).</li>
+<li><p>Shtypni çdo buton të mouse (si në shembullin me ndërprerës), në të cilin rast <em>event.type</em> ka një vlerë <em>pg.MOUSEBUTTONDOWN</em></p></li>
+<li><p>Lëshimi i një butoni të mouse, në të cilin rast <em>event.type</em> ka një vlerë prej <em>pg.MOUSEBUTTONUP</em></p></li>
+<li><p>Lëvizja e mouse, në këtë rast <em>event.type</em> ka një vlerë <em>pg.MOUSEMOTION</em>. Në fakt, kur lëvizni miun shumë ngjarje të tilla gjenerohen (secila prej tyre përshkruan një lëvizje të vogël të mouse në një interval kohor shumë të shkurtër, kështu që secila ngjarje e këtij lloji zakonisht përshkruan një lëvizje prej vetëm disa piksele).</p></li>
 </ul>
-<p>Event objects whose type is <em>pg.MOUSEBUTTONDOWN</em> also contain some additional information, such as:</p>
+<p>Objektet e ngjarjes, lloji i të cilave është <em>pg.MOUSEBUTTONDOWN</em> gjithashtu përmbajnë disa informacione shtesë, siç janë:</p>
 <ul class="simple">
-<li><em>event.pos</em> - the position of the mouse at the time of registering the event (already used in the switch example)</li>
-<li><em>event.button</em> - a number from 1 to 5 indicating which mouse button is pressed (1 - left, 2 - middle, 3 - right, 4 - scroll up, 5 - scroll down)</li>
+<li><p><em>event.pos</em>- pozicioni i mouse në kohën e regjistrimit të ngjarjes (përdorur tashmë në shembullin e ndërprerës)</p></li>
+<li><p><em>event.button</em> - një numër nga 1 në 5 që tregon se cili buton i mouse shtypet (1 - majtas, 2 - i mesëm, 3 - djathtas, 4 - lëvizni lart, 5 - lëvizni poshtë)</p></li>
 </ul>
-<p>Some of the additional event data contained in <em>pg.MOUSEMOTION</em> event objects are:</p>
+<p>Disa nga të dhënat shtesë të ngjarjeve të përfshira në <em>pg.MOUSEMOTION</em> objektet e ngjarjes janë:</p>
 <ul class="simple">
-<li>event.pos - the position of the mouse after the mouse motion event</li>
-<li>event.rel - an ordered pair that describes how much the mouse position has changed since the previous mouse motion event</li>
-<li>event.buttons - a three-element list of logical values, which determine for each of the three mouse buttons (0 - left, 1 - middle, 2 - right) whether it was pressed during mouse movement.</li>
+<li><p>event.pos - pozicioni i mouse pas ngjarjes së lëvizjes së miut</p></li>
+<li><p>event.rel - një palë e porositur që përshkruan se sa ka ndryshuar pozicioni i mouse që nga ngjarja e mëparshme e lëvizjes së mouse</p></li>
+<li><p>event.buttons - një listë me tre elementë vlerash logjike, të cilat përcaktojnë për secilën nga tre butonat e mouse (0 - majtas, 1 - të mesëm, 2 - djathtas) nëse është shtypur gjatë lëvizjes së mouse.</p></li>
 </ul>
-<div class="section" id="click-processing-exercises">
-<h2>Click processing - exercises<a class="headerlink" href="#click-processing-exercises" title="Permalink to this headline">¶</a></h2>
-<p>You may not have noticed that in the “switch” program from the previous lesson, the light can be turned on and off by clicking any mouse button. This is because the same type of event is generated for each mouse button, and we did not check which button was pressed when the event occurred.</p>
+<div class="section" id="klikoni-ne-perpunim-ushtrime">
+<h2>Klikoni në përpunim - ushtrime<a class="headerlink" href="#klikoni-ne-perpunim-ushtrime" title="Permalink to this headline">¶</a></h2>
+<p>Ndoshta nuk keni vërejtur që në programin “switch” nga mësimi i kaluar, drita mund të ndizet dhe fiket duke klikuar ndonjë buton të mouse. Kjo për shkak se i njëjti lloj ngjarje gjenerohet për secilën buton të miut, dhe ne nuk kemi kontrolluar se cili buton është shtypur kur ndodhi ngjarja.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -236,11 +235,11 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - left button as a switch:</strong></p>
-<p>Copy the “switch” program here, then modify it so that the light can be switched on and off only with the left mouse button.</p>
+<p><strong>Detyrë - butoni i majtë si ndërprerës:</strong></p>
 
     </p></div></div>
-<p><strong>Hint:</strong> Use <em>event.button</em> data.</p>
+<p>     Kopjoni programin “kaloni” këtu, pastaj modifikoni atë në mënyrë që drita të ndizet dhe fiket vetëm me butonin e majtë të mouse.</p>
+<p><strong>Ndihmë:</strong> Përdor të dhënat e <em>event.button</em>.</p>
 
 <div data-childcomponent="PyGame__interact_switch_left_button" class="course-box course-box-problem course-content">
 
@@ -294,10 +293,10 @@ pygamebg.frame_loop(10, new_frame, handle_event)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - three switches:</strong></p>
-<p>Use parts of the “switch” program and create a program that simulates the work of three switches, as shown in the example.</p>
+<p><strong>Detyrë - tre ndërprerës:</strong></p>
 
     </p></div></div>
+<p>     Përdorni pjesë të programit “kaloni” dhe krijoni një program që simulon punën e tre çelësave, siç tregohet në shembull.</p>
 <a class="reference internal image-reference" href="../_images/Shema3_Off.png"><img alt="../_images/Shema3_Off.png" src="../_images/Shema3_Off.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/Shema3_On.png"><img alt="../_images/Shema3_On.png" src="../_images/Shema3_On.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/SwitchOff.png"><img alt="../_images/SwitchOff.png" src="../_images/SwitchOff.png" style="width: 50px;" /></a>
@@ -361,9 +360,9 @@ bulb_pos = (500, 100)
 </textarea>
 </div>
 </div>
-<div class="section" id="other-mouse-events">
-<h2>Other mouse events<a class="headerlink" href="#other-mouse-events" title="Permalink to this headline">¶</a></h2>
-<p>As it was mentioned at the beginning of this lesson, a program can also respond to mouse button release and mouse motion events. To do that, it is necessary to compare the value of <em>event.type</em> with the constants <em>pg.MOUSEBUTTONUP</em> and <em>pg.MOUSEMOTION</em>. The following are tasks where you can try this out.</p>
+<div class="section" id="evente-te-tjera-te-mouse">
+<h2>Evente të tjera të mouse<a class="headerlink" href="#evente-te-tjera-te-mouse" title="Permalink to this headline">¶</a></h2>
+<p>Siç u përmend në fillim të këtij mësimi, një program mund t’i përgjigjet gjithashtu lëshimit të butonit të miut dhe ngjarjeve të lëvizjes së mouse. Për ta bërë këtë, është e nevojshme të krahasoni vlerën e <em>event.type</em> me konstantet <em>pg.MOUSEBUTTONUP</em> dhe <em>pg.MOUSEMOTION</em>. Më poshtë janë detyrat ku mund ta provoni.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -371,10 +370,10 @@ bulb_pos = (500, 100)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - drawing lines:</strong></p>
-<p>Complete the program so that it can draw straight lines, as in the example.</p>
+<p><strong>Detyra - linjat e vizatimit:</strong></p>
 
     </p></div></div>
+<p>     Përfundoni programin në mënyrë që të mund të vizatojë vija të drejta, si në shembull.</p>
 
 <div data-childcomponent="PyGame__interact_mouse_lines1" class="course-box course-box-problem course-content">
 
@@ -456,11 +455,11 @@ pygamebg.frame_loop(30, new_frame, handle_event)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - drawing lines with deletion:</strong></p>
-<p>Copy the program for drawing lines below, then add an ability to delete all lines with a right-click.</p>
+<p><strong>Detyrë - vizatime vijash me fshirje:</strong></p>
 
     </p></div></div>
-<p><strong>Hint:</strong> To distinguish between left and right mouse buttons in the program, the <em>event.button</em> data must be used again. The code in the <em>handle_event</em> function should now look something like this:</p>
+<p>     Kopjoni programin për vizatimin e linjave më poshtë, pastaj shtoni një mundësi për të fshirë të gjitha rreshtat me një klik të djathtë.</p>
+<p><strong>Këshillë:</strong> Për të bërë dallimin midis butonave të mouse të majtë dhe të djathtë në program, të dhënat <em>event.button</em> duhet të përdoren përsëri. Kodi në funksionin <em>hand_event</em> tani duhet të duket si kjo:</p>
 
 <div data-childcomponent="PyGame__interact_mouse_lines2_part" class="course-box course-box-problem course-content">
 
@@ -536,11 +535,11 @@ pygamebg.frame_loop(30, new_frame, handle_event)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - dragging:</strong></p>
-<p>The following program shows how to allow the user of the program to drag objects.</p>
-<p>Try the program out (drag the apples into the basket) and try to understand it, then answer the questions below.</p>
+<p><strong>Detyrë - tërheqje:</strong></p>
 
     </p></div></div>
+<p>     Programi i mëposhtëm tregon se si të lejojë përdoruesit e programit të tërheqë objektet.</p>
+<p>     Provoni programin (tërhiqni mollët në shportë) dhe përpiquni ta kuptoni atë, pastaj përgjigjuni pyetjeve më poshtë.</p>
 <a class="reference internal image-reference" href="../_images/apple.png"><img alt="../_images/apple.png" src="../_images/apple.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/basket.png"><img alt="../_images/basket.png" src="../_images/basket.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/drag_scene.png"><img alt="../_images/drag_scene.png" src="../_images/drag_scene.png" style="width: 50px;" /></a>
@@ -611,14 +610,15 @@ pygamebg.frame_loop(30, new_frame, handle_event)
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__interact_quiz_drag1">
-            Q-77: What is the <em>i_apple</em> variable in the program?
-            <li data-component="answer"  id="pygame__interact_quiz_drag1_opt_a">the index of the apple we are drawing</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_a">Try again</li>
+            <p>Q-77: Çfarë ështl variabli <em>i_apple</em> në program?</p>
+
+            <li data-component="answer"  id="pygame__interact_quiz_drag1_opt_a">indeksi i mollëve që po vizatojmë</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_a">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__interact_quiz_drag1_opt_b">the index of the apple we are dragging</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="pygame__interact_quiz_drag1_opt_b">indeksi i mollëve që po tërheqim</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_b">Saktë</li>
             
-            <li data-component="answer"  id="pygame__interact_quiz_drag1_opt_c">total number of apples</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__interact_quiz_drag1_opt_c">numri total i mollëve</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__interact_quiz_drag1_opt_d">the number of apples remaining on the tree</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__interact_quiz_drag1_opt_d">numri i mollëve të mbetura në pemë</li><li data-component="feedback" id="pygame__interact_quiz_drag1_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -626,29 +626,30 @@ pygamebg.frame_loop(30, new_frame, handle_event)
             
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__interact_quiz_drag2">
-    <span data-component="question">Q-78: Pair the checks in the program with their meaning.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-78: Lidh fjalët me kuptimin.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__interact_quiz_drag2_drag1">if mouse_is_on_image(event.pos, basket_pos, basket_image):</li>
-    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag1">whether the apple should be deleted</li>
+    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag1">nëse molla duhet fshirë</li>
 
     <li data-component="draggable" id="pygame__interact_quiz_drag2_drag2">if mouse_is_on_image(event.pos, apple_positions[i]</li>
-    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag2">whether the user "took" the apple</li>
+    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag2">nëse perdoruesi mori mollën</li>
 
     <li data-component="draggable" id="pygame__interact_quiz_drag2_drag3">if len(apple_positions) == 0:</li>
-    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag3">whether the game is over</li>
+    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag3">nëse loja ka mbaruar</li>
 
     <li data-component="draggable" id="pygame__interact_quiz_drag2_drag4">if i_apple >= 0:</li>
-    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag4">whether a drag is ongoing</li>
+    <li data-component="dropzone" for="pygame__interact_quiz_drag2_drag4">nëse tërheqja vazhdon</li>
 </ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__interact_quiz_drag3">
-            Q-79: How do we distinguish between dragging and plain mouse movement in a program?
-            <li data-component="answer"  id="pygame__interact_quiz_drag3_opt_a">we read if a mouse button is down during movement</li><li data-component="feedback" id="pygame__interact_quiz_drag3_opt_a">This is not a convenient way, since the button can be pressed in an empty space (the user did not "take" the object to be dragged)</li>
+            <p>Q-79: Si e bëjmë dallimin midis tërheqjes dhe lëvizjes së thjeshtë të mouse në një program?</p>
+
+            <li data-component="answer"  id="pygame__interact_quiz_drag3_opt_a">ne lexojmë nëse butoni i mouse është joaktiv gjatë lëvizjes</li><li data-component="feedback" id="pygame__interact_quiz_drag3_opt_a">kjo nuk është një mënyrë e përshtatshme, pasi butoni mund të shtypet në një hapësirë të zbrazët (përdoruesi nuk e "mori" objektin që duhet të tërhiqet)</li>
             
-            <li data-component="answer"  id="pygame__interact_quiz_drag3_opt_b">dragging is a separate type of event</li><li data-component="feedback" id="pygame__interact_quiz_drag3_opt_b">No, there is no such type of event</li>
+            <li data-component="answer"  id="pygame__interact_quiz_drag3_opt_b">tërheqja është tip tjetër eventi</li><li data-component="feedback" id="pygame__interact_quiz_drag3_opt_b">Jo, nuk ka kështu tip eventi</li>
             
-            <li data-component="answer" data-correct id="pygame__interact_quiz_drag3_opt_c">when plain moving the mouse, the index of the "apple we are dragging" is -1</li><li data-component="feedback" id="pygame__interact_quiz_drag3_opt_c">Correct</li>
+            <li data-component="answer" data-correct id="pygame__interact_quiz_drag3_opt_c">kur lëvizim mouse, indeksi i  "mollës që po tërheqim" është -1</li><li data-component="feedback" id="pygame__interact_quiz_drag3_opt_c">Saktë</li>
             
 
             </ul>
@@ -660,17 +661,17 @@ pygamebg.frame_loop(30, new_frame, handle_event)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Events' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Ngjarje' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Keyboard events' data-toggle="tooltip"><a href="03_PyGame_36_Interaction_EventKeyboard.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Eventet e tastierës' data-toggle="tooltip"><a href="03_PyGame_36_Interaction_EventKeyboard.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Events' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Ngjarje' data-toggle="tooltip"><a href="03_PyGame_34_Interaction_Events.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Keyboard events' data-toggle="tooltip"><a href="03_PyGame_36_Interaction_EventKeyboard.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Eventet e tastierës' data-toggle="tooltip"><a href="03_PyGame_36_Interaction_EventKeyboard.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

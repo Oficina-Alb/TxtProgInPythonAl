@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Moving multiple objects &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Lëvizja e objekteve të shumta &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Interaction" href="03_PyGame_30_Interaction.html" />
-    <link rel="prev" title="Drawing text" href="03_PyGame_24_Animation_Text.html" />
+    <link rel="next" title="Ndërveprimi" href="03_PyGame_30_Interaction.html" />
+    <link rel="prev" title="Vizatimi i tekstit" href="03_PyGame_24_Animation_Text.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,15 +205,15 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="moving-multiple-objects">
-<h1>Moving multiple objects<a class="headerlink" href="#moving-multiple-objects" title="Permalink to this headline">¶</a></h1>
-<p>So far, we have made animations in which various objects were moving (car, billiard ball, plane, text), but in each of these programs there was only one moving object. For the global variables that describe the scene we used the coordinates of that moving object, and sometimes we also used other values, such as displacement, direction of motion, and so on.</p>
-<p>The movement of multiple objects is not fundamentally different from the movement of a single object - we will simply need to track values that describe movement for all of the objects. For example, we can represent each object with a tuple of values describing it, and keep all such tuples in a list.</p>
+  <div class="section" id="levizja-e-objekteve-te-shumta">
+<h1>Lëvizja e objekteve të shumta<a class="headerlink" href="#levizja-e-objekteve-te-shumta" title="Permalink to this headline">¶</a></h1>
+<p>Deri më tani, kemi bërë animacione në të cilat lëviznin objekte të ndryshme (makina, topi i bilardos, aeroplan, teksti), por në secilën prej këtyre programeve kishte vetëm një objekt lëvizës. Për variablat globale që përshkruajnë skenën kemi përdorur koordinatat e atij objekti në lëvizje, dhe nganjëherë kemi përdorur edhe vlera të tjera, siç janë zhvendosja, drejtimi i lëvizjes etj.</p>
+<p>Lëvizja e objekteve të shumta nuk është thelbësisht e ndryshme nga lëvizja e një objekti të vetëm - thjesht do të na duhet të gjurmojmë vlerat që përshkruajnë lëvizjen për të gjithë objektet. Për shembull, ne mund të përfaqësojmë secilin objekt me një tufë vlerash që e përshkruajnë atë, dhe t’i mbajmë të gjitha tupujt e tillë në një listë.</p>
 <div class="section" id="balls">
 <h2>Balls<a class="headerlink" href="#balls" title="Permalink to this headline">¶</a></h2>
-<p>In the following example we will see animated motion of several balls. Each ball is represented by a <span class="math notranslate nohighlight">\((x, y, dx, dy, r, color)\)</span> tuple, where <span class="math notranslate nohighlight">\(x, y\)</span> are the coordinates of the center of the ball, <span class="math notranslate nohighlight">\(dx, dy\)</span> are the displacements of the ball per coordinate, <span class="math notranslate nohighlight">\(r\)</span> is the radius, and <span class="math notranslate nohighlight">\(color\)</span> is the color of the ball. All such tuples are placed in the list <em>balls</em>.</p>
-<p>When unpacking a tuple from a list element (command <code class="docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">dx,</span> <span class="pre">dy,</span> <span class="pre">r,</span> <span class="pre">color</span> <span class="pre">=</span> <span class="pre">balls[i]</span></code>), as well as when returning it to the list (command <code class="docutils literal notranslate"><span class="pre">balls[i]</span> <span class="pre">=</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">dx,</span> <span class="pre">dy,</span> <span class="pre">r,</span> <span class="pre">color)</span></code>), we should mind the order of the variables.</p>
-<p>In the example, we use the <code class="docutils literal notranslate"><span class="pre">random</span></code> module to create the balls in order to get random selections (imported using the <em>import</em> command). The <code class="docutils literal notranslate"><span class="pre">random.randint(a,</span> <span class="pre">b)</span></code> function returns a random integer between <em>a</em> and <em>b</em> (including boundaries), and the <code class="docutils literal notranslate"><span class="pre">random.choice(a)</span></code> function returns a random element from the collection <em>a</em>.</p>
+<p>Në shembullin e mëposhtëm do të shohim lëvizje të animuar të disa topave. Secila top përfaqësohet nga një :math: <cite>(x, y, dx, dy, r, ngjyra)</cite> tuple, ku <span class="math notranslate nohighlight">\(x,y\)</span> janë koordinatat e qendrës së topit, <span class="math notranslate nohighlight">\(dx,dy\)</span> janë zhvendosjet e topit për koordinatë, <span class="math notranslate nohighlight">\(r\)</span> është rrezja, dhe <span class="math notranslate nohighlight">\(color\)</span> është ngjyra e topit. Të gjitha tuples e tilla vendosen në listë <em>topat</em>.</p>
+<p>Kur shpaketoni një tufë nga një element i listës (komanda <code class="docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">dx,</span> <span class="pre">dy,</span> <span class="pre">r,</span> <span class="pre">ngjyra</span> <span class="pre">=</span> <span class="pre">balls</span> <span class="pre">[i]</span></code>), si dhe kur e ktheni atë në listë (komanda <code class="docutils literal notranslate"><span class="pre">balls</span> <span class="pre">[i]</span> <span class="pre">=</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">dx,</span> <span class="pre">dy,</span> <span class="pre">r,</span> <span class="pre">color)</span></code>), duhet të kemi parasysh rendin e variablave.</p>
+<p>Në shembull, ne përdorim modulin <code class="docutils literal notranslate"><span class="pre">random</span></code> për të krijuar topa në mënyrë që të marrim seleksionime të rastësishme (të importuara duke përdorur komandën <em>import</em>). Funksioni <code class="docutils literal notranslate"><span class="pre">random.randint(a,</span> <span class="pre">b)</span></code> kthen një numër të plotë të rastit ndërmjet <em>a</em> dhe <em>b</em> (përfshirë kufijtë), dhe funksioni <code class="docutils literal notranslate"><span class="pre">rastësor.choice</span> <span class="pre">(a)</span></code> kthen një element të rastit nga mbledhja <em>a</em>.</p>
 
 <div data-childcomponent="PyGame__anim_balls_bouncing" class="course-box course-box-problem course-content">
 
@@ -266,77 +265,24 @@ pygamebg.frame_loop(50, new_frame)
 
 </textarea>
 </div>
-<p>If we compare this program to the animation of motion of a billiard ball, we will notice a great similarity. The <em>new_frame</em> function is essentially different only in that now all actions (moving, bouncing, drawing) are done in a loop, since they need to be done for each ball. Setting the initial state is also somewhat more complicated, as there are more objects and we store multiple data for each of them, and we also use random choices.</p>
+<p>Nëse e krahasojmë këtë program me animacionin e lëvizjes së një bilardo, do të vërejmë një ngjashmëri të madhe. Funksioni <em>new_frame</em> është në thelb i ndryshëm vetëm në atë që tani të gjitha veprimet (lëvizja, kërcimi, vizatimi) bëhen në një cikël, pasi ato duhet të bëhen për secilën top. Vendosja e gjendjes fillestare është gjithashtu disi më e ndërlikuar, pasi ka më shumë objekte dhe ne ruajmë të dhëna të shumta për secilën prej tyre, dhe përdorim edhe zgjedhje të rastësishme.</p>
 <hr class="docutils" />
-<p>In the previous example, all objects (balls) are present from the beginning to the end of the program. There are situations when we want some objects to cease to exist during program execution, or some new objects to appear (or both). In such cases, we can use an auxiliary list in the <em>new_frame</em> function in which we will put values that describe the new state. A typical sequence of activities is as follows:</p>
+<p>Në shembullin e mëparshëm, të gjitha objektet (topat) janë të pranishëm që nga fillimi deri në fund të programit. Ka situata kur duam që disa objekte të pushojnë së ekzistuari gjatë ekzekutimit të programit, ose të shfaqen disa objekte të reja (ose të dyja). Në raste të tilla, ne mund të përdorim një listë ndihmëse në funksionin <em>new_frame</em> në të cilin do të vendosim vlera që përshkruajnë gjendjen e re. Një sekuencë tipike e aktiviteteve është si më poshtë:</p>
 <ul class="simple">
-<li>create a new blank list at the beggining of the <em>new_frame</em> function</li>
-<li>we go through the list of existing tuples, change them, and add the ones that we still need to the new list</li>
-<li>if needed, supplement the list with new tuples</li>
-<li>finally, we update the global list by putting in values from the new, auxiliary list</li>
+<li><p>krijoni një listë të re bosh në fillimin e funksionit <em>new_frame</em></p></li>
+<li><p>ne kalojmë nëpër listën e tuples ekzistuese, i ndryshojmë ato dhe shtojmë ato që ende duhen në listën e re</p></li>
+<li><p>nëse është e nevojshme, plotësoni listën me tuples të reja</p></li>
+<li><p>së fundi, ne azhornojmë listën globale duke vendosur vlera nga lista e re, ndihmëse</p></li>
 </ul>
-<p>Let’s look at an example.</p>
+<p>Le të shohim një shembull.</p>
 </div>
-<div class="section" id="stars">
-<h2>Stars<a class="headerlink" href="#stars" title="Permalink to this headline">¶</a></h2>
-<p>In this example, we simulate moving through space. The stars we encounter are represented with white circles and are determined by their position and radius.</p>
-<p>For each frame, we compute a new auxiliary list that describes the next state. We move the stars following some rule, and we copy those that have not completely left the window to the next state list. After processing existing stars, we add new stars to the next state list so that the total number of stars would not decrease. Finally, we move all the stars to the global list so that we can calculate the next frame later.</p>
-
-<div data-childcomponent="PyGame__anim_trough_stars" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=PyGame__anim_trough_stars data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-              data-modaloutput="true" data-hidehistory=true
-    data-includesrc="import random, pygame as pg, pygamebg
-(width, height) = (500, 300)
-canvas = pygamebg.open_window(width, height, &quot;Stars&quot;)
-cx, cy = width // 2, height // 2
-
-# A star is determined by its position (x, y) and size (r).
-def new_star():
-    r = random.randint(1, 3)
-    x = random.randint(r, width - r)
-    y = random.randint(r, height - r)
-    return (x, y, r)
-
-# Create a list of stars.
-num_stars = 40
-stars = []
-for _ in range(num_stars):
-    stars.append(new_star())
-    
-def new_frame():
-    global stars
-    next_stars = [] # list that will contain the next state
-    for x, y, r in stars:
-        x += 0.01 * (x-cx) # x moves away from the center of the window
-        y += 0.01 * (y-cy) # y moves away from the center of the window
-        r *= 1.01          # we see the star as bigger because we are &quot;approaching&quot;
-        # if at least part of the star is in the window, we&apos;ll keep it
-        if (x+r &gt; 0 and x-r &lt; width and y+r &gt; 0 and y-r &lt; height):
-            next_stars.append((x, y, r))
-            
-    while len(next_stars) &lt; num_stars:
-        next_stars.append(new_star())
-
-    stars = next_stars
-    canvas.fill(pg.Color(&quot;black&quot;))
-    for x, y, r in stars:
-        ix, iy, ir = int(x), int(y), int(r)
-        pg.draw.circle(canvas, pg.Color(&apos;white&apos;), (ix, iy), ir)
-
-pygamebg.frame_loop(60, new_frame)
-"   >
-
-
-</textarea>
+<div class="section" id="yjet">
+<h2>Yjet<a class="headerlink" href="#yjet" title="Permalink to this headline">¶</a></h2>
+<p>Në këtë shembull, ne simulojmë lëvizjen nëpër hapësirë. Yjet që hasim përfaqësohen me rrathë të bardhë dhe përcaktohen nga pozicioni dhe rrezja e tyre.</p>
+<p>Për secilën kornizë, ne llogaritim një listë të re ndihmëse që përshkruan gjendjen tjetër. Ne i lëvizim yjet duke ndjekur një rregull, dhe kopjojmë ato që nuk e kanë lënë plotësisht dritaren në listën tjetër. Pas përpunimit të yjeve ekzistues, ne shtojmë yje të rinj në listën tjetër shtetërore në mënyrë që numri i përgjithshëm i yjeve të mos ulet. Më në fund, ne i lëvizim të gjitha yjet në listën globale në mënyrë që të mund të llogarisim kornizën tjetër më vonë.</p>
 </div>
-<p>This example is given primarily to introduce a different way of working with a list of tuples that describe a scene. Because of that, some interesting details were left in the background. Let us look a bit at those, in this context, side details. To get the effect of approaching, the stars in front of us should move apart and magnify. Therefore, in the program, the values of <em>x</em> and <em>y</em> change so that the stars move from the center of the window to the edges, moving faster as they go further away from the center.</p>
-<p>It’s not particularly important that you fully understand the commands that change the values of <em>x</em>, <em>y</em>, and <em>r</em> in order to learn programming, but you can try out how the animation changes when you slightly alter the coefficients in those commands (for example, stars can be moving slower, or growing faster).</p>
-</div>
-<div class="section" id="tasks">
-<h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="detyra">
+<h2>Detyra<a class="headerlink" href="#detyra" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -344,12 +290,12 @@ pygamebg.frame_loop(60, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Snowflakes:</strong> Complete the program so that it works as shown in the example (“Play Task” button).</p>
-<p>Each snowflake is described with only two numbers, its coordinates, so the tuples we will use will actually be pairs <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
-<p>Snowflakes fall 1 pixel at a time, and those that go out of the window are replaced with new snowflakes. Forming a new state is similar to that of the “stars” program, only the rules for moving snowflakes are simpler.</p>
-<p>The snowflakes in the initial set are selected anywhere in the window, and the ones that are added later are selected somewhere on the top edge of the window.</p>
+<p><strong>Flokë dëbore:</strong> Përfundoni programin në mënyrë që të funksionojë siç tregohet në shembullin (butoni “Luaj detyrën”).</p>
 
     </p></div></div>
+<p>     Çdo fletë dëbore përshkruhet vetëm me dy numra, koordinatat e tij, kështu që tufat që do të përdorim do të jenë në të vërtetë bashkë <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
+<p>     Flokët e dëborës bien 1 pixel në një kohë, dhe ato që dalin nga dritarja zëvendësohen me dëborë të reja. Formimi i një gjendje të re është i ngjashëm me atë të programit “yje”, vetëm rregullat për lëvizjen e dëborës janë më të thjeshta.</p>
+<p>     Fijet e dëborës në grupin fillestar zgjidhen kudo në dritare, dhe ato që shtohen më vonë, zgjidhen diku në skajin e sipërm të dritares.</p>
 <a class="reference internal image-reference" href="../_images/snowflake.png"><img alt="../_images/snowflake.png" src="../_images/snowflake.png" style="width: 50px;" /></a>
 
 <div data-childcomponent="PyGame__anim_snowflakes" class="course-box course-box-problem course-content">
@@ -410,7 +356,8 @@ num_flakes = 10 # total number of the snowflakes
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Outgoing balls:</strong> Copy the first program (balls) here, and modify it so that the balls do not bounce but continue to move away, and the ones that go off get replaced with new balls. This program is a combination of the two given examples (balls and stars), so try to use parts from both of these programs.
+<p><strong>Topat në dalje:</strong> Kopjoni programin e parë (topat) këtu, dhe modifikoni atë në mënyrë që topat të mos kërcejnë, por vazhdoni të largoheni, dhe ato që shkëputen zëvendësohen me topa të rinj. Ky program është një kombinim i dy shembujve të dhënë (topa dhe yje), kështu që përpiquni të përdorni pjesë nga të dyja këto programe.</p>
+
     </p></div></div>
 
 <div data-childcomponent="PyGame__anim_balls_passing" class="course-box course-box-problem course-content">
@@ -474,10 +421,10 @@ pygamebg.frame_loop(50, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Gliding text</strong> Try out the program and try to understand how it works. Try altering something in the program (the text being displayed, the color in which the text is being displayed, the speed at which the text moves, or any other detail).</p>
-<p>Challenge: Try to modify the program so that the text glides down instead of up.</p>
+<p><strong>Tekst rrëshqitës</strong> Provoni programin dhe përpiquni të kuptoni se si funksionon. Provoni të ndryshoni diçka në program (teksti që shfaqet, ngjyra në të cilën po shfaqet teksti, shpejtësia me të cilën lëviz teksti ose ndonjë detaj tjetër).</p>
 
     </p></div></div>
+<p>     Sfida: Përpiquni të modifikoni programin në mënyrë që teksti të rrëshqasë në vend të lart.</p>
 
 <div data-childcomponent="PyGame__anim_gliding_text" class="course-box course-box-problem course-content">
 
@@ -552,17 +499,17 @@ pygamebg.frame_loop(30, new_frame)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Drawing text' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Vizatimi i tekstit' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Interaction' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Ndërveprimi' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Drawing text' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Vizatimi i tekstit' data-toggle="tooltip"><a href="03_PyGame_24_Animation_Text.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Interaction' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Ndërveprimi' data-toggle="tooltip"><a href="03_PyGame_30_Interaction.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

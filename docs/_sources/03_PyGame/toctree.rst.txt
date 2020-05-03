@@ -1,8 +1,8 @@
 ================================
-Graphics Programming with Pygame
+Programimi grafik me PyGame
 ================================
 
-A very interesting domain of application programming is the creation of programs that use the graphical capabilities of computers, ie. the ability to draw shapes, display images, create animations and simulations, and the like. Such are, for example, computer games, which usually mean that the user controls a character with a mouse or keyboard that appears on the screen and walks through the virtual world, overcoming obstacles and fighting enemies. The Python programming language also offers some graphical capabilities within its standard library (for example, turtle graphics). However, some of the more advanced libraries are usually used for advanced features and game programming. One such library is PyGame. The PyGame library is also suitable for learning computer graphics programming and is presented in the following lessons.
+Një fushë shumë interesante e programimit të aplikacioneve është krijimi i programeve që përdorin aftësitë grafike të kompjuterëve, d.m.th. aftësia për të vizatuar forma, për të shfaqur imazhe, për të krijuar animacione dhe simulime dhe të ngjashme. Të tilla janë, për shembull, lojëra kompjuterike, që zakonisht nënkupton që përdoruesi kontrollon një personazh me një mi apo tastierë që shfaqet në ekran dhe shëtit nëpër botën virtuale, duke kapërcyer pengesat dhe duke luftuar armiqtë. Gjuha e programimit Python gjithashtu ofron disa aftësi grafike brenda bibliotekës së saj standarde (për shembull, grafika e breshkave). Sidoqoftë, disa nga bibliotekat më të avancuara zakonisht përdoren për veçori të përparuara dhe programim të lojërave. Një bibliotekë e tillë është PyGame. Biblioteka e PyGame është gjithashtu e përshtatshme për të mësuar programimin e grafikës kompjuterike dhe paraqitet në mësimet e mëposhtme.
 
    .. toctree::
       :maxdepth: 2

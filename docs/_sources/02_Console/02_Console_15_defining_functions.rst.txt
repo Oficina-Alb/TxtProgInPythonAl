@@ -1,7 +1,7 @@
-Defining functions
+Definimi i funksioneve
 ==================
 
-In the part dedicated to managing Karel, we mentioned that we can separate a group of commands into a separate entity called a function. Let's recall what a function written in Python looks like:
+Në pjesën kushtuar administrimit të Karelit, përmendëm se mund të veçojmë një grup komandash në një entitet të veçantë të quajtur një funksion. Le të kujtojmë se si duket një funksion i shkruar në Python:
 
 .. activecode:: Console__functions__function_def
     :passivecode: true
@@ -11,23 +11,23 @@ In the part dedicated to managing Karel, we mentioned that we can separate a gro
         ...
         statement_k
         
-The following rules apply to writing functions in Python:
+Rregullat e mëposhtme zbatohen për funksionet e shkrimit në Python:
 
 .. infonote::
 
-    **Function writing rules:**
+   **Rregullat e shkrimit të funksionit:**
 
-    - The function definition begins with the word ``def``, followed by the function name, then a list of arguments in parentheses, and the ``:`` character (colon) at the end of the line.
-    - Any properly written name may appear as a *function_name* (the rules are the same as for variable names).
-    - An empty list (nothing) may appear as *argument_list* if the function does not use arguments, or one or more comma-separated arguments.
-    - Any Python statements may appear in the function body (*statement_1*, ... *statement_k*). These commands are written indented with respect to the row containing the function name and arguments.
+    - Përcaktimi i funksionit fillon me fjalën ``def``, e ndjekur nga emri i funksionit, pastaj një listë argumentesh në kllapa dhe karakteri ``:`` në fund të rreshtit.
+    - Çdo emër i shkruar siç duhet mund të paraqitet si një *function_name* (rregullat janë të njëjta si për emrat e ndryshueshëm).
+    - Një listë e zbrazët (asgjë) mund të shfaqet si *argument_list* nëse funksioni nuk përdor argumente, ose një ose më shumë argumente të ndara me presje.
+    - Çdo deklarim në Python mund të shfaqet në trupin e funksionit ( statement_1 *, ... * statemnt_k *). Këto komanda janë shkruar me theks në lidhje me rreshtin që përmban emrin e funksionit dhe argumentet.
 
-Functions may or may not return some value. So far we have had the opportunity to see both types of functions. For example, the functions by which Karel (the robot) moves forward, turns around, picks up and leaves balls are all functions that do not return any value. On the other hand, mathematical functions like *abs* or *round*, as well as functions to check if Karel has balls with him, whether there are any balls on the square, or whether Karel can go forward are functions that do return a value.
+Funksionet mund ose nuk mund të kthejnë ndonjë vlerë. Deri më tani kemi pasur mundësinë të shohim të dy llojet e funksioneve. Për shembull, funksionet me të cilat Karel (roboti) lëviz përpara, kthehet rrotull, mbledh lart dhe largon topat janë të gjitha funksionet që nuk kthejnë asnjë vlerë. Nga ana tjetër, funksionet matematikore si *abs* ose *round*, si dhe funksionet për të kontrolluar nëse Karel ka topa me të, nëse ka ndonjë top në shesh, apo nëse Karel mund të shkojë përpara janë funksione që kthehen a vlera.
 
-Writing functions that return value
+Funksionet e shkrimit që kthejnë vlerën
 -----------------------------------
 
-In order for a function to return a value, it is necessary to specify the ``return`` statement at least once in the body of the function. The ``return`` statement consists of the word *return*, folowed by an expression whose value the function is to return. 
+Në mënyrë që një funksion të kthejë një vlerë, është e nevojshme të specifikoni deklarimin ``return`` të paktën një herë në trupin e funksionit. Deklarimi ``return`` përbëhet nga fjala *return*, e ndjekur nga një shprehje, vlera e së cilës funksioni është të kthehet.
 
 .. activecode:: console__functions_return_example
 
@@ -36,7 +36,7 @@ In order for a function to return a value, it is necessary to specify the ``retu
     
     print(square(3))
 
-The *return* statement can appear in multiple places in a function (usually with different values), and must be specified at the end of the function body. The *abs* function, if it had not been embedded, could have been defined as follows:
+Deklarimi *return* mund të shfaqet në shumë vende në një funksion (zakonisht me vlera të ndryshme), dhe duhet të specifikohet në fund të trupit të funksionit. Funksioni *abs* mund të përkufizohet si më poshtë:
 
 .. activecode:: console__functions_def_abs
     :passivecode: true
@@ -47,7 +47,7 @@ The *return* statement can appear in multiple places in a function (usually with
         else:
             return -x
     
-A function can return more than one value. One such function is the built-in *divmod* function, which returns two numbers - the result of integer division and the reminder. We use the *divmod* function as we do with functions that return a single value, we only place the returned values in multiple variables:
+Një funksion mund të kthejë më shumë se një vlerë. Një funksion i tillë është funksioni i integruar *divmod*, i cili kthen dy numra - rezultat i ndarjes së numrit të plotë dhe kujtesë. Ne përdorim funksionin *divmod* siç bëjmë me funksionet që kthejnë një vlerë të vetme, ne vendosim vetëm vlerat e kthyera në shumë ndryshore:
 
 .. activecode:: console__functions_divmod_example
 
@@ -55,7 +55,7 @@ A function can return more than one value. One such function is the built-in *di
     print('The quotient is', quotient, 'and the remainder', reminder)
     
 
-When we write functions that return multiple values, it is sufficient to specify comma-separated values after the word *return*. If we were to define the built-in *divmod* function ourselves, we could write it like this:
+Kur shkruajmë funksione që kthejnë shumë vlera, është e mjaftueshme të specifikojmë vlera të ndara me presje pas fjalës *return*. Nëse do ta përcaktonim vetë funksionin e integruar *divmod*, mund ta shkruajmë kështu:
 
 .. activecode:: console__functions_divmod_def
     :passivecode: true
@@ -63,23 +63,23 @@ When we write functions that return multiple values, it is sufficient to specify
     def divmod(a, b):
         return a // b, a % b
 
-Example
+Shembuj
 '''''''
 
 .. questionnote::
 
-    **Example - painting:** 
-    
-    To paint :math:`1m^{2}` of walls requires about :math:`0.5kg` of paint. Write a function that accepts the following 4 arguments:
-    
-    - the length of the room
-    - the width of the room
-    - the height of the room
-    - length that is not to be painted (total width of doors, windows, closets, etc.)
+    **Shembull - lyerje:**
+    
+     Për të lyer :math: 1m ^ {2}` e mureve kërkon rreth :math:`0.5kg` e bojës. Shkruaj një funksion që pranon 4 argumentet e mëposhtme:
+    
+     - gjatësia e dhomës
+     - gjerësia e dhomës
+     - lartësia e dhomës
+     - gjatësia që nuk duhet të pikturohet (gjerësia totale e dyerve, dritareve, dollapëve, etj.)
 
-    The function should return the amount of paint (in kilograms) required to paint the walls and ceilings.
-    
-    After the function, write a program that loads the data for 5 different rooms, and then using the written function calculates and prints the total amount of paint needed to paint all five rooms.
+     Funksioni duhet të kthejë sasinë e bojës (në kilogram) që kërkohet për të pikturuar muret dhe tavanet.
+    
+     Pas funksionit, shkruani një program që ngarkon të dhënat për 5 dhoma të ndryshme, dhe më pas duke përdorur funksionin e shkruar llogarit dhe shtyp shumën totale të bojës të nevojshme për të pikturuar të pesë dhomat.
 
 .. activecode:: console__functions_paint2
 
@@ -96,21 +96,21 @@ Example
         s = input('Enter the length, width and height of the room, and the non-painting length').split()
         total_paint_needed += paint_needed(float(s[0]), float(s[1]), float(s[2]), float(s[3]))
 
-    print("A total of", total_paint_needed, "kilograms of paint is required")  
+    print("Nevojitet", total_paint_needed, "kilogramë bojë")  
 
 
-Tasks for Exercise:
+Ushtrime
 '''''''''''''''''''
 
 .. questionnote::
 
-    **Task - geographic coordinates in GPS format**
+    **Detyrë - koordinatat gjeografike në formatin GP **
 
-    You found an old map of the buried treasure and read the coordinates of the treasure in degrees, minutes and seconds. However, your GPS device only supports geographical coordinates in degrees as real numbers (floats).
-    
-    Write a program that for a given coordinate in degrees, minutes and seconds, prints a real number of degrees.
+     Ju gjetët një hartë të vjetër të thesarit të varrosur dhe lexoni koordinatat e thesarit në gradë, minuta dhe sekonda. Sidoqoftë, pajisja juaj GPS mbështet vetëm koordinatat gjeografike në shkallë si numra realë (noton).
+    
+     Shkruaj një program që për një koordinatë të caktuar në gradë, minuta dhe sekonda, shtyp një numër real të gradave.
 
-The program is almost completely written. An expression needs to be added to calculate the real number of degrees. To convert the (angular) minutes into degrees, we divide them by :math:`60`, and we convert the seconds into degrees by dividing by :math:`60 \cdot 60 = 3600`.
+Programi është shkruar pothuajse plotësisht. Duhet shtuar një shprehje për të llogaritur numrin real të gradave. Për ta shndërruar minutat (këndore) në shkallë, ne i ndajmë ato në :math:`60`, dhe i kthejmë sekondat në shkallë duke i ndarë me :math:`60 \ cdot 60 = 3600`.
 
 .. activecode:: console__functions_GPS_1
 
@@ -128,11 +128,11 @@ The program is almost completely written. An expression needs to be added to cal
 
 .. questionnote::
 
-    **Task - Geographic coordinates in the format for the old map**
-    
-    After you realized that the old map from the previous assignment was a joke, you decided to make a similar joke to someone. You have selected a nearby location and read coordinates from your GPS device. Now you need to convert the coordinates from the device in real degrees into whole degrees, whole minutes and rounded seconds, to create a proper "old" map.
+    **Detyrë - Koordinatat gjeografike në formatin për hartën e vjetër**
     
-     Complete the started program that performs this conversion.
+     Pasi e kuptuat që harta e vjetër nga detyra e mëparshme ishte një shaka, vendosët të bëni një shaka të ngjashme me dikë. Ju keni zgjedhur një vendndodhje afër dhe lexoni koordinatat nga pajisja juaj GPS. Tani ju duhet të ktheni koordinatat nga pajisja në shkallë reale në shkallë të tërë, minuta të tëra dhe sekonda të rrumbullakosura, për të krijuar një hartë të duhur "të vjetër".
+
+Përfundoni programin e filluar që kryen këtë konvertim.
 
 .. activecode:: console__functions_GPS_2
 
@@ -151,11 +151,13 @@ The program is almost completely written. An expression needs to be added to cal
 
     **Task - Plumber:** 
     
-    Mike is a plumber and has three interventions planned for today. For each intervention, Mike will record when it began and when it ended. Based on that information it should be calculated how long Mike spent in the interventions.
-    
-    A partially written program is given that loads the start and end times in hours and minutes for each Mike's intervention, and then determines and prints the total duration of all interventions.
-    
-    **Complete the program** by writing the *duration(h1, m1, h2, m2)* function, which calculates how many total minutes elapsed from *h1* hours and *m1* minutes to *h2* hours and *m2* minutes.
+    **Detyra - Hidraulik:**
+    
+     Mike është hidraulik dhe ka tre ndërhyrje të planifikuara për sot. Për çdo ndërhyrje, Majk do të regjistrojë kur filloi dhe kur përfundoi. Bazuar në atë informacion, duhet të llogaritet se sa kohë kaloi Majk në ndërhyrjet.
+    
+     Është dhënë një program i shkruar pjesërisht që ngarkon herë fillimin dhe mbarimin në orë dhe minuta për secilës ndërhyrjen, dhe më pas përcakton dhe shtyp kohëzgjatjen totale të të gjitha ndërhyrjeve.
+    
+     **Përfundoni programin** duke shkruar funksionin *kohëzgjatjen (h1, m1, h2, m2)*, i cili llogarit sa minuta të përgjithshme kanë kaluar nga *h1* orë dhe *m1* minuta në *h2* orë dhe *m2* minuta.
     
 .. activecode:: console__functions_plumber
 
@@ -176,20 +178,20 @@ The program is almost completely written. An expression needs to be added to cal
     print("The interventions lasted a total of", num_hours, "hours and", num_minutes, "minutes")
 
 
-Functions that do not return value
+Funksionet që nuk kthejnë vlerë
 ----------------------------------
 
-Functions that do not return value just do some work and we use them as commands. Such were, for example, the *back()* or *take_at_neighboring_square()* functions, which we wrote in a section dedicated to managing Karel. let's look at an example of such function in a program with a text interface.
+Funksionet që nuk i kthejnë vlerat thjesht bëjnë disa punë dhe ne i përdorim ato si komanda. Të tilla ishin, për shembull, funksionet *back ()* ose *take_at_neighboriz_square ()*, të cilat ne i shkruajtëm në një seksion kushtuar menaxhimit të Karelit. Le të shohim një shembull të një funksioni të tillë në një program me një ndërfaqe teksti.
 
 .. questionnote::
 
-    **Example - transportation:** 
-    
-    It takes 55, 35, 40 and 20 minutes respectively to members of a family of four to arrive home from where they are, provided that they start going home before 4 p.m. Otherwise they need 15 minutes more.
-    
-    Write a program that loads the departure time in hours and minutes for each family member and lists the time of arrival home.
-    
-The *process_family_member* function performs all the necessary actions for one family member: it loads the departure time, than based on departure time it extends the duration of the trip if necessary, then calculates and prints the time of arrival home. In the main program, this function is just called for each family member.
+    **Shembull - transporti:**
+    
+    Duhen përkatësisht 55, 35, 40 dhe 20 minuta për anëtarët e një familjeje prej katër anëtarësh për të arritur në shtëpi nga ku janë, me kusht që ata të fillojnë të shkojnë në shtëpi para orës 4 pasdite. Përndryshe ata do kenë nevojë për 15 minuta më shumë.
+    
+    Shkruaj një program që ngarkon kohën e nisjes në orë dhe minuta për secilin anëtar të familjes dhe rendit kohën e mbërritjes në shtëpi.
+    
+Funksioni *process_family_member* kryen të gjitha veprimet e nevojshme për një anëtar të familjes: ngarkon kohën e nisjes, sesa në bazë të kohës së nisjes ajo zgjat kohëzgjatjen e udhëtimit nëse është e nevojshme, pastaj llogarit dhe kopjon kohën e mbërritjes në shtëpi. Në programin kryesor, ky funksion thirret vetëm për secilin anëtar të familjes.
 
 .. activecode:: console__functions_transport
 
@@ -210,18 +212,18 @@ The *process_family_member* function performs all the necessary actions for one 
     process_family_member("fourth", 20)
 
 
-Tasks for Exercise:
+Ushtrime
 '''''''''''''''''''
 
 .. questionnote::
 
-    **Task - discount:** 
-    
-    One manufacturer offers goods at a price of 10 euros a piece, and for orders of 50 or more pieces a 10% discount is granted. Several buyers announced that they were coming to buy a certain number of pieces. The customer names and quantities requested are given at the beginning of the program.
-    
-    Write a function which for the given name of the customer and the quantity of goods prints how much that customer should pay.
+   **Detyrë - zbritje:**
+    
+     Një prodhues ofron mallra me një çmim prej 10 euro një copë, dhe për porositë prej 50 ose më shumë copë jepet zbritje prej 10%. Disa blerës njoftuan se ata po vinin për të blerë një numër të caktuar copash. Emrat e klientëve dhe sasitë e kërkuara janë dhënë në fillim të programit.
+    
+     Shkruaj një funksion i cili për emrin e dhënë të klientit dhe sasinë e mallrave shtyp se sa duhet të paguajë ai klient.
 
-The customer name is passed to the function here for print purposes only. The price of goods is calculated on the basis of quantity, which is passed on to the function as a second argument.
+Emri i klientit i kalohet këtij funksioni vetëm për qëllime printimi. Çmimi i mallrave llogaritet në bazë të sasisë, e cila i kalohet funksionit si një argument i dytë.
 
 .. activecode:: console__functions_discount
 
@@ -236,11 +238,11 @@ The customer name is passed to the function here for print purposes only. The pr
 
 .. questionnote::
 
-    **Task - text underlining:**
+   **Detyra - nënvizimi i tekstit:**
 
-    Write the *underline(text)* function, which shows the given text underlined.
-    
-**Hint:** The *underline* function should consist of only two *print* statements. The first statement should print the given text, and the second one should print the line. You can get a string containing a line by multiplying the string ``'-'`` by the length of the given string.
+     Shkruani funksionin *underline* (tekstin) , i cili tregon tekstin e dhënë të nënvizuar.
+    
+**Këshillë:** Funksioni *underline* duhet të përbëhet nga vetëm dy deklarata *të printuara*. Deklarata e parë duhet të shtypë tekstin e dhënë, dhe e dyta duhet të shtypë rreshtin. Ju mund të merrni një varg që përmban një rresht duke shumëzuar vargun ``'-'`` me gjatësinë e vargut të dhënë.
 
 .. activecode:: console__functions_underlined_text
 
@@ -263,10 +265,9 @@ The customer name is passed to the function here for print purposes only. The pr
 
 ~~~~
 
-Finally, let's mention some of the benefits of writing functions that, because of the shortness of our examples and tasks, could not come to the fore:
+Më në fund, le të përmendim disa nga përfitimet e funksioneve të shkrimit që, për shkak të shkurtësisë së shembujve dhe detyrave tona, nuk mund të dilnin në pah:
 
-- Functions in long programs are often used to decompose the main part of a program and make it shorter and easier to understand. Our programs are not so long that it would be necessary to decompose them, but they show how it could be done with longer programs.
-- Functions can help us avoid repeating the same or similar code in programs. Repeating the code should be avoided as such code is harder to maintain - every change should be made in multiple places, which is tedious and subject to errors and omissions.
-- When we write functions, we enable others to use parts of our code more easily. The functions we write can be extracted into a separate module, which other people can easily include in their programs.
-- For very large programs, forming functions allows the program to be split into multiple files instead of one huge and incomprehensible file.
-
+- Funksionet në programe të gjata shpesh përdoren për të dekompozuar pjesën kryesore të një programi dhe ta bëjnë atë më të shkurtër dhe më të lehtë për tu kuptuar. Programet tona nuk janë aq të gjata sa do të ishte e nevojshme dekompozimi i tyre, por ato tregojnë se si mund të bëhet me programe më të gjata.
+- Funksionet mund të na ndihmojnë të shmangim përsëritjen e kodit të njëjtë ose të ngjashëm në programe. Përsëritja e kodit duhet të shmanget pasi kodi i tillë është më i vështirë për tu ruajtur - çdo ndryshim duhet të bëhet në vende të shumta, gjë që është e lodhshme dhe i nënshtrohet gabimeve dhe mosveprimeve.
+- Kur shkruajmë funksione, u mundësojmë të tjerëve të përdorin më lehtë pjesë të kodit tonë. Funksionet që ne shkruajmë mund të nxirren në një modul të veçantë, të cilin njerëzit e tjerë mund t’i përfshijnë lehtësisht në programet e tyre.
+- Për programe shumë të mëdha, formimi i funksioneve lejon që programi të ndahet në skedarë të shumtë në vend të një skedari të madh dhe të pakuptueshëm.

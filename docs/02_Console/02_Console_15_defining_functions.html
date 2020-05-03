@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Defining functions &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Definimi i funksioneve &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Dictionaries" href="02_Console_16_dict.html" />
-    <link rel="prev" title="Computing with lists" href="02_Console_14_computing_with_lists.html" />
+    <link rel="next" title="Fjalor" href="02_Console_16_dict.html" />
+    <link rel="prev" title="Programimi me lista" href="02_Console_14_computing_with_lists.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,9 +205,9 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="defining-functions">
-<h1>Defining functions<a class="headerlink" href="#defining-functions" title="Permalink to this headline">¶</a></h1>
-<p>In the part dedicated to managing Karel, we mentioned that we can separate a group of commands into a separate entity called a function. Let’s recall what a function written in Python looks like:</p>
+  <div class="section" id="definimi-i-funksioneve">
+<h1>Definimi i funksioneve<a class="headerlink" href="#definimi-i-funksioneve" title="Permalink to this headline">¶</a></h1>
+<p>Në pjesën kushtuar administrimit të Karelit, përmendëm se mund të veçojmë një grup komandash në një entitet të veçantë të quajtur një funksion. Le të kujtojmë se si duket një funksion i shkruar në Python:</p>
 
 <div data-childcomponent="Console__functions__function_def" class="course-box course-box-problem course-content">
 
@@ -223,24 +222,22 @@ def function_name(argument_list):
     statement_k
 </textarea>
 </div>
-<p>The following rules apply to writing functions in Python:</p>
+<p>Rregullat e mëposhtme zbatohen për funksionet e shkrimit në Python:</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>Function writing rules:</strong></p>
-<ul class="simple">
-<li>The function definition begins with the word <code class="docutils literal notranslate"><span class="pre">def</span></code>, followed by the function name, then a list of arguments in parentheses, and the <code class="docutils literal notranslate"><span class="pre">:</span></code> character (colon) at the end of the line.</li>
-<li>Any properly written name may appear as a <em>function_name</em> (the rules are the same as for variable names).</li>
-<li>An empty list (nothing) may appear as <em>argument_list</em> if the function does not use arguments, or one or more comma-separated arguments.</li>
-<li>Any Python statements may appear in the function body (<em>statement_1</em>, … <em>statement_k</em>). These commands are written indented with respect to the row containing the function name and arguments.</li>
-</ul>
+<p><strong>Rregullat e shkrimit të funksionit:</strong></p>
 
     </p></div></div>
-<p>Functions may or may not return some value. So far we have had the opportunity to see both types of functions. For example, the functions by which Karel (the robot) moves forward, turns around, picks up and leaves balls are all functions that do not return any value. On the other hand, mathematical functions like <em>abs</em> or <em>round</em>, as well as functions to check if Karel has balls with him, whether there are any balls on the square, or whether Karel can go forward are functions that do return a value.</p>
-<div class="section" id="writing-functions-that-return-value">
-<h2>Writing functions that return value<a class="headerlink" href="#writing-functions-that-return-value" title="Permalink to this headline">¶</a></h2>
-<p>In order for a function to return a value, it is necessary to specify the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement at least once in the body of the function. The <code class="docutils literal notranslate"><span class="pre">return</span></code> statement consists of the word <em>return</em>, folowed by an expression whose value the function is to return.</p>
+<p>    - Përcaktimi i funksionit fillon me fjalën <code class="docutils literal notranslate"><span class="pre">def</span></code>, e ndjekur nga emri i funksionit, pastaj një listë argumentesh në kllapa dhe karakteri <code class="docutils literal notranslate"><span class="pre">:</span></code> në fund të rreshtit.
+    - Çdo emër i shkruar siç duhet mund të paraqitet si një <em>function_name</em> (rregullat janë të njëjta si për emrat e ndryshueshëm).
+    - Një listë e zbrazët (asgjë) mund të shfaqet si <em>argument_list</em> nëse funksioni nuk përdor argumente, ose një ose më shumë argumente të ndara me presje.
+    - Çdo deklarim në Python mund të shfaqet në trupin e funksionit ( statement_1 <a href="#id1"><span class="problematic" id="id2">*</span></a>, … * statemnt_k <a href="#id3"><span class="problematic" id="id4">*</span></a>). Këto komanda janë shkruar me theks në lidhje me rreshtin që përmban emrin e funksionit dhe argumentet.</p>
+<p>Funksionet mund ose nuk mund të kthejnë ndonjë vlerë. Deri më tani kemi pasur mundësinë të shohim të dy llojet e funksioneve. Për shembull, funksionet me të cilat Karel (roboti) lëviz përpara, kthehet rrotull, mbledh lart dhe largon topat janë të gjitha funksionet që nuk kthejnë asnjë vlerë. Nga ana tjetër, funksionet matematikore si <em>abs</em> ose <em>round</em>, si dhe funksionet për të kontrolluar nëse Karel ka topa me të, nëse ka ndonjë top në shesh, apo nëse Karel mund të shkojë përpara janë funksione që kthehen a vlera.</p>
+<div class="section" id="funksionet-e-shkrimit-qe-kthejne-vleren">
+<h2>Funksionet e shkrimit që kthejnë vlerën<a class="headerlink" href="#funksionet-e-shkrimit-qe-kthejne-vleren" title="Permalink to this headline">¶</a></h2>
+<p>Në mënyrë që një funksion të kthejë një vlerë, është e nevojshme të specifikoni deklarimin <code class="docutils literal notranslate"><span class="pre">return</span></code> të paktën një herë në trupin e funksionit. Deklarimi <code class="docutils literal notranslate"><span class="pre">return</span></code> përbëhet nga fjala <em>return</em>, e ndjekur nga një shprehje, vlera e së cilës funksioni është të kthehet.</p>
 
 <div data-childcomponent="console__functions_return_example" class="course-box course-box-problem course-content">
 
@@ -255,7 +252,7 @@ def square(x):
 print(square(3))
 </textarea>
 </div>
-<p>The <em>return</em> statement can appear in multiple places in a function (usually with different values), and must be specified at the end of the function body. The <em>abs</em> function, if it had not been embedded, could have been defined as follows:</p>
+<p>Deklarimi <em>return</em> mund të shfaqet në shumë vende në një funksion (zakonisht me vlera të ndryshme), dhe duhet të specifikohet në fund të trupit të funksionit. Funksioni <em>abs</em> mund të përkufizohet si më poshtë:</p>
 
 <div data-childcomponent="console__functions_def_abs" class="course-box course-box-problem course-content">
 
@@ -271,7 +268,7 @@ def abs(x):
         return -x
 </textarea>
 </div>
-<p>A function can return more than one value. One such function is the built-in <em>divmod</em> function, which returns two numbers - the result of integer division and the reminder. We use the <em>divmod</em> function as we do with functions that return a single value, we only place the returned values in multiple variables:</p>
+<p>Një funksion mund të kthejë më shumë se një vlerë. Një funksion i tillë është funksioni i integruar <em>divmod</em>, i cili kthen dy numra - rezultat i ndarjes së numrit të plotë dhe kujtesë. Ne përdorim funksionin <em>divmod</em> siç bëjmë me funksionet që kthejnë një vlerë të vetme, ne vendosim vetëm vlerat e kthyera në shumë ndryshore:</p>
 
 <div data-childcomponent="console__functions_divmod_example" class="course-box course-box-problem course-content">
 
@@ -284,7 +281,7 @@ quotient, reminder = divmod(813, 10)
 print('The quotient is', quotient, 'and the remainder', reminder)
 </textarea>
 </div>
-<p>When we write functions that return multiple values, it is sufficient to specify comma-separated values after the word <em>return</em>. If we were to define the built-in <em>divmod</em> function ourselves, we could write it like this:</p>
+<p>Kur shkruajmë funksione që kthejnë shumë vlera, është e mjaftueshme të specifikojmë vlera të ndara me presje pas fjalës <em>return</em>. Nëse do ta përcaktonim vetë funksionin e integruar <em>divmod</em>, mund ta shkruajmë kështu:</p>
 
 <div data-childcomponent="console__functions_divmod_def" class="course-box course-box-problem course-content">
 
@@ -297,8 +294,8 @@ def divmod(a, b):
     return a // b, a % b
 </textarea>
 </div>
-<div class="section" id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shembuj">
+<h3>Shembuj<a class="headerlink" href="#shembuj" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -306,18 +303,16 @@ def divmod(a, b):
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - painting:</strong></p>
-<p>To paint <span class="math notranslate nohighlight">\(1m^{2}\)</span> of walls requires about <span class="math notranslate nohighlight">\(0.5kg\)</span> of paint. Write a function that accepts the following 4 arguments:</p>
-<ul class="simple">
-<li>the length of the room</li>
-<li>the width of the room</li>
-<li>the height of the room</li>
-<li>length that is not to be painted (total width of doors, windows, closets, etc.)</li>
-</ul>
-<p>The function should return the amount of paint (in kilograms) required to paint the walls and ceilings.</p>
-<p>After the function, write a program that loads the data for 5 different rooms, and then using the written function calculates and prints the total amount of paint needed to paint all five rooms.</p>
+<p><strong>Shembull - lyerje:</strong></p>
 
     </p></div></div>
+<p>     Për të lyer :math: 1m ^ {2}` e mureve kërkon rreth <span class="math notranslate nohighlight">\(0.5kg\)</span> e bojës. Shkruaj një funksion që pranon 4 argumentet e mëposhtme:</p>
+<p>     - gjatësia e dhomës
+     - gjerësia e dhomës
+     - lartësia e dhomës
+     - gjatësia që nuk duhet të pikturohet (gjerësia totale e dyerve, dritareve, dollapëve, etj.)</p>
+<p>     Funksioni duhet të kthejë sasinë e bojës (në kilogram) që kërkohet për të pikturuar muret dhe tavanet.</p>
+<p>     Pas funksionit, shkruani një program që ngarkon të dhënat për 5 dhoma të ndryshme, dhe më pas duke përdorur funksionin e shkruar llogarit dhe shtyp shumën totale të bojës të nevojshme për të pikturuar të pesë dhomat.</p>
 
 <div data-childcomponent="console__functions_paint2" class="course-box course-box-problem course-content">
 
@@ -338,12 +333,12 @@ for i in range(5):
     s = input('Enter the length, width and height of the room, and the non-painting length').split()
     total_paint_needed += paint_needed(float(s[0]), float(s[1]), float(s[2]), float(s[3]))
 
-print("A total of", total_paint_needed, "kilograms of paint is required")
+print("Nevojitet", total_paint_needed, "kilogramë bojë")
 </textarea>
 </div>
 </div>
-<div class="section" id="tasks-for-exercise">
-<h3>Tasks for Exercise:<a class="headerlink" href="#tasks-for-exercise" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ushtrime">
+<h3>Ushtrime<a class="headerlink" href="#ushtrime" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -351,12 +346,12 @@ print("A total of", total_paint_needed, "kilograms of paint is required")
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - geographic coordinates in GPS format</strong></p>
-<p>You found an old map of the buried treasure and read the coordinates of the treasure in degrees, minutes and seconds. However, your GPS device only supports geographical coordinates in degrees as real numbers (floats).</p>
-<p>Write a program that for a given coordinate in degrees, minutes and seconds, prints a real number of degrees.</p>
+<p><a href="#id5"><span class="problematic" id="id6">**</span></a>Detyrë - koordinatat gjeografike në formatin GP **</p>
 
     </p></div></div>
-<p>The program is almost completely written. An expression needs to be added to calculate the real number of degrees. To convert the (angular) minutes into degrees, we divide them by <span class="math notranslate nohighlight">\(60\)</span>, and we convert the seconds into degrees by dividing by <span class="math notranslate nohighlight">\(60 \cdot 60 = 3600\)</span>.</p>
+<p>     Ju gjetët një hartë të vjetër të thesarit të varrosur dhe lexoni koordinatat e thesarit në gradë, minuta dhe sekonda. Sidoqoftë, pajisja juaj GPS mbështet vetëm koordinatat gjeografike në shkallë si numra realë (noton).</p>
+<p>     Shkruaj një program që për një koordinatë të caktuar në gradë, minuta dhe sekonda, shtyp një numër real të gradave.</p>
+<p>Programi është shkruar pothuajse plotësisht. Duhet shtuar një shprehje për të llogaritur numrin real të gradave. Për ta shndërruar minutat (këndore) në shkallë, ne i ndajmë ato në <span class="math notranslate nohighlight">\(60\)</span>, dhe i kthejmë sekondat në shkallë duke i ndarë me <span class="math notranslate nohighlight">\(60 \ cdot 60 = 3600\)</span>.</p>
 
 <div data-childcomponent="console__functions_GPS_1" class="course-box course-box-problem course-content">
 
@@ -383,11 +378,11 @@ print(float_degrees)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - Geographic coordinates in the format for the old map</strong></p>
-<p>After you realized that the old map from the previous assignment was a joke, you decided to make a similar joke to someone. You have selected a nearby location and read coordinates from your GPS device. Now you need to convert the coordinates from the device in real degrees into whole degrees, whole minutes and rounded seconds, to create a proper “old” map.</p>
+<p><strong>Detyrë - Koordinatat gjeografike në formatin për hartën e vjetër</strong></p>
 
     </p></div></div>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Complete the started program that performs this conversion.</p>
+<p>     Pasi e kuptuat që harta e vjetër nga detyra e mëparshme ishte një shaka, vendosët të bëni një shaka të ngjashme me dikë. Ju keni zgjedhur një vendndodhje afër dhe lexoni koordinatat nga pajisja juaj GPS. Tani ju duhet të ktheni koordinatat nga pajisja në shkallë reale në shkallë të tërë, minuta të tëra dhe sekonda të rrumbullakosura, për të krijuar një hartë të duhur “të vjetër”.</p>
+<p>Përfundoni programin e filluar që kryen këtë konvertim.</p>
 
 <div data-childcomponent="console__functions_GPS_2" class="course-box course-box-problem course-content">
 
@@ -414,11 +409,12 @@ print(whole_deg, whole_min, whole_sec)
             </h4>
             <p>
 <p><strong>Task - Plumber:</strong></p>
-<p>Mike is a plumber and has three interventions planned for today. For each intervention, Mike will record when it began and when it ended. Based on that information it should be calculated how long Mike spent in the interventions.</p>
-<p>A partially written program is given that loads the start and end times in hours and minutes for each Mike’s intervention, and then determines and prints the total duration of all interventions.</p>
-<p><strong>Complete the program</strong> by writing the <em>duration(h1, m1, h2, m2)</em> function, which calculates how many total minutes elapsed from <em>h1</em> hours and <em>m1</em> minutes to <em>h2</em> hours and <em>m2</em> minutes.</p>
+<p><strong>Detyra - Hidraulik:</strong></p>
 
     </p></div></div>
+<p>     Mike është hidraulik dhe ka tre ndërhyrje të planifikuara për sot. Për çdo ndërhyrje, Majk do të regjistrojë kur filloi dhe kur përfundoi. Bazuar në atë informacion, duhet të llogaritet se sa kohë kaloi Majk në ndërhyrjet.</p>
+<p>     Është dhënë një program i shkruar pjesërisht që ngarkon herë fillimin dhe mbarimin në orë dhe minuta për secilës ndërhyrjen, dhe më pas përcakton dhe shtyp kohëzgjatjen totale të të gjitha ndërhyrjeve.</p>
+<p>     <strong>Përfundoni programin</strong> duke shkruar funksionin <em>kohëzgjatjen (h1, m1, h2, m2)</em>, i cili llogarit sa minuta të përgjithshme kanë kaluar nga <em>h1</em> orë dhe <em>m1</em> minuta në <em>h2</em> orë dhe <em>m2</em> minuta.</p>
 
 <div data-childcomponent="console__functions_plumber" class="course-box course-box-problem course-content">
 
@@ -446,9 +442,9 @@ print("The interventions lasted a total of", num_hours, "hours and", num_minutes
 </div>
 </div>
 </div>
-<div class="section" id="functions-that-do-not-return-value">
-<h2>Functions that do not return value<a class="headerlink" href="#functions-that-do-not-return-value" title="Permalink to this headline">¶</a></h2>
-<p>Functions that do not return value just do some work and we use them as commands. Such were, for example, the <em>back()</em> or <em>take_at_neighboring_square()</em> functions, which we wrote in a section dedicated to managing Karel. let’s look at an example of such function in a program with a text interface.</p>
+<div class="section" id="funksionet-qe-nuk-kthejne-vlere">
+<h2>Funksionet që nuk kthejnë vlerë<a class="headerlink" href="#funksionet-qe-nuk-kthejne-vlere" title="Permalink to this headline">¶</a></h2>
+<p>Funksionet që nuk i kthejnë vlerat thjesht bëjnë disa punë dhe ne i përdorim ato si komanda. Të tilla ishin, për shembull, funksionet <em>back ()</em> ose <em>take_at_neighboriz_square ()</em>, të cilat ne i shkruajtëm në një seksion kushtuar menaxhimit të Karelit. Le të shohim një shembull të një funksioni të tillë në një program me një ndërfaqe teksti.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -456,12 +452,12 @@ print("The interventions lasted a total of", num_hours, "hours and", num_minutes
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - transportation:</strong></p>
-<p>It takes 55, 35, 40 and 20 minutes respectively to members of a family of four to arrive home from where they are, provided that they start going home before 4 p.m. Otherwise they need 15 minutes more.</p>
-<p>Write a program that loads the departure time in hours and minutes for each family member and lists the time of arrival home.</p>
 
     </p></div></div>
-<p>The <em>process_family_member</em> function performs all the necessary actions for one family member: it loads the departure time, than based on departure time it extends the duration of the trip if necessary, then calculates and prints the time of arrival home. In the main program, this function is just called for each family member.</p>
+<p>    <strong>Shembull - transporti:</strong></p>
+<p>    Duhen përkatësisht 55, 35, 40 dhe 20 minuta për anëtarët e një familjeje prej katër anëtarësh për të arritur në shtëpi nga ku janë, me kusht që ata të fillojnë të shkojnë në shtëpi para orës 4 pasdite. Përndryshe ata do kenë nevojë për 15 minuta më shumë.</p>
+<p>    Shkruaj një program që ngarkon kohën e nisjes në orë dhe minuta për secilin anëtar të familjes dhe rendit kohën e mbërritjes në shtëpi.</p>
+<p>Funksioni <em>process_family_member</em> kryen të gjitha veprimet e nevojshme për një anëtar të familjes: ngarkon kohën e nisjes, sesa në bazë të kohës së nisjes ajo zgjat kohëzgjatjen e udhëtimit nëse është e nevojshme, pastaj llogarit dhe kopjon kohën e mbërritjes në shtëpi. Në programin kryesor, ky funksion thirret vetëm për secilin anëtar të familjes.</p>
 
 <div data-childcomponent="console__functions_transport" class="course-box course-box-problem course-content">
 
@@ -487,8 +483,8 @@ process_family_member("third", 40)
 process_family_member("fourth", 20)
 </textarea>
 </div>
-<div class="section" id="id1">
-<h3>Tasks for Exercise:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Ushtrime<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -496,12 +492,12 @@ process_family_member("fourth", 20)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - discount:</strong></p>
-<p>One manufacturer offers goods at a price of 10 euros a piece, and for orders of 50 or more pieces a 10% discount is granted. Several buyers announced that they were coming to buy a certain number of pieces. The customer names and quantities requested are given at the beginning of the program.</p>
-<p>Write a function which for the given name of the customer and the quantity of goods prints how much that customer should pay.</p>
+<p><strong>Detyrë - zbritje:</strong></p>
 
     </p></div></div>
-<p>The customer name is passed to the function here for print purposes only. The price of goods is calculated on the basis of quantity, which is passed on to the function as a second argument.</p>
+<p>     Një prodhues ofron mallra me një çmim prej 10 euro një copë, dhe për porositë prej 50 ose më shumë copë jepet zbritje prej 10%. Disa blerës njoftuan se ata po vinin për të blerë një numër të caktuar copash. Emrat e klientëve dhe sasitë e kërkuara janë dhënë në fillim të programit.</p>
+<p>     Shkruaj një funksion i cili për emrin e dhënë të klientit dhe sasinë e mallrave shtyp se sa duhet të paguajë ai klient.</p>
+<p>Emri i klientit i kalohet këtij funksioni vetëm për qëllime printimi. Çmimi i mallrave llogaritet në bazë të sasisë, e cila i kalohet funksionit si një argument i dytë.</p>
 
 <div data-childcomponent="console__functions_discount" class="course-box course-box-problem course-content">
 
@@ -526,11 +522,11 @@ for i in range(n):
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - text underlining:</strong></p>
-<p>Write the <em>underline(text)</em> function, which shows the given text underlined.</p>
+<p><strong>Detyra - nënvizimi i tekstit:</strong></p>
 
     </p></div></div>
-<p><strong>Hint:</strong> The <em>underline</em> function should consist of only two <em>print</em> statements. The first statement should print the given text, and the second one should print the line. You can get a string containing a line by multiplying the string <code class="docutils literal notranslate"><span class="pre">'-'</span></code> by the length of the given string.</p>
+<p>     Shkruani funksionin <em>underline</em> (tekstin) , i cili tregon tekstin e dhënë të nënvizuar.</p>
+<p><strong>Këshillë:</strong> Funksioni <em>underline</em> duhet të përbëhet nga vetëm dy deklarata <em>të printuara</em>. Deklarata e parë duhet të shtypë tekstin e dhënë, dhe e dyta duhet të shtypë rreshtin. Ju mund të merrni një varg që përmban një rresht duke shumëzuar vargun <code class="docutils literal notranslate"><span class="pre">'-'</span></code> me gjatësinë e vargut të dhënë.</p>
 
 <div data-childcomponent="console__functions_underlined_text" class="course-box course-box-problem course-content">
 
@@ -552,12 +548,12 @@ for f in range(50, 111, 10):
 </textarea>
 </div>
 <hr class="docutils" />
-<p>Finally, let’s mention some of the benefits of writing functions that, because of the shortness of our examples and tasks, could not come to the fore:</p>
+<p>Më në fund, le të përmendim disa nga përfitimet e funksioneve të shkrimit që, për shkak të shkurtësisë së shembujve dhe detyrave tona, nuk mund të dilnin në pah:</p>
 <ul class="simple">
-<li>Functions in long programs are often used to decompose the main part of a program and make it shorter and easier to understand. Our programs are not so long that it would be necessary to decompose them, but they show how it could be done with longer programs.</li>
-<li>Functions can help us avoid repeating the same or similar code in programs. Repeating the code should be avoided as such code is harder to maintain - every change should be made in multiple places, which is tedious and subject to errors and omissions.</li>
-<li>When we write functions, we enable others to use parts of our code more easily. The functions we write can be extracted into a separate module, which other people can easily include in their programs.</li>
-<li>For very large programs, forming functions allows the program to be split into multiple files instead of one huge and incomprehensible file.</li>
+<li><p>Funksionet në programe të gjata shpesh përdoren për të dekompozuar pjesën kryesore të një programi dhe ta bëjnë atë më të shkurtër dhe më të lehtë për tu kuptuar. Programet tona nuk janë aq të gjata sa do të ishte e nevojshme dekompozimi i tyre, por ato tregojnë se si mund të bëhet me programe më të gjata.</p></li>
+<li><p>Funksionet mund të na ndihmojnë të shmangim përsëritjen e kodit të njëjtë ose të ngjashëm në programe. Përsëritja e kodit duhet të shmanget pasi kodi i tillë është më i vështirë për tu ruajtur - çdo ndryshim duhet të bëhet në vende të shumta, gjë që është e lodhshme dhe i nënshtrohet gabimeve dhe mosveprimeve.</p></li>
+<li><p>Kur shkruajmë funksione, u mundësojmë të tjerëve të përdorin më lehtë pjesë të kodit tonë. Funksionet që ne shkruajmë mund të nxirren në një modul të veçantë, të cilin njerëzit e tjerë mund t’i përfshijnë lehtësisht në programet e tyre.</p></li>
+<li><p>Për programe shumë të mëdha, formimi i funksioneve lejon që programi të ndahet në skedarë të shumtë në vend të një skedari të madh dhe të pakuptueshëm.</p></li>
 </ul>
 </div>
 </div>
@@ -567,17 +563,17 @@ for f in range(50, 111, 10):
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Computing with lists' data-toggle="tooltip"><a href="02_Console_14_computing_with_lists.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Programimi me lista' data-toggle="tooltip"><a href="02_Console_14_computing_with_lists.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Dictionaries' data-toggle="tooltip"><a href="02_Console_16_dict.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Fjalor' data-toggle="tooltip"><a href="02_Console_16_dict.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Computing with lists' data-toggle="tooltip"><a href="02_Console_14_computing_with_lists.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Programimi me lista' data-toggle="tooltip"><a href="02_Console_14_computing_with_lists.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Dictionaries' data-toggle="tooltip"><a href="02_Console_16_dict.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Fjalor' data-toggle="tooltip"><a href="02_Console_16_dict.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

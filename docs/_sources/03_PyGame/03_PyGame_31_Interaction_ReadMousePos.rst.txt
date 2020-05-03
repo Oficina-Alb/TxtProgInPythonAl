@@ -1,20 +1,20 @@
-Reading mouse position
+Leximi i pozicionit të mouse
 ----------------------
 
-In PyGame, there is an easy way to to read the current state of the mouse. The data we are usually most interested in are mouse position and buttons being pressed. In this lesson we will use mouse position reading, and in the next mouse buttons. Aside from the position and the button presses, there is other information about the mouse that we can get, but we won't do that here. Those interested can find more details for example `here <https://www.pygame.org/docs/ref/mouse.html>`__ .
+Në PyGame, ekziston një mënyrë e thjeshtë për të lexuar gjendjen aktuale të mouse. Të dhënat për të cilat ne zakonisht interesohen më shumë janë pozicioni i mouse dhe butonat që shtypen. Në këtë mësim do të përdorim leximin e pozicionit të mouse, dhe në butonat e mouse tjetër. Përveç pozicionit dhe shtyp butonin, ka informacione të tjera rreth mouse që mund të marrim, por ne nuk do ta bëjmë atë këtu. Të interesuarit mund të gjejnë më shumë detaje për shembull `këtu <https://www.pygame.org/docs/ref/mouse.html>` __.
 
-We can get the mouse position by calling the function ``pg.mouse.get_pos()``, which returns an ordered pair of coordinates of the point where the mouse cursor is currently located.
+Ne mund të marrim pozicionin e mouse duke thirrur funksionin ``pg.mouse.get_pos ()``, i cili kthen një palë të koordinatave të porositura të pikës në të cilën ndodhet kursori i mouse.
 
-As we will see in the examples and tasks that follow, the use of this function is very simple, and we can further use the read position of the mouse in various ways.
+Siç do ta shohim në shembujt dhe detyrat që vijojnë, përdorimi i këtij funksioni është shumë i thjeshtë, dhe ne mund të përdorim më tej pozicionin e leximit të mouse në mënyra të ndryshme.
 
-Examples and tasks
+Shembuj dhe detyra
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Example - a butterfly follows the mouse:** 
+    **Shembull - Një flutur ndjek mouse:** 
     
-    In this example, we load two butterfly images and display them alternately, as we did in the animations. What is new is that where we show the butterfly is determined by the mouse position we have obtained from the *pg.mouse.get_pos()* function.
+    Në këtë shembull, ne ngarkojmë dy imazhe fluturash dhe i shfaqim ato në mënyrë alternative, siç bëmë në animacione. Ajo që është e re është se aty ku tregojmë flutur përcaktohet nga pozicioni i mouse që kemi marrë nga funksioni *pg.mouse.get_pos()*.
 
 .. image:: ../../_images/butterfly1.png
    :width: 50px
@@ -26,17 +26,17 @@ Examples and tasks
     :modaloutput:
     :includesrc: src/PyGame/3_Interaction/3a_Mouse_readpos/butterfly1.py
 
-You have probably noticed that when you move the mouse faster, the butterfly lags a little. This happens because only 5 frames are displayed per second, so the delay can be up to 0.2 seconds.
+Me siguri keni vërejtur që kur lëvizni mouse më shpejt, flutura mbetet pak mbrapa. Kjo ndodh sepse vetëm 5 korniza shfaqen në sekondë, kështu që vonesa mund të jetë deri në 0.2 sekonda.
 
-This delay is easily eliminated by increasing the frame rate (showing more frames per second), but then the images are switched too often and the butterfly flaps its wings too fast. The solution is to increase the frame rate, while displaying each image during multiple frames.
+Kjo vonesë eliminohet lehtësisht duke rritur shkallën e kornizës (duke treguar më shumë korniza në sekondë), por më pas imazhet ndizen shumë shpesh dhe flutura i rrah krahët shumë shpejt. Zgjidhja është të rritet niveli i kornizës, ndërsa shfaqni secilin imazh gjatë kornizave të shumta.
 
 .. questionnote::
 
-    **Task - move fast, flap slowly:** 
-    
-    Copy the previous program here, then modify it so that the butterfly does not lag behind the mouse while the flapping speed remains the same.
+    **Detyrë - lëviz shpejt, përplas ngadalë:**
+    
+     Kopjoni programin e mëparshëm këtu, pastaj modifikoni atë në mënyrë që flutura të mos mbetet prapa mouse ndërsa shpejtësia e fluturimit mbetet e njëjtë.
 
-**Hint:** in order for the butterfly not to lag, we certainly need more frames per second, for example *n* times more. This means that the *new_frame* function is called *n* times more often than before. In order to maintain the same flapping speed, each image needs to be displayed *n* times longer, that is, during *n* consecutive frames.
+**Këshillë:** në mënyrë që flutura të mos mbetet, sigurisht që kemi nevojë për më shumë korniza për sekondë, për shembull *n* herë më shumë. Kjo do të thotë që funksioni *new_frame* quhet *n* herë më shpesh se më parë. Për të ruajtur të njëjtën shpejtësi të goditjes, çdo imazh duhet të shfaqet *n* herë më gjatë, domethënë gjatë *n* kornizave të njëpasnjëshme.
  
 .. activecode:: PyGame__interact_butterfly2
     :nocodelens:
@@ -46,9 +46,9 @@ This delay is easily eliminated by increasing the frame rate (showing more frame
 
 .. questionnote::
 
-    **Task - towards mouse:** Write a program in which a green ball is moving towards the mouse, like in the example ("Play task" button).
-    
-**Hint:** In this task the key point is how the coordinates :math:`(x, y)` of the center of the ball change. In a situation like the one in the picture, we want to increase *x* by *dx* and *y* by *dy*. Depending on how we want the ball to move, values *dx*, *dy* can be calculated in different ways. One easy way is to choose :math:`dx = {1 \over 10} (xm - x), dy = {1 \over 10} (ym - y)`.
+    **Detyrë - drejt mouse:** Shkruaj një program në të cilin një top i gjelbër po lëviz drejt mouse, si në shembullin (butoni "Luaj lojën").
+    
+**Ndihmë:** Në këtë detyrë pika kryesore është se si ndryshojnë koordinatat :math:`(x, y)` e qendrës së topit. Në një situatë si ajo në figurë, ne duam të rrisim *x* me *dx* dhe *y* nga *dy*. Në varësi të mënyrës sesi duam që topi të lëvizë, vlerat *dx*, *dy* mund të llogariten në mënyra të ndryshme. Një mënyrë e thjeshtë është të zgjidhni :math:`dx = {1 \over 10} (xm - x), dy = {1 \over 10} (ym - y)`.
 
 .. image:: ../../_images/PyGame/towards_mouse.png
    :width: 300px   
@@ -64,15 +64,15 @@ This delay is easily eliminated by increasing the frame rate (showing more frame
 
 .. questionnote::
 
-    **Task - towards mouse with trace:** Copy the previous program and then modify it so that the ball leaves a gray trace, like in the example ("Play task" button). 
-    
-**Hint:** The motion of the ball is same as in the previous example. To make a trace, we need to store a list of several (we used 20) previous positions of the ball.
+    **Detyrë - drejt miut me gjurmë:** Kopjoni programin e mëparshëm dhe modifikojeni në mënyrë që topi të lëshojë një gjurmë gri, si në shembullin (butoni "Luaj lojën").
+    
+**Ndihmë: ** Lëvizja e topit është e njëjtë si në shembullin e mëparshëm. Për të bërë një gjurmë, duhet të ruajmë një listë të disa pozicioneve të mëparshme (kemi përdorur 20) të topit.
 
-When calculating a new state, we add the most recent position to the list, and if the list has become too long, we delete the oldest position.
+Kur llogaritim një gjendje të re, ne shtojmë pozicionin më të fundit në listë, dhe nëse lista është bërë shumë e gjatë, ne fshijmë pozicionin më të vjetër.
 
-When drawing a trace, for each circle we use color *(shade, shade, shade)*, where shade equals 255 (white) before the loop, and in the loop it decreases by a certain value, so that in the last pass through the loop it becomes zero (black), or as close to zero as possible.
+Kur vizatojmë një gjurmë, për secilin rreth përdorim ngjyrën *(shade, shade, shade)*, ku hija është e barabartë me 255 (e bardhë) para lakut, dhe në lak ajo zvogëlohet për një vlerë të caktuar, në mënyrë që në kalimin e fundit lak ajo bëhet zero (black), ose sa më afër zeros sa të jetë e mundur.
 
-So, for example, if the list is called *trace*, these or similar statements should appear in your program:
+Kështu, për shembull, nëse lista quhet *trace*, këto ose deklarime të ngjashme duhet të shfaqen në programin tuaj:
 
 .. code::
 
@@ -96,13 +96,13 @@ So, for example, if the list is called *trace*, these or similar statements shou
 
 ~~~~
 
-Finally, you can try out the following two programs and play around with them.
+Më në fund, mund të provoni dy programet e mëposhtme dhe të luani me ta.
 
-In order to make programs like these, in addition to the programming techniques shown here, one needs some knowledge of physics (elastic force, Newton's second law) and mathematics (Pythagorean theorem). Take a look at the programs without having to fully understand them. If you like, try modifying some constants a bit, so you can see how this affects the program's behavior.
+Për të bërë programe si këto, përveç teknikave të programimit të paraqitura këtu, duhet një njohuri e fizikës (forca elastike, ligji i dytë i Njutonit) dhe matematika (teorema e Pitagorës). Shikoni programet pa pasur nevojë t'i kuptoni plotësisht ato. Nëse ju pëlqen, provoni të modifikoni pak disa konstante, kështu që mund të shihni se si kjo ndikon në sjelljen e programit.
 
 .. questionnote::
 
-    **Example: Yо-yо**
+    **Shembull: Yо-yо**
     
 .. activecode:: PyGame__interact_yoyo
     :nocodelens:
@@ -111,9 +111,9 @@ In order to make programs like these, in addition to the programming techniques 
 
 .. questionnote::
 
-    **Example: Eyes** 
+    **Shembull: Sytë**
 
-This program also requires a little more knowledge of mathematics, so we will not go into detail. If you are interested in how this program works and you аrе good at math, try to understand the details with some help.
+Ky program kërkon gjithashtu pak më shumë njohuri për matematikën, kështu që ne nuk do të hyjmë në detaje. Nëse jeni të interesuar se si funksionon ky program dhe jeni mirë në matematikë, përpiquni të kuptoni detajet me ndonjë ndihmë.
 
 
 .. activecode:: PyGame__interact_eyes

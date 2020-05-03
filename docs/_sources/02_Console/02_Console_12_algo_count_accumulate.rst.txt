@@ -1,12 +1,14 @@
-Counting and summing
+Numërimi dhe shuma
 ====================
 
-It is a very common case that we are only interested in some of the data from a collection. Here we will practice how to count and, if necessary, sum numbers that are of interest to us, or that fulfill some condition.
+Është një rast shumë i zakonshëm që ne interesohemi vetëm për disa nga të dhënat nga një koleksion. Këtu do të praktikojmë si të llogarisim dhe, nëse është e nevojshme, numrat e shumave që na interesojnë, ose që plotësojnë ndonjë kusht.
 
-Counting
+
+Numërimi
 --------
 
-The general form of a program (algorithm) by which we count the elements of a collection that meet a given condition looks like this:
+Forma e përgjithshme e një programi (algoritmi) me të cilin numërojmë elementet e një koleksioni që plotësojnë një kusht të caktuar duket si kjo:
+
 
 .. code::
 
@@ -18,29 +20,28 @@ The general form of a program (algorithm) by which we count the elements of a co
     
 .. infonote::
 
-    The statement ``x += a`` increases the value of the variable *x* by *a*. This is actually an abbreviated form of the statement :code:`x = x + a`, which assigns the value *x + a* to the variable *x*.
+    Deklarimi ``x + = a`` rrit vlerën e ndryshores *x* me *a*. Kjo është në të vërtetë një formë e shkurtuar e thënies :code: `x = x + a`, i cili i jep vlerën *x + a* variablës *x*.
 
-    The statement ``x -= a`` decreases the value of the variable *x* by *a*. This is an abbreviated form of the statement :code:`x = x - a`, which assigns the value *x - a* to the variable *x*.
-    
-In our example, the statement *num += 1* increases the value of the variable *br* by 1.
+     Deklarimi ``x - = a`` zvogëlon vlerën e ndryshores *x* me *a*. Kjo është një formë e shkurtuar e thënies :code:`x = x - a`, i cili i jep vlerën *x - a* variablës *x*.
+    
+Në shembullin tonë, pohimi *num + = 1* rrit vlerën e ndryshores *br* me 1.
 
-
-Examples and tasks
+Ushtrime dhe detyra
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Example - meeting:** 
-    
-    The team leader has offered two options for the time of the meeting to be held tomorrow. Each team member wrote in a table which term would be more appropriate for him/her (1 for the first term, 2 for the second). This information was transferred to the first line of the following program.
-    
-    Complete the program - script, so that given the data on voting of team members, it prints how many voted for the first and how many for the second term.
+    **Shembull - takim:**
+    
+     Drejtuesi i ekipit ka ofruar dy mundësi për kohën e takimit që do të zhvillohet nesër. Secili anëtar i ekipit shkroi në një tabelë se cili term do të ishte më i përshtatshëm për të (1 për mandatin e parë, 2 për të dytin). Ky informacion u transferua në rreshtin e parë të programit vijues.
+    
+     Plotësoni skenarin e programit, në mënyrë që duke pasur parasysh të dhënat për votimin e anëtarëve të ekipit, ai shtyp se sa votuan për të parin dhe sa për mandatin e dytë.
     
 .. activecode:: console__counting_meeting
 
     terms = (1, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1)
     
-For example, we can count the number of team members who voted for the first term, and calculate the rest at the end.
+Për shembull, ne mund të llogarisim numrin e anëtarëve të ekipit që votuan për mandatin e parë, dhe pjesën tjetër llogaritim në fund.
 
 .. activecode:: console__counting_meeting_sol1
 
@@ -55,7 +56,7 @@ For example, we can count the number of team members who voted for the first ter
 
     print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 
-Another way is to count the votes for both the first term and the second term.
+Një mënyrë tjetër është të llogaritni votat si për mandatin e parë ashtu edhe për atë të dytë.
 
 .. activecode:: console__counting_meeting_sol2
 
@@ -70,7 +71,7 @@ Another way is to count the votes for both the first term and the second term.
             num_second_term += 1
     print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 
-or, assuming the data is "clean", that is, there are no values other than 1 and 2:
+ose, duke supozuar se të dhënat janë "të pastra", d.m.th., nuk ka vlera përveç 1 dhe 2:
 
 .. activecode:: console__counting_meeting_sol3
 
@@ -86,7 +87,7 @@ or, assuming the data is "clean", that is, there are no values other than 1 and 
             
     print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 
-In case the information is not known in advance but should be entered, we could write a program like this:
+Në rast se informacioni nuk dihet paraprakisht por duhet të futet, ne mund të shkruajmë një program si ky:
 
 .. activecode:: console__counting_meeting_sol4
 
@@ -100,16 +101,16 @@ In case the information is not known in advance but should be entered, we could 
     num_second_term = n - num_first_term
     print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 
-At the beginning of this program, we load the number of votes *n*, then use the *for* loop to repeat loading and counting one vote *n* times.
+Në fillim të këtij programi, ne ngarkojmë numrin e votave *n*, atëherë përdorim loop *for* për të përsëritur ngarkimin dhe numërimin e një votimi *n* herë.
 
 
 .. questionnote::
 
-    **Task - written test:** 
-    
-    Several people took the traffic proficiency test, which is a prerequisite for taking the practical part of the exam. A test is considered passed if the number of incorrect answers is less than or equal to 3.
-    
-    At the beginning of the script are given the test results of one group of candidates (number of incorrect answers for each person who took the test). Complete the script by listing how many candidates have passed the test.
+    **Detyrë - provë me shkrim:**
+    
+     Disa njerëz morën testin e aftësisë së trafikut, që është parakusht për të marrë pjesën praktike të provimit. Një test konsiderohet i kaluar nëse numri i përgjigjeve të pasakta është më i vogël se ose i barabartë me 3.
+    
+     Në fillim të skenarit janë dhënë rezultatet e testit të një grupi kandidatësh (numri i përgjigjeve të pasakta për secilin person që e ka marrë testin). Plotësoni skenarin duke renditur sa kandidatë kanë kaluar testin.
     
 .. activecode:: console__counting_test
 
@@ -132,11 +133,11 @@ At the beginning of this program, we load the number of votes *n*, then use the 
 
 .. questionnote::
 
-    **Task - swimming pool** 
-    
-    A visit to the pool is being prepared for a group of children. Anyone lower than 160 centimeters can only go into the smaller pool. The organizer is interested in how many children are below 160 centimeters in order to plan the groups.
-    
-    Children's heights are given at the beginning of the program. Complete the program to print the number of children lower than 160 centimeters.
+    **Detyrë - pishinë**
+    
+     Një grup fëmijësh po përgatitet një vizitë në pishinë. Çdokush më i vogël se 160 centimetra mund të shkojë vetëm në pishinën më të vogël. Organizatori interesohet se sa fëmijë janë nën 160 centimetra në mënyrë që të planifikojnë grupet.
+    
+     Lartësitë e fëmijëve jepen në fillim të programit. Përfundoni programin për të shtypur numrin e fëmijëve më të ulët se 160 centimetra.
     
 .. activecode:: console__counting_swimmingpool
 
@@ -147,11 +148,11 @@ At the beginning of this program, we load the number of votes *n*, then use the 
 
 .. questionnote::
 
-    **Task - humidity** 
-    
-    In a botanical garden, soil moisture is measured once a day for rare and sensitive species. Humidity is expressed in numbers from 0 to 1, and conditions for the development of plants are considered to be good when the humidity is between 0.3 and 0.7 (including boundaries).
+    **Detyrë - lagështia**
     
-    Values of humidity (measured over a period of time) are given at the beginning of the script. Complete the script by printing the number of days when the humidity was not good.
+     Në një kopsht botanik, lagështia e tokës matet një herë në ditë për specie të rralla dhe të ndjeshme. Lagështia shprehet në numra nga 0 deri në 1, dhe kushtet për zhvillimin e bimëve konsiderohen të jenë të mira kur lagështia është midis 0.3 dhe 0.7 (përfshirë kufijtë).
+
+     Vlerat e lagështisë (matur gjatë një periudhe kohe) jepen në fillim të skenarit. Plotësoni skenarin duke shtypur numrin e ditëve kur lagështia nuk ishte e mirë.
 
 .. activecode:: console__counting_humidity
 
@@ -159,10 +160,10 @@ At the beginning of this program, we load the number of votes *n*, then use the 
     
 
 
-Summing
+Mbledhja
 -------
 
-In one big group of practical problems, we come to the result by gradually building (accumulating) it as we go through the data. For example, if we need the sum of some numbers, we can get to it in this general way:
+Në një grup të madh të problemeve praktike, ne arrijmë në rezultat duke e ndërtuar gradualisht (akumuluar) atë ndërsa kalojmë nëpër të dhëna. Për shembull, nëse kemi nevojë për shumën e disa numrave, mund ta arrijmë atë në këtë mënyrë të përgjithshme:
 
 .. code::
 
@@ -172,13 +173,13 @@ In one big group of practical problems, we come to the result by gradually build
     print(total)
 
 
-When we are computing the sum of all the elements of a collection, we get the same result by calling the *sum* function:
+Kur llogaritim shumën e të gjithë elementëve të një koleksioni, marrim të njëjtin rezultat duke thirrur funksionin *sum*:
 
 .. code::
 
     print(sum(collection))
 
-We will use gradual formation of results when we need only some elements from the collection, that is, those that fulfill the given condition. In this case, the algorithm for calculating the sum would generally look like this:
+Do të përdorim formimin gradual të rezultateve kur na duhen vetëm disa elementë nga koleksioni, domethënë ato që plotësojnë kushtin e dhënë. Në këtë rast, algoritmi për llogaritjen e shumës në përgjithësi do të duket kështu:
 
 .. code::
 
@@ -188,7 +189,7 @@ We will use gradual formation of results when we need only some elements from th
             total += num
     print(total)
 
-In order to obtain the mean of the data that fulfills a condition, it is necessary to count and add up such data, and then divide their sum by their number. In the general case it looks like this:
+Për të marrë mesataren e të dhënave që plotësojnë një kusht, është e nevojshme të numërohen dhe të shtohen të dhëna të tilla, dhe pastaj të ndahen shumën e tyre sipas numrit të tyre. Në rastin e përgjithshëm, duket kështu:
 
 .. code::
 
@@ -200,22 +201,22 @@ In order to obtain the mean of the data that fulfills a condition, it is necessa
             counter += 1
     print(total / counter)
 
-Note that in Python, the sum and mean of the selected elements of the collection can be obtained in a shorter and more efficient way. We chose the above method because it looks almost the same as in other programming languages.
+Vini re se në Python, shuma dhe mesatarja e elementeve të zgjedhur të koleksionit mund të merren në një mënyrë më të shkurtër dhe më efikase. Ne zgjodhëm metodën e mësipërme sepse duket pothuajse e njëjtë si në gjuhët e tjera të programimit.
 
-Examples and tasks
+Shembuj dhe detyra
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Example - Average IQ test result:** 
-    
-    The results of an IQ test for a group of people are given. A score of -1 means that the person did not take the test. Complete the program by printing the mean obtained on the test.
+    **Shembull - Rezultati mesatar i testit të IQ:**
+    
+     Janë dhënë rezultatet e një testi IQ për një grup njerëzish. Një rezultat prej -1 do të thotë që personi nuk e ka marrë provën. Përfundoni programin duke shtypur mesataren e fituar në provë.
 
 .. activecode:: console__accumulate_IQ
 
     iq_results = (-1, 98, 115, -1, 83, 130, 101, 122, -1, 108)
 
-We can write the program like this:
+Ne mund ta shkruajmë programin kështu:
 
 .. activecode:: console__accumulate_IQ_sol
 
@@ -237,13 +238,13 @@ We can write the program like this:
 
 .. questionnote::
 
-    **Task - on duty:**  
-    
-    In Company X, all employees occasionally remain on-call. The norm for the previous period is 20 hours on-call. Every extra hour (over 20 hours) on-call is additionally paid. The number of on-call hours for each employee is given, and the director wants to know the total number of on-call hours **over the norm**.
-    
-    Complete the program by computing and printing the total number of overtime hours on-call.
-    
-If you solve the task correctly, you should get a score of 25 for the data given, since :math:`(21-20)+(23-20)+(34-20)+(25-20)+(22-20)=25`.
+    **Detyrë - në detyrë: **
+    
+     Në Ndërmarrjen X, të gjithë punonjësit herë pas here mbeten në thirrje. Norma për periudhën e mëparshme është 20 orë telefonatë. Hourdo orë shtesë (mbi 20 orë) në telefon paguhet gjithashtu. Jepet numri i orëve të thirrjeve për secilin punonjës, dhe drejtori dëshiron të dijë numrin e përgjithshëm të orëve në telefon **mbi normën**.
+    
+     Përfundoni programin duke llogaritur dhe shtypur numrin e përgjithshëm të orëve jashtë orarit në telefon.
+    
+Nëse zgjidhni detyrën si duhet, duhet të merrni rezultatin 25 për të dhënat e dhëna, pasi :math:`(21-20)+(23-20)+(34-20)+(25-20)+(22-20)=25`.
 
 
 .. activecode:: console__accumulate_overtime
@@ -272,14 +273,14 @@ If you solve the task correctly, you should get a score of 25 for the data given
 
 .. questionnote::
 
-    **Task - average yield:**  
-    
-    In one orchard after the third year, plum yield per tree is monitored. Trees with yields below 3 kilograms are considered damaged or diseased and will be taken out.
-    
-    The yield of all the trees in the orchard is given. Complete the program by calculating and printing the average yield of healthy trees (with yields of 3 kilograms or more).
+   **Detyrë - rendimenti mesatar:**
+    
+     Në një pemishte pas vitit të tretë, monitorohet rendimenti i kumbullës për pemë. Pemët me rendiment nën 3 kilogram konsiderohen të dëmtuara ose të sëmura dhe do të nxirren jashtë.
+    
+     Jepet rendimenti i të gjitha pemëve në pemishte. Përfundoni programin duke llogaritur dhe shtypur rendimentin mesatar të pemëve të shëndetshme (me rendiment prej 3 kilogramë ose më shumë).
 
-    
-You should get a result of approximately 14.757 for the given data.
+    
+Ju duhet të merrni një rezultat prej afërsisht 14,757 për të dhënat e dhëna.
 
     
 .. activecode:: console__accumulate_yield

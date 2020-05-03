@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Writing a PyGame program &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Shkrimi i një programi PyGame &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawing" href="03_PyGame_10_Drawing.html" />
-    <link rel="prev" title="The PyGame library" href="03_PyGame_01_Intro.html" />
+    <link rel="next" title="Vizatim" href="03_PyGame_10_Drawing.html" />
+    <link rel="prev" title="Libraria PyGame" href="03_PyGame_01_Intro.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,15 +205,15 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="writing-a-pygame-program">
-<h1>Writing a PyGame program<a class="headerlink" href="#writing-a-pygame-program" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="basic-structure-of-a-pygame-program">
-<h2>Basic structure of a PyGame program<a class="headerlink" href="#basic-structure-of-a-pygame-program" title="Permalink to this headline">¶</a></h2>
-<p>In order for the programs we write to use the PyGame library (module), the first thing we need to do is import the PyGame module at the beginning of the program. This allows us to use all the functions and constants defined in the PyGame module.</p>
-<p>After importing the module but before calling other functions, every program that uses the PyGame library needs to make a few steps to initialize the library, specify the dimensions of the window in which the program will draw, and set the title of that window. Also, there are a few steps at the end of the program that will tell the program to wait until the user clicks on the window close button, and after that to close the window and unlink the PyGame library.</p>
-<p>These steps at the beginning and end of the work are the same or very similar in each program. To make it easier for beginners to use the PyGame library, we will also use a small additional library named <em>PyGameBg</em>. Thanks to this library, instead of listing all the necessary steps, it is enough to import the <em>pygamebg</em> module into our program (as well as <em>pygame</em>), and then call only one function from the <em>pygamebg</em> module at the beginning and one at the end of the program. This makes the programs shorter and simpler, allowing us to focus on the part of the program that is specific to the task at hand.</p>
-<p>You can also run programs using the <em>PyGameBg</em> library in your local development environment (eg <em>IDLE</em>). All you have to do is install the <em>PyGameBg</em> library the same way you installed the <em>PyGame</em> library, i.e. by typing <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">pygamebg</span></code> in the command prompt. When you install this library, you can copy the selected program to your editor and save it to your computer. You can then modify the program at will, save different versions of the program, and try them out by running the program.</p>
-<p>Here’s what a PyGame program that draws one slanted line segment and waits for the user to close the window looks like.</p>
+  <div class="section" id="shkrimi-i-nje-programi-pygame">
+<h1>Shkrimi i një programi PyGame<a class="headerlink" href="#shkrimi-i-nje-programi-pygame" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="struktura-themelore-e-nje-programi-pygame">
+<h2>Struktura themelore e një programi PyGame<a class="headerlink" href="#struktura-themelore-e-nje-programi-pygame" title="Permalink to this headline">¶</a></h2>
+<p>Në mënyrë që programet që ne shkruajmë të përdorin librarinë (modulin) PyGame, gjëja e parë që duhet të bëjmë është të importojmë modulin PyGame në fillim të programit. Kjo na lejon të përdorim të gjitha funksionet dhe konstantet e përcaktuara në modulin PyGame.</p>
+<p>Pas importimit të modulit por para thirrjes së funksioneve të tjera, çdo program që përdor librarinë PyGame duhet të bëjë disa hapa për inicializimin e bibliotekës, të specifikojë dimensionet e dritares në të cilën do të vizatojë programin, dhe të vendosë titullin e asaj dritare. Gjithashtu, ka disa hapa në fund të programit që do t’i tregojnë programit të presë derisa përdoruesi të klikojë në butonin mbyllës të dritares, dhe pas kësaj të mbyllë dritaren dhe të zhbllokojë bibliotekën PyGame.</p>
+<p>Këto hapa në fillim dhe në fund të punës janë të njëjta ose shumë të ngjashme në secilin program. Për ta bërë më të lehtë për fillestarët të përdorin librarinë PyGame, do të përdorim gjithashtu një librari të vogël shtesë me emrin <em>PyGameBg</em>. Falë kësaj bibliotekë, në vend që të rendisni të gjitha hapat e nevojshëm, mjafton të futni modulin <em>pygamebg</em> në programin tonë (si dhe <em>pygame</em>), dhe më pas thirrni vetëm një funksion nga moduli <em>pygamebg</em> në fillim dhe një në fund të programit. Kjo i bën programet më të shkurtër dhe më të thjeshtë, duke na lejuar të përqëndrohemi në pjesën e programit që është specifik për detyrën në fjalë.</p>
+<p>Ju gjithashtu mund të drejtoni programe duke përdorur bibliotekën <em>PyGameBg</em> në mjedisin tuaj të zhvillimit lokal (p.sh. <em>IDLE</em>). E tëra çfarë ju duhet të bëni është të instaloni bibliotekën <em>PyGameBg</em> në të njëjtën mënyrë si keni instaluar bibliotekën <em>PyGame</em>, d.m.th. duke shtypur <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">pygamebg</span></code> në command line. Kur instaloni këtë librari, mund ta kopjoni programin e zgjedhur në redaktorin tuaj dhe ta ruani atë në kompjuterin tuaj. Pastaj mund të modifikoni programin sipas dëshirës, ​​të ruani versione të ndryshme të programit dhe t’i provoni duke ekzekutuar programin.</p>
+<p>Ja se si duket një program PyGame që vizaton një segment të linjës së pjerrët dhe pret që përdoruesi të mbyllë dritaren.</p>
 
 <div data-childcomponent="pygame__basics_first_example" class="course-box course-box-problem course-content">
 
@@ -233,29 +232,29 @@ pg.draw.line(canvas, pg.Color("black"), (100, 100), (300, 300), 5)
 pygamebg.wait_loop()
 </textarea>
 </div>
-<p>Let’s go through the statements of this program in order to explain in more detail what they do.</p>
-<p>First we have a group of statements that will need to appear at the beginning of each program:</p>
+<p>Le të kalojmë përmes deklaratave të këtij programi në mënyrë që të sqarojmë më hollësisht se çfarë bëjnë ata.</p>
+<p>Së pari kemi një grup të deklaratave që do të duhet të paraqiten në fillim të secilit program:</p>
 <ul class="simple">
-<li>using the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygame</span> <span class="pre">as</span> <span class="pre">pg</span></code> statement, we include the <em>pygame</em> module into our program. Here we use a slightly different form of the <em>import</em> statement from the one we used before. Also, we give the <em>pygame</em> module an abbreviated name, <em>pg</em>, and from that point we use that abbreviated name in the program as the name of the module. We could have also put just <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygame</span></code> with no change in functionality, but then we would have to write <em>pygame.Color</em>, <em>pygame.draw.line</em>, etc. instead of <em>pg.Color</em>, <em>pg.draw.line</em> and the like.</li>
-<li>using the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygamebg</span></code> statement we import module <em>pygamebg</em> into our program. This statement can be combined with the previous one to get a single statement: <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygame</span> <span class="pre">as</span> <span class="pre">pg,</span> <span class="pre">pygamebg</span></code>, and we will often do this.</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">canvas</span> <span class="pre">=</span> <span class="pre">pygamebg.open_window(400,</span> <span class="pre">400,</span> <span class="pre">&quot;Pygame&quot;)</span></code> statement calls the <code class="docutils literal notranslate"><span class="pre">open_window</span></code> function from the <code class="docutils literal notranslate"><span class="pre">pygamebg</span></code> module, which we imported into the program. This function performs all the necessary preparatory actions that we mentioned earlier. The function parameters are the width, height and title of the window opened by calling this function. The variable <em>canvas</em> returned by this function is later used in the program to draw in that window.</li>
+<li><p>duke përdorur fjalinë <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygame</span> <span class="pre">as</span> <span class="pre">pg</span></code>, ne përfshijmë modulin <em>pygame</em> në programin tonë. Këtu ne përdorim një formë paksa të ndryshme të deklaratës <em>import</em> nga ajo që kemi përdorur më parë. Po ashtu, ne i japim modulit <em>pygame</em> një emër të shkurtuar, <em>pg</em>, dhe nga ajo pikë ne përdorim atë emër të shkurtuar në program si emrin e modulit. Mund të kishim vendosur thjesht <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygame</span></code> pa asnjë ndryshim në funksionalitetin, por atëherë do të duhej të shkruanim <em>pygame.Color</em>, <em>pygame.draw.line</em>, etj në vend të <em>pg.color</em>, <em>pg.draw.line</em> dhe të ngjashme.</p></li>
+<li><p>duke përdorur fjalinë <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pygamebg</span></code> ne importojmë modulin <em>pygamebg</em> në programin tonë. Kjo deklarim mund të kombinohet me një të mëparshme për të marrë një thënie të vetme: `` import pygame as pg, pygamebg``, dhe ne shpesh do ta bëjmë këtë.</p></li>
+<li><p>Deklarimi <code class="docutils literal notranslate"><span class="pre">canvas</span> <span class="pre">=</span> <span class="pre">pygamebg.open_window</span> <span class="pre">(400,</span> <span class="pre">400,</span> <span class="pre">&quot;Pygame&quot;)</span></code> thërret funksionin <code class="docutils literal notranslate"><span class="pre">open_window</span></code> nga moduli ` pygamebg``, të cilin e kemi importuar në program. Ky funksion kryen të gjitha veprimet e nevojshme përgatitore që përmendëm më herët. Parametrat e funksionit janë gjerësia, lartësia dhe titulli i dritares që hapet duke e thirrur këtë funksion. Variabli <em>canvas</em> i kthyer nga ky funksion përdoret më vonë në program për të vizatuar në atë dritare.</p></li>
 </ul>
-<p>The following is a group of statements that is different in each program and determines what that particular program actually does. Our first program draws a black line on a white background, and it was achieved through this part of the program:</p>
+<p>Më poshtë është një grup i deklaratave që është i ndryshëm në secilin program dhe përcakton se çfarë bën në të vërtetë ai program i veçantë. Programi ynë i parë vizaton një vijë të zezë në një sfond të bardhë, dhe u arrit përmes kësaj pjese të programit:</p>
 <ul class="simple">
-<li>statement <code class="docutils literal notranslate"><span class="pre">canvas.fill(pg.Color(&quot;white&quot;))</span></code> paints the window white. Drawing often starts with this statement (we can use another color)</li>
-<li>statement <code class="docutils literal notranslate"><span class="pre">pg.draw.line(canvas,</span> <span class="pre">pg.Color(&quot;black&quot;),</span> <span class="pre">(100,</span> <span class="pre">100),</span> <span class="pre">(300,</span> <span class="pre">300),</span> <span class="pre">5)</span></code> draws the line segment.</li>
+<li><p>thënia <code class="docutils literal notranslate"><span class="pre">canvas.fill</span> <span class="pre">(pg.color</span> <span class="pre">(&quot;white&quot;))</span></code> pikturon dritaren e bardhë. Vizatimi shpesh fillon me këtë deklarim (mund të përdorim një ngjyrë tjetër)</p></li>
+<li><p>thënia <code class="docutils literal notranslate"><span class="pre">pg.</span> <span class="pre">pull.line</span> <span class="pre">(canvas,</span> <span class="pre">pg.color</span> <span class="pre">(&quot;black&quot;),</span> <span class="pre">(100,</span> <span class="pre">100),</span> <span class="pre">(300,</span> <span class="pre">300),</span> <span class="pre">5)</span></code> vizaton segmentin e linjës.</p></li>
 </ul>
-<p>Statements like this will soon be explained in detail, but if you feel impatient, you can try modifying the parameter values in the program or adding new, similar statements and discover for yourself how these drawing functions work.</p>
-<p>At the end of the program, we call another function from the <em>pygamebg</em> module: <code class="docutils literal notranslate"><span class="pre">pygamebg.wait_loop()</span></code>. This function contains statements that allow the drawing to appear in the window and keep the window open until the user clicks on the close button. After closing the window, the function deactivates all used parts of the PyGame library (turns them off).</p>
-<p>All our PyGame programs will end with a call of the <code class="docutils literal notranslate"><span class="pre">pygamebg.wait_loop()</span></code> function or some function similar to it. After executing this function, the program can continue to run without the <em>PyGame</em> library in a text window if required.</p>
+<p>deklarimet si kjo së shpejti do të shpjegohen në detaje, por nëse ndiheni të paduruar, mund të provoni të modifikoni vlerat e parametrave në program ose të shtoni deklarime të reja, të ngjashme dhe të zbuloni vetë se si funksionojnë këto funksione vizatimi.</p>
+<p>Në fund të programit, ne thirrim një funksion tjetër nga moduli <em>pygamebg</em>: <code class="docutils literal notranslate"><span class="pre">pygamebg.wait_loop</span> <span class="pre">()</span></code>. Ky funksion përmban deklarim që lejojnë që vizatimi të shfaqet në dritare dhe ta mbaj dritaren të hapur derisa përdoruesi të klikojë në butonin e mbyllur. Pas mbylljes së dritares, funksioni çaktivizon të gjitha pjesët e përdorura të bibliotekës PyGame (i fik ato).</p>
+<p>Të gjitha programet tona PyGame do të përfundojnë me një thirrje të funksionit <code class="docutils literal notranslate"><span class="pre">pygamebg.wait_loop</span> <span class="pre">()</span></code> ose ndonjë funksion të ngjashëm me të. Pas ekzekutimit të këtij funksioni, programi mund të vazhdojë të funksionojë pa librarin[ <em>PyGame</em> në një dritare teksti nëse kërkohet.</p>
 </div>
-<div class="section" id="coordinate-system">
-<h2>Coordinate system<a class="headerlink" href="#coordinate-system" title="Permalink to this headline">¶</a></h2>
-<p>Coordinates are a very important term for us and we will encounter them in just about every PyGame program. The position of all objects (points, line segments, circles, text, imported images, etc.) in the window is determined by their coordinates in the coordinate system of the window.</p>
-<p>The coordinate system of a window is similar, but still slightly different from the one used in mathematics. The position of a point is determined by an ordered pair of its coordinates in this case as well (coordinate x, i.e. abscissa and coordinate y, i.e. ordinate). The unit of measurement is one pixel.</p>
-<p>In computer graphics, origin of a coordinate system is in the upper left corner of a window. Coordinate <span class="math notranslate nohighlight">\(x\)</span> increases when we move to the right (as in mathematics), but coordinate <span class="math notranslate nohighlight">\(y\)</span> decreases when we move up, that is, it increases when we move down, which is different from the usual coordinate system in mathematics. Let a given point be <span class="math notranslate nohighlight">\(A(5, 3)\)</span>. If we moved this point 1 pixel upwards and kept its <span class="math notranslate nohighlight">\(x\)</span> coordinate, then the new coordinates of point <span class="math notranslate nohighlight">\(A\)</span> would be <span class="math notranslate nohighlight">\(A(5, 2)\)</span>. If we moved point <span class="math notranslate nohighlight">\(A\)</span> 2 pixels down from the current position, the new coordinates would be <span class="math notranslate nohighlight">\(A(5, 4)\)</span>. So, <strong>the first coordinate of the point determines how far the point is from the left edge of the window</strong>, and <strong>the second coordinate how far the point is from the top edge of the window</strong>.</p>
+<div class="section" id="sistemi-koordinativ">
+<h2>Sistemi koordinativ<a class="headerlink" href="#sistemi-koordinativ" title="Permalink to this headline">¶</a></h2>
+<p>Koordinatat janë një term shumë i rëndësishëm për ne dhe ne do t’i hasim ato në pothuajse çdo program PyGame. Pozicioni i të gjitha objekteve (pikat, segmentet e linjës, rrathët, teksti, imazhet e importuara, etj.) Në dritare përcaktohet nga koordinatat e tyre në sistemin koordinativ të dritares.</p>
+<p>Sistemi koordinativ i një dritareje është i ngjashëm, por ende pak i ndryshëm nga ai i përdorur në matematikë. Pozicioni i një pike përcaktohet nga një palë e porositur e koordinatave të saj në këtë rast gjithashtu (koordinata x, d.m.th abscissa dhe koordinata y, d.m.th. ordinojnë). Njësia e matjes është një pixel.</p>
+<p>Në grafikat kompjuterike, origjina e një sistemi koordinativ është në këndin e sipërm të majtë të një dritareje. Koordinata <span class="math notranslate nohighlight">\(x\)</span> rritet kur kalojmë në të djathtë (si në matematikë), por koordinoni <span class="math notranslate nohighlight">\(y\)</span> zvogëlohet kur ngrihet lart, domethënë rritet kur ulemi poshtë, gjë që është e ndryshme nga e zakonshme sistemi koordinativ në matematikë. Le një pikë e dhënë të jetë <span class="math notranslate nohighlight">\(A (5, 3)\)</span>. Nëse e lëviznim këtë pikë 1 piksel lart dhe mbajmë koordinatën e saj <span class="math notranslate nohighlight">\(x\)</span>, atëherë koordinatat e reja të pikës <span class="math notranslate nohighlight">\(A\)</span> do të ishin <span class="math notranslate nohighlight">\(A (5, 2)\)</span>. Nëse lëvizim pikën <span class="math notranslate nohighlight">\(A\)</span> 2 pixel nga pozicioni aktual, koordinatat e reja do të ishin <span class="math notranslate nohighlight">\(A (5, 4)\)</span>. Pra, <strong>koordinata e parë e pikës përcakton se sa larg është pika nga skaji i majtë i dritares</strong>, dhe <strong>koordinata e dytë, sa larg është pika nga skaji i sipërm i dritares</strong>.</p>
 <a class="reference internal image-reference" href="../_images/coordinate_system.png"><img alt="../_images/coordinate_system.png" class="align-center" src="../_images/coordinate_system.png" style="width: 400px;" /></a>
-<p>In the Python programming language, a pair of point coordinates can be represented by either a two-element tuple <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">5)</span></code>, or a two-element list <code class="docutils literal notranslate"><span class="pre">[3,</span> <span class="pre">5]</span></code>. In the previous example, two endpoints of the line segment were given by two two-element tuples (<code class="docutils literal notranslate"><span class="pre">(100,</span> <span class="pre">100)</span></code> and <code class="docutils literal notranslate"><span class="pre">(300,</span> <span class="pre">300)</span></code>).</p>
+<p>Në gjuhën e programimit Python, një palë koordinata pikë mund të përfaqësohet ose nga një tufë dy elementësh <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">5)</span></code>, ose nga një listë me dy elemente <code class="docutils literal notranslate"><span class="pre">[[3,</span> <span class="pre">5]</span></code>. Në shembullin e mëparshëm, dy pikat e fundit të segmentit të linjës u dhanë nga dy tupla dy elementësh (<code class="docutils literal notranslate"><span class="pre">(100,</span> <span class="pre">100)</span></code> dhe <code class="docutils literal notranslate"><span class="pre">(300,</span> <span class="pre">300)</span></code>).</p>
 
 <div data-childcomponent="pygame__basics_coordinates" class="course-box course-box-problem course-content">
 
@@ -267,9 +266,9 @@ pygamebg.wait_loop()
 pg.draw.line(canvas, pg.Color("black"), (100, 100), (300, 300), 5)
 </textarea>
 </div>
-<p>Often, you need to specify a rectangle whose sides are parallel to the coordinate axes. Such a rectangle is specified using a tuple or a list containing four numbers: <code class="code docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">w,</span> <span class="pre">h)</span></code> or <code class="code docutils literal notranslate"><span class="pre">[x,</span> <span class="pre">y,</span> <span class="pre">w,</span> <span class="pre">h]</span></code>. The <span class="math notranslate nohighlight">\(x\)</span> and the <span class="math notranslate nohighlight">\(y\)</span> represent the coordinates of the top left corner of the rectangle, and the <span class="math notranslate nohighlight">\(w\)</span> and the <span class="math notranslate nohighlight">\(h\)</span> represent the width and the height of the rectangle in pixels. For example, the rectangle in the following image could be specified as <code class="code docutils literal notranslate"><span class="pre">pygame.Rect(2,</span> <span class="pre">1,</span> <span class="pre">4,</span> <span class="pre">3)</span></code>, or simply as <code class="code docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">1,</span> <span class="pre">4,</span> <span class="pre">3)</span></code> or <code class="code docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">1,</span> <span class="pre">4,</span> <span class="pre">3]</span></code>.</p>
+<p>Shpesh, duhet të specifikoni një drejtkëndësh, faqet e të cilit janë paralele me boshtet e koordinatave. Një drejtkëndësh i tillë përcaktohet duke përdorur një tuple ose një listë që përmban katër numra:: kodin: <cite>(x, y, w, h)</cite> ose: kodin: <cite>[[x, y, w, h]</cite>. Math: <cite>x</cite> dhe :math:` y` përfaqësojnë koordinatat e këndit të sipërm të majtë të drejtkëndëshit, dhe <span class="math notranslate nohighlight">\(w\)</span> dhe :math:` h` përfaqësojnë gjerësinë dhe lartësinë e drejtkëndëshi në pixel. Për shembull, drejtkëndëshi në imazhin e mëposhtëm mund të specifikohet si :code: <cite>pygame.Rect (2, 1, 4, 3)</cite>, ose thjesht si <code class="code docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">1,</span> <span class="pre">4,</span> <span class="pre">3)</span></code> ose <code class="code docutils literal notranslate"><span class="pre">[[2,</span> <span class="pre">1,</span> <span class="pre">4,</span> <span class="pre">3]</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/rect_coordinates.png"><img alt="../_images/rect_coordinates.png" class="align-center" src="../_images/rect_coordinates.png" style="width: 400px;" /></a>
-<p>The following program can help you understand the coordinates. Launch the program by clicking on the “Play task” button, then move your mouse and watch as the coordinates change. The window the mouse is moving in is 300 times 300 pixels in size. The values of the <em>x</em> and <em>y</em> coordinates appear both in the window title bar and next to the mouse pointer. The notation that appears next to the pointer is in the form of an ordered pair, as it will be in the programs when we specify a single point.</p>
+<p>Programi i mëposhtëm mund t’ju ndihmojë të kuptoni koordinatat. Nisni programin duke klikuar në butonin “Luaj detyrën”, pastaj lëvizni mouse dhe shikoni ndërsa koordinatat ndryshojnë. Dritarja që mouse po lëviz është me madhësi 300 herë 300 pixel. Vlerat e koordinatave <em>x</em> dhe <em>y</em> shfaqen si në shiritin e titullit të dritares ashtu edhe pranë treguesit të mouse. Shënimi që shfaqet pranë treguesit është në formën e një çifti të porositur, ashtu siç do të jetë në programet kur specifikojmë një pikë të vetme.</p>
 
 <div data-childcomponent="pygame__basics_learn_coordinates" class="course-box course-box-problem course-content">
 
@@ -318,13 +317,13 @@ pg.quit()
 
 </textarea>
 </div>
-<p>Test your knowledge of coordinates through the following few questions.</p>
+<p>Testoni njohuritë tuaja për koordinatat përmes disa pyetjeve vijuese.</p>
 <a class="reference internal image-reference" href="../_images/pygame_quiz_coordinates.png"><img alt="../_images/pygame_quiz_coordinates.png" class="align-center" src="../_images/pygame_quiz_coordinates.png" style="width: 300px;" /></a>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__basics_quiz_coordinates_circles">
-    <span data-component="question">Q-34: Link the color of the circle to the coordinates of its center (the window dimensions are 300 times 300 pixels).</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-34: Lidhni ngjyrën e rrethit me koordinatat e qendrës së tij (dimensionet e dritares janë 300 herë 300 pixel).</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__basics_quiz_coordinates_circles_drag1">red</li>
     <li data-component="dropzone" for="pygame__basics_quiz_coordinates_circles_drag1">(30, 40)</li>
@@ -337,39 +336,38 @@ pg.quit()
 
     <li data-component="draggable" id="pygame__basics_quiz_coordinates_circles_drag4">black</li>
     <li data-component="dropzone" for="pygame__basics_quiz_coordinates_circles_drag4">(150, 170)</li>
-</ul></div>
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="pygame__basics_quiz_coordinates_vindow_center">
-            <p>If the window is 200 pixels wide and 300 pixels high, what are the coordinates of its center point (write the result as an ordered pair)?</p>
-<input type="text">
-        <script type="application/json">
-            [[{"regex": "^ *\\(100,[ +]*150\\) *$", "regexFlags": "", "feedback": "Correct!"}, {"regex": "^ *\\(100,[ +]*[0-9]+\\) *$", "regexFlags": "", "feedback": "Calculate the y coordinate more carefully."}, {"regex": "^ *\\([0-9]+,[ +]*150\\) *$", "regexFlags": "", "feedback": "Calculate the x coordinate more carefully."}, {"regex": "^ *\\([0-9]+,[ +]*[0-9]+\\) *$", "regexFlags": "", "feedback": "Calculate both coordinates more carefully."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "Write the result as an ordered pair."}]]
-        </script>
+</ul></div><p>      : ([0-9] +, [] * 150 ): Llogaritni më shumë kujdes koordinatën x.
+      : ([0-9] +, [] * [0-9] + ): Llogaritni me kujdes të dy koordinatat.
+      :. <a href="#id1"><span class="problematic" id="id2">*</span></a>: Shkruajeni rezultatin si një palë e porositur.</p>
+<p>   :answer_b: Koordinata y zvogëlohet nga lart poshtë në ekran.
+   :answer_c: Pikat në skajin e sipërm të ekranit kanë një koordinatë y të barabartë me 0.
+   :answer_d: Pikat në skajin e djathtë të ekranit kanë një koordinatë x të barabartë me 0.
+   :answer_e: Pika në këndin e poshtëm të djathtë të ekranit ka të dy koordinatat më të mëdha.</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">feedback_a</dt>
+<dd class="field-odd"><p>Saktë.</p>
+</dd>
+<dt class="field-even">feedback_b</dt>
+<dd class="field-even"><p>Koordinata y rritet nga lart poshtë në ekran.</p>
+</dd>
+<dt class="field-odd">feedback_c</dt>
+<dd class="field-odd"><p>Saktë.</p>
+</dd>
+<dt class="field-even">feedback_d</dt>
+<dd class="field-even"><p>Pikat në skajin e djathtë të ekranit kanë koordinatën më të madhe x.</p>
+</dd>
+<dt class="field-odd">feedback_e</dt>
+<dd class="field-odd"><p>Saktë.</p>
+<p>Zgjidh përgjigjen e duhur.</p>
+</dd>
+</dl>
+</div></blockquote>
 
-        </div>
-        </div>
-            
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pygame__basics_quiz_coordinates_dir">
-            Q-35: Mark the correct statements.
-            <li data-component="answer" data-correct id="pygame__basics_quiz_coordinates_dir_opt_a">The x coordinate grows from left to right.</li><li data-component="feedback" id="pygame__basics_quiz_coordinates_dir_opt_a">Correct.</li>
-            
-            <li data-component="answer"  id="pygame__basics_quiz_coordinates_dir_opt_b">The y coordinate decreases from top to bottom of the screen.</li><li data-component="feedback" id="pygame__basics_quiz_coordinates_dir_opt_b">The y coordinate increases from top to bottom of the screen.</li>
-            
-            <li data-component="answer" data-correct id="pygame__basics_quiz_coordinates_dir_opt_c">Points on the top edge of the screen have a y coordinate equal to 0.</li><li data-component="feedback" id="pygame__basics_quiz_coordinates_dir_opt_c">Correct.</li>
-            
-            <li data-component="answer"  id="pygame__basics_quiz_coordinates_dir_opt_d">Points on the right edge of the screen have an x coordinate equal to 0.</li><li data-component="feedback" id="pygame__basics_quiz_coordinates_dir_opt_d">Points on the right edge of the screen have the largest x coordinate.</li>
-            
-            <li data-component="answer" data-correct id="pygame__basics_quiz_coordinates_dir_opt_e">The point at the bottom right corner of the screen has the largest both coordinates.</li><li data-component="feedback" id="pygame__basics_quiz_coordinates_dir_opt_e">Correct.</li>
-            
-
-            </ul>
-            </div>
-            
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__basics_quiz_coordinates_corners">
-    <span data-component="question">Q-36: If the width of a window is `w` and the height is`h`, pair the corners of the screen with their coordinates.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-36: Nëse gjerësia e një dritare është `w` dhe lartësia është`h`, çiftoni qoshet e ekranit me koordinatat e tyre.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__basics_quiz_coordinates_corners_drag1">top-left</li>
     <li data-component="dropzone" for="pygame__basics_quiz_coordinates_corners_drag1">(0, 0)</li>
@@ -383,46 +381,46 @@ pg.quit()
     <li data-component="draggable" id="pygame__basics_quiz_coordinates_corners_drag4">bottom-right</li>
     <li data-component="dropzone" for="pygame__basics_quiz_coordinates_corners_drag4">(w, h)</li>
 </ul></div></div>
-<div class="section" id="specifying-colors">
-<h2>Specifying colors<a class="headerlink" href="#specifying-colors" title="Permalink to this headline">¶</a></h2>
-<p>Of course, when drawing, different colors can be used. We can specify a color by its name (in English), which we forward as a parameter to the <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> function. You can use colors by forwarding the appropriate string: <code class="docutils literal notranslate"><span class="pre">'black'</span></code> for black, <code class="docutils literal notranslate"><span class="pre">'white'</span></code> for white, <code class="docutils literal notranslate"><span class="pre">'gray'</span></code> for gray, <code class="docutils literal notranslate"><span class="pre">'blue'</span></code> for blue, <code class="docutils literal notranslate"><span class="pre">'green'</span></code> for green, <code class="docutils literal notranslate"><span class="pre">'orange'</span></code> for orange, <code class="docutils literal notranslate"><span class="pre">'yellow'</span></code> for yellow, etc. Recall that strings are specified either between single or double quotes (e.g. ‘blue’ and “blue” can be used interchangeably). For example, if you call function <code class="docutils literal notranslate"><span class="pre">py.draw.line(canvas,</span> <span class="pre">pg.Color('blue'),</span> <span class="pre">(0,</span> <span class="pre">0),</span> <span class="pre">(200,</span> <span class="pre">200),</span> <span class="pre">3)</span></code> a blue line segment, 3 pixels wide, whose end points’ coordinates are <span class="math notranslate nohighlight">\((0, 0)\)</span> and <span class="math notranslate nohighlight">\((200, 200)\)</span> will appear in the window</p>
-<p>Some of the color names commonly used in programs are:</p>
-<table border="1" class="docutils">
+<div class="section" id="specifikimi-i-ngjyrave">
+<h2>Specifikimi i ngjyrave<a class="headerlink" href="#specifikimi-i-ngjyrave" title="Permalink to this headline">¶</a></h2>
+<p>Sigurisht, kur vizatoni, mund të përdoren ngjyra të ndryshme. Ne mund të specifikojmë një ngjyrë me emrin e saj (në anglisht), të cilën e përcjellim si parametër në funksionin <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code>. Ju mund të përdorni ngjyrat duke përcjellë vargun e duhur: <code class="docutils literal notranslate"><span class="pre">'black'</span></code>, për të zezën,``’white’<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">për</span> <span class="pre">të</span> <span class="pre">bardhë,</span> <span class="pre">``'gri'</span></code>, për gri,``’blue’<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">për</span> <span class="pre">blu</span> <span class="pre">``'green'</span></code> për jeshilen,``’orange’`` për portokallin <code class="docutils literal notranslate"><span class="pre">'yellow'</span></code> për të verdhë, etj. Kujtojmë se vargjet specifikohen ose midis thonjëzave të vetme ose të dyfishtë (psh. “blu” dhe “blu” mund të përdoret në mënyrë të ndryshme). Për shembull, nëse e quani funksionin <code class="docutils literal notranslate"><span class="pre">py.draw.line</span> <span class="pre">(canvas,</span> <span class="pre">pg.Color</span> <span class="pre">('blue'),</span> <span class="pre">(0,</span> <span class="pre">0),</span> <span class="pre">(200,</span> <span class="pre">200),</span> <span class="pre">3)</span></code> një segment i linjës blu, 3 pixel i gjerë , koordinatat e pikave fundore të të cilave janë <span class="math notranslate nohighlight">\((0, 0)\)</span> dhe <span class="math notranslate nohighlight">\((200, 200)\)</span> do të shfaqet në dritare</p>
+<p>Disa nga emrat e ngjyrave që përdoren zakonisht në programe janë:</p>
+<table class="docutils align-default">
 <colgroup>
-<col width="67%" />
-<col width="33%" />
+<col style="width: 67%" />
+<col style="width: 33%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;black&quot;)</span></code></td>
-<td>Black</td>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;black&quot;)</span></code></p></td>
+<td><p>Black</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;white&quot;)</span></code></td>
-<td>White</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;white&quot;)</span></code></p></td>
+<td><p>White</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;red&quot;)</span></code></td>
-<td>Red</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;red&quot;)</span></code></p></td>
+<td><p>Red</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;green&quot;)</span></code></td>
-<td>Green</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;green&quot;)</span></code></p></td>
+<td><p>Green</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;blue&quot;)</span></code></td>
-<td>Blue</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;blue&quot;)</span></code></p></td>
+<td><p>Blue</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;cyan&quot;)</span></code></td>
-<td>Cyan</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;cyan&quot;)</span></code></p></td>
+<td><p>Cyan</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;magenta&quot;)</span></code></td>
-<td>Magenta</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;magenta&quot;)</span></code></p></td>
+<td><p>Magenta</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;yellow&quot;)</span></code></td>
-<td>Yellow</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;yellow&quot;)</span></code></p></td>
+<td><p>Yellow</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;orange&quot;)</span></code></td>
-<td>Orange</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;orange&quot;)</span></code></p></td>
+<td><p>Orange</p></td>
 </tr>
 </tbody>
 </table>
-<p>Play around with the colors in the following program and try to paint the window in some or all of these colors.</p>
+<p>Luaj me ngjyrat në programin e mëposhtëm dhe përpiqu të ngjyrosësh dritaren në disa ose të gjitha këto ngjyra.</p>
 
 <div data-childcomponent="pygame__basics_colors" class="course-box course-box-problem course-content">
 
@@ -450,64 +448,65 @@ pygamebg.wait_loop()
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>One of the mistakes that is often made when writing the first PyGame programs is to write <code class="docutils literal notranslate"><span class="pre">pg.color</span></code> in lowercase when specifying a color, instead of capitalizing - <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code>. This causes an error with the message <code class="docutils literal notranslate"><span class="pre">AttributeError:</span> <span class="pre">''</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'color'</span></code>.</p>
-<p>Another common mistake is not to specify the color name under quotation marks (for example, to specify <code class="docutils literal notranslate"><span class="pre">pg.Color</span> <span class="pre">(white)</span></code>). Then the error shows <code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'white'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span> <span class="pre">on</span> <span class="pre">line</span> <span class="pre">8</span></code> message.</p>
+<p>Një nga gabimet që bëhet shpesh kur shkruani programet e para të PyGame është të shkruani <code class="docutils literal notranslate"><span class="pre">pg.color</span></code> me shkronja të vogla kur specifikoni një ngjyrë, në vend që të kapitalizoni - <code class="docutils literal notranslate"><span class="pre">pg.Color`.</span> <span class="pre">Kjo</span> <span class="pre">shkakton</span> <span class="pre">një</span> <span class="pre">gabim</span> <span class="pre">në</span> <span class="pre">mesazhin</span> <span class="pre">``AttributeError:</span> <span class="pre">'objekti</span> <span class="pre">nuk</span> <span class="pre">ka</span> <span class="pre">atribut</span> <span class="pre">color</span> <span class="pre">ngjyra’</span></code></p>
 
     </p></div></div>
-<p>In addition to these colors, there are many others you can use. The total number of colors that exist in computers is huge, amounting to about 16 million. Out of these, we can only name a little over 600 different colors (the complete list is in the <em>colordict.py</em> file, which you can easily find on the Internet, and if you have PyGame installed, you have it on your computer as well).</p>
-<p>We can specify all these named colors, as well as all the others that have no names, using numbers. The so-called <em>RGB</em> color model is the most used for this. Namely, in computer graphics, each color is obtained by mixing a certain amount of red, green and blue, by whose names the <em>RGB</em> model is named. For example, combining red and green lights produces a yellow light, combining red and blue produces magenta, and combining blue and green produces cyan. Combining light of all three primary colors results in white light, while black light is obtained when all three lights are off. Gray light is obtained by mixing equal amounts of red, green and blue light.</p>
+<p>    Një gabim tjetër i zakonshëm nuk është të specifikoni emrin e ngjyrave nën thonjëza (për shembull, të specifikoni <code class="docutils literal notranslate"><span class="pre">pg.Color(white)</span></code>). Atëherë gabimi tregon <code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">emri</span> <span class="pre">white</span> <span class="pre">nuk</span> <span class="pre">përcaktohet</span> <span class="pre">në</span> <span class="pre">mesazhin</span> <span class="pre">në</span> <span class="pre">rreshtin</span> <span class="pre">8</span></code>.</p>
+<p>Përveç këtyre ngjyrave, ka shumë të tjera që mund të përdorni. Numri i përgjithshëm i ngjyrave që ekzistojnë në kompjuter është shumë i madh, duke arritur në rreth 16 milion. Nga këto, ne mund të përmendim vetëm pak më shumë se 600 ngjyra të ndryshme (lista e plotë është në skedarin <em>colordict.py</em>, të cilin mund ta gjeni lehtësisht në Internet, dhe nëse e keni të instaluar PyGame, e keni atë në kompjuterin tuaj) gjithashtu).</p>
+<p>Ne mund të specifikojmë të gjitha këto ngjyra të emërtuara, si dhe të gjitha të tjerat që nuk kanë emër, duke përdorur numra. I ashtuquajturi modeli me ngjyra <em>RGB</em> është më i përdoruri për këtë. Përkatësisht, në grafikat kompjuterike, çdo ngjyrë fitohet duke përzier një sasi të caktuar të kuqe, jeshile dhe blu, me emrat e të cilave emri <em>model RGB</em>. Për shembull, kombinimi i dritave të kuqe dhe jeshile prodhon një dritë të verdhë, duke kombinuar ngjyrën e kuqe dhe blu prodhon magjinë, dhe duke kombinuar blu dhe jeshil prodhon cian. Kombinimi i dritës së të tre ngjyrave kryesore rezulton në dritë të bardhë, ndërsa drita e zezë merret kur të tre dritat janë fikur. Drita gri fitohet duke përzier sasi të barabarta të dritës së kuqe, jeshile dhe blu.</p>
 <a class="reference internal image-reference" href="../_images/RGB.png"><img alt="../_images/RGB.png" class="align-center" src="../_images/RGB.png" style="width: 200px;" /></a>
-<p>This means we can describe a color by specifying three numbers (in this case, numbers from 0 to 255), which represent the amount of red, green and blue colored light, respectively, in the color we are defining. In the Python programming language, color can also be represented in the form of a three-element ordered tuple (e.g. <code class="docutils literal notranslate"><span class="pre">(123,</span> <span class="pre">80,</span> <span class="pre">56)</span></code>), or a three-element list (e.g. <code class="docutils literal notranslate"><span class="pre">[123,</span> <span class="pre">80,</span> <span class="pre">56]</span></code>). You can specify the tuple or list directly as the color argument of a function, or you can store it in a variable and use the variable name later. For example, by assigning <code class="docutils literal notranslate"><span class="pre">CYAN</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code>, we define the cyan color by specifying the appropriate amounts of red, green and blue light contained in this color (since it is a mixture of blue and green there is no red at all, and blue and green components are at maximum). After that, we can use this color in a function call as well (for example, <code class="docutils literal notranslate"><span class="pre">canvas.fill(CYAN)</span></code>). The names of these variables do not have to be capitalized, but this has become common practice in writing Python programs. In the programs you will see below, you will encounter definitions like this.</p>
-<p>A color can also be specified with four numbers, for example <code class="docutils literal notranslate"><span class="pre">CYAN</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255,</span> <span class="pre">10)</span></code>. The last, fourth parameter (also in range from 0 to 255) determines the color’s transparency, i.e. the cyan color given in this way is slightly transparent.</p>
-<p>Let’s now summarize the RGB values of some common colors.</p>
-<table border="1" class="docutils">
+<p>Kjo do të thotë që ne mund të përshkruajmë një ngjyrë duke specifikuar tre numra (në këtë rast, numrat nga 0 në 255), të cilët përfaqësojnë sasinë e dritës me ngjyrë të kuqe, jeshile dhe blu, përkatësisht, në ngjyrën që ne përcaktojmë. Në gjuhën e programimit Python, ngjyra mund të përfaqësohet në formën e një tuple të rregulluar me tre elementë (p.sh. <code class="docutils literal notranslate"><span class="pre">(123,</span> <span class="pre">80,</span> <span class="pre">56)</span></code>), ose një listë me tre elementë (p.sh. <code class="docutils literal notranslate"><span class="pre">[123,</span> <span class="pre">80</span> <span class="pre">,</span> <span class="pre">56]</span></code>). Ju mund të specifikoni tuple ose listë të drejtpërdrejtë si argument ngjyra, e një funksioni, ose mund ta ruani atë në një variabël dhe të përdorni emrin e ndryshueshëm më vonë. Për shembull, duke caktuar <code class="docutils literal notranslate"><span class="pre">CYAN</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code>, ne përcaktojmë ngjyrën cyan duke specifikuar sasitë e duhura të dritës së kuqe, jeshile dhe blu të përmbajtur në këtë ngjyrë (pasi është një përzierje e kaltër dhe jeshile nuk ka fare të kuqe, dhe përbërësit blu dhe jeshil janë në maksimum). Pas kësaj, ne mund ta përdorim këtë ngjyrë edhe në një thirrje funksioni (për shembull, `` canvas.fill (CYAN)``). Emrat e këtyre ndryshoreve nuk ka pse të kapitalizohen, por kjo është bërë praktikë e zakonshme për të shkruar programet e Python. Në programet që do të shihni më poshtë, do të hasni në përkufizime si kjo.</p>
+<p>Një ngjyrë gjithashtu mund të specifikohet me katër numra, për shembull <code class="docutils literal notranslate"><span class="pre">CYAN</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255,</span> <span class="pre">10)</span></code>. Parametri i fundit, i katërt (gjithashtu në interval nga 0 deri në 255) përcakton transparencën e ngjyrës, d.m.th. ngjyra e cyanit e dhënë në këtë mënyrë është paksa transparente.</p>
+<p>Le të përmbledhim vlerat RGB të disa ngjyrave të zakonshme.</p>
+<table class="docutils align-default">
 <colgroup>
-<col width="68%" />
-<col width="32%" />
+<col style="width: 68%" />
+<col style="width: 32%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></td>
-<td>red</td>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+<td><p>red</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">0)</span></code></td>
-<td>green</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">0)</span></code></p></td>
+<td><p>green</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">255)</span></code></td>
-<td>blue</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">255)</span></code></p></td>
+<td><p>blue</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">0)</span></code></td>
-<td>yellow</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">0)</span></code></p></td>
+<td><p>yellow</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code></td>
-<td>cyan</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code></p></td>
+<td><p>cyan</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">0,</span> <span class="pre">255)</span></code></td>
-<td>magenta</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">0,</span> <span class="pre">255)</span></code></p></td>
+<td><p>magenta</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">255)</span></code></td>
-<td>white</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">255)</span></code></p></td>
+<td><p>white</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></td>
-<td>black</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+<td><p>black</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">(128,</span> <span class="pre">128,</span> <span class="pre">128)</span></code></td>
-<td>gray</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(128,</span> <span class="pre">128,</span> <span class="pre">128)</span></code></p></td>
+<td><p>gray</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">128,</span> <span class="pre">0)</span></code></td>
-<td>orange</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">128,</span> <span class="pre">0)</span></code></p></td>
+<td><p>orange</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">128,</span> <span class="pre">128)</span></code></td>
-<td>pink</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">128,</span> <span class="pre">128)</span></code></p></td>
+<td><p>pink</p></td>
 </tr>
 </tbody>
 </table>
-<p>Notice that the shades of gray are recognizable in that the amounts of red, green and blue are equal in them. The smaller the amount, the darker the shade, and vice versa - greater equal amounts of red, green and blue represent lighter shades of gray (based on the <em>RGB</em> value, black and white can be seen as the darkest and the lightest shade of gray).</p>
-<p>In the following program, you can also try specifying colors in the RGB format. In addition to coloring the window in some or all of the colors listed, you can enter (any) other triples of values between 0 and 255.</p>
+<p>Vini re se hijet e grisë janë të njohshme pasi sasitë e kuqe, jeshile dhe blu janë të barabarta në to. Sa më e vogël të jetë sasia, aq më e errët është hija dhe anasjelltas - sasi më të mëdha të barabarta të kuqe, jeshile dhe blu përfaqësojnë hije më të lehta të gri (bazuar në vlerën <em>RGB</em>, e zeza dhe e bardha mund të shihen si hija më e errët dhe më e lehtë e gri).</p>
+<p>Në programin vijues, gjithashtu mund të provoni të specifikoni ngjyrat në formatin RGB. Përveç ngjyrosjes së dritares në disa ose të gjitha ngjyrat e listuara, mund të futni (ndonjë) treshe të tjera vlerash midis 0 dhe 255.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-When choosing the colors you want to use in your programs, a color picker tool may help you. There is a tool like that on many sites (search for <em>color picker</em>), or you could use the one from the <em>Paint</em> application. You can try it now - choose a color and copy the <em>R</em>, <em>G</em>, <em>B</em> values to the program.
+<p>Kur zgjidhni ngjyrat që dëshironi të përdorni në programet tuaja, një mjet për zgjedhjen e ngjyrave mund t’ju ndihmojë. Ekziston një mjet si ai në shumë site (kërkoni për zgjedhësin e ngjyrave), ose mund të përdorni atë nga aplikacioni <em>Paint</em>. Mund ta provoni tani - zgjidhni një ngjyrë dhe kopjoni vlerat <em>R</em>, <em>G</em>, <em>B</em> në program.</p>
+
     </p></div></div>
 
 <div data-childcomponent="pygame__basics_colors_rgb" class="course-box course-box-problem course-content">
@@ -532,12 +531,12 @@ canvas.fill([???, ???, ???])
 pygamebg.wait_loop()
 </textarea>
 </div>
-<p>Establish your knowledge of colors by answering the following few questions.</p>
+<p>Vendosni njohuritë tuaja për ngjyrat duke iu përgjigjur pyetjeve të mëposhtme.</p>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__basics_quiz_color_values">
-    <span data-component="question">Q-37: Match the colors.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-37: Bashkoni ngjyrat.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__basics_quiz_color_values_drag1">Black</li>
     <li data-component="dropzone" for="pygame__basics_quiz_color_values_drag1">(0, 0, 0)</li>
@@ -553,14 +552,15 @@ pygamebg.wait_loop()
 </ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__basics_quiz_color_gray">
-            Q-38: Which of the following colors is a shade of gray?
-            <li data-component="answer"  id="pygame__basics_quiz_color_gray_opt_a">(1, 12, 123)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_a">Try again</li>
+            <p>Q-38: Which of the following colors is a shade of gray?</p>
+
+            <li data-component="answer"  id="pygame__basics_quiz_color_gray_opt_a">(1, 12, 123)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__basics_quiz_color_gray_opt_b">(128, 0, 128)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__basics_quiz_color_gray_opt_b">(128, 0, 128)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_b">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__basics_quiz_color_gray_opt_c">(0, 0, 128)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__basics_quiz_color_gray_opt_c">(0, 0, 128)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_c">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__basics_quiz_color_gray_opt_d">(145, 145, 145)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_d">Correct</li>
+            <li data-component="answer" data-correct id="pygame__basics_quiz_color_gray_opt_d">(145, 145, 145)</li><li data-component="feedback" id="pygame__basics_quiz_color_gray_opt_d">Saktë</li>
             
 
             </ul>
@@ -568,14 +568,15 @@ pygamebg.wait_loop()
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__basics_quiz_color_purple">
-            Q-39: What colors are mixed to produce a purple (magenta) color?
-            <li data-component="answer"  id="pygame__basics_quiz_color_purple_opt_a">red and green</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_a">Try again</li>
+            <p>Q-39: Cilat ngjyra janë të përziera për të prodhuar një ngjyrë vjollcë (magenta)?</p>
+
+            <li data-component="answer"  id="pygame__basics_quiz_color_purple_opt_a">red and green</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_a">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__basics_quiz_color_purple_opt_b">blue and red</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_b">Correct</li>
+            <li data-component="answer" data-correct id="pygame__basics_quiz_color_purple_opt_b">blue and red</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_b">Saktë</li>
             
-            <li data-component="answer"  id="pygame__basics_quiz_color_purple_opt_c">green and blue</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_c">Try again</li>
+            <li data-component="answer"  id="pygame__basics_quiz_color_purple_opt_c">green and blue</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_c">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__basics_quiz_color_purple_opt_d">red, green and blue</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__basics_quiz_color_purple_opt_d">red, green and blue</li><li data-component="feedback" id="pygame__basics_quiz_color_purple_opt_d">Provo përsëri</li>
             
 
             </ul>
@@ -583,25 +584,26 @@ pygamebg.wait_loop()
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__basics_quiz_color_approx">
-            Q-40: What should the color [240, 230, 18] best be called?
-            <li data-component="answer"  id="pygame__basics_quiz_color_approx_opt_a">Bluish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_a">Try again</li>
+            <p>Q-40: Cila duhet të quhet më së miri ngjyra [240, 230, 18]?</p>
+
+            <li data-component="answer"  id="pygame__basics_quiz_color_approx_opt_a">Bluish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_a">Provo përsëri</li>
             
-            <li data-component="answer"  id="pygame__basics_quiz_color_approx_opt_b">Reddish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_b">Try again</li>
+            <li data-component="answer"  id="pygame__basics_quiz_color_approx_opt_b">Reddish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_b">Provo përsëri</li>
             
-            <li data-component="answer" data-correct id="pygame__basics_quiz_color_approx_opt_c">Yellowish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_c">Correct</li>
+            <li data-component="answer" data-correct id="pygame__basics_quiz_color_approx_opt_c">Yellowish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_c">Saktë</li>
             
-            <li data-component="answer"  id="pygame__basics_quiz_color_approx_opt_d">Greenish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_d">Try again</li>
+            <li data-component="answer"  id="pygame__basics_quiz_color_approx_opt_d">Greenish</li><li data-component="feedback" id="pygame__basics_quiz_color_approx_opt_d">Provo përsëri</li>
             
 
             </ul>
             </div>
-            <p>So, the colors are represented by three and the coordinates of the points by two numbers.
-Check if you understand this by answering the following question.</p>
+            <p>Pra, ngjyrat përfaqësohen nga tre dhe koordinatat e pikave me dy numra.
+Kontrolloni nëse e kuptoni këtë duke iu përgjigjur pyetjes vijuese.</p>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__basics_quiz_colors_and_coordinates">
-    <span data-component="question">Q-41: pair the colors and the coordinates if the screen is 300 pixels wide and 200 pixels high.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-41: çiftoni ngjyrat dhe koordinatat nëse ekrani është 300 pixel i gjerë dhe 200 pixel i lartë.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__basics_quiz_colors_and_coordinates_drag1">Black color</li>
     <li data-component="dropzone" for="pygame__basics_quiz_colors_and_coordinates_drag1">[0, 0, 0]</li>
@@ -621,17 +623,17 @@ Check if you understand this by answering the following question.</p>
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - The PyGame library' data-toggle="tooltip"><a href="03_PyGame_01_Intro.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Libraria PyGame' data-toggle="tooltip"><a href="03_PyGame_01_Intro.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawing' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Vizatim' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - The PyGame library' data-toggle="tooltip"><a href="03_PyGame_01_Intro.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Libraria PyGame' data-toggle="tooltip"><a href="03_PyGame_01_Intro.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawing' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Vizatim' data-toggle="tooltip"><a href="03_PyGame_10_Drawing.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

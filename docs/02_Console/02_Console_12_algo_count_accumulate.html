@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Counting and summing &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Numërimi dhe shuma &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lists" href="02_Console_13_list.html" />
-    <link rel="prev" title="Data collections" href="02_Console_11_collections.html" />
+    <link rel="next" title="Listat" href="02_Console_13_list.html" />
+    <link rel="prev" title="koleksione ata" href="02_Console_11_collections.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,13 +205,13 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="counting-and-summing">
-<h1>Counting and summing<a class="headerlink" href="#counting-and-summing" title="Permalink to this headline">¶</a></h1>
-<p>It is a very common case that we are only interested in some of the data from a collection. Here we will practice how to count and, if necessary, sum numbers that are of interest to us, or that fulfill some condition.</p>
-<div class="section" id="counting">
-<h2>Counting<a class="headerlink" href="#counting" title="Permalink to this headline">¶</a></h2>
-<p>The general form of a program (algorithm) by which we count the elements of a collection that meet a given condition looks like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
+  <div class="section" id="numerimi-dhe-shuma">
+<h1>Numërimi dhe shuma<a class="headerlink" href="#numerimi-dhe-shuma" title="Permalink to this headline">¶</a></h1>
+<p>Është një rast shumë i zakonshëm që ne interesohemi vetëm për disa nga të dhënat nga një koleksion. Këtu do të praktikojmë si të llogarisim dhe, nëse është e nevojshme, numrat e shumave që na interesojnë, ose që plotësojnë ndonjë kusht.</p>
+<div class="section" id="numerimi">
+<h2>Numërimi<a class="headerlink" href="#numerimi" title="Permalink to this headline">¶</a></h2>
+<p>Forma e përgjithshme e një programi (algoritmi) me të cilin numërojmë elementet e një koleksioni që plotësojnë një kusht të caktuar duket si kjo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">:</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="n">meets</span> <span class="n">the</span> <span class="n">condition</span><span class="p">):</span>
         <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -223,13 +222,13 @@
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>The statement <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+=</span> <span class="pre">a</span></code> increases the value of the variable <em>x</em> by <em>a</em>. This is actually an abbreviated form of the statement <code class="code docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">a</span></code>, which assigns the value <em>x + a</em> to the variable <em>x</em>.</p>
-<p>The statement <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-=</span> <span class="pre">a</span></code> decreases the value of the variable <em>x</em> by <em>a</em>. This is an abbreviated form of the statement <code class="code docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">-</span> <span class="pre">a</span></code>, which assigns the value <em>x - a</em> to the variable <em>x</em>.</p>
+<p>Deklarimi <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">=</span> <span class="pre">a</span></code> rrit vlerën e ndryshores <em>x</em> me <em>a</em>. Kjo është në të vërtetë një formë e shkurtuar e thënies :code: <cite>x = x + a</cite>, i cili i jep vlerën <em>x + a</em> variablës <em>x</em>.</p>
 
     </p></div></div>
-<p>In our example, the statement <em>num += 1</em> increases the value of the variable <em>br</em> by 1.</p>
-<div class="section" id="examples-and-tasks">
-<h3>Examples and tasks<a class="headerlink" href="#examples-and-tasks" title="Permalink to this headline">¶</a></h3>
+<p>     Deklarimi <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">=</span> <span class="pre">a</span></code> zvogëlon vlerën e ndryshores <em>x</em> me <em>a</em>. Kjo është një formë e shkurtuar e thënies <code class="code docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">-</span> <span class="pre">a</span></code>, i cili i jep vlerën <em>x - a</em> variablës <em>x</em>.</p>
+<p>Në shembullin tonë, pohimi <em>num + = 1</em> rrit vlerën e ndryshores <em>br</em> me 1.</p>
+<div class="section" id="ushtrime-dhe-detyra">
+<h3>Ushtrime dhe detyra<a class="headerlink" href="#ushtrime-dhe-detyra" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -237,11 +236,11 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - meeting:</strong></p>
-<p>The team leader has offered two options for the time of the meeting to be held tomorrow. Each team member wrote in a table which term would be more appropriate for him/her (1 for the first term, 2 for the second). This information was transferred to the first line of the following program.</p>
-<p>Complete the program - script, so that given the data on voting of team members, it prints how many voted for the first and how many for the second term.</p>
+<p><strong>Shembull - takim:</strong></p>
 
     </p></div></div>
+<p>     Drejtuesi i ekipit ka ofruar dy mundësi për kohën e takimit që do të zhvillohet nesër. Secili anëtar i ekipit shkroi në një tabelë se cili term do të ishte më i përshtatshëm për të (1 për mandatin e parë, 2 për të dytin). Ky informacion u transferua në rreshtin e parë të programit vijues.</p>
+<p>     Plotësoni skenarin e programit, në mënyrë që duke pasur parasysh të dhënat për votimin e anëtarëve të ekipit, ai shtyp se sa votuan për të parin dhe sa për mandatin e dytë.</p>
 
 <div data-childcomponent="console__counting_meeting" class="course-box course-box-problem course-content">
 
@@ -253,7 +252,7 @@
 terms = (1, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1)
 </textarea>
 </div>
-<p>For example, we can count the number of team members who voted for the first term, and calculate the rest at the end.</p>
+<p>Për shembull, ne mund të llogarisim numrin e anëtarëve të ekipit që votuan për mandatin e parë, dhe pjesën tjetër llogaritim në fund.</p>
 
 <div data-childcomponent="console__counting_meeting_sol1" class="course-box course-box-problem course-content">
 
@@ -274,7 +273,7 @@ num_second_term = len(terms) - num_first_term
 print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 </textarea>
 </div>
-<p>Another way is to count the votes for both the first term and the second term.</p>
+<p>Një mënyrë tjetër është të llogaritni votat si për mandatin e parë ashtu edhe për atë të dytë.</p>
 
 <div data-childcomponent="console__counting_meeting_sol2" class="course-box course-box-problem course-content">
 
@@ -295,7 +294,7 @@ for t in terms:
 print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 </textarea>
 </div>
-<p>or, assuming the data is “clean”, that is, there are no values other than 1 and 2:</p>
+<p>ose, duke supozuar se të dhënat janë “të pastra”, d.m.th., nuk ka vlera përveç 1 dhe 2:</p>
 
 <div data-childcomponent="console__counting_meeting_sol3" class="course-box course-box-problem course-content">
 
@@ -317,7 +316,7 @@ for t in terms:
 print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 </textarea>
 </div>
-<p>In case the information is not known in advance but should be entered, we could write a program like this:</p>
+<p>Në rast se informacioni nuk dihet paraprakisht por duhet të futet, ne mund të shkruajmë një program si ky:</p>
 
 <div data-childcomponent="console__counting_meeting_sol4" class="course-box course-box-problem course-content">
 
@@ -337,7 +336,7 @@ num_second_term = n - num_first_term
 print(num_first_term, 'members voted for the first term and', num_second_term, 'for the second term.')
 </textarea>
 </div>
-<p>At the beginning of this program, we load the number of votes <em>n</em>, then use the <em>for</em> loop to repeat loading and counting one vote <em>n</em> times.</p>
+<p>Në fillim të këtij programi, ne ngarkojmë numrin e votave <em>n</em>, atëherë përdorim loop <em>for</em> për të përsëritur ngarkimin dhe numërimin e një votimi <em>n</em> herë.</p>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -345,11 +344,11 @@ print(num_first_term, 'members voted for the first term and', num_second_term, '
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - written test:</strong></p>
-<p>Several people took the traffic proficiency test, which is a prerequisite for taking the practical part of the exam. A test is considered passed if the number of incorrect answers is less than or equal to 3.</p>
-<p>At the beginning of the script are given the test results of one group of candidates (number of incorrect answers for each person who took the test). Complete the script by listing how many candidates have passed the test.</p>
+<p><strong>Detyrë - provë me shkrim:</strong></p>
 
     </p></div></div>
+<p>     Disa njerëz morën testin e aftësisë së trafikut, që është parakusht për të marrë pjesën praktike të provimit. Një test konsiderohet i kaluar nëse numri i përgjigjeve të pasakta është më i vogël se ose i barabartë me 3.</p>
+<p>     Në fillim të skenarit janë dhënë rezultatet e testit të një grupi kandidatësh (numri i përgjigjeve të pasakta për secilin person që e ka marrë testin). Plotësoni skenarin duke renditur sa kandidatë kanë kaluar testin.</p>
 
 <div data-childcomponent="console__counting_test" class="course-box course-box-problem course-content">
 
@@ -373,11 +372,11 @@ print(passed)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - swimming pool</strong></p>
-<p>A visit to the pool is being prepared for a group of children. Anyone lower than 160 centimeters can only go into the smaller pool. The organizer is interested in how many children are below 160 centimeters in order to plan the groups.</p>
-<p>Children’s heights are given at the beginning of the program. Complete the program to print the number of children lower than 160 centimeters.</p>
+<p><strong>Detyrë - pishinë</strong></p>
 
     </p></div></div>
+<p>     Një grup fëmijësh po përgatitet një vizitë në pishinë. Çdokush më i vogël se 160 centimetra mund të shkojë vetëm në pishinën më të vogël. Organizatori interesohet se sa fëmijë janë nën 160 centimetra në mënyrë që të planifikojnë grupet.</p>
+<p>     Lartësitë e fëmijëve jepen në fillim të programit. Përfundoni programin për të shtypur numrin e fëmijëve më të ulët se 160 centimetra.</p>
 
 <div data-childcomponent="console__counting_swimmingpool" class="course-box course-box-problem course-content">
 
@@ -396,11 +395,11 @@ heights = (160, 161, 174, 149, 153, 160, 158, 182, 144)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - humidity</strong></p>
-<p>In a botanical garden, soil moisture is measured once a day for rare and sensitive species. Humidity is expressed in numbers from 0 to 1, and conditions for the development of plants are considered to be good when the humidity is between 0.3 and 0.7 (including boundaries).</p>
-<p>Values of humidity (measured over a period of time) are given at the beginning of the script. Complete the script by printing the number of days when the humidity was not good.</p>
+<p><strong>Detyrë - lagështia</strong></p>
 
     </p></div></div>
+<p>     Në një kopsht botanik, lagështia e tokës matet një herë në ditë për specie të rralla dhe të ndjeshme. Lagështia shprehet në numra nga 0 deri në 1, dhe kushtet për zhvillimin e bimëve konsiderohen të jenë të mira kur lagështia është midis 0.3 dhe 0.7 (përfshirë kufijtë).</p>
+<p>     Vlerat e lagështisë (matur gjatë një periudhe kohe) jepen në fillim të skenarit. Plotësoni skenarin duke shtypur numrin e ditëve kur lagështia nuk ishte e mirë.</p>
 
 <div data-childcomponent="console__counting_humidity" class="course-box course-box-problem course-content">
 
@@ -414,29 +413,29 @@ humidity = (0.2, 0.5, 0.61, 0.40, 0.72, 0.51, 0.43, 0.35, 0.28)
 </div>
 </div>
 </div>
-<div class="section" id="summing">
-<h2>Summing<a class="headerlink" href="#summing" title="Permalink to this headline">¶</a></h2>
-<p>In one big group of practical problems, we come to the result by gradually building (accumulating) it as we go through the data. For example, if we need the sum of some numbers, we can get to it in this general way:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="section" id="mbledhja">
+<h2>Mbledhja<a class="headerlink" href="#mbledhja" title="Permalink to this headline">¶</a></h2>
+<p>Në një grup të madh të problemeve praktike, ne arrijmë në rezultat duke e ndërtuar gradualisht (akumuluar) atë ndërsa kalojmë nëpër të dhëna. Për shembull, nëse kemi nevojë për shumën e disa numrave, mund ta arrijmë atë në këtë mënyrë të përgjithshme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">:</span>
     <span class="n">total</span> <span class="o">+=</span> <span class="n">num</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>When we are computing the sum of all the elements of a collection, we get the same result by calling the <em>sum</em> function:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">collection</span><span class="p">))</span>
+<p>Kur llogaritim shumën e të gjithë elementëve të një koleksioni, marrim të njëjtin rezultat duke thirrur funksionin <em>sum</em>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">collection</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>We will use gradual formation of results when we need only some elements from the collection, that is, those that fulfill the given condition. In this case, the algorithm for calculating the sum would generally look like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<p>Do të përdorim formimin gradual të rezultateve kur na duhen vetëm disa elementë nga koleksioni, domethënë ato që plotësojnë kushtin e dhënë. Në këtë rast, algoritmi për llogaritjen e shumës në përgjithësi do të duket kështu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">:</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="n">meets</span> <span class="n">the</span> <span class="n">condition</span><span class="p">):</span>
         <span class="n">total</span> <span class="o">+=</span> <span class="n">num</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>In order to obtain the mean of the data that fulfills a condition, it is necessary to count and add up such data, and then divide their sum by their number. In the general case it looks like this:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<p>Për të marrë mesataren e të dhënave që plotësojnë një kusht, është e nevojshme të numërohen dhe të shtohen të dhëna të tilla, dhe pastaj të ndahen shumën e tyre sipas numrit të tyre. Në rastin e përgjithshëm, duket kështu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">:</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="n">meets</span> <span class="n">the</span> <span class="n">condition</span><span class="p">):</span>
@@ -445,9 +444,9 @@ humidity = (0.2, 0.5, 0.61, 0.40, 0.72, 0.51, 0.43, 0.35, 0.28)
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span> <span class="o">/</span> <span class="n">counter</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Note that in Python, the sum and mean of the selected elements of the collection can be obtained in a shorter and more efficient way. We chose the above method because it looks almost the same as in other programming languages.</p>
-<div class="section" id="id1">
-<h3>Examples and tasks<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Vini re se në Python, shuma dhe mesatarja e elementeve të zgjedhur të koleksionit mund të merren në një mënyrë më të shkurtër dhe më efikase. Ne zgjodhëm metodën e mësipërme sepse duket pothuajse e njëjtë si në gjuhët e tjera të programimit.</p>
+<div class="section" id="shembuj-dhe-detyra">
+<h3>Shembuj dhe detyra<a class="headerlink" href="#shembuj-dhe-detyra" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -455,10 +454,10 @@ humidity = (0.2, 0.5, 0.61, 0.40, 0.72, 0.51, 0.43, 0.35, 0.28)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Example - Average IQ test result:</strong></p>
-<p>The results of an IQ test for a group of people are given. A score of -1 means that the person did not take the test. Complete the program by printing the mean obtained on the test.</p>
+<p><strong>Shembull - Rezultati mesatar i testit të IQ:</strong></p>
 
     </p></div></div>
+<p>     Janë dhënë rezultatet e një testi IQ për një grup njerëzish. Një rezultat prej -1 do të thotë që personi nuk e ka marrë provën. Përfundoni programin duke shtypur mesataren e fituar në provë.</p>
 
 <div data-childcomponent="console__accumulate_IQ" class="course-box course-box-problem course-content">
 
@@ -470,7 +469,7 @@ humidity = (0.2, 0.5, 0.61, 0.40, 0.72, 0.51, 0.43, 0.35, 0.28)
 iq_results = (-1, 98, 115, -1, 83, 130, 101, 122, -1, 108)
 </textarea>
 </div>
-<p>We can write the program like this:</p>
+<p>Ne mund ta shkruajmë programin kështu:</p>
 
 <div data-childcomponent="console__accumulate_IQ_sol" class="course-box course-box-problem course-content">
 
@@ -502,12 +501,12 @@ else:
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - on duty:</strong></p>
-<p>In Company X, all employees occasionally remain on-call. The norm for the previous period is 20 hours on-call. Every extra hour (over 20 hours) on-call is additionally paid. The number of on-call hours for each employee is given, and the director wants to know the total number of on-call hours <strong>over the norm</strong>.</p>
-<p>Complete the program by computing and printing the total number of overtime hours on-call.</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Detyrë - në detyrë: **</p>
 
     </p></div></div>
-<p>If you solve the task correctly, you should get a score of 25 for the data given, since <span class="math notranslate nohighlight">\((21-20)+(23-20)+(34-20)+(25-20)+(22-20)=25\)</span>.</p>
+<p>     Në Ndërmarrjen X, të gjithë punonjësit herë pas here mbeten në thirrje. Norma për periudhën e mëparshme është 20 orë telefonatë. Hourdo orë shtesë (mbi 20 orë) në telefon paguhet gjithashtu. Jepet numri i orëve të thirrjeve për secilin punonjës, dhe drejtori dëshiron të dijë numrin e përgjithshëm të orëve në telefon <strong>mbi normën</strong>.</p>
+<p>     Përfundoni programin duke llogaritur dhe shtypur numrin e përgjithshëm të orëve jashtë orarit në telefon.</p>
+<p>Nëse zgjidhni detyrën si duhet, duhet të merrni rezultatin 25 për të dhënat e dhëna, pasi <span class="math notranslate nohighlight">\((21-20)+(23-20)+(34-20)+(25-20)+(22-20)=25\)</span>.</p>
 
 <div data-childcomponent="console__accumulate_overtime" class="course-box course-box-problem course-content">
 
@@ -531,12 +530,12 @@ print('Total overtime on call is', total_overtime)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p><strong>Task - average yield:</strong></p>
-<p>In one orchard after the third year, plum yield per tree is monitored. Trees with yields below 3 kilograms are considered damaged or diseased and will be taken out.</p>
-<p>The yield of all the trees in the orchard is given. Complete the program by calculating and printing the average yield of healthy trees (with yields of 3 kilograms or more).</p>
+<p><strong>Detyrë - rendimenti mesatar:</strong></p>
 
     </p></div></div>
-<p>You should get a result of approximately 14.757 for the given data.</p>
+<p>     Në një pemishte pas vitit të tretë, monitorohet rendimenti i kumbullës për pemë. Pemët me rendiment nën 3 kilogram konsiderohen të dëmtuara ose të sëmura dhe do të nxirren jashtë.</p>
+<p>     Jepet rendimenti i të gjitha pemëve në pemishte. Përfundoni programin duke llogaritur dhe shtypur rendimentin mesatar të pemëve të shëndetshme (me rendiment prej 3 kilogramë ose më shumë).</p>
+<p>Ju duhet të merrni një rezultat prej afërsisht 14,757 për të dhënat e dhëna.</p>
 
 <div data-childcomponent="console__accumulate_yield" class="course-box course-box-problem course-content">
 
@@ -558,17 +557,17 @@ yield_per_plant = (11.3, 15.8, 9.5, 2.6, 21.1, 13.4, 17.9, 0.7, 14.3)
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Data collections' data-toggle="tooltip"><a href="02_Console_11_collections.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - koleksione ata' data-toggle="tooltip"><a href="02_Console_11_collections.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Lists' data-toggle="tooltip"><a href="02_Console_13_list.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Listat' data-toggle="tooltip"><a href="02_Console_13_list.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Data collections' data-toggle="tooltip"><a href="02_Console_11_collections.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - koleksione ata' data-toggle="tooltip"><a href="02_Console_11_collections.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Lists' data-toggle="tooltip"><a href="02_Console_13_list.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Listat' data-toggle="tooltip"><a href="02_Console_13_list.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

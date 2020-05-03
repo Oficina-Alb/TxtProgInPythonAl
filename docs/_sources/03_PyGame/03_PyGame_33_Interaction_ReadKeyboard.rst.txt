@@ -1,20 +1,20 @@
-Reading keyboard
+Leximi i tastierës
 ----------------
 
-Acquiring information about keystrokes on a keyboard is very similar to reading the mouse buttons. Function ``pg.key.get_pressed()`` returns a tuple whose elements are used as logical values, showing for each key on the keyboard whether it is currently being pressed or not.
+Përvetësimi i informacionit rreth tasteve në tastierë është shumë i ngjashëm me leximin e butonave të mouse. Funksioni ``pg.key.get_pressed()`` kthen një tuple, elementët e të cilit përdoren si vlera logjike, duke treguar për secilin tast në tastierë nëse aktualisht është duke u shtypur apo jo.
 
-Because the keyboard has many more keys than the mouse, using indices 0, 1, 2, etc. for certain keys would be impractical. In order not to have to know which index in the tuple corresponds to which key, the PyGame library contains named constants that we use as indices. For example, constants ``pg.K_LEFT``, ``pg.K_RIGHT``, ``pg.K_UP``, ``pg.K_DOWN`` correspond to the frequently used arrow keys. For the space key the corresponding constant is ``pg.K_SPACE``, while for the letter keys, for example *a*, *b*, *c* the corresponding constants would be ``pg.K_a``, ``pg.K_b``, ``pg .K_c`` etc. The complete list of these constants can be seen `here <https://www.pygame.org/docs/ref/key.html>`__ .
+Për shkak se tastiera ka shumë më shumë çelësa se mouse, përdorimi i indekseve 0, 1, 2, etj për disa çelësa do të ishte jopraktik. Për të mos ditur se cili indeks në tuple korrespondon me cilin çelës, libraria e PyGame përmban konstanta të emërtuara që ne përdorim si indeks. Për shembull, konstantet ``pg.K_LEFT``, ``pg.K_RIGHT``, ``pg.K_UP``, ``pg.K_DOWN`` lidhen me shigjetat e përdorura shpesh. Për butonin e hapësirës është ``pg.K_SPACE``, ndërsa shkronjat, për shembull *a*, *b*, *c* kanë konstantet korrespondente ``pg.K_a``, ``pg.K_b``, ``pg .K_c`` etj. Listën e plotë e gjeni këtu `here <https://www.pygame.org/docs/ref/key.html>`__ .
  
 Examples and tasks
 ''''''''''''''''''
 
 .. questionnote::
 
-    **Example - Spaceship:** In this example, we have an image of a spaceship, which we move left and right in accordance with the pressed arrow keys. In addition, we can fire from the ship by pressing the space bar key.
-    
-First, pay attention to the highlighted part of the code with a lighter background (lines 23-37). That part is new here, and it is also commented in more detail in the code itself.
+    **Shembull - Anije kozmike: ** Në këtë shembull, ne kemi një imazh të një anije kozmike, të cilën e lëvizim majtas dhe djathtas në përputhje me tastet e shigjetës së shtypur. Përveç kësaj, ne mund të zjarrmë nga anija duke shtypur tastin e shiritit hapësinor.
+    
+Së pari, kushtojini vëmendje pjesës së theksuar të kodit me një sfond më të lehtë (linjat 23-37). Kjo pjesë është e re këtu, dhe gjithashtu është komentuar më hollësisht në vetë kodin.
 
-The rest of the program is just animating multiple objects, a technique known from before.
+Pjesa tjetër e programit është thjesht gjallërim i objekteve të shumta, një teknikë e njohur që nga më parë.
 
 .. image:: ../../_images/spaceship.png
    :width: 50px
@@ -25,14 +25,14 @@ The rest of the program is just animating multiple objects, a technique known fr
     :modaloutput:
     :includesrc: src/PyGame/3_Interaction/3c_Keyboard_read/spaceship_arrow_keys.py
 
-So, after reading the status of all the keys and placing it in the tuple *pressed*, we can simply check the status of the keys we are interested in using *if* statement.
+Pra, pasi të lexojmë statusin e të gjithë çelësave dhe ta vendosim në tuple *të shtypur*, ne thjesht mund të kontrollojmë statusin e çelësave që ne jemi të interesuar të përdorim deklaratën *if*.
 
 
 .. questionnote::
 
-    **Task - navigation:** 
-    
-    Complete the following program so that the 4 arrow keys control the yellow circle, like in the example. The circle should not move if no arrows are pressed and move one pixel in the direction of the arrows that are pressed (opposite arrows cancel each other out).
+   **Detyra - lundrimi:**
+    
+     Plotësoni programin e mëposhtëm në mënyrë që 4 çelësat e shigjetave të kontrollojnë rrethin e verdhë, si në shembull. Rrethi nuk duhet të lëvizë nëse nuk shtypen shigjeta dhe lëvizin një piksel në drejtim të shigjetave që shtypen (shigjetat e kundërta anulojnë njëra-tjetrën jashtë).
     
 
 .. activecode:: PyGame__interact_navigtate1
@@ -52,13 +52,13 @@ So, after reading the status of all the keys and placing it in the tuple *presse
 
 .. questionnote::
 
-    **Task - snake:** 
+    **Detyrë - gjarpri:** 
     
-    Complete the following program so that the arrows can control a 'snake' consisting of several squares, like in the example.
-    
-    Variables *d_row* and *d_col* indicate the direction of movement of the snake. While no arrows are pressed, the value of these variables does not change and the snake continues to move in the same direction. Your task is to add commands for reading the status of the keyboard and calculating new values for *(d_row, d_col)* based on the arrows pressed, so that the movement continues in the chosen direction.
+    Plotësoni programin e mëposhtëm në mënyrë që shigjetat të mund të kontrollojnë një 'gjarpër' të përbërë nga disa sheshe, si në shembull.
+    
+     Variablat *d_row* dhe *d_col* tregojnë drejtimin e lëvizjes së gjarprit. Ndërsa nuk shtypen shigjeta, vlera e këtyre ndryshoreve nuk ndryshon dhe gjarpri vazhdon të lëvizë në të njëjtin drejtim. Detyra juaj është të shtoni komanda për leximin e statusit të tastierës dhe llogaritjen e vlerave të reja për *(d_row, d_col)* bazuar në shigjetat e shtypura, në mënyrë që lëvizja të vazhdojë në drejtimin e zgjedhur.
 
-**Hint:** if the snake's head was in the square *(row, col)*, in the new frame it will be in the square *(row + d_row, col + d_col)*. Check if you understood how you should assign values to the variables *d_red*, *d_kol* for each direction:
+**Ndihme:** nëse koka e gjarprit ishte në katror *(row, col)*, në kornizën e re do të jetë në katror *(rresht + d_row, col + d_col)*. Kontrolloni nëse keni kuptuar se si duhet të caktoni vlera ndaj variablave *d_row*, *d_col* për secilin drejtim:
 
 .. mchoice:: pygame__interact_quiz_direction
    :answer_a: Up
@@ -68,10 +68,10 @@ So, after reading the status of all the keys and placing it in the tuple *presse
    :correct: c
    :feedback_a: No, values for up are (d_row, d_col) = (-1, 0)
    :feedback_b: No, values for down are (d_row, d_col) = (1, 0)
-   :feedback_c: Correct
+   :feedback_c: Saktë
    :feedback_d: No, values for right are (d_row, d_col) = (0, 1)
 
-   If variables (d_row, d_col) are assigned values (0, -1), in which direction does the movement continue?
+   Nëse variablat (d_row, d_col) janë lidhur me clerat (0, -1), në cilin drejtim vazhdon lëvizja?
 
 .. activecode:: PyGame__interact_snake
     :nocodelens:
@@ -84,16 +84,16 @@ So, after reading the status of all the keys and placing it in the tuple *presse
         # BASED ON THE KEYS PRESSED
 
 
-Questions
+Pyetje
 '''''''''
 
-As you answer the questions, go back to the "snake" program as needed and look up the parts you need to answer.
+Ndërsa ju përgjigjeni pyetjeve, kthehuni tek programi "gjarpri" sipas nevojës dhe kërkoni pjesët që duhet t'i përgjigjeni.
 
 .. fillintheblank:: pygame__interact_quiz_snake_tablesize
 
     How many rows does the board have?
 
-    - :40: Correct!
+    - :40: Saktë!
       :[0-9]+: Look at the beginning of the program more carefully.
       :.*: The answer should be written in digits.
 
@@ -103,24 +103,24 @@ As you answer the questions, go back to the "snake" program as needed and look u
    :answer_c: x = row*a, y = col*a
    :answer_d: x = col*a, y = row*a
    :correct: d
-   :feedback_a: Try again
-   :feedback_b: Try again
-   :feedback_c: Try again
-   :feedback_d: Correct
+   :feedback_a: Provo përsëri
+   :feedback_b: Provo përsëri
+   :feedback_c: Provo përsëri
+   :feedback_d: Saktë
 
-   What are the coordinates of the top left corner of the square *(row, col)*?
+   Cilat janë koordinatat e këndit të sipërm të majtë të katrorit *(row, col)*?
 
 .. mchoice:: pygame__interact_quiz_snake_head
    :multiple_answers:
-   :answer_a: In each frame list 'snake' is extended by a new element representing the new position of the snake's head.
-   :answer_b: List 'snake' has the same number of elements throughout the program.
-   :answer_c: One element which represents the end of the snake's tail is removed from list 'snake' in each frame.
+   :answer_a: Në secilën listë kornizë 'gjarpri' shtrihet nga një element i ri që përfaqëson pozicionin e ri të kokës së gjarprit.
+   :answer_b: Lista 'gjarpri' ka të njjtin numër elementësh në program.
+   :answer_c: Një element që përfaqëson fundin e bishtit të gjarprit është hequr nga lista 'gjarpër' në secilën kornizë.
    :correct: b
-   :feedback_a: There is no such command in the program
-   :feedback_b: Correct
-   :feedback_c: There is no such command in the program
+   :feedback_a: Nuk ezkiston kjo komandë në program
+   :feedback_b: Saktë
+   :feedback_c: Nuk ezkiston kjo komandë në program
 
-   Which sentences are true?
+   Cilat fjali janë të vërteta?
     
 
 .. commented out

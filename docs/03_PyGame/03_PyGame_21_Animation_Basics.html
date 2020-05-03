@@ -2,54 +2,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>How to make an animation &#8212; Textual Programming in Python</title>
+    <meta charset="utf-8" />
+    <title>Si të bëni një animacion &#8212; Textual Programming in Python</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
     <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
     <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
     <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/user-highlights.css" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/flatly.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/petlja.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/runestonebase.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
     <script type="text/javascript" src="../_static/bookfuncs.js"></script>
     <script type="text/javascript" src="../_static/codemirror.js"></script>
@@ -58,38 +43,52 @@
     <script type="text/javascript" src="../_static/python.js"></script>
     <script type="text/javascript" src="../_static/htmlmixed.js"></script>
     <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/skulpt.min.js"></script>
     <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="../_static/activecode.js"></script>
     <script type="text/javascript" src="../_static/clike.js"></script>
     <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
     <script type="text/javascript" src="../_static/mchoice.js"></script>
     <script type="text/javascript" src="../_static/timedmc.js"></script>
     <script type="text/javascript" src="../_static/timed.js"></script>
     <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/clickable.js"></script>
     <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
     <script type="text/javascript" src="../_static/dragndrop.js"></script>
     <script type="text/javascript" src="../_static/timeddnd.js"></script>
     <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
     <script type="text/javascript" src="../_static/shortanswer.js"></script>
     <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
     <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
@@ -142,8 +141,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Drawings movement" href="03_PyGame_22_Animation_Motion.html" />
-    <link rel="prev" title="Animation" href="03_PyGame_20_Animation.html" />
+    <link rel="next" title="Lëvizja e vizatimeve" href="03_PyGame_22_Animation_Motion.html" />
+    <link rel="prev" title="Animim" href="03_PyGame_20_Animation.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -154,14 +153,14 @@
   eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
   eBookConfig.app = eBookConfig.host+'/runestone';
   eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'TxtProgInPython';
+  eBookConfig.course = 'MakeCode';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
   eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'TxtProgInPython';
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'MakeCode';
   eBookConfig.runestone_version = '3.1.1';
   eBookConfig.imagesDir = '../_images/';
   eBookConfig.staticDir = '../_static/';
@@ -206,13 +205,13 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="how-to-make-an-animation">
-<h1>How to make an animation<a class="headerlink" href="#how-to-make-an-animation" title="Permalink to this headline">¶</a></h1>
-<p>A simple way to get an animation is to place the part of a program that draws one frame in a separate function. As a rule, we will call this function <em>new_frame</em> in programs, though it may have any other name.</p>
-<div class="section" id="altering-the-drawings">
-<h2>Altering the drawings<a class="headerlink" href="#altering-the-drawings" title="Permalink to this headline">¶</a></h2>
-<p>In order to get an animation, the function that draws a frame has to create a drawing slightly different from the previous one on the next call, since without changes there is no animation. For the new drawing to be different, the drawing itself must depend on the values of some variables. Changing the values of the variables on which the drawing depends will result in a different drawing.</p>
-<p>For example, here’s how we can create a program that alternately displays a smaller and a larger heart.</p>
+  <div class="section" id="si-te-beni-nje-animacion">
+<h1>Si të bëni një animacion<a class="headerlink" href="#si-te-beni-nje-animacion" title="Permalink to this headline">¶</a></h1>
+<p>Një mënyrë e thjeshtë për të marrë një animacion është të vendosni pjesën e një programi që vizaton një kornizë në një funksion të veçantë. Si rregull, ne do ta quajmë këtë funksion <em>new_frame</em> në programe, megjithëse mund të ketë ndonjë emër tjetër.</p>
+<div class="section" id="ndryshimi-i-vizatimeve">
+<h2>Ndryshimi i vizatimeve<a class="headerlink" href="#ndryshimi-i-vizatimeve" title="Permalink to this headline">¶</a></h2>
+<p>Për të marrë një animacion, funksioni që vizaton një kornizë duhet të krijojë një vizatim pak më ndryshe nga ai i mëparshmi në thirrjen tjetër, pasi që pa ndryshime nuk ka asnjë animacion. Që vizatimi i ri të jetë i ndryshëm, vetë vizatimi duhet të varet nga vlerat e disa ndryshoreve. Ndryshimi i vlerave të ndryshoreve nga të cilat varet vizatimi do të rezultojë në një vizatim të ndryshëm.</p>
+<p>Për shembull, këtu është se si mund të krijojmë një program që shfaq në mënyrë alternative një zemër më të vogël dhe më të madhe.</p>
 <a class="reference internal image-reference" href="../_images/heart_smaller.png"><img alt="../_images/heart_smaller.png" src="../_images/heart_smaller.png" style="width: 120px;" /></a>
 <a class="reference internal image-reference" href="../_images/heart_bigger.png"><img alt="../_images/heart_bigger.png" src="../_images/heart_bigger.png" style="width: 120px;" /></a>
 
@@ -246,29 +245,29 @@ pygamebg.frame_loop(2, new_frame)
 
 </textarea>
 </div>
-<p>The function uses the <em>image_index</em> variable, which only gets values 0 or 1. This variable is used as the index (sequence number) of an image in the image list, which consists of two images. Based on the variable <em>image_index</em>, the program decides which of the two images will be displayed. With each new execution of the <em>new_frame</em> function, the variable <em>image_index</em> changes the value (if it was 0, it gets a value of 1 and vice versa), thus changing the image to be displayed.</p>
-<p>The variables on which the drawing depends are said to describe the scene. There can be one or more such variables. In the example with the heart, the scene is described by one variable, which is the variable <em>image_index</em>.</p>
-<p>In the general case, when creating a new animation frame, we use the old values of scene-describing variables to calculate their new values. In doing so, new values may or may not be different from old ones. We call this computation a scene update.</p>
+<p>Funksioni përdor variablin <em>image_index</em>, i cili merr vetëm vlera 0 ose 1. Ky variabël përdoret si indeks (numri rendor) i një imazhi në listën e figurave, i cili përbëhet nga dy imazhe. Bazuar në variablin <em>image_index</em>, programi vendos se cila nga dy imazhet do të shfaqet. Me secilin ekzekutim të ri të funksionit <em>new_frame</em>, ndryshorja <em>image_index</em> ndryshon vlerën (nëse ka qenë 0, ajo merr një vlerë prej 1 dhe anasjelltas), duke ndryshuar kështu imazhin që do të shfaqet.</p>
+<p>Variablat nga të cilat varet vizatimi thuhet se përshkruajnë skenën. Mund të ketë një ose më shumë variabla të tilla. Në shembullin me zemër, skena përshkruhet nga një variabël, e cila është variabla <em>image_index</em>.</p>
+<p>Në rastin e përgjithshëm, kur krijojmë një kornizë të re animacioni, ne përdorim vlerat e vjetra të variablave që përshkruajnë skenë për të llogaritur vlerat e tyre të reja. Duke vepruar kështu, vlerat e reja mund ose nuk mund të jenë të ndryshme nga ato të vjetra. Ne e quajmë këtë llogaritje një përditësim të skenës.</p>
 </div>
-<div class="section" id="global-variables">
-<h2>Global variables<a class="headerlink" href="#global-variables" title="Permalink to this headline">¶</a></h2>
-<p>To be able to update a scene in the <em>new_frame</em> function, variables describing the scene have need to have values before and after executing the <em>new_frame</em> function. Therefore, we need to form these variables (assign them the first values) in the main part of the program. When we use such variables in a function, we call them global variables. In contrast, variables made in the function itself are called local variables, and they exist only during function execution.</p>
-<p>When assigning values to a global variable in a function, we should indicate at the beginning of the function that these are variables that already exist and are formed outside that function. For the variable <em>image_index</em> in the example above, we achieved this by writing <code class="docutils literal notranslate"><span class="pre">global</span> <span class="pre">image_index</span></code> in the first row of the function. If we did not declare the variable global, Python would attempt to form a new local variable of the same name when assigning a value to the variable.</p>
-<p>When there are multiple global variables that we intend to modify in a function, after the word <em>global</em> we should list the names of all such variables, separated by commas.</p>
+<div class="section" id="variablat-globale">
+<h2>Variablat globale<a class="headerlink" href="#variablat-globale" title="Permalink to this headline">¶</a></h2>
+<p>Për të qenë në gjendje të azhurnoni një skenë në funksionin <em>new_frame</em>, variablat që përshkruajnë skenën duhet të kenë vlera para dhe pas ekzekutimit të funksionit <em>new_frame</em>. Prandaj, ne duhet të formojmë këto variabla (t’i caktojmë vlerat e para) në pjesën kryesore të programit. Kur përdorim variabla të tilla në një funksion, ne i quajmë ato variabla globale. Në të kundërt, variablat e bëra në vetë funksionin quhen ndryshore lokale, dhe ato ekzistojnë vetëm gjatë ekzekutimit të funksionit.</p>
+<p>Kur caktojmë vlera në një variabël globale në një funksion, duhet të tregojmë që në fillim të funksionit se këta janë variablia që ekzistojnë tashmë dhe janë formuar jashtë këtij funksioni. Për variablin <em>image_index</em> në shembullin e mësipërm, ne e arritëm këtë duke shkruar <code class="docutils literal notranslate"><span class="pre">global</span> <span class="pre">image_index</span></code> në rreshtin e parë të funksionit. Nëse ne nuk e shpallëm variablin global, Python do të përpiqej të krijonte një variabëk të ri lokale me të njëjtin emër kur cakton një vlerë në variabël.</p>
+<p>Kur ekzistojnë shumë variabla globale që synojmë t’i modifikojmë në një funksion, pas fjalës <em>globale</em> duhet të rendisim emrat e të gjitha ndryshoreve të tilla, të ndara me presje.</p>
 </div>
-<div class="section" id="animation-speed">
-<h2>Animation speed<a class="headerlink" href="#animation-speed" title="Permalink to this headline">¶</a></h2>
-<p>Animation speed is determined by the duration of each frame, that is, the number of frames displayed in a unit of time. To indicate rate at which consecutive frames appear we use the abbreviation (also unit of measurement) fps - frames per second. When creating an animation, one of the things we need to do is choose the speed of rendering and set it in our program as the number of frames that we want the program to create and display per second.</p>
-<p>In the previous program, we used 2 frames per second to get a rhythm similar to the heart rate. In doing so, we have clearly distinguished two frames that appear alternately. To get the impression of movement we only need higher speeds and more images.</p>
+<div class="section" id="shpejtesia-e-animacionit">
+<h2>Shpejtësia e animacionit<a class="headerlink" href="#shpejtesia-e-animacionit" title="Permalink to this headline">¶</a></h2>
+<p>Shpejtësia e animacionit përcaktohet nga kohëzgjatja e secilës kornizë, d.m.th., numri i kornizave të shfaqura në një njësi të kohës. Për të treguar shkallën në të cilën shfaqen kornizat e njëpasnjëshme, ne përdorim shkurtimin (gjithashtu njësinë e matjes) fps - korniza për sekondë. Kur krijojmë një animacion, një nga gjërat që duhet të bëjmë është të zgjedhim shpejtësinë e interpretimit dhe ta vendosim atë në programin tonë si numrin e kornizave që duam që programi të krijojë dhe shfaqë për sekondë.</p>
+<p>Në programin e kaluar, kemi përdorur 2 korniza për sekondë për të marrë një ritëm të ngjashëm me rrahjet e zemrës. Duke vepruar kështu, ne kemi dalluar qartë dy korniza që shfaqen në mënyrë alternative. Për të marrë përshtypjen e lëvizjes na duhen vetëm shpejtësi më të mëdha dhe më shumë imazhe.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p>Commonly at least 15 fps are used for motion animation, because at slower rendering speeds movement can seem intermittent. For example, TV shows generally use 24 fps, and nowadays, video games under 30 fps are not considered to provide a good enough experience. Even faster animations can provide even better effects for some viewers, but those are also more expensive to create and render.</p>
-<p>If we set a very high speed in our programs, it may not be possible for our computer to achieve such a speed of image generation, nor such a speed of display. In this case, no errors will occur, but the actual (effective) frame rate will be smaller (one that the computer can achieve).</p>
 
     </p></div></div>
-<p>The animation of running from the introductory text can be achieved with a program very similar to the heart example. The only fundamental difference is that it uses a larger number of images (eight instead of two) and a higher frame rate.</p>
+<p>    Zakonisht, të paktën 15 fps përdoren për animacion lëvizjeje, sepse me shpejtësi më të ngadalshme të lëvizjes lëvizja mund të duket e ndërprerë. Për shembull, shfaqjet televizive zakonisht përdorin 24 fps, dhe në ditët e sotme, lojërat video nën 30 fps nuk konsiderohen të ofrojnë një përvojë të mjaftueshme. Animacionet edhe më të shpejta mund të ofrojnë efekte edhe më të mira për disa shikues, por ato janë gjithashtu më të shtrenjta për t’u krijuar dhe dhënë.</p>
+<p>    Nëse vendosim një shpejtësi shumë të lartë në programet tona, mund të mos jetë e mundur që kompjuteri ynë të arrijë një shpejtësi të tillë të gjenerimit të imazhit, as një shpejtësi të tillë të ekranit. Në këtë rast, nuk do të ndodhin gabime, por niveli aktual (efektiv) i kornizës do të jetë më i vogël (ai që kompjuteri mund të arrijë).</p>
+<p>Animimi i drejtimit nga teksti hyrës mund të arrihet me një program shumë të ngjashëm me shembullin e zemrës. I vetmi ndryshim thelbësor është se përdor një numër më të madh të imazheve (tetë në vend të dy) dhe një shkallë më të lartë kornizash.</p>
 <a class="reference internal image-reference" href="../_images/running1.png"><img alt="../_images/running1.png" src="../_images/running1.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/running2.png"><img alt="../_images/running2.png" src="../_images/running2.png" style="width: 50px;" /></a>
 <a class="reference internal image-reference" href="../_images/running3.png"><img alt="../_images/running3.png" src="../_images/running3.png" style="width: 50px;" /></a>
@@ -311,22 +310,22 @@ pygamebg.frame_loop(15, new_frame)
 
 </textarea>
 </div>
-<p>Try different frame rates and see how that parameter affects the appearance of the animation. Of course, apart from the number of frames per second, the overall experience is also affected by how much consecutive images differ (more images with smaller differences give a better effect, but it requires a higher frame rate).</p>
+<p>Provoni norma të ndryshme kornizash dhe shikoni se si ndikon ai parametër në shfaqjen e animacionit. Sigurisht, përveç numrit të kornizave për sekondë, përvoja e përgjithshme ndikohet gjithashtu nga sa ndryshojnë imazhet e njëpasnjëshme (më shumë imazhe me dallime më të vogla japin një efekt më të mirë, por kërkon një shkallë më të lartë të kornizës).</p>
 <hr class="docutils" />
-<p>Let’s summarize what you need to do to create an animation:</p>
+<p>Le të përmbledhim atë që duhet të bëni për të krijuar një animacion:</p>
 <ul class="simple">
-<li>define global variables that describe the scene (this data will change during the animation);</li>
-<li>define a function <code class="docutils literal notranslate"><span class="pre">new_frame</span></code> that updates the data about characters and objects in the scene, and then plot the scene (remember to list the global variables being modified in the function after the word <code class="docutils literal notranslate"><span class="pre">global</span></code>);</li>
-<li>at the end of the program, call the <code class="docutils literal notranslate"><span class="pre">pygamebg.frame_loop(fps,</span> <span class="pre">new_frame)</span></code> function, where <em>fps</em> is the desired frame rate. The <em>frame_loop</em> function, in addition to everything <em>wait_loop</em> did, also calls the <em>new_frame</em> function a requested number of times per second. That is why in animations we will end programs with <em>frame_loop</em> instead of <em>wait_loop</em>.</li>
+<li><p>të përcaktojë variablat globale që përshkruajnë skenën (këto të dhëna do të ndryshojnë gjatë animacionit);</p></li>
+<li><p>përcaktoni një funksion <code class="docutils literal notranslate"><span class="pre">new_frame</span></code> që azhurnon të dhënat për karakteret dhe objektet në skenë, dhe pastaj komplotoni skenën (mos harroni të rendisni variablat globale që janë modifikuar në funksion pas fjalës <code class="docutils literal notranslate"><span class="pre">global</span></code>);</p></li>
+<li><p>në fund të programit, thirrni funksionin <code class="docutils literal notranslate"><span class="pre">pygamebg.frame_loop</span> <span class="pre">(fps,</span> <span class="pre">new_frame)</span></code>, ku * fps * është niveli i dëshiruar i kornizës. Funksioni <em>frame_loop</em>, përveç çdo gjëje që ka bërë <em>wait_loop</em>, gjithashtu e quan funksionin <em>new_frame</em> një numër të kërkuar herë në sekondë. Kjo është arsyeja pse në animacione do të mbarojmë programet me <em>frame_loop</em> në vend të <em>wait_loop</em>.</p></li>
 </ul>
 </div>
-<div class="section" id="animations-questions">
-<h2>Animations - questions<a class="headerlink" href="#animations-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="animime-pyetje">
+<h2>Animime - pyetje<a class="headerlink" href="#animime-pyetje" title="Permalink to this headline">¶</a></h2>
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__anim_quiz_frametime1">
-    <span data-component="question">Q-67: Link the duration of the frame to the number of frames per second.</span>
-	<span data-component=feedback>Try again!</span>
+    <span data-component="question">Q-67: Vendosni kohëzgjatjen e kornizës me numrin e kornizave për sekondë.</span>
+	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__anim_quiz_frametime1_drag1">10 fps </li>
     <li data-component="dropzone" for="pygame__anim_quiz_frametime1_drag1"> 100 milliseconds</li>
@@ -346,15 +345,16 @@ pygamebg.frame_loop(15, new_frame)
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<strong>Task - suggestion:</strong> If you like, try creating a Python program that will cyclically display your selected photos or other images of your choice (if all your pictures are the same size, you have already learned everything you need). Keep in mind that frame rate may be less than 1 fps and may not be an integer (but should be positive). For example, in the “slideshow” program we suggest, there is a natural need for each image to last longer than one second.
+<p><strong>Ushtrim - sugjerim:</strong> Nëse ju pëlqen, provoni të krijoni një program Python që do të shfaqë ciklike fotot tuaja të zgjedhura ose imazhet e tjera të zgjedhjes suaj (nëse të gjitha fotografitë tuaja janë me të njëjtën madhësi, ju keni mësuar tashmë gjithçka që ju nevojitet). Mbani në mend se norma e kornizës mund të jetë më pak se 1 fps dhe mund të mos jetë një numër i plotë (por duhet të jetë pozitiv). Për shembull, në programin “Slideshow” që sugjerojmë, ekziston një nevojë natyrale që secila imazh të zgjasë më shumë se një sekondë.</p>
+
     </p></div></div>
 
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="pygame__anim_quiz_frametime2">
-            <p>To display each frame for two seconds, how many frames per second should be set in the program?</p>
+            <p>Për të shfaqur secilën kornizë për dy sekonda, sa korniza për sekondë duhet të vendosen në program?</p>
 <input type="text">
         <script type="application/json">
-            [[{"regex": "^ *0[,\\.]5 *$", "regexFlags": "", "feedback": "Correct!"}, {"regex": "^ *[0-9]+[,\\.]?[0-9]* *$", "regexFlags": "", "feedback": "no, try again."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "the result should be a number."}]]
+            [[{"regex": "^ *0[,\\.]5 *$", "regexFlags": "", "feedback": "<p>Sakt\u00eb!</p>\n"}, {"regex": "^ *[0-9]+[,\\.]?[0-9]* *$", "regexFlags": "", "feedback": "<p>no, Provo p\u00ebrs\u00ebri.</p>\n"}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "<p>the result should be a number.</p>\n"}]]
         </script>
 
         </div>
@@ -362,45 +362,47 @@ pygamebg.frame_loop(15, new_frame)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__anim_quiz_toggle">
-            <p>Q-68:  In the “Running” example, it was required that the variable <em>image_index</em> cyclically take only those values that correspond to the positions of the images in the list. When we have eight images, these values are 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, etc. In the general case, for <em>n</em> images these values are 0, 1, 2, … n-1, 0, 1, 2, etc.</p>
+            <p>Q-68:  Si të bëni një animacion</p>
+
+            <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_a">image_index = image_index + 1 % num_images</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_a">Provo përsëri</li>
+            
+            <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_b">image_index = (image_index % num_images) + 1</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_b">Provo përsëri</li>
+            
+            <li data-component="answer" data-correct id="pygame__anim_quiz_toggle_opt_c">image_index = (image_index + 1) % num_images</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_c">Saktë</li>
+            
+            <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_d">image_index = image_index % (num_images + 1)</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_d">Provo përsëri</li>
+            
+
+            </ul>
+            </div>
+            <hr class="docutils" />
+<p>  Në shembullin “Running”, kërkohej që variabla <em>image_index</em> në mënyrë ciklike të marrë vetëm ato vlera që korrespondojnë me pozicionet e imazheve në listë. Kur kemi tetë imazhe, këto vlera janë 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, etj. Në rastin e përgjithshëm, për <em>n</em> imazhet këto vlera janë 0, 1, 2, … n-1, 0, 1, 2, etj.</p>
+<p>     Kujtojmë që operatori % tregon funksionimin e llogaritjes së pjesës së mbetur pas ndarjes. Me këtë operacion, ne mund të arrijmë të njëjtin qëllim në shënim më të shkurtër. Cila nga komandat e mëposhtme mund të zëvendësojë në mënyrë të barabartë këtë pjesë të programit?</p>
 <blockquote>
-<div><p>Recall that the operator % denotes the operation of calculating the remainder after division. With this operation, we can achieve the same goal in shorter notation. Which of the following commands can equally replace this part of the program?</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image_index</span> <span class="o">=</span> <span class="n">image_index</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># move on to the next picture</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image_index</span> <span class="o">=</span> <span class="n">image_index</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># move on to the next picture</span>
 <span class="k">if</span> <span class="n">image_index</span> <span class="o">==</span> <span class="n">num_images</span><span class="p">:</span>    <span class="c1"># if there is no next picture ...</span>
     <span class="n">image_index</span> <span class="o">=</span> <span class="mi">0</span>            <span class="c1"># return to the first picture</span>
 </pre></div>
 </div>
 </div></blockquote>
-
-            <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_a">image_index = image_index + 1 % num_images</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_a">Try again</li>
-            
-            <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_b">image_index = (image_index % num_images) + 1</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_b">Try again</li>
-            
-            <li data-component="answer" data-correct id="pygame__anim_quiz_toggle_opt_c">image_index = (image_index + 1) % num_images</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_c">Correct</li>
-            
-            <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_d">image_index = image_index % (num_images + 1)</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_d">Try again</li>
-            
-
-            </ul>
-            </div>
-            </div>
+</div>
 </div>
 
 
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Animation' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Animim' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Drawings movement' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Lëvizja e vizatimeve' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Animation' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Animim' data-toggle="tooltip"><a href="03_PyGame_20_Animation.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Drawings movement' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Lëvizja e vizatimeve' data-toggle="tooltip"><a href="03_PyGame_22_Animation_Motion.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

@@ -1,16 +1,15 @@
-Drawing rectangles, ellipses, and circles
+Vizatimi i drejtkëndëshave, eklipse dhe rrathëve
 -----------------------------------------
 
-All drawing functions in the PyGame library begin with ``pg.draw``. Depending on what shape we want to draw, we call different functions. In the explanations that follow, the meaning of the parameters is:
+Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me ``pg.pull`. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:
 
-- The *canvas* parameter is the area in which we draw. In this guide, programs will already have a formed variable (more specifically object) *canvas*, obtained as the result from a call of the ``pygamebg.open_window`` function.
-- The *color* parameter is the color we use to draw. As it was said earlier, a color can be specified by its name (for example :code:`pg.Color("black")`), or as a tuple or a list of 3 elements (for example :code:`[255, 0, 0]` for red).
-- The *rectangle* parameter is a tuple or a list of four elements :math:`(x, y, w, h)` or :math:`[x, y, w, h]`, that describes a rectangle, as explained earlier (coordinates of the top-left vertex, rectangle width and height).
-- The *center* parameter represents a point. As mentioned earlier, a point can be specified as a tuple (or list) of 2 elements, which represent the coordinates of the point in the window in which we draw.
-- The *thickness* parameter is thickness of the lines we use to draw. In the functions we explain here, this parameter is optional and can be omitted.
+- Parametri *canvas* është zona në të cilën vizatojmë. Në këtë udhëzues, programet do të kenë tashmë një variabël të formuar (më saktësisht objekt) *canvas*, e marrë si rezultat i një thirrje të funksionit ``pygamebg.open_window``.
+- Parametri *color* është ngjyra që ne përdorim për të vizatuar. Siç u tha më herët, një ngjyrë mund të specifikohet me emrin e saj (për shembull: kodi: `pg.Color ("black")`), ose si një tuple ose një listë e 3 elementeve (për shembull: kodi: `[ 255, 0, 0] `për të kuqe).
+- Parametri *drejtkëndësh* është një tupë ose një listë me katër elementë: matematikë: `(x, y, w, h)` ose: matematikë: `[x, y, w, h]`, që përshkruan një drejtkëndësh, siç u shpjegua më herët (koordinatat e kulmës së sipërme të majtë, gjerësia dhe lartësia e drejtkëndëshit).
+- Parametri *center* paraqet një pikë. Siç u përmend më herët, një pikë mund të specifikohet si një tuple (ose listë) e 2 elementeve, të cilat përfaqësojnë koordinatat e pikës në dritaren në të cilën ne vizatojmë.
+- Parametri *thickness* është trashësia e linjave që përdorim për të vizatuar. Në funksionet që shpjegojmë këtu, ky parametër është opsional dhe mund të harrohet.
 
-We will now see more detailed descriptions of the functions for drawing rectangles, ellipses, and circles. A brief example of one or two lines of code is given after each function description. You can run each of these examples by copying it to the program below (which doesn't draw anything for now). The pictures that follow the examples are obtained in that same way.
-
+Tani do të shohim përshkrime më të hollësishme të funksioneve për të vizatuar drejtkëndësha, eklipse dhe rrathët. Një shembull i shkurtër i një ose dy rreshtave të kodit jepet pas secilit përshkrim të funksionit. Ju mund të ekzekutoni secilën nga këto shembuj duke e kopjuar atë në programin më poshtë (i cili tani nuk vizaton asgjë). Fotografitë që pasojnë shembujt janë marrë në të njëjtën mënyrë.
 
 .. activecode:: pygame__drawing_primirives_def
     :nocodelens:
@@ -23,33 +22,33 @@ We will now see more detailed descriptions of the functions for drawing rectangl
 
     pygamebg.wait_loop()
 
-Drawing a rectangle
+Vizato një drejtkëndësh
 '''''''''''''''''''
 
-To draw a rectangle we use the function ``pg.draw.rect``, which has two forms:
+Për të vizatuar një drejtkëndësh ne përdorim funksionin ``pg.draw.rect``, i cili ka dy forma:
 
 .. code::
 
     pg.draw.rect(canvas, color, rectangle, thickness)
     pg.draw.rect(canvas, color, rectangle)
 
-We use the form without the *thickness* parameter when we want the rectangle's interior to be filled with the indicated color as well.
+Ne përdorim formularin pa parametrin *thickness* kur duam që brendësia e drejtkëndëshit të mbushet edhe me ngjyrën e treguar.
 
-For example, the first of the following two statements means:
+Për shembull, e para nga dy deklarimet e mëposhtme do të thotë:
 
-- draw a rectangle (function *rect*)
-- paint it black (parameter (0, 0, 0) specifies black color) 
-- The top-left vertex of the rectangle has coordinates (40, 80)
-- the width of the rectangle is 50 and the height is 30 pixels
-- only frame of the rectangle is to be drawn and the lines should be 3 pixels thick
+- vizatoni një drejtkëndësh (funksioni *rect*)
+- pikturojeni të zezë (parametri (0, 0, 0) specifikon ngjyrën e zezë)
+- Kulmi i majës së sipërme të drejtkëndëshit ka koordinata (40, 80)
+- gjerësia e drejtkëndëshit është 50 dhe lartësia 30 piksele
+- vetëm korniza e drejtkëndëshit duhet të vizatohet dhe linjat duhet të jenë të trasha 3 pixel
 
-The second statement means:
+Deklarimi e dytë do të thotë:
 
-- draw a rectangle (function *rect*)
-- paint it black (parameter pg.Color("black") also specifies black color) 
-- The top-left vertex of the rectangle has coordinates (140, 80)
-- the rectangle is to be 20 pixels both wide and high, so it will actually be a square
-- The square will be filled with color since there is no thickness parameter
+- vizatoni një drejtkëndësh (funksioni *rect*)
+- pikturojeni atë të zezë (parametri pg.Color ("black" gjithashtu specifikon ngjyrën e zezë)
+- Kulmi i majës së sipërme të drejtkëndëshit ka koordinata (140, 80)
+- drejtkëndëshi do të jetë 20 piksel i gjerë dhe i lartë, kështu që në të vërtetë do të jetë një katror
+- Sheshi do të mbushet me ngjyra pasi që nuk ka asnjë parametër të trashësisë
 
 .. activecode:: pygame__drawing_rectangles_def
     :passivecode: true
@@ -61,40 +60,40 @@ The second statement means:
    :width: 200px   
    :align: center 
 
-Drawing an ellipse
+Vizatimi i një elipsi
 ''''''''''''''''''
 
-To draw an ellipse, we use the function ``pg.draw.ellipse``, with or without the thickness parameter:
+Për të vizatuar një elips, p[rdorni funksionin``pg.draw.ellipse``, me apo pa parametrin e trashesisë:
 
 .. code::
 
     pg.draw.ellipse(canvas, color, rectangle, thickness)
     pg.draw.ellipse(canvas, color, rectangle)
 
-The *rectangle* parameter represents the rectangle the ellipse is inscribed in, and the other parameters have the same meaning as before. If we need it, we can calculate the center and major and minor semi-axes of the ellipse using the tuple :math:`(x, y, w, h)` or list :math:`[x, y, w, h]` that defines the rectangle. The coordinates of the center of the rectangle, which is also the center of the ellipse, are :math:`(x + w/2, y + h/2)`, and the major and minor semi-axes of the ellipse are :math:`w/2` and :math:`h/2`. So, for example, statement
+Parametri *retrangle* përfaqëson drejtkëndëshin në të cilin është shkruar elipsi, dhe parametrat e tjerë kanë të njëjtin kuptim si më parë. Nëse kemi nevojë për të, ne mund të llogarisim qendrën dhe gjysëm boshtet kryesore dhe të vogla të elipsës duke përdorur tuple: matematikë: `(x, y, w, h)` ose listën :math:`[x, y, w, h] `që përcakton drejtkëndëshin. Koordinatat e qendrës së drejtkëndëshit, i cili është gjithashtu qendra e elipsit, janë :math:`(x + w / 2, y + h / 2)`, dhe gjysmë-boshtet kryesore dhe të vogla të elipsit janë :math:`w / 2` dhe: matematikë:` h / 2`. Kështu, për shembull, deklarimi:
 
 .. activecode:: pygame__drawing_ellipse_def
     :passivecode: true
 
     pg.draw.ellipse(canvas, pg.Color("yellow"), (100, 160, 60, 40))
 
-draws a yellow filled ellipse. The center of the ellipse is the center of the specified rectangle, which is at point (130, 180). The horizontal semi-axis of the ellipse is 30 pixels long, and the vertical 20.
+vizaton një elips të verdhë të mbushur. Qendra e elipsit është qendra e drejtkëndëshit të specifikuar, e cila është në pikën (130, 180). Gjendja gjysmë-boshtore horizontale e elipsit është e gjatë 30 piksele, dhe 20 vertikale.
 
 .. image:: ../../_images/PyGame/drawing_ellipse.png
    :width: 200px   
    :align: center 
 
-Drawing a circle
+Viato një rreth
 ''''''''''''''''
 
-To draw a circle, we use the function ``pg.draw.circle``, with or without the thickness parameter:
+Përdor funksionin ``pg.draw.circle`` për të vizatuar një rreth, me ose pa parameter trashësie:
 
 .. code::
 
     pg.draw.circle(canvas, color, center, radius, thickness)
     pg.draw.circle(canvas, color, center, radius)
 
-The *center* parameter is a point representing the center of the circle, and the *radius* parameter is a number representing the radius of the circle in pixels. For example, the following statement draws a red circle, 3 pixels thick, of radius 50 pixels, whose center is at point (100, 100):
+Parametri *center* është një pikë që përfaqëson qendrën e rrethit, dhe parametri *raduis* është një numër që përfaqëson rrezen e rrethit në pixel. Për shembull, thënia e mëposhtme vizaton një rreth të kuq, 3 pixel të trashë, me rreze 50 pixel, qendra e të cilit është në pikën (100, 100):
 
 .. activecode:: pygame__drawing_circle_def
     :passivecode: true
@@ -105,28 +104,28 @@ The *center* parameter is a point representing the center of the circle, and the
    :width: 200px   
    :align: center 
 
-If the last parameter (stroke width 3) had been omitted, the interior of the circle would have been red as well.
+Nëse parametri i fundit (gjerësia e goditjes 3) do të ishte zhdukur, brendësia e rrethit do të ishte gjithashtu e kuqe.
 
-Drawing rectangles, ellipses and circles - questions
+Vizatimi i drejtkëndëshave, elipsave dhe rrathëve - pyetje
 ''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Check how much you understand and remember about these drawing functions:
+Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:
 
 .. mchoice:: pygame__drawing_quiz_circle_arglist
    :multiple_answers:
-   :answer_a: Top-left vertex coordinates
-   :answer_b: Radius
-   :answer_c: Center coordinates
-   :answer_d: Width and height
-   :answer_e: Color
+   :answer_a: Koordinatat e kulm-majës së sipërme
+   :answer_b: Rrezja
+   :answer_c: Koordinatat e qendrës
+   :answer_d: GJerësia dhe gjtësia
+   :answer_e: Ngjyra
    :correct: b, c, e
-   :feedback_a: Top-left vertex coordinates are specified when drawing an ellipse or a rectangle
-   :feedback_b: Correct
-   :feedback_c: Correct 
-   :feedback_d: Width and height are specified when drawing an ellipse or a rectangle
-   :feedback_e: Correct
+   :feedback_a: Koordinatat e kulmit të sipërm të majtë specifikohen kur vizatoni një elips ose një drejtkëndësh
+   :feedback_b: Saktë
+   :feedback_c: Saktë 
+   :feedback_d: Koordinatat e kulmit të sipërm të majtë specifikohen kur vizatoni një elips ose një drejtkëndësh...
+   :feedback_e: Saktë
 
-   What needs to be specified when drawing a circle?
+   Çfarë duhet të specifikohet kur vizatoni një rreth?
 
 .. mchoice:: pygame__drawing_quiz_circle_right_args
    :answer_a: pg.draw.circle(canvas, color, 100, 100, 30, 5)
@@ -134,40 +133,40 @@ Check how much you understand and remember about these drawing functions:
    :answer_c: pg.draw.circle(canvas, color, (100, 100, 30, 5))
    :answer_d: pg.draw.circle(canvas, color, (100, 100), (30, 5))
    :correct: b
-   :feedback_a: Try again
-   :feedback_b: Correct
-   :feedback_c: Try again
-   :feedback_d: Try again
+   :feedback_a: Provo përsëri
+   :feedback_b: Saktë
+   :feedback_c: Provo përsëri
+   :feedback_d: Provo përsëri
 
-   To draw a circle centered at point :math:`(100, 100)`, whose radius is :math:`30` pixels, using line :math:`5` pixel wide, which function call needs to be made?
+   Për të vizatuar një rreth me qendër në pikën :math:`(100, 100)`, rrezja e së cilës është :math:`30` piksele, duke përdorur linjën :math:` 5` pixel të gjerë, cili funksion i thirrjes duhet të bëhet?
 
 .. mchoice:: pygame__drawing_quiz_circle_opt_arg
-   :answer_a: the latter draws an ellipse whose semi-major and semi-minor axes equal r and 1.
-   :answer_b: the latter fills the circle interior with color.
-   :answer_c: the former draws a disk (filled circle), and the latter a circular line.
-   :answer_d: the former draws a circular line, and the latter a disk (filled circle).
+   :answer_a: kjo e fundit vizaton një elips, boshtet gjysmë të mëdha dhe gjysmë të vogla të së cilës janë të barabarta r dhe 1.
+   :answer_b: kjo e fundit mbush brendësinë e rrethit me ngjyra.
+   :answer_c: i pari vizaton një disk (rrethi të mbushur), dhe i dyti një vijë rrethore.
+   :answer_d: i pari vizaton një vijë rrethore, ndërsa i dyti një disk (rrethi i mbushur).
    :correct: c
-   :feedback_a: Try again
-   :feedback_b: Try again
-   :feedback_c: Correct
-   :feedback_d: Try again
+   :feedback_a: Provo përsëri
+   :feedback_b: Provo përsëri
+   :feedback_c: Saktë
+   :feedback_d: Provo përsëri
 
-   The difference between `pg.draw.circle(canvas, color, (cx, cy), r)` and `pg.draw.circle(canvas, color, (cx, cy), r, 1)` is that:
+   Dallimi midis `pg. pull.circle (canvas, color, (cx, cy), r)` dhe `pg. pull.circle (canvas, color, (cx, cy), r, 1)" është se:
 
 .. mchoice:: pygame__drawing_quiz_rect_args_1
-   :answer_a: Top-left vertex coordinates
-   :answer_b: Stroke width
-   :answer_c: Width
-   :answer_d: Height
-   :answer_e: Center coordinates
+   :answer_a: Koordinatat vertikale majtas
+   :answer_b: Gjerësia e goditjes
+   :answer_c: Gjerësi
+   :answer_d: Gjatësi
+   :answer_e: Koordinatat e qendrës
    :correct: e
-   :feedback_a: Try again
-   :feedback_b: Try again
-   :feedback_c: Try again
-   :feedback_d: Try again
-   :feedback_e: Correct
+   :feedback_a: Provo përsëri
+   :feedback_b: Provo përsëri
+   :feedback_c: Provo përsëri
+   :feedback_d: Provo përsëri
+   :feedback_e: Saktë
 
-   What is NOT specified when drawing a rectangle?
+   Cfarë nuk specifikohet kur vizatoni një drejtkëndësh?
 
 .. mchoice:: pygame__drawing_quiz_rect_args_2
    :answer_a: pg.draw.rect(canvas, color, 100, 100, 30, 50)
@@ -175,14 +174,14 @@ Check how much you understand and remember about these drawing functions:
    :answer_c: pg.draw.rect(canvas, color, (100, 100), 30, 50)
    :answer_d: pg.draw.rect(canvas, color, (100, 100, 30, 50))
    :correct: d
-   :feedback_a: Try again
-   :feedback_b: Try again
-   :feedback_c: Try again
-   :feedback_d: Correct
+   :feedback_a: Provo përsëri
+   :feedback_b: Provo përsëri
+   :feedback_c: Provo përsëri
+   :feedback_d: Saktë
 
-   To draw a rectangle whose top-left vertex is at point 
-   :math: `(100, 100)`, :math:`30` pixels wide and :math:`50` 
-   pixels high, which function call needs to be made?
+   Për të vizatuar një drejtkëndësh, kulmi i majtë i të cilit është në pikë
+    :math:`(100, 100)`, math: `30` pixel i gjerë dhe :math:` 50`
+    pixel të lartë, cili thirrje funksion duhet të bëhet?
 
 .. mchoice::  pygame__drawing_quiz_rect_args_3
    :answer_a: pg.draw.rect(canvas, color, (80, 80, 50, 80))
@@ -190,29 +189,29 @@ Check how much you understand and remember about these drawing functions:
    :answer_c: pg.draw.rect(canvas, color, (80, 80, 130, 160))
    :answer_d: pg.draw.rect(canvas, color, (80, 80), (50, 80))
    :correct: a
-   :feedback_a: Correct
-   :feedback_b: Try again
-   :feedback_c: Try again
-   :feedback_d: Try again
+   :feedback_a: Saktë
+   :feedback_b: Provo përsëri
+   :feedback_c: Provo përsëri
+   :feedback_d: Provo përsëri
 
-   To draw a rectangle whose top-left vertex is at point
-   :math:`(80, 80)`, and bottom-right vertex at point 
-   :math:`(130, 160)`, which function call needs to be made:
+   Për të vizatuar një drejtkëndësh, kulmi i majtë i të cilit është në pikë
+   :math:`(80, 80)`, dhe kulmi i djathte poshtë
+   :math:`(130, 160)`, cilin thirrje funksioni duhet të bëhet:
 
-Drawing by instructions
+Vizatimi sipas udhëzimeve
 '''''''''''''''''''''''
 
-In the following tasks, you can see what your program should draw by clicking the "Play task" button. To provide you necessary information to write the statements you need, detailed instructions with descriptions of the parameters are also given.
+Në detyrat e mëposhtme, mund të shihni se çfarë programi juaj duhet të vizatojë duke klikuar butonin "Luaj detyrën". Për t'ju siguruar informacionin e nevojshëm për të shkruar deklarimet që ju nevojiten, jepen gjithashtu udhëzime të hollësishme me përshkrime të parametrave.
 
-Keep in mind that before drawing you should paint the background with the appropriate color, for which you use the statement ``canvas.fill(pg.Color(...))`` (instead of the dots specify a color).
+Mbani në mend se para se të vizatoni duhet të pikturoni sfondin me ngjyrën e duhur, për të cilën përdorni thënien ``canvas.fill (pg.Color (...))`` (në vend të pikave specifikoni një ngjyrë).
 
 .. questionnote::
 
-    **Task - target:** 
+    **Detyrë - objektiv:** 
     
-    Draw a target on a white background using three filled circles. The centers of all three circles should be at the center of the window and all circles should be filled with color. First, draw a red circle of radius 100, then a blue one of radius 75, and then a green circle of radius 50 pixels.
-    
-What do you think, could these circles be drawn in a different order? If you are not sure what would happen if the order changed, give it a try.
+    Vizatoni një objektiv në një sfond të bardhë duke përdorur tre rrathë të mbushura. Qendrat e të tre rrathëve duhet të jenë në qendër të dritares dhe të gjitha rrathët duhet të jenë të mbushura me ngjyra. Së pari, vizatoni një rreth të kuq me rreze 100, pastaj një blu me rreze 75, dhe më pas një rreth jeshil me rreze 50 pixel.
+    
+Cfarë mendoni, a mund të tërhiqen këto rrathë në një renditje tjetër? Nëse nuk jeni të sigurt se çfarë do të ndodhte nëse detyra do ndryshonte, provojeni.
 
 .. activecode:: PyGame__drawing_target
    :nocodelens:
@@ -223,20 +222,20 @@ What do you think, could these circles be drawn in a different order? If you are
 
 .. questionnote::
 
-    **Task - duckling:** 
+    **Detyrë - rosa:** 
     
-    On a green background, draw a duckling as a cartoon character. The drawing consists of the following parts:
-    
-    - Head: a yellow filled ellipse, inscribed in a 320 x 300 pixel rectangle, with the top left vertex at point (40, 50)
-    - Head border: a black ellipse framing the previous ellipse with a line of width 1
-    - Left eye: a black filled ellipse, inscribed in a 40 x 40 pixel rectangle with the top left vertex at point (130, 130)
-    - Right eye: a black filled ellipse, inscribed in a 40 x 40 pixel rectangle, with the top left vertex at point (280, 120)
-    - Mouth (beak): a red filled ellipse, inscribed in a 120 x 140 pixel rectangle, with the top left vertex at point (200, 170)
-    - Mouth border: a black ellipse framing the previous ellipse with a line of width 1
+    Në një sfond të gjelbër, vizatoni një rosë si një karakter vizatimor. Vizatimi përbëhet nga pjesët e mëposhtme:
+    
+    - Koka: një elitë e verdhë e mbushur, e gdhendur në një drejtkëndësh 320 x 300 pixel, me kulm të sipërm të majtë në pikën (40, 50)
+    - Kufiri i kokës: një elitë e zezë që kornizon elipsën e mëparshme me një vijë gjerësi 1
+    - Syri i majtë: një elips i mbushur me të zezë, i gdhendur në një drejtkëndësh me pixel 40 x 40 me kulm të sipërm të majtë në pikën (130, 130)
+    - Syri i djathtë: një elips i mbushur me të zezë, i gdhendur në një drejtkëndësh me pixel 40 x 40, me kulm të sipërm të majtë në pikën (280, 120)
+    - Goja (sqepi): një elips i mbushur me të kuqe, të gdhendur në një drejtkëndësh me pixel 120 x 140, me kulm të sipërm të majtë në pikën (200, 170)
+    - Kufiri i gojës: një elitë e zezë që kornizon elipsën e mëparshme me një vijë gjerësi 1
 
-Here we have more freedom with the drawing order, but we still need to follow some order. Try to explain which parts of the image need to be drawn exactly in this order, and which need not.
+Këtu kemi më shumë liri me rendin e vizatimit, por prapë na duhet të ndjekim njëfarë rendi. Mundohuni të shpjegoni se cilat pjesë të figurës duhet të vizatohen saktësisht në këtë renditje, dhe cilat nuk duhet.
 
-Note that the eyes are inscribed in rectangles that are actually squares. How (thanks to this) can we draw the same eyes in a different way?
+Vini re se sytë janë të gdhendur në drejtkëndësha që janë në të vërtetë katrorë. Si (falë kësaj) mund t'i vizatojmë të njëjtat sy në një mënyrë tjetër?
 
 .. activecode:: PyGame__drawing_duckling
    :nocodelens:

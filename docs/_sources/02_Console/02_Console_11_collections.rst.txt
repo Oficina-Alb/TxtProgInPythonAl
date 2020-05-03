@@ -1,22 +1,22 @@
-Data collections
+koleksione ata
 ================
 
-In the previous lesson, we used a tuple to perform some commands (computing and printing) over each value from the tuple using the *for* loop.
+Në mësimin e mëparshëm, ne kemi përdorur një tuple për të kryer disa komanda (llogaritjen dhe shtypjen) mbi secilën vlerë nga tuple duke përdorur loop *for*.
 
-Tuples are also a type of data in Python, such as numbers, strings, or logical values. The types *int* (integer), *float* (real number), *str* (string) and *bool* (logical value) are **basic types**. The difference between tuples and basic types is that the value of a tuple consists of multiple values of a simpler type.
+Tuples janë gjithashtu një lloj i të dhënave në Python, të tilla si numrat, vargjet ose vlerat logjike. Llojet *int* (numër i plotë), *float* (numri real), *str* (vargu) dhe *bool* (vlera logjike) janë **llojet themelore**. Dallimi midis tuples dhe llojeve themelore është se vlera e një tuple përbëhet nga vlera të shumta të një lloji më të thjeshtë.
 
-Each value that consists of multiple values of a simpler type will be called a **collection**. The data the collection consists of are called **collection elements**.
+Secila vlerë që përbëhet nga vlera të shumta të një lloji më të thjeshtë do të quhet një **koleksion**. Të dhënat që koleksioni përbëhet quhen **elementë të mbledhjes**.
 
-The only collections we have seen so far are tuples, which we will now get to know in more detail. We will see some more types of collections very soon.
+Koleksionet e vetme që kemi parë deri më tani janë tuples, të cilat tani do t'i njohim më në detaje. Do të shohim edhe disa lloje të tjera koleksionesh shumë shpejt.
 
 
-Tuple and its elements
+Tuple dhe elementet e saj
 ----------------------
 
-Packing and unpacking tuples
+Paketimi dhe paketimi i paketave
 ''''''''''''''''''''''''''''
 
-We can fit the whole tuple into a variable, as we do with values of a simpler type. In the following example, the *temperatures* variable contains the entire tuple as its value.
+Ne mund ta vendosim tërë tufën në një ndryshore, ashtu siç veprojmë me vlerat e një lloji më të thjeshtë. Në shembullin e mëposhtëm, variabli *temperatura* përmban tërë vlerësimin si vlerë të saj.
 
 .. activecode:: console__collections_tuple1
     
@@ -24,7 +24,7 @@ We can fit the whole tuple into a variable, as we do with values of a simpler ty
     for t in temperatures:
         print(t)
         
-This kind of value assignment (as in the first line of the program) is known as tuple packing. The reverse assignment is also possible: when we know how many elements are there in a tuple, we can assign the tuple elements to the corresponding number of variables:
+Ky lloj i caktimit të vlerës (si në rreshtin e parë të programit) njihet si paketim tuple. Caktimi i kundërt është gjithashtu i mundur: kur e dimë se sa elementë ka në një tufë, ne mund t'i caktojmë elementët tuple në numrin përkatës të ndryshoreve:
 
 .. activecode:: console__collections_tuple2
     
@@ -34,10 +34,10 @@ This kind of value assignment (as in the first line of the program) is known as 
     print(middle_name)
     print(last_name)
     
-Statements like ``first_name, middle_name, last_name = full name`` are called tuple unpacking.
+Deklaratat si ``first_name, middle_name, last_name = emri i plotë`` quhen paketim tuple.
 
 
-The same effect is achieved by a related statement
+I njëjti efekt arrihet nga një deklaratë e lidhur
 
 .. code::
     
@@ -45,10 +45,12 @@ The same effect is achieved by a related statement
     
 Tuples do not appear in this statement, which is called multiple value assignment.
 
-Tuple elements and indices
+Tuples nuk paraqiten në këtë deklaratë, e cila quhet detyrë me shumë vlera.
+
+Elementet dhe indekset
 ''''''''''''''''''''''''''
 
-We can also get the elements of a tuple by writing the name of the tuple, and behind it in square brackets the sequence number of the element we want. It should be noted here that counting the elements of any collection starts from zero. For example:
+Ne gjithashtu mund të marrim elementet e një tuple duke shkruar emrin e tuples, dhe pas saj në kllapa katror numrin rendor të elementit që duam. Këtu duhet të theksohet se numërimi i elementeve të çdo koleksioni fillon nga zero. Për shembull:
 
 .. activecode:: console__collections_index
 
@@ -59,10 +61,10 @@ We can also get the elements of a tuple by writing the name of the tuple, and be
 
 The sequence number of an element is also called the **index** of the element. if the tuple has *n* elements, we can use the numbers 0, 1, 2, ... *n-1* as indices. In the example above, *n* = 3, so indices 0, 1, and 2 are allowed. Trying to use an index outside these bounds causes an error (try it).
 
-Tuple length
+Gjatesia e Tuple
 ''''''''''''
 
-The number of elements of a tuple can be obtained by using the *len* function.
+Numri i elementeve të një tuple mund të merret duke përdorur funksionin *len*.
 
 .. activecode:: console__collections_len1
     
@@ -70,17 +72,17 @@ The number of elements of a tuple can be obtained by using the *len* function.
     n = len(basic_colors)
     print(n)
     
-or shorter:
+ose më shkurt:
 
 .. activecode:: console__collections_len2
     
     print(len(("Red", "Green", "Blue")))
     
-Note the double brackets (one for function and the other for tuple).
+Vini re kllapat e dyfishta (njëra për funksionin dhe tjetra për tufën).
 
-Through these examples we have seen that tuple elements can be numbers or strings. In fact, the tuple elements can be of any type, basic or complex.
+Përmes këtyre shembujve kemi parë që elementët tuple mund të jenë numra ose vargje. Në fakt, elementët tuple mund të jenë të çdo lloji, themelor ose kompleks.
 
-For example, it is possible to create a tuple of tuples:
+Për shembull, është e mundur të krijoni një tufë prej tuples:
 
 .. activecode:: console__collections_len3
     
@@ -93,41 +95,40 @@ For example, it is possible to create a tuple of tuples:
     t2 = ((1, 2, 3), ) # last comma matters
     print(len(t2))
     
-Tuple *t* contains two simpler tuples, therefore the number of its elements is 2.
+Tuple *t* përmban dy tupla më të thjeshta, prandaj numri i elementëve të tij është 2.
 
-In Python, the elements of a tuple can be of different types, and we will see such examples latter.
+Në Python, elementët e një tuple mund të jenë të llojeve të ndryshme, dhe shembuj të tillë do t'i shohim më vonë.
 
 
-Range
+Vargu
 -----
 
-Range is another type of collection. Unlike tuple, the elements of this collection are always integers.
+Gama është një lloj tjetër i koleksionit. Për dallim nga tuple, elementët e kësaj koleksioni janë gjithmonë numër të plotë.
 
-Range can be defined in several ways.
+Gama mund të përcaktohet në disa mënyra.
 
-
-Range with one argument
+Varg me 1 argument
 '''''''''''''''''''''''
 
-The simplest form of specifying a range is *range(n)*, where *n* is a positive integer. The *range(n)* range contains integers from 0 to *n*, not including *n*. For example, *range(5)* contains values 0, 1, 2, 3, 4.
+Forma më e thjeshtë për të specifikuar një gamë është *varg (n)*, ku *n* është një numër i plotë pozitiv. Varg *(n)* Varg * përmban numër të plotë nga 0 në *n*, duke mos përfshirë *n*. Për shembull, *diapazoni (5)* përmban vlerat 0, 1, 2, 3, 4.
 
 .. activecode:: console__collections_range_n_i
     
     for i in range(5):
         print(i)
         
-We see that in the *for* statement, we can use range in the same way as the tuple. In fact, any collection may be in place of the tuple or range.
+Ne shohim që në deklarimin *for*, ne mund të përdorim gamën në të njëjtën mënyrë si tuple. Në fakt, çdo koleksion mund të jetë në vend të tufës ose diapazonit.
 
-Since the *range(n)* range contains a total of *n* values, this range is often used when a command only needs to be repeated *n* times in the same way:
+Meqenëse diapazoni *varg (n)* përmban gjithsej vlera *n*, ky diapazon përdoret shpesh kur vetëm një komandë duhet të përsëritet *n* herë në të njëjtën mënyrë:
 
 .. activecode:: console__collections_range_n
     
     for i in range(5):
         print("Hello!")
 
-The *print* function was executed for each value *i* of sequence 0, 1, 2, 3, 4, but in this example, those values are not used in the loop body. Thus, we achieved that the *print* function was executed 5 times in exactly the same way, that is, it was repeated 5 times.
+Funksioni *print* u ekzekutua për secilën vlerë *i* të sekuencës 0, 1, 2, 3, 4, por në këtë shembull, ato vlera nuk përdoren në trupin e lakut. Kështu, kemi arritur që funksioni *print* të ishte ekzekutuar 5 herë në të njëjtën mënyrë, d.m.th., është përsëritur 5 herë.
 
-Another common use of this type of range is to get through all the elements of a tuple. In such case, the loop variable serves as an index. This way of going through the values of the tuple is suitable when besides these tuple values in the loop we also need their sequence numbers (this way of going through the collection is more common in other programming languages than Python).
+Një tjetër përdorim i zakonshëm i këtij lloji të gamës është të kapni të gjithë elementët e një tuple. Në këtë rast, variabli i loop shërben si një indeks. Kjo mënyrë për të kaluar vlerat e tuple është e përshtatshme kur përveç këtyre vlerave tuple në lak na duhen edhe numrat e sekuencave të tyre (kjo mënyrë për të kaluar nëpër koleksion është më e zakonshme në gjuhët e tjera të programimit sesa Python).
 
 
 .. activecode:: console__collections_for_range_len
@@ -138,27 +139,27 @@ Another common use of this type of range is to get through all the elements of a
         print('Color #', i, 'is', colors[i])
     
 
-Range with two arguments
+Varg me 2 argumente
 ''''''''''''''''''''''''
 
-When we need a sequence of consecutive integers that does not start at zero, we set the range as *range(a, b)*, where *a* and *b* are integers such that :math:`a<b`. Then the sequence is made up of integers from *a* to *b*, not including *b*. For example, the range *range(1, 6)* gives the sequence of numbers 1, 2, 3, 4, 5:
+Kur kemi nevojë për një sekuencë të numrave të plotë të njëpasnjëshëm që nuk fillojnë në zero, ne e vendosim rangun si *string (a, b)*, ku *a* dhe *b* janë numra të plotë të tillë që :math:`a <b`. Atëherë sekuenca përbëhet nga numra të plotë nga *a* në *b*, duke mos përfshirë *b*. Për shembull, vargu *(1, 6)* jep rendin e numrave 1, 2, 3, 4, 5:
 
 .. activecode:: console__collections_range_a_b
     
     for i in range(1, 6):
         print(i)
 
-Range with three arguments
+Varg me tre argumente
 ''''''''''''''''''''''''''
 
-The third form of specifying a range has three arguments:
+Forma e tretë e specifikimit të një game ka tre argumente:
 
 .. activecode:: console__collections_range_a_b_c
     
     for i in range(2, 12, 2):
         print(i)
 
-The range values given by *range(a, b, c)* go from *a* to *b* (not including *b*) with the step *c*, i.e. values change by *c*. Step *c* can also be negative:
+Vlerat e diapazonit të dhënë nga *diapazoni (a, b, c)* shkojnë nga *a* në *b* (duke mos përfshirë *b*) me hapin *c*, vlerat d.m.th ndryshojnë me *c*. Hapi *c* gjithashtu mund të jetë negativ:
 
 .. activecode:: console__collections_range_a_b_cneg
     
@@ -166,17 +167,17 @@ The range values given by *range(a, b, c)* go from *a* to *b* (not including *b*
         print(i)
 
 
-We can convert a range into a tuple (the opposite is not possible, nor is it ever needed):
+Ne mund ta shndërrojmë një varg në një tufë (e kundërta nuk është e mundur, as nuk është e nevojshme ndonjëherë):
 
 .. activecode:: console__collections_range_to_tuple
     
     a = tuple(range(2, 12, 2))
     print(len(a))
 
-String as a collection
+Vargu si koleksion
 ----------------------
 
-We have used strings as the basic type so far, but strings can also be used as collections of individual characters. We can traverse string characters using a loop and retrieve individual characters using indices:
+Ne kemi përdorur vargje si lloji themelor deri më tani, por vargjet mund të përdoren gjithashtu si koleksione të karaktereve individuale. Ne mund të përshkojmë karakteret e vargjeve duke përdorur një lak dhe të marrim karaktere individuale duke përdorur indekset:
 
 
 .. activecode:: console__collections_str_as_collection
@@ -186,14 +187,14 @@ We have used strings as the basic type so far, but strings can also be used as c
     for c in s:
         print(c)
 
-Functions on collections
+Funksionet në koleksione
 ------------------------
 
-There are many functions in Python that accept a collection as an argument. One of them is the *len* function, which we have already met. Some other commonly used functions that apply to collections are:
+Ka shumë funksione në Python që pranojnë një koleksion si një argument. Një prej tyre është funksioni *len*, të cilin ne kemi përmbushur tashmë. Disa funksione të tjera që përdoren zakonisht për koleksionet janë:
 
-- *min*, a function that gives the smallest element of a collection
-- *max*, a function that gives the largest element of a collection
-- *sum*, a function that gives the sum of the elements of a collection
+- *min*, një funksion që jep elementin më të vogël të një koleksioni
+- *max*, një funksion që jep elementin më të madh të një koleksioni
+- *sum*, një funksion që jep shumën e elementeve të një koleksioni
 
 .. activecode:: console__collections_aggregation
     
@@ -219,9 +220,9 @@ There are many functions in Python that accept a collection as an argument. One 
     # elements of s are not numbers, so uncommenting the next statement would cause an error
     # print('sum(s) =', sum(s)) 
 
-The values of the functions *len*, *sum*, *min*, *max* for the range can also be determined from the parameters of the range. Also, *min* and *max* are not commonly applied to a string (they return character with smallest and biggest code respectively). Here, we are just pointing out that all these functions accept various kinds of collections as their argument (including range and string).
+Vlerat e funksioneve *len*, *sum*, *min*, *max* për diapazonin gjithashtu mund të përcaktohen nga parametrat e diapazonit. Gjithashtu, *min* dhe *max* nuk zbatohen zakonisht në një varg (ata kthehen karakter me përkatësisht kodin më të vogël dhe më të madh). Këtu, ne thjesht po theksojmë se të gjitha këto funksione pranojnë lloje të ndryshme koleksionesh si argumentin e tyre (përfshirë gamën dhe vargun).
 
-Questions
+Pyetj
 '''''''''
 
 .. mchoice:: console__collections_quiz_tuple_unpack
@@ -229,13 +230,13 @@ Questions
    :answer_b: 2
    :answer_c: 20
    :answer_d: 3
-   :feedback_a: Try again
+   :feedback_a: Provo përsëri
    :correct: c
-   :feedback_b: Try again
-   :feedback_c: Correct
-   :feedback_d: Try again
+   :feedback_b: Provo përsëri
+   :feedback_c: Saktë
+   :feedback_d: Provo përsëri
 
-   What does the following program print?
+   Çfare printon programi i mëposhtëm?
    
    .. code::
    
@@ -249,12 +250,12 @@ Questions
    :answer_c: a program error occurs
    :answer_d: 3
    :correct: b
-   :feedback_a: Try again
-   :feedback_b: Correct
-   :feedback_c: Try again
-   :feedback_d: Try again
+   :feedback_a: Provo përsëri
+   :feedback_b: Saktë
+   :feedback_c: Provo përsëri
+   :feedback_d: Provo përsëri
 
-   What does the following program print?
+   Çfare printon programi i mëposhtëm?
    
    .. code::
    
@@ -268,12 +269,12 @@ Questions
    :answer_c: range(3)
    :answer_d: range(1, 3)
    :correct: b
-   :feedback_a: Try again
-   :feedback_b: Correct
-   :feedback_c: Try again
-   :feedback_d: Try again
+   :feedback_a: Provo përsëri
+   :feedback_b: Saktë
+   :feedback_c: Provo përsëri
+   :feedback_d: Provo përsëri
 
-   Which range contains just values 1, 2, 3?
+   Cili varg përmban vlerat 1, 2, 3?
 
 .. mchoice:: console__collections_quiz_range2
    :answer_a: 5
@@ -281,29 +282,29 @@ Questions
    :answer_c: 9
    :answer_d: 10
    :correct: a
-   :feedback_a: Correct
-   :feedback_b: Try again
-   :feedback_c: Try again
-   :feedback_d: Try again
+   :feedback_a: Saktë
+   :feedback_b: Provo përsëri
+   :feedback_c: Provo përsëri
+   :feedback_d: Provo përsëri
 
-   How many values does range(1, 10, 2) contain?
+   Sa vlera përmban vargu(1, 10, 2)?
 
 .. dragndrop:: console__collections_quiz_range_len
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: 5|||range(5)
     :match_2: 0|||range(3, 3)
     :match_3: 3|||range(1, 4)
     :match_4: 1|||range(3, 6, 3)
 
-    Pair ranges with the number of elements.
+    Lidh vargun me numrin e elementëve.
 
 
 .. dragndrop:: console__collections_quiz_range_values
-    :feedback: Try again!
+    :feedback: Provo përsëri!
     :match_1: 3, 4, 5|||range(3, 6)
     :match_2: 0, 1, 2|||range(3)
     :match_3: 3, 1|||range(3, -1, -2)
     :match_4: 3, 2, 1, 0, -1|||range(3, -2, -1)
     :match_5: 3|||range(3, 6, 3)
 
-    Pair ranges with values.
+    Lidh vargun me vlerat.
