@@ -78,8 +78,8 @@ Shko në fund të rrugës dhe merr vetëm një top
    }
 
 .. reveal:: Karel_if__take_first_ball_only_reveal
-    :showtitle: Hint
-    :hidetitle: Hide hint
+    :showtitle: Ndihmë e vogël
+    :hidetitle: Fshih ndihmën
     
     Ne kemi filluar një zgjidhje këtu. Ju pritet të plotësoni deklarimet *if* me kushte të përshtatshme.
     
@@ -467,7 +467,7 @@ Devijim
    
 .. reveal:: Karel_if__p1_left_p2_right_p3_forward_reveal
     :showtitle: Ndihma
-    :hidetitle: FSHIH NDIHMËN
+    :hidetitle: fshih ndihmën
 
     Instruksione për një zgjidhje të mundshme:
     
@@ -510,7 +510,7 @@ Devijim
             pick_ball()
 
 Shko majtas sa herë të mundesh
-''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''
 
 .. questionnote::
 

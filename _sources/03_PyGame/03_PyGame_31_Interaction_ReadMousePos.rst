@@ -1,5 +1,5 @@
 Leximi i pozicionit të mouse
-----------------------
+-----------------------------
 
 Në PyGame, ekziston një mënyrë e thjeshtë për të lexuar gjendjen aktuale të mouse. Të dhënat për të cilat ne zakonisht interesohen më shumë janë pozicioni i mouse dhe butonat që shtypen. Në këtë mësim do të përdorim leximin e pozicionit të mouse, dhe në butonat e mouse tjetër. Përveç pozicionit dhe shtyp butonin, ka informacione të tjera rreth mouse që mund të marrim, por ne nuk do ta bëjmë atë këtu. Të interesuarit mund të gjejnë më shumë detaje për shembull `këtu <https://www.pygame.org/docs/ref/mouse.html>` __.
 
@@ -65,8 +65,8 @@ Kjo vonesë eliminohet lehtësisht duke rritur shkallën e kornizës (duke tregu
 .. questionnote::
 
     **Detyrë - drejt miut me gjurmë:** Kopjoni programin e mëparshëm dhe modifikojeni në mënyrë që topi të lëshojë një gjurmë gri, si në shembullin (butoni "Luaj lojën").
-    
-**Ndihmë: ** Lëvizja e topit është e njëjtë si në shembullin e mëparshëm. Për të bërë një gjurmë, duhet të ruajmë një listë të disa pozicioneve të mëparshme (kemi përdorur 20) të topit.
+   
+    **Ndihmë:** Lëvizja e topit është e njëjtë si në shembullin e mëparshëm. Për të bërë një gjurmë, duhet të ruajmë një listë të disa pozicioneve të mëparshme (kemi përdorur 20) të topit.
 
 Kur llogaritim një gjendje të re, ne shtojmë pozicionin më të fundit në listë, dhe nëse lista është bërë shumë e gjatë, ne fshijmë pozicionin më të vjetër.
 

@@ -7,7 +7,7 @@ Ushtrime
 ------------------
 
 Tre herë lart dhe poshtë
-'''''''''''''''''''''''
+'''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -81,7 +81,7 @@ Përfundoni programin, duke marrë parasysh që sporteli në *for* deklarimet q�
           turn_left()              # turn east
 
 Sill të gjithë topat nga të gjithë fushat
-''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -145,8 +145,8 @@ Plotëso programin.
    }
 
 .. reveal:: Karel_for_fetch_from_matrix_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
+   :showtitle: Zgjidhja
+   :hidetitle: Fshih zgjidhjen
 
    .. activecode:: Karel_for_fetch_from_matrix_solution
       :passivecode: true
@@ -173,9 +173,8 @@ Plotëso programin.
       for i_ball in range(12):     # drop all the balls
           drop_ball()
 
-
- Loop tresh
-'''''''''''
+Loop tresh
+'''''''''''''
 
 .. questionnote::
 
@@ -252,7 +251,7 @@ Dallimi i vetëm (krahasuar me detyrën e mëparshme) është se deklarim tani *
 
 
 Ngjitje dhe zbritje
-''''''''''''''''''
+'''''''''''''''''''''''
 
 .. questionnote::
 
@@ -307,8 +306,8 @@ Tani kemi nevojë për dy sythe njëra pas tjetrës (jo të loops). Në lakin e 
    }
 
 .. reveal:: Karel_for_stairs_constant_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
+   :showtitle: Zgjidhja
+   :hidetitle: Fshih zgjidhjen
 
    .. activecode:: Karel_for_stairs_constant_solution
       :passivecode: true
@@ -386,9 +385,9 @@ Një mënyrë e mirë për të zgjidhur këtë detyrë është të filloni nga z
    }
 
 .. reveal:: Karel_for_stairs_and_balls_constant_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
-
+   :showtitle: Zgjidhja
+   :hidetitle: Fshih zgjidhjen
+   
    .. activecode:: Karel_for_stairs_and_balls_constant_solution
       :passivecode: true
       

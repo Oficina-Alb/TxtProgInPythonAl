@@ -1,5 +1,5 @@
 Funksione matematike - Ushtrime
-=========================
+=================================
 
 Le të praktikojmë duke përdorur funksionet matematikore që kemi mësuar.
 

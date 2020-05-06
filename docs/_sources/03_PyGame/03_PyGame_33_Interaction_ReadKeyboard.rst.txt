@@ -1,16 +1,16 @@
 Leximi i tastierës
-----------------
+--------------------
 
 Përvetësimi i informacionit rreth tasteve në tastierë është shumë i ngjashëm me leximin e butonave të mouse. Funksioni ``pg.key.get_pressed()`` kthen një tuple, elementët e të cilit përdoren si vlera logjike, duke treguar për secilin tast në tastierë nëse aktualisht është duke u shtypur apo jo.
 
 Për shkak se tastiera ka shumë më shumë çelësa se mouse, përdorimi i indekseve 0, 1, 2, etj për disa çelësa do të ishte jopraktik. Për të mos ditur se cili indeks në tuple korrespondon me cilin çelës, libraria e PyGame përmban konstanta të emërtuara që ne përdorim si indeks. Për shembull, konstantet ``pg.K_LEFT``, ``pg.K_RIGHT``, ``pg.K_UP``, ``pg.K_DOWN`` lidhen me shigjetat e përdorura shpesh. Për butonin e hapësirës është ``pg.K_SPACE``, ndërsa shkronjat, për shembull *a*, *b*, *c* kanë konstantet korrespondente ``pg.K_a``, ``pg.K_b``, ``pg .K_c`` etj. Listën e plotë e gjeni këtu `here <https://www.pygame.org/docs/ref/key.html>`__ .
  
 Examples and tasks
-''''''''''''''''''
+'''''''''''''''''''
 
 .. questionnote::
-
-    **Shembull - Anije kozmike: ** Në këtë shembull, ne kemi një imazh të një anije kozmike, të cilën e lëvizim majtas dhe djathtas në përputhje me tastet e shigjetës së shtypur. Përveç kësaj, ne mund të zjarrmë nga anija duke shtypur tastin e shiritit hapësinor.
+ 
+    **Shembull - Anije kozmike** Në këtë shembull, ne kemi një imazh të një anije kozmike, të cilën e lëvizim majtas dhe djathtas në përputhje me tastet e shigjetës së shtypur. Përveç kësaj, ne mund të zjarrmë nga anija duke shtypur tastin e shiritit hapësinor.
     
 Së pari, kushtojini vëmendje pjesës së theksuar të kodit me një sfond më të lehtë (linjat 23-37). Kjo pjesë është e re këtu, dhe gjithashtu është komentuar më hollësisht në vetë kodin.
 
@@ -30,10 +30,9 @@ Pra, pasi të lexojmë statusin e të gjithë çelësave dhe ta vendosim në tup
 
 .. questionnote::
 
-   **Detyra - lundrimi:**
+ **Detyra - lundrimi:**
     
-     Plotësoni programin e mëposhtëm në mënyrë që 4 çelësat e shigjetave të kontrollojnë rrethin e verdhë, si në shembull. Rrethi nuk duhet të lëvizë nëse nuk shtypen shigjeta dhe lëvizin një piksel në drejtim të shigjetave që shtypen (shigjetat e kundërta anulojnë njëra-tjetrën jashtë).
-    
+Plotësoni programin e mëposhtëm në mënyrë që 4 çelësat e shigjetave të kontrollojnë rrethin e verdhë, si në shembull. Rrethi nuk duhet të lëvizë nëse nuk shtypen shigjeta dhe lëvizin një piksel në drejtim të shigjetave që shtypen (shigjetat e kundërta anulojnë njëra-tjetrën jashtë).   
 
 .. activecode:: PyGame__interact_navigtate1
     :nocodelens:

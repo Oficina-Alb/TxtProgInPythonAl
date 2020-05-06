@@ -10,7 +10,7 @@ Në mënyrë që të afrohemi në krijimin e imazheve që ne hartojmë vetë, m�
 Përveç që kanë nevojë për pak llogaritje, vizatimet në detyrat e mëposhtme kanë edhe më shumë detaje, kështu që duhet pak më shumë për t’i bërë ato.
 
 Gardh
-'''''
+'''''''
 
 Në këtë detyrë, leximi i koordinatës :math:`x` është i kufizuar në seleksionin e parë të gardhit dhe hapësirën e parë. Të gjitha koordinatat e tjera të nevojshme mund të llogariten.
 
@@ -88,7 +88,7 @@ Në këtë shembull, koordinatat e pikave në këmbën e djathtë nuk mund të l
           :includesrc: src\PyGame\1_Drawing\4_ByGrid_Additional\stickman.py
 
 Mace
-'''
+'''''''
 
 Veshët e kësaj mace mund të përshkruhen si trekëndësha të mbushur. Ndërsa veshët janë ngjitur në kokë, dy vertikale të secilit trekëndësh mund të zgjidhen me më shumë liri (mjafton t'i vendosni ato diku brenda rrethit të kokës). Përveç dy trekëndëshave që përfaqësojnë veshët, kemi gjithashtu:
 

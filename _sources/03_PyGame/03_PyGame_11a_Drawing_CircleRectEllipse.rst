@@ -1,5 +1,5 @@
 Vizatimi i drejtkëndëshave, eklipse dhe rrathëve
------------------------------------------
+--------------------------------------------------
 
 Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me ``pg.pull`. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:
 
@@ -23,7 +23,7 @@ Tani do të shohim përshkrime më të hollësishme të funksioneve për të viz
     pygamebg.wait_loop()
 
 Vizato një drejtkëndësh
-'''''''''''''''''''
+'''''''''''''''''''''''''''
 
 Për të vizatuar një drejtkëndësh ne përdorim funksionin ``pg.draw.rect``, i cili ka dy forma:
 
@@ -142,9 +142,9 @@ Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:
 
 .. mchoice:: pygame__drawing_quiz_circle_opt_arg
    :answer_a: kjo e fundit vizaton një elips, boshtet gjysmë të mëdha dhe gjysmë të vogla të së cilës janë të barabarta r dhe 1.
-   :answer_b: kjo e fundit mbush brendësinë e rrethit me ngjyra.
-   :answer_c: i pari vizaton një disk (rrethi të mbushur), dhe i dyti një vijë rrethore.
-   :answer_d: i pari vizaton një vijë rrethore, ndërsa i dyti një disk (rrethi i mbushur).
+   :answer_b: kjo e fundit mbush brendësinë e rrethit me ngjyra.
+   :answer_c: i pari vizaton një disk (rrethi të mbushur), dhe i dyti një vijë rrethore.
+   :answer_d: i pari vizaton një vijë rrethore, ndërsa i dyti një disk (rrethi i mbushur).
    :correct: c
    :feedback_a: Provo përsëri
    :feedback_b: Provo përsëri

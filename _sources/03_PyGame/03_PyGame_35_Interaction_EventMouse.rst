@@ -1,5 +1,5 @@
 Ngjarjet e mouse
-------------
+-----------------
 
 Në shembullin "ndërprerës" kemi treguar se si mund të reagojmë në një program kur përdoruesi shtyp një buton të mouse. Edhe pse për përdoruesit një klik duket si një veprim i vetëm, kemi parë që për kompjuter është një sekuencë ngjarjesh që fillon me një ngjarje të tipit *pg.MOUSEBUTTONDOWN*.
 
@@ -21,7 +21,7 @@ Disa nga të dhënat shtesë të ngjarjeve të përfshira në *pg.MOUSEMOTION* o
 - event.buttons - një listë me tre elementë vlerash logjike, të cilat përcaktojnë për secilën nga tre butonat e mouse (0 - majtas, 1 - të mesëm, 2 - djathtas) nëse është shtypur gjatë lëvizjes së mouse.
 
 Klikoni në përpunim - ushtrime
-''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''
 
 Ndoshta nuk keni vërejtur që në programin "switch" nga mësimi i kaluar, drita mund të ndizet dhe fiket duke klikuar ndonjë buton të mouse. Kjo për shkak se i njëjti lloj ngjarje gjenerohet për secilën buton të miut, dhe ne nuk kemi kontrolluar se cili buton është shtypur kur ndodhi ngjarja.
 
@@ -84,7 +84,7 @@ Ndoshta nuk keni vërejtur që në programin "switch" nga mësimi i kaluar, drit
     # finish the program
 
 Evente të tjera të mouse
-''''''''''''''''''
+'''''''''''''''''''''''''
 
 Siç u përmend në fillim të këtij mësimi, një program mund t'i përgjigjet gjithashtu lëshimit të butonit të miut dhe ngjarjeve të lëvizjes së mouse. Për ta bërë këtë, është e nevojshme të krahasoni vlerën e *event.type* me konstantet *pg.MOUSEBUTTONUP* dhe *pg.MOUSEMOTION*. Më poshtë janë detyrat ku mund ta provoni.
 
@@ -136,10 +136,6 @@ Siç u përmend në fillim të këtij mësimi, një program mund t'i përgjigjet
         #     in the mouse_pos variable, remember the current position of the mouse
 
     pygamebg.frame_loop(30, new_frame, handle_event)
-
-
-
-
 
 
 .. questionnote::

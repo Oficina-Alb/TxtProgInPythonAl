@@ -1,5 +1,5 @@
 Zgjidhen detyra të shumta menjëherë
-============================
+======================================
 
 Duke gjykuar nga programet që kemi parë deri më tani, mund të mendohet se duhet të shkruhet një program special për secilin, madje edhe një detyrë paksa e ndryshme. Nëse do të ishte kështu, programimi do të ishte një punë shumë e lodhshme.
 
@@ -19,7 +19,7 @@ Në fillim të kapitullit hyrës, ne pamë komanda për Karelin, me anë të të
 Ne nuk mund t'i shkruajmë këto funksione që japin përgjigje si deklarime të veçanta, siç kemi bërë deri më tani. Në vend të kësaj, ne i shkruajmë këto funksione si pjesë e disa deklaratave të Python. Le t'i hedhim një vështrim në shembujt.
 
 Për sa kohë që është e nevojshme (*while*)
--------------------------------------
+-------------------------------------------
 
 Një mënyrë për të përdorur funksionet që japin përgjigje është t’i shkruani ato në deklarimn ``while``. Deklarimi *while* ekziston pothuajse në të gjitha gjuhët e programimit dhe është e shkruar shumë në mënyrë të ngjashme në gjuhë të ndryshme. Në Python duket kështu:
 
@@ -105,7 +105,7 @@ Ushtime
 ------------------
 
 Shkoni një katror përpara dhe kapni të gjitha topat
-'''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -152,8 +152,8 @@ Pas udhëzimeve në programin e mëposhtëm, Karel do të përpiqet të përsër
 
 .. commented out
    .. reveal:: Karel_while__one_square_many_balls_reveal
-      :showtitle: Solution
-      :hidetitle: Hide solution
+      :showtitle: Zgjdhja
+      :hidetitle: Fshih zjgidhjen
    
       .. activecode:: Karel_while__one_square_many_balls_solution
          :passivecode: true
@@ -205,7 +205,7 @@ Një deklarim *while* duhet të përdoret si për lëvizjen e Karelit ashtu edhe
    }
 
 Lëviz të gjitha topat nga kutia e fundit në të parën
-''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -285,7 +285,7 @@ Sigurisht, pas loops të parë ose të dytë, Karel duhet të kthehet në loops 
                drop_ball()
 
 Vendos topin në rreshtin e parë
-''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -356,8 +356,8 @@ Vendos topin në rreshtin e parë
 
 .. commented out
     .. reveal:: Karel_while__put_balls_in_upper_row_reveal
-        :showtitle: Solution
-        :hidetitle: Hide solution
+        :showtitle: Zgjidhja
+        :hidetitle: Fshih zjgidhjen
 
         .. activecode:: Karel_while__put_balls_in_upper_row_solution
             :passivecode: true

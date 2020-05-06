@@ -168,7 +168,7 @@ Pyetjet e mëposhtme do t'ju ndihmojnë të konsolidoni njohuritë tuaja për fo
 Më poshtë janë detyrat për ushtrim.
 
 Shkallë
-''''''
+''''''''
 
 Modifikoni programin në mënyrë që hapat e shkallëve të vizatohen në një loop.
 
@@ -263,7 +263,7 @@ Modifikoni programin në mënyrë që një pemë të vizatohet në secilën ose 
 
 
 Rrjetë
-''''
+''''''''
 
 Modifikoni programin në mënyrë që linjat vertikale të vizatohen në një loop dhe linjat horizontale në loop-in e dytë.
 

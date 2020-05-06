@@ -1,5 +1,5 @@
 Kontrolloni dhe vendosni
-====================
+==========================
 
 Deklarimi *while* doli shumë e dobishme, sepse duke e përdorur atë ne ishim në gjendje të zgjidhnim detyra më të larmishme. Sidoqoftë, shembulli i mëposhtëm tregon se ka detyra të thjeshta që nuk mund t'i zgjidhim me ato që kemi mësuar deri më tani.
 
@@ -15,7 +15,6 @@ Natyrisht, ne kemi nevojë për një deklarim të re, e cila do t'i tregojë Kar
 --------------
 
 Deklarimi që na nevojitet në rastin e përshkruar është pohimi ``if``, i cili gjithashtu ekziston në pothuajse të gjitha gjuhët e programimit. Në Python, ajo (në formën e saj më të thjeshtë) është shkruar si kjo:
---------------
 
 .. activecode:: Karel_if__syntax
    :passivecode: true
@@ -85,10 +84,8 @@ Në rastin tonë, kushti do të jetë ``is_ball_on_square ()``, dhe komanda që 
 
 .. commented out
    .. reveal:: Karel_if__take_one_if_any_reveal
-       :showtitle: Solution
-       :hidetitle: Hide solution
-       
-       Solution:
+       :showtitle: Zgjidhja
+       :hidetitle: Fshih zgjidhjen
    
        .. activecode:: Karel_if__take_one_if_any_solution
            :passivecode: true
@@ -100,7 +97,7 @@ Në rastin tonë, kushti do të jetë ``is_ball_on_square ()``, dhe komanda që 
 
 
 Shko në fund te rrugës dhe merr një top nëse është e mundur
-''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -191,7 +188,7 @@ Në disa detyra, një gjë duhet të bëhet nëse plotësohet një kusht i caktu
    Në formën e zgjeruar të fjalisë ``if``, pjesa e parë (deri tek fjala `else`) ka të njëjtën pamje dhe kuptim si më parë. Nën atë pjesë, është shkruar fjala ``else``, në mënyrë të barabartë si fjala ``if``, e ndjekur nga një ``:``. Në rreshtat e mëposhtëm shkruajmë një ose më shumë deklarime të tjera, të cilat përbëjnë trupin **të degës tjetër**. Ky grup i dytë i deklaratave është i theksuar në një nivel më të dobët se fjala *else* më lart, dhe ekzekutohet nëse nuk përmbushet kushti i specifikuar në fjalinë "if".
 
 Shembull - marrja dhe hedhja e topave
-'''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -330,7 +327,7 @@ Kapni topat që mund të arrini
 
 
 Vepro vetëm kur diçka nuk përmbushet
-----------------------------------
+------------------------------------------
 
 Le të themi që Kareli duhet të kthehet majtas nëse ai **nuk mund** të ecë përpara (nëse ai mund të shkojë përpara, ai nuk duhet të bëjë asgjë).
 

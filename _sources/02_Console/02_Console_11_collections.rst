@@ -1,4 +1,4 @@
-koleksione ata
+Koleksionet
 ================
 
 Në mësimin e mëparshëm, ne kemi përdorur një tuple për të kryer disa komanda (llogaritjen dhe shtypjen) mbi secilën vlerë nga tuple duke përdorur loop *for*.
@@ -11,7 +11,7 @@ Koleksionet e vetme që kemi parë deri më tani janë tuples, të cilat tani do
 
 
 Tuple dhe elementet e saj
-----------------------
+----------------------------
 
 Paketimi dhe paketimi i paketave
 ''''''''''''''''''''''''''''
@@ -188,7 +188,7 @@ Ne kemi përdorur vargje si lloji themelor deri më tani, por vargjet mund të p
         print(c)
 
 Funksionet në koleksione
-------------------------
+-------------------------
 
 Ka shumë funksione në Python që pranojnë një koleksion si një argument. Një prej tyre është funksioni *len*, të cilin ne kemi përmbushur tashmë. Disa funksione të tjera që përdoren zakonisht për koleksionet janë:
 

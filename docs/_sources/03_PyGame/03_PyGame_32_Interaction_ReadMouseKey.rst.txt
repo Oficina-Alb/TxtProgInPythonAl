@@ -1,5 +1,5 @@
 Leximi i butonave të mouse
----------------------
+----------------------------
 
 Informacioni në lidhje me butonat e mouse të shtypur aktualisht sigurohet nga funksioni ``pg.mouse.get_pressed ()``. Ky funksion kthen një tufë prej tre elementësh (një treshe e porositur), të cilat përdoren si vlera logjike. Elementet tuple korrespondojnë me butonat e mouse, të mesëm dhe të djathtë përkatësisht. Një vlerë *True* tregon që një buton është shtypur aktualisht, dhe *False* se nuk është.
 
@@ -23,7 +23,7 @@ Shembulli më poshtë tregon se si të lexoni cilat butona të mouse shtypen. Kj
 Tuple *pressed_mouse_button* merr 3 vlera nga funksioni *pg.mouse.get_pressed()*.Ne i përdorim këto në deklarimet *if*. Për shembull *if pressed_mouse_button[2]* do të thotë "nëse butoni i djathtë është shtypur" (0 për majtas, 1 në mes, and 2 për djathtas).
 
 Shembuj dhe detyra
-''''''''''''''''''
+'''''''''''''''''''
 
 .. questionnote::
     
@@ -43,7 +43,7 @@ Së pari, studioni me kujdes funksionin *new_frame ()* dhe më pas hidhini një 
 
 .. questionnote::
 
-    **Detyrë - tek dhe nga mouse: **
+    **Detyrë - tek dhe nga mouse:**
     
      Përfundoni programin në mënyrë që të funksionojë siç tregohet në shembullin (butoni "Luaj detyrën").
     

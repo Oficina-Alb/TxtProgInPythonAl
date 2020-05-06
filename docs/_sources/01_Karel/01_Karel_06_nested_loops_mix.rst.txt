@@ -1,5 +1,5 @@
 Kombinimi i loops
-===============
+==================
 
 Ne kemi parë që në trupin e një deklarate *for*, ne mund të vendosim disa deklarime të ndryshme. Ngjashëm me deklarimn *for*, në fjalinë ``while`` ne gjithashtu (përveç komandave të tjera) mund të vendosim një deklarim të re të loop, dhe ajo mund të jetë ose një *loop* ose një loop *for*. Në atë mënyrë, ne mund të ndërtojmë kombinime të ndryshme të sytheve të futura.
 
@@ -8,11 +8,10 @@ Kur të dy sytloophe futen në njëra-tjetrën, ne i quajmë ato një loop të d
 Në këtë mësim do të praktikojmë shkrime të kombinimeve të sytheve *while* dhe *for*.
 
 Rrathë të ndryshëm të dyfishtë dhe të shumëfishtë - detyra
------------------------------------------
+-------------------------------------------------------------
 
 Merrni 4 topa në çdo katror deri në fund të një rreshti
-''''''''''''''''''''''''''''''''''''''''''''''''''
-
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote ::
 
@@ -213,7 +212,7 @@ Programi është ndarë në pjesë më të vogla nga komentet. Shtoni deklarim q
 
 
 Lart dhe poshtë
-'''''''''''
+'''''''''''''''''''
 
 .. questionnote::
 
@@ -292,7 +291,7 @@ Këto janë disa nga pamjet e mundshme të labirintit:
           turn_left()             # turn east
 
 Shkallë
-''''''
+''''''''''
 
 .. questionnote::
 
@@ -355,8 +354,8 @@ Shkallë
    }
 
 .. reveal:: Karel_while__stairs_reveal
-   :showtitle: Hint
-   :hidetitle: Hide hint
+   :showtitle: Ndihmë e vogël
+   :hidetitle: fshih ndihmën
 
    .. activecode:: Karel_while__stairs_solution
       :passivecode: true
@@ -373,7 +372,7 @@ Shkallë
 
 
 Spirale në të majtë
-''''''''''''''''''
+'''''''''''''''''''''
 
 .. questionnote::
 
@@ -429,8 +428,8 @@ Spirale në të majtë
    }
 
 .. reveal:: Karel_while__spiral_left_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
+   :showtitle: Zgjidhja
+   :hidetitle: fshih zgjidhjen
 
    .. activecode:: Karel_while__spiral_left_solution
       :passivecode: true

@@ -1,5 +1,5 @@
 Afishimi i imazheve të gatshme - detyra
-------------------------------------
+------------------------------------------
 
 Mësuam si të shfaqim një imazh të gatshëm në mënyrë që këndi i sipërm i saj i majtë të jetë në një pozicion të caktuar në ekran. Në disa situata, pozicioni i këndit të sipërm të majtë të figurës nuk do të jetë i njohur për ne, por do të duhet të llogaritet. Në raste të tilla, mund të jetë e nevojshme të njihni gjerësinë dhe lartësinë e figurës. Në librarinë e PyGame për figurën ``im``, gjerësia dhe lartësia e kësaj figure jepen përkatësisht ``im.get_width ()`` dhe ``im.get_height ()``.
 
@@ -65,7 +65,7 @@ Kuti
 
     dhe formoni imazhe si në shembuj (përdorni butonin "Luaj detyrën" në secilën detyrë).
       
-     Koordinatat e figurës, domethënë, këndi i sipërm i saj i majtë për kutinë e majtë janë (60, 400) dhe për kutinë më të lartë janë (420, 115)
+ Koordinatat e figurës, domethënë, këndi i sipërm i saj i majtë për kutinë e majtë janë (60, 400) dhe për kutinë më të lartë janë (420, 115)
 
 Nga të dhënat dhe imazhet e dhëna është e mundur të përcaktohen seritë *x* dhe *y* të koordinatave të figurës së secilës kuti në secilin shembull. Rendi i shfaqjes së fotove të kutisë gjithashtu duhet të merret parasysh këtu.
 
@@ -78,7 +78,7 @@ Për të kuptuar më mirë sesi mund të merren të njëjtën seri numrash (për
     :match_3: empty series ||| for x in range(30, 10, 5)
     :match_4: 5, 15, 25 ||| for x in range(5, 35, 10)
 
-    Match a series of numbers with the statements that generate them.
+    Përputhen një seri numrash me deklaratat që i gjenerojnë ato.
 
 .. activecode:: PyGame__pictures_boxes1
     :nocodelens:

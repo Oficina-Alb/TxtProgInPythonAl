@@ -1,5 +1,5 @@
 Vizatimi nga referenca
-----------------------
+------------------------
 
 Sapo kemi mësuar se si të vizatojmë disa forma themelore në mjedisin PyGame duke përdorur funksionet e vizatimit. Siç u përmend më parë, të gjitha imazhet e tilla përbëhen nga piksele. Këto janë të ashtuquajturat imazhe raster, ose bitmap. Ne kemi parë që, për të vizatuar forma themelore, duhet të dimë koordinatat e pikselave që përcaktojnë secilën formë të tillë. Sidoqoftë, në një situatë më realiste këto koordinata nuk jepen direkt dhe ne duhet t'i përcaktojmë vetë ato.
 
@@ -12,7 +12,7 @@ Nëse duam të gjenerojmë me programe një imazh duke përdorur një bitmap ekz
 Ne mund të shohim që kjo imazh u krijua duke vizatuar 4 linja horizontale dhe 2 vertikale, gjithashtu që të gjitha 6 linjat janë të zeza dhe të gjera 1 pixel. Meqenëse e dimë se koordinata *x* llogaritet nga e majta në të djathtë dhe *y* nga lart poshtë, si dhe që numërimi fillon nga zero, mund të përcaktojmë koordinatat e pikave fillestare dhe fundore të të gjashtë rreshtave thjesht duke numëruar .
 
 Shkallë
-''''''
+''''''''
 
 Lexoni koordinatat nga imazhi i zmadhuar më lart dhe shkruani një program që vizaton shkallët si ato.
 
@@ -176,7 +176,7 @@ Sa i përket rrethit, ne kemi mundësi të ndryshme:
           :includesrc: src\PyGame\1_Drawing\3_ByGrid\smiley.py
 
 Shtëpi
-'''''
+'''''''
 
 Vizatimi i një shtëpie përbëhet nga një drejtkëndësh kafe dhe një trekëndësh i kuq. Mund ta vizatojmë trekëndëshin si shumëkëndësh me tre vertikale. Dielli përshkruhet si një rreth portokalli dhe bari si një drejtkëndësh i gjelbër. Kini parasysh rendin e vizatimit për barin dhe diellin.
 

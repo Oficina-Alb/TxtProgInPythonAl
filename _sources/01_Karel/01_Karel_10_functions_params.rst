@@ -38,7 +38,7 @@ Funksioni që lëviz Karel numër të caktuar të shesheve përpara ose prapa, m
 Ky funksion mund te thjeshtojë shumë programe që supozohet ti tregojnë të lëvizë disa herë një rrugë në disa drejtime. Shembull:
 
 Performoni lëvizje të specifikuara
-'''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
@@ -145,8 +145,8 @@ Tani që kemi këto dy funksione në dispozicion, zgjidhja e detyrës fillestare
         }
     }
 
-Deytura pëer tu ushtruar
-------------------
+Detyra pëer tu ushtruar
+------------------------------
 
 Jepet një numër topash
 ''''''''''''''''''''''''''''
@@ -249,7 +249,7 @@ Jepet një numër topash
     
 
 Driving according to instructions
-'''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''
 
 .. questionnote::
     Jepen funksionet *face_left_at_intersection ()* dhe *go_left (n)*.

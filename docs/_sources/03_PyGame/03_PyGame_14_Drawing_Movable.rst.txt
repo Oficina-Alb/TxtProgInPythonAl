@@ -1,5 +1,5 @@
 Lëvizja e vizatimit
-------------------
+----------------------
 
 Në shembujt e mëparshëm, kemi bërë disa vizatime të përbëra nga forma themelore. Duke vepruar kështu, ishte e nevojshme të përcaktohej pozicioni i saktë për secilën nga këto forma që të bashkohen të gjitha pjesët së bashku. Për disa vizatime, ishte e mundur (dhe në disa detyra të kërkuara) që koordinatat e pikave individuale të llogariten bazuar në koordinatat e njohura të pikave të tjera. Ky llogaritje mund të ishte bërë jashtë programit dhe pastaj koordinatat e llogaritura thjesht mund të ishin futur në program. Sidoqoftë, është më mirë të kryhen llogaritjet e tilla në vetë programin, për disa arsye:
 
@@ -71,7 +71,7 @@ Tani do ta sistemojmë pak më shumë llogaritjen e koordinatave dhe do ta përd
 
 
 Ndryshime për të bërë një vizatim lehtësht të lëvizshëm
-''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Le të shohim se si një re është vizatuar në shembullin e mëposhtëm:
 
@@ -200,9 +200,8 @@ Kontrolloni të kuptuarit tuaj për shpjegimet e mëparshme dhe përgjigjuni pye
    :feedback_b: Saktë!
    :feedback_c: Provo përsëri.
    :feedback_d: Provo përsëri.
-
-   Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
-                
+ Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
+               
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code2
       :passivecode: true
                     
@@ -221,7 +220,7 @@ Kontrolloni të kuptuarit tuaj për shpjegimet e mëparshme dhe përgjigjuni pye
    :feedback_c: Provo përsëri.
    :feedback_d: Saktë!
 
-   Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
+Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
                 
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code3
       :passivecode: true
@@ -306,7 +305,7 @@ e cila vizaton një arush me pikën kryesore në qendër të dritares (ashtu si�
 Provoni këtë! Do të ishte shumë më e vështirë të vizatonim një arush tjetër nëse nuk do të kishim përshtatur programin fillestar për këtë përdorim.
 
 Shtëpia - pozicioni
-''''''''''''''''
+''''''''''''''''''''''
 
 Le të themi që e keni shkruar këtë program, dhe qëllimi juaj është të shkruani programin në mënyrë që shtëpia të zhvendoset lehtësisht:
 
@@ -316,7 +315,7 @@ Le të themi që e keni shkruar këtë program, dhe qëllimi juaj është të sh
     :modaloutput:
     :includesrc: src\PyGame\1_Drawing\5_Movable\house2D_detailed_fixed.py
 
-Le të jetë pika kryesore :code:`(x, y) = (50, 150)`. Përfundoni rimodelimin e nisur të programit në kutinë më poshtë, ku vizatimi është bërë në funksionin :code:`Draw_house (x, y, wall_color)`. Pasi të siguroheni që vizatimet në të dy programet duken njësoj (përveç që ato vizatohen në dritare me madhësi të ndryshme), zëvendësoni kodin :code:`Draw_house (50, 150, pg.Color (" khaki "))" 4 tjetër, për të marrë figurën si kur klikoni në butonin "Luaj lojën":
+Le të jetë pika kryesore :code: `(x, y) = (50, 150)`. Përfundoni rimodelimin e nisur të programit në kutinë më poshtë, ku vizatimi është bërë në funksionin :code:`Draw_house (x, y, wall_color)`. Pasi të siguroheni që vizatimet në të dy programet duken njësoj (përveç që ato vizatohen në dritare me madhësi të ndryshme), zëvendësoni kodin :code: `Draw_house (50, 150, pg.Color (" khaki "))` 4 tjetër, për të marrë figurën si kur klikoni në butonin "Luaj lojën":
 
 .. code::
 

@@ -110,7 +110,6 @@ Pasi të mbaroni programin, mund të provoni gjithashtu të modifikoni programin
     :includexsrc: src\PyGame\1_Drawing\9_UsingImages\chess_mate.py
     
 
-
 .. questionnote::
 
     **Detyra - Pemishte**

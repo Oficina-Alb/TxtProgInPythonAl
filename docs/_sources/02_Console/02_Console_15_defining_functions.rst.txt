@@ -1,5 +1,5 @@
 Definimi i funksioneve
-==================
+========================
 
 Në pjesën kushtuar administrimit të Karelit, përmendëm se mund të veçojmë një grup komandash në një entitet të veçantë të quajtur një funksion. Le të kujtojmë se si duket një funksion i shkruar në Python:
 
@@ -25,7 +25,7 @@ Rregullat e mëposhtme zbatohen për funksionet e shkrimit në Python:
 Funksionet mund ose nuk mund të kthejnë ndonjë vlerë. Deri më tani kemi pasur mundësinë të shohim të dy llojet e funksioneve. Për shembull, funksionet me të cilat Karel (roboti) lëviz përpara, kthehet rrotull, mbledh lart dhe largon topat janë të gjitha funksionet që nuk kthejnë asnjë vlerë. Nga ana tjetër, funksionet matematikore si *abs* ose *round*, si dhe funksionet për të kontrolluar nëse Karel ka topa me të, nëse ka ndonjë top në shesh, apo nëse Karel mund të shkojë përpara janë funksione që kthehen a vlera.
 
 Funksionet e shkrimit që kthejnë vlerën
------------------------------------
+-----------------------------------------
 
 Në mënyrë që një funksion të kthejë një vlerë, është e nevojshme të specifikoni deklarimin ``return`` të paktën një herë në trupin e funksionit. Deklarimi ``return`` përbëhet nga fjala *return*, e ndjekur nga një shprehje, vlera e së cilës funksioni është të kthehet.
 
@@ -64,7 +64,7 @@ Kur shkruajmë funksione që kthejnë shumë vlera, është e mjaftueshme të sp
         return a // b, a % b
 
 Shembuj
-'''''''
+''''''''
 
 .. questionnote::
 

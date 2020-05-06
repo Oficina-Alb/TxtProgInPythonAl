@@ -12,7 +12,7 @@ Libraria `PyGame <http://pygame.org>` __ ka filluar të zhvillohet që nga filli
 
 
 Përdorimi në internet
-----------
+----------------------
 
 Për t'ju ndihmuar të filloni, ne ju kemi siguruar një mjedis ku mund të shkruani dhe testoni programe të thjeshta PyGame në fletoren e punës që po lexoni. Ne gjithashtu kemi përgatitur një pjesë të shembujve dhe detyrave në të cilat, si në kapitujt e mëparshëm, ju zakonisht duhet të plotësoni ose modifikoni programet e filluara në mënyrë që t'i bëni ato të punojnë plotësisht. Ju nuk keni nevojë të instaloni asgjë shtesë në kompjuterin tuaj për të përdorur këtë mjedis. Sidoqoftë, nëse doni të bëni një programim më serioz (për shembull, dëshironi të bëni lojën tuaj), ju rekomandojmë që ta instaloni bibliotekën në kompjuterin tuaj dhe ta përdorni atë nga një mjedis zhvillimi Python (siç është IDLE), i pavarur nga shfletuesin në internet dhe këtë libër pune. Ndër avantazhet e tjera, programimi në një mjedis aktual zhvillimi është më i rehatshëm dhe më efikas, më i lehtë për tu provuar, për të përdorur debugger etj.
 

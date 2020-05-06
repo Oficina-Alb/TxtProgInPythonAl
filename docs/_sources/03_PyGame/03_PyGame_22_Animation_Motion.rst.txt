@@ -1,5 +1,5 @@
 Lëvizja e vizatimeve
------------------
+----------------------
 
 Animacionet që kemi parë deri më tani bazohen në shfaqjen e një imazhi të ndryshëm që përgatitëm paraprakisht në secilën kornizë. Tani do të lëvizim edhe imazhet që janë treguar, në mënyrë që e njëjta imazh të shfaqet në vende të ndryshme në dritare, domethënë lëviz.
 
@@ -37,7 +37,7 @@ Ne e analizuam plotësisht rastin e skajit të djathtë të dritares dhe i njëj
 Kontrolloni nëse e kuptoni këtë duke iu përgjigjur pyetjeve të mëposhtme.
 
 Lëvizja e vizatimeve - pyetje
-'''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''
 
 .. dragndrop:: pygame__anim_quiz_bounce1
     :feedback: Provo përsëri!
@@ -77,8 +77,8 @@ Lëvizja e vizatimeve - pyetje
 .. dragndrop:: pygame__anim_quiz_bounce4
     :feedback: Provo përsëri!
     :match_1: imazhi doli përmes skajit të majtë të dritares ||| x + im_width <0
-    :match_2: imazhi filloi të dalë përmes skajit të majtë të dritares ||| x <0
-    :match_3: imazhi doli përmes skajit të djathtë të dritares ||| x> gjerësi
+    :match_2: imazhi filloi të dalë përmes skajit të majtë të dritares ||| x <0
+    :match_3: imazhi doli përmes skajit të djathtë të dritares ||| x> gjerësi
 
     Le të jetë 'width' e gjerësisë së dritares, 'im_width' gjerësia e figurës dhe (x, y) këndi i sipërm i majtë i figurës. Përputhni kushtet logjike me kuptimin e tyre
 
@@ -90,13 +90,13 @@ Lëvizja e vizatimeve - pyetje
     :correct: a
     :feedback_a: Saktë!
     :feedback_b: Jo, kjo është shumë larg nga skaji i duhur.
-    :feedback_c: Jo, në këtë mënyrë e gjithë imazhi është tashmë në dritare.
-    :feedback_d: Jo, imazhi është shumë larg dhe do të vazhdojë të bëhet më larg.
+    :feedback_c: Jo, në këtë mënyrë e gjithë imazhi është tashmë në dritare.
+    :feedback_d: Jo, imazhi është shumë larg dhe do të vazhdojë të bëhet më larg.
 
     Le  të jetë *width* gjerësia e dritares, *im_width* gjerësia e figurës, (*x*, *y*) këndi i sipërm i majtë i figurës dhe *dx* vlera me të cilën koordinata *x* e imazhi do të ndryshohet më vonë. Cilat komanda do të bëjnë që imazhi të fillojë të shfaqet duke hyrë në dritare përmes skajit të djathtë?
 
 Detyrë - një makinë që shkon majtas djathtas
-'''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Provoni të ripërpunoni programin e parë në mënyrë që makina të lëvizë në mënyrë alternative në njërën anë dhe në anën tjetër, si në shembullin (butoni "Luaj detyrën"). Programi tashmë përmban komanda për të formuar një bashkim të dy imazheve. Imazhi i makinës që përballet drejt, është i ngarkuar, ndërsa imazhi i makinës përballë palës tjetër merret duke përdorur funksionin *pg.transform.flip*, i cili shndërron imazhin e dhënë në një simetrik me të.
 

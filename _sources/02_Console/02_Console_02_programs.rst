@@ -1,10 +1,10 @@
 Programet Python
-===============
+=================
 
 Siç pamë në kapitullin për Karelin, programet përbëhen nga elemente. Le të shohim disa nga deklarimet themelore të Python që do të përdorim për të shkruar programet e para.
 
 Caktimi i një vlere në një variabël
--------------------------------
+-------------------------------------
 
 Variabël është një hapësirë e quajtur në kujtesën e një kompjuteri, në të cilin mund të ruajmë vlera të çfarëdo lloji (numri, teksti, vlera logjike ose diçka tjetër). Rezultatet e ndërmjetme shpesh vendosen në variabël gjatë llogaritjes. Kur drejtojmë një shell Python, ne mund të caktojmë një vlerë në një variabël me një komandë, dhe pastaj të përdorim vlerën e atij variabli në komandat e mëposhtme. Për shembull:
 
@@ -19,14 +19,14 @@ Variabël është një hapësirë e quajtur në kujtesën e një kompjuteri, në
     76.80000000000001
 
 .. infonote::
+    
+    *Deklarimi i vendosjes së vlerës **
 
-    **Deklarimi i vendosjes së vlerës **
-
-    Deklarimi i vendosjes së vlerës shkruhet duke shkruar emrin e një variabli, e ndjekur nga shenja e barabartë `` = ``, dhe pastaj shprehja vlerën e së cilës ia caktojmë variablës. Ne gjithashtu konsiderojmë numrat e plotë dhe numrat realë si shprehje (këto janë shprehjet më të thjeshta të mundshme).
+Deklarimi i vendosjes së vlerës shkruhet duke shkruar emrin e një variabli, e ndjekur nga shenja e barabartë `` = ``, dhe pastaj shprehja vlerën e së cilës ia caktojmë variablës. Ne gjithashtu konsiderojmë numrat e plotë dhe numrat realë si shprehje (këto janë shprehjet më të thjeshta të mundshme).
     
 .. infonote ::
-
-    **Emrat e variablave **
+    
+    **Emrat e variablave **
     
     Emrat e ndryshueshëm (si dhe emrat e tjerë në programet që shkruajmë) mund të përbëhen nga shkronja të mëdha dhe të vogla, shifra dhe nënvizime, por ato nuk mund të fillojnë me një shifër.
     
@@ -38,7 +38,7 @@ Variabël është një hapësirë e quajtur në kujtesën e një kompjuteri, në
 
 Në Python, është një stil i zakonshëm që shkronjat kapitale nuk përdoren (megjithëse lejohen), dhe kur një emër përbëhet nga më shumë se një fjalë, ato fjalë ndahen nga një underscore, për shembull, *price_of_one_piece*. Numrat përdoren në emra kur ka kuptim (i cili nuk është shpesh).
 
-**Emrat e ndryshueshëm - kontrolloni mirë njohuritë tuaja: **
+**Emrat e ndryshueshëm - kontrolloni mirë njohuritë tuaja:**
 
 .. dragndrop:: console__basics_quiz_variable_names
     :feedback: Provo përsëri!
@@ -46,7 +46,8 @@ Në Python, është një stil i zakonshëm që shkronjat kapitale nuk përdoren 
     :match_2: pet_no_2 ||| Emër i saktë
     :match_3: state_at_23:59 ||| Gabim, përmban karakter të gabuar
 
-    Match the proposed variable names with the answers.
+
+Match the proposed variable names with the answers.
 
 
 .. mchoice:: console__basics_quiz_name
@@ -62,7 +63,7 @@ Në Python, është një stil i zakonshëm që shkronjat kapitale nuk përdoren 
 
 
 Printoni vlerat nga një program
----------------------------
+---------------------------------
 
 Në punën interaktive, mjafton të futemi në një shprehje për të parë vlerën e saj, por ne nuk mund ta përdorim atë në programe. Për të shtypur diçka nga një program, ne përdorim funksionin *print ()*. Tani për tani, ne do të përdorim vetëm formën më të thjeshtë të këtij funksioni.
 
@@ -93,7 +94,7 @@ Me një thirrje të vetme të funksionit *print ()* ne mund të shtypim vlera t�
     
 
 Fillimi i një programi
-------------------
+---------------------------
 
 **Drejtimin e programeve në shfletuesin **
 
@@ -138,7 +139,7 @@ Klikoni në butonin ``+ reja repl``, zgjidhni gjuhën e Python dhe klikoni ``Cre
 
 
 Gabimet e programit
---------------
+------------------------
 
 Ndonjëherë, mund të mos shkruani një deklaratë në program saktësisht siç kërkohet nga rregullat e Python. Në këtë rast, interpretuesi i Python nuk mund ta kuptojë deklaratën dhe ju merrni një mesazh gabimi. Çdo mjedis i ekzekutimit raporton një gabim në një mënyrë paksa të ndryshme, por secila prej tyre tregon se në cilën linjë të programit ka ndodhur gabimi dhe çfarë lloji i gabimit është.
 

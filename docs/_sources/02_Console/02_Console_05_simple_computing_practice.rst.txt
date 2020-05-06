@@ -4,10 +4,10 @@ Programet me llogaritjen - Ushtrime
 Deri më tani, ne kemi mësuar se si të ngarkojmë numrat në programe, si të kryejmë operacione llogaritëse mbi to dhe si të printojmë rezultatet. Tani mund t'i praktikojmë këto gjëra me disa detyra të thjeshta matematikore.
 
 Detyrat pa ngarkuar të dhënat
---------------------------
+------------------------------
 
 Shembull
-'''''''
+'''''''''
 
 .. questionnote::
 
@@ -66,7 +66,7 @@ Shkruani një zgjidhje më të qartë duke përdoruar variabla.
 
 
 .. questionnote::
-
+    
     **Detyra - datum **
 
      Nëse sot është 15 i muajit dhe muaji është 31 ditë, sa ditë ka deri në 11 të muajit tjetër (në të njëjtën kohë)?
@@ -87,7 +87,7 @@ Detyra juaj është të shkruani një zgjidhje në të cilën vlerat fillestare 
 
 
 .. questionnote::
-
+    
     **Detyra - blerja e 3 pjesëve **
 
      Ben ka 20 euro dhe dëshiron të blejë 3 llampa biçikletash për 1,58 euro secila. Sa para do të ketë lënë ai?
@@ -99,7 +99,7 @@ Shkruaj një program që përdor variabla për vlerat fillestare dhe të llogari
 
             
 Shembuj më të dhëna në vazhdimësi
------------------------
+-----------------------------------
 
 Shembuj
 '''''''
@@ -110,7 +110,7 @@ Shembuj
     
      Philip përgatitet të pikturojë tavanin në një dhomë. Për të ditur se sa bojë për të blerë, ai duhet të dijë dimensionet e dhomës dhe sa metra katrorë mbulon një kilogram bojë. Shkruani një program që ngarkon gjatësinë e dhomës, gjerësinë e dhomës, një zonë që mbulon një kilogram të bojës dhe shtypni numrin e kërkuar të kilogramëve të bojës.
     
-zgjidhja:
+Zgjidhja:
 
 .. activecode:: console__computing_painting
 
@@ -125,7 +125,7 @@ Ushtrime
 ''''''''''''''''''
 
 .. questionnote::
-
+    
     **Detyrë - zogj **
     
      Popullsia e lepujve në një ishull po dyfishohet çdo vit. Shkruaj një program që ngarkon numrin aktual të lepujve në ishull dhe numrin e viteve, dhe shtyp sa lepuj do të ishin në ishull në një numër të caktuar vitesh nëse vazhdojnë të riprodhojnë me të njëjtin ritëm.

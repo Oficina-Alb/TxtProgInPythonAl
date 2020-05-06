@@ -1,5 +1,5 @@
 Bërja e vizatimeve më komplekse duke përdorur loops
-----------------------------------------
+----------------------------------------------------
 
 Rregullsia që duam të përdorim në vizatime mund të jetë më komplekse, e krahasuar me problemet e mëparshme. Ketu jane disa shembuj:
 
@@ -12,7 +12,7 @@ Në të gjitha këto raste, rregullsia ende ekziston dhe mund të përdoret kur 
 Për shkak të alternimit të dy rregullave në të gjitha vizatimet, programet që vizatojnë ato do të kenë gjithashtu disa ngjashmëri. Le të shohim shembuj kodesh.
 
 Shembull - zinxhir
-''''''''''''''''
+''''''''''''''''''''
 
 Për të vizatuar një zinxhir të tillë, sigurisht që do t'i vizatojmë linjat në një loop. Vizatimi tregon se çdo rresht pasues është i njëjti numër pikselësh më i ulët se ai i mëparshmi, kështu që nuk duhet të ketë asnjë problem me llogaritjen e koordinatës *y*. Situata me koordinatat *x* është disi më e vështirë sepse ato ndryshojnë sipas një rregulli pak më të ndërlikuar.
 
@@ -34,7 +34,7 @@ Një mundësi tjetër për të zgjidhur problemin me koordinatat *x* është të
 
 
 Shembull - Tulla
-''''''''''''''''
+''''''''''''''''''
 
 Ne kemi përmendur tashmë se rreshtat e tullave fillojnë në mënyrë alternative me tërë tullën dhe gjysmën e tullave. Kjo është arsyeja pse gjatë vizatimit të tullave mund të përdorim cilindo nga të njëjtat dy ide si në shembullin e mëparshëm.
 

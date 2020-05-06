@@ -1,5 +1,5 @@
 Vizatimi i tekstit
-------------
+-------------------
 
 Programet e vizatimit shpesh shtypin mesazhe të ndryshme së bashku me fotografitë (ndoshta keni parë shumë shembuj vetë). Ja se si ta bëni atë në PyGame: e shembuj të frymëzuar nga shenja të tilla neoni.
 
@@ -16,7 +16,7 @@ Pas krijimit të fontit, sa herë që duam të shfaqim një tekst përsërisim d
 - Hapi i dytë është njësoj siç shfaqim ndonjë imazh të gatshëm - **shfaqim imazhin e marrë në hapin e mëparshëm** në pozicionin që zgjedhim. Për të llogaritur pozicionin mund të përdorim madhësinë e figurës sipas nevojës (si në shembull).
 
 Detyrat - shenja neoni
-''''''''''''''''''
+''''''''''''''''''''''''
 
 Ju duhet të keni parë shenja të ndezura të tubit neon. Ata tërheqin vëmendjen duke ndezur dhe fikur grupe të ndryshme shkronjash në një rend të caktuar përsëritës. Më poshtë janë disa shembuj të frymëzuar nga shenja të tilla ndezëse.
 

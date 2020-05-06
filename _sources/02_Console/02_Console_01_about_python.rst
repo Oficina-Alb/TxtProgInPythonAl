@@ -8,7 +8,7 @@ Gjuha e programimit të Python bën të qartë se programimi nuk është vetëm 
 Pra, le të shohim bazat e Python dhe të shohim se si shkruhen komandat dhe programet në këtë gjuhë programimi.
 
 Interpetuesi Python
-------------------
+--------------------
 
 Për të ekzekutuar programet që shkruajmë në Python, na duhet një program i quajtur interpretues Python. Ky program interpreton dhe pastaj ekzekuton komandat e Python. Interpretuesit e Python mund të pranojnë programe të tëra dhe t'i ekzekutojnë ato, dhe ata gjithashtu mund të punojnë në mënyrë **interaktive**, në të cilën çdo komandë që hyjmë ekzekutohet menjëherë.
 
@@ -41,7 +41,7 @@ Një mënyrë tjetër për të filluar një shell Python është të hapni një 
 Ju mund të zgjidhni çdo shell që ju pëlqen, ato janë përdorur të gjitha në të njëjtën mënyrë.
 
 Puna interaktive
-----------------
+-----------------
 
 Hapni shellin Python. Karakteri ``>>>`` përfaqëson prompt. Në këtë mënyrë interpretuesi i Python na tregon se është gati të marrë komandën.
 
@@ -69,8 +69,8 @@ Simbolet e mëposhtme përdoren për operacionet bazë të llogaritjes në Pytho
 
 Përveç këtyre themelore dhe ato që përdoren më shpesh, ndonjëherë na duhen disa operacione të tjera, të cilat përdoren më rrallë. Ato janë të:
 
-- pjesëtimi i numrit të plotë (duke marrë të gjithë pjesën e herës): `` // ``, për shembull vlera e shprehjes :math: `7 // 2` është :math:` 3`.
-- pjesa tjetër e një ndarjeje: ``% ``, për shembull vlera e shprehjes :math: `7 \% 2` është :math:` 1`.
+- pjesëtimi i numrit të plotë (duke marrë të gjithë pjesën e herës): ``//``, për shembull vlera e shprehjes :math: `7 // 2` është :math: `3`.
+- pjesa tjetër e një ndarjeje: ``%``, për shembull vlera e shprehjes :math: `7 \% 2` është :math: `1`.
 - operatori i shumëzimit: ``**``, për shembull vlera e shprehjes :math: `2 ** 4` është :math:`2^4 = 16`.
 
 .. code::
@@ -95,7 +95,7 @@ Kompjuterët bëjnë dallimin midis numrave të plotë dhe numrave realë, i shk
 
 Ajo që ne shohim do të thotë se numri i parë është i vërtetë dhe i dyti është numër i plotë (fjala *float* tregon numra realë, dhe *int* shënon numër të plotë).
 
-Në lidhje me këtë, vini re se në Python, rezultati i ndarjes së zakonshme `` / `është gjithmonë një numër i vërtetë, edhe kur operanët janë numër i plotë dhe janë të ndashëm (nuk ka asnjë të mbetur). Kur duam që rezultati i ndarjes midis dy numrave të plotë të jetë një numër i plotë, duhet të përdorim operatorin e ndarjes me numër të plotë `` // ``.
+Në lidhje me këtë, vini re se në Python, rezultati i ndarjes së zakonshme ``/`` është gjithmonë një numër i vërtetë, edhe kur operanët janë numër i plotë dhe janë të ndashëm (nuk ka asnjë të mbetur). Kur duam që rezultati i ndarjes midis dy numrave të plotë të jetë një numër i plotë, duhet të përdorim operatorin e ndarjes me numër të plotë ``//``.
 
 .. code::
 
@@ -136,6 +136,7 @@ Rregullat për llogaritjen e vlerave të shprehjes janë të njëjta si në mate
 - Fuqia llogaritet para operacioneve të tjera. Nëse ka operacione të fuqisë së sekuencave të shumta, ato kryhen nga e djathta në të majtë.
 - Operacionet e shumëzimit, ndarjes dhe pjesës së mbetur aplikohen para shtimit dhe zbritjes. Kur ka më shumë rresht, ato ekzekutohen nga e majta në të djathtë.
 - Kur kemi nevojë për një renditje të ndryshme të llogaritjes, përdorim kllapa (pjesa në kllapa është llogaritur e para).
+
 .. code::
 
     >>> (5-3) * (2+2)

@@ -1,8 +1,8 @@
 Leximi i të dhënave
-============
+====================
 
 Teksti i leximit
-------------
+----------------
 
 Programet që kemi mësuar të shkruajmë deri tani përmbajnë të gjithë informacionin e nevojshëm dhe gjithmonë funksionojnë në të njëjtën mënyrë. Kur na duhet një program për të bërë të njëjtën gjë me të dhëna të ndryshme, do të na duhet të modifikojmë vetë programin. Kjo metodë mund të jetë mjaft e përshtatshme kur ndryshimet në të dhëna janë të vogla dhe jo të shpeshta.
 
@@ -29,7 +29,7 @@ Nëse zgjedhim njërën ose formën tjetër të funksionit *input*, varet nga q�
 Gjithashtu, jini të vetëdijshëm që për disa prej mjediseve në të cilat programi po funksionon, ne mund të organizojmë që të dhënat po lexohen nga një lokacion tjetër, ku i kemi përgatitur ato paraprakisht, në vend që të lexojmë të dhënat nga tastiera. Në raste të tilla nuk ka pritje për të hyrë në të dhënat, ato ngarkohen automatikisht dhe nuk ka nevojë të shtypni udhëzimin. Prandaj, në raste të tilla do të përdorim edhe funksionin *input* pa argumente.
 
 Numrat e leximit
----------------
+-----------------
 
 Ne kemi parë që funksioni *input()* kthen një varg (tekst i shtypur nga një përdorues). Kjo do të thotë që nëse kemi nevojë për të dhëna të një lloji tjetër, duhet të ndryshojmë llojin e të dhënave të kthyera nga funksioni *input ()* nga vargu në llojin e dëshiruar. Ndryshimi i llojit të të dhënave quhet edhe **konvertim**. Për shembull, nëse duam një numër të plotë, atëherë duhet të shndërrojmë tekstin që rezulton në një numër të plotë. Ja se si ta bëni atë në Python:
 
@@ -69,7 +69,7 @@ or
 Kontrolloni se çfarë ndodh në këto dy shembuj kur futni diçka tjetër dhe jo një numër.
 
 Në lidhje me konvertimet
------------------
+--------------------------
 
 Ne kemi parë që kur një varg përmban një numër të plotë ose një numër të vërtetë, ajo varg mund të shndërrohet në një numër të plotë ose të vërtetë duke përdorur funksionet *int ()* ose *float ()*. Nga ana tjetër, numrat e plotë dhe numrat realë gjithmonë mund të shndërrohen në një varg. Funksioni *str ()* përdoret për t'u kthyer në një varg.
 
@@ -89,7 +89,7 @@ Konvertimi i një vlere të plotë në një të vërtetë bëhet automatikisht k
 
     print(float(1))
     
-Në të kundërt, kur duhet të kthejmë një numër real në një numër të plotë, ai konvertim nuk ndodh automatikisht (për një arsye) dhe duhet të vendoset në program duke thirrur funksionin *int ()*. Kur konvertoni një numër real në një numër të plotë, çdo decimale e numrit real hidhen, që do të thotë se rrumbullakimi është gjithmonë **drejt zeros**. Me fjalë të tjera, kur vlera e numrit real *x* nuk është i plotë, *int (x)* është më afër zeros sesa * x *.
+Në të kundërt, kur duhet të kthejmë një numër real në një numër të plotë, ai konvertim nuk ndodh automatikisht (për një arsye) dhe duhet të vendoset në program duke thirrur funksionin *int ()*. Kur konvertoni një numër real në një numër të plotë, çdo decimale e numrit real hidhen, që do të thotë se rrumbullakimi është gjithmonë **drejt zeros**. Me fjalë të tjera, kur vlera e numrit real *x* nuk është i plotë, *int (x)* është më afër zeros sesa *x*.
 
 .. activecode:: console__text_convert_int_float
 
@@ -118,7 +118,7 @@ Pyetje
         print(a+3)
 
 .. mchoice:: console__text_quiz_2
-  :answer_a: Programi printon 5
+    :answer_a: Programi printon 5
     :answer_b: Programi printon 23
     :answer_c: Do të ketë një gabim kur të përpiqeni të vendosni një numër dhe një string
     :correct: b

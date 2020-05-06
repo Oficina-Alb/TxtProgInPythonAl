@@ -67,7 +67,7 @@ Në rast se programi nuk ka nevojë të bëjë asgjë kur nuk plotësohet kushti
 Ne do ta përdorim këtë formë të shkurtër të deklarimit *if* më vonë.
 
 Deklarimi if - shembuj dhe ushtrime
-'''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
     
@@ -103,9 +103,6 @@ Këtu duhet të kontrollojmë që numri i vezëve është i ndashëm me 10. Për
         print('Të gjitha vetët mund të dërgohen.')
     else:
         print('Disa vezë do të mbesin.')
-
-
-
 
 
 .. questionnote::

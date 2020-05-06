@@ -1,8 +1,8 @@
 Skripte dhe cikli *for*
-======================
+========================
 
 Skriptet
--------
+----------
 
 Njerëzit shpesh shkruajnë programe të shkurtra në Python dhe i përdorin ato vetë për të llogaritur ose automatizuar diçka. Programet e tilla njihen gjithashtu si **skriptet**. Nuk është e pazakontë që skriptet të kenë disa ose të gjitha të dhënat hyrëse të përfshira në vetë skenarin, në vend që të ngarkohen. Për shembull, skripti i mëposhtëm llogarit një zbritje prej 20 përqind:
 
@@ -44,7 +44,7 @@ Ne mund ta drejtojmë programin disa herë, duke vendosur çdo herë një çmim 
 Në rastin kur ne i dimë paraprakisht të gjitha çmimet e rregullta të produkteve që na interesojnë, lëshimi i shumëfishtë i programit dhe futja e një çmimi në një kohë nuk është mënyra më e rehatshme për të marrë të gjitha çmimet me zbritje. Përkundrazi, do të ishte më e përshtatshme që të vendosni të gjitha çmimet e rregullta direkt në program dhe të përsërisni llogaritjen dhe shtypjen e rezultateve për secilën nga këto të dhëna.
 
 deklarimi *for*
---------------
+----------------
 
 Për të qenë në gjendje të përsërisim një pjesë të programit për secilën pjesë të të dhënave të shumta, na duhet deklarimin **for**, e cila lejon që deklarimin e tjera të përsëriten. Tani ne do të shohim një mënyrë për të përdorur deklarimin *for*, dhe ne do të shohim disa forma të tjera të deklarimit *for* në mësimet e mëposhtme.
 

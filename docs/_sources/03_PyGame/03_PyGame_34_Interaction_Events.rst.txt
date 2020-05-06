@@ -1,8 +1,8 @@
 Ngjarje
-------
+--------
 
 Kur lexoni gjendje nuk është e mjaftueshme
-'''''''''''''''''' '' '' '' '' '' '' ''
+''''''''''''''''''''''''''''''''''''''''''''''
 
 Në fillim të seksionit për ndërveprimin përmendëm se ekzistojnë dy mënyra themelore që një program të marrë informacione rreth veprimeve të përdoruesit. Mënyra e parë është të lexojmë gjendjen e mouse dhe tastierës, dhe ne jemi njohur me atë mënyrë deri tani.
 
@@ -48,7 +48,7 @@ Provoni programin duke klikuar në shpejtësi të ndryshme.
     :includesrc: src/PyGame/3_Interaction/3d_Mouse_events/Switch_read_state.py
 
 Informacion rreth ndryshimit të gjendjes
-'''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''
 
 Siç e përmendëm në hyrje të këtij kapitulli, ne gjithashtu mund të ndjekim veprimet e përdoruesit në një mënyrë tjetër, që është përdorimi i ngjarjeve të sistemit. Ngjarjet me të cilat merremi këtu mund të kuptohen si **ndryshime në gjendjen e mouse ose tastierës** (megjithëse ka ngjarje të tjera, siç janë ato të krijuara nga ora e sistemit). Për shembull, kur një çelës në tastierë ose një buton të mouse zbret, sistemi operativ i kompjuterit merr një sinjal nga pajisja hyrëse dhe e regjistron atë si një ngjarje. E njëjta gjë ndodh në momentin e lëshimit të çelësave (butonave), ndryshimit të pozicionit të mouse, etj.
 
@@ -57,7 +57,7 @@ Të gjitha ngjarjet regjistrohen dhe mbahen mend, kështu që nuk mund të ndodh
 Libraria e PyGame na lejon të marrim një objekt për secilën ngjarje me informacione rreth asaj ngjarje, të ekzaminojmë se çfarë lloj ngjarje është, dhe t'i përgjigjet me programim ngjarjes sipas nevojës.
 
 Përdorimi i eventeve në programe
-''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''
 
 Në programet që përdorin ngjarje, ne do të shkruajmë një funksion të veçantë ``hand_event (event)`` (mund t’i jepni një emër tjetër). Ky funksion merr një ngjarje *event* PyGame si një argument, i cili përmban të gjitha informacionet e nevojshme për ngjarjen. Ne shtojmë emrin e funksionit tonë të përpunimit të ngjarjes si argumenti i tretë në thirrjen e funksionit *pygamebg.frame_loop*. Kjo mundëson që  funksioni ynë të quhet *hand_event* për secilën ngjarje që ndodh ndërsa programi po funksionon.
 

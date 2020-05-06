@@ -1,5 +1,5 @@
 Lëvizja e objekteve të shumta
------------------------
+---------------------------------
 
 Deri më tani, kemi bërë animacione në të cilat lëviznin objekte të ndryshme (makina, topi i bilardos, aeroplan, teksti), por në secilën prej këtyre programeve kishte vetëm një objekt lëvizës. Për variablat globale që përshkruajnë skenën kemi përdorur koordinatat e atij objekti në lëvizje, dhe nganjëherë kemi përdorur edhe vlera të tjera, siç janë zhvendosja, drejtimi i lëvizjes etj.
 
@@ -41,7 +41,7 @@ Për secilën kornizë, ne llogaritim një listë të re ndihmëse që përshkru
 
 
 Detyra
-'''''
+''''''''
 
 .. questionnote::
 

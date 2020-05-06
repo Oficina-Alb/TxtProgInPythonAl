@@ -1,11 +1,12 @@
 Menaxhimi i Karel
-==============
+======================
 
 Për të parë se si duket programimi, ne do t'ju prezantojmë me Karel. Karel është një robot i animuar që lëviz përgjatë një tryeze si labirint duke ndjekur udhëzimet tona në formën e një programi. Përmes administrimit të Karelit, ne do të adoptojmë një logjikë që është shumë e rëndësishme për të shkruar një program, dhe gjithashtu mund të argëtohemi gjatë rrugës.
 
 .. infonote::
 
     Ideja e të mësuarit të programimit përmes kontrollit të një roboti daton që nga vitet 1970, kur Richard E. Pattis, si student i diplomuar në Universitetin Stanford, krijoi mjedisin e parë të tillë me një gjuhë programimi të krijuar posaçërisht për këtë qëllim. Gjuha, si roboti, u quajt Karel, pas Karel Čapek, shkrimtarit çek që filloi së pari përdorimin e fjalës robot. Libri i Patis *Karel Robot: Një Prezantim në Artin e Programimit* u botua në vitin 1981 dhe u bë shpejt libri më i shitur në kurset e programimit.T
+
 Do të përdorim këto funksione për të menaxhuar Karel:
 
 - ``move()`` - lëviz nje kuti përpara,
@@ -55,7 +56,7 @@ Ky program konsistion në dy komanda, E para i tregon Karel të lëvizë një fu
    }
 
 **Përfshirja e librarisë** *karel* 
-'''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''
 
 .. infonote::
 
@@ -66,13 +67,13 @@ Ky program konsistion në dy komanda, E para i tregon Karel të lëvizë një fu
 Mund të ketë më shumë se një top në një katror, dhe detyra jonë mund të jetë t'i themi Karelit të marrë disa, ose të gjithë ata.
 
 Zhvendosuni një katror përpara dhe merrni tre topa
-''''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 
-    Shkruaj një program që i thotë Karelit të zhvendoset në kuti (2, 1) dhe të marr tre nga pesë topat që janë atje.
-    
-Në këtë program, pas komandës ``move ()``, komanda ``pick_ball ()``duhet të shkruhet tre herë, pasi ne kemi nevojë për Karel që të marr tre topa. Kushtojini vëmendje numrit që shfaqet në top. Ajo tregon se sa topa ka në atë shesh. Përveç kësaj, numri në të majtë të kokës së Karelit (gjë që mund të keni vërejtur edhe në shembullin e mëparshëm) tregon se sa topa ka Kareli me të.
+   Shkruaj një program që i thotë Karelit të zhvendoset në kuti (2, 1) dhe të marr tre nga pesë topat që janë atje.
+ 
+Në këtë program, pas komandës ``move ()``, komanda ``pick_ball ()`` duhet të shkruhet tre herë, pasi ne kemi nevojë për Karel që të marr tre topa. Kushtojini vëmendje numrit që shfaqet në top. Ajo tregon se sa topa ka në atë shesh. Përveç kësaj, numri në të majtë të kokës së Karelit (gjë që mund të keni vërejtur edhe në shembullin e mëparshëm) tregon se sa topa ka Kareli me të.
    
 .. karel:: Karel_intro_two_squares_five_balls
    :blockly:
@@ -169,7 +170,7 @@ Duke lexuar këtë program, është duke u bërë e vështirë të ndiqeni se ci
      Nuk ka rregulla të sakta për të shkruar komente. Në komentet tuaja, duhet të shkruani gjithçka që besoni se ndihmon të tjerët (dhe veten tuaj) ta kuptojnë më mirë programin tuaj.
    
 Mblidh të gjithë topat
-'''''''''''''''''''''
+'''''''''''''''''''''''
 
 Në këtë shembull, topat janë në kuti të ndryshme dhe ne kemi nevojë ta sjellim Karelin në secilën prej këtyre topave.
 
@@ -221,7 +222,7 @@ Ne mund të zgjedhim shtegun për Karelin në shumë mënyra, por sa më e shkur
    }
 
 **Grupimi i komandave**
-'''''''''''''''''''''
+'''''''''''''''''''''''''
 
 Meqenëse ky program është edhe më i gjatë se ai i mëparshmi, për ta bërë më të lehtë lundrimin në program dhe për të ndjekur pozicionin e Karel, ne kemi bërë grupe komandash që përbëjnë një fazë të udhëtimit dhe vendosëm secilin grup në një rresht të program. Në fund të secilës rresht, ka një koment që shpjegon grupin e komandave në atë rresht.
 
@@ -318,8 +319,8 @@ Lëviz topin
 '''''''''''''''''''''''
 
 .. infonote::
-
-    Ju lutemi vini re se **Karel nuk mund të ekzekutojë asnjë komandë në çdo kohë**. Më konkretisht, Karel nuk mund të shkojë përpara nëse është përpara një muri, ai nuk mund të marrë një top ku nuk ka një, dhe ai nuk mund të lëshojë një top nëse nuk ka topa me të.
+    
+      Ju lutemi vini re se **Karel nuk mund të ekzekutojë asnjë komandë në çdo kohë**. Më konkretisht, Karel nuk mund të shkojë përpara nëse është përpara një muri, ai nuk mund të marrë një top ku nuk ka një, dhe ai nuk mund të lëshojë një top nëse nuk ka topa me të.
     
     Provoni të fshini komandën e parë ``turn_left ()`` në programin e kaluar, dhe pastaj drejtojeni programin për të parë se çfarë ndodh.
     
@@ -331,7 +332,7 @@ Ushtrime
 ------------------
 
 Afrohu te kutia (3, 3)
-'''''''''''''''''''''
+'''''''''''''''''''''''
 
 .. questionnote::
 

@@ -1,10 +1,10 @@
 Si të bëni një animacion
-------------------------
+-------------------------
 
 Një mënyrë e thjeshtë për të marrë një animacion është të vendosni pjesën e një programi që vizaton një kornizë në një funksion të veçantë. Si rregull, ne do ta quajmë këtë funksion *new_frame* në programe, megjithëse mund të ketë ndonjë emër tjetër.
 
 Ndryshimi i vizatimeve
-'''''''''''''''''''''
+''''''''''''''''''''''''
 
 Për të marrë një animacion, funksioni që vizaton një kornizë duhet të krijojë një vizatim pak më ndryshe nga ai i mëparshmi në thirrjen tjetër, pasi që pa ndryshime nuk ka asnjë animacion. Që vizatimi i ri të jetë i ndryshëm, vetë vizatimi duhet të varet nga vlerat e disa ndryshoreve. Ndryshimi i vlerave të ndryshoreve nga të cilat varet vizatimi do të rezultojë në një vizatim të ndryshëm.
 
@@ -31,7 +31,7 @@ Variablat nga të cilat varet vizatimi thuhet se përshkruajnë skenën. Mund t�
 Në rastin e përgjithshëm, kur krijojmë një kornizë të re animacioni, ne përdorim vlerat e vjetra të variablave që përshkruajnë skenë për të llogaritur vlerat e tyre të reja. Duke vepruar kështu, vlerat e reja mund ose nuk mund të jenë të ndryshme nga ato të vjetra. Ne e quajmë këtë llogaritje një përditësim të skenës.
 
 Variablat globale
-''''''''''''''''
+'''''''''''''''''''
 
 Për të qenë në gjendje të azhurnoni një skenë në funksionin *new_frame*, variablat që përshkruajnë skenën duhet të kenë vlera para dhe pas ekzekutimit të funksionit *new_frame*. Prandaj, ne duhet të formojmë këto variabla (t'i caktojmë vlerat e para) në pjesën kryesore të programit. Kur përdorim variabla të tilla në një funksion, ne i quajmë ato variabla globale. Në të kundërt, variablat e bëra në vetë funksionin quhen ndryshore lokale, dhe ato ekzistojnë vetëm gjatë ekzekutimit të funksionit.
 
@@ -40,7 +40,7 @@ Kur caktojmë vlera në një variabël globale në një funksion, duhet të treg
 Kur ekzistojnë shumë variabla globale që synojmë t'i modifikojmë në një funksion, pas fjalës *globale* duhet të rendisim emrat e të gjitha ndryshoreve të tilla, të ndara me presje.
 
 Shpejtësia e animacionit
-'''''''''''''''
+'''''''''''''''''''''''''''
 
 Shpejtësia e animacionit përcaktohet nga kohëzgjatja e secilës kornizë, d.m.th., numri i kornizave të shfaqura në një njësi të kohës. Për të treguar shkallën në të cilën shfaqen kornizat e njëpasnjëshme, ne përdorim shkurtimin (gjithashtu njësinë e matjes) fps - korniza për sekondë. Kur krijojmë një animacion, një nga gjërat që duhet të bëjmë është të zgjedhim shpejtësinë e interpretimit dhe ta vendosim atë në programin tonë si numrin e kornizave që duam që programi të krijojë dhe shfaqë për sekondë.
 
@@ -123,12 +123,12 @@ Animime - pyetje
    :feedback_c: Saktë
    :feedback_d: Provo përsëri
 
-    Si të bëni një animacion
-------------------------
+Si të bëni një animacion
+--------------------------
 
-  Në shembullin "Running", kërkohej që variabla *image_index* në mënyrë ciklike të marrë vetëm ato vlera që korrespondojnë me pozicionet e imazheve në listë. Kur kemi tetë imazhe, këto vlera janë 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, etj. Në rastin e përgjithshëm, për *n* imazhet këto vlera janë 0, 1, 2, ... n-1, 0, 1, 2, etj.
+Në shembullin "Running", kërkohej që variabla *image_index* në mënyrë ciklike të marrë vetëm ato vlera që korrespondojnë me pozicionet e imazheve në listë. Kur kemi tetë imazhe, këto vlera janë 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, etj. Në rastin e përgjithshëm, për *n* imazhet këto vlera janë 0, 1, 2, ... n-1, 0, 1, 2, etj.
 
-     Kujtojmë që operatori % tregon funksionimin e llogaritjes së pjesës së mbetur pas ndarjes. Me këtë operacion, ne mund të arrijmë të njëjtin qëllim në shënim më të shkurtër. Cila nga komandat e mëposhtme mund të zëvendësojë në mënyrë të barabartë këtë pjesë të programit?
+Kujtojmë që operatori % tregon funksionimin e llogaritjes së pjesës së mbetur pas ndarjes. Me këtë operacion, ne mund të arrijmë të njëjtin qëllim në shënim më të shkurtër. Cila nga komandat e mëposhtme mund të zëvendësojë në mënyrë të barabartë këtë pjesë të programit?
    
     .. code::
    

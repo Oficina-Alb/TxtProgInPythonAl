@@ -1,9 +1,9 @@
 Vlerat tekst
-===========
+=============
 
-Përveç numrave të plotë dhe numrave realë, një nga llojet themelore të të dhënave në programim është teksti. Të dhënat e tekstit quhen një varg **. Përveç shkronjave, ato mund të përmbajnë të gjitha karakteret e tjera të përdorura në tekst: shenjat e pikësimit, kllapat, numrat, operatorët matematikorë, karakteret e ndryshme speciale siç janë ``%``, ``$``, `` ^``. ``&`` etj.
+Përveç numrave të plotë dhe numrave realë, një nga llojet themelore të të dhënave në programim është teksti. Të dhënat e tekstit quhen një **varg**. Përveç shkronjave, ato mund të përmbajnë të gjitha karakteret e tjera të përdorura në tekst: shenjat e pikësimit, kllapat, numrat, operatorët matematikorë, karakteret e ndryshme speciale siç janë ``%``, ``$``, ``^``. ``&`` etj.
 
-Vlerat e tekstit shkruhen midis thonjëzave. Ne e quajmë tekstin nën citate shënon një tekst **konstante** ose **fjalë për fjalë **. Citimet e vetme ``'...' ` dhe dyshet ``"..."`` mund të përdoren në mënyrë të barabartë në Python (është vetëm e rëndësishme që citimi të jenë i të njëjtit lloj në fillim dhe në fund të vargut). Për shembull:
+Vlerat e tekstit shkruhen midis thonjëzave. Ne e quajmë tekstin nën citate shënon një tekst **konstante** ose **fjalë për fjalë**. Citimet e vetme ``'...'`` dhe dyshet ``"..."`` mund të përdoren në mënyrë të barabartë në Python (është vetëm e rëndësishme që citimi të jenë i të njëjtit lloj në fillim dhe në fund të vargut). Për shembull:
 
 .. code::
 
@@ -13,7 +13,7 @@ Vlerat e tekstit shkruhen midis thonjëzave. Ne e quajmë tekstin nën citate sh
 Ne do të përdorim vargun e fjalës për llojin e të dhënave tekstuale, si dhe për çdo shprehje, vlera e të cilit është ai lloj. Shembujt më të rëndësishëm të shprehjeve të vargjeve janë konstantet e tekstit (literalet) dhe ndryshoret që përmbajnë tekst.
 
 Printimi i tekstit
--------------
+---------------------
 
 Vargjet printohen në të njëjtën mënyrë si të dhënat numerike. Vargu që duam të shtypim është specifikuar thjesht si një argument funksioni *print()* 
 
@@ -30,7 +30,7 @@ Kur funksioni *print()* ka argumente të shumta, këto argumente mund të jenë 
 Kur përdorim argumente të shumta, i shkruajmë ato të ndara me presje (si me çdo funksion). Vlerat e të gjitha argumenteve të përcaktuara do të shtypen në të njëjtin rend, dhe do të ndahen nga një hapësirë.
 
 Më shumë rreth shtypjes së numrave
----------------------------
+-----------------------------------
 
 Ndonjëherë rezultati i printuar duket i paligjshëm:
 
@@ -83,10 +83,10 @@ Funksioni *format* ka shumë karakteristika të tjera, por ne nuk do t'i përdor
 
 
 Operacionet e vargut
------------------
+-----------------------
 
 Bashkimi i strings
-'''''''''''''''
+'''''''''''''''''''
 
 Vargjet mund të bashkohen së bashku me një operacion **string concatenation** . Ky operacion shënohet me shenjën ``+``, ashtu si operacioni i mbledhjes, kështu që në programimin bashkimi shpesh quhet joformalisht shtesë.
 

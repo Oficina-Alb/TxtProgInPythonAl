@@ -2,7 +2,7 @@ Degëzimi kompleks
 =================
 
 Kushtet e njëpasnjëshme
----------------------
+-------------------------
 
 Ekzistojnë detyra në të cilat, kur nuk plotësohet një kusht, një tjetër duhet të kontrollohet, dhe nëse ajo gjendje nuk është e vlefshme as atëherë kontrollohet një e treta etj. Për të shmangur shkrimet
 
@@ -53,7 +53,7 @@ Shënim 2: Pjesa
 
 
 Shembuj dhe detyra
-''''''''''''''''''
+'''''''''''''''''''
 
 .. questionnote::
     

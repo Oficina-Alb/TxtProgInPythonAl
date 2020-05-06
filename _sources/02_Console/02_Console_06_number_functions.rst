@@ -1,10 +1,10 @@
 Funksionet matematikore
-==============
+=======================
 
 Ne përdorim funksione në programim gjatë gjithë kohës. Për shembull, *print ()*, *input ()*, *int ()*, *float ()* dhe *str ()* janë funksione të gjuhës Python që kemi përdorur deri më tani. Ka shumë funksione të tjera në Python, dhe shumë prej tyre përdoren në matematikë. Do të shohim disa nga funksionet më të thjeshta të matematikës më poshtë.
 
 Funksionet *abs ()*, *min ()* dhe *max ()*
---------------------------------------
+-------------------------------------------
 
 Funksionet *abs ()*, *min ()* dhe *max ()* shpesh përdoren në detyra llogaritëse. Ju ndoshta i keni përdorur tashmë diku, kështu që le t'i shpjegojmë shkurtimisht:
 
@@ -67,7 +67,7 @@ Kontrolloni njohuritë tuaja për njohuritë e mesipëme:
     Lidh shprehjet me vlerat.
 
 Funksionet e rrumbullakimit të vlerës
-------------------------
+---------------------------------------
 
 Rrumbullakimi i vlerës së vërtetë në një numër të plotë është një operacion që gjithashtu shpesh na duhet. Tashmë kemi parë që duke shndërruar një numër real në një numër të tërë, e rrumbullakosim atë drejt zeros. Ekzistojnë edhe disa funksione që mund t'i përdorim në Python për të rrumbullakuar një numër real në mënyra të ndryshme:
 
@@ -98,7 +98,7 @@ Për të përdorur funksionet e modulit *math*, duhet ta bashkëngjitni këtë m
 Asnjë modul i veçantë nuk kërkohet për funksionin *round* dhe të gjitha funksionet e mëparshme, pasi që këto funksione janë ndërtuar në vetë Python, kështu që ato janë gjithmonë në dispozicion direkt për ne.
 
 Funksionet e rrumbullakimit të vlerës - pyetje
-------------------------------------
+---------------------------------------------------
 
 Kontrolloni të kuptuarit tuaj për funksionet e shpjeguara në këtë mësim:
 

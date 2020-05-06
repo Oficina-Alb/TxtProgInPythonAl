@@ -452,25 +452,8 @@ pg.draw.circle(canvas, pg.Color("red"), (120, 90), 50, 1)
             </div>
             
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_anchor_introduction2">
-            <p>Q-59: Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat <cite>x = 100</cite>,` y = 100`. Një nga pohimet që formojnë një vizatim është</p>
-
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_a">pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (150, 150))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_a">Provo përsëri.</li>
-            
-            <li data-component="answer" data-correct id="PyGame__drawing_quiz_anchor_introduction2_opt_b">pg.draw.line(canvas, pg.Color("red"), (x-50, y-50), (x+50, y+50))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_b">Saktë!</li>
-            
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_c">pg.draw.line(canvas, pg.Color("red"), (x-50, x+50), (y-50, y+50))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_c">Provo përsëri.</li>
-            
-            <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction2_opt_d">pg.draw.line(canvas, pg.Color("red"), (x+50, y+50), (x+150, y+150))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction2_opt_d">Provo përsëri.</li>
-            
-
-            </ul>
-            </div>
-            
-            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="PyGame__drawing_quiz_anchor_introduction3">
-            <p>Q-60: Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat <cite>x = 100</cite>,` y = 100`. Një nga pohimet që formojnë një vizatim është</p>
-
+            
             <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_a">pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, x, y))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_a">Provo përsëri.</li>
             
             <li data-component="answer"  id="PyGame__drawing_quiz_anchor_introduction3_opt_b">pg.draw.rect(canvas, pg.Color("red"), (x, y, 100, 100))</li><li data-component="feedback" id="PyGame__drawing_quiz_anchor_introduction3_opt_b">Provo përsëri.</li>
@@ -482,7 +465,10 @@ pg.draw.circle(canvas, pg.Color("red"), (120, 90), 50, 1)
 
             </ul>
             </div>
-            
+            <p>Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat <cite>x = 100</cite>,` y = 100`. Një nga pohimet që formojnë një vizatim është</p>
+<blockquote>
+<div></div></blockquote>
+
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="PyGame__drawing_quiz_move_to_the_right">
             <p>Q-61: Ne duam të lëvizim një vizatim të përbërë nga disa forma në të djathtë nga 100 piksele. Shënoni pretendimet e sakta.</p>
@@ -631,7 +617,7 @@ pygamebg.wait_loop()
 
 </textarea>
 </div>
-<p>Le të jetë pika kryesore <code class="code docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span> <span class="pre">=</span> <span class="pre">(50,</span> <span class="pre">150)</span></code>. Përfundoni rimodelimin e nisur të programit në kutinë më poshtë, ku vizatimi është bërë në funksionin <code class="code docutils literal notranslate"><span class="pre">Draw_house</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">wall_color)</span></code>. Pasi të siguroheni që vizatimet në të dy programet duken njësoj (përveç që ato vizatohen në dritare me madhësi të ndryshme), zëvendësoni kodin :code:<a href="#id1"><span class="problematic" id="id2">`</span></a>Draw_house (50, 150, pg.Color (” khaki “))” 4 tjetër, për të marrë figurën si kur klikoni në butonin “Luaj lojën”:</p>
+<p>Le të jetë pika kryesore :code: <cite>(x, y) = (50, 150)</cite>. Përfundoni rimodelimin e nisur të programit në kutinë më poshtë, ku vizatimi është bërë në funksionin <code class="code docutils literal notranslate"><span class="pre">Draw_house</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">wall_color)</span></code>. Pasi të siguroheni që vizatimet në të dy programet duken njësoj (përveç që ato vizatohen në dritare me madhësi të ndryshme), zëvendësoni kodin :code: <cite>Draw_house (50, 150, pg.Color (” khaki “))</cite> 4 tjetër, për të marrë figurën si kur klikoni në butonin “Luaj lojën”:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw_house</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span>  <span class="mi">90</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">))</span>
 <span class="n">draw_house</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">))</span>
 <span class="n">draw_house</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">150</span><span class="p">))</span>

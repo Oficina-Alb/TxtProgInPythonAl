@@ -362,8 +362,7 @@ pygamebg.frame_loop(15, new_frame)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__anim_quiz_toggle">
-            <p>Q-68:  Si të bëni një animacion</p>
-
+            
             <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_a">image_index = image_index + 1 % num_images</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_a">Provo përsëri</li>
             
             <li data-component="answer"  id="pygame__anim_quiz_toggle_opt_b">image_index = (image_index % num_images) + 1</li><li data-component="feedback" id="pygame__anim_quiz_toggle_opt_b">Provo përsëri</li>
@@ -375,9 +374,12 @@ pygamebg.frame_loop(15, new_frame)
 
             </ul>
             </div>
-            <hr class="docutils" />
-<p>  Në shembullin “Running”, kërkohej që variabla <em>image_index</em> në mënyrë ciklike të marrë vetëm ato vlera që korrespondojnë me pozicionet e imazheve në listë. Kur kemi tetë imazhe, këto vlera janë 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, etj. Në rastin e përgjithshëm, për <em>n</em> imazhet këto vlera janë 0, 1, 2, … n-1, 0, 1, 2, etj.</p>
-<p>     Kujtojmë që operatori % tregon funksionimin e llogaritjes së pjesës së mbetur pas ndarjes. Me këtë operacion, ne mund të arrijmë të njëjtin qëllim në shënim më të shkurtër. Cila nga komandat e mëposhtme mund të zëvendësojë në mënyrë të barabartë këtë pjesë të programit?</p>
+            </div>
+</div>
+<div class="section" id="id1">
+<h1>Si të bëni një animacion<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Në shembullin “Running”, kërkohej që variabla <em>image_index</em> në mënyrë ciklike të marrë vetëm ato vlera që korrespondojnë me pozicionet e imazheve në listë. Kur kemi tetë imazhe, këto vlera janë 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, etj. Në rastin e përgjithshëm, për <em>n</em> imazhet këto vlera janë 0, 1, 2, … n-1, 0, 1, 2, etj.</p>
+<p>Kujtojmë që operatori % tregon funksionimin e llogaritjes së pjesës së mbetur pas ndarjes. Me këtë operacion, ne mund të arrijmë të njëjtin qëllim në shënim më të shkurtër. Cila nga komandat e mëposhtme mund të zëvendësojë në mënyrë të barabartë këtë pjesë të programit?</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image_index</span> <span class="o">=</span> <span class="n">image_index</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># move on to the next picture</span>
 <span class="k">if</span> <span class="n">image_index</span> <span class="o">==</span> <span class="n">num_images</span><span class="p">:</span>    <span class="c1"># if there is no next picture ...</span>
@@ -385,7 +387,6 @@ pygamebg.frame_loop(15, new_frame)
 </pre></div>
 </div>
 </div></blockquote>
-</div>
 </div>
 
 

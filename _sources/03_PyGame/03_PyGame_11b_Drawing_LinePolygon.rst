@@ -1,5 +1,5 @@
 Vizatimi i linjave dhe poligoneve të drejta
------------------------------------
+-----------------------------------------------
 
 Funksionet për vizatimin e linjave të drejta dhe poligoneve janë të ngjashme me funksionet për vizatimin e drejtkëndëshave, elipsave dhe rrathëve, të cilat ne kemi mësuar tashmë. Parametrat *canvas*, *color* dhe *thickness* përdoren gjithashtu këtu, me të njëjtin kuptim si më parë. Ne do t'i shpjegojmë parametrat e rinj ndërsa hasim në to.
 
@@ -23,7 +23,7 @@ Ne do ta përsërisim programin "bosh" këtu, i cili merret vetëm me bibliotek�
  
 
 Vizatimi i një vize
-''''''''''''''
+''''''''''''''''''''''
 
 Për të vizatuar një vizë përdoret funksioni ``pg.draw.line``, me ose pa parametrin e trashësisë. 
 
@@ -77,7 +77,7 @@ Përveç këtyre funksioneve të listuara dhe të përshkruara, ka edhe funksion
  `<https://www.pygame.org/docs/ref/draw.html>`__
 
 Funksionet e vizatimit - pyetje
-'''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''
 
 Kontrolloni njohuritë:
 
@@ -154,17 +154,17 @@ Kontrolloni njohuritë:
 
 
 Vizatimi sipas instruksioneve
-'''''''''''''''''''''''
+'''''''''''''''''''''''''''''''
 
 .. questionnote::
 
     **Rrëmbyesi:** Vizatoni një frikë në një sfond të bardhë. Përbëhet nga pjesët e mëposhtme:
     
-    - koka: një rreth i zi, 6 pixel i gjerë, i përqendruar në pikën (150, 70), me rreze 50
-     - trup: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (150, 120) deri në pikën (150, 300)
-     - krahët: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (80, 170) deri në pikën (220, 170)
-     - këmbën e majtë: një vijë të zezë të drejtë, 6 pixel të gjerë, nga pika (150, 300) deri në pikën (90, 480)
-     - këmbën e djathtë: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (150, 300) deri në pikën (210, 480)
+     - koka: një rreth i zi, 6 pixel i gjerë, i përqendruar në pikën (150, 70), me rreze 50
+     - trup: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (150, 120) deri në pikën (150, 300)
+     - krahët: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (80, 170) deri në pikën (220, 170)
+     - këmbën e majtë: një vijë të zezë të drejtë, 6 pixel të gjerë, nga pika (150, 300) deri në pikën (90, 480)
+     - këmbën e djathtë: një vijë e zezë e drejtë, 6 pixel e gjerë, nga pika (150, 300) deri në pikën (210, 480)
 
 .. activecode:: pygame__drawing_scarecrow
    :nocodelens:
@@ -176,11 +176,10 @@ Vizatimi sipas instruksioneve
 .. questionnote::
 
     **Pema:** Vizato një pemë në dërrasën e bardhë. Ka këto pjesë:
-
-   - bagazhi: një drejtkëndësh i mbushur me ngjyra (97, 26, 9), madhësia 40 x 50, me kulm të majtë të sipërm në pikën (130, 250)
-     - pjesa e sipërme: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (50, 250), (150, 150) dhe (250, 250)
-     - pjesa e mesme e pemes: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (75, 200), (150, 100) и (225, 200)
-     - pjesa e poshtme e pemes: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (100, 150), (150, 50) и (200, 150)
+     - bagazhi: një drejtkëndësh i mbushur me ngjyra (97, 26, 9), madhësia 40 x 50, me kulm të majtë të sipërm në pikën (130, 250)
+     - pjesa e sipërme: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (50, 250), (150, 150) dhe (250, 250)
+     - pjesa e mesme e pemes: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (75, 200), (150, 100) и (225, 200)
+     - pjesa e poshtme e pemes: një trekëndësh i mbushur me ngjyra (0, 100, 36), me vertices (100, 150), (150, 50) и (200, 150)
     
 .. activecode:: pygame__drawing_tree
    :nocodelens:
@@ -191,7 +190,7 @@ Vizatimi sipas instruksioneve
 
 
 vizatimi surprizë
-'''''''''''''''''
+''''''''''''''''''
 
 To see the drawing in the tasks that follow, you need to write the right statements and run your program.
 

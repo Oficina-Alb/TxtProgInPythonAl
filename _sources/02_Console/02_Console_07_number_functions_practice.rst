@@ -1,11 +1,11 @@
 Funksione matematike - Ushtrime
-=========================
+=================================
 
 Le të praktikojmë duke përdorur funksionet matematikore që kemi mësuar.
 
 .. questionnote::
     
-    **Detyrë - reklama: **
+    **Detyrë - reklama:**
     
      Thomas shpërndan paketa reklamash që përmbajnë një kalendar, një keychain dhe një stilolaps. Shkruaj një program që ngarkon sa kalendarë, keychain dhe stilolapsa Thomas ka dhe më pas shtyp shumë pako reklame që ai mund të bëjë.
 

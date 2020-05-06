@@ -1,8 +1,8 @@
 Animacion sipas fazave
--------------------
+-----------------------
 
 Drita e trafikut
-'''''''''''''
+'''''''''''''''''
 
 Një nga shembujt më të njohur të një pajisjeje që funksionon në shkallë është një semafor. Në shembullin e semaforit ne do të shpjegojmë duke punuar sipas fazave dhe si mund të animojmë ngjarjet që ndodhin në faza në një kompjuter.
 
@@ -21,7 +21,7 @@ Ja se si mund të duket një program i bazuar në këtë logjikë:
     :includesrc: src/PyGame/2_Animation/2c_Anim_Stages/TrafficLights1.py
 
 Detyra
-'''''
+'''''''
 
 .. questionnote::
 
@@ -88,6 +88,7 @@ Detyra
      - Skena dy zgjat 5 korniza, gjatë së cilës moli është në pozitën më të lartë (tregohet imazhi i dhjetë).
      - Skena tre zgjat 10 korniza dhe gjatë kësaj faze moli po hyn në vrimë (pamjet tregohen nga e dhjeta në e parë).
      - Skena katër zgjat 3 korniza dhe gjatë saj moli është në vrimë (tregohet imazhi i parë).
+
 .. image:: ../../_images/mole1.png
    :width: 50px
 .. image:: ../../_images/mole2.png

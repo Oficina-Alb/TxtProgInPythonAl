@@ -159,9 +159,8 @@ Në fillim të këtij programi, ne ngarkojmë numrin e votave *n*, atëherë pë
     humidity = (0.2, 0.5, 0.61, 0.40, 0.72, 0.51, 0.43, 0.35, 0.28)
     
 
-
 Mbledhja
--------
+----------
 
 Në një grup të madh të problemeve praktike, ne arrijmë në rezultat duke e ndërtuar gradualisht (akumuluar) atë ndërsa kalojmë nëpër të dhëna. Për shembull, nëse kemi nevojë për shumën e disa numrave, mund ta arrijmë atë në këtë mënyrë të përgjithshme:
 
@@ -265,10 +264,6 @@ Nëse zgjidhni detyrën si duhet, duhet të merrni rezultatin 25 për të dhëna
         if hours > norm:
             total_overtime += (hours - norm)
     print('Total overtime on duty is', total_overtime)
-
-
-
-
 
 
 .. questionnote::

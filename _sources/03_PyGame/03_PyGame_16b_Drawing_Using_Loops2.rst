@@ -1,5 +1,5 @@
 Vizatimi i poligoneve me sythe
----------------------------
+--------------------------------
 
 Kujtoni një shembull të një programi që vizaton një gardh:
 

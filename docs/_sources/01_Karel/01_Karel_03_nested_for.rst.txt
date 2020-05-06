@@ -85,13 +85,14 @@ Detyra përsëritet, por tani ne do ta zgjidhim atë në një mënyrë tjetër.
 Në zgjidhjen e dhënë, thënia *pick_ball ()* është e theksuar gjithashtu, sepse ekzekutohet ato për secilin ``i_ball`` nga diapazoni [0, 1, 2, 3, 4]. Për më tepër, e gjithë deklarim ``për i_ball në varg (5):`` (së bashku me trupin e saj dhe thënia *move()* mbi të), përsëritet 3 herë, ato për secilin ``i_square`` nga diapazoni [0, 1, 2]. Kjo do të thotë që komanda *pick_ball()* ekzekuton gjithsej 3 x 5 = 15 herë (në secilën nga tre sheshet pesë herë).
 
 .. infonote ::
+
     Me sythe të loops, është e nevojshme t'i kushtohet vëmendje shtesë theksit të saktë të deklaratave, sepse bëhet disi më e ndërlikuar. Shënimi i gabuar i disa komandave mund të çojë në rezultatin e gabuar, ose në një program që nuk funksionon fare.
    
 Ushtrime
 ------------------
 
 Evito
-''''
+''''''
 
 .. questionnote::
 
@@ -134,8 +135,8 @@ Karl duhet të përsërisë një grup veprimesh "Leviz tre herë, dhe pastaj të
 
 .. commented out
    .. reveal:: Karel_for_every_nth_square_reveal
-       :showtitle: Решење
-       :hidetitle: Сакриј решење
+       :showtitle: Zgjidhja
+       :hidetitle: Fshih zgjidhjen
    
        .. activecode:: Karel_for_every_nth_square_solution
            :passivecode: true
@@ -360,10 +361,10 @@ Kjo detyrë ndryshon nga ajo e mëparshmja në vetëm një gjë: tani marrja e t
     }
 
 .. reveal:: Karel_for_ring_3_reveal
-    :showtitle: Hint
-    :hidetitle: Hide hint
+    :showtitle: Ndihme e vogel
+    :hidetitle: fshih ndihmen
 
-    Again, we give instructions which look like a program (this time without the program itself).
+    Përsëri, ne japim udhëzime që duken si program (këtë herë pa programin vetë).
     
     .. activecode:: Karel_for_ring_3_solution
         :passivecode: true

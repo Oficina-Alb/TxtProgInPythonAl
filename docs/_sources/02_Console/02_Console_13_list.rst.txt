@@ -1,5 +1,5 @@
 Listat
-=====
+========
 
 Deri më tani, ne kemi përmendur tuple dhe gamën si lloj koleksionesh, dhe kemi parë që tuples mund të përdoret gjithashtu si koleksion. Një tjetër koleksion shumë i rëndësishëm dhe i përdorur shpesh janë listat.
 
@@ -65,7 +65,7 @@ Tuples mund të përdoren për koleksione të të dhënave që ne nuk kemi ndër
 Tuple *t* mund të shndërrohet në një listë *a* gjatë ekzekutimit të programit, dhe anasjelltas: ``a = list (t)`` ose ``t = tuple (a)``, por konvertime të tilla rrallë janë të nevojshme dhe më mirë t’i shmangni ato (nëse ato shpesh aplikohen në koleksione të mëdha, shndërrimet si kjo mund ta ngadalësojnë programin në mënyrë të konsiderueshme).
 
 Ndërtimi i një liste
----------------
+-----------------------
 
 Siç kemi parë tashmë, gradualisht mund të ndërtojmë lista në një program. Për shembull, nëse na jepen një grup numrash nga të cilët duam të kopjojmë ato që janë më të mëdha se zero (dhe të kryejmë disa detyra shtesë me këto numra më vonë), mund ta bëjmë këtë:
 

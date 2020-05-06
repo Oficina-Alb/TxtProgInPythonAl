@@ -342,38 +342,34 @@ pygamebg.frame_loop(100, new_frame)
             
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame__anim_quiz_bounce4">
-    <span data-component="question">
-</span>
+    <span data-component="question">Q-72: Le të jetë 'width' e gjerësisë së dritares, 'im_width' gjerësia e figurës dhe (x, y) këndi i sipërm i majtë i figurës. Përputhni kushtet logjike me kuptimin e tyre</span>
 	<span data-component=feedback>Provo përsëri!</span>
 
     <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag1">imazhi doli përmes skajit të majtë të dritares </li>
     <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag1"> x + im_width <0</li>
-</ul></div><p>    :match_2: imazhi filloi të dalë përmes skajit të majtë të dritares ||| x &lt;0
-    :match_3: imazhi doli përmes skajit të djathtë të dritares ||| x&gt; gjerësi</p>
-<blockquote>
-<div><p>Le të jetë ‘width’ e gjerësisë së dritares, ‘im_width’ gjerësia e figurës dhe (x, y) këndi i sipërm i majtë i figurës. Përputhni kushtet logjike me kuptimin e tyre</p>
-</div></blockquote>
 
+    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag2">imazhi filloi të dalë përmes skajit të majtë të dritares </li>
+    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag2"> x <0</li>
+
+    <li data-component="draggable" id="pygame__anim_quiz_bounce4_drag3">imazhi doli përmes skajit të djathtë të dritares </li>
+    <li data-component="dropzone" for="pygame__anim_quiz_bounce4_drag3"> x> gjerësi</li>
+</ul></div>
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__anim_quiz_bounce5">
-            
+            <p>Q-73: Le  të jetë <em>width</em> gjerësia e dritares, <em>im_width</em> gjerësia e figurës, (<em>x</em>, <em>y</em>) këndi i sipërm i majtë i figurës dhe <em>dx</em> vlera me të cilën koordinata <em>x</em> e imazhi do të ndryshohet më vonë. Cilat komanda do të bëjnë që imazhi të fillojë të shfaqet duke hyrë në dritare përmes skajit të djathtë?</p>
+
             <li data-component="answer" data-correct id="pygame__anim_quiz_bounce5_opt_a">x = width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_a">Saktë!</li>
             
             <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_b">x = width + im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_b">Jo, kjo është shumë larg nga skaji i duhur.</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_c">x = width - im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_c"></li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_c">x = width - im_width; dx = -10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_c">Jo, në këtë mënyrë e gjithë imazhi është tashmë në dritare.</li>
             
-            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_d">x = width + im_width; dx = 10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_d"></li>
+            <li data-component="answer"  id="pygame__anim_quiz_bounce5_opt_d">x = width + im_width; dx = 10</li><li data-component="feedback" id="pygame__anim_quiz_bounce5_opt_d">Jo, imazhi është shumë larg dhe do të vazhdojë të bëhet më larg.</li>
             
 
             </ul>
             </div>
-            <p>    :feedback_c: Jo, në këtë mënyrë e gjithë imazhi është tashmë në dritare.
-    :feedback_d: Jo, imazhi është shumë larg dhe do të vazhdojë të bëhet më larg.</p>
-<blockquote>
-<div><p>Le  të jetë <em>width</em> gjerësia e dritares, <em>im_width</em> gjerësia e figurës, (<em>x</em>, <em>y</em>) këndi i sipërm i majtë i figurës dhe <em>dx</em> vlera me të cilën koordinata <em>x</em> e imazhi do të ndryshohet më vonë. Cilat komanda do të bëjnë që imazhi të fillojë të shfaqet duke hyrë në dritare përmes skajit të djathtë?</p>
-</div></blockquote>
-</div>
+            </div>
 <div class="section" id="detyre-nje-makine-qe-shkon-majtas-djathtas">
 <h2>Detyrë - një makinë që shkon majtas djathtas<a class="headerlink" href="#detyre-nje-makine-qe-shkon-majtas-djathtas" title="Permalink to this headline">¶</a></h2>
 <p>Provoni të ripërpunoni programin e parë në mënyrë që makina të lëvizë në mënyrë alternative në njërën anë dhe në anën tjetër, si në shembullin (butoni “Luaj detyrën”). Programi tashmë përmban komanda për të formuar një bashkim të dy imazheve. Imazhi i makinës që përballet drejt, është i ngarkuar, ndërsa imazhi i makinës përballë palës tjetër merret duke përdorur funksionin <em>pg.transform.flip</em>, i cili shndërron imazhin e dhënë në një simetrik me të.</p>

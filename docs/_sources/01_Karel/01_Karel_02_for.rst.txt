@@ -1,5 +1,5 @@
 Shkurtoni programet tuaja
-=====================
+=============================
 
 Në kapitullin e mëparshëm kishte detyra në të cilat do të ishte e përshtatshme për ne që të kemi një mënyrë më të shkurtër për të specifikuar disa veprime përsëritëse. Për shembull, na duhej që Kareli të shkonte tre hapa përpara. Në rastin e vetëm tre hapave, është mjaft e lehtë të shkruani deklarimn ``move ()`` tri herë, por kur Karel duhet të bëjë, të themi, dymbëdhjetë hapa përpara, nëse shkruajmë:
 
@@ -94,9 +94,9 @@ Një program më i gjatë (dhe më i shëmtuar) është duke pritur për ju në 
    }
 
 .. reveal:: Karel_for_15_steps_and_take_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
-
+   :showtitle: Zgjidhja
+   :hidetitle: Fshih zgjidhjen
+   
    .. activecode:: Karel_for_15_steps_and_take_solution
       :passivecode: true
       
@@ -139,8 +139,8 @@ Shko një kuti para dhe mblidh 10 topa
    }
    
 .. reveal:: Karel_for_one_square_take_10_balls_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
+   :showtitle: Zgjidhja
+   :hidetitle: Fshih Zgjidhjen
 
    .. activecode:: Karel_for_one_square_take_10_balls_solution
       :passivecode: true
@@ -235,8 +235,8 @@ Merrni 5 topa nga secila nga 3 kutitë
    }
    
 .. reveal:: Karel_for_Take_5_5_5_reveal
-   :showtitle: Solution
-   :hidetitle: Hide solution
+   :showtitle: Zgjidhja
+   :hidetitle: Fshih zgjidhjen
    
    .. activecode:: Karel_for_Take_5_5_5_solution
       :passivecode: true

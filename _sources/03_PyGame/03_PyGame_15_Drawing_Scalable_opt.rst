@@ -1,5 +1,5 @@
 Ndryshimi i madhësisë së vizatimit
--------------------------
+----------------------------------------
 
 Kur folëm për lëvizjen e një vizatimi, përmendëm se është më mirë të bëjmë të gjitha llogaritjet në program, sepse është më e lehtë në atë mënyrë që të lëvizësh vizatimin, ose ta vizatosh në disa vende kur të jetë e nevojshme. Situata është e ngjashme kur ne duam të vizatojmë të njëjtën vizatim në madhësi të ndryshme, ndoshta në disa vende (secila mund të jetë në madhësi të ndryshme). Në vend që të llogaritni të gjitha koordinatat nga e para, mund të jetë e mjaftueshme për të ndryshuar një numër të vetëm në programin tonë për të marrë një vizatim të një madhësie tjetër.
 
@@ -52,13 +52,13 @@ The function has one parameter more - besides the position and the shade of gray
 Tani, le të rendisim hapat për një procedurë të përgjithshme për të rimarrë çdo vizatim të lëvizshëm, në mënyrë që të mund të ndryshohet në madhësi:
 
 - Duhet të përcaktojmë një gjatësi në vizatim, i cili do të vendoset direkt. Mund ta quajmë këtë gjatësi të zgjedhur **gjatësi themelore** ose njësi matëse. Në shembullin e reve, gjatësia themelore është rrezja e rrethit të mesëm.
-- Të gjitha rrezet e rrathëve të të cilave përbëhet vizatimi shprehen në përpjesëtim me gjatësinë themelore. Kjo do të thotë që nëse gjatësia jonë bazë shënohet nga :math:`a`, të gjitha gjatësitë e tjera në program do të jenë shumëfish :math:`a`, për shembull :math:`2a` ose :math:` 5a`. Ne përcaktojmë numrin :math:`a` nga raporti i gjatësisë së kërkuar dhe gjatësisë themelore të zgjedhur në vizatimin fillestar (ky raport mbetet i njëjtë kur ndryshon madhësia e vizatimit). Në shembullin me re, rrezja e rrethit të vogël është gjithmonë :math:`{3 \ over 5}` e gjatësisë themelore të zgjedhur :math:`r`. Nëse drejtkëndëshat ose elipsat paraqiten në vizatim, lartësitë dhe gjerësia e atyre drejtkëndëshave dhe elipsave gjithashtu duhet të shprehen në përpjesëtim me gjatësinë themelore, në të njëjtën mënyrë si rrezet e rrathëve.
-- Ne përcaktojmë koordinatat e të gjitha pikave në lidhje me pikën kryesore, duke shtuar ose zbritur një numër të caktuar gjatesish themelore në koordinatat e pikës kryesore. Numri i kërkuar i gjatësive themelore përcaktohet përsëri nga relacioni në vizatimin fillestare. Në shembullin me re, për të përftuar :math:`x` koordinata e qendrës së rrethit të majtë, ne zbritim **një ** gjatësi themelore nga :math:`x` koordinata e pikës kryesore (qendra e mesit rrethi). Ne e bëjmë këtë sepse raporti i ndryshimit të :math:`x` koordinatat dhe gjatësia themelore është e barabartë me një. E njëjta procedurë zbatohet në parim përkoordinatat :math:`y`, megjithëse në këtë rast është veçanërisht e thjeshtë. Meqenëse  koordinatat e qendrave të rrathëve :math:`y`janë të njëjta, raporti i ndryshimit të koordinatave :math:` y` dhe gjatësia themelore është zero, kështu që duhet të shtohen gjatësi zero themelore në: matematikë: koordinata `y` e spirancës për të marrë :math:` y` koordinatë e qendrës së një rrethi më të vogël.
+- Të gjitha rrezet e rrathëve të të cilave përbëhet vizatimi shprehen në përpjesëtim me gjatësinë themelore. Kjo do të thotë që nëse gjatësia jonë bazë shënohet nga :math: `a`, të gjitha gjatësitë e tjera në program do të jenë shumëfish :math:`a`, për shembull :math:`2a` ose :math:` 5a`. Ne përcaktojmë numrin :math:`a` nga raporti i gjatësisë së kërkuar dhe gjatësisë themelore të zgjedhur në vizatimin fillestar (ky raport mbetet i njëjtë kur ndryshon madhësia e vizatimit). Në shembullin me re, rrezja e rrethit të vogël është gjithmonë :math:`{3 \ over 5}` e gjatësisë themelore të zgjedhur :math:`r`. Nëse drejtkëndëshat ose elipsat paraqiten në vizatim, lartësitë dhe gjerësia e atyre drejtkëndëshave dhe elipsave gjithashtu duhet të shprehen në përpjesëtim me gjatësinë themelore, në të njëjtën mënyrë si rrezet e rrathëve.
+- Ne përcaktojmë koordinatat e të gjitha pikave në lidhje me pikën kryesore, duke shtuar ose zbritur një numër të caktuar gjatesish themelore në koordinatat e pikës kryesore. Numri i kërkuar i gjatësive themelore përcaktohet përsëri nga relacioni në vizatimin fillestare. Në shembullin me re, për të përftuar :math: `x` koordinata e qendrës së rrethit të majtë, ne zbritim **një ** gjatësi themelore nga :math:`x` koordinata e pikës kryesore (qendra e mesit rrethi). Ne e bëjmë këtë sepse raporti i ndryshimit të :math:`x` koordinatat dhe gjatësia themelore është e barabartë me një. E njëjta procedurë zbatohet në parim përkoordinatat :math: `y`, megjithëse në këtë rast është veçanërisht e thjeshtë. Meqenëse  koordinatat e qendrave të rrathëve :math:`y`janë të njëjta, raporti i ndryshimit të koordinatave :math: `y` dhe gjatësia themelore është zero, kështu që duhet të shtohen gjatësi zero themelore në: matematikë: koordinata `y` e spirancës për të marrë :math: `y` koordinatë e qendrës së një rrethi më të vogël.
 
 Për të kuptuar më mirë procesin e ndryshimit të madhësisë së një vizatimi, ne do ta përdorim atë edhe në shembullin e një ariu pelushi.
 
 Ariu - madhësia
-''''''''''''
+'''''''''''''''''
 
 Programi i mëposhtëm tregon kokën e ariut në mënyrë që të mund të zhvendoset lehtësisht:
 
@@ -113,7 +113,7 @@ Kopjoni ose rivendosni këto pesë rreshta kodi në program dhe provojeni! Konsi
 Tani përpiquni të plotësoni një shembull të nisur.
 
 Ushtrim - madhësia e shtëpisë
-'''''''''''''''''
+'''''''''''''''''''''''''''''''''
 
 Do të fillojmë me një program që vizaton katër shtëpi në pozicionet e dhëna në ekran:
 

@@ -1,5 +1,5 @@
 Vizatim
-=======
+========
 
    .. toctree::
       :maxdepth: 1

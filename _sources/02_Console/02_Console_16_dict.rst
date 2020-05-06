@@ -38,7 +38,7 @@ Një koleksion i formularit {'Mary': 14, 'Michael': 15, 'Daniel': 15, 'Matilda':
 Ne përdorim fjalorë për të marrë shpejt dhe me lehtësi vlerë për një çelës të caktuar. Në shembullin tonë, ne gjetëm moshën për një emër të dhënë në fjalor. Në tuples dhe listat, ne gjithashtu marrim vlerën e elementit me numrin e sekuencës (indeksin) e atij elementi. Mund të themi se çelësi në fjalor luan rolin që luan indeksi në tuples dhe listat. Dallimi thelbësor midis fjalorëve nga njëra anë, dhe tuples dhe listave nga ana tjetër, është se në fjalor çelësi mund të jetë i çdo lloji të pandryshueshëm (numër i plotë, numër real, varg, tuple ...) ndërsa është në tuple ose listë indekset duhet të jenë numra të plotë duke filluar nga 0.
 
 Ndërtimi i një fjalori
----------------------
+-------------------------
 
 Ne gjithashtu mund të ndërtojmë një fjalor duke llogaritur. Ne e bëjmë këtë duke futur çifte të reja me vlerë çelësi në fjalor dhe më pas duke ndryshuar vlerën për një çelës të dhënë sipas nevojës.
 

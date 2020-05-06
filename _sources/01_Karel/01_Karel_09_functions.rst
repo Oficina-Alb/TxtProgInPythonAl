@@ -40,7 +40,7 @@ Komentet disi ndihmojnë në bërjen më të lehtë të kësaj pjese të program
 Funksioni *back ()* nuk është pjesë e bibliotekës së Karelit, por ne mund ta shkruajmë shumë lehtë këtë funksion vetë. Kur të kemi mbaruar, ne do të jemi në gjendje të përdorim funksionin *back ()* në mënyrë të barabartë me funksionet e tjera të bibliotekës *Karel*, siç janë *move ()* ose *turn_right ()*.
 
 Si të shkruajmë funksione
-----------------------
+----------------------------
 
 Për momentin, do te mesojmë menyra të thjeshta për te shkruar një funksion në Python dhe do të shohim me vonë forma të tjera më komplekse.
 
@@ -54,7 +54,7 @@ Për momentin, do te mesojmë menyra të thjeshta për te shkruar një funksion 
 
 .. infonote::
    
-   Kur shkruani ndonjë funksion në Python, fjala `` def`` në fillim, kllapat `` () `` dhe karakteri ``: `` në fund të rreshtit të parë janë të detyrueshme. Për *function_name* ne mund të përdorim çdo emër të shkruar saktë që zgjedhim. deklarimet e mëposhtme janë shkruar me theks, dhe ato formojnë trupin e funksionit (nëse më shumë se një komandë është shkruar me radhë, atëherë këto komanda ndahen me një pikëpresjes ``; `` ). deklarimet në trupin e funksionit do të ekzekutohen sa herë që emri i funksionit haset gjatë ekzekutimit të programit, domethënë kur quhet ky funksion.
+   Kur shkruani ndonjë funksion në Python, fjala ``def`` në fillim, kllapat ``()`` dhe karakteri ``:`` në fund të rreshtit të parë janë të detyrueshme. Për *function_name* ne mund të përdorim çdo emër të shkruar saktë që zgjedhim. deklarimet e mëposhtme janë shkruar me theks, dhe ato formojnë trupin e funksionit (nëse më shumë se një komandë është shkruar me radhë, atëherë këto komanda ndahen me një pikëpresjes ``;`` ). deklarimet në trupin e funksionit do të ekzekutohen sa herë që emri i funksionit haset gjatë ekzekutimit të programit, domethënë kur quhet ky funksion.
 
 Në përputhje me këto rregulla, funksioni *back ()* mund të shkruhet si më poshtë:   
 
@@ -163,7 +163,8 @@ Nxerrja e funksionit nga loop
 -------------------------------------------
 
 .. infonote ::
-     **Kur duam të ndërpresim një ekzekutim të loop**, shkruajmë një deklarim të veçantë `` break``. Efekti i deklarims *break* është që të dali nga loop dhe të vazhdojë ekzekutimin e programit nga deklarim e parë pas loop.
+    
+  **Kur duam të ndërpresim një ekzekutim të loop**, shkruajmë një deklarim të veçantë ``break``. Efekti i deklarims *break* është që të dali nga loop dhe të vazhdojë ekzekutimin e programit nga deklarim e parë pas loop.
     
      Duke përdorur një deklarim *break*, ne do të hidhemi nga lidhja më e afërt (më e ngushtë) *for* ose *while* me loop që përmban deklarimn *break*. Nëse një deklarim *break* ndodhet brenda dy ose më shumë lidhjeve loops, ekzekutimi vazhdon me deklarimn që ndjek loop/in më të brendshëm (më të ngushtë).
     
@@ -525,8 +526,8 @@ Kur Karel mbledh të gjitha topat, thirrja tjetër e këtij funksioni do ta vend
         },
     }
 
-Merr të gjithe topat nga e gjith[ tavolina
-'''''''''''''''''''''''''''''''''''''''
+Merr të gjithe topat nga e gjithë tavolina
+'''''''''''''''''''''''''''''''''''''''''''
 
 .. questionnote::
 

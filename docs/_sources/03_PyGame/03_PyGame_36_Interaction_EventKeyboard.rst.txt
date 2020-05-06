@@ -1,10 +1,10 @@
 Eventet e tastierës
----------------
+---------------------
 
-Nga eventet e krijuara në tastierë, më e rëndësishmja është ngjarja kryesore e shtypjes, kështu që ne do të përqendrohemi më shumë në atë. Kur shtypni tastet në tastierë, në objektin *event* që përfaqëson një ngjarje në programet tona, vlera e *events.type* do të jetë ``pg.KEYDOWN`.
+Nga eventet e krijuara në tastierë, më e rëndësishmja është ngjarja kryesore e shtypjes, kështu që ne do të përqendrohemi më shumë në atë. Kur shtypni tastet në tastierë, në objektin *event* që përfaqëson një ngjarje në programet tona, vlera e *events.type* do të jetë ``pg.KEYDOWN``.
 
 Kur shtypnja e një çelësi në tastierë është regjistruar, ne pothuajse gjithmonë dëshirojmë të dimë se cili çelës është. Këtë mund ta zbulojmë duke testuar vlerën e ``event.key``. Siç kemi përmendur tashmë në mësimin për të lexuar gjendjen e tastierës, ekziston një konstantë për secilën çelës që korrespondon me atë çelës. Le të rikujtojmë emrat e këtyre konstantave për disa çelësa të testuar shpesh (mund të shihni një listë të plotë të këtyre konstanteve
- `këtu <https://www.pygame.org/docs/ref/key.html>`__ ):
+ (`këtu <https://www.pygame.org/docs/ref/key.html>`__ ):
 
 ============ ==============
 Celësi       konstant
@@ -153,7 +153,7 @@ labirint
             
 
 Bonus - një praktikë programi shkrimi
-'''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''
 
 Programi më poshtë ka për qëllim praktikën e shkrimit. Programi është i gjatë, por duhet të jeni në gjendje të kuptoni një pjesë të madhe të tij.
 
