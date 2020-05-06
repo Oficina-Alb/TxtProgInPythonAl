@@ -84,7 +84,7 @@ Në fillim kemi një listë të zbrazët, dhe më pas në loop përdorim funksio
 
 
 Mbushja e listës
---------------
+-------------------
 
 Në të njëjtën mënyrë, ne mund t'i ngarkojmë të dhënat në një listë:
 
@@ -133,16 +133,16 @@ Ne kemi përdorur funksionin *split ()* për të analizuar tekstin e futur në v
 
 
 .. infonote::
-
-     **fuksioni** *split()*:
     
-   parametri i funksionit *split() * është një karakter ose tekst që duam të përdorim si ndarës. Nëse një ndarës nuk është specifikuar, një hapësirë ``' '`` merret si e mirëqënë.
+    **fuksioni** *split()*:
+    
+Parametri i funksionit *split() * është një karakter ose tekst që duam të përdorim si ndarës. Nëse një ndarës nuk është specifikuar, një hapësirë ``' '`` merret si e mirëqënë.
     
     :code:`"1234 56".split() -> ["1234", "56"]`
     
     :code:`"1234,56".split(',') -> ["1234", "56"]`
     
-    Rezultati i funksionit *split ()* është një listë string. Numri i vargjeve më të shkurtër që marrim si rezultat varet nga numri dhe faqosja e karaktereve ndarës në vargun fillestar. Për shembull, nëse teksti përmban vetëm një ndarës diku në mes, do të marrim dy tuples më të shkurtër. Çdo paraqitje e re e karakterit ndarës mund të prodhojë një varg më shumë në listën rezultuese (nëse me të vërtetë ndan një pjesë të vargut fillestar nga pjesa tjetër e tekstit).
+Rezultati i funksionit *split ()* është një listë string. Numri i vargjeve më të shkurtër që marrim si rezultat varet nga numri dhe faqosja e karaktereve ndarës në vargun fillestar. Për shembull, nëse teksti përmban vetëm një ndarës diku në mes, do të marrim dy tuples më të shkurtër. Çdo paraqitje e re e karakterit ndarës mund të prodhojë një varg më shumë në listën rezultuese (nëse me të vërtetë ndan një pjesë të vargut fillestar nga pjesa tjetër e tekstit).
     
     :code:`"1;23;456;7".split(';') -> ["1", "23", "456", "7"]`
     
@@ -150,7 +150,7 @@ Ne kemi përdorur funksionin *split ()* për të analizuar tekstin e futur në v
     
 
 Shembuj dhe ushtrime
-''''''''''''''''''
+''''''''''''''''''''''
 
 .. questionnote::
 

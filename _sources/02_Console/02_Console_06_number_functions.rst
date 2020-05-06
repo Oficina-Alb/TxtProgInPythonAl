@@ -46,8 +46,8 @@ Kontrolloni njohuritë tuaja për njohuritë e mesipëme:
    :feedback_a: Funksioni maksimal i kthen vlerat më të mëdha të kaluara në të si argumente.
    :feedback_b: Funksioni maksimal i kthen vlerat më të mëdha të kaluara në të si argumente.
    :feedback_c: Saktë!
-		
-  Cila është vlera e shprehjes ``max(10, 20, 30)``?
+   
+   Cila është vlera e shprehjes ``max(10, 20, 30)``?
 
 .. dragndrop:: console__numberfunc_max_0x100
     :feedback: Provo përsëri!

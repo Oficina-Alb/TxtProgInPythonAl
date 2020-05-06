@@ -46,8 +46,8 @@ Kontrolloni njohuritë tuaja për njohuritë e mesipëme:
    :feedback_a: Funksioni maksimal i kthen vlerat më të mëdha të kaluara në të si argumente.
    :feedback_b: Funksioni maksimal i kthen vlerat më të mëdha të kaluara në të si argumente.
    :feedback_c: Saktë!
-		
-  Cila është vlera e shprehjes ``max(10, 20, 30)``?
+   
+   Cila është vlera e shprehjes ``max(10, 20, 30)``?
 
 .. dragndrop:: console__numberfunc_max_0x100
     :feedback: Provo përsëri!
@@ -67,7 +67,7 @@ Kontrolloni njohuritë tuaja për njohuritë e mesipëme:
     Lidh shprehjet me vlerat.
 
 Funksionet e rrumbullakimit të vlerës
-------------------------
+---------------------------------------
 
 Rrumbullakimi i vlerës së vërtetë në një numër të plotë është një operacion që gjithashtu shpesh na duhet. Tashmë kemi parë që duke shndërruar një numër real në një numër të tërë, e rrumbullakosim atë drejt zeros. Ekzistojnë edhe disa funksione që mund t'i përdorim në Python për të rrumbullakuar një numër real në mënyra të ndryshme:
 

@@ -22,7 +22,7 @@ Me skriptet, nuk ka një ndarje të rreptë midis përdoruesve dhe zhvilluesve s
 Tashmë kemi theksuar që ky manual nuk është i destinuar vetëm për profesionistët e ardhshëm në programim. Nëse nuk programoni aplikime, prapë mund të përfitoni nga programimi. Ju mund të shkruani një skenar ose të rregulloni një ekzistues, siç pritet në udhëzimin e supozuar të shembullit të mëparshëm.
 
 Përsëritja e llogaritjes për të dhëna të shumta
----------------------------------------
+-----------------------------------------------------
 
 Le ta bëjmë shembullin e mëparshëm më të përgjithshëm. Supozoni se në një dyqan ne kemi të drejtë për një zbritje 20 përqind mbi çmimet e rregullta. Ne jemi të interesuar në çmimet me zbritje të produkteve të ndryshme, çmimet e rregullta të të cilave i njohim.
 
@@ -85,7 +85,7 @@ Deklaratat e trupit loop shkruhen në mënyrë të theksuar në lidhje me rresht
 
 
 Shembuj dhe ushtrime
-''''''''''''''''''
+''''''''''''''''''''''''
 
 .. questionnote::
     
@@ -109,7 +109,7 @@ Një program që zgjidh këtë detyrë mund të duket si ky:
 
 
 .. questionnote::
-
+    
     **Detyrë - kohëzgjatja e udhëtimit **
 
      George synon të fillojë një udhëtim me makinë 600 kilometra në 9 të mëngjesit në mëngjes dhe është i interesuar të arrijë kohën nëse ai po udhëtonte me një shpejtësi mesatare prej 90, 100, 120 ose 130 kilometra në orë. Përfundoni programin për të renditur kohën e mbërritjes në destinacion për secilën nga shpejtësitë mesatare të lartpërmendura.
@@ -156,7 +156,7 @@ Një program që zgjidh këtë detyrë mund të duket si ky:
 
 
 .. questionnote::
-
+    
     **Detyrë - shtesa **
 
      Theo bën një plan për të shpenzuar paratë e xhepit për një pushim 14-ditor. Shkruaj një program që, për një shpenzim mesatar ditor prej 5, 10, ose 20 euro, rendit sa para do të duheshin në total në Theo për secilin rast.

@@ -1,10 +1,10 @@
 Vizatimi i drejtkëndëshave, eklipse dhe rrathëve
 --------------------------------------------------
 
-Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me ``pg.pull`. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:
+Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me ``pg.pull``. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:
 
 - Parametri *canvas* është zona në të cilën vizatojmë. Në këtë udhëzues, programet do të kenë tashmë një variabël të formuar (më saktësisht objekt) *canvas*, e marrë si rezultat i një thirrje të funksionit ``pygamebg.open_window``.
-- Parametri *color* është ngjyra që ne përdorim për të vizatuar. Siç u tha më herët, një ngjyrë mund të specifikohet me emrin e saj (për shembull: kodi: `pg.Color ("black")`), ose si një tuple ose një listë e 3 elementeve (për shembull: kodi: `[ 255, 0, 0] `për të kuqe).
+- Parametri *color* është ngjyra që ne përdorim për të vizatuar. Siç u tha më herët, një ngjyrë mund të specifikohet me emrin e saj (për shembull: kodi: `pg.Color ("black")`), ose si një tuple ose një listë e 3 elementeve (për shembull: kodi: `[ 255, 0, 0]` për të kuqe).
 - Parametri *drejtkëndësh* është një tupë ose një listë me katër elementë: matematikë: `(x, y, w, h)` ose: matematikë: `[x, y, w, h]`, që përshkruan një drejtkëndësh, siç u shpjegua më herët (koordinatat e kulmës së sipërme të majtë, gjerësia dhe lartësia e drejtkëndëshit).
 - Parametri *center* paraqet një pikë. Siç u përmend më herët, një pikë mund të specifikohet si një tuple (ose listë) e 2 elementeve, të cilat përfaqësojnë koordinatat e pikës në dritaren në të cilën ne vizatojmë.
 - Parametri *thickness* është trashësia e linjave që përdorim për të vizatuar. Në funksionet që shpjegojmë këtu, ky parametër është opsional dhe mund të harrohet.
@@ -61,7 +61,7 @@ Deklarimi e dytë do të thotë:
    :align: center 
 
 Vizatimi i një elipsi
-''''''''''''''''''
+''''''''''''''''''''''''
 
 Për të vizatuar një elips, p[rdorni funksionin``pg.draw.ellipse``, me apo pa parametrin e trashesisë:
 
@@ -107,7 +107,7 @@ Parametri *center* është një pikë që përfaqëson qendrën e rrethit, dhe p
 Nëse parametri i fundit (gjerësia e goditjes 3) do të ishte zhdukur, brendësia e rrethit do të ishte gjithashtu e kuqe.
 
 Vizatimi i drejtkëndëshave, elipsave dhe rrathëve - pyetje
-''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:
 
@@ -150,8 +150,8 @@ Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:
    :feedback_b: Provo përsëri
    :feedback_c: Saktë
    :feedback_d: Provo përsëri
-
-   Dallimi midis `pg. pull.circle (canvas, color, (cx, cy), r)` dhe `pg. pull.circle (canvas, color, (cx, cy), r, 1)" është se:
+   
+   Dallimi midis `pg. pull.circle (canvas, color, (cx, cy), r)` dhe `pg. pull.circle (canvas, color, (cx, cy), r, 1)` është se:
 
 .. mchoice:: pygame__drawing_quiz_rect_args_1
    :answer_a: Koordinatat vertikale majtas
@@ -199,7 +199,7 @@ Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:
    :math:`(130, 160)`, cilin thirrje funksioni duhet të bëhet:
 
 Vizatimi sipas udhëzimeve
-'''''''''''''''''''''''
+'''''''''''''''''''''''''''
 
 Në detyrat e mëposhtme, mund të shihni se çfarë programi juaj duhet të vizatojë duke klikuar butonin "Luaj detyrën". Për t'ju siguruar informacionin e nevojshëm për të shkruar deklarimet që ju nevojiten, jepen gjithashtu udhëzime të hollësishme me përshkrime të parametrave.
 

@@ -50,7 +50,7 @@ vizaton një vijë blu 2 pixel të gjerë nga pika :math:`(20, 10)` to point :ma
    :align: center 
 
 Vizatimi i poligonit
-'''''''''''''''''
+'''''''''''''''''''''
 
 Për të vizatuar poligonin përdorim funksionin ``pg.draw.polygon``, që ka 2 forma:
 

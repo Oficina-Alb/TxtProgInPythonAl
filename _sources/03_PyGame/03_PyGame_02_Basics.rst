@@ -101,11 +101,11 @@ Testoni njohuritë tuaja për koordinatat përmes disa pyetjeve vijuese.
 .. fillintheblank:: pygame__basics_quiz_coordinates_vindow_center
 
     Nëse dritarja është e gjerë 200 piksele dhe e lartë 300 piksele, cilat janë koordinatat e pikës së saj qendrore_
-
+    
     - : \ (100, [] * [0-9] + \): Llogaritni më me kujdes koordinatën y.
-      : \ ([0-9] +, [] * 150 \): Llogaritni më shumë kujdes koordinatën x.
-      : \ ([0-9] +, [] * [0-9] + \): Llogaritni me kujdes të dy koordinatat.
-      :. *: Shkruajeni rezultatin si një palë e porositur.
+      : \ ([0-9] +, [] * 150 \): Llogaritni më shumë kujdes koordinatën x.
+      : \ ([0-9] +, [] * [0-9] + \): Llogaritni me kujdes të dy koordinatat.
+      :. *: Shkruajeni rezultatin si një palë e porositur.
    
 .. mchoice:: pygame__basics_quiz_coordinates_dir
    :multiple_answers:
@@ -119,21 +119,21 @@ Testoni njohuritë tuaja për koordinatat përmes disa pyetjeve vijuese.
    :feedback_c: Saktë.
    :feedback_d: Pikat në skajin e djathtë të ekranit kanë koordinatën më të madhe x.
    :feedback_e: Saktë.
-
-    Zgjidh përgjigjen e duhur.
+   
+   Zgjidh përgjigjen e duhur.
    
 .. dragndrop:: pygame__basics_quiz_coordinates_corners
-    :feedback: Provo përsëri!
-    :match_1: top-left|||(0, 0)
-    :match_2: top-right|||(w, 0)
-    :match_3: bottom-left|||(0, h)
-    :match_4: bottom-right|||(w, h)
-
-    Nëse gjerësia e një dritare është `w` dhe lartësia është`h`, çiftoni qoshet e ekranit me koordinatat e tyre.
+   :feedback: Provo përsëri
+   :match_1: top-left|||(0, 0)
+   :match_2: top-right|||(w, 0)
+   :match_3: bottom-left|||(0, h)
+   :match_4: bottom-right|||(w, h)
+   
+   Nëse gjerësia e një dritare është `w` dhe lartësia është`h`, çiftoni qoshet e ekranit me koordinatat e tyre.
 
 
 Specifikimi i ngjyrave
------------------
+-----------------------
 
 Sigurisht, kur vizatoni, mund të përdoren ngjyra të ndryshme. Ne mund të specifikojmë një ngjyrë me emrin e saj (në anglisht), të cilën e përcjellim si parametër në funksionin ``pg.Color``. Ju mund të përdorni ngjyrat duke përcjellë vargun e duhur: ``'black'``, për të zezën,``'white'``, për të bardhë, ``'gri'``, për gri,``'blue'``, për blu ``'green'`` për jeshilen,``'orange'`` për portokallin ``'yellow'`` për të verdhë, etj. Kujtojmë se vargjet specifikohen ose midis thonjëzave të vetme ose të dyfishtë (psh. "blu" dhe "blu" mund të përdoret në mënyrë të ndryshme). Për shembull, nëse e quani funksionin ``py.draw.line (canvas, pg.Color ('blue'), (0, 0), (200, 200), 3)`` një segment i linjës blu, 3 pixel i gjerë , koordinatat e pikave fundore të të cilave janë :math:`(0, 0)` dhe :math:`(200, 200)` do të shfaqet në dritare
 

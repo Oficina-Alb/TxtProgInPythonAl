@@ -207,10 +207,10 @@
   
   <div class="section" id="vizatimi-i-drejtkendeshave-eklipse-dhe-rratheve">
 <h1>Vizatimi i drejtkëndëshave, eklipse dhe rrathëve<a class="headerlink" href="#vizatimi-i-drejtkendeshave-eklipse-dhe-rratheve" title="Permalink to this headline">¶</a></h1>
-<p>Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me <a href="#id1"><span class="problematic" id="id2">``</span></a>pg.pull`. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:</p>
+<p>Të gjitha funksionet e vizatimit në bibliotekën e PyGame fillojnë me <code class="docutils literal notranslate"><span class="pre">pg.pull</span></code>. Në varësi të asaj forme që duam të vizatojmë, ne i quajmë funksione të ndryshme. Në shpjegimet që vijojnë, kuptimi i parametrave është:</p>
 <ul class="simple">
 <li><p>Parametri <em>canvas</em> është zona në të cilën vizatojmë. Në këtë udhëzues, programet do të kenë tashmë një variabël të formuar (më saktësisht objekt) <em>canvas</em>, e marrë si rezultat i një thirrje të funksionit <code class="docutils literal notranslate"><span class="pre">pygamebg.open_window</span></code>.</p></li>
-<li><p>Parametri <em>color</em> është ngjyra që ne përdorim për të vizatuar. Siç u tha më herët, një ngjyrë mund të specifikohet me emrin e saj (për shembull: kodi: <cite>pg.Color (“black”)</cite>), ose si një tuple ose një listë e 3 elementeve (për shembull: kodi: <a href="#id3"><span class="problematic" id="id4">`</span></a>[ 255, 0, 0] <a href="#id5"><span class="problematic" id="id6">`</span></a>për të kuqe).</p></li>
+<li><p>Parametri <em>color</em> është ngjyra që ne përdorim për të vizatuar. Siç u tha më herët, një ngjyrë mund të specifikohet me emrin e saj (për shembull: kodi: <cite>pg.Color (“black”)</cite>), ose si një tuple ose një listë e 3 elementeve (për shembull: kodi: <cite>[ 255, 0, 0]</cite> për të kuqe).</p></li>
 <li><p>Parametri <em>drejtkëndësh</em> është një tupë ose një listë me katër elementë: matematikë: <cite>(x, y, w, h)</cite> ose: matematikë: <cite>[x, y, w, h]</cite>, që përshkruan një drejtkëndësh, siç u shpjegua më herët (koordinatat e kulmës së sipërme të majtë, gjerësia dhe lartësia e drejtkëndëshit).</p></li>
 <li><p>Parametri <em>center</em> paraqet një pikë. Siç u përmend më herët, një pikë mund të specifikohet si një tuple (ose listë) e 2 elementeve, të cilat përfaqësojnë koordinatat e pikës në dritaren në të cilën ne vizatojmë.</p></li>
 <li><p>Parametri <em>thickness</em> është trashësia e linjave që përdorim për të vizatuar. Në funksionet që shpjegojmë këtu, ky parametër është opsional dhe mund të harrohet.</p></li>
@@ -354,7 +354,7 @@ pg.draw.circle(canvas, pg.Color("red"), (100, 100), 50, 3)
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame__drawing_quiz_circle_opt_arg">
-            <p>Q-44: Dallimi midis <cite>pg. pull.circle (canvas, color, (cx, cy), r)</cite> dhe <a href="#id7"><span class="problematic" id="id8">`</span></a>pg. pull.circle (canvas, color, (cx, cy), r, 1)” është se:</p>
+            <p>Q-44: Dallimi midis <cite>pg. pull.circle (canvas, color, (cx, cy), r)</cite> dhe <cite>pg. pull.circle (canvas, color, (cx, cy), r, 1)</cite> është se:</p>
 
             <li data-component="answer"  id="pygame__drawing_quiz_circle_opt_arg_opt_a">kjo e fundit vizaton një elips, boshtet gjysmë të mëdha dhe gjysmë të vogla të së cilës janë të barabarta r dhe 1.</li><li data-component="feedback" id="pygame__drawing_quiz_circle_opt_arg_opt_a">Provo përsëri</li>
             

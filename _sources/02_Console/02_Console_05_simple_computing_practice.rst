@@ -126,9 +126,9 @@ Ushtrime
 
 .. questionnote::
     
-    **Detyrë - zogj **
+    **Detyrë - zogj**
     
-     Popullsia e lepujve në një ishull po dyfishohet çdo vit. Shkruaj një program që ngarkon numrin aktual të lepujve në ishull dhe numrin e viteve, dhe shtyp sa lepuj do të ishin në ishull në një numër të caktuar vitesh nëse vazhdojnë të riprodhojnë me të njëjtin ritëm.
+    Popullsia e lepujve në një ishull po dyfishohet çdo vit. Shkruaj një program që ngarkon numrin aktual të lepujve në ishull dhe numrin e viteve, dhe shtyp sa lepuj do të ishin në ishull në një numër të caktuar vitesh nëse vazhdojnë të riprodhojnë me të njëjtin ritëm.
 
 .. activecode:: console__computing_rabbits
 
@@ -138,6 +138,6 @@ Ushtrime
 
     **Detyrë - Blerja e një makine**
 
-     Gjoni blen makinën me këste. Shkruaj një program që ngarkon në mënyrë sekuenciale çmimin e kontratës, shumën e një kësti dhe numrin e kësteve, dhe shtyp se sa më shumë John do të paguajë në total mbi çmimin e deklaruar në kontratë.
+    Gjoni blen makinën me këste. Shkruaj një program që ngarkon në mënyrë sekuenciale çmimin e kontratës, shumën e një kësti dhe numrin e kësteve, dhe shtyp se sa më shumë John do të paguajë në total mbi çmimin e deklaruar në kontratë.
         
 .. activecode:: console__computing_buying_car

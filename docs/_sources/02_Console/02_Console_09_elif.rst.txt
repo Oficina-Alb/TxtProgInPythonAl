@@ -132,8 +132,8 @@ Shembuj dhe ushtrime
 
 
 .. questionnote::
-    
-   **Shembull - gjeje kush **
+
+    **Shembull - gjeje kush **
     
      Janë tetë fëmijë në lagje që janë shpesh bashkë. Emrat e tyre janë: Alice, Ben, Charlotte, Daniel, Emily, Frankie, Gabriella dhe Harry. Alice, Ben, Charlotte dhe Daniel shkojnë në seksionin e programimit, dhe Alice, Ben, Emily dhe Frankie në seksionin e sporteve. Drejtoresha e shkollës dëshironte të lavdëronte një prej fëmijëve për disa vepra, por nuk e dinte emrin e asaj fëmije.
     

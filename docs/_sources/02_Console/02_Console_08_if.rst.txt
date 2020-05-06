@@ -106,7 +106,7 @@ Këtu duhet të kontrollojmë që numri i vezëve është i ndashëm me 10. Për
 
 
 .. questionnote::
-    
+
     **Detyrë - Ana e rrugës: **
     
      Numrat e shtëpive janë në anën e djathtë të rrugës dhe numrat e shtëpive të çuditshme në të majtë. Shkruaj një program që merr një numër shtëpie dhe shtyp në cilën anë të rrugës numri është ndezur.
@@ -123,7 +123,7 @@ Këtu është e nevojshme të ekzaminohet nëse numri i dhënë është i ndash�
 
 
 .. questionnote::
-    
+
     **Detyrë - kinema: **
     
      Ju keni 10 euro me vete. Shkruani një program që merr çmimin e biletave të filmit dhe çmimin e kokoshkave, atëherë shtypni nëse keni para të mjaftueshme si për biletën ashtu edhe për kokoshka.
@@ -266,8 +266,8 @@ Shprehej logjike - pyetje
 Shprehje logjike - detyra
 ''''''''''''''''''''''''''
 
-.. questionnote::
-
+.. questionnote:: 
+    
     **Detyrë - numra sipas radhës: **
     
      Shkruaj një program që merr numrat e plotë *a*, *b*, *c* dhe i përgjigjet pyetjes nëse këta numra janë dhënë në mënyrë që nga më i vogli te më i madhi.

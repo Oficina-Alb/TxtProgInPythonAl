@@ -14,7 +14,7 @@ Tuple dhe elementet e saj
 ----------------------------
 
 Paketimi dhe paketimi i paketave
-''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''
 
 Ne mund ta vendosim tërë tufën në një ndryshore, ashtu siç veprojmë me vlerat e një lloji më të thjeshtë. Në shembullin e mëposhtëm, variabli *temperatura* përmban tërë vlerësimin si vlerë të saj.
 
@@ -62,7 +62,7 @@ Ne gjithashtu mund të marrim elementet e një tuple duke shkruar emrin e tuples
 The sequence number of an element is also called the **index** of the element. if the tuple has *n* elements, we can use the numbers 0, 1, 2, ... *n-1* as indices. In the example above, *n* = 3, so indices 0, 1, and 2 are allowed. Trying to use an index outside these bounds causes an error (try it).
 
 Gjatesia e Tuple
-''''''''''''
+''''''''''''''''''
 
 Numri i elementeve të një tuple mund të merret duke përdorur funksionin *len*.
 
