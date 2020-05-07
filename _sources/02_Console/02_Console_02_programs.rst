@@ -19,16 +19,16 @@ Variabël është një hapësirë e quajtur në kujtesën e një kompjuteri, në
     76.80000000000001
 
 .. infonote::
-    
-    *Deklarimi i vendosjes së vlerës **
 
-Deklarimi i vendosjes së vlerës shkruhet duke shkruar emrin e një variabli, e ndjekur nga shenja e barabartë `` = ``, dhe pastaj shprehja vlerën e së cilës ia caktojmë variablës. Ne gjithashtu konsiderojmë numrat e plotë dhe numrat realë si shprehje (këto janë shprehjet më të thjeshta të mundshme).
+    **Deklarata e caktimit të vlerës**
+
+    Deklarata e caktimit të vlerës shkruhet duke shkruar emrin e një ndryshoreje, e ndjekur nga shenja e barabartë ``=``, dhe pastaj shprehja vlerën e së cilës ia caktojmë variablës. Ne gjithashtu konsiderojmë numrat e plotë dhe numrat realë si shprehje (këto janë shprehjet më të thjeshta të mundshme).
     
-.. infonote ::
-    
-    **Emrat e variablave **
-    
-    Emrat e ndryshueshëm (si dhe emrat e tjerë në programet që shkruajmë) mund të përbëhen nga shkronja të mëdha dhe të vogla, shifra dhe nënvizime, por ato nuk mund të fillojnë me një shifër.
+.. infonote::
+
+    **Emrat e variablave**
+
+   Emrat e variablave (si dhe emrat e tjerë në programet që shkruajmë) mund të përbëhen nga shkronja të mëdha dhe të vogla, shifra dhe nënvizime, por ato nuk mund të fillojnë me një shifër.
     
     Python bën dallimin midis shkronjave të mëdha dhe të vogla. *N* dhe *n* janë emra të ndryshëm dhe nëse i përdorim të dy, ato do të përfaqësonin dy ndryshore të ndryshme.
     
@@ -96,7 +96,7 @@ Me një thirrje të vetme të funksionit *print ()* ne mund të shtypim vlera t�
 Fillimi i një programi
 ---------------------------
 
-**Drejtimin e programeve në shfletuesin **
+**Drejtimi i programeve në browser**
 
 Për t'ju ndihmuar të filloni, ne përdorëm përbërësin **ActiveCode** të projektit `Runestone Interactive <http://runestoneinteractive.org/>` __ dhe ju mundësuam të drejtoni programet Python në faqet e internetit të këtij kursi. Për shembull, më poshtë janë deklaratat që kemi hyrë më parë në mënyrë interaktive, por kësaj radhe të shkruara si program. Ju mund ta filloni programin duke klikuar butonin "Run".
 

@@ -15,8 +15,8 @@ Rregullat e mëposhtme zbatohen për funksionet e shkrimit në Python:
 
 .. infonote::
 
-   **Rregullat e shkrimit të funksionit:**
-
+    **Rregullat e shkrimit të funksionit:**
+    
     - Përcaktimi i funksionit fillon me fjalën ``def``, e ndjekur nga emri i funksionit, pastaj një listë argumentesh në kllapa dhe karakteri ``:`` në fund të rreshtit.
     - Çdo emër i shkruar siç duhet mund të paraqitet si një *function_name* (rregullat janë të njëjta si për emrat e ndryshueshëm).
     - Një listë e zbrazët (asgjë) mund të shfaqet si *argument_list* nëse funksioni nuk përdor argumente, ose një ose më shumë argumente të ndara me presje.
@@ -103,12 +103,12 @@ Ushtrime
 '''''''''''''''''''
 
 .. questionnote::
+    
+    **Detyrë - koordinatat gjeografike në formatin GP**
 
-    **Detyrë - koordinatat gjeografike në formatin GP **
-
-     Ju gjetët një hartë të vjetër të thesarit të varrosur dhe lexoni koordinatat e thesarit në gradë, minuta dhe sekonda. Sidoqoftë, pajisja juaj GPS mbështet vetëm koordinatat gjeografike në shkallë si numra realë (noton).
+    Ju gjetët një hartë të vjetër të thesarit të varrosur dhe lexoni koordinatat e thesarit në gradë, minuta dhe sekonda. Sidoqoftë, pajisja juaj GPS mbështet vetëm koordinatat gjeografike në shkallë si numra realë (noton).
     
-     Shkruaj një program që për një koordinatë të caktuar në gradë, minuta dhe sekonda, shtyp një numër real të gradave.
+    Shkruaj një program që për një koordinatë të caktuar në gradë, minuta dhe sekonda, shtyp një numër real të gradave.
 
 Programi është shkruar pothuajse plotësisht. Duhet shtuar një shprehje për të llogaritur numrin real të gradave. Për ta shndërruar minutat (këndore) në shkallë, ne i ndajmë ato në :math:`60`, dhe i kthejmë sekondat në shkallë duke i ndarë me :math:`60 \ cdot 60 = 3600`.
 

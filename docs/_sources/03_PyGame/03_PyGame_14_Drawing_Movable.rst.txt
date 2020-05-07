@@ -200,14 +200,15 @@ Kontrolloni të kuptuarit tuaj për shpjegimet e mëparshme dhe përgjigjuni pye
    :feedback_b: Saktë!
    :feedback_c: Provo përsëri.
    :feedback_d: Provo përsëri.
- Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
+ 
+Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në mënyrë që gjithçka të vizatohet në lidhje me anchor me koordinatat `x = 100`,` y = 100`. Një nga pohimet që formojnë një vizatim është
                
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code2
       :passivecode: true
                     
-      pg.draw.line(canvas, pg.Color("red"), (50, 50), (150, 150))
+pg.draw.line(canvas, pg.Color("red"), (50, 50), (150, 150))
 
-    Cila fjali e zëvendëson këtë?
+Cila fjali e zëvendëson këtë?
       
 .. mchoice:: PyGame__drawing_quiz_anchor_introduction3
    :answer_a: pg.draw.rect(canvas, pg.Color("red"), (x-50, y-50, x, y))
@@ -224,8 +225,8 @@ Ne dëshirojmë të rregullojmë një vizatim të përbërë nga disa forma, në
                 
    .. activecode:: PyGame__drawing_quiz_anchor_introduction_code3
       :passivecode: true
-                    
-      pg.draw.rect(canvas, pg.Color("red"), (50, 50, 100, 100))
+   
+pg.draw.rect(canvas, pg.Color("red"), (50, 50, 100, 100))
 
     Cila fjali e zëvendëson këtë?
       

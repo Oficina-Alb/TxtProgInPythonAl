@@ -24,10 +24,6 @@ Kjo detyrë është një ndërthurje e detyrave që kemi bërë deri më tani. N
 
 Ne përmendëm se funksionet *min*, *max*, *sum*, *len* mund të zbatohen në koleksione të ndryshme, dhe ne e kemi treguar këtë me shembuj të tuple, varg dhe varg (përveç shumës së elementeve të një vargu). Tani shohim që funksioni *min* gjithashtu pranon një listë si argumentin e saj. E njëjta vlen për funksionet *max*, *sum*, *len*.
 
-
-
-
-
 .. questionnote::
 
     **Shembull - dështimet**
@@ -102,7 +98,7 @@ Ja si duket i gjithë programi:
 
     **Detyrë - tifozët e futbollit **
 
-     Tifozët e futbollit nga 8 vende po vijnë në turne në qytet *X*. Organizatorët e turneut duan të dinë se sa tifozë vijnë nga secili vend.
+    Tifozët e futbollit nga 8 vende po vijnë në turne në qytet *X*. Organizatorët e turneut duan të dinë se sa tifozë vijnë nga secili vend.
     
     
      Çdo vend përfaqësohet nga një numër nga 0 në 7. Numrat e dhënë për secilin tifoz tregojnë se nga cili vend vjen nga ai. Përfundoni programin më poshtë që rendit për secilin vend sa tifozë vijnë prej tij.
@@ -136,9 +132,9 @@ Detyra kërkon që secili numër 0 deri 7 të numërojë sa herë shfaqet ai num
 
 .. questionnote::
 
-    **Detyrë - shumica e tifozëv **
+    **Detyrë - shumica e tifozëve **
     
-     Kjo është vazhdimi i detyrës së mëparshme. Organizatorët tani përveç kësaj dëshirojnë të dinë nga cili vend vijnë tifozët.
+    Kjo është vazhdimi i detyrës së mëparshme. Organizatorët tani përveç kësaj dëshirojnë të dinë nga cili vend vijnë tifozët.
 
      Kopjoni programin e mëparshëm dhe bashkëngjitni atë në mënyrë që përfundimisht të printojë numrin e vendit nga vjen shumica e tifozëve.
 

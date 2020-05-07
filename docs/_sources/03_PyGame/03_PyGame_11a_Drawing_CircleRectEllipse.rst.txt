@@ -179,9 +179,7 @@ Kontrolloni sa kuptoni dhe mbani mend për këto funksione vizatimi:
    :feedback_c: Provo përsëri
    :feedback_d: Saktë
 
-   Për të vizatuar një drejtkëndësh, kulmi i majtë i të cilit është në pikë
-    :math:`(100, 100)`, math: `30` pixel i gjerë dhe :math:` 50`
-    pixel të lartë, cili thirrje funksion duhet të bëhet?
+   Për të vizatuar një drejtkëndësh, kulmi i majtë i të cilit është në pikën :math: `(100, 100)`, :math: `30` pixel i gjerë dhe :math:` 50` pixel të lartë, cili funksion duhet të bëhet?
 
 .. mchoice::  pygame__drawing_quiz_rect_args_3
    :answer_a: pg.draw.rect(canvas, color, (80, 80, 50, 80))

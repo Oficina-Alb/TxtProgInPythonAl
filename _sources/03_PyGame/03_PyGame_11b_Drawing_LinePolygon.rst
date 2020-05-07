@@ -149,8 +149,8 @@ Kontrolloni njohuritë:
    :feedback_c: Saktë
    :feedback_d: Provo përsëri
    :feedback_e: Provo përsëri
-
-  Kur vizatoni cila nga format e mëposhtme janë koordinatat e dhëna në formën e një liste të çifteve të renditura?
+   
+   Kur vizatoni cila nga format e mëposhtme janë koordinatat e dhëna në formën e një liste të çifteve të renditura?
 
 
 Vizatimi sipas instruksioneve

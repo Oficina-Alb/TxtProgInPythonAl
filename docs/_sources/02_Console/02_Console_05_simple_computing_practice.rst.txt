@@ -46,9 +46,9 @@ Ushtrime
 
 .. questionnote::
 
-    **Detyrë - blerje për të gjitha paratë **
-    
-     Sa sende për 76 euro mund të blihen për 500 euro? Sa para do të mbesin nëse blihet numri më i madh i mundshëm i artikujve?
+    **Detyrë - blerje për të gjitha paratë **    
+     
+    Sa sende për 76 euro mund të blihen për 500 euro? Sa para do të mbesin nëse blihet numri më i madh i mundshëm i artikujve?
 
 Versioni më i shkurtër (dhe më pak i qartë) i zgjidhjes është
 
@@ -66,7 +66,7 @@ Shkruani një zgjidhje më të qartë duke përdoruar variabla.
 
 
 .. questionnote::
-    
+
     **Detyra - datum **
 
      Nëse sot është 15 i muajit dhe muaji është 31 ditë, sa ditë ka deri në 11 të muajit tjetër (në të njëjtën kohë)?
@@ -87,7 +87,7 @@ Detyra juaj është të shkruani një zgjidhje në të cilën vlerat fillestare 
 
 
 .. questionnote::
-    
+
     **Detyra - blerja e 3 pjesëve **
 
      Ben ka 20 euro dhe dëshiron të blejë 3 llampa biçikletash për 1,58 euro secila. Sa para do të ketë lënë ai?
