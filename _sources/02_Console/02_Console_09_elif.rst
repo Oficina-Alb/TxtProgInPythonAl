@@ -128,12 +128,12 @@ Degët e foleve janë deklarimet *if* në degët e deklarimeve të tjera *if*. D
 Në shembullin e parë, ne sigurojmë me qëllim një program me tre nivele të deklarimeve të vendosjes në gjumë *if*, për t'ju ndihmuar të imagjinoni se si një program me deklarime edhe më të thella dhe më të gjata *if* mund të duken. Në shembuj dhe detyra të tjera, ne do të kufizohemi në një nivel të futjes së deklarimeve *if*.
 
 Shembuj dhe ushtrime
-''''''''''''''''''
+''''''''''''''''''''''
 
 
 .. questionnote::
 
-    **Shembull - gjeje kush **
+    **Shembull - gjeje kush**
     
      Janë tetë fëmijë në lagje që janë shpesh bashkë. Emrat e tyre janë: Alice, Ben, Charlotte, Daniel, Emily, Frankie, Gabriella dhe Harry. Alice, Ben, Charlotte dhe Daniel shkojnë në seksionin e programimit, dhe Alice, Ben, Emily dhe Frankie në seksionin e sporteve. Drejtoresha e shkollës dëshironte të lavdëronte një prej fëmijëve për disa vepra, por nuk e dinte emrin e asaj fëmije.
     

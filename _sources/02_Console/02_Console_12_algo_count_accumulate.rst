@@ -237,7 +237,7 @@ Ne mund ta shkruajmë programin kështu:
 
 .. questionnote::
     
-    **Detyrë - në detyrë: **
+    **Detyrë - në detyrë:**
     
      Në Ndërmarrjen X, të gjithë punonjësit herë pas here mbeten në thirrje. Norma për periudhën e mëparshme është 20 orë telefonatë. Hourdo orë shtesë (mbi 20 orë) në telefon paguhet gjithashtu. Jepet numri i orëve të thirrjeve për secilin punonjës, dhe drejtori dëshiron të dijë numrin e përgjithshëm të orëve në telefon **mbi normën**.
     

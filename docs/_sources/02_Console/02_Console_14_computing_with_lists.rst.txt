@@ -96,7 +96,7 @@ Ja si duket i gjithë programi:
 
 .. questionnote::
 
-    **Detyrë - tifozët e futbollit **
+    **Detyrë - tifozët e futbollit**
 
     Tifozët e futbollit nga 8 vende po vijnë në turne në qytet *X*. Organizatorët e turneut duan të dinë se sa tifozë vijnë nga secili vend.
     
@@ -132,7 +132,7 @@ Detyra kërkon që secili numër 0 deri 7 të numërojë sa herë shfaqet ai num
 
 .. questionnote::
 
-    **Detyrë - shumica e tifozëve **
+    **Detyrë - shumica e tifozëve**
     
     Kjo është vazhdimi i detyrës së mëparshme. Organizatorët tani përveç kësaj dëshirojnë të dinë nga cili vend vijnë tifozët.
 

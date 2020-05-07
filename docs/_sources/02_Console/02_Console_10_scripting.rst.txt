@@ -110,9 +110,9 @@ Një program që zgjidh këtë detyrë mund të duket si ky:
 
 .. questionnote::
     
-    **Detyrë - kohëzgjatja e udhëtimit **
-
-     George synon të fillojë një udhëtim me makinë 600 kilometra në 9 të mëngjesit në mëngjes dhe është i interesuar të arrijë kohën nëse ai po udhëtonte me një shpejtësi mesatare prej 90, 100, 120 ose 130 kilometra në orë. Përfundoni programin për të renditur kohën e mbërritjes në destinacion për secilën nga shpejtësitë mesatare të lartpërmendura.
+    **Detyrë - kohëzgjatja e udhëtimit**
+    
+    George synon të fillojë një udhëtim me makinë 600 kilometra në 9 të mëngjesit në mëngjes dhe është i interesuar të arrijë kohën nëse ai po udhëtonte me një shpejtësi mesatare prej 90, 100, 120 ose 130 kilometra në orë. Përfundoni programin për të renditur kohën e mbërritjes në destinacion për secilën nga shpejtësitë mesatare të lartpërmendura.
     
 .. activecode:: console__scripting_speed
 
@@ -157,9 +157,9 @@ Një program që zgjidh këtë detyrë mund të duket si ky:
 
 .. questionnote::
     
-    **Detyrë - shtesa **
-
-     Theo bën një plan për të shpenzuar paratë e xhepit për një pushim 14-ditor. Shkruaj një program që, për një shpenzim mesatar ditor prej 5, 10, ose 20 euro, rendit sa para do të duheshin në total në Theo për secilin rast.
+    **Detyrë - shtesa**
+    
+    Theo bën një plan për të shpenzuar paratë e xhepit për një pushim 14-ditor. Shkruaj një program që, për një shpenzim mesatar ditor prej 5, 10, ose 20 euro, rendit sa para do të duheshin në total në Theo për secilin rast.
 
 
 .. activecode:: console__scripting_allowance

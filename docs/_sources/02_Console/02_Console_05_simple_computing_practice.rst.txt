@@ -46,8 +46,8 @@ Ushtrime
 
 .. questionnote::
 
-    **Detyrë - blerje për të gjitha paratë **    
-     
+    **Detyrë - blerje për të gjitha paratë**    
+    
     Sa sende për 76 euro mund të blihen për 500 euro? Sa para do të mbesin nëse blihet numri më i madh i mundshëm i artikujve?
 
 Versioni më i shkurtër (dhe më pak i qartë) i zgjidhjes është
@@ -67,9 +67,9 @@ Shkruani një zgjidhje më të qartë duke përdoruar variabla.
 
 .. questionnote::
 
-    **Detyra - datum **
-
-     Nëse sot është 15 i muajit dhe muaji është 31 ditë, sa ditë ka deri në 11 të muajit tjetër (në të njëjtën kohë)?
+    **Detyra - datum**
+    
+    Nëse sot është 15 i muajit dhe muaji është 31 ditë, sa ditë ka deri në 11 të muajit tjetër (në të njëjtën kohë)?
 
 Detyra juaj është të shkruani një zgjidhje në të cilën vlerat fillestare dhe të llogaritura u janë caktuar variablave. Duke klikuar në butonin "zgjidhje e shkurtër" mund të shihni një zgjidhje të shkurtër si aluzion.
 
@@ -88,9 +88,9 @@ Detyra juaj është të shkruani një zgjidhje në të cilën vlerat fillestare 
 
 .. questionnote::
 
-    **Detyra - blerja e 3 pjesëve **
-
-     Ben ka 20 euro dhe dëshiron të blejë 3 llampa biçikletash për 1,58 euro secila. Sa para do të ketë lënë ai?
+    **Detyra - blerja e 3 pjesëve**
+    
+    Ben ka 20 euro dhe dëshiron të blejë 3 llampa biçikletash për 1,58 euro secila. Sa para do të ketë lënë ai?
     
 Shkruaj një program që përdor variabla për vlerat fillestare dhe të llogaritura.
 
@@ -106,9 +106,9 @@ Shembuj
 
 .. questionnote::
 
-    **Shembull - pikturë **
-    
-     Philip përgatitet të pikturojë tavanin në një dhomë. Për të ditur se sa bojë për të blerë, ai duhet të dijë dimensionet e dhomës dhe sa metra katrorë mbulon një kilogram bojë. Shkruani një program që ngarkon gjatësinë e dhomës, gjerësinë e dhomës, një zonë që mbulon një kilogram të bojës dhe shtypni numrin e kërkuar të kilogramëve të bojës.
+    **Shembull - pikturë**
+    
+    Philip përgatitet të pikturojë tavanin në një dhomë. Për të ditur se sa bojë për të blerë, ai duhet të dijë dimensionet e dhomës dhe sa metra katrorë mbulon një kilogram bojë. Shkruani një program që ngarkon gjatësinë e dhomës, gjerësinë e dhomës, një zonë që mbulon një kilogram të bojës dhe shtypni numrin e kërkuar të kilogramëve të bojës.
     
 Zgjidhja:
 

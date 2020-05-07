@@ -136,7 +136,7 @@ Ne kemi përdorur funksionin *split ()* për të analizuar tekstin e futur në v
     
     **fuksioni** *split()*:
     
-Parametri i funksionit *split() * është një karakter ose tekst që duam të përdorim si ndarës. Nëse një ndarës nuk është specifikuar, një hapësirë ``' '`` merret si e mirëqënë.
+Parametri i funksionit *split()* është një karakter ose tekst që duam të përdorim si ndarës. Nëse një ndarës nuk është specifikuar, një hapësirë ``' '`` merret si e mirëqënë.
     
     :code:`"1234 56".split() -> ["1234", "56"]`
     

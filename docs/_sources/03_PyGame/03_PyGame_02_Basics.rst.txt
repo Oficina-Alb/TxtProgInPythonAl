@@ -99,12 +99,13 @@ Testoni njohuritë tuaja për koordinatat përmes disa pyetjeve vijuese.
     Lidhni ngjyrën e rrethit me koordinatat e qendrës së tij (dimensionet e dritares janë 300 herë 300 pixel).
 
 .. fillintheblank:: pygame__basics_quiz_coordinates_vindow_center
-   
-    Nëse dritarja është e gjerë 200 piksele dhe e lartë 300 piksele, cilat janë koordinatat e pikës së saj qendrore_
-    
-    - : \ (100, [] * [0-9] + \): Llogaritni më me kujdes koordinatën y.
-      : \ ([0-9] +, [] * 150 \): Llogaritni më shumë kujdes koordinatën x.
-      : \ ([0-9] +, [] * [0-9] + \): Llogaritni me kujdes të dy koordinatat.
+
+    Nëse dritarja është e gjerë 200 piksele dhe e lartë 300 piksele, cilat janë koordinatat e pikës së saj qendrore?
+
+    - :\(100,[ ]*150\): Saktë!
+      :\(100,[ ]*[0-9]+\): Llogaritni më me kujdes koordinatën y.
+      :\([0-9]+,[ ]*150\): Llogaritni më shumë kujdes koordinatën x.
+      :\([0-9]+,[ ]*[0-9]+\): Llogaritni me kujdes të dy koordinatat.
       :.*: Shkruajeni rezultatin si një palë e porositur.
    
 .. mchoice:: pygame__basics_quiz_coordinates_dir

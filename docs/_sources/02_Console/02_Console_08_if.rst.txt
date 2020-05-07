@@ -107,9 +107,9 @@ Këtu duhet të kontrollojmë që numri i vezëve është i ndashëm me 10. Për
 
 .. questionnote::
 
-    **Detyrë - Ana e rrugës: **
-    
-     Numrat e shtëpive janë në anën e djathtë të rrugës dhe numrat e shtëpive të çuditshme në të majtë. Shkruaj një program që merr një numër shtëpie dhe shtyp në cilën anë të rrugës numri është ndezur.
+    **Detyrë - Ana e rrugës:**
+    
+    Numrat e shtëpive janë në anën e djathtë të rrugës dhe numrat e shtëpive të çuditshme në të majtë. Shkruaj një program që merr një numër shtëpie dhe shtyp në cilën anë të rrugës numri është ndezur.
 
 
 Këtu është e nevojshme të ekzaminohet nëse numri i dhënë është i ndashëm me 2. Detyra është e ngjashme me atë të mëparshme - nëse pjesa tjetër e ndarjes së numrit të shtëpisë së dhënë me 2 është e barabartë me zero, numri është në anën e djathtë të rrugës, përndryshe është në anën e majtë.
@@ -124,9 +124,9 @@ Këtu është e nevojshme të ekzaminohet nëse numri i dhënë është i ndash�
 
 .. questionnote::
 
-    **Detyrë - kinema: **
-    
-     Ju keni 10 euro me vete. Shkruani një program që merr çmimin e biletave të filmit dhe çmimin e kokoshkave, atëherë shtypni nëse keni para të mjaftueshme si për biletën ashtu edhe për kokoshka.
+    **Detyrë - kinema:**
+    
+    Ju keni 10 euro me vete. Shkruani një program që merr çmimin e biletave të filmit dhe çmimin e kokoshkave, atëherë shtypni nëse keni para të mjaftueshme si për biletën ashtu edhe për kokoshka.
     
 
 .. activecode:: console__branching_cinema
@@ -268,9 +268,9 @@ Shprehje logjike - detyra
 
 .. questionnote:: 
     
-    **Detyrë - numra sipas radhës: **
-    
-     Shkruaj një program që merr numrat e plotë *a*, *b*, *c* dhe i përgjigjet pyetjes nëse këta numra janë dhënë në mënyrë që nga më i vogli te më i madhi.
+    **Detyrë - numra sipas radhës:**
+    
+    Shkruaj një program që merr numrat e plotë *a*, *b*, *c* dhe i përgjigjet pyetjes nëse këta numra janë dhënë në mënyrë që nga më i vogli te më i madhi.
 
     
 .. activecode:: console__branching_increasing3

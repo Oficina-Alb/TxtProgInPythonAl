@@ -20,7 +20,7 @@ Rregullat e mëposhtme zbatohen për funksionet e shkrimit në Python:
     - Përcaktimi i funksionit fillon me fjalën ``def``, e ndjekur nga emri i funksionit, pastaj një listë argumentesh në kllapa dhe karakteri ``:`` në fund të rreshtit.
     - Çdo emër i shkruar siç duhet mund të paraqitet si një *function_name* (rregullat janë të njëjta si për emrat e ndryshueshëm).
     - Një listë e zbrazët (asgjë) mund të shfaqet si *argument_list* nëse funksioni nuk përdor argumente, ose një ose më shumë argumente të ndara me presje.
-    - Çdo deklarim në Python mund të shfaqet në trupin e funksionit ( statement_1 *, ... * statemnt_k *). Këto komanda janë shkruar me theks në lidhje me rreshtin që përmban emrin e funksionit dhe argumentet.
+    - Çdo deklarim në Python mund të shfaqet në trupin e funksionit ( *statement_1*, ... *statement_k*). Këto komanda janë shkruar me theks në lidhje me rreshtin që përmban emrin e funksionit dhe argumentet.
 
 Funksionet mund ose nuk mund të kthejnë ndonjë vlerë. Deri më tani kemi pasur mundësinë të shohim të dy llojet e funksioneve. Për shembull, funksionet me të cilat Karel (roboti) lëviz përpara, kthehet rrotull, mbledh lart dhe largon topat janë të gjitha funksionet që nuk kthejnë asnjë vlerë. Nga ana tjetër, funksionet matematikore si *abs* ose *round*, si dhe funksionet për të kontrolluar nëse Karel ka topa me të, nëse ka ndonjë top në shesh, apo nëse Karel mund të shkojë përpara janë funksione që kthehen a vlera.
 
