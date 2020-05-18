@@ -1,34 +1,34 @@
-Foreword
----------
+Parathënie
+------------
 
-The interest in programming is constantly increasing, and not without a good a reason. However, mastering this skill can sometimes be troublesome. Some things in programming are hard in their own right, but often the difficulty comes from the way programming is tought to beginners. The way of explaining key concepts, the order of presenting/learning, examples that are used, selected programming language, and so on, can all be the factors that inhibit or facilitate learning.
+Interesi për programimin po rritet vazhdimisht, dhe jo pa një arsye të mirë. Sidoqoftë, zotërimi i kësaj aftësie ndonjëherë mund të jetë problematik. Disa gjëra në programim janë të vështira, por shpesh vështirësia vjen nga mënyra sesi programimi u duhet fillestarëve. Mënyra e shpjegimit të koncepteve kryesore, renditja e paraqitjes / mësimit, shembuj që përdoren, gjuhë programimi e zgjedhur, etj., Të gjithë mund të jenë faktorët që pengojnë ose lehtësojnë mësimin.
 
-We believe that we have eliminated most of the reasons which make learning programming more burdensome than it has to be:
+Ne besojmë se kemi eliminuar shumicën e arsyeve që e bëjnë programimin e të mësuarit më të rëndë se sa duhet të jetë:
 
-- We tend to first show why the things we are presenting here are needed, and only then to explain them. We believe this has a beneficial effect on readers' motivation to learn;
-- Examples that we use most often have a storyline in order to inspire you to go through them; tedious mechanical exercises are avoided as much as possible;
-- We explain only what is needed to solve an upcomming problem; we leave more difficult things for later;
-- We do not deal with an overview of the language capabilities; reference manuals exist with this purpose;
-- We use the increasingly popular programming language Python, which is currently considered the best choice for beginners and is very applicable in real life situations;
-- No prior knowledge in the field of programming is assumed, and mathematical knowledge on the level of the first few grades of primary school will be sufficient;
+- Ne priremi së pari të tregojmë pse gjërat që ne po paraqesim këtu janë të nevojshme, dhe vetëm atëherë t'i shpjegojmë ato. Ne besojmë se kjo ka një efekt të dobishëm në motivimin e lexuesve për të mësuar;
+- Shembuj që përdorim më shpesh kemi një skenar në mënyrë që t'ju frymëzojmë të kaloni nëpër to; ushtrimet e lodhshme mekanike shmangen sa më shumë që të jetë e mundur;
+- Ne shpjegojmë vetëm atë që është e nevojshme për të zgjidhur një problem që vjen nga sipër; lëmë gjëra më të vështira për më vonë;
+- Ne nuk kemi të bëjmë me një përmbledhje të aftësive gjuhësore; manualet e referencës ekzistojnë me këtë qëllim;
+- Ne përdorim gjuhën e programimit gjithnjë e më popullore Python, e cila aktualisht konsiderohet zgjidhja më e mirë për fillestarët dhe është shumë e zbatueshme në situata të jetës reale;
+- Asnjë njohuri paraprake në fushën e programimit nuk supozohet, dhe njohuritë matematikore në nivelin e klasave të para të shkollës fillore do të jenë të mjaftueshme;
 
-Regarding technical details:
+Lidhur me detajet teknike:
 
-- You can solve tasks in the browser and immediately get the answer whether your programs are working properly;
-- With some tasks, a hint or a solution is given, which is not immediately visible. When you click on the "Hint" or the "Solution" button, a hint, possibly detailed instruction or, sometimes, a complete program that solves the task appears. When the compelete program is given, you can copy it to the area for your solution and try it out;
-- In the initial tasks, you can see a block diagram for your program, similar to those in Scratch (https://scratch.mit.edu/), or at https://code.org/. You can even change the program using block-commands, and then go back to Python with those changes;
-- In many tasks, you can test your solution on several pre-prepared tests to confirm that the result is not accidentally good in just one case, but that you actually did what was expected;
+- Ju mund të zgjidhni detyrat në shfletues dhe menjëherë të merrni përgjigjen nëse programet tuaja po funksionojnë siç duhet;
+- Me disa detyra, jepet një aluzion ose një zgjidhje, e cila nuk është menjëherë e dukshme. Kur klikoni në butonin "Hint" ose butonin "Soultion", shfaqet një sugjerim, ndoshta udhëzim i detajuar ose, ndonjëherë, një program i plotë që zgjidh detyrën. Kur të jepet programi i detyrueshëm, mund ta kopjoni atë në zonën për zgjidhjen tuaj dhe ta provoni;
+- Në detyrat fillestare, mund të shihni një diagram bllok për programin tuaj, të ngjashme me ato në Scratch (https://scratch.mit.edu/), ose në https://code.org/. Ju madje mund të ndryshoni programin duke përdorur bllok komandash, dhe pastaj të ktheheni në Python me ato ndryshime;
+- Në shumë detyra, ju mund ta provoni zgjidhjen tuaj në disa teste të përgatitura paraprakisht për të konfirmuar se rezultati nuk është rastësisht i mirë në vetëm një rast, por që ju në fakt keni bërë atë që pritej;
 
-In short, we did our best to enable you to enter the world of writing computer programs in a pleasant way and reach the level at which you can apply your knowledge in practice.
+Me pak fjalë, ne bëmë më të mirën për t'ju mundësuar që të hyni në botën e shkrimit të programeve kompjuterike në një mënyrë të këndshme dhe të arrini nivelin në të cilin mund të aplikoni njohuritë tuaja në praktikë.
 
-Before we begin, you should pay attention to several facts about learning programming in general:
+Para se të fillojmë, duhet t'i kushtoni vëmendje disa fakteve në lidhje me programimin e të mësuarit në përgjithësi:
 
-- Your solution can be quite ok even if it's different from ours. There is almost always more than one correct way to solve a task.
-- Programming is best learned through writing programs. Do not just read and solve tasks in your head, or even worse, look at the solutions and think if you would have solved these tasks the same way. Write the programs. Even if you are able to formulate the exact program in your head (although you might just think you are), your hands need to pass through the process of writing that program as well. Actually, doing something is always more than just knowing how to do it.
-- No matter how hard we try, we can not show or tell you everything - be curious, try out different ideas and see how they work, play with it.
-- If you have problems in solving some of the tasks, do not worry - it's completely normal. Have patience and be careful. Try to understand the message about the problem. If necessary, reanalyze the examples and explanations that you have been reading up to then. In case you do peek into a solution, you can copy it or type it with or without looking to the solution (if you type it, you should become independent sooner), but, to achieve progress in learning programming, it is important that you try to fully comprehend the solutions and ideas behind them.
+- Zgjidhja juaj mund të jetë mjaft në rregull edhe nëse është e ndryshme nga e jona. Pothuajse gjithmonë ka më shumë se një mënyrë e saktë për të zgjidhur një detyrë.
+- Programimi mësohet më së miri përmes shkrimit të programeve. Mos lexoni vetëm dhe zgjidhni detyra në mendjen tuaj, ose akoma më keq, shikoni zgjidhjet dhe mendoni nëse do t'i kishit zgjidhur këto detyra në të njëjtën mënyrë. Shkruaj programet. Edhe nëse jeni në gjendje të formuloni programin e saktë në kokën tuaj (megjithëse ju thjesht mund të mendoni se jeni), duart tuaja duhet të kalojnë gjatë procesit të shkrimit të këtij programi gjithashtu. Në fakt, të bësh diçka është gjithmonë më shumë sesa të dish ta bësh atë.
+- Pavarësisht se sa shumë mundohemi, nuk mund t'ju tregojmë ose ju tregojmë gjithçka - jini kurioz, provoni ide të ndryshme dhe shihni se si funksionojnë, luani me të.
+- Nëse keni probleme në zgjidhjen e disa prej detyrave, mos u shqetësoni - është plotësisht normale. Kini durim dhe jini të kujdesshëm. Mundohuni të kuptoni mesazhin për problemin. Nëse është e nevojshme, rianalizoni shembujt dhe shpjegimet që keni lexuar deri atëherë. Në rast se ju shikoni në një zgjidhje, mund ta kopjoni ose shtypni atë me ose pa kërkuar zgjidhjen (nëse e shtypni atë, duhet të bëheni të pavarur më shpejt), por, për të arritur përparim në programimin e të mësuarit, është e rëndësishme që përpiquni të kuptoni plotësisht zgjidhjet dhe idetë që qëndrojnë pas tyre.
 
-We wish you a fun and successful programming joruney! 
+Ne ju dëshirojmë një rrugëtim argëtues dhe të suksesshëm!
 
 .. raw:: html
 
@@ -41,8 +41,8 @@ We wish you a fun and successful programming joruney!
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
-Content
--------
+Përmbajtja
+-----------
 
 .. toctree::
     :maxdepth: 3
